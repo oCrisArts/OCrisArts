@@ -78,9 +78,13 @@ function createAutoCarousel(
   let position = 0
   let direction = -1
   let active = false
+  let hovered = false
+  let focused = false
+  let pointerId: number | null = null
   let dragging = false
-  let dragged = false
+  let suppressClickUntil = 0
   let startX = 0
+  let startY = 0
   let startPosition = 0
   let resumeAt = 0
   let previousTime = performance.now()
@@ -94,7 +98,7 @@ function createAutoCarousel(
     const elapsed = Math.min(40, time - previousTime) / 1000
     previousTime = time
     const max = bounds()
-    if (active && !dragging && time >= resumeAt && max > 0) {
+    if (active && !hovered && !focused && pointerId === null && time >= resumeAt && max > 0) {
       position += direction * speed * elapsed
       if (position <= -max) {
         position = -max
@@ -109,30 +113,46 @@ function createAutoCarousel(
   }
 
   const pointerDown = (event: PointerEvent) => {
-    dragging = true
-    dragged = false
+    if (!event.isPrimary || event.button !== 0 || pointerId !== null) return
+    pointerId = event.pointerId
+    dragging = false
+    suppressClickUntil = 0
     startX = event.clientX
+    startY = event.clientY
     startPosition = position
-    track.setPointerCapture(event.pointerId)
-    track.classList.add("is-dragging")
   }
   const pointerMove = (event: PointerEvent) => {
-    if (!dragging) return
+    if (event.pointerId !== pointerId) return
+    const distanceX = event.clientX - startX
+    const distanceY = event.clientY - startY
+    if (!dragging) {
+      if (Math.max(Math.abs(distanceX), Math.abs(distanceY)) <= 6) return
+      // Leave vertical touch gestures to the page's native pan-y scrolling.
+      if (Math.abs(distanceY) >= Math.abs(distanceX)) {
+        pointerUp(event)
+        return
+      }
+      dragging = true
+      track.setPointerCapture(event.pointerId)
+      track.classList.add("is-dragging")
+      if (track.querySelector('[data-case-slug]')) reportCarouselInteraction()
+    }
     const scale =
       track.offsetWidth > 0
         ? track.getBoundingClientRect().width / track.offsetWidth
         : 1
     const delta = (event.clientX - startX) / Math.max(scale, 0.01)
-    if (Math.abs(event.clientX - startX) > 6 && !dragged) {
-      dragged = true
-      if(track.querySelector('[data-case-slug]')) reportCarouselInteraction()
-    }
     position = clamp(startPosition + delta)
     direction = delta > 0 ? 1 : -1
     render()
   }
   const pointerUp = (event: PointerEvent) => {
-    if (!dragging) return
+    if (event.pointerId !== pointerId) return
+    // Touch starts with implicit capture on the child link/image. Transferring
+    // that capture to the rail must not cancel the newly started drag.
+    if (event.type === "lostpointercapture" && event.target !== track) return
+    suppressClickUntil = dragging && event.type === "pointerup" ? performance.now() + 500 : 0
+    pointerId = null
     dragging = false
     resumeAt = performance.now() + 1400
     if (track.hasPointerCapture(event.pointerId)) {
@@ -141,16 +161,40 @@ function createAutoCarousel(
     track.classList.remove("is-dragging")
   }
   const preventDraggedClick = (event: MouseEvent) => {
-    if (!dragged) return
+    // Keyboard activation (detail=0) and subsequent ordinary clicks stay native.
+    if (event.detail === 0 || performance.now() > suppressClickUntil) return
     event.preventDefault()
     event.stopPropagation()
-    dragged = false
+    suppressClickUntil = 0
+  }
+  const pauseOnHover = (event: PointerEvent) => { if (event.pointerType !== "touch") hovered = true }
+  const resume = () => { resumeAt = performance.now() + 1400 }
+  const leaveHover = () => { hovered = false; resume() }
+  const focusIn = () => { focused = true }
+  const focusOut = (event: FocusEvent) => {
+    focused = event.relatedTarget instanceof Node && track.contains(event.relatedTarget)
+    resume()
+  }
+  // Native image/link dragging otherwise steals the pointer before our threshold.
+  const preventNativeDrag = (event: DragEvent) => { event.preventDefault() }
+  const cancelInteraction = () => {
+    if (pointerId !== null) pointerUp(new PointerEvent("pointercancel", { pointerId }))
+    hovered = false
+    resume()
   }
 
   track.addEventListener("pointerdown", pointerDown)
-  track.addEventListener("pointermove", pointerMove)
-  track.addEventListener("pointerup", pointerUp)
-  track.addEventListener("pointercancel", pointerUp)
+  window.addEventListener("pointermove", pointerMove)
+  window.addEventListener("pointerup", pointerUp)
+  window.addEventListener("pointercancel", pointerUp)
+  track.addEventListener("lostpointercapture", pointerUp)
+  track.addEventListener("pointerenter", pauseOnHover)
+  track.addEventListener("pointerleave", leaveHover)
+  track.addEventListener("focusin", focusIn)
+  track.addEventListener("focusout", focusOut)
+  track.addEventListener("dragstart", preventNativeDrag)
+  track.addEventListener("wheel", resume, { passive: true })
+  window.addEventListener("blur", cancelInteraction)
   track.addEventListener("click", preventDraggedClick, true)
 
   const observer = new IntersectionObserver(
@@ -167,9 +211,18 @@ function createAutoCarousel(
     cancelAnimationFrame(animationFrame)
     observer.disconnect()
     track.removeEventListener("pointerdown", pointerDown)
-    track.removeEventListener("pointermove", pointerMove)
-    track.removeEventListener("pointerup", pointerUp)
-    track.removeEventListener("pointercancel", pointerUp)
+    cancelInteraction()
+    window.removeEventListener("pointermove", pointerMove)
+    window.removeEventListener("pointerup", pointerUp)
+    window.removeEventListener("pointercancel", pointerUp)
+    track.removeEventListener("lostpointercapture", pointerUp)
+    track.removeEventListener("pointerenter", pauseOnHover)
+    track.removeEventListener("pointerleave", leaveHover)
+    track.removeEventListener("focusin", focusIn)
+    track.removeEventListener("focusout", focusOut)
+    track.removeEventListener("dragstart", preventNativeDrag)
+    track.removeEventListener("wheel", resume)
+    window.removeEventListener("blur", cancelInteraction)
     track.removeEventListener("click", preventDraggedClick, true)
     gsap.set(track, { clearProps: "x" })
   }
@@ -185,6 +238,7 @@ function useExactNavigation(root: React.RefObject<HTMLDivElement | null>) {
     if (!element) return
 
     const click = (event: MouseEvent) => {
+      if (event.defaultPrevented) return
       const target = event.target as HTMLElement
       const card = target.closest<HTMLElement>(
         '[data-name="article.case-card"]',
@@ -193,7 +247,7 @@ function useExactNavigation(root: React.RefObject<HTMLDivElement | null>) {
         const slug = card.dataset.caseSlug || routeForText(card.textContent || "")
         if (slug && event.button === 0) {
           track('case_open', {case_slug:slug})
-          if (!event.ctrlKey && !event.metaKey && !event.shiftKey) {
+          if (!event.ctrlKey && !event.metaKey && !event.shiftKey && !event.altKey) {
             event.preventDefault()
             navigate(`/cases/${slug}`)
           }

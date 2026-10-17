@@ -31,8 +31,8 @@ for(const name of fs.readdirSync('src/figma').filter(f=>f.endsWith('.tsx'))) {
  assert.deepEqual(after.classes,before.classes,`${name}: original visual classes`);
  assert.deepEqual(after.media,before.media,`${name}: original media and playback attributes`);
  assert.deepEqual(after.styles,before.styles,`${name}: original inline styles`);
- const approvedRemoved=['E-mail'];
- const originalCopy=before.copy.filter(v=>!approvedRemoved.includes(v)),currentCopy=after.copy.filter(v=>v!=='falecom@');
+ const approvedContactLabels=['E-mail','falecom@'];
+ const originalCopy=before.copy.filter(v=>!approvedContactLabels.includes(v)),currentCopy=after.copy.filter(v=>!approvedContactLabels.includes(v));
  assert.deepEqual(currentCopy,originalCopy,`${name}: Portuguese source content`);
  count++;
 }

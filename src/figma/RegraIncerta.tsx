@@ -1,4 +1,5 @@
 // @ts-nocheck -- Figma-generated exact visual component
+import { useI18n } from "../i18n";
 const assetPathPrefix = "/assets";
 const imgCorPadrao = `${assetPathPrefix}/1f44b.svg`;
 const imgCorEscalaDeCinza = `${assetPathPrefix}/2a8e8.svg`;
@@ -162,6 +163,7 @@ type DscNavButtonsProps = {
 };
 
 function DscNavButtons({ className, content = "Solicitacao", layout = "Vertical", status = "default" }: DscNavButtonsProps) {
+  const { t, text, path } = useI18n();
   const isVerticalAndAjudaAndDefault = layout === "Vertical" && content === "Ajuda" && status === "default";
   const isVerticalAndMaisAndDefault = layout === "Vertical" && content === "Mais" && status === "default";
   const isVerticalAndPerfilAndDefault = layout === "Vertical" && content === "Perfil" && status === "default";
@@ -171,7 +173,7 @@ function DscNavButtons({ className, content = "Solicitacao", layout = "Vertical"
         {isVerticalAndMaisAndDefault ? "more_horiz" : isVerticalAndAjudaAndDefault ? "help" : isVerticalAndPerfilAndDefault ? "manage_accounts" : "library_books"}
       </p>
       <p className="[word-break:break-word] font-['CAIXA_Std:Regular'] leading-none min-w-full not-italic relative shrink-0 text-[#2d8ad8] text-[12px] text-center tracking-[-0.24px] w-[min-content]" id={isVerticalAndMaisAndDefault ? "node-4_12213" : isVerticalAndAjudaAndDefault ? "node-4_12209" : isVerticalAndPerfilAndDefault ? "node-4_12205" : "node-4_12201"}>
-        {isVerticalAndMaisAndDefault ? "Mais" : isVerticalAndAjudaAndDefault ? "Ajuda" : isVerticalAndPerfilAndDefault ? "Perfil" : "Solicitações"}
+        {isVerticalAndMaisAndDefault ? text("Mais") : isVerticalAndAjudaAndDefault ? text("Ajuda") : isVerticalAndPerfilAndDefault ? text("Perfil") : text("Solicitações")}
       </p>
       <div className="bg-[#9eb2b8] h-[2px] opacity-0 relative rounded-[40px] shrink-0 w-[40px]" id={isVerticalAndMaisAndDefault ? "node-4_12214" : isVerticalAndAjudaAndDefault ? "node-4_12210" : isVerticalAndPerfilAndDefault ? "node-4_12206" : "node-4_12202"} data-name="barra" />
     </div>
@@ -184,6 +186,7 @@ type DscNavbarProps = {
 };
 
 function DscNavbar({ className, layout = "Navegacao" }: DscNavbarProps) {
+  const { t, text, path } = useI18n();
   const isContinuar = layout === "Continuar";
   const isNavegacao = layout === "Navegacao";
   return (
@@ -194,7 +197,7 @@ function DscNavbar({ className, layout = "Navegacao" }: DscNavbarProps) {
             <p className="[word-break:break-word] font-['Material_Symbols_Outlined:Regular'] font-normal leading-none relative shrink-0 text-[#005ca9] text-[16px] whitespace-nowrap" data-node-id="I4:12381;4505:6611" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
               home
             </p>
-            <p className="[word-break:break-word] font-['CAIXA_Std:Regular'] leading-none min-w-full not-italic relative shrink-0 text-[#005ca9] text-[12px] text-center tracking-[-0.24px] w-[min-content]" data-node-id="I4:12381;4505:6612">{`Início `}</p>
+            <p className="[word-break:break-word] font-['CAIXA_Std:Regular'] leading-none min-w-full not-italic relative shrink-0 text-[#005ca9] text-[12px] text-center tracking-[-0.24px] w-[min-content]" data-node-id="I4:12381;4505:6612">{t("t0554")}</p>
             <div className="bg-[#005ca9] h-[2px] relative rounded-[10px] shrink-0 w-[40px]" data-node-id="I4:12381;4506:6540" data-name="barra" />
           </div>
           <DscNavButtons className="content-stretch flex flex-[1_0_0] flex-col gap-[4px] h-[70px] items-center justify-center min-h-[70px] min-w-px relative rounded-[4px]" />
@@ -206,8 +209,7 @@ function DscNavbar({ className, layout = "Navegacao" }: DscNavbarProps) {
       {isContinuar && (
         <div className="[word-break:break-word] bg-[#005ca9] border border-[#005ca9] border-solid content-stretch drop-shadow-[0px_0px_4px_rgba(18,22,28,0.3)] flex flex-[1_0_0] gap-[8px] items-center justify-center min-h-[48px] min-w-[40px] px-[16px] py-[8px] relative rounded-[4px] text-white whitespace-nowrap" data-node-id="4:12388" data-name="💥 \DSC\Buttons">
           <p className="font-['CAIXA_Std:Regular'] leading-[1.5] not-italic relative shrink-0 text-[14px]" data-node-id="I4:12388;4771:138225">
-            Continuar
-          </p>
+            {t("t0938")}</p>
           <p className="font-['Material_Symbols_Outlined:Regular'] font-normal leading-[normal] relative shrink-0 text-[16px]" data-node-id="I4:12388;4771:138226" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
             arrow_forward
           </p>
@@ -223,6 +225,7 @@ type SpvatProps = {
 };
 
 function Spvat({ className, cor = "padrao" }: SpvatProps) {
+  const { t, text, path } = useI18n();
   return (
     <div className={className || "h-[146.935px] relative w-[383.525px]"} data-node-id="4:31868">
       <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCorPadrao} />
@@ -231,72 +234,64 @@ function Spvat({ className, cor = "padrao" }: SpvatProps) {
 }
 
 export default function ArticleRegraIncerta() {
+  const { t, text, path } = useI18n();
   return (
     <div className="bg-[#eeeff1] content-stretch flex flex-col items-center relative size-full" data-node-id="4:31118" data-name="article#regra-incerta">
       <div className="content-stretch flex flex-col gap-[32px] h-[1080px] isolate items-start justify-end overflow-clip px-[160px] py-[112px] relative shrink-0 w-[1920px]" data-node-id="4:31119" data-name="header.intro">
         <div className="[word-break:break-word] content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full z-[3]" data-node-id="4:31120" data-name="div.flex.flex-col.w-full">
-          <p className="font-['Sora:SemiBold'] font-semibold leading-[1.1] relative shrink-0 text-[#fcfdfe] text-[81px] w-[1180px]" data-node-id="4:31122">
-            Regra incerta?
-          </p>
+          <h1 className="font-['Sora:SemiBold'] font-semibold leading-[1.1] relative shrink-0 text-[#fcfdfe] text-[81px] w-[1180px]" data-node-id="4:31122">
+            {t("t0569")}</h1>
           <p className="font-['Sora:Regular'] font-normal leading-[1.3] relative shrink-0 text-[#fcfdfe] text-[30px] w-[980px]" data-node-id="4:31123">
-            Prepare o produto para mudar.
-          </p>
+            {t("t0570")}</p>
           <div className="content-start flex flex-wrap gap-[12px_16px] items-start leading-[1.6] relative shrink-0 text-[#230007] w-[1600px] whitespace-nowrap" data-node-id="4:31124" data-name="ul.meta">
             <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:31125" data-name="product-discovery">
               <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:31125;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                 travel_explore
               </p>
               <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:31125;6066:625">
-                Product Discovery
-              </p>
+                {t("t0939")}</p>
             </div>
             <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:31126" data-name="atomic-research">
               <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:31126;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                 science
               </p>
               <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:31126;6066:625">
-                Atomic Research
-              </p>
+                {t("t0940")}</p>
             </div>
             <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:31127" data-name="scenario-testing">
               <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:31127;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                 fact_check
               </p>
               <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:31127;6066:625">
-                Scenario Testing
-              </p>
+                {t("t0352")}</p>
             </div>
             <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:31128" data-name="project-type-2">
               <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:31128;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                 devices
               </p>
               <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:31128;6066:625">
-                Aplicativo móvel
-              </p>
+                {t("t0941")}</p>
             </div>
             <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:31129" data-name="assumption-mapping">
               <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:31129;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                 schema
               </p>
               <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:31129;6066:625">
-                Assumption Mapping
-              </p>
+                {t("t0942")}</p>
             </div>
             <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:31130" data-name="brand-identity">
               <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:31130;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                 palette
               </p>
               <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:31130;6066:625">
-                Identidade visual
-              </p>
+                {t("t0584")}</p>
             </div>
             <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:31131" data-name="figma">
               <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:31131;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                 design_services
               </p>
               <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:31131;6066:625">
-                Figma
-              </p>
+                {t("t0167")}</p>
             </div>
           </div>
         </div>
@@ -305,18 +300,17 @@ export default function ArticleRegraIncerta() {
           <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImgHeroImage} />
         </div>
       </div>
-      <div className="content-stretch flex flex-col h-[1080px] items-start justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:31135" data-name="section.context">
+      <div className="content-stretch flex flex-col h-[1080px] items-start justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:31135" data-name="section.context" data-section-id="context">
         <div className="content-stretch flex gap-[96px] h-[520px] items-center relative shrink-0 w-full" data-node-id="4:31136" data-name="div.grid.grid-cols-12.gap-24.w-full">
           <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[24px] items-start min-w-px relative text-[16px]" data-node-id="4:31137" data-name="div.col-span-12.lg:col-span-8">
-            <p className="font-['Sora:SemiBold'] font-semibold leading-[1.3] relative shrink-0 text-[#0d0e10] tracking-[0.64px] w-[900px]" data-node-id="4:31138">
-              01 · CONTEXTO
-            </p>
+            <h2 className="font-['Sora:SemiBold'] font-semibold leading-[1.3] relative shrink-0 text-[#0d0e10] tracking-[0.64px] w-[900px]" data-node-id="4:31138">
+              {t("t0018")}</h2>
             <div className="font-['Sora:Regular'] font-normal leading-[0] relative shrink-0 text-[#000102] w-[1024px] whitespace-pre-wrap" data-node-id="4:31140">
-              <p className="leading-[1.5] mb-[12px]">O SPVAT (Seguro Obrigatório para Proteção de Vítimas de Acidentes de Trânsito) foi previsto para suceder o DPVAT. A proposta exigia nova marca e novo aplicativo.</p>
+              <p className="leading-[1.5] mb-[12px]">{t("t0943")}</p>
               <p className="leading-[1.5] mb-[12px]">​</p>
-              <p className="leading-[1.5] mb-[12px]">Duas frentes precisavam avançar juntas: criar a identidade do novo seguro e revisar o aplicativo anterior para adaptar jornadas e padrões da CAIXA.</p>
+              <p className="leading-[1.5] mb-[12px]">{t("t0944")}</p>
               <p className="leading-[1.5] mb-[12px]">​</p>
-              <p className="leading-[1.5]">O prazo existia. As regras ainda podiam mudar. O produto precisava evoluir sem tratar decisões provisórias como definitivas.</p>
+              <p className="leading-[1.5]">{t("t0945")}</p>
             </div>
           </div>
           <div className="h-[134.615px] relative shrink-0 w-[350px]" data-node-id="4:31141" data-name="spvat">
@@ -324,31 +318,28 @@ export default function ArticleRegraIncerta() {
           </div>
         </div>
       </div>
-      <div className="content-stretch flex flex-col gap-[32px] h-[1080px] isolate items-center justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:31142" data-name="section.challenge">
+      <div className="content-stretch flex flex-col gap-[32px] h-[1080px] isolate items-center justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:31142" data-name="section.challenge" data-section-id="challenge">
         <div className="[word-break:break-word] content-stretch flex flex-col font-['Sora:SemiBold'] font-semibold gap-[32px] items-center max-w-[1500px] relative shrink-0 text-center w-full z-[2]" data-node-id="4:31143" data-name="div.flex.flex-col.w-full.max-w-[1500px]">
-          <p className="leading-[1.3] relative shrink-0 text-[#0d0e10] text-[16px] tracking-[0.64px] w-[900px]" data-node-id="4:31144">
-            02 · DESAFIO
-          </p>
+          <h2 className="leading-[1.3] relative shrink-0 text-[#0d0e10] text-[16px] tracking-[0.64px] w-[900px]" data-node-id="4:31144">
+            {t("t0021")}</h2>
           <p className="leading-[1.2] relative shrink-0 text-[#000102] text-[36px] w-[1200px]" data-node-id="4:31145">
-            O que poderia ser reaproveitado do DPVAT sem comprometer a adaptação às novas regras do seguro?
-          </p>
+            {t("t0946")}</p>
         </div>
         <div className="absolute h-[510px] left-[984px] top-[73px] w-[1569px] z-[1]" data-node-id="4:31147" data-name="bg-figure">
           <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgBgFigure} />
         </div>
       </div>
-      <div className="content-stretch flex h-[1080px] items-center justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:31165" data-name="section.process">
+      <div className="content-stretch flex h-[1080px] items-center justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:31165" data-name="section.process" data-section-id="process">
         <div className="content-stretch flex flex-[1_0_0] items-center justify-center min-w-px overflow-clip relative" data-node-id="4:31166" data-name="div.grid.grid-cols-12.gap-24.w-full">
           <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[24px] items-start min-w-px relative text-[16px]" data-node-id="4:31167" data-name="div.col-span-12.lg:col-span-8">
-            <p className="font-['Sora:SemiBold'] font-semibold leading-[1.3] relative shrink-0 text-[#0d0e10] tracking-[0.64px] w-[900px]" data-node-id="4:31168">
-              03 · PROCESSO
-            </p>
+            <h2 className="font-['Sora:SemiBold'] font-semibold leading-[1.3] relative shrink-0 text-[#0d0e10] tracking-[0.64px] w-[900px]" data-node-id="4:31168">
+              {t("t0023")}</h2>
             <div className="font-['Sora:Regular'] font-normal leading-[0] min-w-full relative shrink-0 text-[#000102] w-[min-content] whitespace-pre-wrap" data-node-id="4:31169">
-              <p className="leading-[1.5] mb-[12px]">A revisão do aplicativo DPVAT permitiu distinguir o que ainda fazia sentido daquilo que precisaria mudar com o SPVAT.</p>
+              <p className="leading-[1.5] mb-[12px]">{t("t0947")}</p>
               <p className="leading-[1.5] mb-[12px]">​</p>
-              <p className="leading-[1.5] mb-[12px]">Jornadas, requisitos e componentes foram avaliados considerando as regras conhecidas e as definições ainda incertas.</p>
+              <p className="leading-[1.5] mb-[12px]">{t("t0948")}</p>
               <p className="leading-[1.5] mb-[12px]">​</p>
-              <p className="leading-[1.5]">Em paralelo, o estudo de marca construiu a identidade visual do novo seguro. Os protótipos reuniram essas decisões aos padrões do Design System CAIXA, permitindo avançar com uma proposta adaptável às mudanças regulatórias.</p>
+              <p className="leading-[1.5]">{t("t0949")}</p>
             </div>
           </div>
         </div>
@@ -360,12 +351,11 @@ export default function ArticleRegraIncerta() {
           </p>
           <div className="content-stretch flex flex-[1_0_0] flex-col gap-[10px] items-start justify-center min-w-px relative" data-node-id="4:31184" data-name="div.flex.flex-col.flex-1">
             <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.4] relative shrink-0 text-[#000102] text-[16px] w-[328px]" data-node-id="4:31185">
-              Pesquisa exploratória
-            </p>
+              {t("t0950")}</p>
           </div>
         </div>
         <div className="content-stretch flex flex-col items-center overflow-clip relative shrink-0 w-full" data-node-id="4:31187" data-name="div.grid.grid-cols-12.w-full">
-          <div className="content-stretch flex gap-[60px] items-center justify-end px-[160px] py-[20px] relative shrink-0 w-full" data-node-id="4:31188" data-name="figure.artifact-visual.col-span-12">
+          <div className="content-stretch flex gap-[60px] items-center justify-end px-[160px] py-[20px] relative shrink-0 w-full" data-node-id="4:31188" data-name="figure.artifact-visual.col-span-12" data-section-id="artifacts">
             <div className="flex flex-[1_0_0] flex-row items-center self-stretch" data-node-id="4:31189">
               <div className="bg-[#6a6f78] content-stretch flex flex-[1_0_0] flex-col gap-[20px] h-full items-center justify-center min-w-px overflow-clip px-[16px] py-[48px] relative rounded-[10px] shadow-[0px_8px_6px_0px_rgba(0,0,0,0.28)]" data-name="box">
                 <div className="h-[100px] overflow-clip relative shrink-0 w-[104.641px]" data-node-id="4:31190" data-name="OBJECTS">
@@ -436,16 +426,14 @@ export default function ArticleRegraIncerta() {
                 </div>
                 <div className="[word-break:break-word] content-stretch flex flex-col font-['Sora:Regular'] font-normal gap-[12px] items-center justify-center leading-[normal] relative shrink-0 text-[#fafafb] whitespace-nowrap" data-node-id="4:31409" data-name="title">
                   <p className="relative shrink-0 text-[30px] tracking-[-0.3px]" data-node-id="4:31410">
-                    Experimentos
-                  </p>
+                    {t("t0951")}</p>
                   <p className="relative shrink-0 text-[20px] tracking-[-0.2px]" data-node-id="4:31411">
-                    Nós fizemos isso …
-                  </p>
+                    {t("t0952")}</p>
                 </div>
                 <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="4:31412" data-name="content">
                   <div className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[0] relative shrink-0 text-[#fafafb] text-[20px] tracking-[-0.2px] w-full" data-node-id="4:31413">
-                    <p className="leading-[1.4] mb-0">Sondagem com 7 perguntas</p>
-                    <p className="leading-[1.4]">e 18 participantes.</p>
+                    <p className="leading-[1.4] mb-0">{t("t0953")}</p>
+                    <p className="leading-[1.4]">{t("t0954")}</p>
                   </div>
                 </div>
               </div>
@@ -457,16 +445,13 @@ export default function ArticleRegraIncerta() {
                 </div>
                 <div className="[word-break:break-word] content-stretch flex flex-col font-['Sora:Regular'] font-normal gap-[12px] items-center justify-center leading-[normal] relative shrink-0 text-[#fafafb] whitespace-nowrap" data-node-id="4:31636" data-name="title">
                   <p className="relative shrink-0 text-[30px] tracking-[-0.3px]" data-node-id="4:31637">
-                    Fatos
-                  </p>
+                    {t("t0706")}</p>
                   <p className="relative shrink-0 text-[20px] tracking-[-0.2px]" data-node-id="4:31638">
-                    … e descobrimos isso …
-                  </p>
+                    {t("t0955")}</p>
                 </div>
                 <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="4:31639" data-name="content">
                   <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.4] relative shrink-0 text-[#fafafb] text-[20px] tracking-[-0.2px] w-full" data-node-id="4:31640">
-                    64.5% dos procuradores não baixaram.
-                  </p>
+                    {t("t0956")}</p>
                 </div>
               </div>
             </div>
@@ -568,16 +553,13 @@ export default function ArticleRegraIncerta() {
                 </div>
                 <div className="[word-break:break-word] content-stretch flex flex-col font-['Sora:Regular'] font-normal gap-[12px] items-center justify-center leading-[normal] relative shrink-0 text-[#fafafb] whitespace-nowrap" data-node-id="4:31818" data-name="title">
                   <p className="relative shrink-0 text-[30px] tracking-[-0.3px]" data-node-id="4:31819">
-                    Insights
-                  </p>
+                    {t("t0708")}</p>
                   <p className="relative shrink-0 text-[20px] tracking-[-0.2px]" data-node-id="4:31820">
-                    … o que nos faz pensar isso…
-                  </p>
+                    {t("t0957")}</p>
                 </div>
                 <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="4:31821" data-name="content">
                   <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.4] relative shrink-0 text-[#fafafb] text-[20px] tracking-[-0.2px] w-full" data-node-id="4:31822">
-                    Melhorar a disposição das informações.
-                  </p>
+                    {t("t0958")}</p>
                 </div>
               </div>
             </div>
@@ -588,16 +570,13 @@ export default function ArticleRegraIncerta() {
                 </div>
                 <div className="[word-break:break-word] content-stretch flex flex-col font-['Sora:Regular'] font-normal gap-[12px] items-center justify-center leading-[normal] relative shrink-0 text-[#fafafb] whitespace-nowrap" data-node-id="4:31835" data-name="title">
                   <p className="relative shrink-0 text-[30px] tracking-[-0.3px]" data-node-id="4:31836">
-                    Conclusões
-                  </p>
+                    {t("t0959")}</p>
                   <p className="relative shrink-0 text-[20px] tracking-[-0.2px]" data-node-id="4:31837">
-                    … então vamos fazer isso.
-                  </p>
+                    {t("t0960")}</p>
                 </div>
                 <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="4:31838" data-name="content">
                   <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.4] relative shrink-0 text-[#fafafb] text-[20px] tracking-[-0.2px] w-full" data-node-id="4:31839">
-                    Teste de usabilidade na nova proposta.
-                  </p>
+                    {t("t0961")}</p>
                 </div>
               </div>
             </div>
@@ -611,8 +590,7 @@ export default function ArticleRegraIncerta() {
           </p>
           <div className="content-stretch flex flex-[1_0_0] flex-col gap-[10px] items-start justify-center min-w-px relative" data-node-id="4:31843" data-name="div.flex.flex-col.flex-1">
             <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.4] relative shrink-0 text-[#000102] text-[16px] whitespace-nowrap" data-node-id="4:31844">
-              Referências de marca
-            </p>
+              {t("t0962")}</p>
           </div>
         </div>
         <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="4:31846">
@@ -684,14 +662,13 @@ export default function ArticleRegraIncerta() {
           </p>
           <div className="content-stretch flex flex-[1_0_0] flex-col gap-[10px] items-start justify-center min-w-px relative" data-node-id="4:31863" data-name="div.flex.flex-col.flex-1">
             <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.4] relative shrink-0 text-[#000102] text-[16px] w-[328px]" data-node-id="4:31864">
-              Identidade visual SPVAT
-            </p>
+              {t("t0963")}</p>
           </div>
         </div>
         <div className="h-[293px] relative shrink-0 w-full" data-node-id="4:31866" data-name="div.grid.grid-cols-12.gap-8.w-full" />
       </div>
       <div className="content-stretch flex flex-col gap-[24px] h-[1080px] isolate items-center justify-center overflow-clip px-[160px] py-[112px] relative shrink-0 w-[1920px]" data-node-id="4:31874" data-name="section.step.test">
-        <div className="content-stretch flex gap-[24px] items-start relative shrink-0 z-[4]" data-node-id="4:31875" data-name="figure.artifact-visual">
+        <div className="content-stretch flex gap-[24px] items-start relative shrink-0 z-[4]" data-node-id="4:31875" data-name="figure.artifact-visual" data-section-id="artifacts">
           <div className="bg-white border-4 border-[#bbbcbe] border-solid content-stretch flex flex-col h-[788px] isolate items-center justify-end overflow-clip relative rounded-[16px] shadow-[0px_16px_48px_0px_rgba(0,0,0,0.17)] shrink-0 w-[360px]" data-node-id="4:31924" data-name="Splash Screan">
             <div className="content-stretch flex h-[40px] items-center justify-between leading-[0] px-[16px] py-[8px] relative shrink-0 w-full z-[5]" data-node-id="4:31925" data-name="Device/Device frame components/status bar">
               <div className="[word-break:break-word] flex flex-col font-['Roboto:Medium'] font-medium justify-center relative shrink-0 text-[#f7fafa] text-[14px] tracking-[0.14px] whitespace-nowrap" data-node-id="I4:31925;50758:11370" style={{ fontVariationSettings: '"wdth" 100', fontFeatureSettings: '"ss02" 1, "dlig" 1, "lnum" 1, "pnum" 1' }}>
@@ -718,8 +695,8 @@ export default function ArticleRegraIncerta() {
                   <div className="bg-[#f39200] h-full relative shrink-0 w-px" />
                 </div>
                 <div className="[word-break:break-word] font-['CAIXA_Std:SemiBold'] leading-[0] not-italic relative shrink-0 text-[10px] text-white uppercase whitespace-nowrap" data-node-id="4:31930">
-                  <p className="leading-[12px] mb-0 whitespace-pre">{`Agente `}</p>
-                  <p className="leading-[12px] whitespace-pre">Operador</p>
+                  <p className="leading-[12px] mb-0 whitespace-pre">{t("t0641")}</p>
+                  <p className="leading-[12px] whitespace-pre">{t("t0642")}</p>
                 </div>
               </div>
             </div>
@@ -734,7 +711,7 @@ export default function ArticleRegraIncerta() {
                       help
                     </p>
                     <div className="flex flex-col font-['CAIXA_Std:Regular'] h-[28px] justify-center leading-[0] min-h-[28px] min-w-full not-italic relative shrink-0 text-[12px] tracking-[-0.24px] w-[min-content]" data-node-id="I4:31935;4237:28797">
-                      <p className="leading-[1.2]">Preciso de ajuda</p>
+                      <p className="leading-[1.2]">{t("t0964")}</p>
                     </div>
                   </div>
                   <div className="bg-[#f7fafa] content-stretch drop-shadow-[0px_3px_3px_rgba(0,0,0,0.16)] flex flex-[1_0_0] flex-col gap-[8px] h-[80px] items-start justify-center min-w-px p-[8px] relative rounded-[6px]" data-node-id="4:31936" data-name="🧩DS-SPVAT Buttons Card">
@@ -743,10 +720,8 @@ export default function ArticleRegraIncerta() {
                     </p>
                     <div className="flex flex-col font-['CAIXA_Std:Regular'] h-[28px] justify-center leading-[0] min-h-[28px] min-w-full not-italic relative shrink-0 text-[12px] tracking-[-0.24px] w-[min-content]" data-node-id="I4:31936;4237:28797">
                       <p className="leading-[1.2]">
-                        Guia de
-                        <br aria-hidden />
-                        pagamento
-                      </p>
+                        {t("t0965")}<br aria-hidden />
+                        {t("t1083")}</p>
                     </div>
                   </div>
                   <div className="bg-[#f7fafa] content-stretch drop-shadow-[0px_3px_3px_rgba(0,0,0,0.16)] flex flex-[1_0_0] flex-col gap-[8px] h-[80px] items-start justify-center min-w-px p-[8px] relative rounded-[6px]" data-node-id="4:31937" data-name="🧩DS-SPVAT Buttons Card">
@@ -754,7 +729,7 @@ export default function ArticleRegraIncerta() {
                       event
                     </p>
                     <div className="flex flex-col font-['CAIXA_Std:Regular'] h-[28px] justify-center leading-[0] min-h-[28px] min-w-full not-italic relative shrink-0 text-[12px] tracking-[-0.24px] w-[min-content]" data-node-id="I4:31937;4237:28797">
-                      <p className="leading-[1.2]">{`Calendário de solicitações `}</p>
+                      <p className="leading-[1.2]">{t("t0966")}</p>
                     </div>
                   </div>
                 </div>
@@ -764,8 +739,7 @@ export default function ArticleRegraIncerta() {
                       login
                     </p>
                     <p className="font-['CAIXA_Std:Regular'] leading-[1.5] not-italic relative shrink-0 text-[14px]" data-node-id="I4:31939;656:8802">
-                      Entre
-                    </p>
+                      {t("t0967")}</p>
                   </div>
                 </div>
               </div>
@@ -797,13 +771,12 @@ export default function ArticleRegraIncerta() {
           </p>
           <div className="content-stretch flex flex-[1_0_0] flex-col gap-[10px] items-start justify-center min-w-px relative" data-node-id="4:32004" data-name="div.flex.flex-col.flex-1">
             <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.4] relative shrink-0 text-[#000102] text-[16px] w-[328px]" data-node-id="4:32005">
-              Protótipo mobile
-            </p>
+              {t("t0968")}</p>
           </div>
         </div>
       </div>
       <div className="content-stretch flex flex-col gap-[24px] h-[1080px] items-start justify-center overflow-clip px-[160px] py-[112px] relative shrink-0 w-[1920px]" data-node-id="4:32007" data-name="section.step.test">
-        <div className="content-stretch flex gap-[24px] items-start relative shrink-0" data-node-id="4:32008" data-name="figure.artifact-visual">
+        <div className="content-stretch flex gap-[24px] items-start relative shrink-0" data-node-id="4:32008" data-name="figure.artifact-visual" data-section-id="artifacts">
           <div className="bg-white content-stretch flex flex-col isolate items-start min-h-[720px] overflow-clip relative rounded-[16px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.08)] shrink-0 w-[360px]" data-node-id="4:32009" data-name="Carregamento">
             <div className="content-stretch flex h-[40px] items-center justify-between leading-[0] px-[16px] py-[8px] relative shrink-0 w-full z-[3]" data-node-id="4:32010" data-name="Device/Device frame components/status bar">
               <div className="[word-break:break-word] flex flex-col font-['Roboto:Medium'] font-medium justify-center relative shrink-0 text-[#64747a] text-[14px] tracking-[0.14px] whitespace-nowrap" data-node-id="I4:32010;50758:11370" style={{ fontVariationSettings: '"wdth" 100', fontFeatureSettings: '"ss02" 1, "dlig" 1, "lnum" 1, "pnum" 1' }}>
@@ -859,11 +832,10 @@ export default function ArticleRegraIncerta() {
                 </div>
               </div>
               <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:Regular'] justify-center leading-[0] min-w-full not-italic relative shrink-0 text-[20px] text-center text-white tracking-[-0.4px] w-[min-content]" data-node-id="4:32019">
-                <p className="leading-[1.5]">O DPVAT agora é SPVAT</p>
+                <p className="leading-[1.5]">{t("t0969")}</p>
               </div>
               <p className="[word-break:break-word] font-['CAIXA_Std:Book'] leading-[1.6] min-w-full not-italic relative shrink-0 text-[16px] text-white tracking-[-0.5px] w-[min-content]" data-node-id="4:32020">
-                O SPVAT chegou na CAIXA para apoiar as vítimas de acidente de trânsito em todo o Brasil. Conheça as novidades!
-              </p>
+                {t("t0970")}</p>
               <div className="content-stretch flex gap-[9px] items-center relative shrink-0" data-node-id="4:32021" data-name="dots">
                 <div className="relative shrink-0 size-[8px]" data-node-id="4:32022" data-name="Pagin/Dots/Active Dot">
                   <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPaginDotsActiveDot} />
@@ -916,8 +888,8 @@ export default function ArticleRegraIncerta() {
                         <div className="bg-[#f39200] h-full relative shrink-0 w-[0.492px]" />
                       </div>
                       <div className="[word-break:break-word] font-['CAIXA_Std:SemiBold'] leading-[0] not-italic relative shrink-0 text-[4.915px] text-white uppercase whitespace-nowrap" data-node-id="4:32037">
-                        <p className="leading-[5.899px] mb-0 whitespace-pre">{`Agente `}</p>
-                        <p className="leading-[5.899px] whitespace-pre">Operador</p>
+                        <p className="leading-[5.899px] mb-0 whitespace-pre">{t("t0641")}</p>
+                        <p className="leading-[5.899px] whitespace-pre">{t("t0642")}</p>
                       </div>
                     </div>
                   </div>
@@ -932,7 +904,7 @@ export default function ArticleRegraIncerta() {
                             help
                           </p>
                           <div className="flex flex-col font-['CAIXA_Std:Regular'] h-[13.763px] justify-center leading-[0] min-h-[13.763383269309998px] min-w-full not-italic relative shrink-0 text-[5.9px] tracking-[-0.118px] w-[min-content]" data-node-id="I4:32042;4237:28797">
-                            <p className="leading-[1.2]">Preciso de ajuda</p>
+                            <p className="leading-[1.2]">{t("t0964")}</p>
                           </div>
                         </div>
                         <div className="bg-[#f7fafa] content-stretch drop-shadow-[0px_1.475px_1.475px_rgba(0,0,0,0.16)] flex flex-col gap-[3.932px] h-[39.324px] items-start justify-center p-[3.932px] relative rounded-[6px] shrink-0 w-[48.5px]" data-node-id="4:32043" data-name="🧩DS-SPVAT Buttons Card">
@@ -941,10 +913,8 @@ export default function ArticleRegraIncerta() {
                           </p>
                           <div className="flex flex-col font-['CAIXA_Std:Regular'] h-[13.763px] justify-center leading-[0] min-h-[13.763383269309998px] min-w-full not-italic relative shrink-0 text-[5.9px] tracking-[-0.118px] w-[min-content]" data-node-id="I4:32043;4237:28797">
                             <p className="leading-[1.2]">
-                              Guia de
-                              <br aria-hidden />
-                              pagamento
-                            </p>
+                              {t("t0965")}<br aria-hidden />
+                              {t("t1083")}</p>
                           </div>
                         </div>
                         <div className="bg-[#f7fafa] content-stretch drop-shadow-[0px_1.475px_1.475px_rgba(0,0,0,0.16)] flex flex-col gap-[3.932px] h-[39.324px] items-start justify-center p-[3.932px] relative rounded-[6px] shrink-0 w-[48.5px]" data-node-id="4:32044" data-name="🧩DS-SPVAT Buttons Card">
@@ -952,7 +922,7 @@ export default function ArticleRegraIncerta() {
                             event
                           </p>
                           <div className="flex flex-col font-['CAIXA_Std:Regular'] h-[13.763px] justify-center leading-[0] min-h-[13.763383269309998px] min-w-full not-italic relative shrink-0 text-[5.9px] tracking-[-0.118px] w-[min-content]" data-node-id="I4:32044;4237:28797">
-                            <p className="leading-[1.2]">{`Calendário de solicitações `}</p>
+                            <p className="leading-[1.2]">{t("t0966")}</p>
                           </div>
                         </div>
                       </div>
@@ -962,8 +932,7 @@ export default function ArticleRegraIncerta() {
                             login
                           </p>
                           <p className="font-['CAIXA_Std:Regular'] leading-[1.5] not-italic relative shrink-0 text-[6.88px]" data-node-id="I4:32046;656:8802">
-                            Entre
-                          </p>
+                            {t("t0967")}</p>
                         </div>
                       </div>
                     </div>
@@ -993,8 +962,7 @@ export default function ArticleRegraIncerta() {
             <div className="bg-[#005ca9] content-stretch drop-shadow-[0px_-4px_3px_rgba(18,22,28,0.2)] flex items-start justify-center p-[16px] relative shrink-0 w-full" data-node-id="4:32055" data-name="footer">
               <div className="[word-break:break-word] bg-white border border-[#005ca9] border-solid content-stretch drop-shadow-[0px_0px_4px_rgba(18,22,28,0.3)] flex flex-[1_0_0] gap-[8px] items-center justify-center min-h-[48px] min-w-[40px] px-[16px] py-[8px] relative rounded-[4px] text-[#005ca9] text-[16px] whitespace-nowrap" data-node-id="4:32056" data-name="💥 \DSC\Buttons">
                 <p className="font-['CAIXA_Std:Regular'] leading-[1.5] not-italic relative shrink-0" data-node-id="I4:32056;656:8697">
-                  Continuar
-                </p>
+                  {t("t0938")}</p>
                 <p className="font-['Material_Symbols_Outlined:Bold'] font-bold leading-[normal] relative shrink-0" data-node-id="I4:32056;656:8698" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                   arrow_forward
                 </p>
@@ -1027,8 +995,8 @@ export default function ArticleRegraIncerta() {
                   <div className="bg-[#f39200] h-full relative shrink-0 w-px" />
                 </div>
                 <div className="[word-break:break-word] font-['CAIXA_Std:SemiBold'] leading-[0] not-italic relative shrink-0 text-[10px] text-white uppercase whitespace-nowrap" data-node-id="4:32063">
-                  <p className="leading-[12px] mb-0 whitespace-pre">{`Agente `}</p>
-                  <p className="leading-[12px] whitespace-pre">Operador</p>
+                  <p className="leading-[12px] mb-0 whitespace-pre">{t("t0641")}</p>
+                  <p className="leading-[12px] whitespace-pre">{t("t0642")}</p>
                 </div>
               </div>
             </div>
@@ -1043,7 +1011,7 @@ export default function ArticleRegraIncerta() {
                       help
                     </p>
                     <div className="flex flex-col font-['CAIXA_Std:Regular'] h-[28px] justify-center leading-[0] min-h-[28px] min-w-full not-italic relative shrink-0 text-[12px] tracking-[-0.24px] w-[min-content]" data-node-id="I4:32068;4237:28797">
-                      <p className="leading-[1.2]">Preciso de ajuda</p>
+                      <p className="leading-[1.2]">{t("t0964")}</p>
                     </div>
                   </div>
                   <div className="bg-[#f7fafa] content-stretch drop-shadow-[0px_3px_3px_rgba(0,0,0,0.16)] flex flex-[1_0_0] flex-col gap-[8px] h-[80px] items-start justify-center min-w-px p-[8px] relative rounded-[6px]" data-node-id="4:32069" data-name="🧩DS-SPVAT Buttons Card">
@@ -1052,10 +1020,8 @@ export default function ArticleRegraIncerta() {
                     </p>
                     <div className="flex flex-col font-['CAIXA_Std:Regular'] h-[28px] justify-center leading-[0] min-h-[28px] min-w-full not-italic relative shrink-0 text-[12px] tracking-[-0.24px] w-[min-content]" data-node-id="I4:32069;4237:28797">
                       <p className="leading-[1.2]">
-                        Guia de
-                        <br aria-hidden />
-                        pagamento
-                      </p>
+                        {t("t0965")}<br aria-hidden />
+                        {t("t1083")}</p>
                     </div>
                   </div>
                   <div className="bg-[#f7fafa] content-stretch drop-shadow-[0px_3px_3px_rgba(0,0,0,0.16)] flex flex-[1_0_0] flex-col gap-[8px] h-[80px] items-start justify-center min-w-px p-[8px] relative rounded-[6px]" data-node-id="4:32070" data-name="🧩DS-SPVAT Buttons Card">
@@ -1063,7 +1029,7 @@ export default function ArticleRegraIncerta() {
                       event
                     </p>
                     <div className="flex flex-col font-['CAIXA_Std:Regular'] h-[28px] justify-center leading-[0] min-h-[28px] min-w-full not-italic relative shrink-0 text-[12px] tracking-[-0.24px] w-[min-content]" data-node-id="I4:32070;4237:28797">
-                      <p className="leading-[1.2]">{`Calendário de solicitações `}</p>
+                      <p className="leading-[1.2]">{t("t0966")}</p>
                     </div>
                   </div>
                 </div>
@@ -1073,8 +1039,7 @@ export default function ArticleRegraIncerta() {
                       login
                     </p>
                     <p className="font-['CAIXA_Std:Regular'] leading-[1.5] not-italic relative shrink-0 text-[14px]" data-node-id="I4:32072;656:8802">
-                      Entre
-                    </p>
+                      {t("t0967")}</p>
                   </div>
                 </div>
               </div>
@@ -1110,12 +1075,12 @@ export default function ArticleRegraIncerta() {
               <div className="content-stretch flex gap-[16px] items-center relative shrink-0" data-node-id="4:32081">
                 <div className="bg-[#005ca9] border border-[#e5f1fc] border-solid content-stretch flex items-center justify-center p-[8px] relative rounded-[40px] shrink-0 size-[40px]" data-node-id="4:32082" data-name="🧩\DS-DPVAT\Avatar">
                   <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:Bold'] justify-center leading-[0] not-italic relative shrink-0 text-[#e5f1fc] text-[14px] text-center whitespace-nowrap" data-node-id="4:32083">
-                    <p className="leading-none">RO</p>
+                    <p className="leading-none">{t("t0862")}</p>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="4:32084" data-name="Name">
                   <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#005ca9] text-[18px] whitespace-nowrap" data-node-id="4:32085">
-                    <p className="leading-[1.2]">Bem vindo, Renan O!</p>
+                    <p className="leading-[1.2]">{t("t0971")}</p>
                   </div>
                 </div>
               </div>
@@ -1128,7 +1093,7 @@ export default function ArticleRegraIncerta() {
             <div className="content-stretch flex flex-col h-[570px] items-start relative shrink-0 w-full z-[3]" data-node-id="4:32091">
               <div className="content-stretch flex gap-[16px] items-center p-[16px] relative shrink-0 w-full" data-node-id="4:32092" data-name="indenizacoes">
                 <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:Regular'] justify-center leading-[0] min-w-px not-italic relative text-[#3a4859] text-[16px]" data-node-id="4:32093">
-                  <p className="leading-none">Meu SPVAT</p>
+                  <p className="leading-none">{t("t0972")}</p>
                 </div>
               </div>
               <div className="content-start flex flex-wrap gap-[16px] items-start p-[16px] relative shrink-0 w-full" data-node-id="4:32100" data-name="laudos/pendencias">
@@ -1198,10 +1163,10 @@ export default function ArticleRegraIncerta() {
                   </div>
                   <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start justify-center leading-[0] min-w-px not-italic relative" data-node-id="I4:32101;4237:30018" data-name="text">
                     <div className="flex flex-col font-['CAIXA_Std:Regular'] justify-center relative shrink-0 text-[#3a4859] text-[16px] tracking-[-0.16px] w-full" data-node-id="I4:32101;4237:30019">
-                      <p className="leading-[1.3]">{`Solicite agora `}</p>
+                      <p className="leading-[1.3]">{t("t0973")}</p>
                     </div>
                     <div className="flex flex-col font-['CAIXA_Std:Book'] justify-center relative shrink-0 text-[#404b52] text-[12px] w-full" data-node-id="I4:32101;4237:30020">
-                      <p className="leading-[1.3]">{`Inicie a solicitação de uma indenização `}</p>
+                      <p className="leading-[1.3]">{t("t0974")}</p>
                     </div>
                   </div>
                 </div>
@@ -1396,17 +1361,17 @@ export default function ArticleRegraIncerta() {
                   </div>
                   <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start justify-center leading-[0] min-w-px not-italic relative" data-node-id="I4:32105;4237:34463" data-name="text">
                     <div className="flex flex-col font-['CAIXA_Std:Regular'] justify-center relative shrink-0 text-[#3a4859] text-[16px] tracking-[-0.16px] w-full" data-node-id="I4:32105;4237:34464">
-                      <p className="leading-[1.3]">Acompanhe as solicitações</p>
+                      <p className="leading-[1.3]">{t("t0975")}</p>
                     </div>
                     <div className="flex flex-col font-['CAIXA_Std:Book'] justify-center relative shrink-0 text-[#404b52] text-[12px] w-full" data-node-id="I4:32105;4237:34465">
-                      <p className="leading-[1.3]">Veja a situação da sua solicitação</p>
+                      <p className="leading-[1.3]">{t("t0976")}</p>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="content-stretch flex items-center p-[16px] relative shrink-0 w-full" data-node-id="4:32106" data-name="indenizacoes">
                 <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:Regular'] justify-center leading-[0] min-w-px not-italic relative text-[#3a4859] text-[16px]" data-node-id="4:32107">
-                  <p className="leading-none">Mais SPVAT para você</p>
+                  <p className="leading-none">{t("t0977")}</p>
                 </div>
               </div>
               <div className="[word-break:break-word] content-stretch flex gap-[16px] items-start p-[16px] relative shrink-0 text-[#005ca9] w-full" data-node-id="4:32108" data-name="atalhos">
@@ -1415,7 +1380,7 @@ export default function ArticleRegraIncerta() {
                     receipt_long
                   </p>
                   <div className="flex flex-col font-['CAIXA_Std:Regular'] h-[28px] justify-center leading-[0] min-h-[28px] min-w-full not-italic relative shrink-0 text-[12px] text-center tracking-[-0.24px] w-[min-content]" data-node-id="I4:32109;4237:28797">
-                    <p className="leading-[1.2]">Modelos de documentos</p>
+                    <p className="leading-[1.2]">{t("t0978")}</p>
                   </div>
                 </div>
                 <div className="bg-[#f7fafa] content-stretch drop-shadow-[0px_3px_3px_rgba(0,0,0,0.16)] flex flex-[1_0_0] flex-col gap-[8px] h-[90px] items-start justify-center min-w-px p-[8px] relative rounded-[6px]" data-node-id="4:32111" data-name="🧩DS-SPVAT Buttons Card">
@@ -1423,7 +1388,7 @@ export default function ArticleRegraIncerta() {
                     payments
                   </p>
                   <div className="flex flex-col font-['CAIXA_Std:Regular'] h-[28px] justify-center leading-[0] min-h-[28px] min-w-full not-italic relative shrink-0 text-[12px] tracking-[-0.24px] w-[min-content]" data-node-id="I4:32111;4237:28797">
-                    <p className="leading-[1.2]">Arrecadação</p>
+                    <p className="leading-[1.2]">{t("t0979")}</p>
                   </div>
                 </div>
                 <div className="bg-[#f7fafa] content-stretch drop-shadow-[0px_3px_3px_rgba(0,0,0,0.16)] flex flex-[1_0_0] flex-col gap-[8px] h-[90px] items-start justify-center min-w-px p-[8px] relative rounded-[6px]" data-node-id="4:32112" data-name="🧩DS-SPVAT Buttons Card">
@@ -1431,7 +1396,7 @@ export default function ArticleRegraIncerta() {
                     mintmark
                   </p>
                   <div className="flex flex-col font-['CAIXA_Std:Regular'] h-[28px] justify-center leading-[0] min-h-[28px] min-w-full not-italic relative shrink-0 text-[12px] tracking-[-0.24px] w-[min-content]" data-node-id="I4:32112;4237:28797">
-                    <p className="leading-[1.2]">Devolução</p>
+                    <p className="leading-[1.2]">{t("t0980")}</p>
                   </div>
                 </div>
               </div>
@@ -1441,7 +1406,7 @@ export default function ArticleRegraIncerta() {
                 <p className="[word-break:break-word] font-['Material_Symbols_Outlined:Regular'] font-normal leading-none relative shrink-0 text-[#005ca9] text-[16px] whitespace-nowrap" data-node-id="I4:32113;4506:6483;4505:6611" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                   home
                 </p>
-                <p className="[word-break:break-word] font-['CAIXA_Std:Regular'] leading-none min-w-full not-italic relative shrink-0 text-[#005ca9] text-[12px] text-center tracking-[-0.24px] w-[min-content]" data-node-id="I4:32113;4506:6483;4505:6612">{`Início `}</p>
+                <p className="[word-break:break-word] font-['CAIXA_Std:Regular'] leading-none min-w-full not-italic relative shrink-0 text-[#005ca9] text-[12px] text-center tracking-[-0.24px] w-[min-content]" data-node-id="I4:32113;4506:6483;4505:6612">{t("t0554")}</p>
                 <div className="bg-[#005ca9] h-[2px] relative rounded-[10px] shrink-0 w-[40px]" data-node-id="I4:32113;4506:6483;4506:6540" data-name="barra" />
               </div>
               <DscNavButtons className="content-stretch flex flex-[1_0_0] flex-col gap-[4px] h-[70px] items-center justify-center min-h-[70px] min-w-px relative rounded-[4px]" />
@@ -1477,7 +1442,7 @@ export default function ArticleRegraIncerta() {
                 </div>
                 <div className="content-stretch flex flex-[1_0_0] gap-[8px] items-center min-w-px relative" data-node-id="I4:32117;4474:16237" data-name="headline">
                   <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-white whitespace-nowrap" data-node-id="I4:32117;5384:30056">
-                    <p className="leading-[28px]">Indenização</p>
+                    <p className="leading-[28px]">{t("t0846")}</p>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-[1_0_0] h-[64px] items-center justify-end min-w-px relative" data-node-id="I4:32117;4474:16243" data-name="actions" />
@@ -1485,7 +1450,7 @@ export default function ArticleRegraIncerta() {
             </div>
             <div className="content-stretch flex items-center min-h-[80px] p-[16px] relative shrink-0 w-full z-[4]" data-node-id="4:32118" data-name="indenizacoes">
               <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:Regular'] justify-center leading-[0] min-w-px not-italic relative text-[#3a4859] text-[18px]" data-node-id="4:32119">
-                <p className="leading-[1.2]">Qual tipo de indenização você precisa?</p>
+                <p className="leading-[1.2]">{t("t0981")}</p>
               </div>
             </div>
             <div className="content-start flex flex-[1_0_0] flex-wrap gap-[16px] items-start min-h-px p-[16px] relative w-full z-[3]" data-node-id="4:32120" data-name="laudos/pendencias">
@@ -1495,7 +1460,7 @@ export default function ArticleRegraIncerta() {
                 </div>
                 <div className="content-stretch flex flex-col gap-[8px] items-start justify-center relative shrink-0 w-full" data-node-id="I4:32121;3621:103273" data-name="text">
                   <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#3a4859] text-[14px] tracking-[-0.14px] w-full" data-node-id="I4:32121;3621:103274">
-                    <p className="leading-[1.3]">Invalidez permanente</p>
+                    <p className="leading-[1.3]">{t("t0982")}</p>
                   </div>
                 </div>
               </div>
@@ -1505,7 +1470,7 @@ export default function ArticleRegraIncerta() {
                 </div>
                 <div className="content-stretch flex flex-col gap-[8px] items-start justify-center relative shrink-0 w-full" data-node-id="I4:32122;4480:8423" data-name="text">
                   <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#3a4859] text-[14px] tracking-[-0.14px] w-full" data-node-id="I4:32122;4480:8424">
-                    <p className="leading-[1.3]">Reabilitação profissional</p>
+                    <p className="leading-[1.3]">{t("t0983")}</p>
                   </div>
                 </div>
               </div>
@@ -1515,7 +1480,7 @@ export default function ArticleRegraIncerta() {
                 </div>
                 <div className="content-stretch flex flex-col gap-[8px] items-start justify-center relative shrink-0 w-full" data-node-id="I4:32123;3621:103301" data-name="text">
                   <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#3a4859] text-[14px] tracking-[-0.14px] w-full" data-node-id="I4:32123;3621:103302">
-                    <p className="leading-[1.3]">Indenização por morte</p>
+                    <p className="leading-[1.3]">{t("t0984")}</p>
                   </div>
                 </div>
               </div>
@@ -1525,7 +1490,7 @@ export default function ArticleRegraIncerta() {
                 </div>
                 <div className="content-stretch flex flex-col gap-[8px] items-start justify-center relative shrink-0 w-full" data-node-id="I4:32124;4480:8449" data-name="text">
                   <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#3a4859] text-[14px] tracking-[-0.14px] w-full" data-node-id="I4:32124;4480:8450">
-                    <p className="leading-[1.3]">Serviços funerários</p>
+                    <p className="leading-[1.3]">{t("t0985")}</p>
                   </div>
                 </div>
               </div>
@@ -1535,7 +1500,7 @@ export default function ArticleRegraIncerta() {
                 </div>
                 <div className="content-stretch flex flex-col gap-[8px] items-start justify-center relative shrink-0 w-full" data-node-id="I4:32125;3621:103180" data-name="text">
                   <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#3a4859] text-[14px] tracking-[-0.14px] w-full" data-node-id="I4:32125;3621:103181">
-                    <p className="leading-[1.3]">Despesas médicas e suplementares</p>
+                    <p className="leading-[1.3]">{t("t0986")}</p>
                   </div>
                 </div>
               </div>
@@ -1545,7 +1510,7 @@ export default function ArticleRegraIncerta() {
                 </div>
                 <div className="content-stretch flex flex-col gap-[8px] items-start justify-center relative shrink-0 w-full" data-node-id="I4:32126;3621:103273" data-name="text">
                   <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#3a4859] text-[14px] tracking-[-0.14px] w-full" data-node-id="I4:32126;3621:103274">
-                    <p className="leading-[1.3]">Saiba mais sobre elas</p>
+                    <p className="leading-[1.3]">{t("t0987")}</p>
                   </div>
                 </div>
               </div>
@@ -1562,16 +1527,14 @@ export default function ArticleRegraIncerta() {
           </p>
           <div className="content-stretch flex flex-[1_0_0] flex-col gap-[10px] items-start justify-center min-w-px relative" data-node-id="4:32132" data-name="div.flex.flex-col.flex-1">
             <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.4] relative shrink-0 text-[#000102] text-[16px] w-[328px]" data-node-id="4:32133">
-              Estados da solicitação
-            </p>
+              {t("t0988")}</p>
           </div>
         </div>
       </div>
-      <div className="content-stretch flex flex-col h-[1080px] items-start justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:32135" data-name="section.results">
+      <div className="content-stretch flex flex-col h-[1080px] items-start justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:32135" data-name="section.results" data-section-id="results">
         <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full" data-node-id="4:32136" data-name="div.flex.flex-col.w-full">
-          <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.3] relative shrink-0 text-[#0d0e10] text-[16px] tracking-[0.64px] w-[900px]" data-node-id="4:32137">
-            04 · EVIDÊNCIAS E RESULTADOS
-          </p>
+          <h2 className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.3] relative shrink-0 text-[#0d0e10] text-[16px] tracking-[0.64px] w-[900px]" data-node-id="4:32137">
+            {t("t0149")}</h2>
           <div className="content-start flex flex-wrap gap-[32px] h-[100px] items-start overflow-clip relative shrink-0 w-[1378px]" data-node-id="4:32138" data-name="div.metrics">
             <div className="content-stretch flex items-end relative shrink-0 w-[438px]" data-node-id="4:32139" data-name="metric-result.evidence">
               <div className="bg-[#020305] content-stretch flex flex-col items-center justify-center max-h-[100px] min-h-[100px] min-w-[100px] px-[16px] py-[4px] relative rounded-[8px] shrink-0" data-node-id="I4:32139;6312:1003" data-name="number">
@@ -1583,11 +1546,9 @@ export default function ArticleRegraIncerta() {
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-full items-start justify-center min-w-px relative" data-name="content">
                   <div className="[word-break:break-word] bg-[#101113] content-stretch flex flex-col font-['Sora:Regular'] font-normal gap-[8px] items-start leading-none p-[16px] relative rounded-br-[8px] rounded-tr-[8px] shrink-0 text-[#fcfdfe] w-full whitespace-nowrap" data-node-id="I4:32139;6312:1006" data-name="<title>">
                     <p className="relative shrink-0 text-[20px]" data-node-id="I4:32139;6312:1007">
-                      sucesso da tarefa
-                    </p>
+                      {t("t0152")}</p>
                     <p className="relative shrink-0 text-[13px]" data-node-id="I4:32139;6312:1008">
-                      (Task Success · não medido)
-                    </p>
+                      {t("t0153")}</p>
                   </div>
                 </div>
               </div>
@@ -1602,11 +1563,9 @@ export default function ArticleRegraIncerta() {
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-full items-start justify-center min-w-px relative" data-name="content">
                   <div className="[word-break:break-word] bg-[#101113] content-stretch flex flex-col font-['Sora:Regular'] font-normal gap-[8px] items-start leading-none p-[16px] relative rounded-br-[8px] rounded-tr-[8px] shrink-0 text-[#fcfdfe] w-full whitespace-nowrap" data-node-id="I4:32140;6312:1006" data-name="<title>">
                     <p className="relative shrink-0 text-[20px]" data-node-id="I4:32140;6312:1007">
-                      erros no fluxo
-                    </p>
+                      {t("t0989")}</p>
                     <p className="relative shrink-0 text-[13px]" data-node-id="I4:32140;6312:1008">
-                      (Error Rate · não medido)
-                    </p>
+                      {t("t0990")}</p>
                   </div>
                 </div>
               </div>
@@ -1614,27 +1573,24 @@ export default function ArticleRegraIncerta() {
             <div className="content-stretch flex items-end relative shrink-0 w-[438px]" data-node-id="4:32141" data-name="metric-result.product.outcome">
               <div className="bg-[#020305] content-stretch flex flex-col items-center justify-center max-h-[100px] min-h-[100px] min-w-[100px] px-[16px] py-[4px] relative rounded-[8px] shrink-0" data-node-id="I4:32141;6312:1003" data-name="number">
                 <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-none relative shrink-0 text-[#fcfdfe] text-[20px] whitespace-nowrap" data-node-id="I4:32141;6312:1004">
-                  574 mil+
-                </p>
+                  {t("t0614")}</p>
               </div>
               <div className="flex flex-[1_0_0] flex-row items-end self-stretch" data-node-id="I4:32141;6312:1005">
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-full items-start justify-center min-w-px relative" data-name="content">
                   <div className="[word-break:break-word] bg-[#101113] content-stretch flex flex-col font-['Sora:Regular'] font-normal gap-[8px] items-start leading-none p-[16px] relative rounded-br-[8px] rounded-tr-[8px] shrink-0 text-[#fcfdfe] w-full whitespace-nowrap" data-node-id="I4:32141;6312:1006" data-name="<title>">
                     <p className="relative shrink-0 text-[20px]" data-node-id="I4:32141;6312:1007">
-                      pedidos DPVAT
-                    </p>
+                      {t("t0991")}</p>
                     <p className="relative shrink-0 text-[13px]" data-node-id="I4:32141;6312:1008">
-                      (CAIXA · 2021–2022)
-                    </p>
+                      {t("t0616")}</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[0] relative shrink-0 text-[#000102] text-[16px] w-[1040px] whitespace-pre-wrap" data-node-id="4:32143">
-            <p className="leading-[1.5] mb-0">A revisão conectou marca, jornadas e componentes em uma proposta preparada para ajustes. Os indicadores se referem à pesquisa e ao projeto, não a um aplicativo lançado.</p>
+            <p className="leading-[1.5] mb-0">{t("t0992")}</p>
             <p className="leading-[1.5] mb-0">​</p>
-            <p className="leading-[1.5]">Com a revogação da lei, qualquer retomada dependeria de novas regras, hipóteses atualizadas e validação do aplicativo.</p>
+            <p className="leading-[1.5]">{t("t0993")}</p>
           </div>
         </div>
       </div>

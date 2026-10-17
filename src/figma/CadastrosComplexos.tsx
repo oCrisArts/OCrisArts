@@ -1,4 +1,5 @@
 // @ts-nocheck -- Figma-generated exact visual component
+import { useI18n } from "../i18n";
 const assetPathPrefix = "/assets";
 const imgImgHeroImage = `${assetPathPrefix}/b1c4c.png`;
 const imgFrame2609155 = `${assetPathPrefix}/f6778.png`;
@@ -53,72 +54,64 @@ const imgAdd2 = `${assetPathPrefix}/14394.svg`;
 const imgSelectArrow1 = `${assetPathPrefix}/585ae.svg`;
 
 export default function ArticleValidacaoTardia() {
+  const { t, text, path } = useI18n();
   return (
     <div className="bg-[#eeeff1] content-stretch flex flex-col items-center relative size-full" data-node-id="4:29726" data-name="article#validacao-tardia">
       <div className="content-stretch flex flex-col gap-[32px] h-[1080px] isolate items-start justify-end overflow-clip px-[160px] py-[112px] relative shrink-0 w-[1920px]" data-node-id="4:29727" data-name="header.intro">
         <div className="[word-break:break-word] content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full z-[3]" data-node-id="4:29728" data-name="div.flex.flex-col.w-full">
-          <p className="font-['Sora:SemiBold'] font-semibold leading-[1.1] relative shrink-0 text-[#fcfdfe] text-[81px] w-[1180px]" data-node-id="4:29730">
-            Cadastros complexos?
-          </p>
+          <h1 className="font-['Sora:SemiBold'] font-semibold leading-[1.1] relative shrink-0 text-[#fcfdfe] text-[81px] w-[1180px]" data-node-id="4:29730">
+            {t("t0159")}</h1>
           <p className="font-['Sora:Regular'] font-normal leading-[1.3] relative shrink-0 text-[#fcfdfe] text-[30px] w-[980px]" data-node-id="4:29731">
-            Valide o fluxo antes do código.
-          </p>
+            {t("t0160")}</p>
           <div className="content-start flex flex-wrap gap-[12px_16px] items-start leading-[1.6] relative shrink-0 text-[#230007] w-[1600px] whitespace-nowrap" data-node-id="4:29732" data-name="ul.meta">
             <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:29733" data-name="lean-ux">
               <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:29733;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                 cycle
               </p>
               <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:29733;6066:625">
-                Lean UX
-              </p>
+                {t("t0161")}</p>
             </div>
             <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:29734" data-name="research">
               <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:29734;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                 search
               </p>
               <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:29734;6066:625">
-                Research
-              </p>
+                {t("t0162")}</p>
             </div>
             <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:29735" data-name="usability-testing">
               <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:29735;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                 touch_app
               </p>
               <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:29735;6066:625">
-                Usability Testing
-              </p>
+                {t("t0163")}</p>
             </div>
             <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:29736" data-name="project-type-1">
               <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:29736;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                 devices
               </p>
               <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:29736;6066:625">
-                Plataforma corporativa
-              </p>
+                {t("t0164")}</p>
             </div>
             <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:29737" data-name="ia-generativa">
               <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:29737;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                 auto_awesome
               </p>
               <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:29737;6066:625">
-                IA generativa
-              </p>
+                {t("t0165")}</p>
             </div>
             <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:29738" data-name="clarity">
               <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:29738;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                 visibility
               </p>
               <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:29738;6066:625">
-                Clarity
-              </p>
+                {t("t0166")}</p>
             </div>
             <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:29739" data-name="figma">
               <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:29739;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                 design_services
               </p>
               <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:29739;6066:625">
-                Figma
-              </p>
+                {t("t0167")}</p>
             </div>
           </div>
         </div>
@@ -127,18 +120,17 @@ export default function ArticleValidacaoTardia() {
           <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImgHeroImage} />
         </div>
       </div>
-      <div className="content-stretch flex flex-col h-[1080px] items-start justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:29743" data-name="section.context">
+      <div className="content-stretch flex flex-col h-[1080px] items-start justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:29743" data-name="section.context" data-section-id="context">
         <div className="content-stretch flex gap-[96px] h-[520px] items-center relative shrink-0 w-full" data-node-id="4:29744" data-name="div.grid.grid-cols-12.gap-24.w-full">
           <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[24px] items-start min-w-px relative text-[16px]" data-node-id="4:29745" data-name="div.col-span-12.lg:col-span-8">
-            <p className="font-['Sora:SemiBold'] font-semibold leading-[1.3] relative shrink-0 text-[#0d0e10] tracking-[0.64px] w-[900px]" data-node-id="4:29746">
-              01 · CONTEXTO
-            </p>
+            <h2 className="font-['Sora:SemiBold'] font-semibold leading-[1.3] relative shrink-0 text-[#0d0e10] tracking-[0.64px] w-[900px]" data-node-id="4:29746">
+              {t("t0018")}</h2>
             <div className="font-['Sora:Regular'] font-normal leading-[0] relative shrink-0 text-[#000102] w-[1024px] whitespace-pre-wrap" data-node-id="4:29748">
-              <p className="leading-[1.5] mb-[12px]">O SIAFF é o sistema interno da CAIXA para gerir fundos de financiamento. Reúne cadastros e consultas que exigem dados consistentes e operações confiáveis.</p>
+              <p className="leading-[1.5] mb-[12px]">{t("t0168")}</p>
               <p className="leading-[1.5] mb-[12px]">​</p>
-              <p className="leading-[1.5] mb-[12px]">Os cadastros atravessavam áreas como TCCA (Termo de Compromisso de Compensação Ambiental), subcontas, unidades de conservação e aportes. Um ponto sensível do sistema.</p>
+              <p className="leading-[1.5] mb-[12px]">{t("t0169")}</p>
               <p className="leading-[1.5] mb-[12px]">​</p>
-              <p className="leading-[1.5]">Antes de ampliar mudanças, uma pergunta precisava de resposta: como as pessoas realmente percorrem as etapas do cadastro?</p>
+              <p className="leading-[1.5]">{t("t0170")}</p>
             </div>
           </div>
           <div className="content-stretch flex gap-[19.295px] items-center relative shrink-0" data-node-id="4:29749" data-name="figure.context-media.col-span-12.lg:col-span-4">
@@ -152,37 +144,34 @@ export default function ArticleValidacaoTardia() {
             <div className="bg-[#f39200] content-stretch flex h-[52.098px] items-center justify-center relative shrink-0 w-[1.93px]" data-node-id="4:29759" />
             <div className="content-stretch flex items-center justify-center relative shrink-0" data-node-id="4:29761">
               <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#404b52] text-[56.996px] whitespace-nowrap" data-node-id="4:29762">
-                <p className="leading-[1.12]">SIAFF</p>
+                <p className="leading-[1.12]">{t("t0171")}</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="content-stretch flex flex-col gap-[32px] h-[1080px] items-center justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:29763" data-name="section.challenge">
+      <div className="content-stretch flex flex-col gap-[32px] h-[1080px] items-center justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:29763" data-name="section.challenge" data-section-id="challenge">
         <div className="[word-break:break-word] content-stretch flex flex-col font-['Sora:SemiBold'] font-semibold gap-[32px] items-center max-w-[1500px] relative shrink-0 text-[#0d0e10] text-center w-full" data-node-id="4:29764" data-name="div.flex.flex-col.w-full.max-w-[1500px]">
-          <p className="leading-[1.3] relative shrink-0 text-[16px] tracking-[0.64px] w-[900px]" data-node-id="4:29765">
-            02 · DESAFIO
-          </p>
+          <h2 className="leading-[1.3] relative shrink-0 text-[16px] tracking-[0.64px] w-[900px]" data-node-id="4:29765">
+            {t("t0021")}</h2>
           <p className="leading-[1.2] relative shrink-0 text-[36px] w-[1200px]" data-node-id="4:29767">
-            O que um cadastro mais simples poderia revelar antes de evoluir os fluxos complexos do TCCA?
-          </p>
+            {t("t0172")}</p>
         </div>
         <div className="absolute inset-[5.41%_-21.77%_2.36%_38.18%]" data-node-id="4:29769" data-name="bg.figure">
           <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgBgFigure} />
         </div>
       </div>
-      <div className="content-stretch flex h-[1080px] items-center justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:29774" data-name="section.process">
+      <div className="content-stretch flex h-[1080px] items-center justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:29774" data-name="section.process" data-section-id="process">
         <div className="content-stretch flex flex-[1_0_0] items-center justify-center min-w-px overflow-clip relative" data-node-id="4:29775" data-name="div.grid.grid-cols-12.gap-6.w-full">
           <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[24px] items-start min-w-px relative text-[#0d0e10] text-[16px]" data-node-id="4:29776" data-name="div.col-span-12.lg:col-span-7">
-            <p className="font-['Sora:SemiBold'] font-semibold leading-[1.3] relative shrink-0 tracking-[0.64px] w-[900px]" data-node-id="4:29777">
-              03 · PROCESSO
-            </p>
+            <h2 className="font-['Sora:SemiBold'] font-semibold leading-[1.3] relative shrink-0 tracking-[0.64px] w-[900px]" data-node-id="4:29777">
+              {t("t0023")}</h2>
             <div className="font-['Sora:Regular'] font-normal leading-[0] min-w-full relative shrink-0 w-[min-content] whitespace-pre-wrap" data-node-id="4:29778">
-              <p className="leading-[1.5] mb-[12px]">O cadastro de boletos serviu como piloto para investigar dificuldades de interação antes de ampliar as mudanças para outras áreas do SIAFF.</p>
+              <p className="leading-[1.5] mb-[12px]">{t("t0173")}</p>
               <p className="leading-[1.5] mb-[12px]">​</p>
-              <p className="leading-[1.5] mb-[12px]">Um protótipo funcional criado no Figma Make permitiu observar tarefas reais. Os testes e registros do Clarity ajudaram a identificar comportamentos que não seriam percebidos em telas estáticas.</p>
+              <p className="leading-[1.5] mb-[12px]">{t("t0174")}</p>
               <p className="leading-[1.5] mb-[12px]">​</p>
-              <p className="leading-[1.5]">Os achados foram organizados pela Pesquisa Atômica, orientando decisões sobre campos, filtros e etapas. O aprendizado abriu caminho para investigar os cadastros mais complexos do TCCA.</p>
+              <p className="leading-[1.5]">{t("t0175")}</p>
             </div>
           </div>
         </div>
@@ -195,12 +184,10 @@ export default function ArticleValidacaoTardia() {
                 science
               </p>
               <p className="flex-[1_0_0] font-['CAIXA_Std:SemiBold'] min-w-px not-italic relative text-[#22292e] text-[18px]" data-node-id="4:29806">
-                Experimento
-              </p>
+                {t("t0176")}</p>
             </div>
             <p className="font-['CAIXA_Std:Regular'] leading-[1.4] not-italic relative shrink-0 text-[#404b52] text-[14px] w-full" data-node-id="4:29807">
-              Teste remoto da nova forma de cadastro
-            </p>
+              {t("t0177")}</p>
           </div>
           <div className="bg-[#f7fafa] border border-[#d0e0e3] border-solid content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start justify-center min-w-px p-[16px] relative rounded-[12px] self-stretch" data-node-id="4:29808" data-name="fato">
             <div className="content-stretch flex gap-[8px] items-center leading-[1.2] relative shrink-0 w-full" data-node-id="4:29809" data-name="Frame">
@@ -208,12 +195,10 @@ export default function ArticleValidacaoTardia() {
                 receipt_long
               </p>
               <p className="flex-[1_0_0] font-['CAIXA_Std:SemiBold'] min-w-px not-italic relative text-[#22292e] text-[18px]" data-node-id="4:29811">
-                Fato
-              </p>
+                {t("t0178")}</p>
             </div>
             <p className="font-['CAIXA_Std:Regular'] leading-[1.4] not-italic relative shrink-0 text-[#404b52] text-[14px] w-full" data-node-id="4:29812">
-              Nova forma de cadastro é funciona?
-            </p>
+              {t("t0179")}</p>
           </div>
           <div className="bg-[#f7fafa] border border-[#d0e0e3] border-solid content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start justify-center min-w-px p-[16px] relative rounded-[12px] self-stretch" data-node-id="4:29813" data-name="percepcoes">
             <div className="content-stretch flex gap-[8px] items-center leading-[1.2] relative shrink-0 w-full" data-node-id="4:29814" data-name="Frame">
@@ -221,10 +206,9 @@ export default function ArticleValidacaoTardia() {
                 people
               </p>
               <p className="flex-[1_0_0] font-['CAIXA_Std:SemiBold'] min-w-px not-italic relative text-[#22292e] text-[18px]" data-node-id="4:29816">
-                Percepções
-              </p>
+                {t("t0180")}</p>
             </div>
-            <p className="font-['CAIXA_Std:Regular'] leading-[1.4] not-italic relative shrink-0 text-[#404b52] text-[14px] w-full" data-node-id="4:29817">{`Remover a tela legada e usar a modal `}</p>
+            <p className="font-['CAIXA_Std:Regular'] leading-[1.4] not-italic relative shrink-0 text-[#404b52] text-[14px] w-full" data-node-id="4:29817">{t("t0181")}</p>
           </div>
           <div className="bg-[#f7fafa] border border-[#d0e0e3] border-solid content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start justify-center min-w-px p-[16px] relative rounded-[12px] self-stretch" data-node-id="4:29818" data-name="recomendacoes">
             <div className="content-stretch flex gap-[8px] items-center leading-[1.2] relative shrink-0 w-full" data-node-id="4:29819" data-name="Frame">
@@ -232,12 +216,10 @@ export default function ArticleValidacaoTardia() {
                 assignment_turned_in
               </p>
               <p className="flex-[1_0_0] font-['CAIXA_Std:SemiBold'] min-w-px not-italic relative text-[#22292e] text-[18px]" data-node-id="4:29821">
-                Recomendações
-              </p>
+                {t("t0182")}</p>
             </div>
             <p className="font-['CAIXA_Std:Regular'] leading-[1.4] not-italic relative shrink-0 text-[#404b52] text-[14px] w-full" data-node-id="4:29822">
-              Aprovar o layout atual e enviar o handoff técnico.
-            </p>
+              {t("t0183")}</p>
           </div>
         </div>
         <div className="absolute content-stretch flex gap-[10px] h-[51px] items-center left-[160px] top-[348px] w-[1600px] z-[1]" data-node-id="4:29823" data-name="header.step-header">
@@ -246,8 +228,7 @@ export default function ArticleValidacaoTardia() {
           </p>
           <div className="content-stretch flex flex-[1_0_0] flex-col gap-[10px] items-start justify-center min-w-px relative" data-node-id="4:29825" data-name="div.flex.flex-col.flex-1">
             <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.4] relative shrink-0 text-[#000102] text-[16px] w-[328px]" data-node-id="4:29826">
-              Pesquisa Atômica
-            </p>
+              {t("t0184")}</p>
           </div>
         </div>
       </div>
@@ -257,11 +238,9 @@ export default function ArticleValidacaoTardia() {
             <div className="bg-[#f7fafa] border border-[#d0e0e3] border-solid content-stretch flex items-center justify-between overflow-clip px-[28px] py-[24px] relative rounded-[16px] shrink-0 w-full" data-node-id="4:29874" data-name="Apresentação">
               <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[6px] items-start min-w-px overflow-clip relative" data-node-id="4:29875" data-name="Título do plano">
                 <p className="font-['Sora:SemiBold'] font-semibold leading-[1.1] relative shrink-0 text-[#22292e] text-[20px] w-full" data-node-id="4:29876">
-                  Plano de Experimento
-                </p>
+                  {t("t0185")}</p>
                 <p className="font-['Sora:Regular'] font-normal leading-[1.4] relative shrink-0 text-[#64747a] text-[11px] w-full" data-node-id="4:29877">
-                  Hipótese → protótipo → evidência → decisão
-                </p>
+                  {t("t0186")}</p>
               </div>
             </div>
             <div className="content-stretch flex items-start overflow-clip relative shrink-0 w-full" data-node-id="4:29881" data-name="Área rolável do kanban">
@@ -276,8 +255,7 @@ export default function ArticleValidacaoTardia() {
                         </p>
                       </div>
                       <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.5] relative shrink-0 text-[#22292e] text-[13px] whitespace-nowrap" data-node-id="4:29889" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                        Hipótese
-                      </p>
+                        {t("t0187")}</p>
                     </div>
                     <div className="bg-[#e1f7f2] content-stretch flex flex-col items-start overflow-clip px-[8px] py-[2px] relative rounded-[100px] shrink-0" data-node-id="4:29890" data-name="Contagem">
                       <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[normal] relative shrink-0 text-[#139d87] text-[9px] whitespace-nowrap" data-node-id="4:29891">
@@ -298,13 +276,11 @@ export default function ArticleValidacaoTardia() {
                             <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
                           </div>
                           <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.7] overflow-hidden relative shrink-0 text-[#465200] text-[9px] text-ellipsis whitespace-nowrap" data-node-id="I4:29898;68612:3966" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                            Label
-                          </p>
+                            {t("t0188")}</p>
                         </div>
                       </div>
                       <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.4] relative shrink-0 text-[#22292e] text-[13px] w-full" data-node-id="4:29899">
-                        O novo padrão de cadastro pode reduzir fricção sem perder controles.
-                      </p>
+                        {t("t0189")}</p>
                       <div className="h-0 relative shrink-0 w-full" data-node-id="4:29900" data-name="Divisor">
                         <div className="absolute inset-[-1px_0_0_0]">
                           <img alt="" className="block max-w-none size-full" src={imgDivisor} />
@@ -323,13 +299,11 @@ export default function ArticleValidacaoTardia() {
                             <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
                           </div>
                           <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.7] overflow-hidden relative shrink-0 text-[#465200] text-[9px] text-ellipsis whitespace-nowrap" data-node-id="I4:29910;68612:3966" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                            Label
-                          </p>
+                            {t("t0188")}</p>
                         </div>
                       </div>
                       <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.4] relative shrink-0 text-[#22292e] text-[13px] w-full" data-node-id="4:29911">
-                        Problema: validação tardia aumenta retrabalho.
-                      </p>
+                        {t("t0190")}</p>
                       <div className="h-0 relative shrink-0 w-full" data-node-id="4:29912" data-name="Divisor">
                         <div className="absolute inset-[-1px_0_0_0]">
                           <img alt="" className="block max-w-none size-full" src={imgDivisor} />
@@ -348,13 +322,11 @@ export default function ArticleValidacaoTardia() {
                             <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
                           </div>
                           <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.7] overflow-hidden relative shrink-0 text-[#465200] text-[9px] text-ellipsis whitespace-nowrap" data-node-id="I4:29922;68612:3966" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                            Label
-                          </p>
+                            {t("t0188")}</p>
                         </div>
                       </div>
                       <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.4] relative shrink-0 text-[#22292e] text-[13px] w-full" data-node-id="4:29923">
-                        Objetivo: validar antes do desenvolvimento.
-                      </p>
+                        {t("t0191")}</p>
                       <div className="h-0 relative shrink-0 w-full" data-node-id="4:29924" data-name="Divisor">
                         <div className="absolute inset-[-1px_0_0_0]">
                           <img alt="" className="block max-w-none size-full" src={imgDivisor} />
@@ -373,8 +345,7 @@ export default function ArticleValidacaoTardia() {
                         </p>
                       </div>
                       <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.5] relative shrink-0 text-[#22292e] text-[13px] whitespace-nowrap" data-node-id="4:29935" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                        Tarefa
-                      </p>
+                        {t("t0192")}</p>
                     </div>
                     <div className="bg-[#e2f5fb] content-stretch flex flex-col items-start overflow-clip px-[8px] py-[2px] relative rounded-[100px] shrink-0" data-node-id="4:29936" data-name="Contagem">
                       <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[normal] relative shrink-0 text-[#008fbf] text-[9px] whitespace-nowrap" data-node-id="4:29937">
@@ -395,13 +366,11 @@ export default function ArticleValidacaoTardia() {
                             <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon1} />
                           </div>
                           <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.7] overflow-hidden relative shrink-0 text-[#003c4d] text-[9px] text-ellipsis whitespace-nowrap" data-node-id="I4:29944;68612:3942" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                            Label
-                          </p>
+                            {t("t0188")}</p>
                         </div>
                       </div>
                       <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.4] relative shrink-0 text-[#22292e] text-[13px] w-full" data-node-id="4:29945">
-                        Concluir um cadastro no novo fluxo.
-                      </p>
+                        {t("t0193")}</p>
                       <div className="h-0 relative shrink-0 w-full" data-node-id="4:29946" data-name="Divisor">
                         <div className="absolute inset-[-1px_0_0_0]">
                           <img alt="" className="block max-w-none size-full" src={imgDivisor} />
@@ -420,13 +389,11 @@ export default function ArticleValidacaoTardia() {
                             <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon1} />
                           </div>
                           <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.7] overflow-hidden relative shrink-0 text-[#003c4d] text-[9px] text-ellipsis whitespace-nowrap" data-node-id="I4:29956;68612:3942" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                            Label
-                          </p>
+                            {t("t0188")}</p>
                         </div>
                       </div>
                       <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.4] relative shrink-0 text-[#22292e] text-[13px] w-full" data-node-id="4:29957">
-                        Manter entendimento da tarefa.
-                      </p>
+                        {t("t0194")}</p>
                       <div className="h-0 relative shrink-0 w-full" data-node-id="4:29958" data-name="Divisor">
                         <div className="absolute inset-[-1px_0_0_0]">
                           <img alt="" className="block max-w-none size-full" src={imgDivisor} />
@@ -445,13 +412,11 @@ export default function ArticleValidacaoTardia() {
                             <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon1} />
                           </div>
                           <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.7] overflow-hidden relative shrink-0 text-[#003c4d] text-[9px] text-ellipsis whitespace-nowrap" data-node-id="I4:29968;68612:3942" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                            Label
-                          </p>
+                            {t("t0188")}</p>
                         </div>
                       </div>
                       <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.4] relative shrink-0 text-[#22292e] text-[13px] w-full" data-node-id="4:29969">
-                        Preservar uso correto dos filtros.
-                      </p>
+                        {t("t0195")}</p>
                       <div className="h-0 relative shrink-0 w-full" data-node-id="4:29970" data-name="Divisor">
                         <div className="absolute inset-[-1px_0_0_0]">
                           <img alt="" className="block max-w-none size-full" src={imgDivisor} />
@@ -470,8 +435,7 @@ export default function ArticleValidacaoTardia() {
                         </p>
                       </div>
                       <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.5] relative shrink-0 text-[#22292e] text-[13px] whitespace-nowrap" data-node-id="4:29981" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                        Experimento
-                      </p>
+                        {t("t0176")}</p>
                     </div>
                     <div className="bg-[#e1f7f2] content-stretch flex flex-col items-start overflow-clip px-[8px] py-[2px] relative rounded-[100px] shrink-0" data-node-id="4:29982" data-name="Contagem">
                       <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[normal] relative shrink-0 text-[#139d87] text-[9px] whitespace-nowrap" data-node-id="4:29983">
@@ -492,13 +456,11 @@ export default function ArticleValidacaoTardia() {
                             <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon2} />
                           </div>
                           <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.7] overflow-hidden relative shrink-0 text-[#026273] text-[9px] text-ellipsis whitespace-nowrap" data-node-id="I4:29990;68612:3918" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                            Label
-                          </p>
+                            {t("t0188")}</p>
                         </div>
                       </div>
                       <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.4] relative shrink-0 text-[#22292e] text-[13px] w-full" data-node-id="4:29991">
-                        Protótipo funcional com IA no Figma Make.
-                      </p>
+                        {t("t0196")}</p>
                       <div className="h-0 relative shrink-0 w-full" data-node-id="4:29992" data-name="Divisor">
                         <div className="absolute inset-[-1px_0_0_0]">
                           <img alt="" className="block max-w-none size-full" src={imgDivisor} />
@@ -517,13 +479,11 @@ export default function ArticleValidacaoTardia() {
                             <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon2} />
                           </div>
                           <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.7] overflow-hidden relative shrink-0 text-[#026273] text-[9px] text-ellipsis whitespace-nowrap" data-node-id="I4:30002;68612:3918" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                            Label
-                          </p>
+                            {t("t0188")}</p>
                         </div>
                       </div>
                       <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.4] relative shrink-0 text-[#22292e] text-[13px] w-full" data-node-id="4:30003">
-                        Teste remoto com 18 usuários.
-                      </p>
+                        {t("t0197")}</p>
                       <div className="h-0 relative shrink-0 w-full" data-node-id="4:30004" data-name="Divisor">
                         <div className="absolute inset-[-1px_0_0_0]">
                           <img alt="" className="block max-w-none size-full" src={imgDivisor} />
@@ -542,13 +502,11 @@ export default function ArticleValidacaoTardia() {
                             <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon2} />
                           </div>
                           <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.7] overflow-hidden relative shrink-0 text-[#026273] text-[9px] text-ellipsis whitespace-nowrap" data-node-id="I4:30014;68612:3918" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                            Label
-                          </p>
+                            {t("t0188")}</p>
                         </div>
                       </div>
                       <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.4] relative shrink-0 text-[#22292e] text-[13px] w-full" data-node-id="4:30015">
-                        Versão 1: cadastro em modal.
-                      </p>
+                        {t("t0198")}</p>
                       <div className="h-0 relative shrink-0 w-full" data-node-id="4:30016" data-name="Divisor">
                         <div className="absolute inset-[-1px_0_0_0]">
                           <img alt="" className="block max-w-none size-full" src={imgDivisor} />
@@ -567,8 +525,7 @@ export default function ArticleValidacaoTardia() {
                         </p>
                       </div>
                       <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.5] relative shrink-0 text-[#22292e] text-[13px] whitespace-nowrap" data-node-id="4:30027" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                        Sucesso
-                      </p>
+                        {t("t0199")}</p>
                     </div>
                     <div className="bg-[#e3f2fd] content-stretch flex flex-col items-start overflow-clip px-[8px] py-[2px] relative rounded-[100px] shrink-0" data-node-id="4:30028" data-name="Contagem">
                       <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[normal] relative shrink-0 text-[#005ca9] text-[9px] whitespace-nowrap" data-node-id="4:30029">
@@ -589,11 +546,10 @@ export default function ArticleValidacaoTardia() {
                             <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon3} />
                           </div>
                           <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.7] overflow-hidden relative shrink-0 text-[#0d581d] text-[9px] text-ellipsis whitespace-nowrap" data-node-id="I4:30036;68612:3882" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                            Label
-                          </p>
+                            {t("t0188")}</p>
                         </div>
                       </div>
-                      <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.4] relative shrink-0 text-[#22292e] text-[13px] w-full" data-node-id="4:30037">{`100% de conclusão. 0 abandono. `}</p>
+                      <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.4] relative shrink-0 text-[#22292e] text-[13px] w-full" data-node-id="4:30037">{t("t0200")}</p>
                       <div className="h-0 relative shrink-0 w-full" data-node-id="4:30038" data-name="Divisor">
                         <div className="absolute inset-[-1px_0_0_0]">
                           <img alt="" className="block max-w-none size-full" src={imgDivisor} />
@@ -612,13 +568,11 @@ export default function ArticleValidacaoTardia() {
                             <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon3} />
                           </div>
                           <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.7] overflow-hidden relative shrink-0 text-[#0d581d] text-[9px] text-ellipsis whitespace-nowrap" data-node-id="I4:30048;68612:3882" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                            Label
-                          </p>
+                            {t("t0188")}</p>
                         </div>
                       </div>
                       <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.4] relative shrink-0 text-[#22292e] text-[13px] w-full" data-node-id="4:30049">
-                        2,1 min de tempo ativo.
-                      </p>
+                        {t("t0201")}</p>
                       <div className="h-0 relative shrink-0 w-full" data-node-id="4:30050" data-name="Divisor">
                         <div className="absolute inset-[-1px_0_0_0]">
                           <img alt="" className="block max-w-none size-full" src={imgDivisor} />
@@ -637,13 +591,11 @@ export default function ArticleValidacaoTardia() {
                             <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon3} />
                           </div>
                           <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.7] overflow-hidden relative shrink-0 text-[#0d581d] text-[9px] text-ellipsis whitespace-nowrap" data-node-id="I4:30060;68612:3882" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                            Label
-                          </p>
+                            {t("t0188")}</p>
                         </div>
                       </div>
                       <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.4] relative shrink-0 text-[#22292e] text-[13px] w-full" data-node-id="4:30061">
-                        Comportamento observado no Microsoft Clarity.
-                      </p>
+                        {t("t0202")}</p>
                       <div className="h-0 relative shrink-0 w-full" data-node-id="4:30062" data-name="Divisor">
                         <div className="absolute inset-[-1px_0_0_0]">
                           <img alt="" className="block max-w-none size-full" src={imgDivisor} />
@@ -662,8 +614,8 @@ export default function ArticleValidacaoTardia() {
               </div>
               <div className="bg-[#d0e0e3] h-[36px] relative shrink-0 w-px" data-node-id="4:30071" data-name="Separador" />
               <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular'] font-normal leading-[0] min-w-px not-italic relative text-[#22292e] text-[0px] whitespace-pre-wrap" data-node-id="4:30072">
-                <span className="font-['Sora:SemiBold'] font-semibold leading-[1.4] text-[13px]">{`Critérios: `}</span>
-                <span className="font-['Sora:Regular'] leading-[1.4] text-[13px]">{`conclusão da tarefa  •  abandono  •  tempo ativo  •  uso dos filtros.`}</span>
+                <span className="font-['Sora:SemiBold'] font-semibold leading-[1.4] text-[13px]">{t("t0203")}</span>
+                <span className="font-['Sora:Regular'] leading-[1.4] text-[13px]">{t("t0204")}</span>
               </p>
             </div>
           </div>
@@ -674,8 +626,7 @@ export default function ArticleValidacaoTardia() {
           </p>
           <div className="content-stretch flex flex-[1_0_0] flex-col gap-[10px] items-start justify-center min-w-px relative" data-node-id="4:30075" data-name="div.flex.flex-col.flex-1">
             <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.4] relative shrink-0 text-[#000102] text-[16px] w-[328px]" data-node-id="4:30076">
-              Plano de Experimento
-            </p>
+              {t("t0185")}</p>
           </div>
         </div>
       </div>
@@ -685,7 +636,7 @@ export default function ArticleValidacaoTardia() {
             auto_awesome
           </p>
           <p className="font-['Geist:Medium'] font-medium leading-[0] relative shrink-0 text-[0px]" data-node-id="4:30103">
-            <span className="font-['Geist:Bold'] font-bold leading-[1.4] text-[16px]">Fazer</span>
+            <span className="font-['Geist:Bold'] font-bold leading-[1.4] text-[16px]">{t("t0205")}</span>
             <span className="leading-[1.4] text-[16px]">:</span>
           </p>
         </div>
@@ -702,8 +653,7 @@ export default function ArticleValidacaoTardia() {
           </p>
           <div className="content-stretch flex flex-[1_0_0] flex-col gap-[10px] items-start justify-center min-w-px relative" data-node-id="4:30108" data-name="div.flex.flex-col.flex-1">
             <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.4] relative shrink-0 text-[#000102] text-[16px] w-[328px]" data-node-id="4:30109">
-              Protótipo funcional
-            </p>
+              {t("t0206")}</p>
           </div>
         </div>
       </div>
@@ -717,8 +667,7 @@ export default function ArticleValidacaoTardia() {
                     <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgMaterialIcon} />
                   </div>
                   <p className="[word-break:break-word] flex-[1_0_0] font-['CAIXA_Std:SemiBold'] leading-[1.4] min-w-px not-italic relative text-[#22292e] text-[9.38px]" data-node-id="I4:30137;31926:16219" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                    Cadastrar de Boleto de Aporte
-                  </p>
+                    {t("t0207")}</p>
                 </div>
                 <button className="content-stretch cursor-pointer flex h-[30px] items-center justify-center p-[5px] relative rounded-[2.5px] shrink-0" data-node-id="I4:30137;33090:25089" data-name="Close">
                   <div className="relative shrink-0 size-[20px]" data-node-id="I4:30137;33090:25089;32909:7257" data-name="Material Icon">
@@ -731,10 +680,10 @@ export default function ArticleValidacaoTardia() {
                   <div className="content-stretch flex flex-[1_0_0] flex-col gap-[15px] items-start min-w-px relative" data-node-id="4:30140" data-name="form">
                     <div className="[word-break:break-word] content-stretch flex flex-col gap-[2.5px] items-start leading-[0] not-italic relative shrink-0 w-full" data-node-id="4:30141">
                       <div className="flex flex-col font-['CAIXA_Std:SemiBold'] justify-center relative shrink-0 text-[#005ca9] text-[10px] text-center whitespace-nowrap" data-node-id="4:30142" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                        <p className="leading-[1.5]">Identificação da conta e boleto</p>
+                        <p className="leading-[1.5]">{t("t0208")}</p>
                       </div>
                       <div className="flex flex-col font-['CAIXA_Std:Regular'] justify-end min-w-full relative shrink-0 text-[#404b52] text-[8.75px] w-[min-content]" data-node-id="4:30143" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                        <p className="leading-[1.5]">Identifique a parcela e prazos.</p>
+                        <p className="leading-[1.5]">{t("t0209")}</p>
                       </div>
                     </div>
                     <div className="content-stretch flex gap-[15px] items-center relative shrink-0 w-full" data-node-id="4:30144" data-name="fieldset">
@@ -743,14 +692,14 @@ export default function ArticleValidacaoTardia() {
                           <div className="content-stretch flex gap-[5px] items-center relative shrink-0" data-node-id="I4:30145;30535:7279" data-name="Label + Additional Info">
                             <div className="content-stretch flex items-start relative shrink-0" data-node-id="I4:30145;30535:7280" data-name="Label">
                               <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#22292e] text-[11.25px] whitespace-nowrap" data-node-id="I4:30145;30535:7280;14952:318439" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                                <p className="leading-[1.5]">TCCA Nº*</p>
+                                <p className="leading-[1.5]">{t("t0210")}</p>
                               </div>
                             </div>
                           </div>
                         </div>
                         <div className="bg-white border-[#9eb2b8] border-[0.625px] border-solid content-stretch flex gap-[5px] h-[30px] items-center overflow-clip p-[5px] relative rounded-[2.5px] shrink-0 w-full" data-node-id="I4:30145;14981:318999" data-name="Box">
                           <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:Regular'] h-[16.875px] justify-center leading-[0] min-w-px not-italic overflow-hidden relative text-[#64747a] text-[11.25px] text-ellipsis whitespace-nowrap" data-node-id="I4:30145;14981:319003" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                            <p className="leading-[1.5] overflow-hidden text-ellipsis">Ex. 300</p>
+                            <p className="leading-[1.5] overflow-hidden text-ellipsis">{t("t0211")}</p>
                           </div>
                         </div>
                       </div>
@@ -759,7 +708,7 @@ export default function ArticleValidacaoTardia() {
                           <div className="content-stretch flex gap-[5px] items-center relative shrink-0" data-node-id="I4:30146;30535:7279" data-name="Label + Additional Info">
                             <div className="content-stretch flex items-start relative shrink-0" data-node-id="I4:30146;30535:7280" data-name="Label">
                               <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#22292e] text-[11.25px] whitespace-nowrap" data-node-id="I4:30146;30535:7280;14952:318439" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                                <p className="leading-[1.5] whitespace-pre">{`TCCA  Ano*`}</p>
+                                <p className="leading-[1.5] whitespace-pre">{t("t0212")}</p>
                               </div>
                             </div>
                           </div>
@@ -777,14 +726,14 @@ export default function ArticleValidacaoTardia() {
                           <div className="content-stretch flex gap-[5px] items-center relative shrink-0" data-node-id="I4:30148;30535:7972" data-name="Label + Additional Info">
                             <div className="content-stretch flex items-start relative shrink-0" data-node-id="I4:30148;30535:7973" data-name="Label">
                               <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#22292e] text-[11.25px] whitespace-nowrap" data-node-id="I4:30148;30535:7973;14952:318439" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                                <p className="leading-[1.5]">{`Aditivo / Termo Vigente `}</p>
+                                <p className="leading-[1.5]">{t("t0213")}</p>
                               </div>
                             </div>
                           </div>
                         </div>
                         <div className="bg-[#f7fafa] border-[#9eb2b8] border-[0.625px] border-solid content-stretch flex gap-[5px] h-[30px] items-center overflow-clip p-[5px] relative rounded-[2.5px] shrink-0 w-full" data-node-id="I4:30148;14981:318784" data-name="Box">
                           <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:Regular'] h-[16.875px] justify-center leading-[0] min-w-px not-italic overflow-hidden relative text-[#9eb2b8] text-[11.25px] text-ellipsis whitespace-nowrap" data-node-id="I4:30148;14981:318788" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                            <p className="leading-[1.5] overflow-hidden text-ellipsis">1º Aditivo</p>
+                            <p className="leading-[1.5] overflow-hidden text-ellipsis">{t("t0214")}</p>
                           </div>
                         </div>
                       </div>
@@ -793,7 +742,7 @@ export default function ArticleValidacaoTardia() {
                           <div className="content-stretch flex gap-[5px] items-center relative shrink-0" data-node-id="I4:30149;33878:36595" data-name="Label + Additional info">
                             <div className="content-stretch flex items-start relative shrink-0" data-node-id="I4:30149;15045:317976" data-name="Label">
                               <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#22292e] text-[11.25px] whitespace-nowrap" data-node-id="I4:30149;15045:317976;14952:318439" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                                <p className="leading-[1.5]">Parcela*</p>
+                                <p className="leading-[1.5]">{t("t0215")}</p>
                               </div>
                             </div>
                           </div>
@@ -807,7 +756,7 @@ export default function ArticleValidacaoTardia() {
                             </div>
                           </div>
                           <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:Regular'] h-[15.625px] justify-center leading-[0] min-w-px not-italic overflow-hidden relative text-[#64747a] text-[11.25px] text-ellipsis whitespace-nowrap" data-node-id="I4:30149;15045:317982" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                            <p className="leading-[1.5] overflow-hidden text-ellipsis">Ex. 01</p>
+                            <p className="leading-[1.5] overflow-hidden text-ellipsis">{t("t0216")}</p>
                           </div>
                           <div className="relative shrink-0 size-[15px]" data-node-id="I4:30149;15045:317983" data-name="Selector arrow">
                             <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
@@ -825,14 +774,14 @@ export default function ArticleValidacaoTardia() {
                           <div className="content-stretch flex gap-[5px] items-center relative shrink-0" data-node-id="I4:30151;33878:38178" data-name="Label + Additional info">
                             <div className="content-stretch flex items-start relative shrink-0" data-node-id="I4:30151;15066:316376" data-name="Label">
                               <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#22292e] text-[7.03px] whitespace-nowrap" data-node-id="I4:30151;15066:316376;14952:318439" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                                <p className="leading-[1.5]">Vencimento*</p>
+                                <p className="leading-[1.5]">{t("t0217")}</p>
                               </div>
                             </div>
                           </div>
                         </div>
                         <div className="bg-white border-[#9eb2b8] border-[0.625px] border-solid content-stretch flex gap-[5px] h-[30px] items-center overflow-clip p-[5.625px] relative rounded-[2.5px] shrink-0 w-full" data-node-id="I4:30151;15066:316379" data-name="Box">
                           <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:Regular'] h-[15.625px] justify-center leading-[0] min-w-px not-italic overflow-hidden relative text-[#64747a] text-[11.25px] text-ellipsis whitespace-nowrap" data-node-id="I4:30151;15066:316382" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                            <p className="leading-[1.5] overflow-hidden text-ellipsis">DD/MM/AAAA</p>
+                            <p className="leading-[1.5] overflow-hidden text-ellipsis">{t("t0218")}</p>
                           </div>
                           <div className="relative shrink-0 size-[15px]" data-node-id="I4:30151;15066:316383" data-name="Calendar icon">
                             <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
@@ -848,14 +797,14 @@ export default function ArticleValidacaoTardia() {
                           <div className="content-stretch flex gap-[5px] items-center relative shrink-0" data-node-id="I4:30152;33878:38178" data-name="Label + Additional info">
                             <div className="content-stretch flex items-start relative shrink-0" data-node-id="I4:30152;15066:316376" data-name="Label">
                               <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#22292e] text-[7.03px] whitespace-nowrap" data-node-id="I4:30152;15066:316376;14952:318439" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                                <p className="leading-[1.5]">Retorno do E-mail em*</p>
+                                <p className="leading-[1.5]">{t("t0219")}</p>
                               </div>
                             </div>
                           </div>
                         </div>
                         <div className="bg-white border-[#9eb2b8] border-[0.625px] border-solid content-stretch flex gap-[5px] h-[30px] items-center overflow-clip p-[5.625px] relative rounded-[2.5px] shrink-0 w-full" data-node-id="I4:30152;15066:316379" data-name="Box">
                           <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:Regular'] h-[15.625px] justify-center leading-[0] min-w-px not-italic overflow-hidden relative text-[#64747a] text-[11.25px] text-ellipsis whitespace-nowrap" data-node-id="I4:30152;15066:316382" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                            <p className="leading-[1.5] overflow-hidden text-ellipsis">DD/MM/AAAA</p>
+                            <p className="leading-[1.5] overflow-hidden text-ellipsis">{t("t0218")}</p>
                           </div>
                           <div className="relative shrink-0 size-[15px]" data-node-id="I4:30152;15066:316383" data-name="Calendar icon">
                             <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
@@ -871,13 +820,13 @@ export default function ArticleValidacaoTardia() {
                 </div>
                 <div className="content-stretch flex flex-col gap-[2.5px] items-start relative shrink-0 w-full" data-node-id="4:30153">
                   <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#005ca9] text-[10px] text-center whitespace-nowrap" data-node-id="4:30154" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                    <p className="leading-[1.5]">Valores e boletos</p>
+                    <p className="leading-[1.5]">{t("t0220")}</p>
                   </div>
                 </div>
                 <div className="content-stretch flex items-end justify-end relative shrink-0 w-full" data-node-id="4:30156">
                   <div className="content-stretch flex flex-col gap-[6.25px] items-start relative shrink-0 w-[152.5px]" data-node-id="4:30157">
                     <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#22292e] text-[11.25px] whitespace-nowrap" data-node-id="4:30158" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                      <p className="leading-[1.5]">Tipo</p>
+                      <p className="leading-[1.5]">{t("t0221")}</p>
                     </div>
                     <div className="content-stretch flex flex-col h-[30px] items-start justify-center relative shrink-0 w-full" data-node-id="4:30159">
                       <div className="content-stretch flex gap-[7.5px] items-center relative shrink-0 w-[152.5px]" data-node-id="4:30160" data-name="[dsc] Switch">
@@ -891,7 +840,7 @@ export default function ArticleValidacaoTardia() {
                         </div>
                         <div className="content-stretch flex flex-[1_0_0] items-center min-w-px relative" data-node-id="I4:30160;31595:10282" data-name="Right label">
                           <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:Regular'] justify-center leading-[0] min-w-px not-italic relative text-[#22292e] text-[11.25px]" data-node-id="I4:30160;31595:10282;30557:1764" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                            <p className="leading-[1.5]">{`Híbrido `}</p>
+                            <p className="leading-[1.5]">{t("t0222")}</p>
                           </div>
                         </div>
                       </div>
@@ -902,7 +851,7 @@ export default function ArticleValidacaoTardia() {
                       <div className="content-stretch flex gap-[5px] items-center relative shrink-0" data-node-id="I4:30161;30535:7279" data-name="Label + Additional Info">
                         <div className="content-stretch flex items-start relative shrink-0" data-node-id="I4:30161;30535:7280" data-name="Label">
                           <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#22292e] text-[7.03px] whitespace-nowrap" data-node-id="I4:30161;30535:7280;14952:318439" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                            <p className="leading-[1.5]">Valor do boleto*</p>
+                            <p className="leading-[1.5]">{t("t0223")}</p>
                           </div>
                         </div>
                       </div>
@@ -914,7 +863,7 @@ export default function ArticleValidacaoTardia() {
                         </div>
                       </div>
                       <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:Regular'] h-[16.875px] justify-center leading-[0] min-w-px not-italic overflow-hidden relative text-[#64747a] text-[11.25px] text-ellipsis whitespace-nowrap" data-node-id="I4:30161;14981:319003" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                        <p className="leading-[1.5] overflow-hidden text-ellipsis">Ex. R$ 999.999.999,99</p>
+                        <p className="leading-[1.5] overflow-hidden text-ellipsis">{t("t0224")}</p>
                       </div>
                     </div>
                   </div>
@@ -922,19 +871,19 @@ export default function ArticleValidacaoTardia() {
               </div>
               <div className="bg-white content-stretch flex gap-[10px] isolate items-center justify-end pb-[15px] px-[15px] relative rounded-bl-[2.5px] rounded-br-[2.5px] shrink-0 w-full" data-node-id="4:30163" data-name="Action bar">
                 <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:Regular'] justify-center leading-[0] min-w-px not-italic relative text-[#22292e] text-[10px] z-[3]" data-node-id="4:30164" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                  <p className="leading-[1.5]">*Campos Obrigatórios</p>
+                  <p className="leading-[1.5]">{t("t0225")}</p>
                 </div>
                 <button className="bg-white border-[#005ca9] border-[0.625px] border-solid content-stretch cursor-pointer flex gap-[5px] h-[30px] items-center justify-center px-[15px] py-[5px] relative rounded-[2.5px] shrink-0 w-[112.5px] z-[2]" data-node-id="4:30165" data-name="Secondary action">
                   <div className="relative shrink-0 size-[15px]" data-node-id="I4:30165;32909:7231" data-name="Material Icon">
                     <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCancel} />
                   </div>
                   <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#005ca9] text-[11.25px] text-center whitespace-nowrap" data-node-id="I4:30165;32909:7232" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                    <p className="leading-[1.5]">Limpar</p>
+                    <p className="leading-[1.5]">{t("t0226")}</p>
                   </div>
                 </button>
                 <div className="bg-[#005ca9] content-stretch flex gap-[5px] h-[30px] items-center justify-center px-[15px] py-[5px] relative rounded-[2.5px] shrink-0 w-[112.5px] z-[1]" data-node-id="4:30166" data-name="Primary action">
                   <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[11.25px] text-center text-white whitespace-nowrap" data-node-id="I4:30166;32909:7220" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                    <p className="leading-[1.5]">Salvar</p>
+                    <p className="leading-[1.5]">{t("t0227")}</p>
                   </div>
                   <div className="relative shrink-0 size-[15px]" data-node-id="I4:30166;32909:7221" data-name="Material Icon">
                     <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSave} />
@@ -950,15 +899,14 @@ export default function ArticleValidacaoTardia() {
           </p>
           <div className="content-stretch flex flex-[1_0_0] flex-col gap-[10px] items-start justify-center min-w-px relative" data-node-id="4:30169" data-name="div.flex.flex-col.flex-1">
             <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.4] relative shrink-0 text-[#000102] text-[16px] w-[328px]" data-node-id="4:30170">
-              Cadastro de boletos
-            </p>
+              {t("t0228")}</p>
           </div>
         </div>
       </div>
       <div className="content-stretch flex flex-col gap-[24px] h-[1080px] isolate items-center justify-center overflow-clip px-[160px] py-[112px] relative shrink-0 w-[1920px]" data-node-id="4:30172" data-name="section.step.verify">
         <div className="h-[753px] relative shrink-0 w-[1574px] z-[3]" data-node-id="4:30173" data-name="img.artifact-image">
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <img alt="" className="absolute h-[100.37%] left-0 max-w-none top-[-0.05%] w-full" src={imgImgArtifactImage} />
+            <img alt={text("Evidência visual do projeto")} className="absolute h-[100.37%] left-0 max-w-none top-[-0.05%] w-full" src={imgImgArtifactImage} />
           </div>
         </div>
         <div className="absolute content-stretch flex gap-[10px] h-[51px] items-center left-[160px] top-[19px] w-[1600px] z-[1]" data-node-id="4:30196" data-name="header.step-header">
@@ -967,8 +915,7 @@ export default function ArticleValidacaoTardia() {
           </p>
           <div className="content-stretch flex flex-[1_0_0] flex-col gap-[10px] items-start justify-center min-w-px relative" data-node-id="4:30198" data-name="div.flex.flex-col.flex-1">
             <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.4] relative shrink-0 text-[#000102] text-[16px] w-[328px]" data-node-id="4:30199">
-              Registros do Clarity
-            </p>
+              {t("t0229")}</p>
           </div>
         </div>
       </div>
@@ -979,8 +926,7 @@ export default function ArticleValidacaoTardia() {
               <div className="bg-white border-[#d0e0e3] border-b-[0.5px] border-solid content-stretch flex gap-[12px] items-center pl-[12px] pr-[6px] py-[12px] relative rounded-tl-[2px] rounded-tr-[2px] shrink-0 w-[960px]" data-node-id="4:30227" data-name=".[dsc] Dialog Header">
                 <div className="content-stretch flex flex-[1_0_0] gap-[4px] items-center min-w-px relative" data-node-id="I4:30227;31926:16217" data-name="Icon + title">
                   <p className="[word-break:break-word] flex-[1_0_0] font-['CAIXA_Std:SemiBold'] leading-[1.4] min-w-px not-italic relative text-[#22292e] text-[6px]" data-node-id="I4:30227;31926:16219" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                    Cadastrar do TCCA
-                  </p>
+                    {t("t0230")}</p>
                 </div>
                 <div className="content-stretch flex h-[24px] items-center justify-center p-[4px] relative rounded-[2px] shrink-0" data-node-id="I4:30227;33090:25089" data-name="Close">
                   <div className="relative shrink-0 size-[16px]" data-node-id="I4:30227;33090:25089;32909:7257" data-name="Material Icon">
@@ -995,7 +941,7 @@ export default function ArticleValidacaoTardia() {
                       <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgMenuOpen} />
                     </div>
                     <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#005ca9] text-[8px] text-center whitespace-nowrap" data-node-id="I4:30230;32909:7618" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                      <p className="leading-[1.5]">Recolher</p>
+                      <p className="leading-[1.5]">{t("t0231")}</p>
                     </div>
                   </div>
                   <div className="bg-[#005ca9] content-stretch flex gap-[6px] h-[24px] items-center px-[6px] relative shrink-0 w-[160px]" data-node-id="4:30231" data-name="[dsc] Checkbox">
@@ -1008,7 +954,7 @@ export default function ArticleValidacaoTardia() {
                     </div>
                     <div className="content-stretch flex items-center relative shrink-0" data-node-id="I4:30231;31595:18009" data-name="Right label">
                       <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[9px] text-white whitespace-nowrap" data-node-id="I4:30231;31595:18009;30557:1764" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                        <p className="leading-[1.5]">Dados Gerais</p>
+                        <p className="leading-[1.5]">{t("t0232")}</p>
                       </div>
                     </div>
                   </div>
@@ -1022,7 +968,7 @@ export default function ArticleValidacaoTardia() {
                     </div>
                     <div className="content-stretch flex items-center relative shrink-0" data-node-id="I4:30232;31595:17785" data-name="Right label">
                       <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#22292e] text-[9px] whitespace-nowrap" data-node-id="I4:30232;31595:17785;30557:1764" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                        <p className="leading-[1.5]">Financeiro e Parcelamento</p>
+                        <p className="leading-[1.5]">{t("t0233")}</p>
                       </div>
                     </div>
                   </div>
@@ -1036,7 +982,7 @@ export default function ArticleValidacaoTardia() {
                     </div>
                     <div className="content-stretch flex items-center relative shrink-0" data-node-id="I4:30233;31595:17785" data-name="Right label">
                       <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#22292e] text-[9px] whitespace-nowrap" data-node-id="I4:30233;31595:17785;30557:1764" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                        <p className="leading-[1.5]">Subconta e vínculos</p>
+                        <p className="leading-[1.5]">{t("t0234")}</p>
                       </div>
                     </div>
                   </div>
@@ -1052,7 +998,7 @@ export default function ArticleValidacaoTardia() {
                         </div>
                       </div>
                       <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] min-w-px not-italic relative text-[#005ca9] text-[8px]" data-node-id="4:30242" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                        <p className="leading-none">Identificação</p>
+                        <p className="leading-none">{t("t0235")}</p>
                       </div>
                     </div>
                     <div className="content-stretch flex gap-[12px] items-start relative shrink-0 w-full" data-node-id="4:30245" data-name="fielset">
@@ -1061,7 +1007,7 @@ export default function ArticleValidacaoTardia() {
                           <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="I4:30246;30535:7565" data-name="Label + Additional Info">
                             <div className="content-stretch flex items-start relative shrink-0" data-node-id="I4:30246;30535:7566" data-name="Label">
                               <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#22292e] text-[4px] whitespace-nowrap" data-node-id="I4:30246;30535:7566;14952:318439" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                                <p className="leading-[1.5]">{`TCCA Nº * `}</p>
+                                <p className="leading-[1.5]">{t("t0236")}</p>
                               </div>
                             </div>
                           </div>
@@ -1077,7 +1023,7 @@ export default function ArticleValidacaoTardia() {
                           <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="I4:30247;33878:38192" data-name="Label + Additional info">
                             <div className="content-stretch flex items-start relative shrink-0" data-node-id="I4:30247;15066:316389" data-name="Label">
                               <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#22292e] text-[4px] whitespace-nowrap" data-node-id="I4:30247;15066:316389;14952:318439" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                                <p className="leading-[1.5]">TCCA Ano*</p>
+                                <p className="leading-[1.5]">{t("t0212")}</p>
                               </div>
                             </div>
                           </div>
@@ -1107,7 +1053,7 @@ export default function ArticleValidacaoTardia() {
                         </div>
                       </div>
                       <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] min-w-px not-italic relative text-[#005ca9] text-[8px]" data-node-id="4:30252" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                        <p className="leading-none">Compromissário</p>
+                        <p className="leading-none">{t("t0237")}</p>
                       </div>
                     </div>
                     <div className="content-stretch flex gap-[12px] items-start relative shrink-0 w-full" data-node-id="4:30255" data-name="fielset">
@@ -1116,7 +1062,7 @@ export default function ArticleValidacaoTardia() {
                           <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="I4:30256;30535:7565" data-name="Label + Additional Info">
                             <div className="content-stretch flex items-start relative shrink-0" data-node-id="I4:30256;30535:7566" data-name="Label">
                               <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#22292e] text-[4px] whitespace-nowrap" data-node-id="I4:30256;30535:7566;14952:318439" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                                <p className="leading-[1.5]">{`Pesquise o CNPJ do Compromissário* `}</p>
+                                <p className="leading-[1.5]">{t("t0238")}</p>
                               </div>
                             </div>
                           </div>
@@ -1137,14 +1083,14 @@ export default function ArticleValidacaoTardia() {
                           <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="I4:30257;30535:7565" data-name="Label + Additional Info">
                             <div className="content-stretch flex items-start relative shrink-0" data-node-id="I4:30257;30535:7566" data-name="Label">
                               <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#22292e] text-[4px] whitespace-nowrap" data-node-id="I4:30257;30535:7566;14952:318439" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                                <p className="leading-[1.5]">{`Nome empresarial `}</p>
+                                <p className="leading-[1.5]">{t("t0239")}</p>
                               </div>
                             </div>
                           </div>
                         </div>
                         <div className="bg-white border-[#404b52] border-[0.5px] border-solid content-stretch flex gap-[4px] h-[24px] items-center overflow-clip p-[4px] relative rounded-[2px] shrink-0 w-full" data-node-id="I4:30257;14981:319075" data-name="Box">
                           <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:Regular'] h-[13.5px] justify-center leading-[0] not-italic overflow-hidden relative shrink-0 text-[#22292e] text-[4px] text-ellipsis w-[142px] whitespace-nowrap" data-node-id="I4:30257;14981:319079" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                            <p className="leading-[1.5] overflow-hidden text-ellipsis">{`Nome empresarial `}</p>
+                            <p className="leading-[1.5] overflow-hidden text-ellipsis">{t("t0239")}</p>
                           </div>
                         </div>
                       </div>
@@ -1154,7 +1100,7 @@ export default function ArticleValidacaoTardia() {
               </div>
               <div className="bg-white content-stretch flex gap-[4px] items-center p-[12px] relative shrink-0 w-full" data-node-id="4:30268">
                 <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:Regular'] justify-center leading-[0] min-w-px not-italic relative text-[#22292e] text-[8px]" data-node-id="4:30269" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                  <p className="leading-[1.5]">*Campos Obrigatórios</p>
+                  <p className="leading-[1.5]">{t("t0225")}</p>
                 </div>
                 <div className="bg-white border-[#005ca9] border-[0.5px] border-solid content-stretch flex h-[24px] items-center justify-center p-[4px] relative rounded-[2px] shrink-0" data-node-id="4:30270" data-name="[dsc] Button">
                   <div className="relative shrink-0 size-[16px]" data-node-id="I4:30270;32909:7239" data-name="Material Icon">
@@ -1166,12 +1112,12 @@ export default function ArticleValidacaoTardia() {
                     <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCancel1} />
                   </div>
                   <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#005ca9] text-[9px] text-center whitespace-nowrap" data-node-id="I4:30271;32909:7232" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                    <p className="leading-[1.5]">Limpar</p>
+                    <p className="leading-[1.5]">{t("t0226")}</p>
                   </div>
                 </button>
                 <div className="bg-[#005ca9] content-stretch flex gap-[4px] h-[24px] items-center justify-center px-[12px] py-[4px] relative rounded-[2px] shrink-0 w-[100px]" data-node-id="4:30272" data-name="Primary action">
                   <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[9px] text-center text-white whitespace-nowrap" data-node-id="I4:30272;32909:7220" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                    <p className="leading-[1.5]">Salvar</p>
+                    <p className="leading-[1.5]">{t("t0227")}</p>
                   </div>
                   <div className="relative shrink-0 size-[12px]" data-node-id="I4:30272;32909:7221" data-name="Material Icon">
                     <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSave1} />
@@ -1189,7 +1135,7 @@ export default function ArticleValidacaoTardia() {
             <div className="content-stretch drop-shadow-[0px_1px_1.5px_rgba(0,0,0,0.3),0px_1px_1.5px_rgba(0,0,0,0.3)] flex flex-[1_0_0] flex-col h-[441px] items-start min-w-px overflow-clip relative rounded-[2px]" data-node-id="4:30275" data-name="[dsc] Dialog">
               <div className="bg-white border-[#d0e0e3] border-b-[0.5px] border-solid content-stretch flex gap-[12px] items-center pl-[12px] pr-[6px] py-[12px] relative rounded-tl-[2px] rounded-tr-[2px] shrink-0 w-full" data-node-id="4:30276" data-name=".[dsc] Dialog Header">
                 <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] gap-[4px] items-center min-w-px not-italic relative text-[#22292e] whitespace-nowrap" data-node-id="4:30277" data-name="Icon + title">
-                  <p className="font-['CAIXA_Std:SemiBold'] leading-[1.4] relative shrink-0 text-[12px]" data-node-id="4:30279" style={{ fontFeatureSettings: '"ss01" 1' }}>{`Cadastrar TCCA `}</p>
+                  <p className="font-['CAIXA_Std:SemiBold'] leading-[1.4] relative shrink-0 text-[12px]" data-node-id="4:30279" style={{ fontFeatureSettings: '"ss01" 1' }}>{t("t0240")}</p>
                   <div className="bg-[#ebf1f2] content-stretch flex font-['CAIXA_Std:Regular'] gap-[4px] items-center leading-[0] px-[6px] py-[4px] relative rounded-[4px] shrink-0 text-[8px]" data-node-id="4:30280">
                     <div className="flex flex-col justify-center overflow-hidden relative shrink-0 text-ellipsis" data-node-id="4:30282" style={{ fontFeatureSettings: '"ss01" 1' }}>
                       <p className="leading-[1.5] overflow-hidden text-ellipsis">002</p>
@@ -1215,7 +1161,7 @@ export default function ArticleValidacaoTardia() {
                       <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgMenuOpen} />
                     </div>
                     <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#005ca9] text-[8px] text-center whitespace-nowrap" data-node-id="I4:30288;32909:7618" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                      <p className="leading-[1.5]">Recolher</p>
+                      <p className="leading-[1.5]">{t("t0231")}</p>
                     </div>
                   </div>
                   <div className="content-stretch flex gap-[6px] h-[24px] items-center px-[6px] relative shrink-0 w-[160px]" data-node-id="4:30289" data-name="[dsc] Checkbox">
@@ -1228,7 +1174,7 @@ export default function ArticleValidacaoTardia() {
                     </div>
                     <div className="content-stretch flex items-center relative shrink-0" data-node-id="I4:30289;31595:17897" data-name="Right label">
                       <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#22292e] text-[9px] whitespace-nowrap" data-node-id="I4:30289;31595:17897;30557:1764" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                        <p className="leading-[1.5]">Dados Gerais</p>
+                        <p className="leading-[1.5]">{t("t0232")}</p>
                       </div>
                     </div>
                   </div>
@@ -1242,7 +1188,7 @@ export default function ArticleValidacaoTardia() {
                     </div>
                     <div className="content-stretch flex items-center relative shrink-0" data-node-id="I4:30290;31595:18009" data-name="Right label">
                       <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[9px] text-white whitespace-nowrap" data-node-id="I4:30290;31595:18009;30557:1764" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                        <p className="leading-[1.5]">Financeiro e Parcelamento</p>
+                        <p className="leading-[1.5]">{t("t0233")}</p>
                       </div>
                     </div>
                   </div>
@@ -1256,7 +1202,7 @@ export default function ArticleValidacaoTardia() {
                     </div>
                     <div className="content-stretch flex items-center relative shrink-0" data-node-id="I4:30291;31595:17785" data-name="Right label">
                       <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#22292e] text-[9px] whitespace-nowrap" data-node-id="I4:30291;31595:17785;30557:1764" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                        <p className="leading-[1.5]">Subconta e vínculos</p>
+                        <p className="leading-[1.5]">{t("t0234")}</p>
                       </div>
                     </div>
                   </div>
@@ -1272,7 +1218,7 @@ export default function ArticleValidacaoTardia() {
                         </div>
                       </div>
                       <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] min-w-px not-italic relative text-[#005ca9] text-[8px]" data-node-id="4:30300" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                        <p className="leading-none">Financeiros</p>
+                        <p className="leading-none">{t("t0241")}</p>
                       </div>
                     </div>
                     <div className="content-stretch flex gap-[12px] items-start relative shrink-0 w-full" data-node-id="4:30303" data-name="fielset">
@@ -1281,14 +1227,14 @@ export default function ArticleValidacaoTardia() {
                           <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="I4:30304;33988:26669" data-name="Label + Additional indo">
                             <div className="content-stretch flex items-start relative shrink-0" data-node-id="I4:30304;33988:26670" data-name="Label">
                               <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#22292e] text-[4px] whitespace-nowrap" data-node-id="I4:30304;33988:26670;14952:318439" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                                <p className="leading-[1.5]">Valor Destinado (Original)*:</p>
+                                <p className="leading-[1.5]">{t("t0242")}</p>
                               </div>
                             </div>
                           </div>
                         </div>
                         <div className="bg-white border-[#9eb2b8] border-[0.5px] border-solid content-stretch flex gap-[4px] h-[24px] items-center overflow-clip p-[4px] relative rounded-[2px] shrink-0 w-full" data-node-id="I4:30304;33988:26674" data-name="Box">
                           <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:Regular'] h-[13.5px] justify-center leading-[0] min-w-px not-italic overflow-hidden relative text-[#64747a] text-[9px] text-ellipsis whitespace-nowrap" data-node-id="I4:30304;33988:26676" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                            <p className="leading-[1.5] overflow-hidden text-ellipsis">R$ 000.000.000,00</p>
+                            <p className="leading-[1.5] overflow-hidden text-ellipsis">{t("t0243")}</p>
                           </div>
                         </div>
                       </div>
@@ -1297,14 +1243,14 @@ export default function ArticleValidacaoTardia() {
                           <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="I4:30305;33988:26669" data-name="Label + Additional indo">
                             <div className="content-stretch flex items-start relative shrink-0" data-node-id="I4:30305;33988:26670" data-name="Label">
                               <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#22292e] text-[4px] whitespace-nowrap" data-node-id="I4:30305;33988:26670;14952:318439" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                                <p className="leading-[1.5]">Valor Atualizado*</p>
+                                <p className="leading-[1.5]">{t("t0244")}</p>
                               </div>
                             </div>
                           </div>
                         </div>
                         <div className="bg-white border-[#9eb2b8] border-[0.5px] border-solid content-stretch flex gap-[4px] h-[24px] items-center overflow-clip p-[4px] relative rounded-[2px] shrink-0 w-full" data-node-id="I4:30305;33988:26674" data-name="Box">
                           <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:Regular'] h-[13.5px] justify-center leading-[0] min-w-px not-italic overflow-hidden relative text-[#64747a] text-[9px] text-ellipsis whitespace-nowrap" data-node-id="I4:30305;33988:26676" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                            <p className="leading-[1.5] overflow-hidden text-ellipsis">R$ 000.000.000,00</p>
+                            <p className="leading-[1.5] overflow-hidden text-ellipsis">{t("t0243")}</p>
                           </div>
                         </div>
                       </div>
@@ -1320,11 +1266,11 @@ export default function ArticleValidacaoTardia() {
                         </div>
                       </div>
                       <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] min-w-px not-italic relative text-[#005ca9] text-[8px]" data-node-id="4:30310" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                        <p className="leading-none">Parcelas</p>
+                        <p className="leading-none">{t("t0245")}</p>
                       </div>
                       <div className="bg-white border-[#005ca9] border-[0.5px] border-solid content-stretch flex gap-[4px] h-[24px] items-center justify-center px-[12px] py-[4px] relative rounded-[2px] shrink-0" data-node-id="4:30311" data-name="[dsc] Button">
                         <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#005ca9] text-[9px] text-center whitespace-nowrap" data-node-id="I4:30311;32909:7232" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                          <p className="leading-[1.5]">Adicionar</p>
+                          <p className="leading-[1.5]">{t("t0246")}</p>
                         </div>
                         <div className="relative shrink-0 size-[12px]" data-node-id="I4:30311;32909:7233" data-name="Material Icon">
                           <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgAdd} />
@@ -1336,25 +1282,25 @@ export default function ArticleValidacaoTardia() {
                         <div className="bg-[#ebf1f2] border-[#d0e0e3] border-b-[0.5px] border-solid content-stretch flex gap-[4px] items-center min-h-[36px] px-[8px] py-[12px] relative shrink-0 w-[138px]" data-node-id="4:30322" data-name="[dsc] Table Header">
                           <div className="absolute inset-[0_0_-0.5px_0]" data-node-id="I4:30322;33417:18010" data-name="Fixed Indicator" />
                           <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#22292e] text-[4px] whitespace-nowrap" data-node-id="I4:30322;33417:18011" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                            <p className="leading-[1.5]">Nº da parcela</p>
+                            <p className="leading-[1.5]">{t("t0247")}</p>
                           </div>
                         </div>
                         <div className="bg-[#ebf1f2] border-[#d0e0e3] border-b-[0.5px] border-solid content-stretch flex gap-[4px] items-center min-h-[36px] px-[8px] py-[12px] relative shrink-0 w-[194px]" data-node-id="4:30323" data-name="[dsc] Table Header">
                           <div className="absolute inset-[0_0_-0.5px_0]" data-node-id="I4:30323;33417:18010" data-name="Fixed Indicator" />
                           <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#22292e] text-[4px] whitespace-nowrap" data-node-id="I4:30323;33417:18011" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                            <p className="leading-[1.5]">Data máxima para deposito</p>
+                            <p className="leading-[1.5]">{t("t0248")}</p>
                           </div>
                         </div>
                         <div className="bg-[#ebf1f2] border-[#d0e0e3] border-b-[0.5px] border-solid content-stretch flex gap-[4px] items-center min-h-[36px] px-[8px] py-[12px] relative shrink-0 w-[194px]" data-node-id="4:30324" data-name="[dsc] Table Header">
                           <div className="absolute inset-[0_0_-0.5px_0]" data-node-id="I4:30324;33417:18010" data-name="Fixed Indicator" />
                           <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#22292e] text-[4px] whitespace-nowrap" data-node-id="I4:30324;33417:18011" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                            <p className="leading-[1.5]">Mês/Ano de divulgação</p>
+                            <p className="leading-[1.5]">{t("t0249")}</p>
                           </div>
                         </div>
                         <div className="bg-[#ebf1f2] border-[#d0e0e3] border-b-[0.5px] border-solid content-stretch flex gap-[4px] items-center min-h-[36px] px-[8px] py-[12px] relative shrink-0 w-[194px]" data-node-id="4:30325" data-name="[dsc] Table Header">
                           <div className="absolute inset-[0_0_-0.5px_0]" data-node-id="I4:30325;33417:18010" data-name="Fixed Indicator" />
                           <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#22292e] text-[4px] whitespace-nowrap" data-node-id="I4:30325;33417:18011" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                            <p className="leading-[1.5]">Valor atualizado</p>
+                            <p className="leading-[1.5]">{t("t0250")}</p>
                           </div>
                         </div>
                         <div className="border-[#d0e0e3] border-b-[0.5px] border-solid content-stretch flex gap-[2px] items-center min-h-[28px] px-[8px] py-[4px] relative self-stretch shrink-0 w-[56px]" data-node-id="4:30326" data-name="[dsc] Table Cell">
@@ -1379,7 +1325,7 @@ export default function ArticleValidacaoTardia() {
                               <div className="content-stretch flex flex-col gap-[2px] items-start min-w-[122px] relative shrink-0 w-[179.333px]" data-node-id="4:30339" data-name="[dsc] Datepicker">
                                 <div className="bg-white border-[#9eb2b8] border-[0.5px] border-solid content-stretch flex gap-[4px] h-[24px] items-center overflow-clip p-[4.5px] relative rounded-[2px] shrink-0 w-full" data-node-id="I4:30339;15066:316379" data-name="Box">
                                   <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:Regular'] h-[12.5px] justify-center leading-[0] min-w-px not-italic overflow-hidden relative text-[#64747a] text-[4px] text-ellipsis whitespace-nowrap" data-node-id="I4:30339;15066:316382" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                                    <p className="leading-[1.5] overflow-hidden text-ellipsis">DD/MM/AAAA</p>
+                                    <p className="leading-[1.5] overflow-hidden text-ellipsis">{t("t0218")}</p>
                                   </div>
                                   <div className="relative shrink-0 size-[12px]" data-node-id="I4:30339;15066:316383" data-name="Calendar icon">
                                     <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
@@ -1396,7 +1342,7 @@ export default function ArticleValidacaoTardia() {
                               <div className="content-stretch flex flex-col gap-[2px] items-start min-w-[122px] relative shrink-0 w-[179.333px]" data-node-id="4:30342" data-name="[dsc] Datepicker">
                                 <div className="bg-white border-[#9eb2b8] border-[0.5px] border-solid content-stretch flex gap-[4px] h-[24px] items-center overflow-clip p-[4.5px] relative rounded-[2px] shrink-0 w-full" data-node-id="I4:30342;15066:316379" data-name="Box">
                                   <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:Regular'] h-[12.5px] justify-center leading-[0] min-w-px not-italic overflow-hidden relative text-[#64747a] text-[4px] text-ellipsis whitespace-nowrap" data-node-id="I4:30342;15066:316382" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                                    <p className="leading-[1.5] overflow-hidden text-ellipsis">MM/AAAA</p>
+                                    <p className="leading-[1.5] overflow-hidden text-ellipsis">{t("t0251")}</p>
                                   </div>
                                   <div className="relative shrink-0 size-[12px]" data-node-id="I4:30342;15066:316383" data-name="Calendar icon">
                                     <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
@@ -1413,7 +1359,7 @@ export default function ArticleValidacaoTardia() {
                               <div className="content-stretch flex flex-col gap-[2px] items-start min-w-[122px] relative shrink-0 w-[179.333px]" data-node-id="4:30345" data-name="[dsc] Input">
                                 <div className="bg-white border-[#9eb2b8] border-[0.5px] border-solid content-stretch flex gap-[4px] h-[24px] items-center overflow-clip p-[4px] relative rounded-[2px] shrink-0 w-full" data-node-id="I4:30345;33988:26674" data-name="Box">
                                   <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:Regular'] h-[13.5px] justify-center leading-[0] min-w-px not-italic overflow-hidden relative text-[#64747a] text-[9px] text-ellipsis whitespace-nowrap" data-node-id="I4:30345;33988:26676" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                                    <p className="leading-[1.5] overflow-hidden text-ellipsis">R$ 000.000.000,00</p>
+                                    <p className="leading-[1.5] overflow-hidden text-ellipsis">{t("t0243")}</p>
                                   </div>
                                 </div>
                               </div>
@@ -1447,7 +1393,7 @@ export default function ArticleValidacaoTardia() {
                               <div className="content-stretch flex flex-col gap-[2px] items-start min-w-[122px] relative shrink-0 w-[179.333px]" data-node-id="4:30373" data-name="[dsc] Datepicker">
                                 <div className="bg-white border-[#9eb2b8] border-[0.5px] border-solid content-stretch flex gap-[4px] h-[24px] items-center overflow-clip p-[4.5px] relative rounded-[2px] shrink-0 w-full" data-node-id="I4:30373;15066:316379" data-name="Box">
                                   <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:Regular'] h-[12.5px] justify-center leading-[0] min-w-px not-italic overflow-hidden relative text-[#64747a] text-[4px] text-ellipsis whitespace-nowrap" data-node-id="I4:30373;15066:316382" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                                    <p className="leading-[1.5] overflow-hidden text-ellipsis">DD/MM/AAAA</p>
+                                    <p className="leading-[1.5] overflow-hidden text-ellipsis">{t("t0218")}</p>
                                   </div>
                                   <div className="relative shrink-0 size-[12px]" data-node-id="I4:30373;15066:316383" data-name="Calendar icon">
                                     <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
@@ -1464,7 +1410,7 @@ export default function ArticleValidacaoTardia() {
                               <div className="content-stretch flex flex-col gap-[2px] items-start min-w-[122px] relative shrink-0 w-[179.333px]" data-node-id="4:30376" data-name="[dsc] Datepicker">
                                 <div className="bg-white border-[#9eb2b8] border-[0.5px] border-solid content-stretch flex gap-[4px] h-[24px] items-center overflow-clip p-[4.5px] relative rounded-[2px] shrink-0 w-full" data-node-id="I4:30376;15066:316379" data-name="Box">
                                   <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:Regular'] h-[12.5px] justify-center leading-[0] min-w-px not-italic overflow-hidden relative text-[#64747a] text-[4px] text-ellipsis whitespace-nowrap" data-node-id="I4:30376;15066:316382" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                                    <p className="leading-[1.5] overflow-hidden text-ellipsis">MM/AAAA</p>
+                                    <p className="leading-[1.5] overflow-hidden text-ellipsis">{t("t0251")}</p>
                                   </div>
                                   <div className="relative shrink-0 size-[12px]" data-node-id="I4:30376;15066:316383" data-name="Calendar icon">
                                     <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
@@ -1481,7 +1427,7 @@ export default function ArticleValidacaoTardia() {
                               <div className="content-stretch flex flex-col gap-[2px] items-start min-w-[122px] relative shrink-0 w-[179.333px]" data-node-id="4:30379" data-name="[dsc] Input">
                                 <div className="bg-white border-[#9eb2b8] border-[0.5px] border-solid content-stretch flex gap-[4px] h-[24px] items-center overflow-clip p-[4px] relative rounded-[2px] shrink-0 w-full" data-node-id="I4:30379;33988:26674" data-name="Box">
                                   <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:Regular'] h-[13.5px] justify-center leading-[0] min-w-px not-italic overflow-hidden relative text-[#64747a] text-[9px] text-ellipsis whitespace-nowrap" data-node-id="I4:30379;33988:26676" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                                    <p className="leading-[1.5] overflow-hidden text-ellipsis">R$ 000.000.000,00</p>
+                                    <p className="leading-[1.5] overflow-hidden text-ellipsis">{t("t0243")}</p>
                                   </div>
                                 </div>
                               </div>
@@ -1515,7 +1461,7 @@ export default function ArticleValidacaoTardia() {
                               <div className="content-stretch flex flex-col gap-[2px] items-start min-w-[122px] relative shrink-0 w-[179.333px]" data-node-id="4:30407" data-name="[dsc] Datepicker">
                                 <div className="bg-white border-[#9eb2b8] border-[0.5px] border-solid content-stretch flex gap-[4px] h-[24px] items-center overflow-clip p-[4.5px] relative rounded-[2px] shrink-0 w-full" data-node-id="I4:30407;15066:316379" data-name="Box">
                                   <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:Regular'] h-[12.5px] justify-center leading-[0] min-w-px not-italic overflow-hidden relative text-[#64747a] text-[4px] text-ellipsis whitespace-nowrap" data-node-id="I4:30407;15066:316382" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                                    <p className="leading-[1.5] overflow-hidden text-ellipsis">DD/MM/AAAA</p>
+                                    <p className="leading-[1.5] overflow-hidden text-ellipsis">{t("t0218")}</p>
                                   </div>
                                   <div className="relative shrink-0 size-[12px]" data-node-id="I4:30407;15066:316383" data-name="Calendar icon">
                                     <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
@@ -1532,7 +1478,7 @@ export default function ArticleValidacaoTardia() {
                               <div className="content-stretch flex flex-col gap-[2px] items-start min-w-[122px] relative shrink-0 w-[179.333px]" data-node-id="4:30410" data-name="[dsc] Datepicker">
                                 <div className="bg-white border-[#9eb2b8] border-[0.5px] border-solid content-stretch flex gap-[4px] h-[24px] items-center overflow-clip p-[4.5px] relative rounded-[2px] shrink-0 w-full" data-node-id="I4:30410;15066:316379" data-name="Box">
                                   <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:Regular'] h-[12.5px] justify-center leading-[0] min-w-px not-italic overflow-hidden relative text-[#64747a] text-[4px] text-ellipsis whitespace-nowrap" data-node-id="I4:30410;15066:316382" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                                    <p className="leading-[1.5] overflow-hidden text-ellipsis">MM/AAAA</p>
+                                    <p className="leading-[1.5] overflow-hidden text-ellipsis">{t("t0251")}</p>
                                   </div>
                                   <div className="relative shrink-0 size-[12px]" data-node-id="I4:30410;15066:316383" data-name="Calendar icon">
                                     <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
@@ -1549,7 +1495,7 @@ export default function ArticleValidacaoTardia() {
                               <div className="content-stretch flex flex-col gap-[2px] items-start min-w-[122px] relative shrink-0 w-[179.333px]" data-node-id="4:30413" data-name="[dsc] Input">
                                 <div className="bg-white border-[#9eb2b8] border-[0.5px] border-solid content-stretch flex gap-[4px] h-[24px] items-center overflow-clip p-[4px] relative rounded-[2px] shrink-0 w-full" data-node-id="I4:30413;33988:26674" data-name="Box">
                                   <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:Regular'] h-[13.5px] justify-center leading-[0] min-w-px not-italic overflow-hidden relative text-[#64747a] text-[9px] text-ellipsis whitespace-nowrap" data-node-id="I4:30413;33988:26676" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                                    <p className="leading-[1.5] overflow-hidden text-ellipsis">R$ 000.000.000,00</p>
+                                    <p className="leading-[1.5] overflow-hidden text-ellipsis">{t("t0243")}</p>
                                   </div>
                                 </div>
                               </div>
@@ -1584,12 +1530,12 @@ export default function ArticleValidacaoTardia() {
                           </div>
                           <div className="content-stretch flex gap-[2px] items-center relative shrink-0 w-full" data-node-id="4:30559">
                             <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#22292e] text-[8px] whitespace-nowrap" data-node-id="4:30560" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                              <p className="leading-[1.5]">Total</p>
+                              <p className="leading-[1.5]">{t("t0252")}</p>
                             </div>
                             <div className="content-stretch flex flex-col gap-[2px] items-start min-w-[122px] relative shrink-0 w-[179.5px]" data-node-id="4:30561" data-name="[dsc] Input">
                               <div className="bg-white border-[#9eb2b8] border-[0.5px] border-solid content-stretch flex gap-[4px] h-[24px] items-center overflow-clip p-[4px] relative rounded-[2px] shrink-0 w-full" data-node-id="I4:30561;33988:26674" data-name="Box">
                                 <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:Regular'] h-[13.5px] justify-center leading-[0] min-w-px not-italic overflow-hidden relative text-[#64747a] text-[9px] text-ellipsis whitespace-nowrap" data-node-id="I4:30561;33988:26676" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                                  <p className="leading-[1.5] overflow-hidden text-ellipsis">R$ 000.000.000,00</p>
+                                  <p className="leading-[1.5] overflow-hidden text-ellipsis">{t("t0243")}</p>
                                 </div>
                               </div>
                             </div>
@@ -1600,8 +1546,7 @@ export default function ArticleValidacaoTardia() {
                               <div className="absolute bg-[#005ca9] h-[2px] left-0 right-[80%] top-0" data-node-id="I4:30567;56962:1248" data-name="Active indicator" />
                             </div>
                             <p className="[word-break:break-word] font-['CAIXA_Std:Regular'] leading-[1.5] not-italic relative shrink-0 text-[#64747a] text-[3.5px] text-center whitespace-nowrap" data-node-id="I4:30567;56962:1249" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                              Valor Atualizado: R$ 000.000.000,00
-                            </p>
+                              {t("t0253")}</p>
                           </div>
                         </div>
                         <div className="border-[#d0e0e3] border-b-[0.5px] border-solid content-stretch flex gap-[2px] items-center min-h-[28px] px-[8px] py-[4px] relative self-stretch shrink-0 w-[51.5px]" data-node-id="4:30587" data-name="[dsc] Table Cell">
@@ -1614,7 +1559,7 @@ export default function ArticleValidacaoTardia() {
               </div>
               <div className="bg-white content-stretch flex gap-[4px] items-center p-[12px] relative shrink-0 w-full" data-node-id="4:30600">
                 <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:Regular'] justify-center leading-[0] min-w-px not-italic relative text-[#22292e] text-[8px]" data-node-id="4:30601" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                  <p className="leading-[1.5]">*Campos Obrigatórios</p>
+                  <p className="leading-[1.5]">{t("t0225")}</p>
                 </div>
                 <div className="bg-white border-[#005ca9] border-[0.5px] border-solid content-stretch flex h-[24px] items-center justify-center p-[4px] relative rounded-[2px] shrink-0" data-node-id="4:30602" data-name="[dsc] Button">
                   <div className="relative shrink-0 size-[16px]" data-node-id="I4:30602;32909:7239" data-name="Material Icon">
@@ -1626,12 +1571,12 @@ export default function ArticleValidacaoTardia() {
                     <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCancel1} />
                   </div>
                   <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#005ca9] text-[9px] text-center whitespace-nowrap" data-node-id="I4:30603;32909:7232" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                    <p className="leading-[1.5]">Limpar</p>
+                    <p className="leading-[1.5]">{t("t0226")}</p>
                   </div>
                 </button>
                 <div className="bg-[#005ca9] content-stretch flex gap-[4px] h-[24px] items-center justify-center px-[12px] py-[4px] relative rounded-[2px] shrink-0 w-[100px]" data-node-id="4:30604" data-name="Primary action">
                   <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[9px] text-center text-white whitespace-nowrap" data-node-id="I4:30604;32909:7220" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                    <p className="leading-[1.5]">Salvar</p>
+                    <p className="leading-[1.5]">{t("t0227")}</p>
                   </div>
                   <div className="relative shrink-0 size-[12px]" data-node-id="I4:30604;32909:7221" data-name="Material Icon">
                     <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSave1} />
@@ -1649,7 +1594,7 @@ export default function ArticleValidacaoTardia() {
             <div className="content-stretch drop-shadow-[0px_1px_1.5px_rgba(0,0,0,0.3),0px_1px_1.5px_rgba(0,0,0,0.3)] flex flex-[1_0_0] flex-col items-start min-w-px overflow-clip relative rounded-[2px]" data-node-id="4:30607" data-name="[dsc] Dialog">
               <div className="bg-white border-[#d0e0e3] border-b-[0.5px] border-solid content-stretch flex gap-[12px] items-center pl-[12px] pr-[6px] py-[12px] relative rounded-tl-[2px] rounded-tr-[2px] shrink-0 w-full" data-node-id="4:30608" data-name=".[dsc] Dialog Header">
                 <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] gap-[4px] items-center min-w-px not-italic relative text-[#22292e] whitespace-nowrap" data-node-id="4:30609" data-name="Icon + title">
-                  <p className="font-['CAIXA_Std:SemiBold'] leading-[1.4] relative shrink-0 text-[12px]" data-node-id="4:30611" style={{ fontFeatureSettings: '"ss01" 1' }}>{`Cadastrar TCCA `}</p>
+                  <p className="font-['CAIXA_Std:SemiBold'] leading-[1.4] relative shrink-0 text-[12px]" data-node-id="4:30611" style={{ fontFeatureSettings: '"ss01" 1' }}>{t("t0240")}</p>
                   <div className="bg-[#ebf1f2] content-stretch flex font-['CAIXA_Std:Regular'] gap-[4px] items-center leading-[0] px-[6px] py-[4px] relative rounded-[4px] shrink-0 text-[8px]" data-node-id="4:30612">
                     <div className="flex flex-col justify-center overflow-hidden relative shrink-0 text-ellipsis" data-node-id="4:30614" style={{ fontFeatureSettings: '"ss01" 1' }}>
                       <p className="leading-[1.5] overflow-hidden text-ellipsis">002</p>
@@ -1675,7 +1620,7 @@ export default function ArticleValidacaoTardia() {
                       <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgMenuOpen1} />
                     </div>
                     <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#22292e] text-[4px] text-center whitespace-nowrap" data-node-id="I4:30620;32909:7618" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                      <p className="leading-[1.5]">Recolher</p>
+                      <p className="leading-[1.5]">{t("t0231")}</p>
                     </div>
                   </div>
                   <div className="content-stretch flex gap-[6px] h-[24px] items-center px-[6px] relative shrink-0 w-[160px]" data-node-id="4:30621" data-name="[dsc] Checkbox">
@@ -1688,7 +1633,7 @@ export default function ArticleValidacaoTardia() {
                     </div>
                     <div className="content-stretch flex items-center relative shrink-0" data-node-id="I4:30621;31595:17897" data-name="Right label">
                       <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#22292e] text-[9px] whitespace-nowrap" data-node-id="I4:30621;31595:17897;30557:1764" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                        <p className="leading-[1.5]">Dados Gerais</p>
+                        <p className="leading-[1.5]">{t("t0232")}</p>
                       </div>
                     </div>
                   </div>
@@ -1702,7 +1647,7 @@ export default function ArticleValidacaoTardia() {
                     </div>
                     <div className="content-stretch flex items-center relative shrink-0" data-node-id="I4:30622;31595:17897" data-name="Right label">
                       <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#22292e] text-[9px] whitespace-nowrap" data-node-id="I4:30622;31595:17897;30557:1764" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                        <p className="leading-[1.5]">Financeiro e Parcelamento</p>
+                        <p className="leading-[1.5]">{t("t0233")}</p>
                       </div>
                     </div>
                   </div>
@@ -1716,7 +1661,7 @@ export default function ArticleValidacaoTardia() {
                     </div>
                     <div className="content-stretch flex items-center relative shrink-0" data-node-id="I4:30623;31595:18009" data-name="Right label">
                       <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[9px] text-white whitespace-nowrap" data-node-id="I4:30623;31595:18009;30557:1764" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                        <p className="leading-[1.5]">Subconta e vínculos</p>
+                        <p className="leading-[1.5]">{t("t0234")}</p>
                       </div>
                     </div>
                   </div>
@@ -1732,12 +1677,12 @@ export default function ArticleValidacaoTardia() {
                         </div>
                       </div>
                       <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] min-w-px not-italic relative text-[#005ca9] text-[10px]" data-node-id="4:30632" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                        <p className="leading-none">Empreendimento:</p>
+                        <p className="leading-none">{t("t0254")}</p>
                       </div>
                     </div>
                     <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-node-id="4:30633" data-name="caption">
                       <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:Regular'] justify-center leading-[0] min-w-px not-italic relative text-[#404b52] text-[8px]" data-node-id="4:30634" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                        <p className="leading-[1.4]">Vincule o Empreendimento e a Unidade de Conservação para gerar a subconta automaticamente. Garanta o cadastro delas antes de inserir essas informações.</p>
+                        <p className="leading-[1.4]">{t("t0255")}</p>
                       </div>
                     </div>
                     <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 w-full" data-node-id="4:30635" data-name="fielset">
@@ -1747,7 +1692,7 @@ export default function ArticleValidacaoTardia() {
                             <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="I4:30637;30535:7565" data-name="Label + Additional Info">
                               <div className="content-stretch flex items-start relative shrink-0" data-node-id="I4:30637;30535:7566" data-name="Label">
                                 <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#22292e] text-[4px] whitespace-nowrap" data-node-id="I4:30637;30535:7566;14952:318439" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                                  <p className="leading-[1.5]">Empreendimento:</p>
+                                  <p className="leading-[1.5]">{t("t0254")}</p>
                                 </div>
                               </div>
                             </div>
@@ -1759,7 +1704,7 @@ export default function ArticleValidacaoTardia() {
                               </div>
                             </div>
                             <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:Regular'] h-[13.5px] justify-center leading-[0] min-w-px not-italic overflow-hidden relative text-[#22292e] text-[4px] text-ellipsis whitespace-nowrap" data-node-id="I4:30637;14981:319079" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                              <p className="leading-[1.5] overflow-hidden text-ellipsis">MINERODUTO MINA GERMANO/MG - PORTO DE UBU/ES</p>
+                              <p className="leading-[1.5] overflow-hidden text-ellipsis">{t("t0256")}</p>
                             </div>
                           </div>
                         </div>
@@ -1774,13 +1719,13 @@ export default function ArticleValidacaoTardia() {
                           <div className="bg-[#ebf1f2] border-[#d0e0e3] border-b-[0.5px] border-solid content-stretch flex gap-[4px] items-center min-h-[36px] px-[8px] py-[12px] relative shrink-0 w-[138px]" data-node-id="4:30642" data-name="[dsc] Table Header">
                             <div className="absolute inset-[0_0_-0.5px_0]" data-node-id="I4:30642;33417:18010" data-name="Fixed Indicator" />
                             <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#22292e] text-[4px] whitespace-nowrap" data-node-id="I4:30642;33417:18011" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                              <p className="leading-[1.5]">Código</p>
+                              <p className="leading-[1.5]">{t("t0257")}</p>
                             </div>
                           </div>
                           <div className="bg-[#ebf1f2] border-[#d0e0e3] border-b-[0.5px] border-solid content-stretch flex gap-[4px] items-center min-h-[36px] px-[8px] py-[12px] relative shrink-0 w-[566px]" data-node-id="4:30643" data-name="[dsc] Table Header">
                             <div className="absolute inset-[0_0_-0.5px_0]" data-node-id="I4:30643;33417:18010" data-name="Fixed Indicator" />
                             <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#22292e] text-[4px] whitespace-nowrap" data-node-id="I4:30643;33417:18011" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                              <p className="leading-[1.5]">Empreendimento</p>
+                              <p className="leading-[1.5]">{t("t0258")}</p>
                             </div>
                           </div>
                           <div className="bg-[#ebf1f2] border-[#d0e0e3] border-b-[0.5px] border-solid content-stretch flex h-[36px] items-center min-h-[36px] px-[8px] py-[4px] relative shrink-0 w-[72px]" data-node-id="4:30647" data-name="[dsc] Table Header">
@@ -1804,7 +1749,7 @@ export default function ArticleValidacaoTardia() {
                               <div className="content-stretch flex flex-[1_0_0] gap-[4px] items-center min-w-px py-[4px] relative" data-node-id="I4:30653;33417:17833" data-name="Content">
                                 <div className="content-stretch flex flex-[1_0_0] flex-col gap-[2px] items-start justify-center min-w-px relative" data-node-id="I4:30653;33417:17835" data-name="Texts">
                                   <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#22292e] text-[4px] w-full" data-node-id="I4:30653;33417:17836" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                                    <p className="leading-[1.5]">MINERODUTO MINA GERMANO/MG - PORTO DE UBU/ES</p>
+                                    <p className="leading-[1.5]">{t("t0256")}</p>
                                   </div>
                                 </div>
                               </div>
@@ -1836,11 +1781,11 @@ export default function ArticleValidacaoTardia() {
                         </div>
                       </div>
                       <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] min-w-px not-italic relative text-[#005ca9] text-[8px]" data-node-id="4:30857" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                        <p className="leading-none">{`Subconta `}</p>
+                        <p className="leading-none">{t("t0259")}</p>
                       </div>
                       <button className="bg-white border-[#005ca9] border-[0.5px] border-solid content-stretch cursor-pointer flex gap-[4px] h-[24px] items-center justify-center px-[12px] py-[4px] relative rounded-[2px] shrink-0 w-[100px]" data-node-id="4:30858" data-name="Secondary action">
                         <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#005ca9] text-[9px] text-center whitespace-nowrap" data-node-id="I4:30858;32909:7232" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                          <p className="leading-[1.5]">Adicionar</p>
+                          <p className="leading-[1.5]">{t("t0246")}</p>
                         </div>
                         <div className="relative shrink-0 size-[12px]" data-node-id="I4:30858;32909:7233" data-name="Material Icon">
                           <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgAdd2} />
@@ -1852,13 +1797,13 @@ export default function ArticleValidacaoTardia() {
                         <div className="bg-[#ebf1f2] border-[#d0e0e3] border-b-[0.5px] border-solid content-stretch flex gap-[4px] items-center min-h-[36px] px-[8px] py-[12px] relative shrink-0 w-[138px]" data-node-id="4:30869" data-name="[dsc] Table Header">
                           <div className="absolute inset-[0_0_-0.5px_0]" data-node-id="I4:30869;33417:18010" data-name="Fixed Indicator" />
                           <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#22292e] text-[4px] whitespace-nowrap" data-node-id="I4:30869;33417:18011" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                            <p className="leading-[1.5]">Nº</p>
+                            <p className="leading-[1.5]">{t("t0260")}</p>
                           </div>
                         </div>
                         <div className="bg-[#ebf1f2] border-[#d0e0e3] border-b-[0.5px] border-solid content-stretch flex flex-[1_0_0] gap-[4px] items-center min-h-[36px] min-w-px px-[8px] relative" data-node-id="4:30870" data-name="[dsc] Table Header">
                           <div className="absolute inset-[-27px_-65px_-21.5px_53px]" data-node-id="4:30871" data-name="Fixed Indicator" />
                           <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#22292e] text-[8px] whitespace-nowrap" data-node-id="4:30872" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                            <p className="leading-[1.5]">Unidade de conservação</p>
+                            <p className="leading-[1.5]">{t("t0261")}</p>
                           </div>
                           <button className="content-stretch cursor-pointer flex h-[24px] items-center justify-center p-[4px] relative rounded-[2px] shrink-0" data-node-id="4:30873" data-name="Secondary action">
                             <div className="relative shrink-0 size-[16px]" data-node-id="I4:30873;32909:7257" data-name="Material Icon">
@@ -1869,13 +1814,13 @@ export default function ArticleValidacaoTardia() {
                         <div className="bg-[#ebf1f2] border-[#d0e0e3] border-b-[0.5px] border-solid content-stretch flex gap-[4px] items-center min-h-[36px] px-[8px] py-[12px] relative shrink-0 w-[194px]" data-node-id="4:30875" data-name="[dsc] Table Header">
                           <div className="absolute inset-[0_0_-0.5px_0]" data-node-id="I4:30875;33417:18010" data-name="Fixed Indicator" />
                           <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#22292e] text-[4px] whitespace-nowrap" data-node-id="I4:30875;33417:18011" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                            <p className="leading-[1.5]">Ação de aplicação</p>
+                            <p className="leading-[1.5]">{t("t0262")}</p>
                           </div>
                         </div>
                         <div className="bg-[#ebf1f2] border-[#d0e0e3] border-b-[0.5px] border-solid content-stretch flex gap-[4px] items-center min-h-[36px] px-[8px] py-[12px] relative shrink-0 w-[194px]" data-node-id="4:30876" data-name="[dsc] Table Header">
                           <div className="absolute inset-[0_0_-0.5px_0]" data-node-id="I4:30876;33417:18010" data-name="Fixed Indicator" />
                           <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#22292e] text-[4px] whitespace-nowrap" data-node-id="I4:30876;33417:18011" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                            <p className="leading-[1.5]">{`Valor Subconta `}</p>
+                            <p className="leading-[1.5]">{t("t0263")}</p>
                           </div>
                         </div>
                         <div className="border-[#d0e0e3] border-b-[0.5px] border-solid content-stretch flex gap-[2px] items-center min-h-[28px] px-[8px] py-[4px] relative self-stretch shrink-0 w-[56px]" data-node-id="4:30878" data-name="[dsc] Table Cell">
@@ -1905,7 +1850,7 @@ export default function ArticleValidacaoTardia() {
                                     </div>
                                   </div>
                                   <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:Regular'] h-[13.5px] justify-center leading-[0] min-w-px not-italic overflow-hidden relative text-[#22292e] text-[4px] text-ellipsis whitespace-nowrap" data-node-id="I4:30891;14981:319079" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                                    <p className="leading-[1.5] overflow-hidden text-ellipsis">Pesquise a Unidade de conservação</p>
+                                    <p className="leading-[1.5] overflow-hidden text-ellipsis">{t("t0264")}</p>
                                   </div>
                                 </div>
                               </div>
@@ -1915,7 +1860,7 @@ export default function ArticleValidacaoTardia() {
                               <div className="content-stretch flex flex-col gap-[2px] items-start relative shrink-0 w-[179.333px]" data-node-id="4:30894" data-name="[dsc] Select">
                                 <div className="bg-white border-[#404b52] border-[0.5px] border-solid content-stretch flex gap-[4px] h-[24px] items-center overflow-clip p-[4.5px] relative rounded-[2px] shrink-0 w-full" data-node-id="I4:30894;15045:317992" data-name="Box">
                                   <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:Regular'] h-[12.5px] justify-center leading-[0] min-w-px not-italic overflow-hidden relative text-[#22292e] text-[4.5px] text-ellipsis whitespace-nowrap" data-node-id="I4:30894;15045:317995" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                                    <p className="leading-[1.5] overflow-hidden text-ellipsis">Selected option</p>
+                                    <p className="leading-[1.5] overflow-hidden text-ellipsis">{t("t0265")}</p>
                                   </div>
                                   <div className="relative shrink-0 size-[12px]" data-node-id="I4:30894;15045:317996" data-name="Selector arrow">
                                     <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
@@ -1932,7 +1877,7 @@ export default function ArticleValidacaoTardia() {
                               <div className="content-stretch flex flex-col gap-[2px] items-start min-w-[122px] relative shrink-0 w-[179.333px]" data-node-id="4:30897" data-name="[dsc] Input">
                                 <div className="bg-white border-[#404b52] border-[0.5px] border-solid content-stretch flex gap-[4px] h-[24px] items-center overflow-clip p-[4px] relative rounded-[2px] shrink-0 w-full" data-node-id="I4:30897;33988:26687" data-name="Box">
                                   <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:Regular'] h-[13.5px] justify-center leading-[0] min-w-px not-italic overflow-hidden relative text-[#22292e] text-[9px] text-ellipsis whitespace-nowrap" data-node-id="I4:30897;33988:26689" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                                    <p className="leading-[1.5] overflow-hidden text-ellipsis">R$ 000.000.000,00</p>
+                                    <p className="leading-[1.5] overflow-hidden text-ellipsis">{t("t0243")}</p>
                                   </div>
                                 </div>
                               </div>
@@ -1971,7 +1916,7 @@ export default function ArticleValidacaoTardia() {
                                     </div>
                                   </div>
                                   <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:Regular'] h-[13.5px] justify-center leading-[0] min-w-px not-italic overflow-hidden relative text-[#22292e] text-[4px] text-ellipsis whitespace-nowrap" data-node-id="I4:30928;14981:319079" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                                    <p className="leading-[1.5] overflow-hidden text-ellipsis">Pesquise a Unidade de conservação</p>
+                                    <p className="leading-[1.5] overflow-hidden text-ellipsis">{t("t0264")}</p>
                                   </div>
                                 </div>
                               </div>
@@ -1981,7 +1926,7 @@ export default function ArticleValidacaoTardia() {
                               <div className="content-stretch flex flex-col gap-[2px] items-start relative shrink-0 w-[179.333px]" data-node-id="4:30931" data-name="[dsc] Select">
                                 <div className="bg-white border-[#404b52] border-[0.5px] border-solid content-stretch flex gap-[4px] h-[24px] items-center overflow-clip p-[4.5px] relative rounded-[2px] shrink-0 w-full" data-node-id="I4:30931;15045:317992" data-name="Box">
                                   <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:Regular'] h-[12.5px] justify-center leading-[0] min-w-px not-italic overflow-hidden relative text-[#22292e] text-[4.5px] text-ellipsis whitespace-nowrap" data-node-id="I4:30931;15045:317995" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                                    <p className="leading-[1.5] overflow-hidden text-ellipsis">Selected option</p>
+                                    <p className="leading-[1.5] overflow-hidden text-ellipsis">{t("t0265")}</p>
                                   </div>
                                   <div className="relative shrink-0 size-[12px]" data-node-id="I4:30931;15045:317996" data-name="Selector arrow">
                                     <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
@@ -1998,7 +1943,7 @@ export default function ArticleValidacaoTardia() {
                               <div className="content-stretch flex flex-col gap-[2px] items-start min-w-[122px] relative shrink-0 w-[179.333px]" data-node-id="4:30934" data-name="[dsc] Input">
                                 <div className="bg-white border-[#404b52] border-[0.5px] border-solid content-stretch flex gap-[4px] h-[24px] items-center overflow-clip p-[4px] relative rounded-[2px] shrink-0 w-full" data-node-id="I4:30934;33988:26687" data-name="Box">
                                   <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:Regular'] h-[13.5px] justify-center leading-[0] min-w-px not-italic overflow-hidden relative text-[#22292e] text-[9px] text-ellipsis whitespace-nowrap" data-node-id="I4:30934;33988:26689" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                                    <p className="leading-[1.5] overflow-hidden text-ellipsis">R$ 000.000.000,00</p>
+                                    <p className="leading-[1.5] overflow-hidden text-ellipsis">{t("t0243")}</p>
                                   </div>
                                 </div>
                               </div>
@@ -2027,7 +1972,7 @@ export default function ArticleValidacaoTardia() {
               </div>
               <div className="bg-white content-stretch flex gap-[4px] items-center p-[12px] relative shrink-0 w-full" data-node-id="4:31098">
                 <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['CAIXA_Std:Regular'] justify-center leading-[0] min-w-px not-italic relative text-[#22292e] text-[8px]" data-node-id="4:31099" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                  <p className="leading-[1.5]">*Campos Obrigatórios</p>
+                  <p className="leading-[1.5]">{t("t0225")}</p>
                 </div>
                 <div className="bg-white border-[#005ca9] border-[0.5px] border-solid content-stretch flex h-[24px] items-center justify-center p-[4px] relative rounded-[2px] shrink-0" data-node-id="4:31100" data-name="[dsc] Button">
                   <div className="relative shrink-0 size-[16px]" data-node-id="I4:31100;32909:7239" data-name="Material Icon">
@@ -2039,12 +1984,12 @@ export default function ArticleValidacaoTardia() {
                     <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCancel1} />
                   </div>
                   <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[#005ca9] text-[9px] text-center whitespace-nowrap" data-node-id="I4:31101;32909:7232" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                    <p className="leading-[1.5]">Limpar</p>
+                    <p className="leading-[1.5]">{t("t0226")}</p>
                   </div>
                 </button>
                 <div className="bg-[#005ca9] content-stretch flex gap-[4px] h-[24px] items-center justify-center px-[12px] py-[4px] relative rounded-[2px] shrink-0 w-[100px]" data-node-id="4:31102" data-name="Primary action">
                   <div className="[word-break:break-word] flex flex-col font-['CAIXA_Std:SemiBold'] justify-center leading-[0] not-italic relative shrink-0 text-[9px] text-center text-white whitespace-nowrap" data-node-id="I4:31102;32909:7220" style={{ fontFeatureSettings: '"ss01" 1' }}>
-                    <p className="leading-[1.5]">Salvar</p>
+                    <p className="leading-[1.5]">{t("t0227")}</p>
                   </div>
                   <div className="relative shrink-0 size-[12px]" data-node-id="I4:31102;32909:7221" data-name="Material Icon">
                     <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSave1} />
@@ -2065,16 +2010,14 @@ export default function ArticleValidacaoTardia() {
           </p>
           <div className="content-stretch flex flex-[1_0_0] flex-col gap-[10px] items-start justify-center min-w-px relative" data-node-id="4:31106" data-name="div.flex.flex-col.flex-1">
             <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.4] relative shrink-0 text-[#000102] text-[16px] w-[328px]" data-node-id="4:31107">
-              Evolução dos cadastros
-            </p>
+              {t("t0266")}</p>
           </div>
         </div>
       </div>
-      <div className="content-stretch flex flex-col h-[1080px] items-start justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:31109" data-name="section.results">
+      <div className="content-stretch flex flex-col h-[1080px] items-start justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:31109" data-name="section.results" data-section-id="results">
         <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full" data-node-id="4:31110" data-name="div.flex.flex-col.w-full">
-          <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.3] relative shrink-0 text-[#0d0e10] text-[16px] tracking-[0.64px] w-[900px]" data-node-id="4:31111">
-            04 · EVIDÊNCIAS E RESULTADOS
-          </p>
+          <h2 className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.3] relative shrink-0 text-[#0d0e10] text-[16px] tracking-[0.64px] w-[900px]" data-node-id="4:31111">
+            {t("t0149")}</h2>
           <div className="content-start flex flex-wrap gap-[32px_24px] h-[100px] items-start overflow-clip relative shrink-0 w-full" data-node-id="4:31112" data-name="div.metrics">
             <div className="content-stretch flex flex-[1_0_0] items-end min-w-px relative" data-node-id="4:31113" data-name="metric-result.evidence">
               <div className="bg-[#020305] content-stretch flex flex-col items-center justify-center max-h-[100px] min-h-[100px] min-w-[100px] px-[16px] py-[4px] relative rounded-[8px] shrink-0" data-node-id="I4:31113;6312:1003" data-name="number">
@@ -2086,11 +2029,9 @@ export default function ArticleValidacaoTardia() {
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-full items-start justify-center min-w-px relative" data-name="content">
                   <div className="[word-break:break-word] bg-[#101113] content-stretch flex flex-col font-['Sora:Regular'] font-normal gap-[8px] items-start leading-none p-[16px] relative rounded-br-[8px] rounded-tr-[8px] shrink-0 text-[#fcfdfe] w-full whitespace-nowrap" data-node-id="I4:31113;6312:1006" data-name="<title>">
                     <p className="relative shrink-0 text-[20px]" data-node-id="I4:31113;6312:1007">
-                      Conclusão das tarefas
-                    </p>
+                      {t("t0267")}</p>
                     <p className="relative shrink-0 text-[13px]" data-node-id="I4:31113;6312:1008">
-                      (Task Success)
-                    </p>
+                      {t("t0268")}</p>
                   </div>
                 </div>
               </div>
@@ -2098,18 +2039,15 @@ export default function ArticleValidacaoTardia() {
             <div className="content-stretch flex flex-[1_0_0] items-end min-w-px relative" data-node-id="4:31114" data-name="metric-result.evidence">
               <div className="bg-[#020305] content-stretch flex flex-col items-center justify-center max-h-[100px] min-h-[100px] min-w-[100px] px-[16px] py-[4px] relative rounded-[8px] shrink-0" data-node-id="I4:31114;6312:1003" data-name="number">
                 <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-none relative shrink-0 text-[#fcfdfe] text-[20px] whitespace-nowrap" data-node-id="I4:31114;6312:1004">
-                  2,1 min
-                </p>
+                  {t("t0269")}</p>
               </div>
               <div className="flex flex-[1_0_0] flex-row items-end self-stretch" data-node-id="I4:31114;6312:1005">
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-full items-start justify-center min-w-px relative" data-name="content">
                   <div className="[word-break:break-word] bg-[#101113] content-stretch flex flex-col font-['Sora:Regular'] font-normal gap-[8px] items-start leading-none p-[16px] relative rounded-br-[8px] rounded-tr-[8px] shrink-0 text-[#fcfdfe] w-full whitespace-nowrap" data-node-id="I4:31114;6312:1006" data-name="<title>">
                     <p className="relative shrink-0 text-[20px]" data-node-id="I4:31114;6312:1007">
-                      Tempo ativo médio
-                    </p>
+                      {t("t0270")}</p>
                     <p className="relative shrink-0 text-[13px]" data-node-id="I4:31114;6312:1008">
-                      (Active Time)
-                    </p>
+                      {t("t0271")}</p>
                   </div>
                 </div>
               </div>
@@ -2124,20 +2062,18 @@ export default function ArticleValidacaoTardia() {
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-full items-start justify-center min-w-px relative" data-name="content">
                   <div className="[word-break:break-word] bg-[#101113] content-stretch flex flex-col font-['Sora:Regular'] font-normal gap-[8px] items-start leading-none p-[16px] relative rounded-br-[8px] rounded-tr-[8px] shrink-0 text-[#fcfdfe] w-full whitespace-nowrap" data-node-id="I4:31115;6312:1006" data-name="<title>">
                     <p className="relative shrink-0 text-[20px]" data-node-id="I4:31115;6312:1007">
-                      Abandonos no piloto
-                    </p>
+                      {t("t0272")}</p>
                     <p className="relative shrink-0 text-[13px]" data-node-id="I4:31115;6312:1008">
-                      (Abandonment Rate)
-                    </p>
+                      {t("t0273")}</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[0] relative shrink-0 text-[#000102] text-[16px] w-[1040px] whitespace-pre-wrap" data-node-id="4:31117">
-            <p className="leading-[1.5] mb-0">No piloto de boletos, 18 participantes concluíram a tarefa sem abandono e usaram os filtros corretamente. O resultado descreve o teste, não todos os cadastros do SIAFF.</p>
+            <p className="leading-[1.5] mb-0">{t("t0274")}</p>
             <p className="leading-[1.5] mb-0">​</p>
-            <p className="leading-[1.5]">O ciclo pode seguir para o TCCA e outras áreas, com atenção a retrabalho, erros de preenchimento e correções após o desenvolvimento.</p>
+            <p className="leading-[1.5]">{t("t0275")}</p>
           </div>
         </div>
       </div>

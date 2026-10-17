@@ -1,4 +1,5 @@
 // @ts-nocheck -- Figma-generated exact visual component
+import { useI18n } from "../i18n";
 const assetPathPrefix = "/assets";
 const imgImgHeroImage = `${assetPathPrefix}/e6446.png`;
 const imgImgHeroImage1 = `${assetPathPrefix}/3fa54.png`;
@@ -21,72 +22,64 @@ const imgVector5 = `${assetPathPrefix}/6ffe5.svg`;
 const imgVector6 = `${assetPathPrefix}/876e0.svg`;
 
 export default function ArticleCadastroAbandonado() {
+  const { t, text, path } = useI18n();
   return (
     <div className="bg-[#eeeff1] content-stretch flex flex-col items-center relative size-full" data-node-id="4:34972" data-name="article#cadastro-abandonado">
       <div className="bg-[#f9f9f9] content-stretch flex flex-col gap-[32px] h-[1080px] isolate items-start justify-end overflow-clip px-[160px] py-[112px] relative shrink-0 w-[1920px]" data-node-id="4:34973" data-name="header.intro">
         <div className="[word-break:break-word] content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full z-[4]" data-node-id="4:34974" data-name="div.flex.flex-col.w-full">
-          <p className="font-['Sora:SemiBold'] font-semibold leading-[1.1] relative shrink-0 text-[#fcfdfe] text-[81px] w-[1180px]" data-node-id="4:34976">
-            Cadastro travado?
-          </p>
+          <h1 className="font-['Sora:SemiBold'] font-semibold leading-[1.1] relative shrink-0 text-[#fcfdfe] text-[81px] w-[1180px]" data-node-id="4:34976">
+            {t("t0276")}</h1>
           <p className="font-['Sora:Regular'] font-normal leading-[1.3] relative shrink-0 text-[#fcfdfe] text-[30px] w-[980px]" data-node-id="4:34977">
-            Abra caminho para novos alunos.
-          </p>
+            {t("t0277")}</p>
           <div className="content-start flex flex-wrap gap-[12px_16px] items-start leading-[1.6] relative shrink-0 text-[#230007] w-[1600px] whitespace-nowrap" data-node-id="4:34978" data-name="ul.meta">
             <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:34979" data-name="double-diamond">
               <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:34979;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                 diamond
               </p>
               <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:34979;6066:625">
-                Discovery + Priorização
-              </p>
+                {t("t0278")}</p>
             </div>
             <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:34980" data-name="usability-testing">
               <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:34980;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                 touch_app
               </p>
               <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:34980;6066:625">
-                Usability Testing
-              </p>
+                {t("t0163")}</p>
             </div>
             <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:34981" data-name="project-type-7">
               <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:34981;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                 devices
               </p>
               <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:34981;6066:625">
-                Plataforma LMS
-              </p>
+                {t("t0279")}</p>
             </div>
             <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:34982" data-name="support-ticket-analysis">
               <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:34982;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                 support_agent
               </p>
               <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:34982;6066:625">
-                Support-Ticket Analysis
-              </p>
+                {t("t0280")}</p>
             </div>
             <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:34983" data-name="journey-mapping">
               <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:34983;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                 route
               </p>
               <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:34983;6066:625">
-                Journey Mapping
-              </p>
+                {t("t0015")}</p>
             </div>
             <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:34984" data-name="conversational-design">
               <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:34984;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                 forum
               </p>
               <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:34984;6066:625">
-                Conversational Design
-              </p>
+                {t("t0281")}</p>
             </div>
             <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:34985" data-name="figma">
               <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:34985;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                 design_services
               </p>
               <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:34985;6066:625">
-                Figma
-              </p>
+                {t("t0167")}</p>
             </div>
           </div>
         </div>
@@ -106,16 +99,15 @@ export default function ArticleCadastroAbandonado() {
           </div>
         </div>
       </div>
-      <div className="content-stretch flex flex-col h-[1080px] items-start justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:34990" data-name="section.context">
+      <div className="content-stretch flex flex-col h-[1080px] items-start justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:34990" data-name="section.context" data-section-id="context">
         <div className="content-stretch flex gap-[96px] h-[520px] items-center relative shrink-0 w-full" data-node-id="4:34991" data-name="div.grid.grid-cols-12.gap-24.w-full">
           <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[24px] items-start min-w-px relative text-[16px]" data-node-id="4:34992" data-name="div.col-span-12.lg:col-span-8">
-            <p className="font-['Sora:SemiBold'] font-semibold leading-[1.3] relative shrink-0 text-[#0d0e10] tracking-[0.64px] w-[900px]" data-node-id="4:34993">
-              01 · CONTEXTO
-            </p>
+            <h2 className="font-['Sora:SemiBold'] font-semibold leading-[1.3] relative shrink-0 text-[#0d0e10] tracking-[0.64px] w-[900px]" data-node-id="4:34993">
+              {t("t0018")}</h2>
             <div className="font-['Sora:Regular'] font-normal leading-[0] relative shrink-0 text-[#000102] w-[1024px] whitespace-pre-wrap" data-node-id="4:34995">
-              <p className="leading-[1.5] mb-[12px]">A Konviva é um LMS (Learning Management System), plataforma para administrar cursos e aprendizagem. Para novos alunos, porém, a entrada se resumia a uma página de login, sem um portal externo para descobrir os cursos.</p>
+              <p className="leading-[1.5] mb-[12px]">{t("t0282")}</p>
               <p className="leading-[1.5] mb-[12px]">​</p>
-              <p className="leading-[1.5]">O cadastro tinha mais de 15 campos e mensagens pouco claras em alguns erros. As dúvidas chegavam ao suporte antes de a pessoa começar a aprender.</p>
+              <p className="leading-[1.5]">{t("t0283")}</p>
             </div>
           </div>
           <div className="h-[160.001px] relative shrink-0 w-[439.799px]" data-node-id="4:34996" data-name="Vector">
@@ -123,28 +115,25 @@ export default function ArticleCadastroAbandonado() {
           </div>
         </div>
       </div>
-      <div className="content-stretch flex flex-col h-[1080px] items-center justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:34997" data-name="section.challenge">
+      <div className="content-stretch flex flex-col h-[1080px] items-center justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:34997" data-name="section.challenge" data-section-id="challenge">
         <div className="[word-break:break-word] content-stretch flex flex-col font-['Sora:SemiBold'] font-semibold gap-[32px] items-center max-w-[1500px] relative shrink-0 text-center w-full" data-node-id="4:34998" data-name="div.flex.flex-col.w-full.max-w-[1500px]">
-          <p className="leading-[1.3] relative shrink-0 text-[#0d0e10] text-[16px] tracking-[0.64px] w-[900px]" data-node-id="4:34999">
-            02 · DESAFIO
-          </p>
+          <h2 className="leading-[1.3] relative shrink-0 text-[#0d0e10] text-[16px] tracking-[0.64px] w-[900px]" data-node-id="4:34999">
+            {t("t0021")}</h2>
           <p className="leading-[1.2] relative shrink-0 text-[#000102] text-[36px] w-[1200px]" data-node-id="4:35000">
-            O que os chamados de suporte revelavam sobre a jornada antes mesmo de o aluno chegar ao cadastro?
-          </p>
+            {t("t0284")}</p>
         </div>
       </div>
-      <div className="content-stretch flex h-[1080px] items-center justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:35002" data-name="section.process">
+      <div className="content-stretch flex h-[1080px] items-center justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:35002" data-name="section.process" data-section-id="process">
         <div className="content-stretch flex flex-[1_0_0] items-center justify-center min-w-px overflow-clip relative" data-node-id="4:35003" data-name="div.grid.grid-cols-12.gap-24.w-full">
           <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[24px] items-start min-w-px relative text-[16px]" data-node-id="4:35004" data-name="div.col-span-12.lg:col-span-7">
-            <p className="font-['Sora:SemiBold'] font-semibold leading-[1.3] relative shrink-0 text-[#0d0e10] tracking-[0.64px] w-[900px]" data-node-id="4:35005">
-              03 · PROCESSO
-            </p>
+            <h2 className="font-['Sora:SemiBold'] font-semibold leading-[1.3] relative shrink-0 text-[#0d0e10] tracking-[0.64px] w-[900px]" data-node-id="4:35005">
+              {t("t0023")}</h2>
             <div className="font-['Sora:Regular'] font-normal leading-[0] min-w-full relative shrink-0 text-[#000102] w-[min-content] whitespace-pre-wrap" data-node-id="4:35006">
-              <p className="leading-[1.5] mb-0">Os tickets de suporte revelaram que a dificuldade não estava apenas no formulário. Encontrar cursos, compreender o cadastro e recuperar o acesso também faziam parte do problema.</p>
+              <p className="leading-[1.5] mb-0">{t("t0285")}</p>
               <p className="leading-[1.5] mb-0">​</p>
-              <p className="leading-[1.5] mb-0">A análise da jornada mostrou que a experiência precisava começar antes do login.</p>
+              <p className="leading-[1.5] mb-0">{t("t0286")}</p>
               <p className="leading-[1.5] mb-0">​</p>
-              <p className="leading-[1.5]">A solução foi ampliar o LMS existente com um portal externo de cursos, conectando descoberta, cadastro e acesso à plataforma. Os protótipos e testes ajudaram a revisar essa entrada e os pontos de recuperação após erros.</p>
+              <p className="leading-[1.5]">{t("t0287")}</p>
             </div>
           </div>
         </div>
@@ -152,10 +141,9 @@ export default function ArticleCadastroAbandonado() {
       <div className="bg-[#f2f2f2] content-stretch flex flex-col gap-px h-[1080px] items-start justify-center overflow-clip px-[48px] py-[24px] relative shrink-0 w-full" data-node-id="4:35018" data-name="section.step.discover">
         <div className="content-stretch flex flex-col gap-[6px] items-start justify-center relative shrink-0 w-full" data-node-id="4:35019" data-name="header.step-header">
           <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.4] relative shrink-0 text-[#0d0d0d] text-[20px] whitespace-nowrap" data-node-id="4:35021">
-            Mapa da jornada
-          </p>
+            {t("t0288")}</p>
         </div>
-        <div className="content-stretch flex isolate items-center relative shrink-0 w-full" data-node-id="4:35023" data-name="figure.artifact-visual">
+        <div className="content-stretch flex isolate items-center relative shrink-0 w-full" data-node-id="4:35023" data-name="figure.artifact-visual" data-section-id="artifacts">
           <div className="bg-white content-stretch drop-shadow-[0px_0px_0px_rgba(13,110,253,0.25)] flex flex-col gap-[24px] items-start justify-center px-[24px] py-[48px] relative rounded-[16px] shrink-0 w-[1824px] z-[1]" data-node-id="4:35024" data-name="user-flow">
             <div className="content-stretch flex gap-[24px] items-end relative shrink-0 w-full" data-node-id="4:35025" data-name="user-flow-map.row">
               <div className="flex flex-[1_0_0] flex-row items-end self-stretch" data-node-id="4:35026">
@@ -167,8 +155,7 @@ export default function ArticleCadastroAbandonado() {
                     </p>
                   </div>
                   <p className="font-['Sora:Regular'] font-normal leading-[1.6] relative shrink-0 text-[16px] text-right whitespace-nowrap" data-node-id="4:35028">
-                    Fase da Jornada
-                  </p>
+                    {t("t0289")}</p>
                 </div>
               </div>
               <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] gap-[8px] items-center min-w-px p-[12px] relative rounded-[6px] text-black" data-node-id="4:35029" data-name="user-flow-map.stage">
@@ -176,8 +163,7 @@ export default function ArticleCadastroAbandonado() {
                   <p className="leading-[1.2]">{`\uF52B`}</p>
                 </div>
                 <p className="font-['Sora:Regular'] font-normal leading-[1.6] relative shrink-0 text-[30px] whitespace-nowrap" data-node-id="4:35031">
-                  1. Acesso
-                </p>
+                  {t("t0290")}</p>
               </div>
               <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] gap-[8px] items-center min-w-px p-[12px] relative rounded-[6px] text-black" data-node-id="4:35032" data-name="user-flow-map.stage">
                 <div className="flex flex-col font-['Font_Awesome_6_Pro:Light'] justify-center leading-[0] not-italic relative shrink-0 size-[32px] text-[24px] text-center" data-node-id="4:35033">
@@ -187,8 +173,7 @@ export default function ArticleCadastroAbandonado() {
                   </p>
                 </div>
                 <p className="font-['Sora:Regular'] font-normal leading-[1.6] relative shrink-0 text-[30px] whitespace-nowrap" data-node-id="4:35034">
-                  2. Cadastro
-                </p>
+                  {t("t0291")}</p>
               </div>
               <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] gap-[8px] items-center min-w-px p-[12px] relative rounded-[6px] text-black" data-node-id="4:35035" data-name="user-flow-map.stage">
                 <div className="flex flex-col font-['Font_Awesome_6_Pro:Light'] justify-center leading-[0] not-italic relative shrink-0 size-[32px] text-[24px] text-center" data-node-id="4:35036">
@@ -198,8 +183,7 @@ export default function ArticleCadastroAbandonado() {
                   </p>
                 </div>
                 <p className="font-['Sora:Regular'] font-normal leading-[1.6] relative shrink-0 text-[30px] whitespace-nowrap" data-node-id="4:35037">
-                  3. Erro
-                </p>
+                  {t("t0292")}</p>
               </div>
               <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] gap-[8px] items-center min-w-px p-[12px] relative rounded-[6px] text-black" data-node-id="4:35038" data-name="user-flow-map.stage">
                 <div className="flex flex-col font-['Font_Awesome_6_Pro:Light'] justify-center leading-[0] not-italic relative shrink-0 size-[32px] text-[24px] text-center" data-node-id="4:35039">
@@ -209,8 +193,7 @@ export default function ArticleCadastroAbandonado() {
                   </p>
                 </div>
                 <p className="font-['Sora:Regular'] font-normal leading-[1.6] relative shrink-0 text-[30px] whitespace-nowrap" data-node-id="4:35040">
-                  4. Abandono
-                </p>
+                  {t("t0293")}</p>
               </div>
             </div>
             <div className="h-0 relative shrink-0 w-full" data-node-id="4:35041">
@@ -225,27 +208,23 @@ export default function ArticleCadastroAbandonado() {
                     <p className="leading-[1.2]">{`\uF0AE`}</p>
                   </div>
                   <p className="font-['Sora:Regular'] font-normal leading-[1.6] relative shrink-0 text-[16px] text-right whitespace-nowrap" data-node-id="4:35045">
-                    Ações do Usuário
-                  </p>
+                    {t("t0294")}</p>
                 </div>
               </div>
               <div className="bg-[#006147] content-stretch flex flex-[1_0_0] flex-col items-center justify-center min-w-px px-[12px] py-[18px] relative rounded-[6px]" data-node-id="4:35046" data-name="user-flow-map.action">
                 <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.6] relative shrink-0 text-[16px] text-white whitespace-nowrap" data-node-id="4:35047">
-                  Busca a área de cadastro de usuários.
-                </p>
+                  {t("t0295")}</p>
               </div>
               <div className="bg-[#006147] content-stretch flex flex-[1_0_0] flex-col items-center justify-center min-w-px px-[12px] py-[18px] relative rounded-[6px]" data-node-id="4:35048" data-name="user-flow-map.action">
                 <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.6] relative shrink-0 text-[16px] text-white whitespace-nowrap" data-node-id="4:35049">
-                  Localiza formulário. Inicia preenchimento.
-                </p>
+                  {t("t0296")}</p>
               </div>
               <div className="bg-[#006147] content-stretch flex flex-[1_0_0] flex-col items-center justify-center min-w-px px-[12px] py-[18px] relative rounded-[6px]" data-node-id="4:35050" data-name="user-flow-map.action">
-                <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.6] relative shrink-0 text-[16px] text-white whitespace-nowrap" data-node-id="4:35051">{`Submete e recebe erro genérico: "Erro".`}</p>
+                <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.6] relative shrink-0 text-[16px] text-white whitespace-nowrap" data-node-id="4:35051">{t("t0297")}</p>
               </div>
               <div className="bg-[#006147] content-stretch flex flex-[1_0_0] flex-col items-center justify-center min-w-px px-[12px] py-[18px] relative rounded-[6px]" data-node-id="4:35052" data-name="user-flow-map.action">
                 <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.6] relative shrink-0 text-[16px] text-white whitespace-nowrap" data-node-id="4:35053">
-                  Falha novamente. Desiste e aciona o suporte.
-                </p>
+                  {t("t0298")}</p>
               </div>
             </div>
             <div className="content-stretch flex gap-[24px] items-center relative shrink-0 w-full" data-node-id="4:35054" data-name="user-flow-map.row">
@@ -255,15 +234,14 @@ export default function ArticleCadastroAbandonado() {
                     <p className="leading-[1.2]">{`\uF086`}</p>
                   </div>
                   <p className="font-['Sora:Regular'] font-normal leading-[1.6] min-w-full relative shrink-0 text-[16px] text-right w-[min-content]" data-node-id="4:35057">
-                    Pensamentos e Sentimentos
-                  </p>
+                    {t("t0299")}</p>
                 </div>
               </div>
               <div className="content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-center justify-center min-w-px px-[12px] py-[18px] relative rounded-[6px]" data-node-id="4:35058" data-name="user-flow-map.feels">
                 <p className="[word-break:break-word] font-['Font_Awesome_6_Pro:Light'] leading-[1.4] not-italic relative shrink-0 text-[#249f24] text-[32px] whitespace-nowrap" data-node-id="4:35059">{`\uE377`}</p>
                 <div className="bg-[#374758] content-stretch flex items-start pr-[12px] relative rounded-bl-[12px] rounded-br-[12px] rounded-tr-[12px] shrink-0 w-full" data-node-id="4:35060" data-name="user-low-map.thing">
                   <div className="content-stretch flex flex-[1_0_0] items-center justify-center min-w-px py-[16px] relative" data-node-id="4:35061">
-                    <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.6] relative shrink-0 text-[16px] text-center text-white whitespace-nowrap" data-node-id="4:35062">{`"Navegação pouco intuitiva."`}</p>
+                    <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.6] relative shrink-0 text-[16px] text-center text-white whitespace-nowrap" data-node-id="4:35062">{t("t0300")}</p>
                   </div>
                 </div>
               </div>
@@ -271,7 +249,7 @@ export default function ArticleCadastroAbandonado() {
                 <p className="[word-break:break-word] font-['Font_Awesome_6_Pro:Light'] leading-[1.4] not-italic relative shrink-0 text-[#f9bf00] text-[32px] whitespace-nowrap" data-node-id="4:35064">{`\uF5C8`}</p>
                 <div className="bg-[#374758] content-stretch flex items-start pr-[12px] relative rounded-bl-[12px] rounded-br-[12px] rounded-tr-[12px] shrink-0 w-full" data-node-id="4:35065" data-name="user-low-map.thing">
                   <div className="content-stretch flex flex-[1_0_0] items-center justify-center min-w-px py-[16px] relative" data-node-id="4:35066">
-                    <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.6] relative shrink-0 text-[16px] text-center text-white whitespace-nowrap" data-node-id="4:35067">{` "Excesso de campos desnecessários."`}</p>
+                    <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.6] relative shrink-0 text-[16px] text-center text-white whitespace-nowrap" data-node-id="4:35067">{t("t0301")}</p>
                   </div>
                 </div>
               </div>
@@ -279,7 +257,7 @@ export default function ArticleCadastroAbandonado() {
                 <p className="[word-break:break-word] font-['Font_Awesome_6_Pro:Light'] leading-[1.4] not-italic relative shrink-0 text-[#de3a37] text-[32px] whitespace-nowrap" data-node-id="4:35069">{`\uF556`}</p>
                 <div className="bg-[#374758] content-stretch flex items-start pr-[12px] relative rounded-bl-[12px] rounded-br-[12px] rounded-tr-[12px] shrink-0 w-full" data-node-id="4:35070" data-name="user-low-map.thing">
                   <div className="content-stretch flex flex-[1_0_0] items-center justify-center min-w-px py-[16px] relative" data-node-id="4:35071">
-                    <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.6] relative shrink-0 text-[16px] text-center text-white whitespace-nowrap" data-node-id="4:35072">{`"Qual foi o erro? Nenhuma info útil."`}</p>
+                    <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.6] relative shrink-0 text-[16px] text-center text-white whitespace-nowrap" data-node-id="4:35072">{t("t0302")}</p>
                   </div>
                 </div>
               </div>
@@ -287,7 +265,7 @@ export default function ArticleCadastroAbandonado() {
                 <p className="[word-break:break-word] font-['Font_Awesome_6_Pro:Light'] leading-[1.4] not-italic relative shrink-0 text-[#de3a37] text-[32px] whitespace-nowrap" data-node-id="4:35074">{`\uF556`}</p>
                 <div className="bg-[#374758] content-stretch flex items-center justify-center pr-[12px] relative rounded-bl-[12px] rounded-br-[12px] rounded-tr-[12px] shrink-0 w-full" data-node-id="4:35075" data-name="user-low-map.thing">
                   <div className="content-stretch flex flex-[1_0_0] items-center justify-center min-w-px py-[16px] relative" data-node-id="4:35076">
-                    <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.6] relative shrink-0 text-[16px] text-center text-white whitespace-nowrap" data-node-id="4:35077">{`"Processo frustrante. Preciso de ajuda."`}</p>
+                    <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.6] relative shrink-0 text-[16px] text-center text-white whitespace-nowrap" data-node-id="4:35077">{t("t0303")}</p>
                   </div>
                 </div>
               </div>
@@ -299,29 +277,24 @@ export default function ArticleCadastroAbandonado() {
                     <p className="leading-[1.2]">{`\uF071`}</p>
                   </div>
                   <p className="font-['Sora:Regular'] font-normal leading-[1.6] min-w-full relative shrink-0 text-[16px] text-right w-[min-content]" data-node-id="4:35081">
-                    Pontos de Dor
-                  </p>
+                    {t("t0304")}</p>
                 </div>
               </div>
               <div className="bg-[#a00] content-stretch flex flex-[1_0_0] flex-col items-center justify-center min-w-px px-[12px] py-[18px] relative rounded-[6px]" data-node-id="4:35082" data-name="user-flow-map.action">
                 <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.6] relative shrink-0 text-[16px] text-white whitespace-nowrap" data-node-id="4:35083">
-                  Navegação confusa. Onboarding inexistente.
-                </p>
+                  {t("t0305")}</p>
               </div>
               <div className="bg-[#a00] content-stretch flex flex-[1_0_0] flex-col items-center justify-center min-w-px px-[12px] py-[18px] relative rounded-[6px]" data-node-id="4:35084" data-name="user-flow-map.action">
                 <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.6] relative shrink-0 text-[16px] text-white whitespace-nowrap" data-node-id="4:35085">
-                  Formulário extenso (15+ campos).
-                </p>
+                  {t("t0306")}</p>
               </div>
               <div className="bg-[#a00] content-stretch flex flex-[1_0_0] flex-col items-center justify-center min-w-px px-[12px] py-[18px] relative rounded-[6px]" data-node-id="4:35086" data-name="user-flow-map.action">
                 <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.6] relative shrink-0 text-[16px] text-white whitespace-nowrap" data-node-id="4:35087">
-                  Mensagens de erro vagas. Não indicam a falha.
-                </p>
+                  {t("t0307")}</p>
               </div>
               <div className="bg-[#a00] content-stretch flex flex-[1_0_0] flex-col items-center justify-center min-w-px px-[12px] py-[18px] relative rounded-[6px]" data-node-id="4:35088" data-name="user-flow-map.action">
                 <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.6] relative shrink-0 text-[16px] text-white whitespace-nowrap" data-node-id="4:35089">
-                  Abandono da tarefa. Sobrecarga do suporte.
-                </p>
+                  {t("t0308")}</p>
               </div>
             </div>
             <div className="h-0 relative shrink-0 w-full" data-node-id="4:35090">
@@ -336,35 +309,34 @@ export default function ArticleCadastroAbandonado() {
                     <p className="leading-[1.2]">{`\uF0EB`}</p>
                   </div>
                   <p className="font-['Sora:Regular'] font-normal leading-[1.6] min-w-full relative shrink-0 text-[16px] text-right w-[min-content]" data-node-id="4:35094">
-                    Oportunidades
-                  </p>
+                    {t("t0309")}</p>
                 </div>
               </div>
               <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px px-[12px] py-[18px] relative rounded-[6px]" data-node-id="4:35095" data-name="user-flow-map.action">
                 <ul className="[word-break:break-word] block font-['Sora:Regular'] font-normal leading-[0] relative shrink-0 text-[#151617] text-[16px] whitespace-nowrap" data-node-id="4:35096">
                   <li className="list-disc ms-[24px]">
-                    <span className="leading-[1.6]">Criar navegação com atalhos.</span>
+                    <span className="leading-[1.6]">{t("t0310")}</span>
                   </li>
                 </ul>
               </div>
               <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px px-[12px] py-[18px] relative rounded-[6px]" data-node-id="4:35097" data-name="user-flow-map.action">
                 <ul className="[word-break:break-word] block font-['Sora:Regular'] font-normal leading-[0] relative shrink-0 text-[#151617] text-[16px] whitespace-nowrap" data-node-id="4:35098">
                   <li className="list-disc ms-[24px]">
-                    <span className="leading-[1.6]">Reduzir formulário ao essencial.</span>
+                    <span className="leading-[1.6]">{t("t0311")}</span>
                   </li>
                 </ul>
               </div>
               <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px px-[12px] py-[18px] relative rounded-[6px]" data-node-id="4:35099" data-name="user-flow-map.action">
                 <ul className="[word-break:break-word] block font-['Sora:Regular'] font-normal leading-[0] relative shrink-0 text-[#151617] text-[16px] whitespace-nowrap" data-node-id="4:35100">
                   <li className="list-disc ms-[24px]">
-                    <span className="leading-[1.6]">Humanizar as mensagens e a comunicação</span>
+                    <span className="leading-[1.6]">{t("t0312")}</span>
                   </li>
                 </ul>
               </div>
               <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px px-[12px] py-[18px] relative rounded-[6px]" data-node-id="4:35101" data-name="user-flow-map.action">
                 <ul className="[word-break:break-word] block font-['Sora:Regular'] font-normal leading-[0] relative shrink-0 text-[#151617] text-[16px] whitespace-nowrap" data-node-id="4:35102">
                   <li className="list-disc ms-[24px]">
-                    <span className="leading-[1.6]">Criar fluxo auto-suficiente.</span>
+                    <span className="leading-[1.6]">{t("t0313")}</span>
                   </li>
                 </ul>
               </div>
@@ -375,10 +347,9 @@ export default function ArticleCadastroAbandonado() {
       <div className="bg-[#f2f2f2] content-stretch flex flex-col gap-px h-[1080px] items-start justify-center overflow-clip px-[48px] py-[24px] relative shrink-0 w-full" data-node-id="4:35103" data-name="section.step.define">
         <div className="content-stretch flex flex-col gap-[6px] items-start justify-center relative shrink-0 w-full" data-node-id="4:35104" data-name="header.step-header">
           <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.4] relative shrink-0 text-[#0d0d0d] text-[20px] whitespace-nowrap" data-node-id="4:35106">
-            Matriz de impacto e esforço
-          </p>
+            {t("t0314")}</p>
         </div>
-        <div className="content-stretch flex isolate items-center justify-center relative shrink-0 w-full" data-node-id="4:35108" data-name="figure.artifact-visual">
+        <div className="content-stretch flex isolate items-center justify-center relative shrink-0 w-full" data-node-id="4:35108" data-name="figure.artifact-visual" data-section-id="artifacts">
           <div className="content-stretch flex flex-[1_0_0] items-center min-w-px relative z-[1]" data-node-id="4:35109" data-name="matrix">
             <div className="flex h-[749px] items-center justify-center relative shrink-0 w-[52px]" data-node-id="4:35110">
               <div className="-rotate-90 flex-none">
@@ -390,8 +361,7 @@ export default function ArticleCadastroAbandonado() {
                   </div>
                   <div className="content-stretch flex items-center justify-center p-[10px] relative shrink-0" data-node-id="4:35112">
                     <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.6] relative shrink-0 text-[20px] text-black whitespace-nowrap" data-node-id="4:35113">
-                      Impacto
-                    </p>
+                      {t("t0315")}</p>
                   </div>
                 </div>
               </div>
@@ -401,25 +371,19 @@ export default function ArticleCadastroAbandonado() {
                 <div className="bg-white col-1 content-stretch drop-shadow-[0px_0px_10.95px_rgba(136,136,136,0.25)] flex flex-col gap-[8px] items-start justify-center justify-self-stretch px-[48px] py-[18px] relative rounded-bl-[8px] rounded-br-[8px] rounded-tl-[18px] rounded-tr-[8px] row-1 self-stretch shrink-0" data-node-id="4:35116" data-name="matriz-impacto-esforço">
                   <div className="[word-break:break-word] content-stretch flex flex-col font-['Sora:Regular'] font-normal gap-[8px] items-start relative shrink-0 w-full" data-node-id="4:35117">
                     <p className="leading-[1.6] relative shrink-0 text-[#006147] text-[30px] w-full" data-node-id="4:35118">
-                      Alto Impacto / Baixa Complexidade
-                    </p>
+                      {t("t0316")}</p>
                     <p className="leading-[1.6] relative shrink-0 text-[#006147] text-[16px] w-full" data-node-id="4:35119">
-                      O que priorizar para obter ganhos rápidos?
-                    </p>
+                      {t("t0317")}</p>
                     <ul className="block leading-[0] list-disc relative shrink-0 text-[16px] text-black w-full" data-node-id="4:35120">
                       <li className="mb-0 ms-[24px]">
                         <span className="leading-[1.6]">
-                          Aplicar Design Conversacional
-                          <br aria-hidden />
-                          Humaniza a comunicação e os erros da plataforma.
-                        </span>
+                          {t("t0318")}<br aria-hidden />
+                          {t("t0319")}</span>
                       </li>
                       <li className="ms-[24px]">
                         <span className="leading-[1.6]">
-                          Refinar Padrões Visuais
-                          <br aria-hidden />
-                          Melhora a consistência da UI na plataforma legada.
-                        </span>
+                          {t("t0320")}<br aria-hidden />
+                          {t("t0321")}</span>
                       </li>
                     </ul>
                   </div>
@@ -429,24 +393,19 @@ export default function ArticleCadastroAbandonado() {
                 </div>
                 <div className="bg-white col-2 content-stretch drop-shadow-[0px_0px_10.95px_rgba(136,136,136,0.25)] flex flex-col gap-[8px] items-start justify-center justify-self-stretch px-[48px] py-[18px] relative rounded-[8px] row-1 self-stretch shrink-0" data-node-id="4:35123" data-name="matriz-impacto-esforço">
                   <div className="[word-break:break-word] content-stretch flex flex-col font-['Sora:Regular'] font-normal gap-[8px] items-start relative shrink-0 w-full" data-node-id="4:35124">
-                    <p className="leading-[1.6] relative shrink-0 text-[#008c66] text-[30px] w-full" data-node-id="4:35125">{`Alto Impacto / Alta Complexidade `}</p>
+                    <p className="leading-[1.6] relative shrink-0 text-[#008c66] text-[30px] w-full" data-node-id="4:35125">{t("t0322")}</p>
                     <p className="leading-[1.6] relative shrink-0 text-[#008c66] text-[16px] w-full" data-node-id="4:35126">
-                      O que pode ser mantido no radar como planejamento futuro?
-                    </p>
+                      {t("t0323")}</p>
                     <ul className="block leading-[0] list-disc relative shrink-0 text-[16px] text-black w-full" data-node-id="4:35127">
                       <li className="mb-0 ms-[24px]">
                         <span className="leading-[1.6]">
-                          Desenvolver Portal Externo
-                          <br aria-hidden />
-                          Soluciona a dor raiz do cadastro e do fluxo de usuários.
-                        </span>
+                          {t("t0324")}<br aria-hidden />
+                          {t("t0325")}</span>
                       </li>
                       <li className="ms-[24px]">
                         <span className="leading-[1.6]">
-                          Criar Gestor de Personalização
-                          <br aria-hidden />
-                          Permite customizar a login e o dashboard principal.
-                        </span>
+                          {t("t0326")}<br aria-hidden />
+                          {t("t0327")}</span>
                       </li>
                     </ul>
                   </div>
@@ -457,25 +416,19 @@ export default function ArticleCadastroAbandonado() {
                 <div className="bg-white col-1 content-stretch drop-shadow-[0px_0px_10.95px_rgba(136,136,136,0.25)] flex flex-col gap-[8px] items-start justify-center justify-self-stretch px-[48px] py-[18px] relative rounded-[8px] row-2 self-stretch shrink-0" data-node-id="4:35130" data-name="matriz-impacto-esforço">
                   <div className="[word-break:break-word] content-stretch flex flex-col font-['Sora:Regular'] font-normal gap-[8px] items-start relative shrink-0 w-full" data-node-id="4:35131">
                     <p className="leading-[1.6] relative shrink-0 text-[#8c0000] text-[30px] w-full" data-node-id="4:35132">
-                      Baixo Impacto / Baixa Complexidade
-                    </p>
+                      {t("t0328")}</p>
                     <p className="leading-[1.6] relative shrink-0 text-[#8c0000] text-[16px] w-full" data-node-id="4:35133">
-                      O que pode entregar melhorias aos processos e não precisa ser priorizado?
-                    </p>
+                      {t("t0329")}</p>
                     <ul className="block leading-[0] list-disc relative shrink-0 text-[16px] text-black w-full" data-node-id="4:35134">
                       <li className="mb-0 ms-[24px]">
                         <span className="leading-[1.6]">
-                          Mapear Fluxos Secundários
-                          <br aria-hidden />
-                          Identifica outras otimizações de baixa complexidade.
-                        </span>
+                          {t("t0330")}<br aria-hidden />
+                          {t("t0331")}</span>
                       </li>
                       <li className="ms-[24px]">
                         <span className="leading-[1.6]">
-                          Criar Componentes de UI
-                          <br aria-hidden />
-                          Inicia a base de um Design System para o futuro.
-                        </span>
+                          {t("t0332")}<br aria-hidden />
+                          {t("t0333")}</span>
                       </li>
                     </ul>
                   </div>
@@ -486,25 +439,19 @@ export default function ArticleCadastroAbandonado() {
                 <div className="bg-white col-2 content-stretch drop-shadow-[0px_0px_10.95px_rgba(136,136,136,0.25)] flex flex-col gap-[8px] items-start justify-center justify-self-stretch px-[48px] py-[24px] relative rounded-[8px] row-2 self-stretch shrink-0" data-node-id="4:35137" data-name="matriz-impacto-esforço">
                   <div className="[word-break:break-word] content-stretch flex flex-col font-['Sora:Regular'] font-normal gap-[8px] items-start relative shrink-0 w-full" data-node-id="4:35138">
                     <p className="leading-[1.6] relative shrink-0 text-[#a00] text-[30px] w-full" data-node-id="4:35139">
-                      Baixo Impacto / Alta Complexidade
-                    </p>
+                      {t("t0334")}</p>
                     <p className="leading-[1.6] relative shrink-0 text-[#a00] text-[16px] w-full" data-node-id="4:35140">
-                      O que pode ser despriorizado ou descartado?
-                    </p>
+                      {t("t0335")}</p>
                     <ul className="block leading-[0] list-disc relative shrink-0 text-[16px] text-black w-full" data-node-id="4:35141">
                       <li className="mb-0 ms-[24px]">
                         <span className="leading-[1.6]">
-                          Mapear Fluxos Secundários
-                          <br aria-hidden />
-                          Identifica outras otimizações de baixa complexidade.
-                        </span>
+                          {t("t0330")}<br aria-hidden />
+                          {t("t0331")}</span>
                       </li>
                       <li className="ms-[24px]">
                         <span className="leading-[1.6]">
-                          Criar Dashboard de Analytics
-                          <br aria-hidden />
-                          Custo alto que não resolve a barreira de cadastro.
-                        </span>
+                          {t("t0336")}<br aria-hidden />
+                          {t("t0337")}</span>
                       </li>
                     </ul>
                   </div>
@@ -520,7 +467,7 @@ export default function ArticleCadastroAbandonado() {
                   </div>
                 </div>
                 <div className="content-stretch flex items-center justify-center p-[10px] relative shrink-0" data-node-id="4:35146">
-                  <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.6] relative shrink-0 text-[20px] text-black whitespace-pre" data-node-id="4:35147">{`Complexidade técnica /  Conhecimento`}</p>
+                  <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.6] relative shrink-0 text-[20px] text-black whitespace-pre" data-node-id="4:35147">{t("t0338")}</p>
                 </div>
               </div>
             </div>
@@ -530,8 +477,7 @@ export default function ArticleCadastroAbandonado() {
       <div className="bg-[#f2f2f2] content-stretch flex flex-col gap-px h-[1080px] items-start justify-center overflow-clip px-[48px] py-[24px] relative shrink-0 w-full" data-node-id="4:35155" data-name="section.step.wireframes">
         <div className="content-stretch flex flex-col gap-px items-start justify-center relative shrink-0 w-full" data-node-id="4:35156">
           <p className="[word-break:break-word] font-['Source_Sans_3:Regular'] font-normal leading-[1.6] relative shrink-0 text-[#0d0d0d] text-[24px] whitespace-nowrap" data-node-id="4:35157">
-            Wireframes
-          </p>
+            {t("t0339")}</p>
         </div>
         <div className="content-stretch flex flex-[1_0_0] gap-[24px] isolate items-center justify-center min-h-px relative w-full" data-node-id="4:35159">
           <div className="bg-[#e9ecef] content-stretch drop-shadow-[0px_1px_1.5px_rgba(0,0,0,0.1),0px_1px_1px_rgba(0,0,0,0.06)] flex items-center p-[4.738px] relative rounded-[5.33px] shrink-0 z-[4]" data-node-id="4:35160">
@@ -566,10 +512,10 @@ export default function ArticleCadastroAbandonado() {
       </div>
       <div className="bg-[#eee] content-stretch flex flex-col gap-px h-[1080px] items-start justify-center overflow-clip px-[48px] py-[24px] relative shrink-0 w-full" data-node-id="4:35168" data-name="section.step.develop">
         <div className="content-stretch flex flex-col gap-px items-start justify-center relative shrink-0 w-full" data-node-id="4:35169" data-name="div.container">
-          <p className="[word-break:break-word] font-['Source_Sans_3:Regular'] font-normal leading-[1.6] relative shrink-0 text-[#0d0d0d] text-[24px] whitespace-nowrap" data-node-id="4:35170">{`Protótipos `}</p>
+          <p className="[word-break:break-word] font-['Source_Sans_3:Regular'] font-normal leading-[1.6] relative shrink-0 text-[#0d0d0d] text-[24px] whitespace-nowrap" data-node-id="4:35170">{t("t0340")}</p>
         </div>
         <div className="content-stretch flex flex-col items-center overflow-clip relative shrink-0 w-full" data-node-id="4:35172" data-name="div.grid.grid-cols-12.w-full">
-          <div className="content-stretch flex gap-[24px] isolate items-center py-[29px] relative shrink-0 w-full" data-node-id="4:35173" data-name="figure.artifact-visual.col-span-12">
+          <div className="content-stretch flex gap-[24px] isolate items-center py-[29px] relative shrink-0 w-full" data-node-id="4:35173" data-name="figure.artifact-visual.col-span-12" data-section-id="artifacts">
             <div className="flex flex-row items-center self-stretch" data-node-id="4:35174">
               <div className="aspect-[1386/2152] bg-white content-stretch flex h-full items-start p-[8px] relative rounded-[14px] shrink-0 z-[3]">
                 <div className="aspect-[1366/2132] flex-[1_0_0] min-w-px relative" data-node-id="4:35175" data-name="inicio">
@@ -601,14 +547,13 @@ export default function ArticleCadastroAbandonado() {
           </p>
           <div className="content-stretch flex flex-[1_0_0] flex-col gap-[10px] items-start justify-center min-w-px relative" data-node-id="4:35181" data-name="div.flex.flex-col.flex-1">
             <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.4] relative shrink-0 text-[#000102] text-[16px] w-[328px]" data-node-id="4:35182">
-              Protótipo do portal
-            </p>
+              {t("t0341")}</p>
           </div>
         </div>
       </div>
       <div className="bg-[#eee] content-stretch flex flex-col gap-px h-[1080px] items-start justify-center overflow-clip px-[48px] py-[24px] relative shrink-0 w-full" data-node-id="4:35184" data-name="section.step.deliver">
         <div className="content-stretch flex flex-col items-center overflow-clip relative shrink-0 w-full" data-node-id="4:35185" data-name="div.grid.grid-cols-12.w-full">
-          <div className="content-stretch flex gap-[24px] isolate items-start relative shrink-0 w-full" data-node-id="4:35186" data-name="figure.artifact-visual.col-span-12">
+          <div className="content-stretch flex gap-[24px] isolate items-start relative shrink-0 w-full" data-node-id="4:35186" data-name="figure.artifact-visual.col-span-12" data-section-id="artifacts">
             <div className="aspect-[1366/2092] flex-[1_0_0] min-w-px relative shadow-[0px_16px_48px_0px_rgba(0,0,0,0.17)] z-[6]" data-node-id="4:35187" data-name="inicio">
               <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgInicio4} />
@@ -647,16 +592,14 @@ export default function ArticleCadastroAbandonado() {
           </p>
           <div className="content-stretch flex flex-[1_0_0] flex-col gap-[10px] items-start justify-center min-w-px relative" data-node-id="4:35195" data-name="div.flex.flex-col.flex-1">
             <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.4] relative shrink-0 text-[#000102] text-[16px] w-[328px]" data-node-id="4:35196">
-              Fluxo de cadastro
-            </p>
+              {t("t0342")}</p>
           </div>
         </div>
       </div>
-      <div className="content-stretch flex flex-col h-[1080px] items-start justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:35198" data-name="section.results">
+      <div className="content-stretch flex flex-col h-[1080px] items-start justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:35198" data-name="section.results" data-section-id="results">
         <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full" data-node-id="4:35199" data-name="div.flex.flex-col.w-full">
-          <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.3] relative shrink-0 text-[#000102] text-[16px] tracking-[0.64px] w-[900px]" data-node-id="4:35200">
-            04 · EVIDÊNCIAS E RESULTADOS
-          </p>
+          <h2 className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.3] relative shrink-0 text-[#000102] text-[16px] tracking-[0.64px] w-[900px]" data-node-id="4:35200">
+            {t("t0149")}</h2>
           <div className="content-start flex flex-wrap gap-[32px] h-[100px] items-start overflow-clip relative shrink-0 w-full" data-node-id="4:35201" data-name="div.metrics">
             <div className="content-stretch flex flex-[1_0_0] items-end min-w-px relative" data-node-id="4:35202" data-name="metric-result.baseline">
               <div className="bg-[#020305] content-stretch flex flex-col items-center justify-center max-h-[100px] min-h-[100px] min-w-[100px] px-[16px] py-[4px] relative rounded-[8px] shrink-0" data-node-id="I4:35202;6312:1003" data-name="number">
@@ -668,11 +611,9 @@ export default function ArticleCadastroAbandonado() {
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-full items-start justify-center min-w-px relative" data-name="content">
                   <div className="[word-break:break-word] bg-[#101113] content-stretch flex flex-col font-['Sora:Regular'] font-normal gap-[8px] items-start leading-none p-[16px] relative rounded-br-[8px] rounded-tr-[8px] shrink-0 text-[#fcfdfe] w-full whitespace-nowrap" data-node-id="I4:35202;6312:1006" data-name="<title>">
                     <p className="relative shrink-0 text-[20px]" data-node-id="I4:35202;6312:1007">
-                      conclusão do cadastro
-                    </p>
+                      {t("t0343")}</p>
                     <p className="relative shrink-0 text-[13px]" data-node-id="I4:35202;6312:1008">
-                      (Task Success)
-                    </p>
+                      {t("t0268")}</p>
                   </div>
                 </div>
               </div>
@@ -687,11 +628,9 @@ export default function ArticleCadastroAbandonado() {
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-full items-start justify-center min-w-px relative" data-name="content">
                   <div className="[word-break:break-word] bg-[#101113] content-stretch flex flex-col font-['Sora:Regular'] font-normal gap-[8px] items-start leading-none p-[16px] relative rounded-br-[8px] rounded-tr-[8px] shrink-0 text-[#fcfdfe] w-full whitespace-nowrap" data-node-id="I4:35203;6312:1006" data-name="<title>">
                     <p className="relative shrink-0 text-[20px]" data-node-id="I4:35203;6312:1007">
-                      abandono no cadastro
-                    </p>
+                      {t("t0344")}</p>
                     <p className="relative shrink-0 text-[13px]" data-node-id="I4:35203;6312:1008">
-                      (Abandonment Rate)
-                    </p>
+                      {t("t0273")}</p>
                   </div>
                 </div>
               </div>
@@ -706,20 +645,18 @@ export default function ArticleCadastroAbandonado() {
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-full items-start justify-center min-w-px relative" data-name="content">
                   <div className="[word-break:break-word] bg-[#101113] content-stretch flex flex-col font-['Sora:Regular'] font-normal gap-[8px] items-start leading-none p-[16px] relative rounded-br-[8px] rounded-tr-[8px] shrink-0 text-[#fcfdfe] w-full whitespace-nowrap" data-node-id="I4:35204;6312:1006" data-name="<title>">
                     <p className="relative shrink-0 text-[20px]" data-node-id="I4:35204;6312:1007">
-                      novas matrículas
-                    </p>
+                      {t("t0345")}</p>
                     <p className="relative shrink-0 text-[13px]" data-node-id="I4:35204;6312:1008">
-                      (Activation Scale)
-                    </p>
+                      {t("t0346")}</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[0] relative shrink-0 text-[#000102] text-[16px] w-[1040px] whitespace-pre-wrap" data-node-id="4:35206">
-            <p className="leading-[1.5] mb-0">Matrículas e usuários ativos mostram a dimensão da plataforma, não um ganho comprovadamente causado pelo portal. O projeto respondeu às barreiras registradas nos chamados.</p>
+            <p className="leading-[1.5] mb-0">{t("t0347")}</p>
             <p className="leading-[1.5] mb-0">​</p>
-            <p className="leading-[1.5]">O efeito da solução pede medidas próprias: cadastro concluído, abandono por etapa, erros e chamados relacionados ao acesso.</p>
+            <p className="leading-[1.5]">{t("t0348")}</p>
           </div>
         </div>
       </div>

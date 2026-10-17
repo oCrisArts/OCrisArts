@@ -1,0 +1,112 @@
+{
+  "Privacidade": {
+    "pt-BR": "Privacidade",
+    "en": "Privacy",
+    "es": "Privacidad"
+  },
+  "Preferências de privacidade": {
+    "pt-BR": "Preferências de privacidade",
+    "en": "Privacy preferences",
+    "es": "Preferencias de privacidad"
+  },
+  "Usamos Google Analytics para medir navegação e Hotjar e Microsoft Clarity para entender o uso do site. São opcionais. Não enviamos o conteúdo dos campos. Você pode alterar sua escolha a qualquer momento.": {
+    "pt-BR": "Usamos Google Analytics para medir navegação e Hotjar e Microsoft Clarity para entender o uso do site. São opcionais. Não enviamos o conteúdo dos campos. Você pode alterar sua escolha a qualquer momento.",
+    "en": "We use Google Analytics to measure navigation and Hotjar and Microsoft Clarity to understand site use. They are optional. We do not send field contents. You can change your choice at any time.",
+    "es": "Usamos Google Analytics para medir la navegación y Hotjar y Microsoft Clarity para comprender el uso del sitio. Son opcionales. No enviamos el contenido de los campos. Puedes cambiar tu elección en cualquier momento."
+  },
+  "Aceitar": {
+    "pt-BR": "Aceitar",
+    "en": "Accept",
+    "es": "Aceptar"
+  },
+  "Recusar": {
+    "pt-BR": "Recusar",
+    "en": "Decline",
+    "es": "Rechazar"
+  },
+  "Salvar preferências": {
+    "pt-BR": "Salvar preferências",
+    "en": "Save preferences",
+    "es": "Guardar preferencias"
+  },
+  "Métricas de navegação": {
+    "pt-BR": "Métricas de navegação",
+    "en": "Navigation analytics",
+    "es": "Métricas de navegación"
+  },
+  "Análise de experiência": {
+    "pt-BR": "Análise de experiência",
+    "en": "Experience analytics",
+    "es": "Análisis de experiencia"
+  },
+  "Idioma": {
+    "pt-BR": "Idioma",
+    "en": "Language",
+    "es": "Idioma"
+  },
+  "Nome": {
+    "pt-BR": "Nome",
+    "en": "Name",
+    "es": "Nombre"
+  },
+  "Telefone ou e-mail": {
+    "pt-BR": "Telefone ou e-mail",
+    "en": "Phone or email",
+    "es": "Teléfono o correo"
+  },
+  "Ir para o início": {
+    "pt-BR": "Ir para o início",
+    "en": "Go to home",
+    "es": "Ir al inicio"
+  },
+  "Ir para a página inicial": {
+    "pt-BR": "Ir para a página inicial",
+    "en": "Go to home page",
+    "es": "Ir a la página de inicio"
+  },
+  "Navegação da página inicial": {
+    "pt-BR": "Navegação da página inicial",
+    "en": "Home navigation",
+    "es": "Navegación de inicio"
+  },
+  "Navegação do case": {
+    "pt-BR": "Navegação do case",
+    "en": "Case navigation",
+    "es": "Navegación del caso"
+  },
+  "Redes e contatos": {
+    "pt-BR": "Redes e contatos",
+    "en": "Social networks and contact",
+    "es": "Redes y contactos"
+  },
+  "Abrir aplicativo de e-mail": {
+    "pt-BR": "Abrir aplicativo de e-mail",
+    "en": "Open email app",
+    "es": "Abrir aplicación de correo"
+  },
+  "Página não encontrada": {
+    "pt-BR": "Página não encontrada",
+    "en": "Page not found",
+    "es": "Página no encontrada"
+  },
+  "Evidência visual do projeto": {
+    "pt-BR": "Evidência visual do projeto",
+    "en": "Project visual evidence",
+    "es": "Evidencia visual del proyecto"
+  },
+  "Ajuda": {
+    "pt-BR": "Ajuda",
+    "en": "Help",
+    "es": "Ayuda"
+  },
+  "Todas": {
+    "pt-BR": "Todas",
+    "en": "All",
+    "es": "Todas"
+  },
+  "homeTitle": {
+    "pt-BR": "oCris Acosta | Design de Produto, UX/UI e Design Engineering",
+    "en": "oCris Acosta | Product Design, UX/UI & Design Engineering",
+    "es": "oCris Acosta | Diseño de Producto, UX/UI y Design Engineering"
+  }
+}

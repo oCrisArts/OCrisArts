@@ -1,0 +1,926 @@
+1|Mapping|Identificación de
+2|Events|Eventos
+3|Defining|Definición de
+4|Improvements|Mejoras
+5|Implementing the|Implementación de la
+6|HEART Methodology|Metodología HEART
+7|Creating|Creación de
+8|New Features|Nuevas funcionalidades
+9|Events.|Eventos.
+10|Scattered benefits?|¿Beneficios dispersos?
+11|Bring together what partners need.|Reúne lo que el socio necesita.
+14|B2B platform|Plataforma B2B
+18|01 · CONTEXT|01 · CONTEXTO
+19|Sou Parceiro is Intelbras’ B2B app for resellers. Points, benefits, content and programs were part of partners’ everyday work, but were scattered across different paths.|Sou Parceiro es la aplicación B2B de Intelbras para distribuidores. Puntos, beneficios, contenidos y programas formaban parte de su rutina, pero estaban repartidos por distintos recorridos.
+20|People trying to complete a task still had to work out where to start and what to do next.|Quien necesitaba resolver una tarea aún tenía que descubrir por dónde empezar y cuál sería la siguiente acción.
+21|02 · CHALLENGE|02 · DESAFÍO
+22|What did each reseller profile need to accomplish—and which actions should come first?|¿Qué necesitaba resolver cada perfil de distribuidor y qué acciones debían aparecer primero?
+23|03 · PROCESS|03 · PROCESO
+24|Journey analysis revealed different needs among resellers using the Sou Parceiro app.|El análisis del recorrido reveló distintas necesidades entre los distribuidores que usaban Sou Parceiro.
+25|Jobs to Be Done helped clarify the goals behind each visit. Based on those needs, Information Architecture guided the organization of benefits, content and features.|Jobs to Be Done ayudó a comprender los objetivos detrás de cada acceso. A partir de esas necesidades, la Arquitectura de la Información orientó la organización de beneficios, contenidos y funcionalidades.
+26|Interface decisions began prioritizing partners’ tasks instead of reproducing the structure of the company’s internal channels.|Las decisiones de interfaz pasaron a priorizar las tareas de los socios, en lugar de reproducir la estructura de los canales internos de la empresa.
+27|Sou Parceiro app user flow.|Flujo de uso de la aplicación Sou Parceiro.
+29|24 thousand|24 mil
+30|1st screen|1.ª pantalla
+31|28 thousand sessions|28 mil sesiones
+32|3rd screen|3.ª pantalla
+33|16 thousand sessions|16 mil sesiones
+34|2nd screen|2.ª pantalla
+35|22 thousand sessions|22 mil sesiones
+36|4th screen|4.ª pantalla
+38|3.9 thousand|3.9 mil
+40|19 thousand|19 mil
+41|4.2 thousand|4.2 mil
+42|5.9 thousand|5.9 mil
+43|1.1 thousand|1.1 mil
+44|Channel|Programa
+45|Program|de Canales
+46|11 thousand|11 mil
+47|4.3 thousand|4.3 mil
+48|Products|Productos
+49|2.8 thousand|2.8 mil
+50|5,7 thousand|5,7 mil
+51|3.8 thousand|3.8 mil
+52|2,9 thousand|2,9 mil
+53|4,7 thousand|4,7 mil
+54|2,6 thousand|2,6 mil
+55|5 thousand|5 mil
+56|2.4 thousand|2.4 mil
+57|1 thousand|1 mil
+58|3.1 thousand|3.1 mil
+59|1.6 thousand|1.6 mil
+60|Profile|Perfil
+61|Messages|Mensajes
+62|2 thousand|2 mil
+63|Reset|Restablecer
+64|Password|Contraseña
+65|1.3 thousand|1.3 mil
+66|Store|Tienda
+67|Library|Biblioteca
+68|Channels|Canales
+69|Training|Formación
+70|Support|Soporte
+72|Recover password|Recuperar contraseña
+73|Home|Inicio
+74|User flow|Flujo de uso
+76|42 YEARS OLD|42 AÑOS
+77|UNIVERSITY GRADUATE|ESTUDIOS UNIVERSITARIOS COMPLETOS
+78|MARRIED|CASADO
+79|RESELLER|DISTRIBUIDOR
+81|Characteristics|Características
+82|He completed his master’s degree in business and has just been promoted to sales manager.|Terminó su máster en negocios y acaba de ascender a gerente de ventas.
+83|Pain points|Dificultades
+84|Understanding product details|Comprender los detalles de los productos
+85|Clear, direct communication|Comunicación clara y directa
+86|Special programs|Programas especiales
+87|Needs|Necesidades
+88|Finding exclusive products|Encontrar productos exclusivos
+89|Finding centralized information|Encontrar información centralizada
+90|Finding ways to earn points and rewards|Encontrar formas de sumar puntos y recibir beneficios
+92|35 YEARS OLD|35 AÑOS
+93|SINGLE|SOLTERO
+94|ENTREPRENEUR|EMPRESARIO
+96|An agility specialist and developer in his spare time, he is looking to start his own business.|Especialista en agilidad y desarrollador en su tiempo libre, busca emprender abriendo su propio negocio.
+97|Access to the brand|Acceso a la marca
+98|Fast service and support|Agilidad en la atención y el soporte
+99|Finding support and growth opportunities|Encontrar oportunidades de apoyo y crecimiento
+100|Finding curated information|Encontrar información seleccionada
+101|Finding attractive prices|Encontrar precios atractivos
+102|Finding training|Encontrar formación
+103|Personas and JTBD|Personas y JTBD
+104|Create new|Crear nuevo
+105|My shortcuts|Mis accesos directos
+106|This semester|En el semestre
+108|You need|Faltan
+110|to move up a tier|para cambiar de categoría
+113|Points|Puntos
+114|VMC points|Puntos VMC
+115|Contextual dashboard|Panel contextual
+116|Shortcut|Personalización
+117|customization|de accesos directos
+118|Score|Puntuación
+120|Channel Program dashboard|Panel del Programa de Canales
+121|Banners in|Banners en
+122|Notifications and messages|Notificaciones y mensajes
+123|Interface decisions|Decisiones de interfaz
+130|Goals|Objetivos
+131|Signals|Señales
+132|Metrics|Métricas
+137|Satisfaction|Satisfacción
+138|Registration|Registro
+140|Search results|Resultados de búsqueda
+141|Ease of use|Facilidad de uso
+142|Number of users|Número de usuarios
+143|User registration|Inscripción de usuarios
+144|Access time|Tiempo de acceso
+146|Time spent|Tiempo de permanencia
+147|Profile percentage|Porcentaje del perfil
+148|Measurement plan|Plan de métricas
+149|04 · EVIDENCE AND RESULTS|04 · EVIDENCIAS Y RESULTADOS
+150|journey adoption|adopción del recorrido
+151|(Adoption Rate · not measured)|(Adoption Rate · no medido)
+152|task success|éxito de la tarea
+153|(Task Success · not measured)|(Task Success · no medido)
+154|50 thousand+|50 mil+
+155|app downloads|descargas de la app
+157|Benefits, content and actions became more meaningful within navigation, connected to partners’ goals.|Los beneficios, contenidos y acciones cobraron más sentido en la navegación, conectados con los objetivos de los socios.
+158|The 121 thousand visits demonstrate reach, not proof that the change succeeded. Adoption, repeat use and completed tasks better indicate the value delivered.|Los 121 mil accesos muestran alcance, pero no prueban el éxito del cambio. La adopción, la recurrencia y las tareas completadas indican mejor el valor entregado.
+159|Complex registrations?|¿Registros complejos?
+160|Validate the flow before coding.|Valida el flujo antes del código.
+164|Enterprise platform|Plataforma corporativa
+165|Generative AI|IA generativa
+168|SIAFF is CAIXA’s internal system for managing financing funds. It brings together records and queries that require consistent data and reliable operations.|SIAFF es el sistema interno de CAIXA para gestionar fondos de financiación. Reúne registros y consultas que requieren datos coherentes y operaciones fiables.
+169|Registration flows spanned areas such as TCCA (Environmental Compensation Commitment Agreement), subaccounts, conservation units and contributions. A sensitive part of the system.|Los registros atravesaban áreas como TCCA (Acuerdo de Compromiso de Compensación Ambiental), subcuentas, unidades de conservación y aportaciones. Un punto sensible del sistema.
+170|Before expanding the changes, one question needed an answer: how do people actually move through the registration steps?|Antes de ampliar los cambios, había que responder una pregunta: ¿cómo recorren realmente las personas las etapas del registro?
+172|What could a simpler registration process reveal before evolving TCCA’s complex flows?|¿Qué podía revelar un registro más sencillo antes de mejorar los flujos complejos del TCCA?
+173|Payment slip registration served as a pilot to investigate interaction difficulties before expanding changes to other areas of SIAFF.|El registro de boletos de pago sirvió como piloto para investigar dificultades de interacción antes de ampliar los cambios a otras áreas del SIAFF.
+174|A functional prototype created in Figma Make made it possible to observe real tasks. Tests and Clarity recordings helped identify behaviors that static screens would not reveal.|Un prototipo funcional creado en Figma Make permitió observar tareas reales. Las pruebas y grabaciones de Clarity ayudaron a identificar comportamientos que no se percibirían en pantallas estáticas.
+175|Findings were organized using Atomic Research, guiding decisions about fields, filters and steps. These insights opened the way to investigating TCCA’s more complex registration flows.|Los hallazgos se organizaron mediante Investigación Atómica, orientando decisiones sobre campos, filtros y etapas. El aprendizaje abrió el camino para investigar los registros más complejos del TCCA.
+176|Experiment|Experimento
+177|Remote test of the new registration process|Prueba remota de la nueva forma de registro
+178|Fact|Hecho
+179|Does the new registration process work?|¿Funciona la nueva forma de registro?
+180|Observations|Percepciones
+181|Remove the legacy screen and use the modal|Eliminar la pantalla heredada y usar el modal
+182|Recommendations|Recomendaciones
+183|Approve the current layout and send the technical handoff.|Aprobar el diseño actual y enviar el handoff técnico.
+184|Atomic Research|Investigación Atómica
+185|Experiment plan|Plan de experimento
+186|Hypothesis → prototype → evidence → decision|Hipótesis → prototipo → evidencia → decisión
+187|Hypothesis|Hipótesis
+189|The new registration pattern may reduce friction without losing controls.|El nuevo patrón de registro puede reducir la fricción sin perder controles.
+190|Problem: late validation increases rework.|Problema: la validación tardía aumenta el retrabajo.
+191|Goal: validate before development.|Objetivo: validar antes del desarrollo.
+192|Task|Tarea
+193|Complete a registration in the new flow.|Completar un registro en el nuevo flujo.
+194|Maintain understanding of the task.|Mantener la comprensión de la tarea.
+195|Preserve correct use of filters.|Preservar el uso correcto de los filtros.
+196|Functional AI prototype in Figma Make.|Prototipo funcional con IA en Figma Make.
+197|Remote test with 18 users.|Prueba remota con 18 usuarios.
+198|Version 1: registration in a modal.|Versión 1: registro en un modal.
+199|Success|Éxito
+200|100% completion. 0 abandonment.|100% de finalización. 0 abandono.
+201|2,1 min of active time.|2,1 min de tiempo activo.
+202|Behavior observed in Microsoft Clarity.|Comportamiento observado en Microsoft Clarity.
+203|Criteria:|Criterios:
+204|task completion • abandonment • active time • filter use.|finalización de la tarea • abandono • tiempo activo • uso de filtros.
+205|Do|Hacer
+206|Functional prototype|Prototipo funcional
+207|Register a contribution payment slip|Registrar un boleto de aportación
+208|Account and payment slip identification|Identificación de la cuenta y el boleto
+209|Identify the installment and deadlines.|Identifica la cuota y los plazos.
+210|TCCA No.*|TCCA N.º*
+211|E.g. 300|Ej. 300
+212|TCCA year*|Año del TCCA*
+213|Amendment / Current agreement|Adenda / Acuerdo vigente
+214|1st amendment|1.ª adenda
+215|Installment*|Cuota*
+216|E.g. 01|Ej. 01
+217|Due date*|Vencimiento*
+218|DD/MM/YYYY|DD/MM/AAAA
+219|Email response on*|Respuesta del correo en*
+220|Amounts and payment slips|Importes y boletos
+221|Type|Tipo
+222|Hybrid|Híbrido
+223|Payment slip amount*|Importe del boleto*
+224|E.g. R$ 999.999.999,99|Ej. R$ 999.999.999,99
+225|*Required fields|*Campos obligatorios
+226|Clear|Limpiar
+227|Save|Guardar
+228|Payment slip registration|Registro de boletos
+229|Clarity recordings|Grabaciones de Clarity
+230|Register TCCA|Registrar TCCA
+231|Collapse|Contraer
+232|General information|Datos generales
+233|Finances and installments|Finanzas y cuotas
+234|Subaccount and links|Subcuenta y vínculos
+235|Identification|Identificación
+236|TCCA No. *|TCCA N.º *
+237|Agreement holder|Compromisario
+238|Search the agreement holder’s CNPJ*|Busca el CNPJ del compromisario*
+239|Company name|Razón social
+240|Register TCCA|Registrar TCCA
+241|Financial information|Datos financieros
+242|Allocated amount (original)*:|Importe destinado (original)*:
+244|Updated amount*|Importe actualizado*
+245|Installments|Cuotas
+246|Add|Añadir
+247|Installment no.|N.º de cuota
+248|Latest deposit date|Fecha límite de depósito
+249|Publication month/year|Mes/año de publicación
+250|Updated amount|Importe actualizado
+251|MM/YYYY|MM/AAAA
+253|Updated amount: R$ 000.000.000,00|Importe actualizado: R$ 000.000.000,00
+254|Project:|Emprendimiento:
+255|Link the project and conservation unit to generate the subaccount automatically. Make sure they are registered before entering this information.|Vincula el emprendimiento y la unidad de conservación para generar la subcuenta automáticamente. Asegúrate de registrarlos antes de introducir esta información.
+257|Code|Código
+258|Project|Emprendimiento
+259|Subaccount|Subcuenta
+260|No.|N.º
+261|Conservation unit|Unidad de conservación
+262|Allocation action|Acción de aplicación
+263|Subaccount amount|Importe de la subcuenta
+264|Search conservation units|Busca la unidad de conservación
+266|Evolving registration flows|Evolución de los registros
+267|Task completion|Finalización de las tareas
+270|Average active time|Tiempo activo medio
+272|Abandonments in the pilot|Abandonos en el piloto
+274|In the payment slip pilot, 18 participants completed the task without abandoning it and used the filters correctly. The result describes this test, not all SIAFF registration flows.|En el piloto de boletos, 18 participantes completaron la tarea sin abandono y usaron los filtros correctamente. El resultado describe la prueba, no todos los registros del SIAFF.
+275|The cycle can continue into TCCA and other areas, focusing on rework, entry errors and corrections after development.|El ciclo puede continuar en el TCCA y otras áreas, prestando atención al retrabajo, los errores de entrada y las correcciones posteriores al desarrollo.
+276|Registration blocked?|¿Registro bloqueado?
+277|Clear the way for new learners.|Abre el camino a nuevos alumnos.
+278|Discovery + Prioritization|Discovery + Priorización
+279|LMS platform|Plataforma LMS
+282|Konviva is an LMS (Learning Management System), a platform for managing courses and learning. For new learners, however, entry consisted of a login page, with no external portal to discover courses.|Konviva es un LMS (Learning Management System), una plataforma para administrar cursos y aprendizaje. Sin embargo, para los nuevos alumnos, la entrada se reducía a una página de inicio de sesión, sin un portal externo para descubrir cursos.
+283|Registration had more than 15 fields and unclear messages for some errors. Questions reached support before people could start learning.|El registro tenía más de 15 campos y mensajes poco claros en algunos errores. Las dudas llegaban al soporte antes de que la persona empezara a aprender.
+284|What did support tickets reveal about the journey before learners even reached registration?|¿Qué revelaban los tickets de soporte sobre el recorrido antes de que el alumno llegara al registro?
+285|Support tickets revealed that the difficulty was not limited to the form. Finding courses, understanding registration and recovering access were also part of the problem.|Los tickets de soporte revelaron que la dificultad no estaba solo en el formulario. Encontrar cursos, comprender el registro y recuperar el acceso también formaban parte del problema.
+286|Journey analysis showed that the experience needed to begin before login.|El análisis del recorrido mostró que la experiencia debía empezar antes del inicio de sesión.
+287|The solution was to extend the existing LMS with an external course portal, connecting discovery, registration and platform access. Prototypes and tests helped revise this entry point and recovery after errors.|La solución fue ampliar el LMS existente con un portal externo de cursos, conectando descubrimiento, registro y acceso a la plataforma. Los prototipos y las pruebas ayudaron a revisar esta entrada y la recuperación tras los errores.
+288|Journey map|Mapa del recorrido
+289|Journey stage|Fase del recorrido
+290|1. Access|1. Acceso
+291|2. Registration|2. Registro
+292|3. Error|3. Error
+293|4. Abandonment|4. Abandono
+294|User actions|Acciones del usuario
+295|Looks for the user registration area.|Busca el área de registro de usuarios.
+296|Finds the form. Starts filling it out.|Localiza el formulario. Empieza a completarlo.
+297|Submits and receives a generic error: "Error".|Envía y recibe un error genérico: "Error".
+298|Fails again. Gives up and contacts support.|Vuelve a fallar. Abandona y contacta con soporte.
+299|Thoughts and feelings|Pensamientos y sentimientos
+300|"Navigation is not intuitive."|"Navegación poco intuitiva."
+301|"Too many unnecessary fields."|"Demasiados campos innecesarios."
+302|"What went wrong? No useful information."|"¿Cuál fue el error? Ninguna información útil."
+303|"A frustrating process. I need help."|"Un proceso frustrante. Necesito ayuda."
+304|Pain points|Puntos de dolor
+305|Confusing navigation. No onboarding.|Navegación confusa. Sin onboarding.
+306|Long form (15+ fields).|Formulario extenso (15+ campos).
+307|Vague error messages. They do not identify the failure.|Mensajes de error vagos. No indican el fallo.
+308|Task abandonment. Support overload.|Abandono de la tarea. Sobrecarga del soporte.
+309|Opportunities|Oportunidades
+310|Create navigation with shortcuts.|Crear navegación con accesos directos.
+311|Reduce the form to essentials.|Reducir el formulario a lo esencial.
+312|Humanize messages and communication|Humanizar los mensajes y la comunicación
+313|Create a self-sufficient flow.|Crear un flujo autosuficiente.
+314|Impact–effort matrix|Matriz de impacto y esfuerzo
+315|Impact|Impacto
+316|High impact / Low complexity|Alto impacto / Baja complejidad
+317|What should be prioritized for quick wins?|¿Qué priorizar para obtener mejoras rápidas?
+318|Apply Conversational Design|Aplicar Diseño Conversacional
+319|Humanizes communication and platform errors.|Humaniza la comunicación y los errores de la plataforma.
+320|Refine visual patterns|Refinar los patrones visuales
+321|Improves UI consistency in the legacy platform.|Mejora la coherencia de la UI en la plataforma heredada.
+322|High impact / High complexity|Alto impacto / Alta complejidad
+323|What can stay on the radar for future planning?|¿Qué puede mantenerse en el radar para planes futuros?
+324|Develop an external portal|Desarrollar un portal externo
+325|Addresses the root problem of registration and user flows.|Resuelve el problema raíz del registro y del flujo de usuarios.
+326|Create a customization manager|Crear un gestor de personalización
+327|Enables customization of login and the main dashboard.|Permite personalizar el inicio de sesión y el panel principal.
+328|Low impact / Low complexity|Bajo impacto / Baja complejidad
+329|What can improve processes without needing priority?|¿Qué puede mejorar los procesos sin necesitar prioridad?
+330|Map secondary flows|Mapear los flujos secundarios
+331|Identifies other low-complexity optimizations.|Identifica otras optimizaciones de baja complejidad.
+332|Create UI components|Crear componentes de UI
+333|Lays the foundation for a future Design System.|Inicia la base de un Design System para el futuro.
+334|Low impact / High complexity|Bajo impacto / Alta complejidad
+335|What can be deprioritized or discarded?|¿Qué se puede despriorizar o descartar?
+336|Create an analytics dashboard|Crear un panel de analítica
+337|High cost without resolving the registration barrier.|Coste alto que no resuelve la barrera del registro.
+338|Technical complexity / Knowledge|Complejidad técnica / Conocimiento
+340|Prototypes|Prototipos
+341|Portal prototype|Prototipo del portal
+342|Registration flow|Flujo de registro
+343|registration completion|finalización del registro
+344|registration abandonment|abandono del registro
+345|new enrollments|nuevas matrículas
+347|Enrollments and active users show the platform’s scale, not a gain demonstrably caused by the portal. The project addressed barriers documented in support tickets.|Las matrículas y los usuarios activos muestran la dimensión de la plataforma, no una mejora atribuible de forma demostrada al portal. El proyecto respondió a las barreras registradas en los tickets.
+348|The solution’s effect requires its own measures: completed registrations, abandonment by step, errors and access-related support tickets.|El efecto de la solución requiere medidas propias: registros completados, abandono por etapa, errores y tickets relacionados con el acceso.
+349|Race on the line?|¿La carrera en juego?
+350|Organize every team decision.|Organiza cada decisión del equipo.
+351|Operational processes|Procesos operativos
+353|Operations app|Aplicación operativa
+355|A race depends on quick decisions, even off the track. At Porsche Cup Brasil, spreadsheets still supported the management of tire sales, practice sessions, teams and assets for each round.|Una carrera depende de decisiones rápidas, incluso fuera de la pista. En Porsche Cup Brasil, las hojas de cálculo aún apoyaban la gestión de neumáticos vendidos, entrenamientos, equipos y activos de cada etapa.
+356|Engineers, drivers and operations needed to track orders, approvals and collections. The same information moved between different roles.|Ingenieros, pilotos y operaciones necesitaban seguir pedidos, aprobaciones y recogidas. La misma información circulaba entre distintos roles.
+357|Who needed to act at each stage to keep orders, approvals and assets under control during the race?|¿Quién debía actuar en cada etapa para mantener pedidos, aprobaciones y activos bajo control durante la carrera?
+358|Porsche Cup operations relied on coordination between engineers, drivers and support teams. Spreadsheets did not provide an integrated view of requests and activity statuses.|La operación de Porsche Cup dependía de la coordinación entre ingenieros, pilotos y equipos de apoyo. Las hojas de cálculo no ofrecían una visión integrada de las solicitudes y los estados de cada actividad.
+359|Mapping responsibilities showed how to structure orders, approvals, notifications and tire collections.|El mapeo de responsabilidades mostró cómo estructurar pedidos, aprobaciones, notificaciones y recogidas de neumáticos.
+360|These decisions guided the administrative app. Later, a printed manual documented procedures for the teams.|Estas decisiones orientaron la aplicación administrativa. Después, un manual impreso documentó los procedimientos para los equipos.
+361|Streaming was also part of the digital ecosystem, but as an independent application.|El streaming también formaba parte del ecosistema digital, pero como una aplicación independiente.
+362|↩ If not approved, revise and resubmit|↩ Si no se aprueba, revisar y reenviar
+363|Multi-persona journey|Recorrido multipersona
+365|CREATE SET|CREAR SET
+367|APPROVE|APROBAR
+369|REVIEW|REVISAR
+370|EXECUTE|EJECUTAR
+372|UPDATE|ACTUALIZAR
+373|Engineer|Ingeniero
+374|Prepare and adjust the set with traceability.|Preparar y ajustar el set con trazabilidad.
+375|PREPARE|PREPARAR
+376|Builds the set and submits it for approval.|Prepara el set y lo envía para su aprobación.
+377|critical moment|momento crítico
+378|WAIT|ESPERAR
+379|Waits for the driver’s response.|Espera la respuesta del piloto.
+380|Adjusts the set when a revision is requested.|Ajusta el set cuando se solicita una revisión.
+381|TRACK|SEGUIR
+382|Tracks execution of the approved set.|Sigue la ejecución de lo aprobado.
+383|Checks the set’s final status.|Consulta el estado final del set.
+384|Driver|Piloto
+385|Decide quickly without losing context.|Decidir rápido sin perder el contexto.
+386|RECEIVE|RECIBIR
+387|Receives the request for review.|Recibe la solicitud para analizarla.
+388|DECIDE|DECIDIR
+389|Reviews and approves or requests changes.|Evalúa y aprueba o solicita una revisión.
+390|CONFIRM|CONFIRMAR
+391|Confirms the revised version.|Confirma la versión revisada.
+392|Tracks execution progress.|Sigue el progreso de la ejecución.
+393|Receives the status update.|Recibe la actualización del estado.
+394|Operations|Operaciones
+395|Execute the approved set and keep its status up to date.|Ejecutar lo aprobado y mantener el estado actualizado.
+396|Views the request entering the flow.|Visualiza la solicitud que entra en el flujo.
+397|Waits for a valid decision.|Espera una decisión válida.
+398|Waits for the approved version.|Espera la versión aprobada.
+399|Executes the approved set in operations.|Ejecuta el set aprobado en la operación.
+400|Records and updates execution status.|Registra y actualiza el estado de la ejecución.
+401|handoff between channels|handoff entre canales
+403|The same data changes priority depending on the role and moment; context must survive the handoff between channels.|El mismo dato cambia de prioridad según el actor y el momento; el contexto debe conservarse en el handoff entre canales.
+404|Explore|Explorar
+405|: Map moments|: Mapear momentos
+406|Completed|Finalizada
+407|Tire team fulfills the order and releases it|El equipo de neumáticos prepara el pedido y lo libera
+408|Engineer receives a push notification for collection|El ingeniero recibe una notificación push para la recogida
+409|Engineer collects the requested tires|El ingeniero recoge los neumáticos solicitados
+410|Everyone receives a completion push notification|Todos reciben una notificación push de finalización
+411|Tire team receives the request notification|El equipo de neumáticos recibe la notificación de la solicitud
+412|Request sent|Solicitud enviada
+413|Rejected|Rechazada
+414|Engineer receives a push notification to make changes|El ingeniero recibe una notificación push para hacer cambios
+415|The engineer changes the purchase request|El ingeniero modifica la solicitud de compra
+416|Driver receives a push notification|El piloto recibe una notificación push
+417|Approval pending|Aprobación pendiente
+418|The freelance engineer requests the purchase.|El ingeniero freelance solicita la compra.
+419|Approval|Aprobación
+420|Approval (Pilot Mobile)|Aprobación (Pilot Mobile)
+421|Execution|Ejecución
+422|Update|Actualización
+423|Set creation|Creación del set
+424|Separate streaming|Streaming independiente
+426|DRIVERS|PILOTOS
+427|SELF-SERVICE|AUTOSERVICIOS
+428|DECALS|VINILADO
+429|TIRES|NEUMÁTICOS
+430|TIRE REQUESTS|SOLICITUDES DE NEUMÁTICOS
+431|TIRE REQUEST TRACKING|SEGUIMIENTO DE SOLICITUDES DE NEUMÁTICOS
+432|TIRE SETTINGS|CONFIGURACIÓN DE NEUMÁTICOS
+433|EVENTS|EVENTOS
+434|CARS|COCHES
+435|ACCESS CONTROL|CONTROL DE ACCESO
+436|COMMUNICATION|COMUNICACIÓN
+437|Tire request tracking|Seguimiento de solicitudes de neumáticos
+438|#7812 - Wet|#7812 - Lluvia
+439|FL|DI
+440|FR|DD
+441|RL|TI
+442|RR|TD
+443|CANCEL|CANCELAR
+444|START|INICIAR
+445|#9612 - Wet|#9612 - Lluvia
+446|#3312 - Wet|#3312 - Lluvia
+449|#6123 - Wet|#6123 - Lluvia
+450|#6823 - Wet|#6823 - Lluvia
+451|Streaming prototypes|Prototipos del streaming
+452|Version 0.1|Versión 0.1
+453|Developed by|Desarrollado por
+454|Partners|Socios
+455|Upcoming rounds|Próximas etapas
+457|April 25 and 27|25 y 27 de abril
+459|Remaining|Faltan
+460|days -|días -
+467|June 29 and 30|29 y 30 de junio
+470|August 24 and 25|24 y 25 de agosto
+471|November 02 and 03|02 y 03 de noviembre
+472|DAMAGE|AVERÍAS
+473|PRACTICE|ENTRENAMIENTOS
+474|Tire requests|Solicitudes de neumáticos
+475|Approval pending|Aprobación pendiente
+476|Last updated: 03/05/2024 - 15h34|Última actualización: 03/05/2024 - 15h34
+477|Round 3 - 2024 · Interlagos|Etapa 3 - 2024 · Interlagos
+478|Last updated: 03/05/2024 - 12h01|Última actualización: 03/05/2024 - 12h01
+479|Round 2 - 2024 · Vellocita|Etapa 2 - 2024 · Vellocita
+480|Last updated: 03/05/2024 - 16h59|Última actualización: 03/05/2024 - 16h59
+481|Last updated: 03/05/2024 - 15h05|Última actualización: 03/05/2024 - 15h05
+482|VIEW PREVIOUS|VER ANTERIORES
+483|AVAILABLE TIRES|NEUMÁTICOS DISPONIBLES
+484|Round|Etapa
+486|Car no.|N.º del coche
+487|Tire type|Tipo de neumático
+492|REJECT|RECHAZAR
+493|Front|Delanteros
+494|Rear|Traseros
+495|Split the purchase with a partner driver|Dividir la compra con el piloto asociado
+496|Streaming variations|Variaciones del streaming
+497|ADMINISTRATION|ADMINISTRACIÓN
+498|USER GUIDE|GUÍA DE USO
+499|Introduction|Introducción
+500|Welcome to the Porsche Cup Brasil Administration Dashboard!|¡Bienvenido al Panel de Administración de Porsche Cup Brasil!
+501|Here, you have full control over the competition ecosystem. Our dark interface was designed to highlight key information and make it easier to manage drivers, teams, cars and users. Follow the steps below to complete your tasks quickly and safely.|Aquí tienes el control total del ecosistema de la competición. Nuestra interfaz oscura se diseñó para destacar información importante y facilitar la gestión de pilotos, equipos, coches y usuarios. Sigue los pasos siguientes para realizar tus tareas de forma rápida y segura.
+502|Contents|Índice
+503|How do I access the dashboard?|¿Cómo accedo al panel?
+504|1. Drivers and contracts|1. Pilotos y contratos
+505|How can I manage drivers?|¿Cómo puedo gestionar los pilotos?
+506|How do I manage driver contracts?|¿Cómo gestiono los contratos de los pilotos?
+507|How do I add/edit a contract?|¿Cómo añado o edito un contrato?
+508|2. Self-service|2. Autoservicios
+509|How can I record and track damage notifications?|¿Cómo registro y sigo las notificaciones de averías?
+510|To add a damage notification:|Para añadir una notificación de averías:
+511|How can I record and track damage reports?|¿Cómo registro y sigo los informes de averías?
+512|To add a damage report:|Para añadir un informe de averías:
+513|How do I request repairs to car decals?|¿Cómo solicito la reparación del vinilado de los coches?
+514|How do I add a new car decal layout?|¿Cómo añado un nuevo diseño de vinilado para los coches?
+515|To add a layout:|Para añadir un diseño:
+516|How do I monitor and manage tires?|¿Cómo superviso y gestiono los neumáticos?
+517|How do I request tires?|¿Cómo solicito neumáticos?
+518|To add a tire request|Para añadir una solicitud de neumáticos
+519|How do I track the progress of tire requests?|¿Cómo sigo el progreso de las solicitudes de neumáticos?
+520|How do I manage extras?|¿Cómo gestiono los elementos adicionales?
+521|To add an extra item|Para añadir un elemento adicional
+522|How do I adjust tire settings?|¿Cómo ajusto la configuración de los neumáticos?
+523|To add a season configuration|Para añadir una configuración de temporada
+524|To add a round configuration|Para añadir una configuración de etapa
+525|3. Events|3. Eventos
+526|How do I manage practice records?|¿Cómo gestiono las fichas de entrenamiento?
+527|To add a practice record:|Para añadir una ficha de entrenamiento:
+528|How do I manage competitions?|¿Cómo gestiono las competiciones?
+529|To add a competition:|Para añadir una competición:
+530|How do I define seasons?|¿Cómo defino las temporadas?
+531|How do I edit seasons?|¿Cómo edito las temporadas?
+532|How do I configure race rounds?|¿Cómo configuro las etapas de las carreras?
+533|To add a configuration:|Para añadir una configuración:
+534|4. Cars|4. Coches
+535|How do I manage registered cars?|¿Cómo gestiono los coches registrados?
+536|To add a car|Para añadir un coche
+537|How do I allocate cars to each round?|¿Cómo distribuyo los coches por etapa?
+538|5. Access control and teams|5. Control de acceso y equipos
+539|How do I organize user groups?|¿Cómo organizo los grupos de usuarios?
+540|To add a group:|Para añadir un grupo:
+541|How do I define subgroups?|¿Cómo defino los subgrupos?
+542|To add a subgroup:|Para añadir un subgrupo:
+543|How do I manage user registration?|¿Cómo gestiono el registro de usuarios?
+544|To add a user:|Para añadir un usuario:
+545|How do I organize technical teams?|¿Cómo organizo los equipos técnicos?
+546|To add a technical team:|Para añadir un equipo técnico:
+547|6. Communication|6. Comunicación
+548|How do I access useful contacts?|¿Cómo accedo a los contactos útiles?
+549|To add a contact:|Para añadir un contacto:
+550|time to locate information|tiempo para localizar información
+551|(Time on Task · not measured)|(Time on Task · no medido)
+552|Orders, responsibilities and statuses gained a dedicated flow, previously spread across spreadsheets. The manual supported app operations.|Los pedidos, las responsabilidades y los estados pasaron a tener un flujo propio, antes distribuido entre hojas de cálculo. El manual apoyó la operación de la aplicación.
+553|The next step is observation during events: order completion, approval time, errors and rework.|La continuidad requiere observación en eventos: finalización de pedidos, tiempo de aprobación, errores y retrabajo.
+554|Home|Inicio
+555|Cases|Casos
+556|Services|Servicios
+557|About|Sobre mí
+558|Evidence|Evidencias
+559|Contact|Contacto
+560|Case|Caso
+561|Context|Contexto
+562|Process|Proceso
+563|Results|Resultados
+565|When experience delivers results|Cuando la experiencia genera resultados
+566|Products become more useful, clear and consistent.|Los productos se vuelven más útiles, claros y coherentes.
+567|Confusing navigation?|¿Navegación confusa?
+568|Simplify flows and decisions.|Simplifica flujos y decisiones.
+569|Uncertain rules?|¿Reglas inciertas?
+570|Prepare the product for change.|Prepara el producto para cambiar.
+571|Complex qualification?|¿Calificación compleja?
+572|Bring confidence to every review.|Da seguridad a cada análisis.
+573|Every situation calls for a response.|Cada situación pide una respuesta.
+574|A brand for every client?|¿Una marca por cliente?
+575|Customize without rebuilding the app.|Personaliza sin rehacer la app.
+576|And every response needs a process.|Y cada respuesta necesita un proceso.
+577|Results only emerge after understanding, shaping, creating and producing.|Los resultados solo nacen después de entender, elaborar, crear y producir.
+578|From the first concept|Del primer concepto
+579|to the next evolution.|a la próxima evolución.
+580|Creating brands, building digital experiences and evolving products—and what that process makes possible.|Crear marcas, construir experiencias digitales y evolucionar productos, y lo que ese proceso hace posible.
+581|Brand and communication|Marca y comunicación
+582|Give shape to what your business wants to communicate.|Da forma a lo que tu negocio quiere comunicar.
+584|Visual identity|Identidad visual
+585|Websites and e-commerce|Sitios web y e-commerce
+586|Turn interest into experiences.|Transforma el interés en experiencias.
+587|Websites|Sitios web
+589|Online stores|Tiendas online
+590|Apps and platforms|Aplicaciones y plataformas
+591|Bring your idea into real use.|Lleva tu idea al uso real.
+594|Systems|Sistemas
+595|UX consulting|Consultoría UX
+596|Improve what exists without starting over.|Mejora lo que existe sin empezar de cero.
+599|I’m|Soy
+601|For more than 15 years, I have connected design, technology and business in digital products, complex systems and experiences that need to work in practice.|Desde hace más de 15 años conecto diseño, tecnología y negocio en productos digitales, sistemas complejos y experiencias que necesitan funcionar en la práctica.
+602|From research to implementation, I bring people, product and engineering together to turn complex challenges into clear, accessible and viable solutions.|De la investigación a la implementación, acerco personas, producto e ingeniería para transformar desafíos complejos en soluciones claras, accesibles y viables.
+604|Accessibility|Accesibilidad
+606|Is your idea stuck on paper?|¿Tu idea no sale del papel?
+607|Then let’s|Entonces vamos
+608|And how does that|¿Y cómo se
+609|translate?|traduce eso?
+610|Into results.|En resultados.
+611|Usability, accessibility, conversion and validation show different dimensions of project results and evidence.|La usabilidad, la accesibilidad, la conversión y la validación muestran distintas dimensiones de los resultados y las evidencias de los proyectos.
+612|Fewer errors|Menos errores
+614|574 thousand+|574 mil+
+615|Requests|Solicitudes
+617|1 million+|1 millón+
+618|App downloads|Descargas de la app
+619|higher conversion|más conversión
+621|New users|Nuevos usuarios
+623|What’s next?|¿Y ahora?
+624|Your idea, product or service already has a next step.|Tu idea, producto o servicio ya tiene un próximo paso.
+625|Let’s discover together which decision can move it forward.|Descubramos juntos qué decisión puede hacerlo avanzar.
+626|I’m [name]|Soy [nombre]
+627|My contact is [phone/email]|Mi contacto es [teléfono/correo]
+628|Evaluate my product|Evaluar mi producto
+629|Design that decides.|Diseño que decide.
+630|From complexity to direction: structure, evidence and decisions to evolve products, services and experiences.|De la complejidad a la dirección: estructura, evidencia y decisiones para evolucionar productos, servicios y experiencias.
+634|Heuristics + Architecture|Heurísticas + Arquitectura
+636|Enterprise system|Sistema corporativo
+637|Research plan|Plan de investigación
+638|SIFGD is the internal system supporting FGTS Digital, the platform for managing obligations under Brazil’s severance fund. Its workflows combine queries, rules and operations that require precision.|SIFGD es el sistema interno que apoya la operación de FGTS Digital, plataforma de gestión de las obligaciones del Fondo de Garantía. Sus rutinas combinan consultas, reglas y operaciones que exigen precisión.
+639|The system grew. New paths, labels and decisions began coexisting without a shared navigation logic.|El sistema creció. Nuevos recorridos, etiquetas y decisiones empezaron a convivir sin una misma lógica de navegación.
+640|To complete a task, operators had to remember where to find each action. More effort, less guidance and a higher risk of error.|Para completar una tarea, el operador tenía que recordar dónde encontrar cada acción. Más esfuerzo, menos orientación y mayor riesgo de error.
+641|Agent|Agente
+642|Operator|Operador
+643|If the same problems appeared across 85 screens, how could we decide which flows to fix first?|Si los mismos problemas aparecían en 85 pantallas, ¿cómo decidir qué flujos corregir primero?
+644|The heuristic evaluation revealed orientation and consistency problems repeated across different areas of the system.|La evaluación heurística reveló problemas de orientación y coherencia que se repetían en distintas áreas del sistema.
+645|Fixing each screen individually would not address the source of these difficulties. Information Architecture helped clarify how the flows needed to be reorganized.|Corregir cada pantalla por separado no resolvería el origen de estas dificultades. La Arquitectura de la Información ayudó a entender cómo reorganizar los flujos.
+646|A criticality matrix guided priorities. In the reversals flow, the proposal took shape using CAIXA Design System patterns, while the Research Plan defined how to evaluate the new navigation.|Una matriz de criticidad orientó las prioridades. En el flujo de reversiones, la propuesta tomó forma con los patrones del Design System CAIXA, mientras el Plan de Investigación definió cómo evaluar la nueva navegación.
+647|Heuristic audit|Auditoría heurística
+648|85 screens|85 pantallas
+649|6 main flows|6 flujos principales
+650|Critical|Crítico
+651|Severe|Grave
+652|Moderate|Medio
+653|Minor|Leve
+654|10 violated heuristics|10 heurísticas vulneradas
+655|7 screens|7 pantallas
+656|9 violated heuristics|9 heurísticas vulneradas
+657|18 screens|18 pantallas
+658|7–8 violated heuristics|7–8 heurísticas vulneradas
+659|30 screens|30 pantallas
+660|< 7 violated heuristics|< 7 heurísticas vulneradas
+661|Recurring problems|Problemas recurrentes
+662|Status visibility (breadcrumb): does not show the current flow update.|Visibilidad del estado (breadcrumb): no indica la actualización del flujo actual.
+663|Match with the real world (labels): “Calculated JAM” is unclear to users.|Correspondencia con el mundo real (etiquetas): “JAM calculado” es poco claro para el usuario.
+664|User control and freedom (pagination): duplicate “Back” and “Previous” actions cause confusion.|Control y libertad (paginación): “Volver” y “Anterior” duplicados generan confusión.
+665|Consistency and standards (cards): “Employer details” and “Block request” headings use different styles.|Coherencia y estándares (tarjetas): los títulos “Datos del empleador” y “Solicitud de bloqueo” no comparten estilo.
+666|Error prevention (filters): the “Filter…” field lacks validation to prevent incorrect searches.|Prevención de errores (filtros): el campo “Filtrar…” carece de validación para impedir búsquedas incorrectas.
+667|Recognition rather than recall (tables): “Period” headings lack explanatory labels, making them hard to understand.|Reconocimiento frente a memorización (tablas): los encabezados “Período” sin leyenda dificultan la comprensión.
+668|Flexibility and efficiency (sorting): small sorting icons have poor accessibility.|Flexibilidad y eficiencia (ordenación): iconos de ordenación pequeños y poco accesibles.
+669|Aesthetic and minimalist design (grid): too many borders and spaces undermine focus.|Diseño estético y minimalista (cuadrícula): el exceso de bordes y espacios perjudica el enfoque.
+670|Diagnosis and recovery (message): “Successfully processed” without a link to details prevents tracking.|Diagnóstico y recuperación (mensaje): “Procesado con éxito” sin un enlace a los detalles impide el seguimiento.
+671|Help and documentation (“Back” button): no tooltip or quick guide to orient users.|Ayuda y documentación (botón “Volver”): ausencia de tooltip o guía rápida para orientar al usuario.
+672|Criticality matrix|Matriz de criticidad
+673|The flows|Los flujos
+674|Secure user access screen|Pantalla de acceso seguro del usuario
+676|Home dashboard with main menu.|Panel inicial con menú principal.
+678|Employer|Empleador
+679|Employer search and detail flow.|Flujo de consulta y detalle de empleadores.
+681|Worker|Trabajador
+682|Worker search and data dashboard flow.|Flujo de búsqueda y panel de datos del trabajador.
+684|Management|Gestión
+685|Blocks, reversals and reporting modules.|Módulos de bloqueos, reversiones e informes.
+687|Settings|Configuración
+688|Parameter and permission adjustments.|Ajustes de parámetros y permisos.
+690|High →|Alto →
+691|← Low|← Bajo
+692|Effort|Esfuerzo
+693|Reversals prototype|Prototipo de reversiones
+694|Research Plan Canvas|Canvas del Plan de Investigación
+695|The “3 Whys”|Los “3 porqués”
+696|How will we use the results?|¿Cómo usaremos los resultados?
+697|Why|Por qué
+698|Poor visual emphasis in the interface|Interfaz con poco énfasis visual
+699|Very similar data and labels|Datos y etiquetas muy similares
+700|Goal|Objetivo
+701|What do we want to learn?|¿Qué queremos aprender?
+702|Identify which of the two screen variations (Variation A vs. Variation B) lets users complete the “check blocked amounts” task faster and more accurately, and better understand the block status.|Identificar cuál de las dos variantes de pantalla (Variante A frente a Variante B) permite completar más rápida y correctamente la tarea de “verificar importes bloqueados” y comprender mejor el estado del bloqueo.
+703|Analysis & Deliverable|Análisis y entregable
+704|What will we deliver at the end?|¿Qué entregaremos al final?
+705|Details how the test was conducted: participant count, A/B split, completed tasks and Maze environment.|Detalla cómo se realizó la prueba: número de participantes, división A/B, tareas ejecutadas y entorno Maze.
+706|Facts|Hechos
+707|Presents raw data and measurable results: success rates, average times, click counts and Likert scores.|Presenta los datos brutos y los resultados medibles: tasas de éxito, tiempos medios, cantidad de clics y escala Likert.
+709|Interprets facts to reveal insights about user behavior and perceptions of the interface.|Interpreta los hechos para revelar aprendizajes sobre el comportamiento y las percepciones de los usuarios en la interfaz.
+710|Suggests practical, prioritized actions based on insights: UI improvements, next tests and design guidelines.|Sugiere acciones prácticas y priorizadas basadas en los hallazgos: mejoras de UI, próximas pruebas y directrices de diseño.
+711|Certainties, Assumptions and Questions matrix|Matriz de certezas, supuestos y dudas
+712|What do we know, assume and want to discover?|¿Qué sabemos, suponemos y queremos descubrir?
+713|Certainties|Certezas
+714|Both screen proposals load without errors and display all data|Ambas propuestas de pantalla cargan sin errores y muestran todos los datos
+715|Text, metrics and labels are correct and consistent in both.|Los textos, las métricas y las etiquetas son correctos y coherentes en ambas.
+716|The “Processing” status is present and positioned in the layouts.|El estado “En procesamiento” está presente y ubicado en los diseños.
+717|Assumptions|Supuestos
+718|Visually highlighting the blocked amount improves quick identification.|Destacar visualmente el importe bloqueado mejora su identificación rápida.
+719|Users will intuitively understand the new hierarchical layout.|Los usuarios comprenderán intuitivamente el nuevo diseño jerárquico.
+720|Reorganizing elements will not increase overall cognitive load.|La reorganización de los elementos no aumentará la carga cognitiva general.
+721|Questions|Dudas
+722|Could the emphasis distract from other important information?|¿Podría el énfasis distraer de otra información importante?
+723|What contrast level is needed for maximum readability?|¿Qué nivel de contraste se necesita para la máxima legibilidad?
+724|Could some user profiles prefer the design without extra emphasis?|¿Podrían algunos perfiles preferir el diseño sin énfasis adicional?
+725|Target audience|Público objetivo
+726|Who takes part in this test?|¿Quién participa en esta prueba?
+727|Caixa analysts who regularly use the FGTS Digital portal.|Analistas de Caixa que usan habitualmente el portal FGTS Digital.
+728|Inclusion criteria:|Criterios de inclusión:
+729|Have checked blocks in the past month;|Haber consultado bloqueos durante el último mes;
+730|Basic familiarity with enterprise web systems.|Familiaridad básica con sistemas web corporativos.
+731|Research method|Método de investigación
+732|Which tools and testing flow?|¿Qué herramientas y flujo de prueba?
+733|1. Prototype adjustments|1. Ajuste de los prototipos
+734|2. Maze setup|2. Configuración en Maze
+735|3. Task definition|3. Definición de las tareas
+736|4. Test completion time|4. Tiempo de ejecución de la prueba
+737|5. Results capture|5. Captura de resultados
+738|Choose the winning variation for development|Elegir la variante ganadora para el desarrollo
+739|Task success rate (%)|Tasa de éxito de la tarea (%)
+740|Average task completion time (s)|Tiempo medio para completar la tarea (s)
+741|Self-reported clarity (1–5 scale)|Claridad declarada (escala 1–5)
+742|Critical screens in the audit|Pantallas críticas en la auditoría
+743|(Heuristic severity)|(Severidad heurística)
+744|Reorganized flows|Flujos reorganizados
+745|(Delivery coverage)|(Cobertura de la entrega)
+746|Navigation became better aligned with tasks, with more predictable paths, labels and decisions for system operators.|La navegación pasó a seguir mejor las tareas, con recorridos, etiquetas y decisiones más previsibles para quienes operan el sistema.
+747|Further progress requires monitoring real use: errors, completed tasks, execution time and support tickets per flow.|La evolución exige seguimiento en uso real: errores, tareas completadas, tiempo de ejecución y tickets por flujo.
+748|Claim|Solicitud
+749|Beneficiary CPF|CPF del beneficiario
+750|Processing|Tramitación
+751|Started|Iniciada
+752|Assigned to|Responsable
+754|Tasks + WCAG 2.1|Tareas + WCAG 2.1
+757|The DPVAT BackOffice is the internal system for reviewing and managing claims under Brazil’s motor vehicle personal injury insurance. With around 195 pages, it brought together different tasks and roles.|El BackOffice de DPVAT es el sistema interno de análisis y gestión de solicitudes del seguro de daños personales causados por vehículos. Con unas 195 páginas, reunía distintas tareas y perfiles.
+758|Among these were qualification flags: inconsistencies requiring verification before a claim could proceed.|Entre ellas estaban las alertas de calificación: inconsistencias que requieren verificación antes de que una solicitud avance.
+759|In long, inconsistent flows, recognizing alerts, retaining context and recording decisions required unnecessary effort.|En flujos largos y poco coherentes, reconocer alertas, mantener el contexto y registrar decisiones exigía un esfuerzo innecesario.
+760|How could we help each role interpret qualification flags and make decisions without compromising review rigor?|¿Cómo ayudar a cada perfil a interpretar las alertas y tomar decisiones sin comprometer el rigor del análisis?
+761|The review began with qualification tasks, where unclear information could make claim analysis harder.|La revisión comenzó por las tareas de calificación, donde la información poco clara podía dificultar el análisis de las solicitudes.
+762|Nielsen’s heuristics identified orientation and error-prevention problems. WCAG 2.1 provided the accessibility criteria needed to review the interfaces.|Las heurísticas de Nielsen identificaron problemas de orientación y prevención de errores. WCAG 2.1 aportó los criterios de accesibilidad necesarios para revisar las interfaces.
+763|Findings were linked to roles, stages and critical operational points. This analysis guided flow reorganization and application of CAIXA Design System patterns, aiming for clearer, traceable decisions.|Los hallazgos se relacionaron con perfiles, etapas y puntos críticos de la operación. Este análisis orientó la reorganización de los flujos y la aplicación de patrones del Design System CAIXA, buscando decisiones más claras y trazables.
+764|System|Páginas
+765|pages|del sistema
+766|Lacks|No tiene
+767|Consistency and|Coherencia y
+768|Standardization|Estandarización
+769|navigation|navegación
+770|As a manager|Como gestor
+771|Legal analyst|Analista judicial
+772|Manager|Gestor
+773|Eligible for payment|Apta para pago
+774|Process in|Tramitar en
+775|another workflow|otro flujo
+776|Claim remains on hold|La solicitud queda en espera
+777|How should I handle qualified claims for each flag?|¿Cómo debo tramitar las solicitudes calificadas en cada alerta?
+778|No|No
+779|Yes|Sí
+780|Validate|Validar
+781|the flag|la alerta
+782|Reject the claim|Rechazar la solicitud
+783|Edit the amount|Editar el importe
+784|Await supporting information|Esperar información de apoyo
+785|Qualify again|Volver a calificar
+786|Legend|Leyenda
+788|Task to perform|Tarea por realizar
+789|Experiment and responses|Experimento y respuestas
+790|Persona actions|Acciones de la persona
+791|System actions|Acciones del sistema
+792|Responses and climax|Respuestas y clímax
+793|Obstacles|Obstáculos
+794|encountered|encontrados
+795|and goals|y metas
+796|Was the claim flagged during qualification?|¿Se detectó alguna alerta en la calificación de la solicitud?
+797|Is there suspicion of fraud?|¿Existe sospecha de fraude?
+798|Which flag was assigned?|¿Qué alerta se asignó?
+799|The claim is unresolved|La solicitud sigue sin solución
+800|Information is incomplete|La información está incompleta
+801|The claim is closed|La solicitud se finaliza
+802|It may trigger the same flag again|Puede volver a generar la misma alerta
+803|Not allowed|No se permite
+804|Validate all|Validar todos
+805|by state, municipality, compensation, amount, CPF|por estado, municipio, indemnización, importe y CPF
+806|Mark document as pending|Marcar documento como pendiente
+807|Duplicate|Duplicidad
+808|Total duplicates;|Total de duplicidades;
+809|And an action to view claim details (displays the table)|Y una acción para detallar las solicitudes (muestra la tabla)
+810|Apportionment|Reparto
+811|The division of the amount among|La división del importe entre los
+812|beneficiaries|beneficiarios
+813|is|es
+814|inconsistent.|incompatible.
+815|Cap|Límite
+816|Amount exceeds the cap|El importe supera el límite
+817|Legal|Judicial
+818|Legal proceedings in progress|Demanda judicial en curso
+819|Single claim|Solicitud única
+820|Monitoring|Seguimiento
+821|View collection deadlines|Visualizar los plazos de cobro
+822|Critical flows|Flujos críticos
+823|CAIXA Design System|Design System CAIXA
+824|a new|un nuevo
+828|Hello, EDUARDO|Hola, EDUARDO
+830|Dashboard|Panel
+831|Automated payment dashboard|Panel de pago automatizado
+832|Qualify|Calificar
+833|Eligible for payment|Aptas para pago
+834|Claims under review|Solicitudes en revisión
+835|Audit trail|Registro de auditoría
+836|File upload|Carga de archivos
+837|Parameters|Parámetros
+838|Qualification database|Base de calificación
+839|Reports|Informes
+840|Qualify claims|Calificar solicitudes
+841|Awaiting qualification|Pendientes de calificación
+842|Qualified claims|Solicitudes calificadas
+843|Search by|Buscar por
+844|Claim or CPF|Solicitud o CPF
+845|Enter the claim number or CPF|Introduce el número de solicitud o CPF
+846|Compensation|Indemnización
+847|All|Todos
+850|Death|Fallecimiento
+851|Approved amount|Importe aprobado
+853|Approval date|Fecha de aprobación
+854|dd/mm/yyyy|dd/mm/aaaa
+855|Due date|Fecha de vencimiento
+857|Filter|Filtrar
+882|Export|Exportar
+883|Due on|Vencimiento en
+884|Approved on|Aprobación en
+885|PERMANENT DISABILITY (IP)|INVALIDEZ PERMANENTE (IP)
+887|Qualification|Calificación
+888|Not started|No iniciada
+890|DEATH|FALLECIMIENTO
+891|MEDICAL AND HOSPITAL EXPENSES (DAMS)|GASTOS MÉDICOS Y HOSPITALARIOS (DAMS)
+892|Showing:|Mostrando:
+893|of 2.000 results|de 2.000 resultados
+894|Go to:|Ir a:
+895|BackOffice patterns|Patrones en el BackOffice
+896|Automated payment|Pago automatizado
+897|Claim processing|Tramitación de solicitudes
+898|Processing claims with qualification flags|Tramitación de solicitudes con alertas de calificación
+899|Dates and deadlines|Fechas y plazos
+900|Deadline|Plazo
+901|Compensation and amounts|Indemnización e importes
+902|Permanent disability (IP)|Invalidez permanente (IP)
+904|Edited amount|Importe editado
+905|Qualification flags|Alertas de calificación
+906|There are claims with the same characteristics.|Existen solicitudes con las mismas características.
+907|Apportionment not possible|Reparto imposible
+908|The relationship between beneficiaries and payment is outside the standard.|La relación entre beneficiarios y pago está fuera del estándar.
+909|This claim is being monitored.|Esta solicitud está en seguimiento.
+910|This CPF is linked to legal matters.|Este CPF está registrado con cuestiones judiciales.
+911|Process claim|Tramitar solicitud
+912|Supporting information|Información de apoyo
+913|Edit|Editar
+914|Being processed|En tramitación
+915|Reject|Rechazar
+916|Cancel and go back|Cancelar y volver
+917|Release|Liberar
+918|Processing request|Solicitud de tramitación
+919|Choose the flag you want to request processing for|Elige la alerta para la que deseas solicitar tramitación
+920|Cap exceeded|Límite superado
+921|The approved amount for the claim exceeds the payment cap.|El importe aprobado para la solicitud supera el límite de pago.
+922|Edit amounts|Editar importes
+923|Previous amount|Importe anterior
+925|Additional text|Texto complementario
+926|New amount|Nuevo importe
+927|Enter an amount below R$ 10.000,00|Introduce un importe inferior a R$ 10.000,00
+928|Justification|Justificación
+929|Write the|Escribe el
+930|for not billing this claim|para no facturar esta solicitud
+931|Cancel|Cancelar
+932|compliant screens|pantallas adaptadas
+934|fewer support tickets|menos tickets
+936|Claim statuses, interpretation of flags and actions by role gained clearer patterns. Accessibility became part of interface decisions.|Los estados de las solicitudes, la lectura de las alertas y las acciones por perfil adquirieron patrones más claros. La accesibilidad pasó a formar parte de las decisiones de interfaz.
+937|The operational effect depends on monitoring qualification errors, rework and support tickets. None of these figures, alone, proves fraud was prevented.|El efecto operativo depende del seguimiento de errores de calificación, retrabajo y tickets. Ninguno de estos números demuestra, por sí solo, fraudes evitados.
+938|Continue|Continuar
+941|Mobile app|Aplicación móvil
+943|SPVAT (Mandatory Insurance for the Protection of Road Accident Victims) was intended to replace DPVAT. The proposal required a new brand and app.|SPVAT (Seguro Obligatorio para la Protección de Víctimas de Accidentes de Tránsito) estaba previsto como sucesor del DPVAT. La propuesta exigía una nueva marca y una nueva aplicación.
+944|Two workstreams needed to progress together: creating the new insurance identity and reviewing the previous app to adapt journeys and CAIXA patterns.|Dos frentes debían avanzar juntos: crear la identidad del nuevo seguro y revisar la aplicación anterior para adaptar recorridos y patrones de CAIXA.
+945|There was a deadline. The rules could still change. The product needed to evolve without treating provisional decisions as final.|Había un plazo. Las reglas aún podían cambiar. El producto debía evolucionar sin tratar decisiones provisionales como definitivas.
+946|What could be reused from DPVAT without compromising adaptation to the new insurance rules?|¿Qué podía reutilizarse del DPVAT sin comprometer la adaptación a las nuevas reglas del seguro?
+947|Reviewing the DPVAT app helped distinguish what still made sense from what would need to change for SPVAT.|La revisión de la aplicación DPVAT permitió distinguir lo que seguía teniendo sentido de lo que debía cambiar con SPVAT.
+948|Journeys, requirements and components were evaluated against known rules and decisions that remained uncertain.|Los recorridos, requisitos y componentes se evaluaron considerando las reglas conocidas y las definiciones aún inciertas.
+949|In parallel, the branding study developed the new insurance’s visual identity. Prototypes brought these decisions together with CAIXA Design System patterns, enabling an approach adaptable to regulatory changes.|En paralelo, el estudio de marca construyó la identidad visual del nuevo seguro. Los prototipos reunieron estas decisiones con los patrones del Design System CAIXA, permitiendo avanzar con una propuesta adaptable a los cambios regulatorios.
+950|Exploratory research|Investigación exploratoria
+951|Experiments|Experimentos
+952|We did this …|Hicimos esto …
+953|Survey with 7 questions|Encuesta con 7 preguntas
+954|and 18 participants.|y 18 participantes.
+955|… and found this …|… y descubrimos esto …
+956|64.5% of legal representatives did not download it.|El 64.5% de los representantes no lo descargó.
+957|… which makes us think this…|… lo que nos lleva a pensar esto…
+958|Improve information placement.|Mejorar la disposición de la información.
+959|Conclusions|Conclusiones
+960|… so we’ll do this.|… así que haremos esto.
+961|Usability test of the new proposal.|Prueba de usabilidad de la nueva propuesta.
+962|Brand references|Referencias de marca
+963|SPVAT visual identity|Identidad visual SPVAT
+964|I need help|Necesito ayuda
+965|Guide to|Guía de
+966|Application calendar|Calendario de solicitudes
+967|Sign in|Entrar
+968|Mobile prototype|Prototipo móvil
+969|DPVAT is now SPVAT|DPVAT ahora es SPVAT
+970|SPVAT has arrived at CAIXA to support road accident victims across Brazil. Discover what’s new!|SPVAT llegó a CAIXA para apoyar a las víctimas de accidentes de tránsito en todo Brasil. ¡Conoce las novedades!
+971|Welcome, Renan O!|¡Bienvenido, Renan O!
+972|My SPVAT|Mi SPVAT
+973|Apply now|Solicitar ahora
+974|Start a compensation claim|Inicia una solicitud de indemnización
+975|Track your claims|Sigue tus solicitudes
+976|Check your claim status|Consulta el estado de tu solicitud
+977|More SPVAT for you|Más SPVAT para ti
+978|Document templates|Plantillas de documentos
+979|Collection|Recaudación
+980|Refund|Devolución
+981|What type of compensation do you need?|¿Qué tipo de indemnización necesitas?
+982|Permanent disability|Invalidez permanente
+983|Vocational rehabilitation|Rehabilitación profesional
+984|Death compensation|Indemnización por fallecimiento
+985|Funeral services|Servicios funerarios
+986|Medical and supplementary expenses|Gastos médicos y complementarios
+987|Learn more about them|Conoce más sobre ellas
+988|Claim statuses|Estados de la solicitud
+989|flow errors|errores en el flujo
+990|(Error Rate · not measured)|(Error Rate · no medido)
+991|DPVAT claims|solicitudes DPVAT
+992|The review connected brand, journeys and components in a proposal ready for adjustment. The indicators refer to the research and project, not a launched app.|La revisión conectó marca, recorridos y componentes en una propuesta preparada para ajustes. Los indicadores se refieren a la investigación y al proyecto, no a una aplicación lanzada.
+993|With the law repealed, any resumption would depend on new rules, updated hypotheses and app validation.|Con la derogación de la ley, cualquier reanudación dependería de nuevas reglas, hipótesis actualizadas y validación de la aplicación.
+994|Modular Design System|Design System modular
+995|White-label app|Aplicación white-label
+999|Konviva already offered an LMS for enterprise clients. The app brought that experience to mobile and needed to reflect each company’s identity without changing core functionality.|Konviva ya ofrecía un LMS para clientes corporativos. La aplicación llevó esa experiencia al móvil y debía reflejar la identidad de cada empresa sin cambiar el funcionamiento principal.
+1000|Logos, colors and typefaces varied. Journeys and components did not. Building an app for each client would duplicate effort and maintenance.|Los logotipos, colores y tipografías variaban. Los recorridos y componentes, no. Crear una aplicación por cliente duplicaría el esfuerzo y el mantenimiento.
+1001|What needed to stay the same in the app—and what did each client actually need to customize?|¿Qué debía seguir igual en la aplicación y qué necesitaba personalizar realmente cada cliente?
+1002|The learning experience was shared across clients. What needed to change was each company’s visual identity.|La experiencia de aprendizaje era compartida entre los clientes. Lo que debía cambiar era la identidad visual de cada empresa.
+1003|This distinction guided the creation of a modular Design System, separating components, patterns and journeys from configurable brand properties.|Esta distinción orientó la creación de un Design System modular, separando componentes, patrones y recorridos de las propiedades configurables de marca.
+1004|With Design Tokens, different identities could use the same interface structure. Prototypes helped verify how variations behaved without rebuilding the app.|Con Design Tokens, distintas identidades pasaron a usar la misma estructura de interfaz. Los prototipos ayudaron a verificar cómo se comportaban las variaciones sin reconstruir la aplicación.
+1005|MVP backlog|Backlog del MVP
+1007|Vision and product|Visión y producto
+1008|Scalable white-label LMS with a Design System for agile corporate brand customization.|LMS white-label escalable con Design System para personalizar marcas corporativas de forma ágil.
+1009|Problems|Problemas
+1010|No mobile app and difficulty reflecting the client’s culture on the platform.|Falta de aplicación móvil y dificultad para reflejar la cultura del cliente en la plataforma.
+1011|Features|Funcionalidades
+1012|Configurable branding modules and essential learning flows for the MVP.|Módulos de branding configurables y flujos esenciales de aprendizaje para el MVP.
+1014|L&D manager focused on culture and employee engagement at scale.|Gestor de formación y desarrollo centrado en la cultura y el compromiso de los empleados a escala.
+1015|Characteristics: strategic, analytical and prioritizes Employer Branding.|Características: estratégico, analítico y prioriza el Employer Branding.
+1016|Pain points: low engagement in generic apps and high customization costs.|Dificultades: bajo compromiso en aplicaciones genéricas y alto coste de personalización.
+1017|Needs: visual autonomy, a proprietary app feel and scalability.|Necesidades: autonomía visual, percepción de aplicación propia y escalabilidad.
+1018|Expectations|Expectativas
+1019|Validate the Design System, reduce setup time and demonstrate the value of modular mobile.|Validar el Design System, reducir el tiempo de configuración y demostrar el valor del móvil modular.
+1021|Color tokens to automatically apply the visual identity.|Tokens de color para aplicar automáticamente la identidad visual.
+1022|Logo uploads for headers and loading screens.|Carga de logotipos para encabezados y pantallas de carga.
+1023|Custom backgrounds and visual masks on the login screen.|Personalización de fondos y máscaras visuales en la pantalla de acceso.
+1024|Learning flow optimized for high completion rates.|Flujo de aprendizaje optimizado para una alta tasa de finalización.
+1025|Smooth navigation between Home, Details and the Lesson Player.|Navegación fluida entre Inicio, Detalles y el Reproductor de clases.
+1026|Modular Design System|Design System modular
+1027|White-label prototypes|Prototipos white-label
+1028|Username|Usuario
+1029|Forgot password|Olvidé mi contraseña
+1030|Sign in|Entrar
+1031|Sign in with QR Code|Entrar con código QR
+1032|Continue where you left off|Continúa donde lo dejaste
+1034|65% complete|65% completado
+1035|Synchronous|Síncrono
+1036|View courses|Ver cursos
+1037|Take course|Cursar
+1038|Start|Iniciar
+1039|Featured courses|Cursos destacados
+1040|My courses|Mis cursos
+1041|Search|Búsqueda
+1042|More|Más
+1043|In progress|En curso
+1044|Completed|Completados
+1045|Categories|Categorías
+1046|Development|Desarrollo
+1047|Business|Negocios
+1048|Finance and accounting|Finanzas y contabilidad
+1049|IT and software|TI y software
+1050|Productivity|Productividad
+1053|Photography and video|Fotografía y vídeo
+1054|Health and fitness|Salud y fitness
+1055|Music|Música
+1056|Types|Tipos
+1057|In person|Presencial
+1058|Remote|A distancia
+1061|Web conferencing|Webconferencia
+1062|What are you looking for?|¿Qué estás buscando?
+1064|Description|Descripción
+1065|Content|Contenido
+1066|Shall we learn together how to create success indicators for your business? Today, having real metrics to measure business results is essential for decision-making. In this course you will learn to define KPIs—Key Performance Indicators—understand their importance and relevance, and explore methods that help|¿Aprendemos juntos a crear indicadores de éxito para tu negocio? En el contexto actual, contar con métricas reales para medir los resultados es fundamental para tomar decisiones. En este curso aprenderás a definir KPI —Key Performance Indicators—, conocerás su importancia y relevancia, y explorarás métodos que ayudan
+1067|Suggested courses|Cursos sugeridos
+1068|Enroll|Matricularse
+1069|Module|Módulo
+1070|Introduction|Presentación
+1071|Access|Acceder
+1072|Brand variations|Variaciones de marca
+1073|Prototypes|Prototipos
+1074|setup time|tiempo de configuración
+1075|customization errors|errores de personalización
+1076|UCVS downloads|descargas UCVS
+1077|Branding became a configuration on the same app structure, rather than a reason to rebuild components and journeys.|La marca pasó a ser una configuración sobre la misma estructura de la aplicación, no un motivo para reconstruir componentes y recorridos.
+1078|Operational savings still need monitoring: time to launch a brand, maintenance, regressions and cost per client.|El ahorro operativo aún necesita seguimiento: tiempo para lanzar una marca, mantenimiento, regresiones y coste por cliente.
+1079|focus|destaque
+1080|left|izquierdos
+1081|right|derechos
+1082|build|construir
+1083|payment|pago

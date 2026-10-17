@@ -1,4 +1,5 @@
 // @ts-nocheck -- Figma-generated exact visual component
+import { useI18n } from "../i18n";
 const assetPathPrefix = "/assets";
 const imgImgHeroImage = `${assetPathPrefix}/12f96.png`;
 const imgImgHeroImage1 = `${assetPathPrefix}/e811e.png`;
@@ -21,64 +22,57 @@ const imgKonviva3 = `${assetPathPrefix}/cf11d.svg`;
 const img = `${assetPathPrefix}/f903a.svg`;
 
 export default function ArticleCustomizacaoCara() {
+  const { t, text, path } = useI18n();
   return (
     <div className="bg-[#eeeff1] content-stretch flex flex-col items-center relative size-full" data-node-id="4:35207" data-name="article#customizacao-cara">
       <div className="bg-[#f9f9f9] content-stretch flex flex-col gap-[32px] h-[1080px] isolate items-start justify-end overflow-clip px-[160px] py-[112px] relative shrink-0 w-[1920px]" data-node-id="4:35208" data-name="header.intro">
         <div className="[word-break:break-word] content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full z-[4]" data-node-id="4:35209" data-name="div.flex.flex-col.w-full">
-          <p className="font-['Sora:SemiBold'] font-semibold leading-[1.1] relative shrink-0 text-[#fcfdfe] text-[81px] w-[1180px]" data-node-id="4:35211">
-            Uma marca por cliente?
-          </p>
+          <h1 className="font-['Sora:SemiBold'] font-semibold leading-[1.1] relative shrink-0 text-[#fcfdfe] text-[81px] w-[1180px]" data-node-id="4:35211">
+            {t("t0574")}</h1>
           <p className="font-['Sora:Regular'] font-normal leading-[1.3] relative shrink-0 text-[#fcfdfe] text-[30px] w-[980px]" data-node-id="4:35212">
-            Personalize sem refazer o app.
-          </p>
+            {t("t0575")}</p>
           <div className="content-start flex flex-wrap gap-[12px_16px] items-start leading-[1.6] relative shrink-0 text-[#230007] w-[1600px] whitespace-nowrap" data-node-id="4:35213" data-name="ul.meta">
             <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:35214" data-name="lean-ux">
               <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:35214;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                 cycle
               </p>
               <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:35214;6066:625">
-                Design System modular
-              </p>
+                {t("t0994")}</p>
             </div>
             <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:35215" data-name="project-type-8">
               <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:35215;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                 devices
               </p>
               <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:35215;6066:625">
-                Aplicativo White-Label
-              </p>
+                {t("t0995")}</p>
             </div>
             <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:35216" data-name="product-backlog-building">
               <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:35216;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                 view_list
               </p>
               <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:35216;6066:625">
-                Product Backlog Building
-              </p>
+                {t("t0996")}</p>
             </div>
             <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:35217" data-name="design-tokens-dtcg">
               <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:35217;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                 palette
               </p>
               <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:35217;6066:625">
-                Design Tokens (DTCG)
-              </p>
+                {t("t0997")}</p>
             </div>
             <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:35218" data-name="userberry">
               <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:35218;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                 science
               </p>
               <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:35218;6066:625">
-                UserBerry
-              </p>
+                {t("t0998")}</p>
             </div>
             <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:35219" data-name="figma">
               <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:35219;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                 design_services
               </p>
               <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:35219;6066:625">
-                Figma
-              </p>
+                {t("t0167")}</p>
             </div>
           </div>
         </div>
@@ -96,16 +90,15 @@ export default function ArticleCustomizacaoCara() {
           </div>
         </div>
       </div>
-      <div className="content-stretch flex flex-col h-[1080px] items-start justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:35224" data-name="section.context">
+      <div className="content-stretch flex flex-col h-[1080px] items-start justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:35224" data-name="section.context" data-section-id="context">
         <div className="content-stretch flex gap-[96px] h-[520px] items-center relative shrink-0 w-full" data-node-id="4:35225" data-name="div.grid.grid-cols-12.gap-24.w-full">
           <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[24px] items-start min-w-px relative text-[16px]" data-node-id="4:35226" data-name="div.col-span-12.lg:col-span-8">
-            <p className="font-['Sora:SemiBold'] font-semibold leading-[1.3] relative shrink-0 text-[#0d0e10] tracking-[0.64px] w-[900px]" data-node-id="4:35227">
-              01 · CONTEXTO
-            </p>
+            <h2 className="font-['Sora:SemiBold'] font-semibold leading-[1.3] relative shrink-0 text-[#0d0e10] tracking-[0.64px] w-[900px]" data-node-id="4:35227">
+              {t("t0018")}</h2>
             <div className="font-['Sora:Regular'] font-normal leading-[0] relative shrink-0 text-[#000102] w-[1024px] whitespace-pre-wrap" data-node-id="4:35229">
-              <p className="leading-[1.5] mb-[12px]">A Konviva já oferecia um LMS para clientes corporativos. O aplicativo levou essa experiência ao celular e precisava refletir a identidade de cada empresa sem mudar o funcionamento principal.</p>
+              <p className="leading-[1.5] mb-[12px]">{t("t0999")}</p>
               <p className="leading-[1.5] mb-[12px]">​</p>
-              <p className="leading-[1.5]">Logotipos, cores e tipografias variavam. Jornadas e componentes, não. Criar um aplicativo por cliente duplicaria esforço e manutenção.</p>
+              <p className="leading-[1.5]">{t("t1000")}</p>
             </div>
           </div>
           <div className="h-[160px] relative shrink-0 w-[548.656px]" data-node-id="4:35230" data-name="konviva_1 1">
@@ -113,28 +106,25 @@ export default function ArticleCustomizacaoCara() {
           </div>
         </div>
       </div>
-      <div className="content-stretch flex flex-col h-[1080px] items-center justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:35233" data-name="section.challenge">
+      <div className="content-stretch flex flex-col h-[1080px] items-center justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:35233" data-name="section.challenge" data-section-id="challenge">
         <div className="[word-break:break-word] content-stretch flex flex-col font-['Sora:SemiBold'] font-semibold gap-[32px] items-center max-w-[1500px] relative shrink-0 text-center w-full" data-node-id="4:35234" data-name="div.flex.flex-col.w-full.max-w-[1500px]">
-          <p className="leading-[1.3] relative shrink-0 text-[#0d0e10] text-[16px] tracking-[0.64px] w-[900px]" data-node-id="4:35235">
-            02 · DESAFIO
-          </p>
+          <h2 className="leading-[1.3] relative shrink-0 text-[#0d0e10] text-[16px] tracking-[0.64px] w-[900px]" data-node-id="4:35235">
+            {t("t0021")}</h2>
           <p className="leading-[1.2] relative shrink-0 text-[#000102] text-[36px] w-[1200px]" data-node-id="4:35236">
-            O que precisava continuar igual no aplicativo — e o que cada cliente realmente precisava personalizar?
-          </p>
+            {t("t1001")}</p>
         </div>
       </div>
-      <div className="content-stretch flex h-[1080px] items-center justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:35238" data-name="section.process">
+      <div className="content-stretch flex h-[1080px] items-center justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:35238" data-name="section.process" data-section-id="process">
         <div className="content-stretch flex flex-[1_0_0] items-center justify-center min-w-px overflow-clip relative" data-node-id="4:35239" data-name="div.grid.grid-cols-12.gap-24.w-full">
           <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[24px] items-start min-w-px relative text-[16px]" data-node-id="4:35240" data-name="div.col-span-12.lg:col-span-8">
-            <p className="font-['Sora:SemiBold'] font-semibold leading-[1.3] relative shrink-0 text-[#0d0e10] tracking-[0.64px] w-[900px]" data-node-id="4:35241">
-              03 · PROCESSO
-            </p>
+            <h2 className="font-['Sora:SemiBold'] font-semibold leading-[1.3] relative shrink-0 text-[#0d0e10] tracking-[0.64px] w-[900px]" data-node-id="4:35241">
+              {t("t0023")}</h2>
             <div className="font-['Sora:Regular'] font-normal leading-[0] min-w-full relative shrink-0 text-[#000102] w-[min-content] whitespace-pre-wrap" data-node-id="4:35242">
-              <p className="leading-[1.5] mb-[12px]">A experiência de aprendizagem era compartilhada entre os clientes. O que precisava mudar era a identidade visual de cada empresa.</p>
+              <p className="leading-[1.5] mb-[12px]">{t("t1002")}</p>
               <p className="leading-[1.5] mb-[12px]">​</p>
-              <p className="leading-[1.5] mb-[12px]">Essa distinção orientou a criação de um Design System modular, separando componentes, padrões e jornadas das propriedades configuráveis de marca.</p>
+              <p className="leading-[1.5] mb-[12px]">{t("t1003")}</p>
               <p className="leading-[1.5] mb-[12px]">​</p>
-              <p className="leading-[1.5]">Com Design Tokens, diferentes identidades passaram a utilizar a mesma estrutura de interface. Os protótipos ajudaram a verificar como as variações se comportavam sem exigir a reconstrução do aplicativo.</p>
+              <p className="leading-[1.5]">{t("t1004")}</p>
             </div>
           </div>
         </div>
@@ -148,17 +138,15 @@ export default function ArticleCustomizacaoCara() {
               </p>
             </div>
             <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.6] relative shrink-0 text-[#0d0d0d] text-[24px] whitespace-nowrap" data-node-id="4:35259">
-              Backlog do MVP
-            </p>
+              {t("t1005")}</p>
           </div>
         </div>
         <div className="content-stretch flex flex-col items-center overflow-clip relative shrink-0 w-full" data-node-id="4:35261" data-name="div.grid.grid-cols-12.w-full">
-          <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full" data-node-id="4:35262" data-name="figure.artifact-visual.col-span-12">
+          <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full" data-node-id="4:35262" data-name="figure.artifact-visual.col-span-12" data-section-id="artifacts">
             <div className="content-stretch flex gap-[24px] items-center relative shrink-0 w-full" data-node-id="4:35263">
               <div className="content-stretch flex items-center justify-center relative shrink-0" data-node-id="4:35264">
                 <p className="[word-break:break-word] font-['Source_Sans_3:Regular'] font-normal leading-[1.6] relative shrink-0 text-[#0d0d0d] text-[30px] whitespace-nowrap" data-node-id="4:35265">
-                  Product Backlog Building (PBB)
-                </p>
+                  {t("t1006")}</p>
               </div>
               <div className="[word-break:break-word] bg-[#e6e6e6] content-stretch drop-shadow-[0px_0px_0px_rgba(13,110,253,0.25)] flex flex-[1_0_0] flex-col gap-[9px] items-start min-w-px px-[24px] py-[30px] relative rounded-[9px] text-[#10161c]" data-node-id="4:35266" data-name="product">
                 <div className="content-stretch flex gap-[8px] items-center relative shrink-0 text-[20px] w-full" data-node-id="4:35267">
@@ -166,12 +154,10 @@ export default function ArticleCustomizacaoCara() {
                     <p className="leading-[1.2]">visibility</p>
                   </div>
                   <p className="font-['Roboto:Medium'] font-medium leading-[1.2] relative shrink-0 whitespace-nowrap" data-node-id="4:35269" style={{ fontVariationSettings: '"wdth" 100' }}>
-                    Visão e Produto
-                  </p>
+                    {t("t1007")}</p>
                 </div>
                 <p className="font-['Roboto:Regular'] font-normal leading-[1.6] relative shrink-0 text-[16px] w-full" data-node-id="4:35270" style={{ fontVariationSettings: '"wdth" 100' }}>
-                  LMS white-label escalável com Design System para customização ágil de marcas corporativas.
-                </p>
+                  {t("t1008")}</p>
               </div>
             </div>
             <div className="content-stretch flex gap-[24px] items-center relative shrink-0 w-full" data-node-id="4:35271">
@@ -183,12 +169,10 @@ export default function ArticleCustomizacaoCara() {
                         <p className="leading-[1.2]">report_problem</p>
                       </div>
                       <p className="font-['Roboto:Medium'] font-medium leading-[1.2] relative shrink-0 whitespace-nowrap" data-node-id="4:35276" style={{ fontVariationSettings: '"wdth" 100' }}>
-                        Problemas
-                      </p>
+                        {t("t1009")}</p>
                     </div>
                     <p className="font-['Roboto:Regular'] font-normal leading-[1.6] relative shrink-0 text-[16px] w-full" data-node-id="4:35277" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Falta de app móvel e dificuldade em refletir a cultura do cliente na plataforma.
-                    </p>
+                      {t("t1010")}</p>
                   </div>
                   <div className="bg-[#e6e6e6] content-stretch drop-shadow-[0px_0px_0px_rgba(13,110,253,0.25)] flex flex-col gap-[9px] items-start px-[24px] py-[30px] relative rounded-[9px] shrink-0 w-full" data-node-id="4:35278" data-name="product">
                     <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center relative shrink-0 text-[#10161c] text-[20px] w-full" data-node-id="4:35279">
@@ -196,13 +180,11 @@ export default function ArticleCustomizacaoCara() {
                         <p className="leading-[1.2]">palette</p>
                       </div>
                       <p className="font-['Roboto:Medium'] font-medium leading-[1.2] relative shrink-0 whitespace-nowrap" data-node-id="4:35281" style={{ fontVariationSettings: '"wdth" 100' }}>
-                        Funcionalidades
-                      </p>
+                        {t("t1011")}</p>
                     </div>
                     <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-node-id="4:35282">
                       <p className="[word-break:break-word] flex-[1_0_0] font-['Roboto:Regular'] font-normal leading-[1.6] min-w-px relative text-[#10161c] text-[16px]" data-node-id="4:35283" style={{ fontVariationSettings: '"wdth" 100' }}>
-                        Módulos de branding configuráveis e fluxos essenciais de aprendizagem para MVP.
-                      </p>
+                        {t("t1012")}</p>
                     </div>
                   </div>
                 </div>
@@ -214,31 +196,26 @@ export default function ArticleCustomizacaoCara() {
                       <p className="leading-[1.2]">account_box</p>
                     </div>
                     <p className="font-['Roboto:Medium'] font-medium leading-[1.2] relative shrink-0 whitespace-nowrap" data-node-id="4:35287" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Persona
-                    </p>
+                      {t("t0787")}</p>
                   </div>
                   <div className="content-stretch flex gap-[9px] items-center justify-center relative shrink-0 w-full" data-node-id="4:35288">
                     <div className="relative rounded-[32px] shrink-0 size-[64px]" data-node-id="4:35289" data-name="Rectangle">
                       <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[32px] size-full" src={imgRectangle} />
                     </div>
                     <p className="[word-break:break-word] flex-[1_0_0] font-['Roboto:Regular'] font-normal leading-[1.6] min-w-px relative text-[#10161c] text-[16px]" data-node-id="4:35290" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Ricardo
-                      <br aria-hidden />
-                      {`Gestor de T&D focado em cultura e engajamento de colaboradores em escala.`}
+                      {t("t1013")}<br aria-hidden />
+                      {t("t1014")}
                     </p>
                   </div>
                   <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-node-id="4:35291">
                     <p className="[word-break:break-word] flex-[1_0_0] font-['Roboto:Regular'] font-normal leading-[1.6] min-w-px relative text-[#10161c] text-[16px]" data-node-id="4:35292" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Características: Estratégico, analítico e prioriza o Employer Branding.
-                    </p>
+                      {t("t1015")}</p>
                   </div>
                   <div className="[word-break:break-word] content-stretch flex font-['Roboto:Regular'] font-normal gap-[10px] items-center justify-center leading-[1.6] relative shrink-0 text-[#10161c] text-[16px] w-full" data-node-id="4:35293">
                     <p className="flex-[1_0_0] min-w-px relative" data-node-id="4:35294" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Dores: Baixo engajamento em apps genéricos e alto custo de customização.
-                    </p>
+                      {t("t1016")}</p>
                     <p className="flex-[1_0_0] min-w-px relative" data-node-id="4:35295" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Necessidades: Autonomia visual, percepção de app proprietário e escalabilidade.
-                    </p>
+                      {t("t1017")}</p>
                   </div>
                 </div>
               </div>
@@ -251,12 +228,10 @@ export default function ArticleCustomizacaoCara() {
                       <p className="leading-[1.2]">auto_graph</p>
                     </div>
                     <p className="font-['Roboto:Medium'] font-medium leading-[1.2] relative shrink-0 whitespace-nowrap" data-node-id="4:35300" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Expectativas
-                    </p>
+                      {t("t1018")}</p>
                   </div>
                   <p className="font-['Roboto:Regular'] font-normal leading-[1.6] relative shrink-0 text-[16px] w-full" data-node-id="4:35301" style={{ fontVariationSettings: '"wdth" 100' }}>
-                    Validar Design System, reduzir tempo de setup e provar valor do mobile modular.
-                  </p>
+                    {t("t1019")}</p>
                 </div>
               </div>
               <div className="flex flex-[1_0_0] flex-row items-center self-stretch" data-node-id="4:35302">
@@ -267,25 +242,24 @@ export default function ArticleCustomizacaoCara() {
                         <p className="leading-[1.2]">checklist</p>
                       </div>
                       <p className="font-['Roboto:Medium'] font-medium leading-[1.2] relative shrink-0 whitespace-nowrap" data-node-id="4:35306" style={{ fontVariationSettings: '"wdth" 100' }}>
-                        Backlog
-                      </p>
+                        {t("t1020")}</p>
                     </div>
                     <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-node-id="4:35307">
                       <ul className="[word-break:break-word] block flex-[1_0_0] font-['Roboto:Regular'] font-normal leading-[0] list-disc min-w-px relative text-[#10161c] text-[16px]" data-node-id="4:35308" style={{ fontVariationSettings: '"wdth" 100' }}>
                         <li className="mb-0 ms-[24px]">
-                          <span className="leading-[1.6]">Tokens de cores para aplicação automática da identidade visual.</span>
+                          <span className="leading-[1.6]">{t("t1021")}</span>
                         </li>
                         <li className="mb-0 ms-[24px]">
-                          <span className="leading-[1.6]">Upload de logos para cabeçalhos e telas de carregamento.</span>
+                          <span className="leading-[1.6]">{t("t1022")}</span>
                         </li>
                         <li className="mb-0 ms-[24px]">
-                          <span className="leading-[1.6]">Personalização de fundos e máscaras visuais na tela de login.</span>
+                          <span className="leading-[1.6]">{t("t1023")}</span>
                         </li>
                         <li className="mb-0 ms-[24px]">
-                          <span className="leading-[1.6]">Fluxo de aprendizagem otimizado para alta taxa de completude.</span>
+                          <span className="leading-[1.6]">{t("t1024")}</span>
                         </li>
                         <li className="ms-[24px]">
-                          <span className="leading-[1.6]">Navegação fluida entre Home, Detalhes e Player de Aula.</span>
+                          <span className="leading-[1.6]">{t("t1025")}</span>
                         </li>
                       </ul>
                     </div>
@@ -305,17 +279,15 @@ export default function ArticleCustomizacaoCara() {
               </p>
             </div>
             <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.6] relative shrink-0 text-[#0d0d0d] text-[24px] whitespace-nowrap" data-node-id="4:35314">
-              Design System modular
-            </p>
+              {t("t0994")}</p>
           </div>
         </div>
         <div className="content-stretch flex items-center justify-center relative shrink-0" data-node-id="4:35316" data-name="div.container">
           <p className="[word-break:break-word] font-['Source_Sans_3:Regular'] font-normal leading-[1.6] relative shrink-0 text-[#0d0d0d] text-[24px] whitespace-nowrap" data-node-id="4:35317">
-            Design System Modular
-          </p>
+            {t("t1026")}</p>
         </div>
         <div className="content-stretch flex flex-col items-center overflow-clip relative shrink-0 w-full" data-node-id="4:35318" data-name="div.grid.grid-cols-12.w-full">
-          <div className="content-stretch flex gap-[24px] h-[754px] items-start overflow-clip relative shrink-0 w-full" data-node-id="4:35319" data-name="figure.artifact-visual.col-span-12">
+          <div className="content-stretch flex gap-[24px] h-[754px] items-start overflow-clip relative shrink-0 w-full" data-node-id="4:35319" data-name="figure.artifact-visual.col-span-12" data-section-id="artifacts">
             <div className="aspect-[914/4096] flex-[1_0_0] min-w-px relative" data-node-id="4:35320" data-name="Section - 1. COLORS">
               <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgSection1Colors} />
@@ -349,11 +321,10 @@ export default function ArticleCustomizacaoCara() {
               </p>
             </div>
             <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.6] relative shrink-0 text-[#0d0d0d] text-[24px] whitespace-nowrap" data-node-id="4:35330">
-              Protótipos white-label
-            </p>
+              {t("t1027")}</p>
           </div>
         </div>
-        <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="4:35332" data-name="figure.artifact-visual">
+        <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="4:35332" data-name="figure.artifact-visual" data-section-id="artifacts">
           <div className="aspect-[2895/852] content-stretch flex gap-[15.121px] items-center relative shrink-0 w-full" data-node-id="4:35333">
             <div className="bg-white content-stretch flex flex-col gap-[26.397px] h-[535.481px] isolate items-center justify-end overflow-clip relative shadow-[0px_5.028px_10.056px_0px_rgba(0,0,0,0.2)] shrink-0 w-[247px]" data-node-id="4:35334" data-name="login\qrcode">
               <div className="content-stretch flex flex-[1_0_0] flex-col items-start justify-between min-h-px pb-[5.028px] pt-[30.168px] px-[10.056px] relative w-full z-[2]" data-node-id="4:35335" data-name="content">
@@ -369,8 +340,7 @@ export default function ArticleCustomizacaoCara() {
                         <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector} />
                       </div>
                       <p className="[word-break:break-word] font-['Roboto:Light'] font-light leading-[normal] relative shrink-0 text-[#010101] text-[11.31px] text-center whitespace-nowrap" data-node-id="I4:35342;1701:4398" style={{ fontVariationSettings: '"wdth" 100' }}>
-                        Usuário
-                      </p>
+                        {t("t1028")}</p>
                     </div>
                     <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="4:35343">
                       <div className="border-[#010101] border-b-[0.628px] border-solid content-stretch flex gap-[5.028px] h-[37.71px] items-center relative shrink-0 w-[206.776px]" data-node-id="4:35344" data-name="Input">
@@ -378,13 +348,11 @@ export default function ArticleCustomizacaoCara() {
                           <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector1} />
                         </div>
                         <p className="[word-break:break-word] font-['Roboto:Light'] font-light leading-[normal] relative shrink-0 text-[#010101] text-[11.31px] text-center whitespace-nowrap" data-node-id="I4:35344;1701:4401" style={{ fontVariationSettings: '"wdth" 100' }}>
-                          Senha
-                        </p>
+                          {t("t0064")}</p>
                       </div>
                       <div className="content-stretch flex h-[30.168px] items-center py-[10.056px] relative shrink-0 w-full" data-node-id="4:35345">
                         <p className="[word-break:break-word] font-['Roboto:SemiBold'] font-semibold leading-[normal] relative shrink-0 text-[#d5bdff] text-[7.542px] text-center whitespace-nowrap" data-node-id="4:35346" style={{ fontVariationSettings: '"wdth" 100' }}>
-                          Esqueci a senha
-                        </p>
+                          {t("t1029")}</p>
                       </div>
                     </div>
                   </div>
@@ -392,15 +360,13 @@ export default function ArticleCustomizacaoCara() {
                     <div className="bg-[#240679] content-stretch flex flex-col h-[37.71px] items-center justify-center p-[2.514px] relative shrink-0 w-[206.776px]" data-node-id="4:35348" data-name="Botoes">
                       <div className="content-stretch flex flex-[1_0_0] gap-[2.514px] items-center justify-center min-h-px p-[5.028px] relative rounded-[13px] w-full" data-node-id="I4:35348;1698:11849" data-name="fill">
                         <p className="[word-break:break-word] flex-[1_0_0] font-['Roboto:Medium'] font-medium leading-[normal] min-w-px relative text-[7.11px] text-center text-white" data-node-id="I4:35348;1698:11851" style={{ fontVariationSettings: '"wdth" 100' }}>
-                          Entrar
-                        </p>
+                          {t("t1030")}</p>
                       </div>
                     </div>
                     <div className="bg-[#3b3b3b] content-stretch flex flex-col h-[37.71px] items-center justify-center p-[2.514px] relative shrink-0 w-[206.776px]" data-node-id="4:35349" data-name="Botoes">
                       <div className="content-stretch flex flex-[1_0_0] gap-[2.514px] items-center justify-center min-h-px p-[5.028px] relative rounded-[13px] w-full" data-node-id="I4:35349;1699:4150" data-name="fill">
                         <p className="[word-break:break-word] flex-[1_0_0] font-['Roboto:Medium'] font-medium leading-[normal] min-w-px relative text-[7.11px] text-center text-white" data-node-id="I4:35349;1699:4152" style={{ fontVariationSettings: '"wdth" 100' }}>
-                          Logar com QR Code
-                        </p>
+                          {t("t1031")}</p>
                       </div>
                     </div>
                   </div>
@@ -431,8 +397,7 @@ export default function ArticleCustomizacaoCara() {
               <div className="bg-white content-stretch flex flex-[1_0_0] flex-col items-start min-h-px relative w-full z-[2]" data-node-id="4:35355" data-name="main">
                 <div className="content-stretch flex flex-col items-start justify-center p-[10.36px] relative shrink-0 w-full" data-node-id="4:35356" data-name="<title>">
                   <p className="[word-break:break-word] font-['Roboto:SemiBold'] font-semibold leading-[normal] relative shrink-0 text-[#3b3b3b] text-[11.656px] text-center whitespace-nowrap" data-node-id="4:35357" style={{ fontVariationSettings: '"wdth" 100' }}>
-                    Continuar de onde parou
-                  </p>
+                    {t("t1032")}</p>
                 </div>
                 <div className="content-stretch flex gap-[10.36px] items-center p-[10.36px] relative shrink-0 w-full" data-node-id="4:35358" data-name="row">
                   <div className="bg-white content-stretch flex flex-col h-[189.726px] items-end overflow-clip relative rounded-[5.18px] shadow-[0px_0.648px_1.943px_0px_rgba(0,0,0,0.1),0px_0.648px_1.295px_0px_rgba(0,0,0,0.06)] shrink-0 w-[123.031px]" data-node-id="4:35359" data-name="card">
@@ -450,7 +415,7 @@ export default function ArticleCustomizacaoCara() {
                     <div className="content-stretch flex flex-col gap-[6.475px] items-start justify-center px-[5.18px] py-[10.36px] relative shrink-0 w-full" data-node-id="I4:35359;1472:1317" data-name="card-title">
                       <div className="content-stretch flex items-center relative shrink-0 w-full" data-node-id="I4:35359;1486:2978" data-name="title">
                         <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px overflow-hidden relative text-[#3b3b3b] text-[11.66px] text-ellipsis whitespace-nowrap" data-node-id="I4:35359;1472:1319" style={{ fontVariationSettings: '"wdth" 100' }}>
-                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. `}</p>
+                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{t("t1033")}</p>
                         </div>
                       </div>
                       <div className="flex items-center justify-center relative shrink-0 w-full" data-node-id="I4:35359;1628:11004">
@@ -460,7 +425,7 @@ export default function ArticleCustomizacaoCara() {
                               <div className="flex items-center justify-center relative shrink-0" data-node-id="I4:35359;1642:15385">
                                 <div className="flex-none rotate-180">
                                   <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] relative text-[#3008a1] text-[6.48px] whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                    <p className="leading-none">{`65% Concluído `}</p>
+                                    <p className="leading-none">{t("t1034")}</p>
                                   </div>
                                 </div>
                               </div>
@@ -492,7 +457,7 @@ export default function ArticleCustomizacaoCara() {
                     <div className="content-stretch flex flex-col gap-[6.475px] items-start justify-center px-[5.18px] py-[10.36px] relative shrink-0 w-full" data-node-id="I4:35360;1472:1317" data-name="card-title">
                       <div className="content-stretch flex items-center relative shrink-0 w-full" data-node-id="I4:35360;1486:2978" data-name="title">
                         <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px overflow-hidden relative text-[#3b3b3b] text-[11.66px] text-ellipsis whitespace-nowrap" data-node-id="I4:35360;1472:1319" style={{ fontVariationSettings: '"wdth" 100' }}>
-                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. `}</p>
+                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{t("t1033")}</p>
                         </div>
                       </div>
                       <div className="flex items-center justify-center relative shrink-0 w-full" data-node-id="I4:35360;1628:11004">
@@ -502,7 +467,7 @@ export default function ArticleCustomizacaoCara() {
                               <div className="flex items-center justify-center relative shrink-0" data-node-id="I4:35360;1642:15385">
                                 <div className="flex-none rotate-180">
                                   <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] relative text-[#3008a1] text-[6.48px] whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                    <p className="leading-none">{`65% Concluído `}</p>
+                                    <p className="leading-none">{t("t1034")}</p>
                                   </div>
                                 </div>
                               </div>
@@ -534,7 +499,7 @@ export default function ArticleCustomizacaoCara() {
                     <div className="content-stretch flex flex-col gap-[6.475px] items-start justify-center px-[5.18px] py-[10.36px] relative shrink-0 w-full" data-node-id="I4:35361;1472:1317" data-name="card-title">
                       <div className="content-stretch flex items-center relative shrink-0 w-full" data-node-id="I4:35361;1486:2978" data-name="title">
                         <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px overflow-hidden relative text-[#3b3b3b] text-[11.66px] text-ellipsis whitespace-nowrap" data-node-id="I4:35361;1472:1319" style={{ fontVariationSettings: '"wdth" 100' }}>
-                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. `}</p>
+                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{t("t1033")}</p>
                         </div>
                       </div>
                       <div className="[word-break:break-word] content-stretch flex gap-[5.18px] items-start leading-[0] relative shrink-0 text-[#e6e6e6] text-center w-full whitespace-nowrap" data-node-id="I4:35361;1486:2979" data-name="tags">
@@ -543,7 +508,7 @@ export default function ArticleCustomizacaoCara() {
                             <p className="leading-none">{`\uF2B4`}</p>
                           </div>
                           <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0 text-[7.77px]" data-node-id="I4:35361;1486:2974;1486:2778" style={{ fontVariationSettings: '"wdth" 100' }}>
-                            <p className="leading-none">Síncrono</p>
+                            <p className="leading-none">{t("t1035")}</p>
                           </div>
                         </div>
                         <div className="bg-[#3d0aca] content-stretch flex flex-[1_0_0] gap-[5.18px] items-center justify-center min-w-px px-[7.77px] py-[2.59px] relative rounded-[10.36px]" data-node-id="I4:35361;1486:2980" data-name="tags">
@@ -551,7 +516,7 @@ export default function ArticleCustomizacaoCara() {
                             <p className="leading-none">{`\uF2B4`}</p>
                           </div>
                           <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0 text-[7.77px]" data-node-id="I4:35361;1486:2980;1486:2778" style={{ fontVariationSettings: '"wdth" 100' }}>
-                            <p className="leading-none">Síncrono</p>
+                            <p className="leading-none">{t("t1035")}</p>
                           </div>
                         </div>
                       </div>
@@ -560,8 +525,7 @@ export default function ArticleCustomizacaoCara() {
                           <div className="bg-[rgba(255,255,255,0)] relative shrink-0" data-node-id="I4:35361;1486:2987;288:237993" data-name="text">
                             <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start justify-center overflow-clip relative rounded-[inherit] size-full">
                               <p className="[word-break:break-word] font-['Roboto:Regular'] font-normal leading-[1.5] relative shrink-0 text-[#180450] text-[9.07px] whitespace-nowrap" data-node-id="I4:35361;1486:2987;288:237993;1:4738" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                Ver cursos
-                              </p>
+                                {t("t1036")}</p>
                             </div>
                           </div>
                         </div>
@@ -569,8 +533,7 @@ export default function ArticleCustomizacaoCara() {
                           <div className="bg-[rgba(255,255,255,0)] relative shrink-0" data-node-id="I4:35361;1486:2988;288:237185" data-name="text">
                             <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start justify-center overflow-clip relative rounded-[inherit] size-full">
                               <p className="[word-break:break-word] font-['Roboto:Regular'] font-normal leading-[1.5] relative shrink-0 text-[#cecece] text-[9.07px] whitespace-nowrap" data-node-id="I4:35361;1486:2988;288:237185;1:4738" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                Cursar
-                              </p>
+                                {t("t1037")}</p>
                             </div>
                           </div>
                         </div>
@@ -582,7 +545,7 @@ export default function ArticleCustomizacaoCara() {
                               <div className="flex items-center justify-center relative shrink-0" data-node-id="I4:35361;1642:15385">
                                 <div className="flex-none rotate-180">
                                   <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] relative text-[#3008a1] text-[6.48px] whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                    <p className="leading-none">{`65% Concluído `}</p>
+                                    <p className="leading-none">{t("t1034")}</p>
                                   </div>
                                 </div>
                               </div>
@@ -617,7 +580,7 @@ export default function ArticleCustomizacaoCara() {
                         <div className="flex flex-[1_0_0] flex-row items-center self-stretch" data-node-id="I4:35361;1635:7813">
                           <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] gap-[5.18px] h-full items-center justify-end leading-[0] min-w-px relative text-[#3b3b3b] text-[7.77px] text-center whitespace-nowrap" data-name="btn">
                             <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0" data-node-id="I4:35361;1635:7814" style={{ fontVariationSettings: '"wdth" 100' }}>
-                              <p className="leading-none">Iniciar</p>
+                              <p className="leading-none">{t("t1038")}</p>
                             </div>
                             <div className="flex flex-col font-['Font_Awesome_6_Pro:Solid'] justify-center not-italic relative shrink-0" data-node-id="I4:35361;1635:7815">
                               <p className="leading-none">{`\uF04B`}</p>
@@ -630,8 +593,7 @@ export default function ArticleCustomizacaoCara() {
                 </div>
                 <div className="content-stretch flex flex-col items-start justify-center p-[10.36px] relative shrink-0 w-full" data-node-id="4:35362" data-name="<title>">
                   <p className="[word-break:break-word] font-['Roboto:SemiBold'] font-semibold leading-[normal] relative shrink-0 text-[#3b3b3b] text-[11.656px] text-center whitespace-nowrap" data-node-id="4:35363" style={{ fontVariationSettings: '"wdth" 100' }}>
-                    Cursos em destaque
-                  </p>
+                    {t("t1039")}</p>
                 </div>
                 <div className="content-stretch flex flex-[1_0_0] gap-[10.36px] items-center min-h-px pb-[10.36px] pt-[5.18px] px-[10.36px] relative w-full" data-node-id="4:35364" data-name="row">
                   <div className="bg-white content-stretch flex flex-col h-[179.366px] items-end overflow-clip relative rounded-[5.18px] shadow-[0px_0.648px_1.943px_0px_rgba(0,0,0,0.1),0px_0.648px_1.295px_0px_rgba(0,0,0,0.06)] shrink-0 w-[123.031px]" data-node-id="4:35365" data-name="card">
@@ -649,7 +611,7 @@ export default function ArticleCustomizacaoCara() {
                     <div className="content-stretch flex flex-col gap-[6.475px] items-start justify-center px-[5.18px] py-[10.36px] relative shrink-0 w-full" data-node-id="I4:35365;1472:1317" data-name="card-title">
                       <div className="content-stretch flex items-center relative shrink-0 w-full" data-node-id="I4:35365;1486:2978" data-name="title">
                         <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px overflow-hidden relative text-[#3b3b3b] text-[11.66px] text-ellipsis whitespace-nowrap" data-node-id="I4:35365;1472:1319" style={{ fontVariationSettings: '"wdth" 100' }}>
-                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. `}</p>
+                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{t("t1033")}</p>
                         </div>
                       </div>
                       <div className="content-stretch flex gap-[5.18px] items-center relative shrink-0 w-full" data-node-id="I4:35365;1629:3752" data-name="tags">
@@ -672,7 +634,7 @@ export default function ArticleCustomizacaoCara() {
                         <div className="flex flex-[1_0_0] flex-row items-center self-stretch" data-node-id="I4:35365;1635:7813">
                           <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] gap-[5.18px] h-full items-center justify-end leading-[0] min-w-px relative text-[#3b3b3b] text-[7.77px] text-center whitespace-nowrap" data-name="btn">
                             <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0" data-node-id="I4:35365;1635:7814" style={{ fontVariationSettings: '"wdth" 100' }}>
-                              <p className="leading-none">Iniciar</p>
+                              <p className="leading-none">{t("t1038")}</p>
                             </div>
                             <div className="flex flex-col font-['Font_Awesome_6_Pro:Solid'] justify-center not-italic relative shrink-0" data-node-id="I4:35365;1635:7815">
                               <p className="leading-none">{`\uF04B`}</p>
@@ -697,7 +659,7 @@ export default function ArticleCustomizacaoCara() {
                     <div className="content-stretch flex flex-col gap-[6.475px] items-start justify-center px-[5.18px] py-[10.36px] relative shrink-0 w-full" data-node-id="I4:35366;1472:1317" data-name="card-title">
                       <div className="content-stretch flex items-center relative shrink-0 w-full" data-node-id="I4:35366;1486:2978" data-name="title">
                         <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px overflow-hidden relative text-[#3b3b3b] text-[11.66px] text-ellipsis whitespace-nowrap" data-node-id="I4:35366;1472:1319" style={{ fontVariationSettings: '"wdth" 100' }}>
-                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. `}</p>
+                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{t("t1033")}</p>
                         </div>
                       </div>
                       <div className="content-stretch flex gap-[5.18px] items-center relative shrink-0 w-full" data-node-id="I4:35366;1629:3752" data-name="tags">
@@ -720,7 +682,7 @@ export default function ArticleCustomizacaoCara() {
                         <div className="flex flex-[1_0_0] flex-row items-center self-stretch" data-node-id="I4:35366;1635:7813">
                           <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] gap-[5.18px] h-full items-center justify-end leading-[0] min-w-px relative text-[#3b3b3b] text-[7.77px] text-center whitespace-nowrap" data-name="btn">
                             <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0" data-node-id="I4:35366;1635:7814" style={{ fontVariationSettings: '"wdth" 100' }}>
-                              <p className="leading-none">Iniciar</p>
+                              <p className="leading-none">{t("t1038")}</p>
                             </div>
                             <div className="flex flex-col font-['Font_Awesome_6_Pro:Solid'] justify-center not-italic relative shrink-0" data-node-id="I4:35366;1635:7815">
                               <p className="leading-none">{`\uF04B`}</p>
@@ -745,7 +707,7 @@ export default function ArticleCustomizacaoCara() {
                     <div className="content-stretch flex flex-col gap-[6.475px] items-start justify-center px-[5.18px] py-[10.36px] relative shrink-0 w-full" data-node-id="I4:35367;1472:1317" data-name="card-title">
                       <div className="content-stretch flex items-center relative shrink-0 w-full" data-node-id="I4:35367;1486:2978" data-name="title">
                         <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px overflow-hidden relative text-[#3b3b3b] text-[11.66px] text-ellipsis whitespace-nowrap" data-node-id="I4:35367;1472:1319" style={{ fontVariationSettings: '"wdth" 100' }}>
-                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. `}</p>
+                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{t("t1033")}</p>
                         </div>
                       </div>
                       <div className="[word-break:break-word] content-stretch flex gap-[5.18px] items-start leading-[0] relative shrink-0 text-[#e6e6e6] text-center w-full whitespace-nowrap" data-node-id="I4:35367;1486:2979" data-name="tags">
@@ -754,7 +716,7 @@ export default function ArticleCustomizacaoCara() {
                             <p className="leading-none">{`\uF2B4`}</p>
                           </div>
                           <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0 text-[7.77px]" data-node-id="I4:35367;1486:2974;1486:2778" style={{ fontVariationSettings: '"wdth" 100' }}>
-                            <p className="leading-none">Síncrono</p>
+                            <p className="leading-none">{t("t1035")}</p>
                           </div>
                         </div>
                         <div className="bg-[#3d0aca] content-stretch flex flex-[1_0_0] gap-[5.18px] items-center justify-center min-w-px px-[7.77px] py-[2.59px] relative rounded-[10.36px]" data-node-id="I4:35367;1486:2980" data-name="tags">
@@ -762,7 +724,7 @@ export default function ArticleCustomizacaoCara() {
                             <p className="leading-none">{`\uF2B4`}</p>
                           </div>
                           <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0 text-[7.77px]" data-node-id="I4:35367;1486:2980;1486:2778" style={{ fontVariationSettings: '"wdth" 100' }}>
-                            <p className="leading-none">Síncrono</p>
+                            <p className="leading-none">{t("t1035")}</p>
                           </div>
                         </div>
                       </div>
@@ -771,8 +733,7 @@ export default function ArticleCustomizacaoCara() {
                           <div className="bg-[rgba(255,255,255,0)] relative shrink-0" data-node-id="I4:35367;1486:2987;288:237993" data-name="text">
                             <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start justify-center overflow-clip relative rounded-[inherit] size-full">
                               <p className="[word-break:break-word] font-['Roboto:Regular'] font-normal leading-[1.5] relative shrink-0 text-[#180450] text-[9.07px] whitespace-nowrap" data-node-id="I4:35367;1486:2987;288:237993;1:4738" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                Ver cursos
-                              </p>
+                                {t("t1036")}</p>
                             </div>
                           </div>
                         </div>
@@ -780,8 +741,7 @@ export default function ArticleCustomizacaoCara() {
                           <div className="bg-[rgba(255,255,255,0)] relative shrink-0" data-node-id="I4:35367;1486:2988;288:237185" data-name="text">
                             <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start justify-center overflow-clip relative rounded-[inherit] size-full">
                               <p className="[word-break:break-word] font-['Roboto:Regular'] font-normal leading-[1.5] relative shrink-0 text-[#cecece] text-[9.07px] whitespace-nowrap" data-node-id="I4:35367;1486:2988;288:237185;1:4738" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                Cursar
-                              </p>
+                                {t("t1037")}</p>
                             </div>
                           </div>
                         </div>
@@ -793,7 +753,7 @@ export default function ArticleCustomizacaoCara() {
                               <div className="flex items-center justify-center relative shrink-0" data-node-id="I4:35367;1642:15385">
                                 <div className="flex-none rotate-180">
                                   <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] relative text-[#3008a1] text-[6.48px] whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                    <p className="leading-none">{`65% Concluído `}</p>
+                                    <p className="leading-none">{t("t1034")}</p>
                                   </div>
                                 </div>
                               </div>
@@ -828,7 +788,7 @@ export default function ArticleCustomizacaoCara() {
                         <div className="flex flex-[1_0_0] flex-row items-center self-stretch" data-node-id="I4:35367;1635:7813">
                           <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] gap-[5.18px] h-full items-center justify-end leading-[0] min-w-px relative text-[#3b3b3b] text-[7.77px] text-center whitespace-nowrap" data-name="btn">
                             <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0" data-node-id="I4:35367;1635:7814" style={{ fontVariationSettings: '"wdth" 100' }}>
-                              <p className="leading-none">Iniciar</p>
+                              <p className="leading-none">{t("t1038")}</p>
                             </div>
                             <div className="flex flex-col font-['Font_Awesome_6_Pro:Solid'] justify-center not-italic relative shrink-0" data-node-id="I4:35367;1635:7815">
                               <p className="leading-none">{`\uF04B`}</p>
@@ -845,32 +805,28 @@ export default function ArticleCustomizacaoCara() {
                   <div className="[word-break:break-word] bg-[#e6e6e6] content-stretch flex flex-[1_0_0] flex-col gap-[2.59px] items-center justify-center leading-[normal] min-h-px p-[5.18px] relative rounded-[13px] text-[#3008a1] w-full" data-node-id="I4:35368;1659:8356;1659:8337" data-name="fill">
                     <p className="font-['Font_Awesome_6_Pro:Regular'] not-italic relative shrink-0 text-[11.66px] whitespace-nowrap" data-node-id="I4:35368;1659:8356;1659:8338">{`\uF015`}</p>
                     <p className="font-['Roboto:Regular'] font-normal min-w-full relative shrink-0 text-[7.77px] text-center w-[min-content]" data-node-id="I4:35368;1659:8356;1659:8339" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Início
-                    </p>
+                      {t("t0554")}</p>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-[38.852px] items-center justify-center min-w-px p-[2.59px] relative" data-node-id="I4:35368;1659:8360" data-name="Botoes">
                   <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[2.59px] items-center justify-center leading-[normal] min-h-px p-[5.18px] relative rounded-[13px] text-[#3008a1] w-full" data-node-id="I4:35368;1659:8360;1659:8329" data-name="fill">
                     <p className="font-['Font_Awesome_6_Pro:Regular'] not-italic relative shrink-0 text-[11.66px] whitespace-nowrap" data-node-id="I4:35368;1659:8360;1659:8330">{`\uF5DA`}</p>
                     <p className="font-['Roboto:Regular'] font-normal min-w-full relative shrink-0 text-[7.77px] text-center w-[min-content]" data-node-id="I4:35368;1659:8360;1659:8331" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Meus Cursos
-                    </p>
+                      {t("t1040")}</p>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-[38.852px] items-center justify-center min-w-px p-[2.59px] relative" data-node-id="I4:35368;1659:8364" data-name="Botoes">
                   <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[2.59px] items-center justify-center leading-[normal] min-h-px p-[5.18px] relative rounded-[13px] text-[#3008a1] w-full" data-node-id="I4:35368;1659:8364;1659:8329" data-name="fill">
                     <p className="font-['Font_Awesome_6_Pro:Regular'] not-italic relative shrink-0 text-[11.66px] whitespace-nowrap" data-node-id="I4:35368;1659:8364;1659:8330">{`\uF002`}</p>
                     <p className="font-['Roboto:Regular'] font-normal min-w-full relative shrink-0 text-[7.77px] text-center w-[min-content]" data-node-id="I4:35368;1659:8364;1659:8331" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Busca
-                    </p>
+                      {t("t1041")}</p>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-[38.852px] items-center justify-center min-w-px p-[2.59px] relative" data-node-id="I4:35368;1659:8368" data-name="Botoes">
                   <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[2.59px] items-center justify-center leading-[normal] min-h-px p-[5.18px] relative rounded-[13px] text-[#3008a1] w-full" data-node-id="I4:35368;1659:8368;1659:8329" data-name="fill">
                     <p className="font-['Font_Awesome_6_Pro:Regular'] not-italic relative shrink-0 text-[11.66px] whitespace-nowrap" data-node-id="I4:35368;1659:8368;1659:8330">{`\uF0C9`}</p>
                     <p className="font-['Roboto:Regular'] font-normal min-w-full relative shrink-0 text-[7.77px] text-center w-[min-content]" data-node-id="I4:35368;1659:8368;1659:8331" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Mais
-                    </p>
+                      {t("t1042")}</p>
                   </div>
                 </div>
               </div>
@@ -884,8 +840,7 @@ export default function ArticleCustomizacaoCara() {
                 </div>
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-full items-start justify-center min-w-px relative" data-node-id="I4:35370;1699:4239" data-name="title">
                   <p className="[word-break:break-word] font-['Roboto:Regular'] font-normal leading-[normal] relative shrink-0 text-[#180450] text-[10.36px] text-center whitespace-nowrap" data-node-id="I4:35370;1699:4249" style={{ fontVariationSettings: '"wdth" 100' }}>
-                    Meus Cursos
-                  </p>
+                    {t("t1040")}</p>
                 </div>
                 <div className="content-stretch flex flex-col items-center justify-center p-[2.59px] relative shrink-0 size-[38.852px]" data-node-id="I4:35370;1699:4181" data-name="Botoes">
                   <div className="content-stretch flex flex-[1_0_0] gap-[2.59px] items-center justify-center min-h-px p-[5.18px] relative rounded-[13px] w-full" data-node-id="I4:35370;1699:4181;1699:4173" data-name="fill">
@@ -897,17 +852,17 @@ export default function ArticleCustomizacaoCara() {
                 <div className="content-stretch flex gap-[5.18px] items-center px-[10.36px] py-[3.885px] relative shrink-0 w-full" data-node-id="4:35372" data-name="<title>">
                   <div className="bg-[#3008a1] content-stretch flex flex-[1_0_0] h-[26.62px] items-center justify-center min-w-[63.00518035888672px] px-[5.18px] relative rounded-[20.721px]" data-node-id="4:35373" data-name="btn">
                     <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px relative text-[9.065px] text-center text-white" data-node-id="4:35374" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Todos</p>
+                      <p className="leading-none">{t("t0847")}</p>
                     </div>
                   </div>
                   <div className="bg-[#ebe6f9] content-stretch flex flex-[1_0_0] h-[26.62px] items-center justify-center min-w-[63.00518035888672px] px-[5.18px] relative rounded-[20.721px]" data-node-id="4:35375" data-name="btn">
                     <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px relative text-[#3008a1] text-[9.065px] text-center" data-node-id="4:35376" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Em andamento</p>
+                      <p className="leading-none">{t("t1043")}</p>
                     </div>
                   </div>
                   <div className="bg-[#ebe6f9] content-stretch flex flex-[1_0_0] h-[26.62px] items-center justify-center min-w-[63.00518035888672px] px-[5.18px] relative rounded-[20.721px]" data-node-id="4:35377" data-name="btn">
                     <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px relative text-[#3008a1] text-[9.065px] text-center" data-node-id="4:35378" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">{`Concluídos `}</p>
+                      <p className="leading-none">{t("t1044")}</p>
                     </div>
                   </div>
                 </div>
@@ -927,7 +882,7 @@ export default function ArticleCustomizacaoCara() {
                     <div className="content-stretch flex flex-col gap-[6.475px] items-start justify-center px-[5.18px] py-[10.36px] relative shrink-0 w-full" data-node-id="I4:35380;1472:1317" data-name="card-title">
                       <div className="content-stretch flex items-center relative shrink-0 w-full" data-node-id="I4:35380;1486:2978" data-name="title">
                         <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px overflow-hidden relative text-[#3b3b3b] text-[11.66px] text-ellipsis whitespace-nowrap" data-node-id="I4:35380;1472:1319" style={{ fontVariationSettings: '"wdth" 100' }}>
-                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. `}</p>
+                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{t("t1033")}</p>
                         </div>
                       </div>
                       <div className="flex items-center justify-center relative shrink-0 w-full" data-node-id="I4:35380;1628:11004">
@@ -937,7 +892,7 @@ export default function ArticleCustomizacaoCara() {
                               <div className="flex items-center justify-center relative shrink-0" data-node-id="I4:35380;1642:15385">
                                 <div className="flex-none rotate-180">
                                   <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] relative text-[#3008a1] text-[6.48px] whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                    <p className="leading-none">{`65% Concluído `}</p>
+                                    <p className="leading-none">{t("t1034")}</p>
                                   </div>
                                 </div>
                               </div>
@@ -969,7 +924,7 @@ export default function ArticleCustomizacaoCara() {
                     <div className="content-stretch flex flex-col gap-[6.475px] items-start justify-center px-[5.18px] py-[10.36px] relative shrink-0 w-full" data-node-id="I4:35381;1472:1317" data-name="card-title">
                       <div className="content-stretch flex items-center relative shrink-0 w-full" data-node-id="I4:35381;1486:2978" data-name="title">
                         <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px overflow-hidden relative text-[#3b3b3b] text-[11.66px] text-ellipsis whitespace-nowrap" data-node-id="I4:35381;1472:1319" style={{ fontVariationSettings: '"wdth" 100' }}>
-                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. `}</p>
+                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{t("t1033")}</p>
                         </div>
                       </div>
                       <div className="flex items-center justify-center relative shrink-0 w-full" data-node-id="I4:35381;1628:11004">
@@ -979,7 +934,7 @@ export default function ArticleCustomizacaoCara() {
                               <div className="flex items-center justify-center relative shrink-0" data-node-id="I4:35381;1642:15385">
                                 <div className="flex-none rotate-180">
                                   <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] relative text-[#3008a1] text-[6.48px] whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                    <p className="leading-none">{`65% Concluído `}</p>
+                                    <p className="leading-none">{t("t1034")}</p>
                                   </div>
                                 </div>
                               </div>
@@ -1003,32 +958,28 @@ export default function ArticleCustomizacaoCara() {
                   <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[2.59px] items-center justify-center leading-[normal] min-h-px p-[5.18px] relative rounded-[13px] text-[#3008a1] w-full" data-node-id="I4:35382;1659:11115;1659:8329" data-name="fill">
                     <p className="font-['Font_Awesome_6_Pro:Regular'] not-italic relative shrink-0 text-[11.66px] whitespace-nowrap" data-node-id="I4:35382;1659:11115;1659:8330">{`\uF015`}</p>
                     <p className="font-['Roboto:Regular'] font-normal min-w-full relative shrink-0 text-[7.77px] text-center w-[min-content]" data-node-id="I4:35382;1659:11115;1659:8331" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Início
-                    </p>
+                      {t("t0554")}</p>
                   </div>
                 </div>
                 <div className="border-[#3008a1] border-solid border-t-[0.648px] content-stretch flex flex-[1_0_0] flex-col h-[38.852px] items-center justify-center min-w-px p-[2.59px] relative" data-node-id="I4:35382;1659:11116" data-name="Botoes">
                   <div className="[word-break:break-word] bg-[#e6e6e6] content-stretch flex flex-[1_0_0] flex-col gap-[2.59px] items-center justify-center leading-[normal] min-h-px p-[5.18px] relative rounded-[13px] text-[#3008a1] w-full" data-node-id="I4:35382;1659:11116;1659:8337" data-name="fill">
                     <p className="font-['Font_Awesome_6_Pro:Regular'] not-italic relative shrink-0 text-[11.66px] whitespace-nowrap" data-node-id="I4:35382;1659:11116;1659:8338">{`\uF5DA`}</p>
                     <p className="font-['Roboto:Regular'] font-normal min-w-full relative shrink-0 text-[7.77px] text-center w-[min-content]" data-node-id="I4:35382;1659:11116;1659:8339" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Meus Cursos
-                    </p>
+                      {t("t1040")}</p>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-[38.852px] items-center justify-center min-w-px p-[2.59px] relative" data-node-id="I4:35382;1659:11117" data-name="Botoes">
                   <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[2.59px] items-center justify-center leading-[normal] min-h-px p-[5.18px] relative rounded-[13px] text-[#3008a1] w-full" data-node-id="I4:35382;1659:11117;1659:8329" data-name="fill">
                     <p className="font-['Font_Awesome_6_Pro:Regular'] not-italic relative shrink-0 text-[11.66px] whitespace-nowrap" data-node-id="I4:35382;1659:11117;1659:8330">{`\uF002`}</p>
                     <p className="font-['Roboto:Regular'] font-normal min-w-full relative shrink-0 text-[7.77px] text-center w-[min-content]" data-node-id="I4:35382;1659:11117;1659:8331" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Busca
-                    </p>
+                      {t("t1041")}</p>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-[38.852px] items-center justify-center min-w-px p-[2.59px] relative" data-node-id="I4:35382;1659:11118" data-name="Botoes">
                   <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[2.59px] items-center justify-center leading-[normal] min-h-px p-[5.18px] relative rounded-[13px] text-[#3008a1] w-full" data-node-id="I4:35382;1659:11118;1659:8329" data-name="fill">
                     <p className="font-['Font_Awesome_6_Pro:Regular'] not-italic relative shrink-0 text-[11.66px] whitespace-nowrap" data-node-id="I4:35382;1659:11118;1659:8330">{`\uF0C9`}</p>
                     <p className="font-['Roboto:Regular'] font-normal min-w-full relative shrink-0 text-[7.77px] text-center w-[min-content]" data-node-id="I4:35382;1659:11118;1659:8331" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Mais
-                    </p>
+                      {t("t1042")}</p>
                   </div>
                 </div>
               </div>
@@ -1042,8 +993,7 @@ export default function ArticleCustomizacaoCara() {
                 </div>
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-full items-start justify-center min-w-px relative" data-node-id="I4:35384;1699:4239" data-name="title">
                   <p className="[word-break:break-word] font-['Roboto:Regular'] font-normal leading-[normal] relative shrink-0 text-[#180450] text-[10.36px] text-center whitespace-nowrap" data-node-id="I4:35384;1699:4249" style={{ fontVariationSettings: '"wdth" 100' }}>
-                    Busca
-                  </p>
+                    {t("t1041")}</p>
                 </div>
                 <div className="content-stretch flex flex-col items-center justify-center p-[2.59px] relative shrink-0 size-[38.852px]" data-node-id="I4:35384;1699:4181" data-name="Botoes">
                   <div className="content-stretch flex flex-[1_0_0] gap-[2.59px] items-center justify-center min-h-px p-[5.18px] relative rounded-[13px] w-full" data-node-id="I4:35384;1699:4181;1699:4173" data-name="fill">
@@ -1054,8 +1004,7 @@ export default function ArticleCustomizacaoCara() {
               <div className="bg-white content-stretch flex flex-[1_0_0] flex-col items-start min-h-px relative w-full z-[2]" data-node-id="4:35385" data-name="main">
                 <div className="content-stretch flex flex-col items-start justify-center p-[10.36px] relative shrink-0 w-full" data-node-id="4:35386" data-name="<title>">
                   <p className="[word-break:break-word] font-['Roboto:SemiBold'] font-semibold leading-[normal] relative shrink-0 text-[#3b3b3b] text-[11.656px] text-center whitespace-nowrap" data-node-id="4:35387" style={{ fontVariationSettings: '"wdth" 100' }}>
-                    Categorias
-                  </p>
+                    {t("t1045")}</p>
                 </div>
                 <div className="[word-break:break-word] content-start flex flex-wrap gap-[5.180239677429199px_5.18px] items-start leading-[0] pb-[10.36px] px-[10.36px] relative shrink-0 text-[#3008a1] text-center w-full whitespace-nowrap" data-node-id="4:35388" data-name="nav-itens">
                   <div className="bg-[#ebe6f9] content-stretch flex gap-[6.475px] h-[26.62px] items-center justify-center px-[7.77px] relative rounded-[20.721px] shrink-0" data-node-id="4:35389" data-name="btn">
@@ -1063,7 +1012,7 @@ export default function ArticleCustomizacaoCara() {
                       <p className="leading-none">{`\uF121`}</p>
                     </div>
                     <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0 text-[9.065px]" data-node-id="4:35391" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Desenvolvimento</p>
+                      <p className="leading-none">{t("t1046")}</p>
                     </div>
                   </div>
                   <div className="bg-[#ebe6f9] content-stretch flex gap-[6.475px] h-[26.62px] items-center justify-center px-[7.77px] relative rounded-[20.721px] shrink-0" data-node-id="4:35392" data-name="btn">
@@ -1071,7 +1020,7 @@ export default function ArticleCustomizacaoCara() {
                       <p className="leading-none">{`\uF0B1`}</p>
                     </div>
                     <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0 text-[9.065px]" data-node-id="4:35394" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Negócios</p>
+                      <p className="leading-none">{t("t1047")}</p>
                     </div>
                   </div>
                   <div className="bg-[#ebe6f9] content-stretch flex gap-[6.475px] h-[26.62px] items-center justify-center px-[7.77px] relative rounded-[20.721px] shrink-0" data-node-id="4:35395" data-name="btn">
@@ -1079,7 +1028,7 @@ export default function ArticleCustomizacaoCara() {
                       <p className="leading-none">{`\uF51E`}</p>
                     </div>
                     <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0 text-[9.065px]" data-node-id="4:35397" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Finanças e contabilidade</p>
+                      <p className="leading-none">{t("t1048")}</p>
                     </div>
                   </div>
                   <div className="bg-[#ebe6f9] content-stretch flex gap-[6.475px] h-[26.62px] items-center justify-center px-[7.77px] relative rounded-[20.721px] shrink-0" data-node-id="4:35398" data-name="btn">
@@ -1087,7 +1036,7 @@ export default function ArticleCustomizacaoCara() {
                       <p className="leading-none">{`\uF2DB`}</p>
                     </div>
                     <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0 text-[9.065px]" data-node-id="4:35400" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">TI e software</p>
+                      <p className="leading-none">{t("t1049")}</p>
                     </div>
                   </div>
                   <div className="bg-[#ebe6f9] content-stretch flex gap-[6.475px] h-[26.62px] items-center justify-center px-[7.77px] relative rounded-[20.721px] shrink-0" data-node-id="4:35401" data-name="btn">
@@ -1095,7 +1044,7 @@ export default function ArticleCustomizacaoCara() {
                       <p className="leading-none">{`\uF11C`}</p>
                     </div>
                     <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0 text-[9.065px]" data-node-id="4:35403" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Produtividade</p>
+                      <p className="leading-none">{t("t1050")}</p>
                     </div>
                   </div>
                   <div className="bg-[#ebe6f9] content-stretch flex gap-[6.475px] h-[26.62px] items-center justify-center px-[7.77px] relative rounded-[20.721px] shrink-0" data-node-id="4:35404" data-name="btn">
@@ -1103,7 +1052,7 @@ export default function ArticleCustomizacaoCara() {
                       <p className="leading-none">{`\uF53F`}</p>
                     </div>
                     <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0 text-[9.065px]" data-node-id="4:35406" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Design</p>
+                      <p className="leading-none">{t("t1051")}</p>
                     </div>
                   </div>
                   <div className="bg-[#ebe6f9] content-stretch flex gap-[6.475px] h-[26.62px] items-center justify-center px-[7.77px] relative rounded-[20.721px] shrink-0" data-node-id="4:35407" data-name="btn">
@@ -1111,7 +1060,7 @@ export default function ArticleCustomizacaoCara() {
                       <p className="leading-none">{`\uF501`}</p>
                     </div>
                     <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0 text-[9.065px]" data-node-id="4:35409" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Design</p>
+                      <p className="leading-none">{t("t1051")}</p>
                     </div>
                   </div>
                   <div className="bg-[#ebe6f9] content-stretch flex gap-[6.475px] h-[26.62px] items-center justify-center px-[7.77px] relative rounded-[20.721px] shrink-0" data-node-id="4:35410" data-name="btn">
@@ -1119,7 +1068,7 @@ export default function ArticleCustomizacaoCara() {
                       <p className="leading-none">{`\uF0A1`}</p>
                     </div>
                     <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0 text-[9.065px]" data-node-id="4:35412" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Marketing</p>
+                      <p className="leading-none">{t("t1052")}</p>
                     </div>
                   </div>
                   <div className="bg-[#ebe6f9] content-stretch flex gap-[6.475px] h-[26.62px] items-center justify-center px-[7.77px] relative rounded-[20.721px] shrink-0" data-node-id="4:35413" data-name="btn">
@@ -1127,7 +1076,7 @@ export default function ArticleCustomizacaoCara() {
                       <p className="leading-none">{`\uF030`}</p>
                     </div>
                     <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0 text-[9.065px]" data-node-id="4:35415" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Fotografia e vídeo</p>
+                      <p className="leading-none">{t("t1053")}</p>
                     </div>
                   </div>
                   <div className="bg-[#ebe6f9] content-stretch flex gap-[6.475px] h-[26.62px] items-center justify-center px-[7.77px] relative rounded-[20.721px] shrink-0" data-node-id="4:35416" data-name="btn">
@@ -1135,7 +1084,7 @@ export default function ArticleCustomizacaoCara() {
                       <p className="leading-none">{`\uF44B`}</p>
                     </div>
                     <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0 text-[9.065px]" data-node-id="4:35418" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Saúde e fitness</p>
+                      <p className="leading-none">{t("t1054")}</p>
                     </div>
                   </div>
                   <div className="bg-[#ebe6f9] content-stretch flex gap-[6.475px] h-[26.62px] items-center justify-center px-[7.77px] relative rounded-[20.721px] shrink-0" data-node-id="4:35419" data-name="btn">
@@ -1143,52 +1092,50 @@ export default function ArticleCustomizacaoCara() {
                       <p className="leading-none">{`\uF001`}</p>
                     </div>
                     <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0 text-[9.065px]" data-node-id="4:35421" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Música</p>
+                      <p className="leading-none">{t("t1055")}</p>
                     </div>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-col items-start justify-center p-[10.36px] relative shrink-0 w-full" data-node-id="4:35422" data-name="<title>">
                   <p className="[word-break:break-word] font-['Roboto:SemiBold'] font-semibold leading-[normal] relative shrink-0 text-[#3b3b3b] text-[11.656px] text-center whitespace-nowrap" data-node-id="4:35423" style={{ fontVariationSettings: '"wdth" 100' }}>
-                    Tipos
-                  </p>
+                    {t("t1056")}</p>
                 </div>
                 <div className="content-start flex flex-[1_0_0] flex-wrap gap-[5.180239677429199px_5.18px] items-start min-h-px pb-[10.36px] px-[10.36px] relative w-full" data-node-id="4:35424" data-name="nav-itens">
                   <div className="bg-[#ebe6f9] content-stretch flex h-[26.62px] items-center justify-center px-[5.18px] relative rounded-[9.065px] shrink-0" data-node-id="4:35425" data-name="btn">
                     <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[#3008a1] text-[9.065px] text-center whitespace-nowrap" data-node-id="4:35426" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Presencial</p>
+                      <p className="leading-none">{t("t1057")}</p>
                     </div>
                   </div>
                   <div className="bg-[#ebe6f9] content-stretch flex h-[26.62px] items-center justify-center px-[5.18px] relative rounded-[9.065px] shrink-0" data-node-id="4:35427" data-name="btn">
                     <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[#3008a1] text-[9.065px] text-center whitespace-nowrap" data-node-id="4:35428" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">À distância</p>
+                      <p className="leading-none">{t("t1058")}</p>
                     </div>
                   </div>
                   <div className="bg-[#ebe6f9] content-stretch flex h-[26.62px] items-center justify-center px-[5.18px] relative rounded-[9.065px] shrink-0" data-node-id="4:35429" data-name="btn">
                     <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[#3008a1] text-[9.065px] text-center whitespace-nowrap" data-node-id="4:35430" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Blended</p>
+                      <p className="leading-none">{t("t1059")}</p>
                     </div>
                   </div>
                   <div className="bg-[#ebe6f9] content-stretch flex h-[26.62px] items-center justify-center px-[5.18px] relative rounded-[9.065px] shrink-0" data-node-id="4:35431" data-name="btn">
                     <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[#3008a1] text-[9.065px] text-center whitespace-nowrap" data-node-id="4:35432" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Modular</p>
+                      <p className="leading-none">{t("t1060")}</p>
                     </div>
                   </div>
                   <div className="bg-[#ebe6f9] content-stretch flex h-[26.62px] items-center justify-center px-[5.18px] relative rounded-[9.065px] shrink-0" data-node-id="4:35433" data-name="btn">
                     <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[#3008a1] text-[9.065px] text-center whitespace-nowrap" data-node-id="4:35434" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Síncrono</p>
+                      <p className="leading-none">{t("t1035")}</p>
                     </div>
                   </div>
                   <div className="bg-[#ebe6f9] content-stretch flex h-[26.62px] items-center justify-center px-[5.18px] relative rounded-[9.065px] shrink-0" data-node-id="4:35435" data-name="btn">
                     <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[#3008a1] text-[9.065px] text-center whitespace-nowrap" data-node-id="4:35436" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Webconferencia</p>
+                      <p className="leading-none">{t("t1061")}</p>
                     </div>
                   </div>
                 </div>
                 <div className="bg-[#3008a1] content-stretch flex items-start px-[10.36px] py-[15.541px] relative shrink-0 w-full" data-node-id="4:35437">
                   <div className="bg-white border-b-[0.648px] border-solid border-white content-stretch flex h-[38.852px] items-center justify-between px-[10.36px] relative rounded-[16px] shrink-0 w-[233.758px]" data-node-id="4:35438" data-name="Input">
                     <p className="[word-break:break-word] font-['Roboto:Light'] font-light leading-[normal] relative shrink-0 text-[#3008a1] text-[11.66px] text-center whitespace-nowrap" data-node-id="I4:35438;1701:4417" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      O que você está buscando?
-                    </p>
+                      {t("t1062")}</p>
                     <div className="relative shrink-0 size-[11.656px]" data-node-id="I4:35438;1701:4419" data-name="">
                       <img alt="" className="absolute block inset-0 max-w-none size-full" src={img} />
                     </div>
@@ -1200,32 +1147,28 @@ export default function ArticleCustomizacaoCara() {
                   <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[2.59px] items-center justify-center leading-[normal] min-h-px p-[5.18px] relative rounded-[13px] text-[#3008a1] w-full" data-node-id="I4:35439;1659:11303;1659:8329" data-name="fill">
                     <p className="font-['Font_Awesome_6_Pro:Regular'] not-italic relative shrink-0 text-[11.66px] whitespace-nowrap" data-node-id="I4:35439;1659:11303;1659:8330">{`\uF015`}</p>
                     <p className="font-['Roboto:Regular'] font-normal min-w-full relative shrink-0 text-[7.77px] text-center w-[min-content]" data-node-id="I4:35439;1659:11303;1659:8331" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Início
-                    </p>
+                      {t("t0554")}</p>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-[38.852px] items-center justify-center min-w-px p-[2.59px] relative" data-node-id="I4:35439;1659:11304" data-name="Botoes">
                   <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[2.59px] items-center justify-center leading-[normal] min-h-px p-[5.18px] relative rounded-[13px] text-[#3008a1] w-full" data-node-id="I4:35439;1659:11304;1659:8329" data-name="fill">
                     <p className="font-['Font_Awesome_6_Pro:Regular'] not-italic relative shrink-0 text-[11.66px] whitespace-nowrap" data-node-id="I4:35439;1659:11304;1659:8330">{`\uF5DA`}</p>
                     <p className="font-['Roboto:Regular'] font-normal min-w-full relative shrink-0 text-[7.77px] text-center w-[min-content]" data-node-id="I4:35439;1659:11304;1659:8331" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Meus Cursos
-                    </p>
+                      {t("t1040")}</p>
                   </div>
                 </div>
                 <div className="border-[#3008a1] border-solid border-t-[0.648px] content-stretch flex flex-[1_0_0] flex-col h-[38.852px] items-center justify-center min-w-px p-[2.59px] relative" data-node-id="I4:35439;1659:11305" data-name="Botoes">
                   <div className="[word-break:break-word] bg-[#e6e6e6] content-stretch flex flex-[1_0_0] flex-col gap-[2.59px] items-center justify-center leading-[normal] min-h-px p-[5.18px] relative rounded-[13px] text-[#3008a1] w-full" data-node-id="I4:35439;1659:11305;1659:8337" data-name="fill">
                     <p className="font-['Font_Awesome_6_Pro:Regular'] not-italic relative shrink-0 text-[11.66px] whitespace-nowrap" data-node-id="I4:35439;1659:11305;1659:8338">{`\uF002`}</p>
                     <p className="font-['Roboto:Regular'] font-normal min-w-full relative shrink-0 text-[7.77px] text-center w-[min-content]" data-node-id="I4:35439;1659:11305;1659:8339" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Busca
-                    </p>
+                      {t("t1041")}</p>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-[38.852px] items-center justify-center min-w-px p-[2.59px] relative" data-node-id="I4:35439;1659:11306" data-name="Botoes">
                   <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[2.59px] items-center justify-center leading-[normal] min-h-px p-[5.18px] relative rounded-[13px] text-[#3008a1] w-full" data-node-id="I4:35439;1659:11306;1659:8329" data-name="fill">
                     <p className="font-['Font_Awesome_6_Pro:Regular'] not-italic relative shrink-0 text-[11.66px] whitespace-nowrap" data-node-id="I4:35439;1659:11306;1659:8330">{`\uF0C9`}</p>
                     <p className="font-['Roboto:Regular'] font-normal min-w-full relative shrink-0 text-[7.77px] text-center w-[min-content]" data-node-id="I4:35439;1659:11306;1659:8331" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Mais
-                    </p>
+                      {t("t1042")}</p>
                   </div>
                 </div>
               </div>
@@ -1239,8 +1182,7 @@ export default function ArticleCustomizacaoCara() {
                 </div>
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-full items-start justify-center min-w-px relative" data-node-id="I4:35441;1699:4239" data-name="title">
                   <p className="[word-break:break-word] font-['Roboto:Regular'] font-normal leading-[normal] relative shrink-0 text-[#180450] text-[10.36px] text-center whitespace-nowrap" data-node-id="I4:35441;1699:4249" style={{ fontVariationSettings: '"wdth" 100' }}>
-                    Resultados
-                  </p>
+                    {t("t0563")}</p>
                 </div>
                 <div className="content-stretch flex flex-col items-center justify-center p-[2.59px] relative shrink-0 size-[38.852px]" data-node-id="I4:35441;1699:4181" data-name="Botoes">
                   <div className="content-stretch flex flex-[1_0_0] gap-[2.59px] items-center justify-center min-h-px p-[5.18px] relative rounded-[13px] w-full" data-node-id="I4:35441;1699:4181;1699:4173" data-name="fill">
@@ -1252,8 +1194,7 @@ export default function ArticleCustomizacaoCara() {
                 <div className="bg-white content-stretch flex flex-[1_0_0] flex-col items-start min-h-px relative w-full" data-node-id="4:35443" data-name="main">
                   <div className="content-stretch flex flex-col items-start justify-center p-[10.36px] relative shrink-0 w-full" data-node-id="4:35444" data-name="<title>">
                     <p className="[word-break:break-word] font-['Roboto:SemiBold'] font-semibold leading-[normal] relative shrink-0 text-[#3b3b3b] text-[11.656px] text-center whitespace-nowrap" data-node-id="4:35445" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Loren
-                    </p>
+                      {t("t1063")}</p>
                   </div>
                   <div className="content-stretch flex flex-[1_0_0] flex-col gap-[10.36px] items-start justify-center min-h-px pb-[10.36px] pt-[5.18px] px-[10.36px] relative w-full" data-node-id="4:35446" data-name="row">
                     <div className="bg-white content-stretch flex flex-col h-[171.919px] items-end overflow-clip relative rounded-[5.18px] shadow-[0px_0.648px_1.943px_0px_rgba(0,0,0,0.1),0px_0.648px_1.295px_0px_rgba(0,0,0,0.06)] shrink-0 w-[233.758px]" data-node-id="4:35447" data-name="card">
@@ -1271,7 +1212,7 @@ export default function ArticleCustomizacaoCara() {
                       <div className="content-stretch flex flex-col gap-[6.475px] items-start justify-center px-[5.18px] py-[10.36px] relative shrink-0 w-full" data-node-id="I4:35447;1472:1317" data-name="card-title">
                         <div className="content-stretch flex items-center relative shrink-0 w-full" data-node-id="I4:35447;1486:2978" data-name="title">
                           <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px overflow-hidden relative text-[#3b3b3b] text-[11.66px] text-ellipsis whitespace-nowrap" data-node-id="I4:35447;1472:1319" style={{ fontVariationSettings: '"wdth" 100' }}>
-                            <p className="leading-[1.2] overflow-hidden text-ellipsis">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. `}</p>
+                            <p className="leading-[1.2] overflow-hidden text-ellipsis">{t("t1033")}</p>
                           </div>
                         </div>
                         <div className="flex items-center justify-center relative shrink-0 w-full" data-node-id="I4:35447;1628:11004">
@@ -1281,7 +1222,7 @@ export default function ArticleCustomizacaoCara() {
                                 <div className="flex items-center justify-center relative shrink-0" data-node-id="I4:35447;1642:15385">
                                   <div className="flex-none rotate-180">
                                     <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] relative text-[#3008a1] text-[6.48px] whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                      <p className="leading-none">{`65% Concluído `}</p>
+                                      <p className="leading-none">{t("t1034")}</p>
                                     </div>
                                   </div>
                                 </div>
@@ -1313,7 +1254,7 @@ export default function ArticleCustomizacaoCara() {
                       <div className="content-stretch flex flex-col gap-[6.475px] items-start justify-center px-[5.18px] py-[10.36px] relative shrink-0 w-full" data-node-id="I4:35448;1472:1317" data-name="card-title">
                         <div className="content-stretch flex items-center relative shrink-0 w-full" data-node-id="I4:35448;1486:2978" data-name="title">
                           <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px overflow-hidden relative text-[#3b3b3b] text-[11.66px] text-ellipsis whitespace-nowrap" data-node-id="I4:35448;1472:1319" style={{ fontVariationSettings: '"wdth" 100' }}>
-                            <p className="leading-[1.2] overflow-hidden text-ellipsis">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. `}</p>
+                            <p className="leading-[1.2] overflow-hidden text-ellipsis">{t("t1033")}</p>
                           </div>
                         </div>
                         <div className="flex items-center justify-center relative shrink-0 w-full" data-node-id="I4:35448;1628:11004">
@@ -1323,7 +1264,7 @@ export default function ArticleCustomizacaoCara() {
                                 <div className="flex items-center justify-center relative shrink-0" data-node-id="I4:35448;1642:15385">
                                   <div className="flex-none rotate-180">
                                     <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] relative text-[#3008a1] text-[6.48px] whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                      <p className="leading-none">{`65% Concluído `}</p>
+                                      <p className="leading-none">{t("t1034")}</p>
                                     </div>
                                   </div>
                                 </div>
@@ -1345,8 +1286,7 @@ export default function ArticleCustomizacaoCara() {
                 <div className="bg-[#3008a1] content-stretch flex items-start px-[10.36px] py-[15.541px] relative shrink-0 w-full" data-node-id="4:35449">
                   <div className="bg-white border-b-[0.648px] border-solid border-white content-stretch flex h-[38.852px] items-center justify-between px-[10.36px] relative rounded-[16px] shrink-0 w-[233.758px]" data-node-id="4:35450" data-name="Input">
                     <p className="[word-break:break-word] font-['Roboto:Light'] font-light leading-[normal] relative shrink-0 text-[#3008a1] text-[11.66px] text-center whitespace-nowrap" data-node-id="I4:35450;1701:4417" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Loren
-                    </p>
+                      {t("t1063")}</p>
                     <div className="relative shrink-0 size-[11.656px]" data-node-id="I4:35450;1701:4419" data-name="">
                       <img alt="" className="absolute block inset-0 max-w-none size-full" src={img} />
                     </div>
@@ -1358,32 +1298,28 @@ export default function ArticleCustomizacaoCara() {
                   <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[2.59px] items-center justify-center leading-[normal] min-h-px p-[5.18px] relative rounded-[13px] text-[#3008a1] w-full" data-node-id="I4:35451;1659:11303;1659:8329" data-name="fill">
                     <p className="font-['Font_Awesome_6_Pro:Regular'] not-italic relative shrink-0 text-[11.66px] whitespace-nowrap" data-node-id="I4:35451;1659:11303;1659:8330">{`\uF015`}</p>
                     <p className="font-['Roboto:Regular'] font-normal min-w-full relative shrink-0 text-[7.77px] text-center w-[min-content]" data-node-id="I4:35451;1659:11303;1659:8331" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Início
-                    </p>
+                      {t("t0554")}</p>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-[38.852px] items-center justify-center min-w-px p-[2.59px] relative" data-node-id="I4:35451;1659:11304" data-name="Botoes">
                   <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[2.59px] items-center justify-center leading-[normal] min-h-px p-[5.18px] relative rounded-[13px] text-[#3008a1] w-full" data-node-id="I4:35451;1659:11304;1659:8329" data-name="fill">
                     <p className="font-['Font_Awesome_6_Pro:Regular'] not-italic relative shrink-0 text-[11.66px] whitespace-nowrap" data-node-id="I4:35451;1659:11304;1659:8330">{`\uF5DA`}</p>
                     <p className="font-['Roboto:Regular'] font-normal min-w-full relative shrink-0 text-[7.77px] text-center w-[min-content]" data-node-id="I4:35451;1659:11304;1659:8331" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Meus Cursos
-                    </p>
+                      {t("t1040")}</p>
                   </div>
                 </div>
                 <div className="border-[#3008a1] border-solid border-t-[0.648px] content-stretch flex flex-[1_0_0] flex-col h-[38.852px] items-center justify-center min-w-px p-[2.59px] relative" data-node-id="I4:35451;1659:11305" data-name="Botoes">
                   <div className="[word-break:break-word] bg-[#e6e6e6] content-stretch flex flex-[1_0_0] flex-col gap-[2.59px] items-center justify-center leading-[normal] min-h-px p-[5.18px] relative rounded-[13px] text-[#3008a1] w-full" data-node-id="I4:35451;1659:11305;1659:8337" data-name="fill">
                     <p className="font-['Font_Awesome_6_Pro:Regular'] not-italic relative shrink-0 text-[11.66px] whitespace-nowrap" data-node-id="I4:35451;1659:11305;1659:8338">{`\uF002`}</p>
                     <p className="font-['Roboto:Regular'] font-normal min-w-full relative shrink-0 text-[7.77px] text-center w-[min-content]" data-node-id="I4:35451;1659:11305;1659:8339" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Busca
-                    </p>
+                      {t("t1041")}</p>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-[38.852px] items-center justify-center min-w-px p-[2.59px] relative" data-node-id="I4:35451;1659:11306" data-name="Botoes">
                   <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[2.59px] items-center justify-center leading-[normal] min-h-px p-[5.18px] relative rounded-[13px] text-[#3008a1] w-full" data-node-id="I4:35451;1659:11306;1659:8329" data-name="fill">
                     <p className="font-['Font_Awesome_6_Pro:Regular'] not-italic relative shrink-0 text-[11.66px] whitespace-nowrap" data-node-id="I4:35451;1659:11306;1659:8330">{`\uF0C9`}</p>
                     <p className="font-['Roboto:Regular'] font-normal min-w-full relative shrink-0 text-[7.77px] text-center w-[min-content]" data-node-id="I4:35451;1659:11306;1659:8331" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Mais
-                    </p>
+                      {t("t1042")}</p>
                   </div>
                 </div>
               </div>
@@ -1416,29 +1352,28 @@ export default function ArticleCustomizacaoCara() {
                   </div>
                   <div className="content-stretch flex items-center justify-center p-[10.36px] relative shrink-0 w-full" data-node-id="4:35459">
                     <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px relative text-[11.656px] text-white" data-node-id="4:35460" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-[1.4]">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. `}</p>
+                      <p className="leading-[1.4]">{t("t1033")}</p>
                     </div>
                   </div>
                 </div>
                 <div className="content-stretch flex gap-[5.18px] items-center px-[10.36px] py-[5.18px] relative shrink-0 w-full" data-node-id="4:35461" data-name="<title>">
                   <div className="bg-[#3008a1] content-stretch flex flex-[1_0_0] h-[26.62px] items-center justify-center min-w-[63.00518035888672px] px-[5.18px] relative rounded-[20.721px]" data-node-id="4:35462" data-name="btn">
                     <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px relative text-[9.065px] text-center text-white" data-node-id="4:35463" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Descrição</p>
+                      <p className="leading-none">{t("t1064")}</p>
                     </div>
                   </div>
                   <div className="bg-[#f4eeff] content-stretch flex flex-[1_0_0] h-[26.62px] items-center justify-center min-w-[63.00518035888672px] px-[5.18px] relative rounded-[20.721px]" data-node-id="4:35464" data-name="btn">
                     <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px relative text-[#3008a1] text-[9.065px] text-center" data-node-id="4:35465" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Conteúdo</p>
+                      <p className="leading-none">{t("t1065")}</p>
                     </div>
                   </div>
                 </div>
                 <div className="content-stretch flex items-center justify-center p-[10.36px] relative shrink-0 w-full" data-node-id="4:35466">
                   <p className="[word-break:break-word] flex-[1_0_0] font-['Roboto:Regular'] font-normal leading-[1.46] min-w-px relative text-[#040404] text-[10.36px]" data-node-id="4:35467" style={{ fontVariationSettings: '"wdth" 100' }}>
-                    Vamos aprender juntos a criar indicadores de sucesso para o seu negócio? No contexto atual, ter métricas reais para mensurar os resultados do negócio é fundamental para a tomada de decisões. Nesse curso o você aprenderá a definir KPIs – Key Performance Indicator – conhecerá sua importância e relevância além de conhecer métodos que ajudarã
-                  </p>
+                    {t("t1066")}</p>
                 </div>
                 <div className="content-stretch flex flex-col items-start justify-center p-[10.36px] relative shrink-0 w-full" data-node-id="4:35468" data-name="<title>">
-                  <p className="[word-break:break-word] font-['Roboto:SemiBold'] font-semibold leading-[normal] relative shrink-0 text-[#3b3b3b] text-[11.656px] text-center whitespace-nowrap" data-node-id="4:35469" style={{ fontVariationSettings: '"wdth" 100' }}>{`Cursos sugeridos `}</p>
+                  <p className="[word-break:break-word] font-['Roboto:SemiBold'] font-semibold leading-[normal] relative shrink-0 text-[#3b3b3b] text-[11.656px] text-center whitespace-nowrap" data-node-id="4:35469" style={{ fontVariationSettings: '"wdth" 100' }}>{t("t1067")}</p>
                 </div>
                 <div className="content-stretch flex flex-[1_0_0] gap-[10.36px] items-center min-h-px pb-[10.36px] pt-[5.18px] px-[10.36px] relative w-full" data-node-id="4:35470" data-name="row">
                   <div className="bg-white content-stretch flex flex-col h-[124.326px] items-end overflow-clip relative rounded-[5.18px] shadow-[0px_0.648px_1.943px_0px_rgba(0,0,0,0.1),0px_0.648px_1.295px_0px_rgba(0,0,0,0.06)] shrink-0 w-[123.031px]" data-node-id="4:35471" data-name="card">
@@ -1456,7 +1391,7 @@ export default function ArticleCustomizacaoCara() {
                     <div className="content-stretch flex flex-col gap-[6.475px] items-start justify-center px-[5.18px] py-[10.36px] relative shrink-0 w-full" data-node-id="I4:35471;1472:1317" data-name="card-title">
                       <div className="content-stretch flex items-center relative shrink-0 w-full" data-node-id="I4:35471;1486:2978" data-name="title">
                         <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px overflow-hidden relative text-[#3b3b3b] text-[11.66px] text-ellipsis whitespace-nowrap" data-node-id="I4:35471;1472:1319" style={{ fontVariationSettings: '"wdth" 100' }}>
-                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. `}</p>
+                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{t("t1033")}</p>
                         </div>
                       </div>
                       <div className="content-stretch flex gap-[5.18px] items-center relative shrink-0 w-full" data-node-id="I4:35471;1629:3752" data-name="tags">
@@ -1479,7 +1414,7 @@ export default function ArticleCustomizacaoCara() {
                         <div className="flex flex-[1_0_0] flex-row items-center self-stretch" data-node-id="I4:35471;1635:7813">
                           <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] gap-[5.18px] h-full items-center justify-end leading-[0] min-w-px relative text-[#3b3b3b] text-[7.77px] text-center whitespace-nowrap" data-name="btn">
                             <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0" data-node-id="I4:35471;1635:7814" style={{ fontVariationSettings: '"wdth" 100' }}>
-                              <p className="leading-none">Iniciar</p>
+                              <p className="leading-none">{t("t1038")}</p>
                             </div>
                             <div className="flex flex-col font-['Font_Awesome_6_Pro:Solid'] justify-center not-italic relative shrink-0" data-node-id="I4:35471;1635:7815">
                               <p className="leading-none">{`\uF04B`}</p>
@@ -1504,7 +1439,7 @@ export default function ArticleCustomizacaoCara() {
                     <div className="content-stretch flex flex-col gap-[6.475px] items-start justify-center px-[5.18px] py-[10.36px] relative shrink-0 w-full" data-node-id="I4:35472;1472:1317" data-name="card-title">
                       <div className="content-stretch flex items-center relative shrink-0 w-full" data-node-id="I4:35472;1486:2978" data-name="title">
                         <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px overflow-hidden relative text-[#3b3b3b] text-[11.66px] text-ellipsis whitespace-nowrap" data-node-id="I4:35472;1472:1319" style={{ fontVariationSettings: '"wdth" 100' }}>
-                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. `}</p>
+                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{t("t1033")}</p>
                         </div>
                       </div>
                       <div className="content-stretch flex gap-[5.18px] items-center relative shrink-0 w-full" data-node-id="I4:35472;1629:3752" data-name="tags">
@@ -1527,7 +1462,7 @@ export default function ArticleCustomizacaoCara() {
                         <div className="flex flex-[1_0_0] flex-row items-center self-stretch" data-node-id="I4:35472;1635:7813">
                           <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] gap-[5.18px] h-full items-center justify-end leading-[0] min-w-px relative text-[#3b3b3b] text-[7.77px] text-center whitespace-nowrap" data-name="btn">
                             <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0" data-node-id="I4:35472;1635:7814" style={{ fontVariationSettings: '"wdth" 100' }}>
-                              <p className="leading-none">Iniciar</p>
+                              <p className="leading-none">{t("t1038")}</p>
                             </div>
                             <div className="flex flex-col font-['Font_Awesome_6_Pro:Solid'] justify-center not-italic relative shrink-0" data-node-id="I4:35472;1635:7815">
                               <p className="leading-none">{`\uF04B`}</p>
@@ -1552,7 +1487,7 @@ export default function ArticleCustomizacaoCara() {
                     <div className="content-stretch flex flex-col gap-[6.475px] items-start justify-center px-[5.18px] py-[10.36px] relative shrink-0 w-full" data-node-id="I4:35473;1472:1317" data-name="card-title">
                       <div className="content-stretch flex items-center relative shrink-0 w-full" data-node-id="I4:35473;1486:2978" data-name="title">
                         <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px overflow-hidden relative text-[#3b3b3b] text-[11.66px] text-ellipsis whitespace-nowrap" data-node-id="I4:35473;1472:1319" style={{ fontVariationSettings: '"wdth" 100' }}>
-                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. `}</p>
+                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{t("t1033")}</p>
                         </div>
                       </div>
                       <div className="[word-break:break-word] content-stretch flex gap-[5.18px] items-start leading-[0] relative shrink-0 text-[#e6e6e6] text-center w-full whitespace-nowrap" data-node-id="I4:35473;1486:2979" data-name="tags">
@@ -1561,7 +1496,7 @@ export default function ArticleCustomizacaoCara() {
                             <p className="leading-none">{`\uF2B4`}</p>
                           </div>
                           <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0 text-[7.77px]" data-node-id="I4:35473;1486:2974;1486:2778" style={{ fontVariationSettings: '"wdth" 100' }}>
-                            <p className="leading-none">Síncrono</p>
+                            <p className="leading-none">{t("t1035")}</p>
                           </div>
                         </div>
                         <div className="bg-[#3d0aca] content-stretch flex flex-[1_0_0] gap-[5.18px] items-center justify-center min-w-px px-[7.77px] py-[2.59px] relative rounded-[10.36px]" data-node-id="I4:35473;1486:2980" data-name="tags">
@@ -1569,7 +1504,7 @@ export default function ArticleCustomizacaoCara() {
                             <p className="leading-none">{`\uF2B4`}</p>
                           </div>
                           <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0 text-[7.77px]" data-node-id="I4:35473;1486:2980;1486:2778" style={{ fontVariationSettings: '"wdth" 100' }}>
-                            <p className="leading-none">Síncrono</p>
+                            <p className="leading-none">{t("t1035")}</p>
                           </div>
                         </div>
                       </div>
@@ -1578,8 +1513,7 @@ export default function ArticleCustomizacaoCara() {
                           <div className="bg-[rgba(255,255,255,0)] relative shrink-0" data-node-id="I4:35473;1486:2987;288:237993" data-name="text">
                             <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start justify-center overflow-clip relative rounded-[inherit] size-full">
                               <p className="[word-break:break-word] font-['Roboto:Regular'] font-normal leading-[1.5] relative shrink-0 text-[#180450] text-[9.07px] whitespace-nowrap" data-node-id="I4:35473;1486:2987;288:237993;1:4738" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                Ver cursos
-                              </p>
+                                {t("t1036")}</p>
                             </div>
                           </div>
                         </div>
@@ -1587,8 +1521,7 @@ export default function ArticleCustomizacaoCara() {
                           <div className="bg-[rgba(255,255,255,0)] relative shrink-0" data-node-id="I4:35473;1486:2988;288:237185" data-name="text">
                             <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start justify-center overflow-clip relative rounded-[inherit] size-full">
                               <p className="[word-break:break-word] font-['Roboto:Regular'] font-normal leading-[1.5] relative shrink-0 text-[#cecece] text-[9.07px] whitespace-nowrap" data-node-id="I4:35473;1486:2988;288:237185;1:4738" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                Cursar
-                              </p>
+                                {t("t1037")}</p>
                             </div>
                           </div>
                         </div>
@@ -1600,7 +1533,7 @@ export default function ArticleCustomizacaoCara() {
                               <div className="flex items-center justify-center relative shrink-0" data-node-id="I4:35473;1642:15385">
                                 <div className="flex-none rotate-180">
                                   <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] relative text-[#3008a1] text-[6.48px] whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                    <p className="leading-none">{`65% Concluído `}</p>
+                                    <p className="leading-none">{t("t1034")}</p>
                                   </div>
                                 </div>
                               </div>
@@ -1635,7 +1568,7 @@ export default function ArticleCustomizacaoCara() {
                         <div className="flex flex-[1_0_0] flex-row items-center self-stretch" data-node-id="I4:35473;1635:7813">
                           <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] gap-[5.18px] h-full items-center justify-end leading-[0] min-w-px relative text-[#3b3b3b] text-[7.77px] text-center whitespace-nowrap" data-name="btn">
                             <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0" data-node-id="I4:35473;1635:7814" style={{ fontVariationSettings: '"wdth" 100' }}>
-                              <p className="leading-none">Iniciar</p>
+                              <p className="leading-none">{t("t1038")}</p>
                             </div>
                             <div className="flex flex-col font-['Font_Awesome_6_Pro:Solid'] justify-center not-italic relative shrink-0" data-node-id="I4:35473;1635:7815">
                               <p className="leading-none">{`\uF04B`}</p>
@@ -1651,8 +1584,7 @@ export default function ArticleCustomizacaoCara() {
                 <div className="bg-[#180450] content-stretch flex flex-col h-[38.852px] items-center justify-center p-[2.59px] relative shrink-0 w-[233.758px]" data-node-id="4:35475" data-name="Botoes">
                   <div className="content-stretch flex flex-[1_0_0] gap-[2.59px] items-center justify-center min-h-px p-[5.18px] relative rounded-[13px] w-full" data-node-id="I4:35475;1698:11849" data-name="fill">
                     <p className="[word-break:break-word] flex-[1_0_0] font-['Roboto:Medium'] font-medium leading-[normal] min-w-px relative text-[7.55px] text-center text-white" data-node-id="I4:35475;1698:11851" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Matricular
-                    </p>
+                      {t("t1068")}</p>
                   </div>
                 </div>
               </div>
@@ -1685,19 +1617,19 @@ export default function ArticleCustomizacaoCara() {
                   </div>
                   <div className="content-stretch flex items-center justify-center p-[10.36px] relative shrink-0 w-full" data-node-id="4:35483">
                     <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px relative text-[11.656px] text-white" data-node-id="4:35484" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-[1.4]">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. `}</p>
+                      <p className="leading-[1.4]">{t("t1033")}</p>
                     </div>
                   </div>
                 </div>
                 <div className="content-stretch flex gap-[5.18px] items-center px-[10.36px] py-[5.18px] relative shrink-0 w-full" data-node-id="4:35485" data-name="<title>">
                   <div className="bg-[#f4eeff] content-stretch flex flex-[1_0_0] h-[26.62px] items-center justify-center min-w-[63.00518035888672px] px-[5.18px] relative rounded-[20.721px]" data-node-id="4:35486" data-name="btn">
                     <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px relative text-[#3008a1] text-[9.065px] text-center" data-node-id="4:35487" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Descrição</p>
+                      <p className="leading-none">{t("t1064")}</p>
                     </div>
                   </div>
                   <div className="bg-[#3008a1] content-stretch flex flex-[1_0_0] h-[26.62px] items-center justify-center min-w-[63.00518035888672px] px-[5.18px] relative rounded-[20.721px]" data-node-id="4:35488" data-name="btn">
                     <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px relative text-[9.065px] text-center text-white" data-node-id="4:35489" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Conteúdo</p>
+                      <p className="leading-none">{t("t1065")}</p>
                     </div>
                   </div>
                 </div>
@@ -1708,7 +1640,7 @@ export default function ArticleCustomizacaoCara() {
                         <p className="leading-none">{`\uF078`}</p>
                       </div>
                       <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0" data-node-id="4:35494" style={{ fontVariationSettings: '"wdth" 100' }}>
-                        <p className="leading-none">Modulo</p>
+                        <p className="leading-none">{t("t1069")}</p>
                       </div>
                     </div>
                     <div className="content-stretch flex gap-[10.36px] items-center overflow-clip px-[7.77px] py-[10.36px] relative shrink-0 w-full" data-node-id="4:35495">
@@ -1722,7 +1654,7 @@ export default function ArticleCustomizacaoCara() {
                           <div className="flex flex-[1_0_0] flex-row items-center self-stretch" data-node-id="4:35500">
                             <div className="content-stretch flex flex-[1_0_0] h-full items-center min-w-px px-[6.475px] relative" data-name="Presentation Area">
                               <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:SemiBold'] font-semibold justify-center leading-[0] min-w-px relative text-[9.065px] text-white" data-node-id="4:35501" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                <p className="leading-none">Apresentação</p>
+                                <p className="leading-none">{t("t1070")}</p>
                               </div>
                             </div>
                           </div>
@@ -1740,7 +1672,7 @@ export default function ArticleCustomizacaoCara() {
                           </div>
                           <div className="[word-break:break-word] content-stretch flex gap-[5.18px] items-center leading-[0] relative shrink-0 text-[7.77px] text-center text-white whitespace-nowrap" data-node-id="4:35507" data-name="Access Area">
                             <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0" data-node-id="4:35508" style={{ fontVariationSettings: '"wdth" 100' }}>
-                              <p className="leading-none">Acessar</p>
+                              <p className="leading-none">{t("t1071")}</p>
                             </div>
                             <div className="flex flex-col font-['Font_Awesome_6_Pro:Solid'] justify-center not-italic relative shrink-0" data-node-id="4:35509">
                               <p className="leading-none">{`\uF04B`}</p>
@@ -1758,7 +1690,7 @@ export default function ArticleCustomizacaoCara() {
                           <div className="flex flex-[1_0_0] flex-row items-center self-stretch" data-node-id="4:35514">
                             <div className="content-stretch flex flex-[1_0_0] h-full items-center min-w-px px-[6.475px] relative" data-name="Presentation Area">
                               <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:SemiBold'] font-semibold justify-center leading-[0] min-w-px relative text-[9.065px] text-white" data-node-id="4:35515" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                <p className="leading-none">Apresentação</p>
+                                <p className="leading-none">{t("t1070")}</p>
                               </div>
                             </div>
                           </div>
@@ -1776,7 +1708,7 @@ export default function ArticleCustomizacaoCara() {
                           </div>
                           <div className="[word-break:break-word] content-stretch flex gap-[5.18px] items-center leading-[0] relative shrink-0 text-[7.77px] text-center text-white whitespace-nowrap" data-node-id="4:35521" data-name="Access Area">
                             <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0" data-node-id="4:35522" style={{ fontVariationSettings: '"wdth" 100' }}>
-                              <p className="leading-none">Acessar</p>
+                              <p className="leading-none">{t("t1071")}</p>
                             </div>
                             <div className="flex flex-col font-['Font_Awesome_6_Pro:Solid'] justify-center not-italic relative shrink-0" data-node-id="4:35523">
                               <p className="leading-none">{`\uF04B`}</p>
@@ -1794,7 +1726,7 @@ export default function ArticleCustomizacaoCara() {
                           <div className="flex flex-[1_0_0] flex-row items-center self-stretch" data-node-id="4:35528">
                             <div className="content-stretch flex flex-[1_0_0] h-full items-center min-w-px px-[6.475px] relative" data-name="Presentation Area">
                               <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:SemiBold'] font-semibold justify-center leading-[0] min-w-px relative text-[9.065px] text-white" data-node-id="4:35529" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                <p className="leading-none">Apresentação</p>
+                                <p className="leading-none">{t("t1070")}</p>
                               </div>
                             </div>
                           </div>
@@ -1812,7 +1744,7 @@ export default function ArticleCustomizacaoCara() {
                           </div>
                           <div className="[word-break:break-word] content-stretch flex gap-[5.18px] items-center leading-[0] relative shrink-0 text-[7.77px] text-center text-white whitespace-nowrap" data-node-id="4:35535" data-name="Access Area">
                             <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0" data-node-id="4:35536" style={{ fontVariationSettings: '"wdth" 100' }}>
-                              <p className="leading-none">Acessar</p>
+                              <p className="leading-none">{t("t1071")}</p>
                             </div>
                             <div className="flex flex-col font-['Font_Awesome_6_Pro:Solid'] justify-center not-italic relative shrink-0" data-node-id="4:35537">
                               <p className="leading-none">{`\uF04B`}</p>
@@ -1830,7 +1762,7 @@ export default function ArticleCustomizacaoCara() {
                           <div className="flex flex-[1_0_0] flex-row items-center self-stretch" data-node-id="4:35542">
                             <div className="content-stretch flex flex-[1_0_0] h-full items-center min-w-px px-[6.475px] relative" data-name="Presentation Area">
                               <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:SemiBold'] font-semibold justify-center leading-[0] min-w-px relative text-[9.065px] text-white" data-node-id="4:35543" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                <p className="leading-none">Apresentação</p>
+                                <p className="leading-none">{t("t1070")}</p>
                               </div>
                             </div>
                           </div>
@@ -1848,7 +1780,7 @@ export default function ArticleCustomizacaoCara() {
                           </div>
                           <div className="[word-break:break-word] content-stretch flex gap-[5.18px] items-center leading-[0] relative shrink-0 text-[7.77px] text-center text-white whitespace-nowrap" data-node-id="4:35549" data-name="Access Area">
                             <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0" data-node-id="4:35550" style={{ fontVariationSettings: '"wdth" 100' }}>
-                              <p className="leading-none">Acessar</p>
+                              <p className="leading-none">{t("t1071")}</p>
                             </div>
                             <div className="flex flex-col font-['Font_Awesome_6_Pro:Solid'] justify-center not-italic relative shrink-0" data-node-id="4:35551">
                               <p className="leading-none">{`\uF04B`}</p>
@@ -1864,7 +1796,7 @@ export default function ArticleCustomizacaoCara() {
                         <p className="leading-none">{`\uF077`}</p>
                       </div>
                       <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0" data-node-id="4:35555" style={{ fontVariationSettings: '"wdth" 100' }}>
-                        <p className="leading-none">{`Modulo `}</p>
+                        <p className="leading-none">{t("t1069")}</p>
                       </div>
                     </div>
                   </div>
@@ -1874,7 +1806,7 @@ export default function ArticleCustomizacaoCara() {
                         <p className="leading-none">{`\uF077`}</p>
                       </div>
                       <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0" data-node-id="4:35559" style={{ fontVariationSettings: '"wdth" 100' }}>
-                        <p className="leading-none">{`Modulo `}</p>
+                        <p className="leading-none">{t("t1069")}</p>
                       </div>
                     </div>
                   </div>
@@ -1884,7 +1816,7 @@ export default function ArticleCustomizacaoCara() {
                         <p className="leading-none">{`\uF077`}</p>
                       </div>
                       <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0" data-node-id="4:35563" style={{ fontVariationSettings: '"wdth" 100' }}>
-                        <p className="leading-none">{`Modulo `}</p>
+                        <p className="leading-none">{t("t1069")}</p>
                       </div>
                     </div>
                   </div>
@@ -1894,8 +1826,7 @@ export default function ArticleCustomizacaoCara() {
                 <div className="bg-[#180450] content-stretch flex flex-col h-[38.852px] items-center justify-center p-[2.59px] relative shrink-0 w-[233.758px]" data-node-id="4:35565" data-name="Botoes">
                   <div className="content-stretch flex flex-[1_0_0] gap-[2.59px] items-center justify-center min-h-px p-[5.18px] relative rounded-[13px] w-full" data-node-id="I4:35565;1698:11849" data-name="fill">
                     <p className="[word-break:break-word] flex-[1_0_0] font-['Roboto:Medium'] font-medium leading-[normal] min-w-px relative text-[7.55px] text-center text-white" data-node-id="I4:35565;1698:11851" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Matricular
-                    </p>
+                      {t("t1068")}</p>
                   </div>
                 </div>
               </div>
@@ -1912,16 +1843,14 @@ export default function ArticleCustomizacaoCara() {
               </p>
             </div>
             <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.6] relative shrink-0 text-[#0d0d0d] text-[24px] whitespace-nowrap" data-node-id="4:35571">
-              Variações de marca
-            </p>
+              {t("t1072")}</p>
           </div>
         </div>
-        <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full" data-node-id="4:35573" data-name="figure.artifact-visual">
+        <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full" data-node-id="4:35573" data-name="figure.artifact-visual" data-section-id="artifacts">
           <div className="content-stretch flex items-center relative shrink-0 w-full" data-node-id="4:35574">
             <div className="content-stretch flex items-center justify-center p-[10px] relative shrink-0" data-node-id="4:35575">
               <p className="[word-break:break-word] font-['Source_Sans_3:Regular'] font-normal leading-[1.6] relative shrink-0 text-[#0d0d0d] text-[30px] whitespace-nowrap" data-node-id="4:35576">
-                Prototipos
-              </p>
+                {t("t1073")}</p>
             </div>
           </div>
           <div className="aspect-[2895/852] content-stretch flex gap-[15.121px] items-center relative shrink-0 w-full" data-node-id="4:35577">
@@ -1939,8 +1868,7 @@ export default function ArticleCustomizacaoCara() {
                         <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector} />
                       </div>
                       <p className="[word-break:break-word] font-['Roboto:Light'] font-light leading-[normal] relative shrink-0 text-[#010101] text-[11.31px] text-center whitespace-nowrap" data-node-id="I4:35586;1701:4398" style={{ fontVariationSettings: '"wdth" 100' }}>
-                        Usuário
-                      </p>
+                        {t("t1028")}</p>
                     </div>
                     <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="4:35587">
                       <div className="border-[#010101] border-b-[0.628px] border-solid content-stretch flex gap-[5.028px] h-[37.71px] items-center relative shrink-0 w-[206.776px]" data-node-id="4:35588" data-name="Input">
@@ -1948,13 +1876,11 @@ export default function ArticleCustomizacaoCara() {
                           <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector1} />
                         </div>
                         <p className="[word-break:break-word] font-['Roboto:Light'] font-light leading-[normal] relative shrink-0 text-[#010101] text-[11.31px] text-center whitespace-nowrap" data-node-id="I4:35588;1701:4401" style={{ fontVariationSettings: '"wdth" 100' }}>
-                          Senha
-                        </p>
+                          {t("t0064")}</p>
                       </div>
                       <div className="content-stretch flex h-[30.168px] items-center py-[10.056px] relative shrink-0 w-full" data-node-id="4:35589">
                         <p className="[word-break:break-word] font-['Roboto:SemiBold'] font-semibold leading-[normal] relative shrink-0 text-[#d5bdff] text-[7.542px] text-center whitespace-nowrap" data-node-id="4:35590" style={{ fontVariationSettings: '"wdth" 100' }}>
-                          Esqueci a senha
-                        </p>
+                          {t("t1029")}</p>
                       </div>
                     </div>
                   </div>
@@ -1962,15 +1888,13 @@ export default function ArticleCustomizacaoCara() {
                     <div className="bg-[#240679] content-stretch flex flex-col h-[37.71px] items-center justify-center p-[2.514px] relative shrink-0 w-[206.776px]" data-node-id="4:35592" data-name="Botoes">
                       <div className="content-stretch flex flex-[1_0_0] gap-[2.514px] items-center justify-center min-h-px p-[5.028px] relative rounded-[13px] w-full" data-node-id="I4:35592;1698:11849" data-name="fill">
                         <p className="[word-break:break-word] flex-[1_0_0] font-['Roboto:Medium'] font-medium leading-[normal] min-w-px relative text-[7.11px] text-center text-white" data-node-id="I4:35592;1698:11851" style={{ fontVariationSettings: '"wdth" 100' }}>
-                          Entrar
-                        </p>
+                          {t("t1030")}</p>
                       </div>
                     </div>
                     <div className="bg-[#3b3b3b] content-stretch flex flex-col h-[37.71px] items-center justify-center p-[2.514px] relative shrink-0 w-[206.776px]" data-node-id="4:35593" data-name="Botoes">
                       <div className="content-stretch flex flex-[1_0_0] gap-[2.514px] items-center justify-center min-h-px p-[5.028px] relative rounded-[13px] w-full" data-node-id="I4:35593;1699:4150" data-name="fill">
                         <p className="[word-break:break-word] flex-[1_0_0] font-['Roboto:Medium'] font-medium leading-[normal] min-w-px relative text-[7.11px] text-center text-white" data-node-id="I4:35593;1699:4152" style={{ fontVariationSettings: '"wdth" 100' }}>
-                          Logar com QR Code
-                        </p>
+                          {t("t1031")}</p>
                       </div>
                     </div>
                   </div>
@@ -2001,8 +1925,7 @@ export default function ArticleCustomizacaoCara() {
               <div className="bg-white content-stretch flex flex-[1_0_0] flex-col items-start min-h-px relative w-full z-[2]" data-node-id="4:35599" data-name="main">
                 <div className="content-stretch flex flex-col items-start justify-center p-[10.36px] relative shrink-0 w-full" data-node-id="4:35600" data-name="<title>">
                   <p className="[word-break:break-word] font-['Roboto:SemiBold'] font-semibold leading-[normal] relative shrink-0 text-[#3b3b3b] text-[11.656px] text-center whitespace-nowrap" data-node-id="4:35601" style={{ fontVariationSettings: '"wdth" 100' }}>
-                    Continuar de onde parou
-                  </p>
+                    {t("t1032")}</p>
                 </div>
                 <div className="content-stretch flex gap-[10.36px] items-center p-[10.36px] relative shrink-0 w-full" data-node-id="4:35602" data-name="row">
                   <div className="bg-white content-stretch flex flex-col h-[189.726px] items-end overflow-clip relative rounded-[5.18px] shadow-[0px_0.648px_1.943px_0px_rgba(0,0,0,0.1),0px_0.648px_1.295px_0px_rgba(0,0,0,0.06)] shrink-0 w-[123.031px]" data-node-id="4:35603" data-name="card">
@@ -2020,7 +1943,7 @@ export default function ArticleCustomizacaoCara() {
                     <div className="content-stretch flex flex-col gap-[6.475px] items-start justify-center px-[5.18px] py-[10.36px] relative shrink-0 w-full" data-node-id="I4:35603;1472:1317" data-name="card-title">
                       <div className="content-stretch flex items-center relative shrink-0 w-full" data-node-id="I4:35603;1486:2978" data-name="title">
                         <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px overflow-hidden relative text-[#3b3b3b] text-[11.66px] text-ellipsis whitespace-nowrap" data-node-id="I4:35603;1472:1319" style={{ fontVariationSettings: '"wdth" 100' }}>
-                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. `}</p>
+                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{t("t1033")}</p>
                         </div>
                       </div>
                       <div className="flex items-center justify-center relative shrink-0 w-full" data-node-id="I4:35603;1628:11004">
@@ -2030,7 +1953,7 @@ export default function ArticleCustomizacaoCara() {
                               <div className="flex items-center justify-center relative shrink-0" data-node-id="I4:35603;1642:15385">
                                 <div className="flex-none rotate-180">
                                   <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] relative text-[#3008a1] text-[6.48px] whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                    <p className="leading-none">{`65% Concluído `}</p>
+                                    <p className="leading-none">{t("t1034")}</p>
                                   </div>
                                 </div>
                               </div>
@@ -2062,7 +1985,7 @@ export default function ArticleCustomizacaoCara() {
                     <div className="content-stretch flex flex-col gap-[6.475px] items-start justify-center px-[5.18px] py-[10.36px] relative shrink-0 w-full" data-node-id="I4:35604;1472:1317" data-name="card-title">
                       <div className="content-stretch flex items-center relative shrink-0 w-full" data-node-id="I4:35604;1486:2978" data-name="title">
                         <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px overflow-hidden relative text-[#3b3b3b] text-[11.66px] text-ellipsis whitespace-nowrap" data-node-id="I4:35604;1472:1319" style={{ fontVariationSettings: '"wdth" 100' }}>
-                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. `}</p>
+                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{t("t1033")}</p>
                         </div>
                       </div>
                       <div className="flex items-center justify-center relative shrink-0 w-full" data-node-id="I4:35604;1628:11004">
@@ -2072,7 +1995,7 @@ export default function ArticleCustomizacaoCara() {
                               <div className="flex items-center justify-center relative shrink-0" data-node-id="I4:35604;1642:15385">
                                 <div className="flex-none rotate-180">
                                   <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] relative text-[#3008a1] text-[6.48px] whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                    <p className="leading-none">{`65% Concluído `}</p>
+                                    <p className="leading-none">{t("t1034")}</p>
                                   </div>
                                 </div>
                               </div>
@@ -2104,7 +2027,7 @@ export default function ArticleCustomizacaoCara() {
                     <div className="content-stretch flex flex-col gap-[6.475px] items-start justify-center px-[5.18px] py-[10.36px] relative shrink-0 w-full" data-node-id="I4:35605;1472:1317" data-name="card-title">
                       <div className="content-stretch flex items-center relative shrink-0 w-full" data-node-id="I4:35605;1486:2978" data-name="title">
                         <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px overflow-hidden relative text-[#3b3b3b] text-[11.66px] text-ellipsis whitespace-nowrap" data-node-id="I4:35605;1472:1319" style={{ fontVariationSettings: '"wdth" 100' }}>
-                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. `}</p>
+                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{t("t1033")}</p>
                         </div>
                       </div>
                       <div className="[word-break:break-word] content-stretch flex gap-[5.18px] items-start leading-[0] relative shrink-0 text-[#e6e6e6] text-center w-full whitespace-nowrap" data-node-id="I4:35605;1486:2979" data-name="tags">
@@ -2113,7 +2036,7 @@ export default function ArticleCustomizacaoCara() {
                             <p className="leading-none">{`\uF2B4`}</p>
                           </div>
                           <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0 text-[7.77px]" data-node-id="I4:35605;1486:2974;1486:2778" style={{ fontVariationSettings: '"wdth" 100' }}>
-                            <p className="leading-none">Síncrono</p>
+                            <p className="leading-none">{t("t1035")}</p>
                           </div>
                         </div>
                         <div className="bg-[#3d0aca] content-stretch flex flex-[1_0_0] gap-[5.18px] items-center justify-center min-w-px px-[7.77px] py-[2.59px] relative rounded-[10.36px]" data-node-id="I4:35605;1486:2980" data-name="tags">
@@ -2121,7 +2044,7 @@ export default function ArticleCustomizacaoCara() {
                             <p className="leading-none">{`\uF2B4`}</p>
                           </div>
                           <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0 text-[7.77px]" data-node-id="I4:35605;1486:2980;1486:2778" style={{ fontVariationSettings: '"wdth" 100' }}>
-                            <p className="leading-none">Síncrono</p>
+                            <p className="leading-none">{t("t1035")}</p>
                           </div>
                         </div>
                       </div>
@@ -2130,8 +2053,7 @@ export default function ArticleCustomizacaoCara() {
                           <div className="bg-[rgba(255,255,255,0)] relative shrink-0" data-node-id="I4:35605;1486:2987;288:237993" data-name="text">
                             <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start justify-center overflow-clip relative rounded-[inherit] size-full">
                               <p className="[word-break:break-word] font-['Roboto:Regular'] font-normal leading-[1.5] relative shrink-0 text-[#180450] text-[9.07px] whitespace-nowrap" data-node-id="I4:35605;1486:2987;288:237993;1:4738" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                Ver cursos
-                              </p>
+                                {t("t1036")}</p>
                             </div>
                           </div>
                         </div>
@@ -2139,8 +2061,7 @@ export default function ArticleCustomizacaoCara() {
                           <div className="bg-[rgba(255,255,255,0)] relative shrink-0" data-node-id="I4:35605;1486:2988;288:237185" data-name="text">
                             <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start justify-center overflow-clip relative rounded-[inherit] size-full">
                               <p className="[word-break:break-word] font-['Roboto:Regular'] font-normal leading-[1.5] relative shrink-0 text-[#cecece] text-[9.07px] whitespace-nowrap" data-node-id="I4:35605;1486:2988;288:237185;1:4738" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                Cursar
-                              </p>
+                                {t("t1037")}</p>
                             </div>
                           </div>
                         </div>
@@ -2152,7 +2073,7 @@ export default function ArticleCustomizacaoCara() {
                               <div className="flex items-center justify-center relative shrink-0" data-node-id="I4:35605;1642:15385">
                                 <div className="flex-none rotate-180">
                                   <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] relative text-[#3008a1] text-[6.48px] whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                    <p className="leading-none">{`65% Concluído `}</p>
+                                    <p className="leading-none">{t("t1034")}</p>
                                   </div>
                                 </div>
                               </div>
@@ -2187,7 +2108,7 @@ export default function ArticleCustomizacaoCara() {
                         <div className="flex flex-[1_0_0] flex-row items-center self-stretch" data-node-id="I4:35605;1635:7813">
                           <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] gap-[5.18px] h-full items-center justify-end leading-[0] min-w-px relative text-[#3b3b3b] text-[7.77px] text-center whitespace-nowrap" data-name="btn">
                             <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0" data-node-id="I4:35605;1635:7814" style={{ fontVariationSettings: '"wdth" 100' }}>
-                              <p className="leading-none">Iniciar</p>
+                              <p className="leading-none">{t("t1038")}</p>
                             </div>
                             <div className="flex flex-col font-['Font_Awesome_6_Pro:Solid'] justify-center not-italic relative shrink-0" data-node-id="I4:35605;1635:7815">
                               <p className="leading-none">{`\uF04B`}</p>
@@ -2200,8 +2121,7 @@ export default function ArticleCustomizacaoCara() {
                 </div>
                 <div className="content-stretch flex flex-col items-start justify-center p-[10.36px] relative shrink-0 w-full" data-node-id="4:35606" data-name="<title>">
                   <p className="[word-break:break-word] font-['Roboto:SemiBold'] font-semibold leading-[normal] relative shrink-0 text-[#3b3b3b] text-[11.656px] text-center whitespace-nowrap" data-node-id="4:35607" style={{ fontVariationSettings: '"wdth" 100' }}>
-                    Cursos em destaque
-                  </p>
+                    {t("t1039")}</p>
                 </div>
                 <div className="content-stretch flex flex-[1_0_0] gap-[10.36px] items-center min-h-px pb-[10.36px] pt-[5.18px] px-[10.36px] relative w-full" data-node-id="4:35608" data-name="row">
                   <div className="bg-white content-stretch flex flex-col h-[179.366px] items-end overflow-clip relative rounded-[5.18px] shadow-[0px_0.648px_1.943px_0px_rgba(0,0,0,0.1),0px_0.648px_1.295px_0px_rgba(0,0,0,0.06)] shrink-0 w-[123.031px]" data-node-id="4:35609" data-name="card">
@@ -2219,7 +2139,7 @@ export default function ArticleCustomizacaoCara() {
                     <div className="content-stretch flex flex-col gap-[6.475px] items-start justify-center px-[5.18px] py-[10.36px] relative shrink-0 w-full" data-node-id="I4:35609;1472:1317" data-name="card-title">
                       <div className="content-stretch flex items-center relative shrink-0 w-full" data-node-id="I4:35609;1486:2978" data-name="title">
                         <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px overflow-hidden relative text-[#3b3b3b] text-[11.66px] text-ellipsis whitespace-nowrap" data-node-id="I4:35609;1472:1319" style={{ fontVariationSettings: '"wdth" 100' }}>
-                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. `}</p>
+                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{t("t1033")}</p>
                         </div>
                       </div>
                       <div className="content-stretch flex gap-[5.18px] items-center relative shrink-0 w-full" data-node-id="I4:35609;1629:3752" data-name="tags">
@@ -2242,7 +2162,7 @@ export default function ArticleCustomizacaoCara() {
                         <div className="flex flex-[1_0_0] flex-row items-center self-stretch" data-node-id="I4:35609;1635:7813">
                           <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] gap-[5.18px] h-full items-center justify-end leading-[0] min-w-px relative text-[#3b3b3b] text-[7.77px] text-center whitespace-nowrap" data-name="btn">
                             <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0" data-node-id="I4:35609;1635:7814" style={{ fontVariationSettings: '"wdth" 100' }}>
-                              <p className="leading-none">Iniciar</p>
+                              <p className="leading-none">{t("t1038")}</p>
                             </div>
                             <div className="flex flex-col font-['Font_Awesome_6_Pro:Solid'] justify-center not-italic relative shrink-0" data-node-id="I4:35609;1635:7815">
                               <p className="leading-none">{`\uF04B`}</p>
@@ -2267,7 +2187,7 @@ export default function ArticleCustomizacaoCara() {
                     <div className="content-stretch flex flex-col gap-[6.475px] items-start justify-center px-[5.18px] py-[10.36px] relative shrink-0 w-full" data-node-id="I4:35610;1472:1317" data-name="card-title">
                       <div className="content-stretch flex items-center relative shrink-0 w-full" data-node-id="I4:35610;1486:2978" data-name="title">
                         <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px overflow-hidden relative text-[#3b3b3b] text-[11.66px] text-ellipsis whitespace-nowrap" data-node-id="I4:35610;1472:1319" style={{ fontVariationSettings: '"wdth" 100' }}>
-                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. `}</p>
+                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{t("t1033")}</p>
                         </div>
                       </div>
                       <div className="content-stretch flex gap-[5.18px] items-center relative shrink-0 w-full" data-node-id="I4:35610;1629:3752" data-name="tags">
@@ -2290,7 +2210,7 @@ export default function ArticleCustomizacaoCara() {
                         <div className="flex flex-[1_0_0] flex-row items-center self-stretch" data-node-id="I4:35610;1635:7813">
                           <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] gap-[5.18px] h-full items-center justify-end leading-[0] min-w-px relative text-[#3b3b3b] text-[7.77px] text-center whitespace-nowrap" data-name="btn">
                             <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0" data-node-id="I4:35610;1635:7814" style={{ fontVariationSettings: '"wdth" 100' }}>
-                              <p className="leading-none">Iniciar</p>
+                              <p className="leading-none">{t("t1038")}</p>
                             </div>
                             <div className="flex flex-col font-['Font_Awesome_6_Pro:Solid'] justify-center not-italic relative shrink-0" data-node-id="I4:35610;1635:7815">
                               <p className="leading-none">{`\uF04B`}</p>
@@ -2315,7 +2235,7 @@ export default function ArticleCustomizacaoCara() {
                     <div className="content-stretch flex flex-col gap-[6.475px] items-start justify-center px-[5.18px] py-[10.36px] relative shrink-0 w-full" data-node-id="I4:35611;1472:1317" data-name="card-title">
                       <div className="content-stretch flex items-center relative shrink-0 w-full" data-node-id="I4:35611;1486:2978" data-name="title">
                         <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px overflow-hidden relative text-[#3b3b3b] text-[11.66px] text-ellipsis whitespace-nowrap" data-node-id="I4:35611;1472:1319" style={{ fontVariationSettings: '"wdth" 100' }}>
-                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. `}</p>
+                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{t("t1033")}</p>
                         </div>
                       </div>
                       <div className="[word-break:break-word] content-stretch flex gap-[5.18px] items-start leading-[0] relative shrink-0 text-[#e6e6e6] text-center w-full whitespace-nowrap" data-node-id="I4:35611;1486:2979" data-name="tags">
@@ -2324,7 +2244,7 @@ export default function ArticleCustomizacaoCara() {
                             <p className="leading-none">{`\uF2B4`}</p>
                           </div>
                           <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0 text-[7.77px]" data-node-id="I4:35611;1486:2974;1486:2778" style={{ fontVariationSettings: '"wdth" 100' }}>
-                            <p className="leading-none">Síncrono</p>
+                            <p className="leading-none">{t("t1035")}</p>
                           </div>
                         </div>
                         <div className="bg-[#3d0aca] content-stretch flex flex-[1_0_0] gap-[5.18px] items-center justify-center min-w-px px-[7.77px] py-[2.59px] relative rounded-[10.36px]" data-node-id="I4:35611;1486:2980" data-name="tags">
@@ -2332,7 +2252,7 @@ export default function ArticleCustomizacaoCara() {
                             <p className="leading-none">{`\uF2B4`}</p>
                           </div>
                           <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0 text-[7.77px]" data-node-id="I4:35611;1486:2980;1486:2778" style={{ fontVariationSettings: '"wdth" 100' }}>
-                            <p className="leading-none">Síncrono</p>
+                            <p className="leading-none">{t("t1035")}</p>
                           </div>
                         </div>
                       </div>
@@ -2341,8 +2261,7 @@ export default function ArticleCustomizacaoCara() {
                           <div className="bg-[rgba(255,255,255,0)] relative shrink-0" data-node-id="I4:35611;1486:2987;288:237993" data-name="text">
                             <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start justify-center overflow-clip relative rounded-[inherit] size-full">
                               <p className="[word-break:break-word] font-['Roboto:Regular'] font-normal leading-[1.5] relative shrink-0 text-[#180450] text-[9.07px] whitespace-nowrap" data-node-id="I4:35611;1486:2987;288:237993;1:4738" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                Ver cursos
-                              </p>
+                                {t("t1036")}</p>
                             </div>
                           </div>
                         </div>
@@ -2350,8 +2269,7 @@ export default function ArticleCustomizacaoCara() {
                           <div className="bg-[rgba(255,255,255,0)] relative shrink-0" data-node-id="I4:35611;1486:2988;288:237185" data-name="text">
                             <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start justify-center overflow-clip relative rounded-[inherit] size-full">
                               <p className="[word-break:break-word] font-['Roboto:Regular'] font-normal leading-[1.5] relative shrink-0 text-[#cecece] text-[9.07px] whitespace-nowrap" data-node-id="I4:35611;1486:2988;288:237185;1:4738" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                Cursar
-                              </p>
+                                {t("t1037")}</p>
                             </div>
                           </div>
                         </div>
@@ -2363,7 +2281,7 @@ export default function ArticleCustomizacaoCara() {
                               <div className="flex items-center justify-center relative shrink-0" data-node-id="I4:35611;1642:15385">
                                 <div className="flex-none rotate-180">
                                   <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] relative text-[#3008a1] text-[6.48px] whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                    <p className="leading-none">{`65% Concluído `}</p>
+                                    <p className="leading-none">{t("t1034")}</p>
                                   </div>
                                 </div>
                               </div>
@@ -2398,7 +2316,7 @@ export default function ArticleCustomizacaoCara() {
                         <div className="flex flex-[1_0_0] flex-row items-center self-stretch" data-node-id="I4:35611;1635:7813">
                           <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] gap-[5.18px] h-full items-center justify-end leading-[0] min-w-px relative text-[#3b3b3b] text-[7.77px] text-center whitespace-nowrap" data-name="btn">
                             <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0" data-node-id="I4:35611;1635:7814" style={{ fontVariationSettings: '"wdth" 100' }}>
-                              <p className="leading-none">Iniciar</p>
+                              <p className="leading-none">{t("t1038")}</p>
                             </div>
                             <div className="flex flex-col font-['Font_Awesome_6_Pro:Solid'] justify-center not-italic relative shrink-0" data-node-id="I4:35611;1635:7815">
                               <p className="leading-none">{`\uF04B`}</p>
@@ -2415,32 +2333,28 @@ export default function ArticleCustomizacaoCara() {
                   <div className="[word-break:break-word] bg-[#e6e6e6] content-stretch flex flex-[1_0_0] flex-col gap-[2.59px] items-center justify-center leading-[normal] min-h-px p-[5.18px] relative rounded-[13px] text-[#3008a1] w-full" data-node-id="I4:35612;1659:8356;1659:8337" data-name="fill">
                     <p className="font-['Font_Awesome_6_Pro:Regular'] not-italic relative shrink-0 text-[11.66px] whitespace-nowrap" data-node-id="I4:35612;1659:8356;1659:8338">{`\uF015`}</p>
                     <p className="font-['Roboto:Regular'] font-normal min-w-full relative shrink-0 text-[7.77px] text-center w-[min-content]" data-node-id="I4:35612;1659:8356;1659:8339" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Início
-                    </p>
+                      {t("t0554")}</p>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-[38.852px] items-center justify-center min-w-px p-[2.59px] relative" data-node-id="I4:35612;1659:8360" data-name="Botoes">
                   <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[2.59px] items-center justify-center leading-[normal] min-h-px p-[5.18px] relative rounded-[13px] text-[#3008a1] w-full" data-node-id="I4:35612;1659:8360;1659:8329" data-name="fill">
                     <p className="font-['Font_Awesome_6_Pro:Regular'] not-italic relative shrink-0 text-[11.66px] whitespace-nowrap" data-node-id="I4:35612;1659:8360;1659:8330">{`\uF5DA`}</p>
                     <p className="font-['Roboto:Regular'] font-normal min-w-full relative shrink-0 text-[7.77px] text-center w-[min-content]" data-node-id="I4:35612;1659:8360;1659:8331" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Meus Cursos
-                    </p>
+                      {t("t1040")}</p>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-[38.852px] items-center justify-center min-w-px p-[2.59px] relative" data-node-id="I4:35612;1659:8364" data-name="Botoes">
                   <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[2.59px] items-center justify-center leading-[normal] min-h-px p-[5.18px] relative rounded-[13px] text-[#3008a1] w-full" data-node-id="I4:35612;1659:8364;1659:8329" data-name="fill">
                     <p className="font-['Font_Awesome_6_Pro:Regular'] not-italic relative shrink-0 text-[11.66px] whitespace-nowrap" data-node-id="I4:35612;1659:8364;1659:8330">{`\uF002`}</p>
                     <p className="font-['Roboto:Regular'] font-normal min-w-full relative shrink-0 text-[7.77px] text-center w-[min-content]" data-node-id="I4:35612;1659:8364;1659:8331" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Busca
-                    </p>
+                      {t("t1041")}</p>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-[38.852px] items-center justify-center min-w-px p-[2.59px] relative" data-node-id="I4:35612;1659:8368" data-name="Botoes">
                   <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[2.59px] items-center justify-center leading-[normal] min-h-px p-[5.18px] relative rounded-[13px] text-[#3008a1] w-full" data-node-id="I4:35612;1659:8368;1659:8329" data-name="fill">
                     <p className="font-['Font_Awesome_6_Pro:Regular'] not-italic relative shrink-0 text-[11.66px] whitespace-nowrap" data-node-id="I4:35612;1659:8368;1659:8330">{`\uF0C9`}</p>
                     <p className="font-['Roboto:Regular'] font-normal min-w-full relative shrink-0 text-[7.77px] text-center w-[min-content]" data-node-id="I4:35612;1659:8368;1659:8331" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Mais
-                    </p>
+                      {t("t1042")}</p>
                   </div>
                 </div>
               </div>
@@ -2454,8 +2368,7 @@ export default function ArticleCustomizacaoCara() {
                 </div>
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-full items-start justify-center min-w-px relative" data-node-id="I4:35614;1699:4239" data-name="title">
                   <p className="[word-break:break-word] font-['Roboto:Regular'] font-normal leading-[normal] relative shrink-0 text-[#180450] text-[10.36px] text-center whitespace-nowrap" data-node-id="I4:35614;1699:4249" style={{ fontVariationSettings: '"wdth" 100' }}>
-                    Meus Cursos
-                  </p>
+                    {t("t1040")}</p>
                 </div>
                 <div className="content-stretch flex flex-col items-center justify-center p-[2.59px] relative shrink-0 size-[38.852px]" data-node-id="I4:35614;1699:4181" data-name="Botoes">
                   <div className="content-stretch flex flex-[1_0_0] gap-[2.59px] items-center justify-center min-h-px p-[5.18px] relative rounded-[13px] w-full" data-node-id="I4:35614;1699:4181;1699:4173" data-name="fill">
@@ -2467,17 +2380,17 @@ export default function ArticleCustomizacaoCara() {
                 <div className="content-stretch flex gap-[5.18px] items-center px-[10.36px] py-[3.885px] relative shrink-0 w-full" data-node-id="4:35616" data-name="<title>">
                   <div className="bg-[#3008a1] content-stretch flex flex-[1_0_0] h-[26.62px] items-center justify-center min-w-[63.00518035888672px] px-[5.18px] relative rounded-[20.721px]" data-node-id="4:35617" data-name="btn">
                     <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px relative text-[9.065px] text-center text-white" data-node-id="4:35618" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Todos</p>
+                      <p className="leading-none">{t("t0847")}</p>
                     </div>
                   </div>
                   <div className="bg-[#ebe6f9] content-stretch flex flex-[1_0_0] h-[26.62px] items-center justify-center min-w-[63.00518035888672px] px-[5.18px] relative rounded-[20.721px]" data-node-id="4:35619" data-name="btn">
                     <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px relative text-[#3008a1] text-[9.065px] text-center" data-node-id="4:35620" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Em andamento</p>
+                      <p className="leading-none">{t("t1043")}</p>
                     </div>
                   </div>
                   <div className="bg-[#ebe6f9] content-stretch flex flex-[1_0_0] h-[26.62px] items-center justify-center min-w-[63.00518035888672px] px-[5.18px] relative rounded-[20.721px]" data-node-id="4:35621" data-name="btn">
                     <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px relative text-[#3008a1] text-[9.065px] text-center" data-node-id="4:35622" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">{`Concluídos `}</p>
+                      <p className="leading-none">{t("t1044")}</p>
                     </div>
                   </div>
                 </div>
@@ -2497,7 +2410,7 @@ export default function ArticleCustomizacaoCara() {
                     <div className="content-stretch flex flex-col gap-[6.475px] items-start justify-center px-[5.18px] py-[10.36px] relative shrink-0 w-full" data-node-id="I4:35624;1472:1317" data-name="card-title">
                       <div className="content-stretch flex items-center relative shrink-0 w-full" data-node-id="I4:35624;1486:2978" data-name="title">
                         <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px overflow-hidden relative text-[#3b3b3b] text-[11.66px] text-ellipsis whitespace-nowrap" data-node-id="I4:35624;1472:1319" style={{ fontVariationSettings: '"wdth" 100' }}>
-                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. `}</p>
+                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{t("t1033")}</p>
                         </div>
                       </div>
                       <div className="flex items-center justify-center relative shrink-0 w-full" data-node-id="I4:35624;1628:11004">
@@ -2507,7 +2420,7 @@ export default function ArticleCustomizacaoCara() {
                               <div className="flex items-center justify-center relative shrink-0" data-node-id="I4:35624;1642:15385">
                                 <div className="flex-none rotate-180">
                                   <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] relative text-[#3008a1] text-[6.48px] whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                    <p className="leading-none">{`65% Concluído `}</p>
+                                    <p className="leading-none">{t("t1034")}</p>
                                   </div>
                                 </div>
                               </div>
@@ -2539,7 +2452,7 @@ export default function ArticleCustomizacaoCara() {
                     <div className="content-stretch flex flex-col gap-[6.475px] items-start justify-center px-[5.18px] py-[10.36px] relative shrink-0 w-full" data-node-id="I4:35625;1472:1317" data-name="card-title">
                       <div className="content-stretch flex items-center relative shrink-0 w-full" data-node-id="I4:35625;1486:2978" data-name="title">
                         <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px overflow-hidden relative text-[#3b3b3b] text-[11.66px] text-ellipsis whitespace-nowrap" data-node-id="I4:35625;1472:1319" style={{ fontVariationSettings: '"wdth" 100' }}>
-                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. `}</p>
+                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{t("t1033")}</p>
                         </div>
                       </div>
                       <div className="flex items-center justify-center relative shrink-0 w-full" data-node-id="I4:35625;1628:11004">
@@ -2549,7 +2462,7 @@ export default function ArticleCustomizacaoCara() {
                               <div className="flex items-center justify-center relative shrink-0" data-node-id="I4:35625;1642:15385">
                                 <div className="flex-none rotate-180">
                                   <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] relative text-[#3008a1] text-[6.48px] whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                    <p className="leading-none">{`65% Concluído `}</p>
+                                    <p className="leading-none">{t("t1034")}</p>
                                   </div>
                                 </div>
                               </div>
@@ -2573,32 +2486,28 @@ export default function ArticleCustomizacaoCara() {
                   <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[2.59px] items-center justify-center leading-[normal] min-h-px p-[5.18px] relative rounded-[13px] text-[#3008a1] w-full" data-node-id="I4:35626;1659:11115;1659:8329" data-name="fill">
                     <p className="font-['Font_Awesome_6_Pro:Regular'] not-italic relative shrink-0 text-[11.66px] whitespace-nowrap" data-node-id="I4:35626;1659:11115;1659:8330">{`\uF015`}</p>
                     <p className="font-['Roboto:Regular'] font-normal min-w-full relative shrink-0 text-[7.77px] text-center w-[min-content]" data-node-id="I4:35626;1659:11115;1659:8331" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Início
-                    </p>
+                      {t("t0554")}</p>
                   </div>
                 </div>
                 <div className="border-[#3008a1] border-solid border-t-[0.648px] content-stretch flex flex-[1_0_0] flex-col h-[38.852px] items-center justify-center min-w-px p-[2.59px] relative" data-node-id="I4:35626;1659:11116" data-name="Botoes">
                   <div className="[word-break:break-word] bg-[#e6e6e6] content-stretch flex flex-[1_0_0] flex-col gap-[2.59px] items-center justify-center leading-[normal] min-h-px p-[5.18px] relative rounded-[13px] text-[#3008a1] w-full" data-node-id="I4:35626;1659:11116;1659:8337" data-name="fill">
                     <p className="font-['Font_Awesome_6_Pro:Regular'] not-italic relative shrink-0 text-[11.66px] whitespace-nowrap" data-node-id="I4:35626;1659:11116;1659:8338">{`\uF5DA`}</p>
                     <p className="font-['Roboto:Regular'] font-normal min-w-full relative shrink-0 text-[7.77px] text-center w-[min-content]" data-node-id="I4:35626;1659:11116;1659:8339" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Meus Cursos
-                    </p>
+                      {t("t1040")}</p>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-[38.852px] items-center justify-center min-w-px p-[2.59px] relative" data-node-id="I4:35626;1659:11117" data-name="Botoes">
                   <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[2.59px] items-center justify-center leading-[normal] min-h-px p-[5.18px] relative rounded-[13px] text-[#3008a1] w-full" data-node-id="I4:35626;1659:11117;1659:8329" data-name="fill">
                     <p className="font-['Font_Awesome_6_Pro:Regular'] not-italic relative shrink-0 text-[11.66px] whitespace-nowrap" data-node-id="I4:35626;1659:11117;1659:8330">{`\uF002`}</p>
                     <p className="font-['Roboto:Regular'] font-normal min-w-full relative shrink-0 text-[7.77px] text-center w-[min-content]" data-node-id="I4:35626;1659:11117;1659:8331" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Busca
-                    </p>
+                      {t("t1041")}</p>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-[38.852px] items-center justify-center min-w-px p-[2.59px] relative" data-node-id="I4:35626;1659:11118" data-name="Botoes">
                   <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[2.59px] items-center justify-center leading-[normal] min-h-px p-[5.18px] relative rounded-[13px] text-[#3008a1] w-full" data-node-id="I4:35626;1659:11118;1659:8329" data-name="fill">
                     <p className="font-['Font_Awesome_6_Pro:Regular'] not-italic relative shrink-0 text-[11.66px] whitespace-nowrap" data-node-id="I4:35626;1659:11118;1659:8330">{`\uF0C9`}</p>
                     <p className="font-['Roboto:Regular'] font-normal min-w-full relative shrink-0 text-[7.77px] text-center w-[min-content]" data-node-id="I4:35626;1659:11118;1659:8331" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Mais
-                    </p>
+                      {t("t1042")}</p>
                   </div>
                 </div>
               </div>
@@ -2612,8 +2521,7 @@ export default function ArticleCustomizacaoCara() {
                 </div>
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-full items-start justify-center min-w-px relative" data-node-id="I4:35628;1699:4239" data-name="title">
                   <p className="[word-break:break-word] font-['Roboto:Regular'] font-normal leading-[normal] relative shrink-0 text-[#180450] text-[10.36px] text-center whitespace-nowrap" data-node-id="I4:35628;1699:4249" style={{ fontVariationSettings: '"wdth" 100' }}>
-                    Busca
-                  </p>
+                    {t("t1041")}</p>
                 </div>
                 <div className="content-stretch flex flex-col items-center justify-center p-[2.59px] relative shrink-0 size-[38.852px]" data-node-id="I4:35628;1699:4181" data-name="Botoes">
                   <div className="content-stretch flex flex-[1_0_0] gap-[2.59px] items-center justify-center min-h-px p-[5.18px] relative rounded-[13px] w-full" data-node-id="I4:35628;1699:4181;1699:4173" data-name="fill">
@@ -2624,8 +2532,7 @@ export default function ArticleCustomizacaoCara() {
               <div className="bg-white content-stretch flex flex-[1_0_0] flex-col items-start min-h-px relative w-full z-[2]" data-node-id="4:35629" data-name="main">
                 <div className="content-stretch flex flex-col items-start justify-center p-[10.36px] relative shrink-0 w-full" data-node-id="4:35630" data-name="<title>">
                   <p className="[word-break:break-word] font-['Roboto:SemiBold'] font-semibold leading-[normal] relative shrink-0 text-[#3b3b3b] text-[11.656px] text-center whitespace-nowrap" data-node-id="4:35631" style={{ fontVariationSettings: '"wdth" 100' }}>
-                    Categorias
-                  </p>
+                    {t("t1045")}</p>
                 </div>
                 <div className="[word-break:break-word] content-start flex flex-wrap gap-[5.180239677429199px_5.18px] items-start leading-[0] pb-[10.36px] px-[10.36px] relative shrink-0 text-[#3008a1] text-center w-full whitespace-nowrap" data-node-id="4:35632" data-name="nav-itens">
                   <div className="bg-[#ebe6f9] content-stretch flex gap-[6.475px] h-[26.62px] items-center justify-center px-[7.77px] relative rounded-[20.721px] shrink-0" data-node-id="4:35633" data-name="btn">
@@ -2633,7 +2540,7 @@ export default function ArticleCustomizacaoCara() {
                       <p className="leading-none">{`\uF121`}</p>
                     </div>
                     <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0 text-[9.065px]" data-node-id="4:35635" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Desenvolvimento</p>
+                      <p className="leading-none">{t("t1046")}</p>
                     </div>
                   </div>
                   <div className="bg-[#ebe6f9] content-stretch flex gap-[6.475px] h-[26.62px] items-center justify-center px-[7.77px] relative rounded-[20.721px] shrink-0" data-node-id="4:35636" data-name="btn">
@@ -2641,7 +2548,7 @@ export default function ArticleCustomizacaoCara() {
                       <p className="leading-none">{`\uF0B1`}</p>
                     </div>
                     <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0 text-[9.065px]" data-node-id="4:35638" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Negócios</p>
+                      <p className="leading-none">{t("t1047")}</p>
                     </div>
                   </div>
                   <div className="bg-[#ebe6f9] content-stretch flex gap-[6.475px] h-[26.62px] items-center justify-center px-[7.77px] relative rounded-[20.721px] shrink-0" data-node-id="4:35639" data-name="btn">
@@ -2649,7 +2556,7 @@ export default function ArticleCustomizacaoCara() {
                       <p className="leading-none">{`\uF51E`}</p>
                     </div>
                     <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0 text-[9.065px]" data-node-id="4:35641" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Finanças e contabilidade</p>
+                      <p className="leading-none">{t("t1048")}</p>
                     </div>
                   </div>
                   <div className="bg-[#ebe6f9] content-stretch flex gap-[6.475px] h-[26.62px] items-center justify-center px-[7.77px] relative rounded-[20.721px] shrink-0" data-node-id="4:35642" data-name="btn">
@@ -2657,7 +2564,7 @@ export default function ArticleCustomizacaoCara() {
                       <p className="leading-none">{`\uF2DB`}</p>
                     </div>
                     <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0 text-[9.065px]" data-node-id="4:35644" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">TI e software</p>
+                      <p className="leading-none">{t("t1049")}</p>
                     </div>
                   </div>
                   <div className="bg-[#ebe6f9] content-stretch flex gap-[6.475px] h-[26.62px] items-center justify-center px-[7.77px] relative rounded-[20.721px] shrink-0" data-node-id="4:35645" data-name="btn">
@@ -2665,7 +2572,7 @@ export default function ArticleCustomizacaoCara() {
                       <p className="leading-none">{`\uF11C`}</p>
                     </div>
                     <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0 text-[9.065px]" data-node-id="4:35647" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Produtividade</p>
+                      <p className="leading-none">{t("t1050")}</p>
                     </div>
                   </div>
                   <div className="bg-[#ebe6f9] content-stretch flex gap-[6.475px] h-[26.62px] items-center justify-center px-[7.77px] relative rounded-[20.721px] shrink-0" data-node-id="4:35648" data-name="btn">
@@ -2673,7 +2580,7 @@ export default function ArticleCustomizacaoCara() {
                       <p className="leading-none">{`\uF53F`}</p>
                     </div>
                     <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0 text-[9.065px]" data-node-id="4:35650" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Design</p>
+                      <p className="leading-none">{t("t1051")}</p>
                     </div>
                   </div>
                   <div className="bg-[#ebe6f9] content-stretch flex gap-[6.475px] h-[26.62px] items-center justify-center px-[7.77px] relative rounded-[20.721px] shrink-0" data-node-id="4:35651" data-name="btn">
@@ -2681,7 +2588,7 @@ export default function ArticleCustomizacaoCara() {
                       <p className="leading-none">{`\uF501`}</p>
                     </div>
                     <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0 text-[9.065px]" data-node-id="4:35653" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Design</p>
+                      <p className="leading-none">{t("t1051")}</p>
                     </div>
                   </div>
                   <div className="bg-[#ebe6f9] content-stretch flex gap-[6.475px] h-[26.62px] items-center justify-center px-[7.77px] relative rounded-[20.721px] shrink-0" data-node-id="4:35654" data-name="btn">
@@ -2689,7 +2596,7 @@ export default function ArticleCustomizacaoCara() {
                       <p className="leading-none">{`\uF0A1`}</p>
                     </div>
                     <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0 text-[9.065px]" data-node-id="4:35656" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Marketing</p>
+                      <p className="leading-none">{t("t1052")}</p>
                     </div>
                   </div>
                   <div className="bg-[#ebe6f9] content-stretch flex gap-[6.475px] h-[26.62px] items-center justify-center px-[7.77px] relative rounded-[20.721px] shrink-0" data-node-id="4:35657" data-name="btn">
@@ -2697,7 +2604,7 @@ export default function ArticleCustomizacaoCara() {
                       <p className="leading-none">{`\uF030`}</p>
                     </div>
                     <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0 text-[9.065px]" data-node-id="4:35659" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Fotografia e vídeo</p>
+                      <p className="leading-none">{t("t1053")}</p>
                     </div>
                   </div>
                   <div className="bg-[#ebe6f9] content-stretch flex gap-[6.475px] h-[26.62px] items-center justify-center px-[7.77px] relative rounded-[20.721px] shrink-0" data-node-id="4:35660" data-name="btn">
@@ -2705,7 +2612,7 @@ export default function ArticleCustomizacaoCara() {
                       <p className="leading-none">{`\uF44B`}</p>
                     </div>
                     <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0 text-[9.065px]" data-node-id="4:35662" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Saúde e fitness</p>
+                      <p className="leading-none">{t("t1054")}</p>
                     </div>
                   </div>
                   <div className="bg-[#ebe6f9] content-stretch flex gap-[6.475px] h-[26.62px] items-center justify-center px-[7.77px] relative rounded-[20.721px] shrink-0" data-node-id="4:35663" data-name="btn">
@@ -2713,52 +2620,50 @@ export default function ArticleCustomizacaoCara() {
                       <p className="leading-none">{`\uF001`}</p>
                     </div>
                     <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0 text-[9.065px]" data-node-id="4:35665" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Música</p>
+                      <p className="leading-none">{t("t1055")}</p>
                     </div>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-col items-start justify-center p-[10.36px] relative shrink-0 w-full" data-node-id="4:35666" data-name="<title>">
                   <p className="[word-break:break-word] font-['Roboto:SemiBold'] font-semibold leading-[normal] relative shrink-0 text-[#3b3b3b] text-[11.656px] text-center whitespace-nowrap" data-node-id="4:35667" style={{ fontVariationSettings: '"wdth" 100' }}>
-                    Tipos
-                  </p>
+                    {t("t1056")}</p>
                 </div>
                 <div className="content-start flex flex-[1_0_0] flex-wrap gap-[5.180239677429199px_5.18px] items-start min-h-px pb-[10.36px] px-[10.36px] relative w-full" data-node-id="4:35668" data-name="nav-itens">
                   <div className="bg-[#ebe6f9] content-stretch flex h-[26.62px] items-center justify-center px-[5.18px] relative rounded-[9.065px] shrink-0" data-node-id="4:35669" data-name="btn">
                     <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[#3008a1] text-[9.065px] text-center whitespace-nowrap" data-node-id="4:35670" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Presencial</p>
+                      <p className="leading-none">{t("t1057")}</p>
                     </div>
                   </div>
                   <div className="bg-[#ebe6f9] content-stretch flex h-[26.62px] items-center justify-center px-[5.18px] relative rounded-[9.065px] shrink-0" data-node-id="4:35671" data-name="btn">
                     <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[#3008a1] text-[9.065px] text-center whitespace-nowrap" data-node-id="4:35672" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">À distância</p>
+                      <p className="leading-none">{t("t1058")}</p>
                     </div>
                   </div>
                   <div className="bg-[#ebe6f9] content-stretch flex h-[26.62px] items-center justify-center px-[5.18px] relative rounded-[9.065px] shrink-0" data-node-id="4:35673" data-name="btn">
                     <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[#3008a1] text-[9.065px] text-center whitespace-nowrap" data-node-id="4:35674" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Blended</p>
+                      <p className="leading-none">{t("t1059")}</p>
                     </div>
                   </div>
                   <div className="bg-[#ebe6f9] content-stretch flex h-[26.62px] items-center justify-center px-[5.18px] relative rounded-[9.065px] shrink-0" data-node-id="4:35675" data-name="btn">
                     <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[#3008a1] text-[9.065px] text-center whitespace-nowrap" data-node-id="4:35676" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Modular</p>
+                      <p className="leading-none">{t("t1060")}</p>
                     </div>
                   </div>
                   <div className="bg-[#ebe6f9] content-stretch flex h-[26.62px] items-center justify-center px-[5.18px] relative rounded-[9.065px] shrink-0" data-node-id="4:35677" data-name="btn">
                     <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[#3008a1] text-[9.065px] text-center whitespace-nowrap" data-node-id="4:35678" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Síncrono</p>
+                      <p className="leading-none">{t("t1035")}</p>
                     </div>
                   </div>
                   <div className="bg-[#ebe6f9] content-stretch flex h-[26.62px] items-center justify-center px-[5.18px] relative rounded-[9.065px] shrink-0" data-node-id="4:35679" data-name="btn">
                     <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[#3008a1] text-[9.065px] text-center whitespace-nowrap" data-node-id="4:35680" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Webconferencia</p>
+                      <p className="leading-none">{t("t1061")}</p>
                     </div>
                   </div>
                 </div>
                 <div className="bg-[#3008a1] content-stretch flex items-start px-[10.36px] py-[15.541px] relative shrink-0 w-full" data-node-id="4:35681">
                   <div className="bg-white border-b-[0.648px] border-solid border-white content-stretch flex h-[38.852px] items-center justify-between px-[10.36px] relative rounded-[16px] shrink-0 w-[233.758px]" data-node-id="4:35682" data-name="Input">
                     <p className="[word-break:break-word] font-['Roboto:Light'] font-light leading-[normal] relative shrink-0 text-[#3008a1] text-[11.66px] text-center whitespace-nowrap" data-node-id="I4:35682;1701:4417" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      O que você está buscando?
-                    </p>
+                      {t("t1062")}</p>
                     <div className="relative shrink-0 size-[11.656px]" data-node-id="I4:35682;1701:4419" data-name="">
                       <img alt="" className="absolute block inset-0 max-w-none size-full" src={img} />
                     </div>
@@ -2770,32 +2675,28 @@ export default function ArticleCustomizacaoCara() {
                   <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[2.59px] items-center justify-center leading-[normal] min-h-px p-[5.18px] relative rounded-[13px] text-[#3008a1] w-full" data-node-id="I4:35683;1659:11303;1659:8329" data-name="fill">
                     <p className="font-['Font_Awesome_6_Pro:Regular'] not-italic relative shrink-0 text-[11.66px] whitespace-nowrap" data-node-id="I4:35683;1659:11303;1659:8330">{`\uF015`}</p>
                     <p className="font-['Roboto:Regular'] font-normal min-w-full relative shrink-0 text-[7.77px] text-center w-[min-content]" data-node-id="I4:35683;1659:11303;1659:8331" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Início
-                    </p>
+                      {t("t0554")}</p>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-[38.852px] items-center justify-center min-w-px p-[2.59px] relative" data-node-id="I4:35683;1659:11304" data-name="Botoes">
                   <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[2.59px] items-center justify-center leading-[normal] min-h-px p-[5.18px] relative rounded-[13px] text-[#3008a1] w-full" data-node-id="I4:35683;1659:11304;1659:8329" data-name="fill">
                     <p className="font-['Font_Awesome_6_Pro:Regular'] not-italic relative shrink-0 text-[11.66px] whitespace-nowrap" data-node-id="I4:35683;1659:11304;1659:8330">{`\uF5DA`}</p>
                     <p className="font-['Roboto:Regular'] font-normal min-w-full relative shrink-0 text-[7.77px] text-center w-[min-content]" data-node-id="I4:35683;1659:11304;1659:8331" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Meus Cursos
-                    </p>
+                      {t("t1040")}</p>
                   </div>
                 </div>
                 <div className="border-[#3008a1] border-solid border-t-[0.648px] content-stretch flex flex-[1_0_0] flex-col h-[38.852px] items-center justify-center min-w-px p-[2.59px] relative" data-node-id="I4:35683;1659:11305" data-name="Botoes">
                   <div className="[word-break:break-word] bg-[#e6e6e6] content-stretch flex flex-[1_0_0] flex-col gap-[2.59px] items-center justify-center leading-[normal] min-h-px p-[5.18px] relative rounded-[13px] text-[#3008a1] w-full" data-node-id="I4:35683;1659:11305;1659:8337" data-name="fill">
                     <p className="font-['Font_Awesome_6_Pro:Regular'] not-italic relative shrink-0 text-[11.66px] whitespace-nowrap" data-node-id="I4:35683;1659:11305;1659:8338">{`\uF002`}</p>
                     <p className="font-['Roboto:Regular'] font-normal min-w-full relative shrink-0 text-[7.77px] text-center w-[min-content]" data-node-id="I4:35683;1659:11305;1659:8339" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Busca
-                    </p>
+                      {t("t1041")}</p>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-[38.852px] items-center justify-center min-w-px p-[2.59px] relative" data-node-id="I4:35683;1659:11306" data-name="Botoes">
                   <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[2.59px] items-center justify-center leading-[normal] min-h-px p-[5.18px] relative rounded-[13px] text-[#3008a1] w-full" data-node-id="I4:35683;1659:11306;1659:8329" data-name="fill">
                     <p className="font-['Font_Awesome_6_Pro:Regular'] not-italic relative shrink-0 text-[11.66px] whitespace-nowrap" data-node-id="I4:35683;1659:11306;1659:8330">{`\uF0C9`}</p>
                     <p className="font-['Roboto:Regular'] font-normal min-w-full relative shrink-0 text-[7.77px] text-center w-[min-content]" data-node-id="I4:35683;1659:11306;1659:8331" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Mais
-                    </p>
+                      {t("t1042")}</p>
                   </div>
                 </div>
               </div>
@@ -2809,8 +2710,7 @@ export default function ArticleCustomizacaoCara() {
                 </div>
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-full items-start justify-center min-w-px relative" data-node-id="I4:35685;1699:4239" data-name="title">
                   <p className="[word-break:break-word] font-['Roboto:Regular'] font-normal leading-[normal] relative shrink-0 text-[#180450] text-[10.36px] text-center whitespace-nowrap" data-node-id="I4:35685;1699:4249" style={{ fontVariationSettings: '"wdth" 100' }}>
-                    Resultados
-                  </p>
+                    {t("t0563")}</p>
                 </div>
                 <div className="content-stretch flex flex-col items-center justify-center p-[2.59px] relative shrink-0 size-[38.852px]" data-node-id="I4:35685;1699:4181" data-name="Botoes">
                   <div className="content-stretch flex flex-[1_0_0] gap-[2.59px] items-center justify-center min-h-px p-[5.18px] relative rounded-[13px] w-full" data-node-id="I4:35685;1699:4181;1699:4173" data-name="fill">
@@ -2822,8 +2722,7 @@ export default function ArticleCustomizacaoCara() {
                 <div className="bg-white content-stretch flex flex-[1_0_0] flex-col items-start min-h-px relative w-full" data-node-id="4:35687" data-name="main">
                   <div className="content-stretch flex flex-col items-start justify-center p-[10.36px] relative shrink-0 w-full" data-node-id="4:35688" data-name="<title>">
                     <p className="[word-break:break-word] font-['Roboto:SemiBold'] font-semibold leading-[normal] relative shrink-0 text-[#3b3b3b] text-[11.656px] text-center whitespace-nowrap" data-node-id="4:35689" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Loren
-                    </p>
+                      {t("t1063")}</p>
                   </div>
                   <div className="content-stretch flex flex-[1_0_0] flex-col gap-[10.36px] items-start justify-center min-h-px pb-[10.36px] pt-[5.18px] px-[10.36px] relative w-full" data-node-id="4:35690" data-name="row">
                     <div className="bg-white content-stretch flex flex-col h-[171.919px] items-end overflow-clip relative rounded-[5.18px] shadow-[0px_0.648px_1.943px_0px_rgba(0,0,0,0.1),0px_0.648px_1.295px_0px_rgba(0,0,0,0.06)] shrink-0 w-[233.758px]" data-node-id="4:35691" data-name="card">
@@ -2841,7 +2740,7 @@ export default function ArticleCustomizacaoCara() {
                       <div className="content-stretch flex flex-col gap-[6.475px] items-start justify-center px-[5.18px] py-[10.36px] relative shrink-0 w-full" data-node-id="I4:35691;1472:1317" data-name="card-title">
                         <div className="content-stretch flex items-center relative shrink-0 w-full" data-node-id="I4:35691;1486:2978" data-name="title">
                           <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px overflow-hidden relative text-[#3b3b3b] text-[11.66px] text-ellipsis whitespace-nowrap" data-node-id="I4:35691;1472:1319" style={{ fontVariationSettings: '"wdth" 100' }}>
-                            <p className="leading-[1.2] overflow-hidden text-ellipsis">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. `}</p>
+                            <p className="leading-[1.2] overflow-hidden text-ellipsis">{t("t1033")}</p>
                           </div>
                         </div>
                         <div className="flex items-center justify-center relative shrink-0 w-full" data-node-id="I4:35691;1628:11004">
@@ -2851,7 +2750,7 @@ export default function ArticleCustomizacaoCara() {
                                 <div className="flex items-center justify-center relative shrink-0" data-node-id="I4:35691;1642:15385">
                                   <div className="flex-none rotate-180">
                                     <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] relative text-[#3008a1] text-[6.48px] whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                      <p className="leading-none">{`65% Concluído `}</p>
+                                      <p className="leading-none">{t("t1034")}</p>
                                     </div>
                                   </div>
                                 </div>
@@ -2883,7 +2782,7 @@ export default function ArticleCustomizacaoCara() {
                       <div className="content-stretch flex flex-col gap-[6.475px] items-start justify-center px-[5.18px] py-[10.36px] relative shrink-0 w-full" data-node-id="I4:35692;1472:1317" data-name="card-title">
                         <div className="content-stretch flex items-center relative shrink-0 w-full" data-node-id="I4:35692;1486:2978" data-name="title">
                           <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px overflow-hidden relative text-[#3b3b3b] text-[11.66px] text-ellipsis whitespace-nowrap" data-node-id="I4:35692;1472:1319" style={{ fontVariationSettings: '"wdth" 100' }}>
-                            <p className="leading-[1.2] overflow-hidden text-ellipsis">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. `}</p>
+                            <p className="leading-[1.2] overflow-hidden text-ellipsis">{t("t1033")}</p>
                           </div>
                         </div>
                         <div className="flex items-center justify-center relative shrink-0 w-full" data-node-id="I4:35692;1628:11004">
@@ -2893,7 +2792,7 @@ export default function ArticleCustomizacaoCara() {
                                 <div className="flex items-center justify-center relative shrink-0" data-node-id="I4:35692;1642:15385">
                                   <div className="flex-none rotate-180">
                                     <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] relative text-[#3008a1] text-[6.48px] whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                      <p className="leading-none">{`65% Concluído `}</p>
+                                      <p className="leading-none">{t("t1034")}</p>
                                     </div>
                                   </div>
                                 </div>
@@ -2915,8 +2814,7 @@ export default function ArticleCustomizacaoCara() {
                 <div className="bg-[#3008a1] content-stretch flex items-start px-[10.36px] py-[15.541px] relative shrink-0 w-full" data-node-id="4:35693">
                   <div className="bg-white border-b-[0.648px] border-solid border-white content-stretch flex h-[38.852px] items-center justify-between px-[10.36px] relative rounded-[16px] shrink-0 w-[233.758px]" data-node-id="4:35694" data-name="Input">
                     <p className="[word-break:break-word] font-['Roboto:Light'] font-light leading-[normal] relative shrink-0 text-[#3008a1] text-[11.66px] text-center whitespace-nowrap" data-node-id="I4:35694;1701:4417" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Loren
-                    </p>
+                      {t("t1063")}</p>
                     <div className="relative shrink-0 size-[11.656px]" data-node-id="I4:35694;1701:4419" data-name="">
                       <img alt="" className="absolute block inset-0 max-w-none size-full" src={img} />
                     </div>
@@ -2928,32 +2826,28 @@ export default function ArticleCustomizacaoCara() {
                   <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[2.59px] items-center justify-center leading-[normal] min-h-px p-[5.18px] relative rounded-[13px] text-[#3008a1] w-full" data-node-id="I4:35695;1659:11303;1659:8329" data-name="fill">
                     <p className="font-['Font_Awesome_6_Pro:Regular'] not-italic relative shrink-0 text-[11.66px] whitespace-nowrap" data-node-id="I4:35695;1659:11303;1659:8330">{`\uF015`}</p>
                     <p className="font-['Roboto:Regular'] font-normal min-w-full relative shrink-0 text-[7.77px] text-center w-[min-content]" data-node-id="I4:35695;1659:11303;1659:8331" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Início
-                    </p>
+                      {t("t0554")}</p>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-[38.852px] items-center justify-center min-w-px p-[2.59px] relative" data-node-id="I4:35695;1659:11304" data-name="Botoes">
                   <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[2.59px] items-center justify-center leading-[normal] min-h-px p-[5.18px] relative rounded-[13px] text-[#3008a1] w-full" data-node-id="I4:35695;1659:11304;1659:8329" data-name="fill">
                     <p className="font-['Font_Awesome_6_Pro:Regular'] not-italic relative shrink-0 text-[11.66px] whitespace-nowrap" data-node-id="I4:35695;1659:11304;1659:8330">{`\uF5DA`}</p>
                     <p className="font-['Roboto:Regular'] font-normal min-w-full relative shrink-0 text-[7.77px] text-center w-[min-content]" data-node-id="I4:35695;1659:11304;1659:8331" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Meus Cursos
-                    </p>
+                      {t("t1040")}</p>
                   </div>
                 </div>
                 <div className="border-[#3008a1] border-solid border-t-[0.648px] content-stretch flex flex-[1_0_0] flex-col h-[38.852px] items-center justify-center min-w-px p-[2.59px] relative" data-node-id="I4:35695;1659:11305" data-name="Botoes">
                   <div className="[word-break:break-word] bg-[#e6e6e6] content-stretch flex flex-[1_0_0] flex-col gap-[2.59px] items-center justify-center leading-[normal] min-h-px p-[5.18px] relative rounded-[13px] text-[#3008a1] w-full" data-node-id="I4:35695;1659:11305;1659:8337" data-name="fill">
                     <p className="font-['Font_Awesome_6_Pro:Regular'] not-italic relative shrink-0 text-[11.66px] whitespace-nowrap" data-node-id="I4:35695;1659:11305;1659:8338">{`\uF002`}</p>
                     <p className="font-['Roboto:Regular'] font-normal min-w-full relative shrink-0 text-[7.77px] text-center w-[min-content]" data-node-id="I4:35695;1659:11305;1659:8339" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Busca
-                    </p>
+                      {t("t1041")}</p>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-[38.852px] items-center justify-center min-w-px p-[2.59px] relative" data-node-id="I4:35695;1659:11306" data-name="Botoes">
                   <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[2.59px] items-center justify-center leading-[normal] min-h-px p-[5.18px] relative rounded-[13px] text-[#3008a1] w-full" data-node-id="I4:35695;1659:11306;1659:8329" data-name="fill">
                     <p className="font-['Font_Awesome_6_Pro:Regular'] not-italic relative shrink-0 text-[11.66px] whitespace-nowrap" data-node-id="I4:35695;1659:11306;1659:8330">{`\uF0C9`}</p>
                     <p className="font-['Roboto:Regular'] font-normal min-w-full relative shrink-0 text-[7.77px] text-center w-[min-content]" data-node-id="I4:35695;1659:11306;1659:8331" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Mais
-                    </p>
+                      {t("t1042")}</p>
                   </div>
                 </div>
               </div>
@@ -2986,29 +2880,28 @@ export default function ArticleCustomizacaoCara() {
                   </div>
                   <div className="content-stretch flex items-center justify-center p-[10.36px] relative shrink-0 w-full" data-node-id="4:35703">
                     <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px relative text-[11.656px] text-white" data-node-id="4:35704" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-[1.4]">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. `}</p>
+                      <p className="leading-[1.4]">{t("t1033")}</p>
                     </div>
                   </div>
                 </div>
                 <div className="content-stretch flex gap-[5.18px] items-center px-[10.36px] py-[5.18px] relative shrink-0 w-full" data-node-id="4:35705" data-name="<title>">
                   <div className="bg-[#3008a1] content-stretch flex flex-[1_0_0] h-[26.62px] items-center justify-center min-w-[63.00518035888672px] px-[5.18px] relative rounded-[20.721px]" data-node-id="4:35706" data-name="btn">
                     <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px relative text-[9.065px] text-center text-white" data-node-id="4:35707" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Descrição</p>
+                      <p className="leading-none">{t("t1064")}</p>
                     </div>
                   </div>
                   <div className="bg-[#f4eeff] content-stretch flex flex-[1_0_0] h-[26.62px] items-center justify-center min-w-[63.00518035888672px] px-[5.18px] relative rounded-[20.721px]" data-node-id="4:35708" data-name="btn">
                     <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px relative text-[#3008a1] text-[9.065px] text-center" data-node-id="4:35709" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Conteúdo</p>
+                      <p className="leading-none">{t("t1065")}</p>
                     </div>
                   </div>
                 </div>
                 <div className="content-stretch flex items-center justify-center p-[10.36px] relative shrink-0 w-full" data-node-id="4:35710">
                   <p className="[word-break:break-word] flex-[1_0_0] font-['Roboto:Regular'] font-normal leading-[1.46] min-w-px relative text-[#040404] text-[10.36px]" data-node-id="4:35711" style={{ fontVariationSettings: '"wdth" 100' }}>
-                    Vamos aprender juntos a criar indicadores de sucesso para o seu negócio? No contexto atual, ter métricas reais para mensurar os resultados do negócio é fundamental para a tomada de decisões. Nesse curso o você aprenderá a definir KPIs – Key Performance Indicator – conhecerá sua importância e relevância além de conhecer métodos que ajudarã
-                  </p>
+                    {t("t1066")}</p>
                 </div>
                 <div className="content-stretch flex flex-col items-start justify-center p-[10.36px] relative shrink-0 w-full" data-node-id="4:35712" data-name="<title>">
-                  <p className="[word-break:break-word] font-['Roboto:SemiBold'] font-semibold leading-[normal] relative shrink-0 text-[#3b3b3b] text-[11.656px] text-center whitespace-nowrap" data-node-id="4:35713" style={{ fontVariationSettings: '"wdth" 100' }}>{`Cursos sugeridos `}</p>
+                  <p className="[word-break:break-word] font-['Roboto:SemiBold'] font-semibold leading-[normal] relative shrink-0 text-[#3b3b3b] text-[11.656px] text-center whitespace-nowrap" data-node-id="4:35713" style={{ fontVariationSettings: '"wdth" 100' }}>{t("t1067")}</p>
                 </div>
                 <div className="content-stretch flex flex-[1_0_0] gap-[10.36px] items-center min-h-px pb-[10.36px] pt-[5.18px] px-[10.36px] relative w-full" data-node-id="4:35714" data-name="row">
                   <div className="bg-white content-stretch flex flex-col h-[124.326px] items-end overflow-clip relative rounded-[5.18px] shadow-[0px_0.648px_1.943px_0px_rgba(0,0,0,0.1),0px_0.648px_1.295px_0px_rgba(0,0,0,0.06)] shrink-0 w-[123.031px]" data-node-id="4:35715" data-name="card">
@@ -3026,7 +2919,7 @@ export default function ArticleCustomizacaoCara() {
                     <div className="content-stretch flex flex-col gap-[6.475px] items-start justify-center px-[5.18px] py-[10.36px] relative shrink-0 w-full" data-node-id="I4:35715;1472:1317" data-name="card-title">
                       <div className="content-stretch flex items-center relative shrink-0 w-full" data-node-id="I4:35715;1486:2978" data-name="title">
                         <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px overflow-hidden relative text-[#3b3b3b] text-[11.66px] text-ellipsis whitespace-nowrap" data-node-id="I4:35715;1472:1319" style={{ fontVariationSettings: '"wdth" 100' }}>
-                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. `}</p>
+                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{t("t1033")}</p>
                         </div>
                       </div>
                       <div className="content-stretch flex gap-[5.18px] items-center relative shrink-0 w-full" data-node-id="I4:35715;1629:3752" data-name="tags">
@@ -3049,7 +2942,7 @@ export default function ArticleCustomizacaoCara() {
                         <div className="flex flex-[1_0_0] flex-row items-center self-stretch" data-node-id="I4:35715;1635:7813">
                           <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] gap-[5.18px] h-full items-center justify-end leading-[0] min-w-px relative text-[#3b3b3b] text-[7.77px] text-center whitespace-nowrap" data-name="btn">
                             <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0" data-node-id="I4:35715;1635:7814" style={{ fontVariationSettings: '"wdth" 100' }}>
-                              <p className="leading-none">Iniciar</p>
+                              <p className="leading-none">{t("t1038")}</p>
                             </div>
                             <div className="flex flex-col font-['Font_Awesome_6_Pro:Solid'] justify-center not-italic relative shrink-0" data-node-id="I4:35715;1635:7815">
                               <p className="leading-none">{`\uF04B`}</p>
@@ -3074,7 +2967,7 @@ export default function ArticleCustomizacaoCara() {
                     <div className="content-stretch flex flex-col gap-[6.475px] items-start justify-center px-[5.18px] py-[10.36px] relative shrink-0 w-full" data-node-id="I4:35716;1472:1317" data-name="card-title">
                       <div className="content-stretch flex items-center relative shrink-0 w-full" data-node-id="I4:35716;1486:2978" data-name="title">
                         <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px overflow-hidden relative text-[#3b3b3b] text-[11.66px] text-ellipsis whitespace-nowrap" data-node-id="I4:35716;1472:1319" style={{ fontVariationSettings: '"wdth" 100' }}>
-                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. `}</p>
+                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{t("t1033")}</p>
                         </div>
                       </div>
                       <div className="content-stretch flex gap-[5.18px] items-center relative shrink-0 w-full" data-node-id="I4:35716;1629:3752" data-name="tags">
@@ -3097,7 +2990,7 @@ export default function ArticleCustomizacaoCara() {
                         <div className="flex flex-[1_0_0] flex-row items-center self-stretch" data-node-id="I4:35716;1635:7813">
                           <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] gap-[5.18px] h-full items-center justify-end leading-[0] min-w-px relative text-[#3b3b3b] text-[7.77px] text-center whitespace-nowrap" data-name="btn">
                             <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0" data-node-id="I4:35716;1635:7814" style={{ fontVariationSettings: '"wdth" 100' }}>
-                              <p className="leading-none">Iniciar</p>
+                              <p className="leading-none">{t("t1038")}</p>
                             </div>
                             <div className="flex flex-col font-['Font_Awesome_6_Pro:Solid'] justify-center not-italic relative shrink-0" data-node-id="I4:35716;1635:7815">
                               <p className="leading-none">{`\uF04B`}</p>
@@ -3122,7 +3015,7 @@ export default function ArticleCustomizacaoCara() {
                     <div className="content-stretch flex flex-col gap-[6.475px] items-start justify-center px-[5.18px] py-[10.36px] relative shrink-0 w-full" data-node-id="I4:35717;1472:1317" data-name="card-title">
                       <div className="content-stretch flex items-center relative shrink-0 w-full" data-node-id="I4:35717;1486:2978" data-name="title">
                         <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px overflow-hidden relative text-[#3b3b3b] text-[11.66px] text-ellipsis whitespace-nowrap" data-node-id="I4:35717;1472:1319" style={{ fontVariationSettings: '"wdth" 100' }}>
-                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. `}</p>
+                          <p className="leading-[1.2] overflow-hidden text-ellipsis">{t("t1033")}</p>
                         </div>
                       </div>
                       <div className="[word-break:break-word] content-stretch flex gap-[5.18px] items-start leading-[0] relative shrink-0 text-[#e6e6e6] text-center w-full whitespace-nowrap" data-node-id="I4:35717;1486:2979" data-name="tags">
@@ -3131,7 +3024,7 @@ export default function ArticleCustomizacaoCara() {
                             <p className="leading-none">{`\uF2B4`}</p>
                           </div>
                           <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0 text-[7.77px]" data-node-id="I4:35717;1486:2974;1486:2778" style={{ fontVariationSettings: '"wdth" 100' }}>
-                            <p className="leading-none">Síncrono</p>
+                            <p className="leading-none">{t("t1035")}</p>
                           </div>
                         </div>
                         <div className="bg-[#3d0aca] content-stretch flex flex-[1_0_0] gap-[5.18px] items-center justify-center min-w-px px-[7.77px] py-[2.59px] relative rounded-[10.36px]" data-node-id="I4:35717;1486:2980" data-name="tags">
@@ -3139,7 +3032,7 @@ export default function ArticleCustomizacaoCara() {
                             <p className="leading-none">{`\uF2B4`}</p>
                           </div>
                           <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0 text-[7.77px]" data-node-id="I4:35717;1486:2980;1486:2778" style={{ fontVariationSettings: '"wdth" 100' }}>
-                            <p className="leading-none">Síncrono</p>
+                            <p className="leading-none">{t("t1035")}</p>
                           </div>
                         </div>
                       </div>
@@ -3148,8 +3041,7 @@ export default function ArticleCustomizacaoCara() {
                           <div className="bg-[rgba(255,255,255,0)] relative shrink-0" data-node-id="I4:35717;1486:2987;288:237993" data-name="text">
                             <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start justify-center overflow-clip relative rounded-[inherit] size-full">
                               <p className="[word-break:break-word] font-['Roboto:Regular'] font-normal leading-[1.5] relative shrink-0 text-[#180450] text-[9.07px] whitespace-nowrap" data-node-id="I4:35717;1486:2987;288:237993;1:4738" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                Ver cursos
-                              </p>
+                                {t("t1036")}</p>
                             </div>
                           </div>
                         </div>
@@ -3157,8 +3049,7 @@ export default function ArticleCustomizacaoCara() {
                           <div className="bg-[rgba(255,255,255,0)] relative shrink-0" data-node-id="I4:35717;1486:2988;288:237185" data-name="text">
                             <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start justify-center overflow-clip relative rounded-[inherit] size-full">
                               <p className="[word-break:break-word] font-['Roboto:Regular'] font-normal leading-[1.5] relative shrink-0 text-[#cecece] text-[9.07px] whitespace-nowrap" data-node-id="I4:35717;1486:2988;288:237185;1:4738" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                Cursar
-                              </p>
+                                {t("t1037")}</p>
                             </div>
                           </div>
                         </div>
@@ -3170,7 +3061,7 @@ export default function ArticleCustomizacaoCara() {
                               <div className="flex items-center justify-center relative shrink-0" data-node-id="I4:35717;1642:15385">
                                 <div className="flex-none rotate-180">
                                   <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] relative text-[#3008a1] text-[6.48px] whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                    <p className="leading-none">{`65% Concluído `}</p>
+                                    <p className="leading-none">{t("t1034")}</p>
                                   </div>
                                 </div>
                               </div>
@@ -3205,7 +3096,7 @@ export default function ArticleCustomizacaoCara() {
                         <div className="flex flex-[1_0_0] flex-row items-center self-stretch" data-node-id="I4:35717;1635:7813">
                           <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] gap-[5.18px] h-full items-center justify-end leading-[0] min-w-px relative text-[#3b3b3b] text-[7.77px] text-center whitespace-nowrap" data-name="btn">
                             <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0" data-node-id="I4:35717;1635:7814" style={{ fontVariationSettings: '"wdth" 100' }}>
-                              <p className="leading-none">Iniciar</p>
+                              <p className="leading-none">{t("t1038")}</p>
                             </div>
                             <div className="flex flex-col font-['Font_Awesome_6_Pro:Solid'] justify-center not-italic relative shrink-0" data-node-id="I4:35717;1635:7815">
                               <p className="leading-none">{`\uF04B`}</p>
@@ -3221,8 +3112,7 @@ export default function ArticleCustomizacaoCara() {
                 <div className="bg-[#180450] content-stretch flex flex-col h-[38.852px] items-center justify-center p-[2.59px] relative shrink-0 w-[233.758px]" data-node-id="4:35719" data-name="Botoes">
                   <div className="content-stretch flex flex-[1_0_0] gap-[2.59px] items-center justify-center min-h-px p-[5.18px] relative rounded-[13px] w-full" data-node-id="I4:35719;1698:11849" data-name="fill">
                     <p className="[word-break:break-word] flex-[1_0_0] font-['Roboto:Medium'] font-medium leading-[normal] min-w-px relative text-[7.55px] text-center text-white" data-node-id="I4:35719;1698:11851" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Matricular
-                    </p>
+                      {t("t1068")}</p>
                   </div>
                 </div>
               </div>
@@ -3255,19 +3145,19 @@ export default function ArticleCustomizacaoCara() {
                   </div>
                   <div className="content-stretch flex items-center justify-center p-[10.36px] relative shrink-0 w-full" data-node-id="4:35727">
                     <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px relative text-[11.656px] text-white" data-node-id="4:35728" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-[1.4]">{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. `}</p>
+                      <p className="leading-[1.4]">{t("t1033")}</p>
                     </div>
                   </div>
                 </div>
                 <div className="content-stretch flex gap-[5.18px] items-center px-[10.36px] py-[5.18px] relative shrink-0 w-full" data-node-id="4:35729" data-name="<title>">
                   <div className="bg-[#f4eeff] content-stretch flex flex-[1_0_0] h-[26.62px] items-center justify-center min-w-[63.00518035888672px] px-[5.18px] relative rounded-[20.721px]" data-node-id="4:35730" data-name="btn">
                     <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px relative text-[#3008a1] text-[9.065px] text-center" data-node-id="4:35731" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Descrição</p>
+                      <p className="leading-none">{t("t1064")}</p>
                     </div>
                   </div>
                   <div className="bg-[#3008a1] content-stretch flex flex-[1_0_0] h-[26.62px] items-center justify-center min-w-[63.00518035888672px] px-[5.18px] relative rounded-[20.721px]" data-node-id="4:35732" data-name="btn">
                     <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:Regular'] font-normal justify-center leading-[0] min-w-px relative text-[9.065px] text-center text-white" data-node-id="4:35733" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      <p className="leading-none">Conteúdo</p>
+                      <p className="leading-none">{t("t1065")}</p>
                     </div>
                   </div>
                 </div>
@@ -3278,7 +3168,7 @@ export default function ArticleCustomizacaoCara() {
                         <p className="leading-none">{`\uF078`}</p>
                       </div>
                       <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0" data-node-id="4:35738" style={{ fontVariationSettings: '"wdth" 100' }}>
-                        <p className="leading-none">Modulo</p>
+                        <p className="leading-none">{t("t1069")}</p>
                       </div>
                     </div>
                     <div className="content-stretch flex gap-[10.36px] items-center overflow-clip px-[7.77px] py-[10.36px] relative shrink-0 w-full" data-node-id="4:35739">
@@ -3292,7 +3182,7 @@ export default function ArticleCustomizacaoCara() {
                           <div className="flex flex-[1_0_0] flex-row items-center self-stretch" data-node-id="4:35744">
                             <div className="content-stretch flex flex-[1_0_0] h-full items-center min-w-px px-[6.475px] relative" data-name="Presentation Area">
                               <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:SemiBold'] font-semibold justify-center leading-[0] min-w-px relative text-[9.065px] text-white" data-node-id="4:35745" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                <p className="leading-none">Apresentação</p>
+                                <p className="leading-none">{t("t1070")}</p>
                               </div>
                             </div>
                           </div>
@@ -3310,7 +3200,7 @@ export default function ArticleCustomizacaoCara() {
                           </div>
                           <div className="[word-break:break-word] content-stretch flex gap-[5.18px] items-center leading-[0] relative shrink-0 text-[7.77px] text-center text-white whitespace-nowrap" data-node-id="4:35751" data-name="Access Area">
                             <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0" data-node-id="4:35752" style={{ fontVariationSettings: '"wdth" 100' }}>
-                              <p className="leading-none">Acessar</p>
+                              <p className="leading-none">{t("t1071")}</p>
                             </div>
                             <div className="flex flex-col font-['Font_Awesome_6_Pro:Solid'] justify-center not-italic relative shrink-0" data-node-id="4:35753">
                               <p className="leading-none">{`\uF04B`}</p>
@@ -3328,7 +3218,7 @@ export default function ArticleCustomizacaoCara() {
                           <div className="flex flex-[1_0_0] flex-row items-center self-stretch" data-node-id="4:35758">
                             <div className="content-stretch flex flex-[1_0_0] h-full items-center min-w-px px-[6.475px] relative" data-name="Presentation Area">
                               <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:SemiBold'] font-semibold justify-center leading-[0] min-w-px relative text-[9.065px] text-white" data-node-id="4:35759" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                <p className="leading-none">Apresentação</p>
+                                <p className="leading-none">{t("t1070")}</p>
                               </div>
                             </div>
                           </div>
@@ -3346,7 +3236,7 @@ export default function ArticleCustomizacaoCara() {
                           </div>
                           <div className="[word-break:break-word] content-stretch flex gap-[5.18px] items-center leading-[0] relative shrink-0 text-[7.77px] text-center text-white whitespace-nowrap" data-node-id="4:35765" data-name="Access Area">
                             <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0" data-node-id="4:35766" style={{ fontVariationSettings: '"wdth" 100' }}>
-                              <p className="leading-none">Acessar</p>
+                              <p className="leading-none">{t("t1071")}</p>
                             </div>
                             <div className="flex flex-col font-['Font_Awesome_6_Pro:Solid'] justify-center not-italic relative shrink-0" data-node-id="4:35767">
                               <p className="leading-none">{`\uF04B`}</p>
@@ -3364,7 +3254,7 @@ export default function ArticleCustomizacaoCara() {
                           <div className="flex flex-[1_0_0] flex-row items-center self-stretch" data-node-id="4:35772">
                             <div className="content-stretch flex flex-[1_0_0] h-full items-center min-w-px px-[6.475px] relative" data-name="Presentation Area">
                               <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:SemiBold'] font-semibold justify-center leading-[0] min-w-px relative text-[9.065px] text-white" data-node-id="4:35773" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                <p className="leading-none">Apresentação</p>
+                                <p className="leading-none">{t("t1070")}</p>
                               </div>
                             </div>
                           </div>
@@ -3382,7 +3272,7 @@ export default function ArticleCustomizacaoCara() {
                           </div>
                           <div className="[word-break:break-word] content-stretch flex gap-[5.18px] items-center leading-[0] relative shrink-0 text-[7.77px] text-center text-white whitespace-nowrap" data-node-id="4:35779" data-name="Access Area">
                             <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0" data-node-id="4:35780" style={{ fontVariationSettings: '"wdth" 100' }}>
-                              <p className="leading-none">Acessar</p>
+                              <p className="leading-none">{t("t1071")}</p>
                             </div>
                             <div className="flex flex-col font-['Font_Awesome_6_Pro:Solid'] justify-center not-italic relative shrink-0" data-node-id="4:35781">
                               <p className="leading-none">{`\uF04B`}</p>
@@ -3400,7 +3290,7 @@ export default function ArticleCustomizacaoCara() {
                           <div className="flex flex-[1_0_0] flex-row items-center self-stretch" data-node-id="4:35786">
                             <div className="content-stretch flex flex-[1_0_0] h-full items-center min-w-px px-[6.475px] relative" data-name="Presentation Area">
                               <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Roboto:SemiBold'] font-semibold justify-center leading-[0] min-w-px relative text-[9.065px] text-white" data-node-id="4:35787" style={{ fontVariationSettings: '"wdth" 100' }}>
-                                <p className="leading-none">Apresentação</p>
+                                <p className="leading-none">{t("t1070")}</p>
                               </div>
                             </div>
                           </div>
@@ -3418,7 +3308,7 @@ export default function ArticleCustomizacaoCara() {
                           </div>
                           <div className="[word-break:break-word] content-stretch flex gap-[5.18px] items-center leading-[0] relative shrink-0 text-[7.77px] text-center text-white whitespace-nowrap" data-node-id="4:35793" data-name="Access Area">
                             <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0" data-node-id="4:35794" style={{ fontVariationSettings: '"wdth" 100' }}>
-                              <p className="leading-none">Acessar</p>
+                              <p className="leading-none">{t("t1071")}</p>
                             </div>
                             <div className="flex flex-col font-['Font_Awesome_6_Pro:Solid'] justify-center not-italic relative shrink-0" data-node-id="4:35795">
                               <p className="leading-none">{`\uF04B`}</p>
@@ -3434,7 +3324,7 @@ export default function ArticleCustomizacaoCara() {
                         <p className="leading-none">{`\uF077`}</p>
                       </div>
                       <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0" data-node-id="4:35799" style={{ fontVariationSettings: '"wdth" 100' }}>
-                        <p className="leading-none">{`Modulo `}</p>
+                        <p className="leading-none">{t("t1069")}</p>
                       </div>
                     </div>
                   </div>
@@ -3444,7 +3334,7 @@ export default function ArticleCustomizacaoCara() {
                         <p className="leading-none">{`\uF077`}</p>
                       </div>
                       <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0" data-node-id="4:35803" style={{ fontVariationSettings: '"wdth" 100' }}>
-                        <p className="leading-none">{`Modulo `}</p>
+                        <p className="leading-none">{t("t1069")}</p>
                       </div>
                     </div>
                   </div>
@@ -3454,7 +3344,7 @@ export default function ArticleCustomizacaoCara() {
                         <p className="leading-none">{`\uF077`}</p>
                       </div>
                       <div className="flex flex-col font-['Roboto:Regular'] font-normal justify-center relative shrink-0" data-node-id="4:35807" style={{ fontVariationSettings: '"wdth" 100' }}>
-                        <p className="leading-none">{`Modulo `}</p>
+                        <p className="leading-none">{t("t1069")}</p>
                       </div>
                     </div>
                   </div>
@@ -3464,8 +3354,7 @@ export default function ArticleCustomizacaoCara() {
                 <div className="bg-[#180450] content-stretch flex flex-col h-[38.852px] items-center justify-center p-[2.59px] relative shrink-0 w-[233.758px]" data-node-id="4:35809" data-name="Botoes">
                   <div className="content-stretch flex flex-[1_0_0] gap-[2.59px] items-center justify-center min-h-px p-[5.18px] relative rounded-[13px] w-full" data-node-id="I4:35809;1698:11849" data-name="fill">
                     <p className="[word-break:break-word] flex-[1_0_0] font-['Roboto:Medium'] font-medium leading-[normal] min-w-px relative text-[7.55px] text-center text-white" data-node-id="I4:35809;1698:11851" style={{ fontVariationSettings: '"wdth" 100' }}>
-                      Matricular
-                    </p>
+                      {t("t1068")}</p>
                   </div>
                 </div>
               </div>
@@ -3473,11 +3362,10 @@ export default function ArticleCustomizacaoCara() {
           </div>
         </div>
       </div>
-      <div className="content-stretch flex flex-col h-[1080px] items-start justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:35810" data-name="section.results">
+      <div className="content-stretch flex flex-col h-[1080px] items-start justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:35810" data-name="section.results" data-section-id="results">
         <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full" data-node-id="4:35811" data-name="div.flex.flex-col.w-full">
-          <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.3] relative shrink-0 text-[#000102] text-[16px] tracking-[0.64px] w-[900px]" data-node-id="4:35812">
-            04 · EVIDÊNCIAS E RESULTADOS
-          </p>
+          <h2 className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.3] relative shrink-0 text-[#000102] text-[16px] tracking-[0.64px] w-[900px]" data-node-id="4:35812">
+            {t("t0149")}</h2>
           <div className="content-start flex flex-wrap gap-[32px] h-[100px] items-start overflow-clip relative shrink-0 w-full" data-node-id="4:35813" data-name="div.metrics">
             <div className="content-stretch flex flex-[1_0_0] items-end min-w-px relative" data-node-id="4:35814" data-name="metric-result.evidence">
               <div className="bg-[#020305] content-stretch flex flex-col items-center justify-center max-h-[100px] min-h-[100px] min-w-[100px] px-[16px] py-[4px] relative rounded-[8px] shrink-0" data-node-id="I4:35814;6312:1003" data-name="number">
@@ -3489,11 +3377,9 @@ export default function ArticleCustomizacaoCara() {
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-full items-start justify-center min-w-px relative" data-name="content">
                   <div className="[word-break:break-word] bg-[#101113] content-stretch flex flex-col font-['Sora:Regular'] font-normal gap-[8px] items-start leading-none p-[16px] relative rounded-br-[8px] rounded-tr-[8px] shrink-0 text-[#fcfdfe] w-full whitespace-nowrap" data-node-id="I4:35814;6312:1006" data-name="<title>">
                     <p className="relative shrink-0 text-[20px]" data-node-id="I4:35814;6312:1007">
-                      tempo de configuração
-                    </p>
+                      {t("t1074")}</p>
                     <p className="relative shrink-0 text-[13px]" data-node-id="I4:35814;6312:1008">
-                      (Time on Task · não medido)
-                    </p>
+                      {t("t0551")}</p>
                   </div>
                 </div>
               </div>
@@ -3508,11 +3394,9 @@ export default function ArticleCustomizacaoCara() {
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-full items-start justify-center min-w-px relative" data-name="content">
                   <div className="[word-break:break-word] bg-[#101113] content-stretch flex flex-col font-['Sora:Regular'] font-normal gap-[8px] items-start leading-none p-[16px] relative rounded-br-[8px] rounded-tr-[8px] shrink-0 text-[#fcfdfe] w-full whitespace-nowrap" data-node-id="I4:35815;6312:1006" data-name="<title>">
                     <p className="relative shrink-0 text-[20px]" data-node-id="I4:35815;6312:1007">
-                      erros de personalização
-                    </p>
+                      {t("t1075")}</p>
                     <p className="relative shrink-0 text-[13px]" data-node-id="I4:35815;6312:1008">
-                      (Error Rate · não medido)
-                    </p>
+                      {t("t0990")}</p>
                   </div>
                 </div>
               </div>
@@ -3520,27 +3404,24 @@ export default function ArticleCustomizacaoCara() {
             <div className="content-stretch flex flex-[1_0_0] items-end min-w-px relative" data-node-id="4:35816" data-name="metric-result.product.outcome">
               <div className="bg-[#020305] content-stretch flex flex-col items-center justify-center max-h-[100px] min-h-[100px] min-w-[100px] px-[16px] py-[4px] relative rounded-[8px] shrink-0" data-node-id="I4:35816;6312:1003" data-name="number">
                 <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-none relative shrink-0 text-[#fcfdfe] text-[20px] whitespace-nowrap" data-node-id="I4:35816;6312:1004">
-                  50 mil+
-                </p>
+                  {t("t0154")}</p>
               </div>
               <div className="flex flex-[1_0_0] flex-row items-end self-stretch" data-node-id="I4:35816;6312:1005">
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-full items-start justify-center min-w-px relative" data-name="content">
                   <div className="[word-break:break-word] bg-[#101113] content-stretch flex flex-col font-['Sora:Regular'] font-normal gap-[8px] items-start leading-none p-[16px] relative rounded-br-[8px] rounded-tr-[8px] shrink-0 text-[#fcfdfe] w-full whitespace-nowrap" data-node-id="I4:35816;6312:1006" data-name="<title>">
                     <p className="relative shrink-0 text-[20px]" data-node-id="I4:35816;6312:1007">
-                      downloads UCVS
-                    </p>
+                      {t("t1076")}</p>
                     <p className="relative shrink-0 text-[13px]" data-node-id="I4:35816;6312:1008">
-                      (Google Play · White-Label)
-                    </p>
+                      {t("t0622")}</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[0] relative shrink-0 text-[#000102] text-[16px] w-[1040px] whitespace-pre-wrap" data-node-id="4:35818">
-            <p className="leading-[1.5] mb-0">A marca passou a ser uma configuração sobre a mesma estrutura do aplicativo, não um motivo para reconstruir componentes e jornadas.</p>
+            <p className="leading-[1.5] mb-0">{t("t1077")}</p>
             <p className="leading-[1.5] mb-0">​</p>
-            <p className="leading-[1.5]">A economia operacional ainda precisa de acompanhamento: tempo para lançar uma marca, manutenção, regressões e custo por cliente.</p>
+            <p className="leading-[1.5]">{t("t1078")}</p>
           </div>
         </div>
       </div>

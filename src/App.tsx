@@ -8,12 +8,18 @@ import {
 } from "react"
 import {
   BrowserRouter,
-  Navigate,
   Route,
   Routes,
   useLocation,
   useNavigate,
 } from "react-router-dom"
+import { LanguageProvider, useI18n, languages, localizedPath, basePath } from "./i18n"
+import { cases } from "./seo/pages"
+import RouterTracking from "./analytics/RouterTracking"
+import ConsentPreferences from "./analytics/Consent"
+import RouteSeo from "./seo/RouteSeo"
+import { track } from "./analytics/tracking"
+import { observeExperience } from "./analytics/observe"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 
@@ -61,6 +67,8 @@ const caseNavigation = [
 function routeForText(text: string) {
   return caseRoutes.find(([title]) => text.includes(title))?.[1]
 }
+
+function reportCarouselInteraction() { track('case_carousel_interaction', { interaction_type: 'drag' }) }
 
 function createAutoCarousel(
   track: HTMLElement,
@@ -115,7 +123,10 @@ function createAutoCarousel(
         ? track.getBoundingClientRect().width / track.offsetWidth
         : 1
     const delta = (event.clientX - startX) / Math.max(scale, 0.01)
-    if (Math.abs(event.clientX - startX) > 6) dragged = true
+    if (Math.abs(event.clientX - startX) > 6 && !dragged) {
+      dragged = true
+      if(track.querySelector('[data-case-slug]')) reportCarouselInteraction()
+    }
     position = clamp(startPosition + delta)
     direction = delta > 0 ? 1 : -1
     render()
@@ -165,7 +176,9 @@ function createAutoCarousel(
 }
 
 function useExactNavigation(root: React.RefObject<HTMLDivElement | null>) {
-  const navigate = useNavigate()
+  const navigateRaw = useNavigate()
+  const { path, text } = useI18n()
+  const navigate = (to: string) => navigateRaw(path(to))
 
   useEffect(() => {
     const element = root.current
@@ -177,10 +190,13 @@ function useExactNavigation(root: React.RefObject<HTMLDivElement | null>) {
         '[data-name="article.case-card"]',
       )
       if (card) {
-        const slug = routeForText(card.textContent || "")
-        if (slug) {
-          event.preventDefault()
-          navigate(`/cases/${slug}`)
+        const slug = card.dataset.caseSlug || routeForText(card.textContent || "")
+        if (slug && event.button === 0) {
+          track('case_open', {case_slug:slug})
+          if (!event.ctrlKey && !event.metaKey && !event.shiftKey) {
+            event.preventDefault()
+            navigate(`/cases/${slug}`)
+          }
           return
         }
       }
@@ -188,21 +204,22 @@ function useExactNavigation(root: React.RefObject<HTMLDivElement | null>) {
       const button = target.closest<HTMLElement>('[data-name="btn"]')
       if (!button) return
       const label = button.textContent || ""
-      if (label.includes("Início")) navigate("/")
-      else if (label.includes("Cases") || label.includes("Case"))
+      if (label.includes(text("Início"))) navigate(path("/"))
+      else if (label.includes(text("Cases")) || label.includes(text("Case")))
         navigate("/#cases")
-      else if (label.includes("Atuação")) navigate("/#atuacao")
-      else if (label.includes("Sobre")) navigate("/#sobre")
-      else if (label.includes("Evidências")) navigate("/#evidencias")
-      else if (label.includes("Contato")) navigate("/#contato")
+      else if (label.includes(text("Atuação"))) navigate("/#atuacao")
+      else if (label.includes(text("Sobre"))) navigate("/#sobre")
+      else if (label.includes(text("Evidências"))) navigate("/#evidencias")
+      else if (label.includes(text("Contato"))) navigate(path("/#contato"))
     }
 
     element.addEventListener("click", click)
     return () => element.removeEventListener("click", click)
-  }, [navigate, root])
+  }, [navigateRaw, root, path])
 }
 
 function BottomNavigation({ mode }: { mode: "home" | "case" }) {
+  const { text, path, language } = useI18n()
   const navigate = useNavigate()
   const [active, setActive] = useState(mode === "home" ? "inicio" : "case")
   const [visible, setVisible] = useState(false)
@@ -245,12 +262,12 @@ function BottomNavigation({ mode }: { mode: "home" | "case" }) {
 
   const activate = (id: string) => {
     if (mode === "case" && id === "home") {
-      navigate("/")
+      navigate(path("/"))
       return
     }
     const target = document.getElementById(id)
     if (target) target.scrollIntoView({ behavior: "smooth" })
-    else if (mode === "case" && id === "contato") navigate("/#contato")
+    else if (mode === "case" && id === "contato") navigate(path("/#contato"))
   }
 
   return (
@@ -259,13 +276,13 @@ function BottomNavigation({ mode }: { mode: "home" | "case" }) {
         visible ? " is-visible" : ""
       }`}
       aria-label={
-        mode === "home" ? "Navegação da página inicial" : "Navegação do case"
+        text(mode === "home" ? "Navegação da página inicial" : "Navegação do case")
       }
     >
       <button
         className="bottom-navigation__brand"
         onClick={() => activate(mode === "home" ? "inicio" : "home")}
-        aria-label="Ir para o início"
+        aria-label={text("Ir para o início")}
       >
         <img
           src={mode === "home" ? "/assets/60314.svg" : "/assets/8afaf.svg"}
@@ -282,7 +299,7 @@ function BottomNavigation({ mode }: { mode: "home" | "case" }) {
           <span className="bottom-navigation__icon" aria-hidden="true">
             {icon}
           </span>
-          <span>{label}</span>
+          <span>{text(label)}</span>
         </button>
       ))}
     </nav>
@@ -290,17 +307,20 @@ function BottomNavigation({ mode }: { mode: "home" | "case" }) {
 }
 
 function TopNavigation() {
+  const location = useLocation()
+  const [languageOpen, setLanguageOpen] = useState(false)
+  const { text, path, language } = useI18n()
   const navigate = useNavigate()
   return (
     <header className="top-navigation">
       <button
         className="top-navigation__brand"
-        onClick={() => navigate("/")}
-        aria-label="Ir para a página inicial"
+        onClick={() => navigate(path("/"))}
+        aria-label={text("Ir para a página inicial")}
       >
         <img src="/assets/8afaf.svg" alt="" />
       </button>
-      <nav className="top-navigation__social" aria-label="Redes e contatos">
+      <nav className="top-navigation__social" aria-label={text("Redes e contatos")}>
         <a
           href="https://www.behance.net/ocrisart"
           target="_blank"
@@ -310,11 +330,11 @@ function TopNavigation() {
           <span aria-hidden="true"></span>
           <small>ocrisart</small>
         </a>
-        <a href="mailto:" aria-label="Abrir aplicativo de e-mail">
+        <a href="mailto:cristiano-acosta@hotmail.com" aria-label={text("Abrir aplicativo de e-mail")}>
           <span className="top-navigation__material-icon" aria-hidden="true">
             mail
           </span>
-          <small>E-mail</small>
+          <small>falecom@</small>
         </a>
         <a
           href="https://wa.me/5548991526789"
@@ -330,26 +350,37 @@ function TopNavigation() {
           aria-label="LinkedIn @ocrisart"
         >
           <span aria-hidden="true"></span>
-          <small>@ocrisart</small>
+          <small>{text("@ocrisart")}</small>
         </a>
       </nav>
       <button
         className="top-navigation__language"
-        aria-label="Idioma: português"
+        aria-label={text("Idioma")}
+        aria-expanded={languageOpen}
+        aria-controls="language-menu"
+        onClick={() => setLanguageOpen(!languageOpen)}
+        onKeyDown={event => {if(event.key === 'Escape') setLanguageOpen(false)}}
       >
         <span className="bottom-navigation__icon" aria-hidden="true">
           translate
         </span>
-        <small>pt</small>
+        <small>{language === "pt-BR" ? "PT" : language.toUpperCase()}</small>
         <span className="bottom-navigation__icon" aria-hidden="true">
           arrow_drop_down
         </span>
       </button>
+    {languageOpen && <div className="language-menu" id="language-menu" onKeyDown={event => {if(event.key === 'Escape') setLanguageOpen(false)}}>
+        {languages.map(next => <button key={next} lang={next} aria-current={next === language ? 'true' : undefined} onClick={() => {
+          if(next !== language) {track('language_change', {from_language:language,to_language:next});navigate(localizedPath(basePath(location.pathname),next)+location.hash)}
+          setLanguageOpen(false)
+        }}>{next === 'pt-BR' ? 'PT' : next.toUpperCase()}</button>)}
+      </div>}
     </header>
   )
 }
 
 function SharedContactFooter() {
+  const { text, path, language } = useI18n()
   return (
     <>
       <section
@@ -360,22 +391,19 @@ function SharedContactFooter() {
         <div className="content-stretch flex flex-[1_0_0] flex-col gap-[24px] items-center min-w-px relative">
           <div className="content-stretch flex flex-col font-['Sora:Regular'] font-normal items-start relative shrink-0 w-full">
             <p className="leading-[1.15] relative shrink-0 text-[#000102] text-[44px] w-[900px]">
-              E agora?
-            </p>
+              {text("E agora?")}</p>
             <p className="leading-[1.2] relative shrink-0 text-[#000102] text-[36px] w-[900px]">
               &nbsp;
             </p>
             <div className="leading-[0] relative shrink-0 text-[#0d0e10] text-[16px] w-[760px] whitespace-pre-wrap">
               <p className="leading-[1.5] mb-0">
-                Sua ideia, produto ou serviço já tem um próximo passo.{" "}
+                {text("Sua ideia, produto ou serviço já tem um próximo passo.")}{" "}
               </p>
               <p className="leading-[1.5]">
-                Vamos descobrir juntos qual decisão pode fazer isso avançar.
-              </p>
+                {text("Vamos descobrir juntos qual decisão pode fazer isso avançar.")}</p>
             </div>
           </div>
-          <form
-            className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-full"
+          <form data-contact-form data-hj-suppress data-clarity-mask="true"             className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-full"
             onSubmit={(event) => event.preventDefault()}
           >
             <label className="bg-[#eeeff1] border border-[#999faa] border-solid content-stretch flex font-normal gap-[8px] h-[64px] items-center leading-[1.6] px-[24px] relative rounded-[8px] shrink-0 text-[16px] w-full">
@@ -385,8 +413,8 @@ function SharedContactFooter() {
               <input
                 className="bg-transparent border-0 outline-none w-full"
                 name="name"
-                placeholder="Sou [nome]"
-                aria-label="Nome"
+                placeholder={text("Sou [nome]")}
+                aria-label={text("Nome")}
               />
             </label>
             <label className="bg-[#eeeff1] border border-[#999faa] border-solid content-stretch flex font-normal gap-[8px] h-[64px] items-center leading-[1.6] px-[24px] relative rounded-[8px] shrink-0 text-[16px] w-full">
@@ -396,8 +424,8 @@ function SharedContactFooter() {
               <input
                 className="bg-transparent border-0 outline-none w-full"
                 name="contact"
-                placeholder="Meu contato é [telefone/e-mail]"
-                aria-label="Telefone ou e-mail"
+                placeholder={text("Meu contato é [telefone/e-mail]")}
+                aria-label={text("Telefone ou e-mail")}
               />
             </label>
             <a
@@ -410,8 +438,7 @@ function SharedContactFooter() {
                 mark_chat_unread
               </span>
               <span className="font-['Geist:Regular'] text-[12px]">
-                Avaliar meu produto
-              </span>
+                {text("Avaliar meu produto")}</span>
             </a>
           </form>
         </div>
@@ -421,16 +448,12 @@ function SharedContactFooter() {
           <div className="content-stretch flex flex-col items-center relative shrink-0 w-full">
             <img alt="" className="size-[117px]" src="/assets/ee968.svg" />
             <p className="font-['Sora:Regular'] font-medium leading-[1.2] text-[#6b0013] text-[44px]">
-              oCris Acosta.
-            </p>
+              {text("oCris Acosta.")}</p>
             <div className="content-stretch flex flex-col font-['Sora:Regular'] items-center px-[8px] py-[12px] text-center w-full">
               <p className="leading-[1.2] text-[#000102] text-[30px]">
-                Design que decide.
-              </p>
+                {text("Design que decide.")}</p>
               <p className="leading-[1.5] text-[#0d0e10] text-[16px] w-[620px]">
-                Da complexidade à direção: estrutura, evidência e decisão para
-                evoluir produtos, serviços e experiências.
-              </p>
+                {text("Da complexidade à direção: estrutura, evidência e decisão para evoluir produtos, serviços e experiências.")}</p>
             </div>
           </div>
           <div className="shared-footer__social content-stretch flex h-[60px] items-center relative shrink-0 w-[586px]">
@@ -441,9 +464,8 @@ function SharedContactFooter() {
             >
               <span></span>ocrisart
             </a>
-            <a href="mailto:">
-              <span className="material-icon">mail</span>E-mail
-            </a>
+            <a href="mailto:cristiano-acosta@hotmail.com">
+              <span className="material-icon">mail</span>falecom@</a>
             <a
               href="https://wa.me/5548991526789"
               target="_blank"
@@ -456,12 +478,10 @@ function SharedContactFooter() {
               target="_blank"
               rel="noreferrer"
             >
-              <span></span>@ocrisart
-            </a>
+              <span></span>{text("@ocrisart")}</a>
           </div>
           <p className="font-['Sora:Regular'] text-[#0d0e10] text-[11px]">
-            Copyright 2026
-          </p>
+            {text("Copyright 2026")}</p>
         </div>
       </footer>
     </>
@@ -471,6 +491,7 @@ function SharedContactFooter() {
 function HomePage() {
   const root = useRef<HTMLDivElement>(null)
   useExactNavigation(root)
+  useEffect(() => root.current ? observeExperience(root.current) : undefined, [])
 
   useLayoutEffect(() => {
     const element = root.current
@@ -513,6 +534,8 @@ function HomePage() {
           const destination = selected[index]
           if (!destination) return
           source.innerHTML = destination.innerHTML
+          source.dataset.caseSlug = destination.dataset.caseSlug
+          source.setAttribute("href", destination.getAttribute("href") || "/")
           source.style.cssText = destination.style.cssText
           gsap.set(destination, { autoAlpha: 0 })
           gsap.fromTo(
@@ -671,6 +694,7 @@ function HomePage() {
 function ExactCasePage({ children }: { children: React.ReactNode }) {
   const root = useRef<HTMLDivElement>(null)
   useExactNavigation(root)
+  useEffect(() => root.current ? observeExperience(root.current) : undefined, [])
 
   useLayoutEffect(() => {
     const element = root.current
@@ -746,7 +770,7 @@ const ExactStage = ({
   ref: React.RefObject<HTMLDivElement | null>
   mode: "home" | "case"
 }) => (
-  <div ref={ref} className={`exact-viewport exact-viewport--${mode}`}>
+  <div ref={ref} role="main" className={`exact-viewport exact-viewport--${mode}`}>
     <div className="exact-canvas">{children}</div>
   </div>
 )
@@ -767,81 +791,26 @@ function ScrollRestoration() {
   return null
 }
 
-export default function App() {
-  return (
-    <BrowserRouter>
-      <ScrollRestoration />
-      <TopNavigation />
-      <Suspense fallback={<div className="exact-loading" />}>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route
-            path="/cases/navegacao-confusa"
-            element={
-              <ExactCasePage>
-                <NavegacaoConfusa />
-              </ExactCasePage>
-            }
-          />
-          <Route
-            path="/cases/cadastros-complexos"
-            element={
-              <ExactCasePage>
-                <CadastrosComplexos />
-              </ExactCasePage>
-            }
-          />
-          <Route
-            path="/cases/regra-incerta"
-            element={
-              <ExactCasePage>
-                <RegraIncerta />
-              </ExactCasePage>
-            }
-          />
-          <Route
-            path="/cases/qualificacao-complexa"
-            element={
-              <ExactCasePage>
-                <QualificacaoComplexa />
-              </ExactCasePage>
-            }
-          />
-          <Route
-            path="/cases/corrida-em-jogo"
-            element={
-              <ExactCasePage>
-                <CorridaEmJogo />
-              </ExactCasePage>
-            }
-          />
-          <Route
-            path="/cases/beneficios-dispersos"
-            element={
-              <ExactCasePage>
-                <BeneficiosDispersos />
-              </ExactCasePage>
-            }
-          />
-          <Route
-            path="/cases/cadastro-travado"
-            element={
-              <ExactCasePage>
-                <CadastroTravado />
-              </ExactCasePage>
-            }
-          />
-          <Route
-            path="/cases/uma-marca-por-cliente"
-            element={
-              <ExactCasePage>
-                <UmaMarcaPorCliente />
-              </ExactCasePage>
-            }
-          />
-          <Route path="*" element={<Navigate to="/" replace />} />
-        </Routes>
-      </Suspense>
-    </BrowserRouter>
-  )
+const caseComponents = [NavegacaoConfusa,CadastrosComplexos,RegraIncerta,QualificacaoComplexa,CorridaEmJogo,BeneficiosDispersos,CadastroTravado,UmaMarcaPorCliente]
+function NotFound() { const {text,path}=useI18n();return <main className="not-found"><h1>{text('Página não encontrada')}</h1><a href={path('/')}>{text('Início')}</a></main> }
+export function AppContent() {
+  const { pathname } = useLocation()
+  return <LanguageProvider>
+    <ScrollRestoration />
+    <RouteSeo />
+    <RouterTracking />
+    <TopNavigation />
+    <Suspense fallback={<div className="exact-loading" />}>
+      <Routes key={pathname}>
+        {languages.map(language => <Route key={language} path={localizedPath('/',language)} element={<HomePage />} />)}
+        {languages.flatMap(language => cases.map((item,index) => {
+          const Component = caseComponents[index]
+          return <Route key={language+item.slug} path={localizedPath('/cases/'+item.slug,language)} element={<ExactCasePage><Component /></ExactCasePage>} />
+        }))}
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Suspense>
+    <ConsentPreferences />
+  </LanguageProvider>
 }
+export default function App() {return <BrowserRouter><AppContent /></BrowserRouter>}

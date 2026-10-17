@@ -1,4 +1,5 @@
 // @ts-nocheck -- Figma-generated exact visual component
+import { useI18n } from "../i18n";
 const assetPathPrefix = "/assets";
 const imgProfilePhoto = `${assetPathPrefix}/77366.png`;
 const imgMenuClosed = `${assetPathPrefix}/cea54.svg`;
@@ -104,6 +105,7 @@ type ProfilePictureProps = {
 };
 
 function ProfilePicture({ className, profile = "photo" }: ProfilePictureProps) {
+  const { t, text, path } = useI18n();
   return (
     <div className={className || "overflow-clip relative rounded-[48px] size-[48px]"} data-node-id="4:25199">
       <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[48px] size-full" src={imgProfilePhoto} />
@@ -117,6 +119,7 @@ type MenuProps = {
 };
 
 function Menu({ className, menu = "closed" }: MenuProps) {
+  const { t, text, path } = useI18n();
   return (
     <div className={className || "relative size-[35px]"} data-node-id="4:25190">
       <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgMenuClosed} />
@@ -125,6 +128,7 @@ function Menu({ className, menu = "closed" }: MenuProps) {
 }
 
 function LogoPorschecupbrasilGif({ className }: { className?: string }) {
+  const { t, text, path } = useI18n();
   return (
     <div className={className || "h-[42px] relative w-[154px]"} data-node-id="4:25187" data-name="logo-porschecupbrasil-gif">
       <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgLogoPorschecupbrasilGif} />
@@ -133,6 +137,7 @@ function LogoPorschecupbrasilGif({ className }: { className?: string }) {
 }
 
 export default function ArticleDecisaoEmSegundos() {
+  const { t, text, path } = useI18n();
   return (
     <div className="bg-[#eeeff1] content-stretch flex flex-col items-center relative size-full" data-node-id="4:32732" data-name="article#decisao-em-segundos">
       <div className="content-stretch flex flex-col gap-[32px] h-[1080px] isolate items-start justify-end overflow-clip px-[160px] py-[112px] relative shrink-0 w-[1920px]" data-node-id="4:32733" data-name="header.intro">
@@ -143,60 +148,52 @@ export default function ArticleDecisaoEmSegundos() {
           </div>
         </div>
         <div className="[word-break:break-word] content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full z-[3]" data-node-id="4:32734" data-name="div.flex.flex-col.w-full">
-          <p className="font-['Sora:SemiBold'] font-semibold leading-[1.1] relative shrink-0 text-[#fcfdfe] text-[81px] w-[1180px]" data-node-id="4:32736">
-            Corrida em jogo?
-          </p>
+          <h1 className="font-['Sora:SemiBold'] font-semibold leading-[1.1] relative shrink-0 text-[#fcfdfe] text-[81px] w-[1180px]" data-node-id="4:32736">
+            {t("t0349")}</h1>
           <p className="font-['Sora:Regular'] font-normal leading-[1.3] relative shrink-0 text-[#fcfdfe] text-[30px] w-[980px]" data-node-id="4:32737">
-            Organize cada decisão da equipe.
-          </p>
+            {t("t0350")}</p>
           <div className="content-start flex flex-wrap gap-[12px_16px] items-start leading-[1.6] relative shrink-0 text-[#230007] w-[1600px] whitespace-nowrap" data-node-id="4:32738" data-name="ul.meta">
             <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:32739" data-name="service-design">
               <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:32739;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                 hub
               </p>
               <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:32739;6066:625">
-                Processos operacionais
-              </p>
+                {t("t0351")}</p>
             </div>
             <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:32740" data-name="scenario-testing">
               <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:32740;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                 fact_check
               </p>
               <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:32740;6066:625">
-                Scenario Testing
-              </p>
+                {t("t0352")}</p>
             </div>
             <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:32741" data-name="project-type-4">
               <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:32741;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                 devices
               </p>
               <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:32741;6066:625">
-                Aplicativo operacional
-              </p>
+                {t("t0353")}</p>
             </div>
             <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:32742" data-name="operational-journey">
               <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:32742;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                 route
               </p>
               <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:32742;6066:625">
-                Operational Journey
-              </p>
+                {t("t0354")}</p>
             </div>
             <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:32743" data-name="information-architecture">
               <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:32743;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                 account_tree
               </p>
               <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:32743;6066:625">
-                Information Architecture
-              </p>
+                {t("t0016")}</p>
             </div>
             <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:32744" data-name="figma">
               <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:32744;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                 design_services
               </p>
               <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:32744;6066:625">
-                Figma
-              </p>
+                {t("t0167")}</p>
             </div>
           </div>
         </div>
@@ -205,16 +202,15 @@ export default function ArticleDecisaoEmSegundos() {
           <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImgHeroImage} />
         </div>
       </div>
-      <div className="bg-[#eeeff1] content-stretch flex flex-col h-[1080px] items-start justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:32748" data-name="section.context">
+      <div className="bg-[#eeeff1] content-stretch flex flex-col h-[1080px] items-start justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:32748" data-name="section.context" data-section-id="context">
         <div className="content-stretch flex gap-[96px] h-[520px] items-center relative shrink-0 w-full" data-node-id="4:32749" data-name="div.grid.grid-cols-12.gap-24.w-full">
           <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[24px] items-start min-w-px relative text-[16px]" data-node-id="4:32750" data-name="div.col-span-12.lg:col-span-8">
-            <p className="font-['Sora:SemiBold'] font-semibold leading-[1.3] relative shrink-0 text-[#0d0e10] tracking-[0.64px] w-[900px]" data-node-id="4:32751">
-              01 · CONTEXTO
-            </p>
+            <h2 className="font-['Sora:SemiBold'] font-semibold leading-[1.3] relative shrink-0 text-[#0d0e10] tracking-[0.64px] w-[900px]" data-node-id="4:32751">
+              {t("t0018")}</h2>
             <div className="font-['Sora:Regular'] font-normal leading-[0] relative shrink-0 text-[#000102] w-[1024px] whitespace-pre-wrap" data-node-id="4:32753">
-              <p className="leading-[1.5] mb-0">Uma corrida depende de decisões rápidas, inclusive fora da pista. Na Porsche Cup Brasil, planilhas ainda apoiavam a gestão de pneus comercializados, treinos, equipes e ativos de cada etapa.</p>
+              <p className="leading-[1.5] mb-0">{t("t0355")}</p>
               <p className="leading-[1.5] mb-0">​</p>
-              <p className="leading-[1.5]">Engenheiro, piloto e operação precisavam acompanhar pedidos, aprovações e retiradas. A mesma informação circulava entre papéis diferentes.</p>
+              <p className="leading-[1.5]">{t("t0356")}</p>
             </div>
           </div>
           <div className="h-[218.543px] relative shrink-0 w-[250px]" data-node-id="4:32754" data-name="figure.context-media.col-span-12.lg:col-span-4">
@@ -222,7 +218,7 @@ export default function ArticleDecisaoEmSegundos() {
           </div>
         </div>
       </div>
-      <div className="content-stretch flex flex-col h-[1080px] items-center justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:32763" data-name="section.challenge">
+      <div className="content-stretch flex flex-col h-[1080px] items-center justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:32763" data-name="section.challenge" data-section-id="challenge">
         <div aria-hidden className="absolute inset-0 pointer-events-none">
           <div className="absolute bg-[#eeeff1] inset-0" />
           <div className="absolute inset-0 opacity-10 overflow-hidden">
@@ -230,35 +226,32 @@ export default function ArticleDecisaoEmSegundos() {
           </div>
         </div>
         <div className="[word-break:break-word] content-stretch flex flex-col font-['Sora:SemiBold'] font-semibold gap-[32px] items-center max-w-[1500px] relative shrink-0 text-center w-full" data-node-id="4:32764" data-name="div.flex.flex-col.w-full.max-w-[1500px]">
-          <p className="leading-[1.3] relative shrink-0 text-[#0d0e10] text-[16px] tracking-[0.64px] w-[900px]" data-node-id="4:32765">
-            02 · DESAFIO
-          </p>
+          <h2 className="leading-[1.3] relative shrink-0 text-[#0d0e10] text-[16px] tracking-[0.64px] w-[900px]" data-node-id="4:32765">
+            {t("t0021")}</h2>
           <p className="leading-[1.2] relative shrink-0 text-[#000102] text-[36px] w-[1200px]" data-node-id="4:32767">
-            Quem precisava agir em cada etapa para manter pedidos, aprovações e ativos sob controle durante a corrida?
-          </p>
+            {t("t0357")}</p>
         </div>
       </div>
-      <div className="bg-[#eeeff1] content-stretch flex h-[1080px] items-center justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:32769" data-name="section.process">
+      <div className="bg-[#eeeff1] content-stretch flex h-[1080px] items-center justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:32769" data-name="section.process" data-section-id="process">
         <div className="content-stretch flex flex-[1_0_0] items-center justify-center min-w-px overflow-clip relative" data-node-id="4:32770" data-name="div.grid.grid-cols-12.gap-24.w-full">
           <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[24px] items-start min-w-px relative text-[16px]" data-node-id="4:32771" data-name="div.col-span-12.lg:col-span-8">
-            <p className="font-['Sora:SemiBold'] font-semibold leading-[1.3] relative shrink-0 text-[#0d0e10] tracking-[0.64px] w-[900px]" data-node-id="4:32772">
-              03 · PROCESSO
-            </p>
+            <h2 className="font-['Sora:SemiBold'] font-semibold leading-[1.3] relative shrink-0 text-[#0d0e10] tracking-[0.64px] w-[900px]" data-node-id="4:32772">
+              {t("t0023")}</h2>
             <div className="font-['Sora:Regular'] font-normal leading-[0] min-w-full relative shrink-0 text-[#000102] w-[min-content] whitespace-pre-wrap" data-node-id="4:32773">
-              <p className="leading-[1.5] mb-[12px]">A operação da Porsche Cup dependia da coordenação entre engenheiros, pilotos e equipes de apoio. Planilhas não ofereciam uma visão integrada das solicitações e dos estados de cada atividade.</p>
+              <p className="leading-[1.5] mb-[12px]">{t("t0358")}</p>
               <p className="leading-[1.5] mb-[12px]">​</p>
-              <p className="leading-[1.5] mb-[12px]">O mapeamento das responsabilidades mostrou como estruturar pedidos, aprovações, notificações e retiradas de pneus.</p>
+              <p className="leading-[1.5] mb-[12px]">{t("t0359")}</p>
               <p className="leading-[1.5] mb-[12px]">​</p>
-              <p className="leading-[1.5] mb-[12px]">Essas decisões orientaram o aplicativo administrativo. Depois, um manual impresso passou a documentar os procedimentos para as equipes.</p>
+              <p className="leading-[1.5] mb-[12px]">{t("t0360")}</p>
               <p className="leading-[1.5] mb-[12px]">​</p>
-              <p className="leading-[1.5]">O streaming também integrava o ecossistema digital, mas como uma aplicação independente.</p>
+              <p className="leading-[1.5]">{t("t0361")}</p>
             </div>
           </div>
         </div>
       </div>
       <div className="bg-[#eeeff1] content-stretch flex flex-col gap-[24px] h-[1080px] items-center justify-center overflow-clip p-[90px] relative shrink-0 w-[1920px]" data-node-id="4:32785" data-name="section.step.explore">
         <div className="absolute bg-[#3e000c] border border-[#6b0013] border-solid content-stretch flex flex-col h-[33px] items-center justify-center left-[695.46px] overflow-clip rounded-[16.5px] top-[188px] w-[445.5px]" data-node-id="4:32793" data-name="Frame">
-          <p className="[word-break:break-word] font-['Geist:Medium'] font-medium leading-[normal] relative shrink-0 text-[#6b0013] text-[11px] text-center whitespace-pre" data-node-id="4:32794">{`↩  Se não aprovado, revisar e reenviar`}</p>
+          <p className="[word-break:break-word] font-['Geist:Medium'] font-medium leading-[normal] relative shrink-0 text-[#6b0013] text-[11px] text-center whitespace-pre" data-node-id="4:32794">{t("t0362")}</p>
         </div>
         <div className="content-stretch flex gap-[10px] h-[51px] items-center relative shrink-0 w-full" data-node-id="4:32795" data-name="header.step-header">
           <p className="[word-break:break-word] font-['Material_Symbols_Outlined:Regular'] font-normal leading-[1.6] relative shrink-0 text-[#000102] text-[32px] whitespace-nowrap" data-node-id="4:32796" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
@@ -266,55 +259,43 @@ export default function ArticleDecisaoEmSegundos() {
           </p>
           <div className="content-stretch flex flex-col gap-[10px] items-start justify-center relative shrink-0 w-[1558px]" data-node-id="4:32797" data-name="div.flex.flex-col.flex-1">
             <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.4] relative shrink-0 text-[#000102] text-[16px] w-[328px]" data-node-id="4:32798">
-              Jornada multipersona
-            </p>
+              {t("t0363")}</p>
           </div>
         </div>
         <div className="bg-[#0d0e10] border border-[#3c3f45] border-solid grid grid-cols-[repeat(0,fit-content(100%))] grid-rows-[repeat(1,minmax(0,1fr))] h-[725px] overflow-clip relative rounded-[11px] shrink-0 w-full" data-node-id="4:32800" data-name="Matriz de permissões por perfil">
           <div className="bg-[#0d0e10] border border-[#3c3f45] border-solid content-stretch flex flex-col h-[64px] items-center justify-center overflow-clip p-[12px] relative shrink-0 w-[255px]" data-node-id="4:32801" data-name="Bloco · Personas">
             <p className="[word-break:break-word] font-['Geist:SemiBold'] font-semibold h-[20px] leading-[normal] relative shrink-0 text-[#3c3f45] text-[13px] w-[210px]" data-node-id="4:32802">
-              PERSONAS
-            </p>
+              {t("t0364")}</p>
           </div>
           <div className="[word-break:break-word] bg-[#d28298] border border-[#d28298] border-solid content-stretch flex flex-col h-[64px] items-start justify-center leading-[normal] overflow-clip p-[12px] relative shrink-0 w-[297px]" data-node-id="4:32803" data-name="Cabeçalho · Criar set">
             <p className="font-['Geist:SemiBold'] font-semibold h-[20.15px] relative shrink-0 text-[#fcfdfe] text-[13px] w-[269px]" data-node-id="4:32804">
-              CRIAR SET
-            </p>
+              {t("t0365")}</p>
             <p className="font-['Geist:Regular'] font-normal h-[20px] relative shrink-0 text-[#d28298] text-[11px] w-[269px]" data-node-id="4:32805">
-              Pilot Web
-            </p>
+              {t("t0366")}</p>
           </div>
           <div className="[word-break:break-word] bg-[#bc4862] border border-[#bc4862] border-solid content-stretch flex flex-col h-[64px] items-start justify-center leading-[normal] overflow-clip p-[12px] relative shrink-0 w-[297px]" data-node-id="4:32806" data-name="Cabeçalho · Aprovar">
             <p className="font-['Geist:SemiBold'] font-semibold h-[20.15px] relative shrink-0 text-[#fcfdfe] text-[13px] w-[269px]" data-node-id="4:32807">
-              APROVAR
-            </p>
+              {t("t0367")}</p>
             <p className="font-['Geist:Regular'] font-normal h-[20px] relative shrink-0 text-[#d28298] text-[11px] w-[269px]" data-node-id="4:32808">
-              Pilot Mobile
-            </p>
+              {t("t0368")}</p>
           </div>
           <div className="[word-break:break-word] bg-[#54000e] border border-[#54000e] border-solid content-stretch flex flex-col h-[64px] items-start justify-center leading-[normal] overflow-clip p-[12px] relative shrink-0 w-[297px]" data-node-id="4:32809" data-name="Cabeçalho · Revisar · 1">
             <p className="font-['Geist:SemiBold'] font-semibold h-[20.15px] relative shrink-0 text-[#fcfdfe] text-[13px] w-[269px]" data-node-id="4:32810">
-              REVISAR
-            </p>
+              {t("t0369")}</p>
             <p className="font-['Geist:Regular'] font-normal h-[20px] relative shrink-0 text-[#d28298] text-[11px] w-[269px]" data-node-id="4:32811">
-              Pilot Web
-            </p>
+              {t("t0366")}</p>
           </div>
           <div className="[word-break:break-word] bg-[#6b0013] border border-[#6b0013] border-solid content-stretch flex flex-col h-[64px] items-start justify-center leading-[normal] overflow-clip p-[12px] relative shrink-0 w-[297px]" data-node-id="4:32812" data-name="Cabeçalho · Executar">
             <p className="font-['Geist:SemiBold'] font-semibold h-[20.15px] relative shrink-0 text-[#fcfdfe] text-[13px] w-[269px]" data-node-id="4:32813">
-              EXECUTAR
-            </p>
+              {t("t0370")}</p>
             <p className="font-['Geist:Regular'] font-normal h-[20px] relative shrink-0 text-[#d28298] text-[11px] w-[269px]" data-node-id="4:32814">
-              Admin
-            </p>
+              {t("t0371")}</p>
           </div>
           <div className="[word-break:break-word] bg-[#3e000c] border border-[#3e000c] border-solid content-stretch flex flex-col h-[64px] items-start justify-center leading-[normal] overflow-clip p-[12px] relative shrink-0 w-[297px]" data-node-id="4:32815" data-name="Cabeçalho · Atualizar · 1">
             <p className="font-['Geist:SemiBold'] font-semibold h-[20.15px] relative shrink-0 text-[#fcfdfe] text-[13px] w-[269px]" data-node-id="4:32816">
-              ATUALIZAR
-            </p>
+              {t("t0372")}</p>
             <p className="font-['Geist:Regular'] font-normal h-[20px] relative shrink-0 text-[#d28298] text-[11px] w-[269px]" data-node-id="4:32817">
-              Pilot Mobile
-            </p>
+              {t("t0368")}</p>
           </div>
           <div className="bg-[#0d0e10] border border-[#3c3f45] border-solid content-stretch flex flex-col h-[202.5px] items-start justify-center overflow-clip p-[16px] relative shrink-0 w-[255px]" data-node-id="4:32818" data-name="Bloco · Preparar e ajustar o set com rastreabilidad…">
             <div className="content-stretch flex flex-col gap-[10px] items-start justify-center py-[2px] relative shrink-0 w-[221px]" data-node-id="4:32819" data-name="Bloco · Preparar e ajustar o set com rastreabilidad…">
@@ -324,76 +305,61 @@ export default function ArticleDecisaoEmSegundos() {
                 </div>
                 <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-px items-start leading-[normal] min-w-px relative" data-node-id="4:32822" data-name="Bloco · Engenheiro">
                   <p className="font-['Geist:SemiBold'] font-semibold h-[21.45px] relative shrink-0 text-[#fcfdfe] text-[16px] w-[160px]" data-node-id="4:32823">
-                    Engenheiro
-                  </p>
+                    {t("t0373")}</p>
                   <p className="font-['Geist:Regular'] font-normal h-[20px] relative shrink-0 text-[#3c3f45] text-[9px] w-[160px]" data-node-id="4:32824">
-                    Pilot Web
-                  </p>
+                    {t("t0366")}</p>
                 </div>
               </div>
               <p className="[word-break:break-word] font-['Geist:Regular'] font-normal leading-[normal] min-w-full relative shrink-0 text-[#fcfdfe] text-[13px] w-[min-content]" data-node-id="4:32825">
-                Preparar e ajustar o set com rastreabilidade.
-              </p>
+                {t("t0374")}</p>
             </div>
           </div>
           <div className="bg-[#0d0e10] border border-[#3c3f45] border-solid content-stretch flex flex-col h-[202.5px] items-center justify-center overflow-clip relative shrink-0 w-[297px]" data-node-id="4:32826" data-name="Bloco · Monta o set e envia para aprovação.">
             <div className="bg-[#0d0e10] border border-[#d28298] border-solid content-stretch flex flex-col gap-[16px] h-[139px] items-start justify-center overflow-clip px-[16px] relative rounded-[9px] shrink-0 w-[273px]" data-node-id="4:32827" data-name="Bloco · Monta o set e envia para aprovação.">
               <p className="[word-break:break-word] font-['Geist:SemiBold'] font-semibold h-[20px] leading-[normal] relative shrink-0 text-[#6b0013] text-[9px] w-[245px]" data-node-id="4:32828">
-                PREPARAR
-              </p>
+                {t("t0375")}</p>
               <p className="[word-break:break-word] font-['Geist:Regular'] font-normal h-[20px] leading-[normal] relative shrink-0 text-[#fcfdfe] text-[13px] w-[245px]" data-node-id="4:32829">
-                Monta o set e envia para aprovação.
-              </p>
+                {t("t0376")}</p>
               <div className="bg-[#d28298] border border-[#d28298] border-solid content-stretch flex flex-col h-[28px] items-start overflow-clip relative rounded-[14px] shrink-0 w-[110px]" data-node-id="4:32830" data-name="Badge · Momento crítico">
                 <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Geist:Medium'] font-medium h-[20px] leading-[normal] left-[54px] text-[#fcfdfe] text-[11px] text-center top-[5.5px] w-[94px]" data-node-id="4:32831">
-                  momento crítico
-                </p>
+                  {t("t0377")}</p>
               </div>
             </div>
           </div>
           <div className="bg-[#0d0e10] border border-[#3c3f45] border-solid content-stretch flex flex-col h-[202.5px] items-center justify-center overflow-clip relative shrink-0 w-[297px]" data-node-id="4:32832" data-name="Bloco · Acompanha o retorno do piloto.">
             <div className="[word-break:break-word] bg-[#0d0e10] border border-[#3c3f45] border-solid content-stretch flex flex-col gap-[16px] h-[139px] items-start justify-center leading-[normal] overflow-clip p-[16px] relative rounded-[9px] shrink-0 w-[273px]" data-node-id="4:32833" data-name="Bloco · Acompanha o retorno do piloto.">
               <p className="font-['Geist:SemiBold'] font-semibold h-[20px] relative shrink-0 text-[#3c3f45] text-[9px] w-[245px]" data-node-id="4:32834">
-                AGUARDAR
-              </p>
+                {t("t0378")}</p>
               <p className="font-['Geist:Regular'] font-normal h-[20px] relative shrink-0 text-[#fcfdfe] text-[13px] w-[245px]" data-node-id="4:32835">
-                Acompanha o retorno do piloto.
-              </p>
+                {t("t0379")}</p>
             </div>
           </div>
           <div className="bg-[#0d0e10] border border-[#3c3f45] border-solid content-stretch flex flex-col h-[202.5px] items-center justify-center overflow-clip relative shrink-0 w-[297px]" data-node-id="4:32836" data-name="Cabeçalho · Revisar · 2">
             <div className="bg-[#0d0e10] border border-[#54000e] border-solid content-stretch flex flex-col gap-[16px] h-[139px] items-start justify-center overflow-clip p-[16px] relative rounded-[9px] shrink-0 w-[273px]" data-node-id="4:32837" data-name="Cabeçalho · Revisar">
               <p className="[word-break:break-word] font-['Geist:SemiBold'] font-semibold h-[20px] leading-[normal] relative shrink-0 text-[#6b0013] text-[9px] w-[245px]" data-node-id="4:32838">
-                REVISAR
-              </p>
+                {t("t0369")}</p>
               <p className="[word-break:break-word] font-['Geist:Regular'] font-normal leading-[normal] relative shrink-0 text-[#fcfdfe] text-[13px] w-[245px]" data-node-id="4:32839">
-                Ajusta o set quando há pedido de revisão.
-              </p>
+                {t("t0380")}</p>
               <div className="bg-[#54000e] border border-[#54000e] border-solid content-stretch flex flex-col h-[28px] items-start overflow-clip relative rounded-[14px] shrink-0 w-[110px]" data-node-id="4:32840" data-name="Badge · Momento crítico">
                 <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Geist:Medium'] font-medium h-[20px] leading-[normal] left-[54px] text-[#fcfdfe] text-[11px] text-center top-[5.5px] w-[94px]" data-node-id="4:32841">
-                  momento crítico
-                </p>
+                  {t("t0377")}</p>
               </div>
             </div>
           </div>
           <div className="bg-[#0d0e10] border border-[#3c3f45] border-solid content-stretch flex flex-col h-[202.5px] items-center justify-center overflow-clip relative shrink-0 w-[297px]" data-node-id="4:32842" data-name="Bloco · Acompanha a execução do aprovado.">
             <div className="[word-break:break-word] bg-[#0d0e10] border border-[#3c3f45] border-solid content-stretch flex flex-col h-[139px] items-start justify-center leading-[normal] overflow-clip p-[16px] relative rounded-[9px] shrink-0 w-[273px]" data-node-id="4:32843" data-name="Bloco · Acompanha a execução do aprovado.">
               <p className="absolute font-['Geist:SemiBold'] font-semibold h-[20px] left-[13px] text-[#3c3f45] text-[9px] top-[12px] w-[245px]" data-node-id="4:32844">
-                ACOMPANHAR
-              </p>
+                {t("t0381")}</p>
               <p className="absolute font-['Geist:Regular'] font-normal h-[20px] left-[13px] text-[#fcfdfe] text-[13px] top-[37px] w-[245px]" data-node-id="4:32845">
-                Acompanha a execução do aprovado.
-              </p>
+                {t("t0382")}</p>
             </div>
           </div>
           <div className="bg-[#0d0e10] border border-[#3c3f45] border-solid content-stretch flex flex-col h-[202.5px] items-center justify-center overflow-clip relative shrink-0 w-[297px]" data-node-id="4:32846" data-name="Bloco · Consulta o estado final do set.">
             <div className="[word-break:break-word] bg-[#0d0e10] border border-[#3c3f45] border-solid content-stretch flex flex-col h-[139px] items-start justify-center leading-[normal] overflow-clip p-[16px] relative rounded-[9px] shrink-0 w-[273px]" data-node-id="4:32847" data-name="Bloco · Consulta o estado final do set.">
               <p className="absolute font-['Geist:SemiBold'] font-semibold h-[20px] left-[13px] text-[#3c3f45] text-[9px] top-[12px] w-[245px]" data-node-id="4:32848">
-                ACOMPANHAR
-              </p>
+                {t("t0381")}</p>
               <p className="absolute font-['Geist:Regular'] font-normal h-[20px] left-[13px] text-[#fcfdfe] text-[13px] top-[37px] w-[245px]" data-node-id="4:32849">
-                Consulta o estado final do set.
-              </p>
+                {t("t0383")}</p>
             </div>
           </div>
           <div className="bg-[#0d0e10] border border-[#3c3f45] border-solid content-stretch flex flex-col h-[202.5px] items-center justify-center overflow-clip p-[16px] relative shrink-0 w-[255px]" data-node-id="4:32850" data-name="Bloco · Decidir rápido sem perder contexto.">
@@ -406,80 +372,64 @@ export default function ArticleDecisaoEmSegundos() {
                 </div>
                 <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-px items-start leading-[normal] min-w-px relative" data-node-id="4:32854" data-name="Bloco · Pilot mobile">
                   <p className="font-['Geist:SemiBold'] font-semibold h-[21.45px] relative shrink-0 text-[#fcfdfe] text-[16px] w-[160px]" data-node-id="4:32855">
-                    Piloto
-                  </p>
+                    {t("t0384")}</p>
                   <p className="font-['Geist:Regular'] font-normal h-[20px] relative shrink-0 text-[#3c3f45] text-[9px] w-[160px]" data-node-id="4:32856">
-                    Pilot Mobile
-                  </p>
+                    {t("t0368")}</p>
                 </div>
               </div>
               <p className="[word-break:break-word] font-['Geist:Regular'] font-normal leading-[normal] relative shrink-0 text-[#fcfdfe] text-[13px] w-full" data-node-id="4:32857">
-                Decidir rápido sem perder contexto.
-              </p>
+                {t("t0385")}</p>
             </div>
           </div>
           <div className="bg-[#090a0c] border border-[#3c3f45] border-solid content-stretch flex flex-col h-[202.5px] items-center justify-center overflow-clip relative shrink-0 w-[297px]" data-node-id="4:32858" data-name="Bloco · Recebe a solicitação para análise.">
             <div className="[word-break:break-word] bg-[#0d0e10] border border-[#3c3f45] border-solid content-stretch flex flex-col h-[139px] items-start justify-center leading-[normal] overflow-clip p-[16px] relative rounded-[9px] shrink-0 w-[273px]" data-node-id="4:32859" data-name="Bloco · Recebe a solicitação para análise.">
               <p className="font-['Geist:SemiBold'] font-semibold h-[20px] relative shrink-0 text-[#3c3f45] text-[9px] w-[245px]" data-node-id="4:32860">
-                RECEBER
-              </p>
+                {t("t0386")}</p>
               <p className="font-['Geist:Regular'] font-normal h-[20px] relative shrink-0 text-[#fcfdfe] text-[13px] w-[245px]" data-node-id="4:32861">
-                Recebe a solicitação para análise.
-              </p>
+                {t("t0387")}</p>
             </div>
           </div>
           <div className="bg-[#090a0c] border border-[#3c3f45] border-solid content-stretch flex flex-col h-[202.5px] items-center justify-center overflow-clip relative shrink-0 w-[297px]" data-node-id="4:32862" data-name="Bloco · Avalia e aprova ou solicita revisão.">
             <div className="bg-[#0d0e10] border border-[#bc4862] border-solid content-stretch flex flex-col gap-[16px] h-[139px] items-start justify-center overflow-clip p-[16px] relative rounded-[9px] shrink-0 w-[273px]" data-node-id="4:32863" data-name="Bloco · Avalia e aprova ou solicita revisão.">
               <p className="[word-break:break-word] font-['Geist:SemiBold'] font-semibold h-[20px] leading-[normal] relative shrink-0 text-[#6b0013] text-[9px] w-[245px]" data-node-id="4:32864">
-                DECIDIR
-              </p>
+                {t("t0388")}</p>
               <p className="[word-break:break-word] font-['Geist:Regular'] font-normal h-[20px] leading-[normal] relative shrink-0 text-[#fcfdfe] text-[13px] w-[245px]" data-node-id="4:32865">
-                Avalia e aprova ou solicita revisão.
-              </p>
+                {t("t0389")}</p>
               <div className="bg-[#bc4862] border border-[#bc4862] border-solid content-stretch flex flex-col h-[28px] items-start overflow-clip relative rounded-[14px] shrink-0 w-[110px]" data-node-id="4:32866" data-name="Badge · Momento crítico">
                 <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Geist:Medium'] font-medium h-[20px] leading-[normal] left-[54px] text-[#fcfdfe] text-[11px] text-center top-[5.5px] w-[94px]" data-node-id="4:32867">
-                  momento crítico
-                </p>
+                  {t("t0377")}</p>
               </div>
             </div>
           </div>
           <div className="bg-[#090a0c] border border-[#3c3f45] border-solid content-stretch flex flex-col h-[202.5px] items-center justify-center overflow-clip relative shrink-0 w-[297px]" data-node-id="4:32868" data-name="Bloco · Confirma a versão revisada.">
             <div className="bg-[#0d0e10] border border-[#54000e] border-solid content-stretch flex flex-col gap-[16px] h-[139px] items-start justify-center overflow-clip p-[16px] relative rounded-[9px] shrink-0 w-[273px]" data-node-id="4:32869" data-name="Bloco · Confirma a versão revisada.">
               <p className="[word-break:break-word] font-['Geist:SemiBold'] font-semibold h-[20px] leading-[normal] relative shrink-0 text-[#6b0013] text-[9px] w-[245px]" data-node-id="4:32870">
-                CONFIRMAR
-              </p>
+                {t("t0390")}</p>
               <p className="[word-break:break-word] font-['Geist:Regular'] font-normal h-[20px] leading-[normal] relative shrink-0 text-[#fcfdfe] text-[13px] w-[245px]" data-node-id="4:32871">
-                Confirma a versão revisada.
-              </p>
+                {t("t0391")}</p>
               <div className="bg-[#54000e] border border-[#54000e] border-solid content-stretch flex flex-col h-[28px] items-start overflow-clip relative rounded-[14px] shrink-0 w-[110px]" data-node-id="4:32872" data-name="Badge · Momento crítico">
                 <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Geist:Medium'] font-medium h-[20px] leading-[normal] left-[54px] text-[#fcfdfe] text-[11px] text-center top-[5.5px] w-[94px]" data-node-id="4:32873">
-                  momento crítico
-                </p>
+                  {t("t0377")}</p>
               </div>
             </div>
           </div>
           <div className="bg-[#090a0c] border border-[#3c3f45] border-solid content-stretch flex flex-col h-[202.5px] items-center justify-center overflow-clip relative shrink-0 w-[297px]" data-node-id="4:32874" data-name="Bloco · Acompanha o andamento da execução.">
             <div className="[word-break:break-word] bg-[#0d0e10] border border-[#3c3f45] border-solid content-stretch flex flex-col gap-[16px] h-[139px] items-start justify-center leading-[normal] overflow-clip p-[16px] relative rounded-[9px] shrink-0 w-[273px]" data-node-id="4:32875" data-name="Bloco · Acompanha o andamento da execução.">
               <p className="font-['Geist:SemiBold'] font-semibold h-[20px] relative shrink-0 text-[#3c3f45] text-[9px] w-[245px]" data-node-id="4:32876">
-                ACOMPANHAR
-              </p>
+                {t("t0381")}</p>
               <p className="font-['Geist:Regular'] font-normal relative shrink-0 text-[#fcfdfe] text-[13px] w-[245px]" data-node-id="4:32877">
-                Acompanha o andamento da execução.
-              </p>
+                {t("t0392")}</p>
             </div>
           </div>
           <div className="bg-[#090a0c] border border-[#3c3f45] border-solid content-stretch flex flex-col h-[202.5px] items-center justify-center overflow-clip relative shrink-0 w-[297px]" data-node-id="4:32878" data-name="Bloco · Recebe a atualização do estado.">
             <div className="absolute bg-[#0d0e10] border border-[#3e000c] border-solid content-stretch flex flex-col gap-[16px] h-[139px] items-start justify-center left-[11px] overflow-clip p-[16px] rounded-[9px] top-[20px] w-[273px]" data-node-id="4:32879" data-name="Bloco · Recebe a atualização do estado.">
               <p className="[word-break:break-word] font-['Geist:SemiBold'] font-semibold h-[20px] leading-[normal] relative shrink-0 text-[#6b0013] text-[9px] w-[245px]" data-node-id="4:32880">
-                RECEBER
-              </p>
+                {t("t0386")}</p>
               <p className="[word-break:break-word] font-['Geist:Regular'] font-normal h-[20px] leading-[normal] relative shrink-0 text-[#fcfdfe] text-[13px] w-[245px]" data-node-id="4:32881">
-                Recebe a atualização do estado.
-              </p>
+                {t("t0393")}</p>
               <div className="bg-[#3e000c] border border-[#3e000c] border-solid content-stretch flex flex-col h-[28px] items-start overflow-clip relative rounded-[14px] shrink-0 w-[110px]" data-node-id="4:32882" data-name="Badge · Momento crítico">
                 <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Geist:Medium'] font-medium h-[20px] leading-[normal] left-[54px] text-[#fcfdfe] text-[11px] text-center top-[5.5px] w-[94px]" data-node-id="4:32883">
-                  momento crítico
-                </p>
+                  {t("t0377")}</p>
               </div>
             </div>
           </div>
@@ -491,75 +441,60 @@ export default function ArticleDecisaoEmSegundos() {
                 </div>
                 <div className="[word-break:break-word] content-stretch flex flex-col gap-px items-start leading-[normal] relative shrink-0" data-node-id="4:32888" data-name="Bloco · Operação">
                   <p className="font-['Geist:SemiBold'] font-semibold relative shrink-0 text-[#fcfdfe] text-[16px] w-[160px]" data-node-id="4:32889">
-                    Operação
-                  </p>
+                    {t("t0394")}</p>
                   <p className="font-['Geist:Regular'] font-normal relative shrink-0 text-[#3c3f45] text-[9px] w-[160px]" data-node-id="4:32890">
-                    Admin
-                  </p>
+                    {t("t0371")}</p>
                 </div>
               </div>
               <p className="[word-break:break-word] font-['Geist:Regular'] font-normal leading-[normal] relative shrink-0 text-[#fcfdfe] text-[13px] w-full" data-node-id="4:32891">
-                Executar o aprovado e manter o status atualizado.
-              </p>
+                {t("t0395")}</p>
             </div>
           </div>
           <div className="bg-[#0d0e10] border border-[#3c3f45] border-solid content-stretch flex flex-col h-[202.5px] items-center justify-center overflow-clip relative shrink-0 w-[297px]" data-node-id="4:32892" data-name="Bloco · Visualiza a demanda que entra no fluxo.">
             <div className="[word-break:break-word] bg-[#0d0e10] border border-[#3c3f45] border-solid content-stretch flex flex-col h-[139px] items-start justify-center leading-[normal] overflow-clip p-[16px] relative rounded-[9px] shrink-0 w-[273px]" data-node-id="4:32893" data-name="Bloco · Visualiza a demanda que entra no fluxo.">
               <p className="font-['Geist:SemiBold'] font-semibold h-[20px] relative shrink-0 text-[#3c3f45] text-[9px] w-[245px]" data-node-id="4:32894">
-                RECEBER
-              </p>
+                {t("t0386")}</p>
               <p className="font-['Geist:Regular'] font-normal relative shrink-0 text-[#fcfdfe] text-[13px] w-[245px]" data-node-id="4:32895">
-                Visualiza a demanda que entra no fluxo.
-              </p>
+                {t("t0396")}</p>
             </div>
           </div>
           <div className="bg-[#0d0e10] border border-[#3c3f45] border-solid content-stretch flex flex-col h-[202.5px] items-center justify-center overflow-clip relative shrink-0 w-[297px]" data-node-id="4:32896" data-name="Bloco · Aguarda uma decisão válida.">
             <div className="[word-break:break-word] bg-[#0d0e10] border border-[#3c3f45] border-solid content-stretch flex flex-col h-[139px] items-start justify-center leading-[normal] overflow-clip p-[16px] relative rounded-[9px] shrink-0 w-[273px]" data-node-id="4:32897" data-name="Bloco · Aguarda uma decisão válida.">
               <p className="font-['Geist:SemiBold'] font-semibold h-[20px] relative shrink-0 text-[#3c3f45] text-[9px] w-[245px]" data-node-id="4:32898">
-                AGUARDAR
-              </p>
+                {t("t0378")}</p>
               <p className="font-['Geist:Regular'] font-normal h-[20px] relative shrink-0 text-[#fcfdfe] text-[13px] w-[245px]" data-node-id="4:32899">
-                Aguarda uma decisão válida.
-              </p>
+                {t("t0397")}</p>
             </div>
           </div>
           <div className="bg-[#0d0e10] border border-[#3c3f45] border-solid content-stretch flex flex-col h-[202.5px] items-center justify-center overflow-clip relative shrink-0 w-[297px]" data-node-id="4:32900" data-name="Bloco · Aguarda a versão aprovada.">
             <div className="[word-break:break-word] bg-[#0d0e10] border border-[#3c3f45] border-solid content-stretch flex flex-col h-[139px] items-start justify-center leading-[normal] overflow-clip p-[16px] relative rounded-[9px] shrink-0 w-[273px]" data-node-id="4:32901" data-name="Bloco · Aguarda a versão aprovada.">
               <p className="font-['Geist:SemiBold'] font-semibold h-[20px] relative shrink-0 text-[#3c3f45] text-[9px] w-[245px]" data-node-id="4:32902">
-                AGUARDAR
-              </p>
+                {t("t0378")}</p>
               <p className="font-['Geist:Regular'] font-normal h-[20px] relative shrink-0 text-[#fcfdfe] text-[13px] w-[245px]" data-node-id="4:32903">
-                Aguarda a versão aprovada.
-              </p>
+                {t("t0398")}</p>
             </div>
           </div>
           <div className="bg-[#0d0e10] border border-[#3c3f45] border-solid content-stretch flex flex-col h-[202.5px] items-center justify-center overflow-clip relative shrink-0 w-[297px]" data-node-id="4:32904" data-name="Bloco · Executa o set aprovado na operação.">
             <div className="bg-[#0d0e10] border border-[#6b0013] border-solid content-stretch flex flex-col gap-[16px] h-[139px] items-start justify-center overflow-clip p-[16px] relative rounded-[9px] shrink-0 w-[273px]" data-node-id="4:32905" data-name="Bloco · Executa o set aprovado na operação.">
               <p className="[word-break:break-word] font-['Geist:SemiBold'] font-semibold h-[20px] leading-[normal] relative shrink-0 text-[#6b0013] text-[9px] w-[245px]" data-node-id="4:32906">
-                EXECUTAR
-              </p>
+                {t("t0370")}</p>
               <p className="[word-break:break-word] font-['Geist:Regular'] font-normal h-[20px] leading-[normal] relative shrink-0 text-[#fcfdfe] text-[13px] w-[245px]" data-node-id="4:32907">
-                Executa o set aprovado na operação.
-              </p>
+                {t("t0399")}</p>
               <div className="bg-[#6b0013] border border-[#6b0013] border-solid content-stretch flex flex-col h-[28px] items-start overflow-clip relative rounded-[14px] shrink-0 w-[110px]" data-node-id="4:32908" data-name="Badge · Momento crítico">
                 <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Geist:Medium'] font-medium h-[20px] leading-[normal] left-[54px] text-[#fcfdfe] text-[11px] text-center top-[5.5px] w-[94px]" data-node-id="4:32909">
-                  momento crítico
-                </p>
+                  {t("t0377")}</p>
               </div>
             </div>
           </div>
           <div className="bg-[#0d0e10] border border-[#3c3f45] border-solid content-stretch flex flex-col h-[202.5px] items-center justify-center overflow-clip relative shrink-0 w-[297px]" data-node-id="4:32910" data-name="Cabeçalho · Atualizar · 2">
             <div className="bg-[#0d0e10] border border-[#3e000c] border-solid content-stretch flex flex-col gap-[16px] h-[139px] items-start justify-center overflow-clip p-[16px] relative rounded-[9px] shrink-0 w-[273px]" data-node-id="4:32911" data-name="Cabeçalho · Atualizar">
               <p className="[word-break:break-word] font-['Geist:SemiBold'] font-semibold h-[20px] leading-[normal] relative shrink-0 text-[#6b0013] text-[9px] w-[245px]" data-node-id="4:32912">
-                ATUALIZAR
-              </p>
+                {t("t0372")}</p>
               <p className="[word-break:break-word] font-['Geist:Regular'] font-normal leading-[normal] relative shrink-0 text-[#fcfdfe] text-[13px] w-[245px]" data-node-id="4:32913">
-                Registra e atualiza o estado da execução.
-              </p>
+                {t("t0400")}</p>
               <div className="bg-[#3e000c] border border-[#3e000c] border-solid content-stretch flex flex-col h-[28px] items-start overflow-clip relative rounded-[14px] shrink-0 w-[110px]" data-node-id="4:32914" data-name="Badge · Momento crítico">
                 <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Geist:Medium'] font-medium h-[20px] leading-[normal] left-[54px] text-[#fcfdfe] text-[11px] text-center top-[5.5px] w-[94px]" data-node-id="4:32915">
-                  momento crítico
-                </p>
+                  {t("t0377")}</p>
               </div>
             </div>
           </div>
@@ -580,8 +515,7 @@ export default function ArticleDecisaoEmSegundos() {
             <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIndicadorDeStatus5} />
           </div>
           <p className="[word-break:break-word] font-['Geist:Medium'] font-medium h-[20px] leading-[normal] relative shrink-0 text-[#3c3f45] text-[9px] w-[210px]" data-node-id="4:32922">
-            handoff entre canais
-          </p>
+            {t("t0401")}</p>
         </div>
         <div className="bg-[#0d0e10] border border-[#3c3f45] border-solid content-stretch flex h-[75px] items-start overflow-clip relative rounded-[10px] shrink-0 w-[1740px]" data-node-id="4:32923" data-name="Frame">
           <div className="absolute left-[14px] size-[36px] top-[15px]" data-node-id="4:32924" data-name="Ellipse">
@@ -591,11 +525,9 @@ export default function ArticleDecisaoEmSegundos() {
             !
           </p>
           <p className="[word-break:break-word] absolute font-['Geist:SemiBold'] font-semibold h-[20px] leading-[normal] left-[62px] text-[#fcfdfe] text-[13px] top-[13px] w-[125px]" data-node-id="4:32926">
-            Insight
-          </p>
+            {t("t0402")}</p>
           <p className="[word-break:break-word] absolute font-['Geist:Regular'] font-normal h-[20px] leading-[normal] left-[62px] text-[#3c3f45] text-[13px] top-[35px] w-[1600px]" data-node-id="4:32927">
-            O mesmo dado muda de prioridade conforme ator e momento; o contexto precisa sobreviver ao handoff entre canais.
-          </p>
+            {t("t0403")}</p>
         </div>
       </div>
       <div className="bg-[#eeeff1] content-stretch flex flex-col gap-[24px] h-[1080px] items-center justify-center overflow-clip px-[160px] py-[112px] relative shrink-0 w-[1920px]" data-node-id="4:32928" data-name="section.step.define">
@@ -604,88 +536,79 @@ export default function ArticleDecisaoEmSegundos() {
             travel_explore
           </p>
           <p className="font-['Geist:Medium'] font-medium leading-[0] relative shrink-0 text-[0px] w-[720px]" data-node-id="4:32931">
-            <span className="font-['Sora:Bold'] font-bold leading-[1.4] text-[20px]">Explorar</span>
-            <span className="font-['Sora:SemiBold'] font-semibold leading-[1.4] text-[20px]">: Mapear momentos</span>
+            <span className="font-['Sora:Bold'] font-bold leading-[1.4] text-[20px]">{t("t0404")}</span>
+            <span className="font-['Sora:SemiBold'] font-semibold leading-[1.4] text-[20px]">{t("t0405")}</span>
           </p>
         </div>
         <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-full" data-node-id="4:32933">
           <div className="h-[203.648px] relative shrink-0 w-full" data-node-id="4:32934">
             <div className="absolute bg-[#656565] content-stretch flex flex-col items-center justify-center left-[1447px] px-[10px] py-[5px] top-[162px]" data-node-id="4:32935" data-name="Etiqueta-Finalizada">
               <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex flex-col font-['Porsche_Next_TT:Bold'] justify-center leading-[0] not-italic relative shrink-0 text-[10px] text-right text-white whitespace-nowrap" data-node-id="4:32936">
-                <p className="leading-[normal]">Finalizada</p>
+                <p className="leading-[normal]">{t("t0406")}</p>
               </div>
             </div>
             <div className="absolute bg-white content-stretch flex flex-col h-[50px] items-center justify-center left-[937px] px-[10px] py-[5px] top-[145px] w-[130px]" data-node-id="4:32937" data-name="Etapa-Pedido-Equipe-Pneus">
               <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Bold'] leading-[normal] not-italic relative shrink-0 text-[#656565] text-[10px] text-center w-full" data-node-id="4:32938">
-                Equipe de pneus realiza o pedido e libera
-              </p>
+                {t("t0407")}</p>
             </div>
             <div className="absolute bg-black content-stretch flex flex-col h-[50px] items-center justify-center left-[1107px] px-[10px] py-[5px] top-[145px] w-[130px]" data-node-id="4:32939" data-name="Etapa-Notificacao-Retirada">
               <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Bold'] leading-[normal] not-italic relative shrink-0 text-[#656565] text-[10px] text-center w-full" data-node-id="4:32940">
-                Engenheiro recebe notificação push para retirada
-              </p>
+                {t("t0408")}</p>
             </div>
             <div className="absolute bg-white content-stretch flex flex-col h-[50px] items-center justify-center left-[1277px] px-[10px] py-[5px] top-[145px] w-[130px]" data-node-id="4:32941" data-name="Etapa-Retirada-Pneus">
               <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Bold'] leading-[normal] not-italic relative shrink-0 text-[#656565] text-[10px] text-center w-full" data-node-id="4:32942">
-                Engenheiro retira os pneus solicitados
-              </p>
+                {t("t0409")}</p>
             </div>
             <div className="absolute bg-black content-stretch flex flex-col h-[50px] items-center justify-center left-[1536px] px-[10px] py-[5px] top-[145px] w-[130px]" data-node-id="4:32943" data-name="Etapa-Notificacao-Finalizacao">
               <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Bold'] leading-[normal] not-italic relative shrink-0 text-[#656565] text-[10px] text-center w-full" data-node-id="4:32944">
-                Todos recebem notificação push sobre finalização
-              </p>
+                {t("t0410")}</p>
             </div>
             <div className="absolute bg-black content-stretch flex flex-col h-[50px] items-center justify-center left-[767px] px-[10px] py-[5px] top-[145px] w-[130px]" data-node-id="4:32945" data-name="Etapa-Notificacao-Equipe-Pneus">
               <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Bold'] leading-[normal] not-italic relative shrink-0 text-[#656565] text-[10px] text-center w-full" data-node-id="4:32946">
-                Equipe de pneus recebe notificação da solicitação
-              </p>
+                {t("t0411")}</p>
             </div>
             <div className="absolute bg-[#ffb800] content-stretch flex flex-col items-center justify-center left-[638px] px-[10px] py-[5px] top-[161px]" data-node-id="4:32947" data-name="Etiqueta-Solicitacao-Enviada">
               <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex flex-col font-['Porsche_Next_TT:Bold'] justify-center leading-[0] not-italic relative shrink-0 text-[10px] text-right text-white whitespace-nowrap" data-node-id="4:32948">
-                <p className="leading-[normal]">Solicitação enviada</p>
+                <p className="leading-[normal]">{t("t0412")}</p>
               </div>
             </div>
             <div className="absolute bg-[#656565] content-stretch flex flex-col items-center justify-center left-[512px] px-[10px] py-[5px] top-[89px]" data-node-id="4:32949" data-name="Etiqueta-Reprovada">
               <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex flex-col font-['Porsche_Next_TT:Bold'] justify-center leading-[0] not-italic relative shrink-0 text-[10px] text-right text-white whitespace-nowrap" data-node-id="4:32950">
-                <p className="leading-[normal]">Reprovada</p>
+                <p className="leading-[normal]">{t("t0413")}</p>
               </div>
             </div>
             <div className="absolute bg-black content-stretch flex flex-col h-[50px] items-center justify-center left-[478px] px-[10px] py-[5px] top-0 w-[130px]" data-node-id="4:32951" data-name="Etapa-Notificacao-Alteracao">
               <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Bold'] leading-[normal] not-italic relative shrink-0 text-[#656565] text-[10px] text-center w-full" data-node-id="4:32952">
-                Engenheiro recebe notificação push para alteração
-              </p>
+                {t("t0414")}</p>
             </div>
             <div className="absolute bg-white content-stretch flex flex-col h-[50px] items-center justify-center left-[308px] px-[10px] py-[5px] top-0 w-[130px]" data-node-id="4:32953" data-name="Etapa-Alteracao-Solicitacao">
               <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Bold'] leading-[normal] not-italic relative shrink-0 text-[#656565] text-[10px] text-center w-full" data-node-id="4:32954">
-                O engenheiro altera solicitação de compra
-              </p>
+                {t("t0415")}</p>
             </div>
             <div className="absolute bg-black content-stretch flex flex-col h-[50px] items-center justify-center left-[308px] px-[10px] py-[5px] top-[145px] w-[130px]" data-node-id="4:32955" data-name="Etapa-Notificacao-Piloto">
               <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Bold'] leading-[normal] not-italic relative shrink-0 text-[#656565] text-[10px] text-center w-full" data-node-id="4:32956">
-                Piloto recebe uma notificação push
-              </p>
+                {t("t0416")}</p>
             </div>
             <div className="absolute bg-[#d4001c] content-stretch flex flex-col items-center justify-center left-[170px] px-[10px] py-[5px] top-[161px]" data-node-id="4:32957" data-name="Etiqueta-Aprovacao-Pendente">
               <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex flex-col font-['Porsche_Next_TT:Bold'] justify-center leading-[0] not-italic relative shrink-0 text-[10px] text-right text-white whitespace-nowrap" data-node-id="4:32958">
-                <p className="leading-[normal]">Aprovação pendete</p>
+                <p className="leading-[normal]">{t("t0417")}</p>
               </div>
             </div>
             <div className="absolute bg-[#d4001c] content-stretch flex flex-col items-center justify-center left-[324px] px-[10px] py-[5px] top-[89px]" data-node-id="4:32959" data-name="Etiqueta-Aprovacao-Pendente">
               <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex flex-col font-['Porsche_Next_TT:Bold'] justify-center leading-[0] not-italic relative shrink-0 text-[10px] text-right text-white whitespace-nowrap" data-node-id="4:32960">
-                <p className="leading-[normal]">Aprovação pendete</p>
+                <p className="leading-[normal]">{t("t0417")}</p>
               </div>
             </div>
             <div className="absolute bg-white content-stretch flex flex-col h-[50px] items-center justify-center left-0 px-[10px] py-[5px] top-[145px] w-[130px]" data-node-id="4:32961" data-name="Etapa-Solicitacao-Compra">
               <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Bold'] leading-[normal] not-italic relative shrink-0 text-[#656565] text-[10px] text-center w-full" data-node-id="4:32962">
-                O engenheiro freelancer solicita a compra.
-              </p>
+                {t("t0418")}</p>
             </div>
             <div className="absolute flex items-center justify-center left-[501.85px] size-[69.296px] top-[134.35px]" data-node-id="4:32963">
               <div className="-rotate-45 flex-none">
                 <div className="bg-white content-stretch flex flex-col items-center justify-center px-[10px] py-[5px] relative size-[49px]" data-name="Etapa-Solicitacao-Compra">
                   <div className="flex items-center justify-center relative shrink-0 size-[35.355px]" data-node-id="4:32964">
                     <div className="flex-none rotate-45">
-                      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Bold'] leading-[normal] not-italic relative text-[#656565] text-[10px] text-center whitespace-nowrap">Aprovação</p>
+                      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Bold'] leading-[normal] not-italic relative text-[#656565] text-[10px] text-center whitespace-nowrap">{t("t0419")}</p>
                     </div>
                   </div>
                 </div>
@@ -710,8 +633,7 @@ export default function ArticleDecisaoEmSegundos() {
               <div className="bg-white content-stretch flex flex-col items-center justify-center py-[4.5px] relative shrink-0 w-full" data-node-id="4:32987">
                 <div className="content-stretch flex items-center justify-center relative shrink-0" data-node-id="4:32988">
                   <p className="[word-break:break-word] font-['Porsche_Next_TT:Regular'] leading-[1.5] not-italic relative shrink-0 text-[13.5px] text-black text-center tracking-[-0.1485px] whitespace-nowrap" data-node-id="4:32989">
-                    Aprovação (Pilot Mobile)
-                  </p>
+                    {t("t0420")}</p>
                 </div>
               </div>
             </div>
@@ -732,8 +654,7 @@ export default function ArticleDecisaoEmSegundos() {
               <div className="bg-white content-stretch flex flex-col items-center justify-center py-[4.5px] relative shrink-0 w-full" data-node-id="4:32996">
                 <div className="content-stretch flex items-center justify-center relative shrink-0" data-node-id="4:32997">
                   <p className="[word-break:break-word] font-['Porsche_Next_TT:Regular'] leading-[1.5] not-italic relative shrink-0 text-[13.5px] text-black text-center tracking-[-0.1485px] whitespace-nowrap" data-node-id="4:32998">
-                    Aprovação
-                  </p>
+                    {t("t0419")}</p>
                 </div>
               </div>
             </div>
@@ -748,16 +669,14 @@ export default function ArticleDecisaoEmSegundos() {
               <div className="bg-white content-stretch flex flex-col items-center justify-center py-[4.5px] relative shrink-0 w-full" data-node-id="4:33003">
                 <div className="content-stretch flex items-center justify-center relative shrink-0" data-node-id="4:33004">
                   <p className="[word-break:break-word] font-['Porsche_Next_TT:Regular'] leading-[1.5] not-italic relative shrink-0 text-[13.5px] text-black text-center tracking-[-0.1485px] whitespace-nowrap" data-node-id="4:33005">
-                    Execução
-                  </p>
+                    {t("t0421")}</p>
                 </div>
               </div>
             </a>
             <div className="absolute bg-white content-stretch flex flex-col items-center justify-center left-[645.94px] py-[4.5px] top-[442.5px] w-[240.75px]" data-node-id="4:33007" data-name="step">
               <div className="content-stretch flex items-center justify-center relative shrink-0" data-node-id="4:33008">
                 <p className="[word-break:break-word] font-['Porsche_Next_TT:Regular'] leading-[1.5] not-italic relative shrink-0 text-[13.5px] text-black text-center tracking-[-0.1485px] whitespace-nowrap" data-node-id="4:33009">
-                  Aprovação
-                </p>
+                  {t("t0419")}</p>
               </div>
             </div>
             <div className="absolute bg-[rgba(255,255,255,0.01)] content-stretch flex flex-col gap-[11.25px] items-center justify-center left-[1689.75px] pt-[11.25px] top-[130.5px] w-[149.625px]" data-node-id="4:33011" data-name="step">
@@ -777,8 +696,7 @@ export default function ArticleDecisaoEmSegundos() {
               <div className="bg-white content-stretch flex flex-col items-center justify-center py-[4.5px] relative shrink-0 w-full" data-node-id="4:33017">
                 <div className="content-stretch flex items-center justify-center relative shrink-0" data-node-id="4:33018">
                   <p className="[word-break:break-word] font-['Porsche_Next_TT:Regular'] leading-[1.5] not-italic relative shrink-0 text-[13.5px] text-black text-center tracking-[-0.1485px] whitespace-nowrap" data-node-id="4:33019">
-                    Atualização
-                  </p>
+                    {t("t0422")}</p>
                 </div>
               </div>
             </div>
@@ -793,8 +711,7 @@ export default function ArticleDecisaoEmSegundos() {
               <div className="bg-white content-stretch flex flex-col items-center justify-center py-[4.5px] relative shrink-0 w-full" data-node-id="4:33024">
                 <div className="content-stretch flex items-center justify-center relative shrink-0" data-node-id="4:33025">
                   <p className="[word-break:break-word] font-['Porsche_Next_TT:Regular'] leading-[1.5] not-italic relative shrink-0 text-[13.5px] text-black text-center tracking-[-0.1485px] whitespace-nowrap" data-node-id="4:33026">
-                    Criação do set
-                  </p>
+                    {t("t0423")}</p>
                 </div>
               </div>
             </a>
@@ -809,8 +726,7 @@ export default function ArticleDecisaoEmSegundos() {
           </p>
           <div className="content-stretch flex flex-[1_0_0] flex-col gap-[10px] items-start justify-center min-w-px relative" data-node-id="4:33033" data-name="div.flex.flex-col.flex-1">
             <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.4] relative shrink-0 text-[#000102] text-[16px] w-[328px]" data-node-id="4:33034">
-              Streaming separado
-            </p>
+              {t("t0424")}</p>
           </div>
         </div>
         <div className="content-stretch flex flex-[1_0_0] items-end min-h-px relative w-full" data-node-id="4:33036">
@@ -831,7 +747,7 @@ export default function ArticleDecisaoEmSegundos() {
       </div>
       <div className="bg-[#eeeff1] content-stretch flex flex-col gap-[24px] h-[1080px] items-center justify-center overflow-clip px-[160px] py-[112px] relative shrink-0 w-[1920px]" data-node-id="4:33040" data-name="section.step.reflect">
         <div className="content-stretch flex flex-col items-center overflow-clip relative shrink-0" data-node-id="4:33041" data-name="div.grid.grid-cols-12.w-full">
-          <div className="content-stretch flex flex-col h-[760px] items-center justify-center overflow-clip relative shrink-0 w-full" data-node-id="4:33042" data-name="figure.artifact-visual.col-span-12">
+          <div className="content-stretch flex flex-col h-[760px] items-center justify-center overflow-clip relative shrink-0 w-full" data-node-id="4:33042" data-name="figure.artifact-visual.col-span-12" data-section-id="artifacts">
             <div className="bg-black content-stretch flex gap-[18.713px] h-[800px] items-start overflow-clip relative shrink-0 w-[1280px]" data-node-id="4:33043" data-name="tires/">
               <div className="bg-[#292929] content-stretch flex h-full items-start justify-end pl-[28.07px] py-[37.427px] relative shrink-0 w-[230.175px]" data-node-id="4:33044" data-name="menu-side-bar">
                 <div className="content-stretch flex flex-[1_0_0] flex-col gap-[37.427px] items-start min-w-px relative" data-node-id="4:33045">
@@ -847,8 +763,7 @@ export default function ArticleDecisaoEmSegundos() {
                           <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
                         </div>
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Bold'] leading-[normal] not-italic relative shrink-0 text-[13.1px] text-white whitespace-nowrap" data-node-id="I4:33048;3379:23680;3379:23452">
-                          DASHBOARD
-                        </p>
+                          {t("t0425")}</p>
                       </div>
                     </div>
                     <div className="content-stretch flex items-center justify-between relative shrink-0 w-full" data-node-id="I4:33048;3379:23681" data-name="DS-ARCS\Admin\Components\Menu-item">
@@ -857,8 +772,7 @@ export default function ArticleDecisaoEmSegundos() {
                           <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector1} />
                         </div>
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Bold'] leading-[normal] not-italic relative shrink-0 text-[13.1px] text-white whitespace-nowrap" data-node-id="I4:33048;3379:23681;3379:23463">
-                          PILOTOS
-                        </p>
+                          {t("t0426")}</p>
                       </div>
                       <div className="flex h-[7.485px] items-center justify-center relative shrink-0 w-[13.099px]" data-node-id="I4:33048;3379:23681;3379:23464">
                         <div className="-rotate-90 -scale-y-100 flex-none">
@@ -874,8 +788,7 @@ export default function ArticleDecisaoEmSegundos() {
                           <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon1} />
                         </div>
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Bold'] leading-[normal] not-italic relative shrink-0 text-[13.1px] text-white whitespace-nowrap" data-node-id="I4:33048;3379:23682;3379:23480">
-                          AUTOSERVIÇOS
-                        </p>
+                          {t("t0427")}</p>
                       </div>
                       <div className="flex h-[7.485px] items-center justify-center relative shrink-0 w-[13.099px]" data-node-id="I4:33048;3379:23682;3379:23481">
                         <div className="-rotate-90 -scale-y-100 flex-none">
@@ -888,33 +801,27 @@ export default function ArticleDecisaoEmSegundos() {
                     <div className="content-stretch flex flex-col gap-[14.035px] items-start pl-[27.135px] relative shrink-0 w-full" data-node-id="I4:33048;3379:23878" data-name="DS-ARCS\Admin\Components\Menu-item\Sub-item">
                       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-node-id="I4:33048;3379:23878;3379:23819" data-name="DS-ARCS\Admin\Components\Menu-item\Sub-item">
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex-[1_0_0] font-['Porsche_Next_TT:Regular'] leading-[normal] min-w-px not-italic relative text-[#797979] text-[13.1px]" data-node-id="I4:33048;3379:23878;3379:23819;3379:23801">
-                          PILOTOS
-                        </p>
+                          {t("t0426")}</p>
                       </div>
                       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-node-id="I4:33048;3379:23878;3379:23820" data-name="DS-ARCS\Admin\Components\Menu-item\Sub-item">
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex-[1_0_0] font-['Porsche_Next_TT:Regular'] leading-[normal] min-w-px not-italic relative text-[#797979] text-[13.1px]" data-node-id="I4:33048;3379:23878;3379:23820;3379:23801">
-                          ADESIVAGEM
-                        </p>
+                          {t("t0428")}</p>
                       </div>
                       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-node-id="I4:33048;3379:23878;3379:23822" data-name="DS-ARCS\Admin\Components\Menu-item\Sub-item">
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex-[1_0_0] font-['Porsche_Next_TT:Regular'] leading-[normal] min-w-px not-italic relative text-[#797979] text-[13.1px]" data-node-id="I4:33048;3379:23878;3379:23822;3379:23801">
-                          PNEUS
-                        </p>
+                          {t("t0429")}</p>
                       </div>
                       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-node-id="I4:33048;3379:23878;7142:2571" data-name="DS-ARCS\Admin\Components\Menu-item\Sub-item">
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex-[1_0_0] font-['Porsche_Next_TT:Regular'] leading-[normal] min-w-px not-italic relative text-[#797979] text-[13.1px]" data-node-id="I4:33048;3379:23878;7142:2571;3379:23801">
-                          SOLICITAÇÕES DE PNEUS
-                        </p>
+                          {t("t0430")}</p>
                       </div>
                       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-node-id="I4:33048;3379:23878;7151:31977" data-name="DS-ARCS\Admin\Components\Menu-item\Sub-item">
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex-[1_0_0] font-['Porsche_Next_TT:Bold'] leading-[normal] min-w-px not-italic relative text-[#d4001c] text-[13.1px]" data-node-id="I4:33048;3379:23878;7151:31977;3379:23803">
-                          ACOMPANHAMENTO DE SOLICITAÇOES DE PNEUS
-                        </p>
+                          {t("t0431")}</p>
                       </div>
                       <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-node-id="I4:33048;3379:23878;7074:34314" data-name="DS-ARCS\Admin\Components\Menu-item\Sub-item">
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex-[1_0_0] font-['Porsche_Next_TT:Regular'] leading-[normal] min-w-px not-italic relative text-[#797979] text-[13.1px]" data-node-id="I4:33048;3379:23878;7074:34314;3379:23801">
-                          CONFIGURAÇÕES DE PNEUS
-                        </p>
+                          {t("t0432")}</p>
                       </div>
                     </div>
                     <div className="content-stretch flex items-center justify-between relative shrink-0 w-full" data-node-id="I4:33048;3379:23683" data-name="DS-ARCS\Admin\Components\Menu-item">
@@ -923,8 +830,7 @@ export default function ArticleDecisaoEmSegundos() {
                           <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon2} />
                         </div>
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Bold'] leading-[normal] not-italic relative shrink-0 text-[13.1px] text-white whitespace-nowrap" data-node-id="I4:33048;3379:23683;3379:23494">
-                          EVENTOS
-                        </p>
+                          {t("t0433")}</p>
                       </div>
                       <div className="flex h-[7.485px] items-center justify-center relative shrink-0 w-[13.099px]" data-node-id="I4:33048;3379:23683;3379:23495">
                         <div className="-rotate-90 -scale-y-100 flex-none">
@@ -940,8 +846,7 @@ export default function ArticleDecisaoEmSegundos() {
                           <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector2} />
                         </div>
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Bold'] leading-[normal] not-italic relative shrink-0 text-[13.1px] text-white whitespace-nowrap" data-node-id="I4:33048;3379:23684;3379:23508">
-                          CARROS
-                        </p>
+                          {t("t0434")}</p>
                       </div>
                       <div className="flex h-[7.485px] items-center justify-center relative shrink-0 w-[13.099px]" data-node-id="I4:33048;3379:23684;3379:23509">
                         <div className="-rotate-90 -scale-y-100 flex-none">
@@ -961,8 +866,7 @@ export default function ArticleDecisaoEmSegundos() {
                           </div>
                         </div>
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Bold'] leading-[normal] not-italic relative shrink-0 text-[13.1px] text-white whitespace-nowrap" data-node-id="I4:33048;3379:23685;3379:23522">
-                          CONTROLE DE ACESSO
-                        </p>
+                          {t("t0435")}</p>
                       </div>
                       <div className="flex h-[7.485px] items-center justify-center relative shrink-0 w-[13.099px]" data-node-id="I4:33048;3379:23685;3379:23523">
                         <div className="-rotate-90 -scale-y-100 flex-none">
@@ -978,8 +882,7 @@ export default function ArticleDecisaoEmSegundos() {
                           <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector4} />
                         </div>
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Bold'] leading-[normal] not-italic relative shrink-0 text-[13.1px] text-white whitespace-nowrap" data-node-id="I4:33048;3379:23686;3379:23541">
-                          COMUNICAÇÃO
-                        </p>
+                          {t("t0436")}</p>
                       </div>
                       <div className="flex h-[7.485px] items-center justify-center relative shrink-0 w-[13.099px]" data-node-id="I4:33048;3379:23686;3379:23542">
                         <div className="-rotate-90 -scale-y-100 flex-none">
@@ -1009,16 +912,14 @@ export default function ArticleDecisaoEmSegundos() {
                 </div>
                 <div className="content-stretch flex items-center justify-between relative shrink-0 w-full" data-node-id="4:33057" data-name="title">
                   <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex-[1_0_0] font-['Porsche_Next_TT:Bold'] leading-[normal] min-w-px not-italic relative text-[22.456px] text-white" data-node-id="4:33058">
-                    Acompanhamento de solicitação de pneus
-                  </p>
+                    {t("t0437")}</p>
                 </div>
                 <div className="content-start flex flex-[1_0_0] flex-wrap gap-[22.456140518188477px_22.456px] items-start min-h-px relative w-full" data-node-id="4:33144">
                   <div className="bg-[#292929] content-stretch flex flex-col gap-[22.012px] items-center relative shrink-0 w-[201.778px]" data-node-id="4:33145" data-name="card">
                     <div className="content-stretch flex flex-col gap-[13.758px] items-start pt-[18.343px] px-[9.172px] relative shrink-0 w-full" data-node-id="4:33146" data-name="solicitacao-card-title">
                       <div className="[word-break:break-word] content-stretch flex gap-[48.61px] items-center leading-[normal] not-italic relative shrink-0 text-white w-full whitespace-nowrap" data-node-id="4:33147" data-name="solicitacao-card-title">
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Bold'] relative shrink-0 text-[14.638px]" data-node-id="4:33148">
-                          #7812 - Chuva
-                        </p>
+                          {t("t0438")}</p>
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Regular'] relative shrink-0 text-[10.969px] text-right" data-node-id="4:33149">
                           11:43
                         </p>
@@ -1029,8 +930,7 @@ export default function ArticleDecisaoEmSegundos() {
                       <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[normal] not-italic relative shrink-0 text-white w-[163.256px] whitespace-nowrap" data-node-id="4:33152" data-name="pneus">
                         <div className="content-stretch flex gap-[10.089px] items-center relative shrink-0 text-right" data-node-id="4:33153" data-name="de">
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Regular'] relative shrink-0 text-[14.638px]" data-node-id="4:33154">
-                            DE
-                          </p>
+                            {t("t0439")}</p>
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Bold'] relative shrink-0 text-[21.975px]" data-node-id="4:33155">
                             0
                           </p>
@@ -1040,15 +940,13 @@ export default function ArticleDecisaoEmSegundos() {
                             0
                           </p>
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Regular'] relative shrink-0 text-[14.638px]" data-node-id="4:33158">
-                            DD
-                          </p>
+                            {t("t0440")}</p>
                         </div>
                       </div>
                       <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[normal] not-italic relative shrink-0 text-white w-[159.588px] whitespace-nowrap" data-node-id="4:33159" data-name="pneus">
                         <div className="content-stretch flex gap-[10.089px] items-center relative shrink-0 text-right" data-node-id="4:33160" data-name="te">
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Regular'] relative shrink-0 text-[14.638px]" data-node-id="4:33161">
-                            TE
-                          </p>
+                            {t("t0441")}</p>
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Bold'] relative shrink-0 text-[21.975px]" data-node-id="4:33162">
                             1
                           </p>
@@ -1058,8 +956,7 @@ export default function ArticleDecisaoEmSegundos() {
                             1
                           </p>
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Regular'] relative shrink-0 text-[14.638px]" data-node-id="4:33165">
-                            TD
-                          </p>
+                            {t("t0442")}</p>
                         </div>
                       </div>
                       <div className="-translate-x-1/2 -translate-y-1/2 absolute h-[80.711px] left-[calc(50%+14.97px)] top-[calc(50%+0.65px)] w-[56.865px]" data-node-id="4:33166" data-name="car">
@@ -1072,13 +969,11 @@ export default function ArticleDecisaoEmSegundos() {
                       </div>
                       <div className="border-[0.936px] border-solid border-white content-stretch flex gap-[9.357px] h-[37.427px] items-center justify-center px-[14.971px] py-[10.292px] relative shrink-0 w-[67.205px]" data-node-id="4:33170" data-name="DS-ARCS\Admin\Components\Button">
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Bold'] leading-[normal] not-italic relative shrink-0 text-[8.75px] text-white uppercase whitespace-nowrap" data-node-id="I4:33170;3376:16580">
-                          CANCELAR
-                        </p>
+                          {t("t0443")}</p>
                       </div>
                       <div className="bg-white border-[0.936px] border-solid border-white content-stretch flex gap-[9.357px] h-[37.427px] items-center justify-center px-[14.971px] py-[10.292px] relative shrink-0 w-[67.205px]" data-node-id="4:33171" data-name="DS-ARCS\Admin\Components\Button">
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Bold'] leading-[normal] not-italic relative shrink-0 text-[#d4001c] text-[8.75px] uppercase whitespace-nowrap" data-node-id="I4:33171;3376:16577">
-                          INICIAR
-                        </p>
+                          {t("t0444")}</p>
                       </div>
                     </div>
                   </div>
@@ -1086,8 +981,7 @@ export default function ArticleDecisaoEmSegundos() {
                     <div className="content-stretch flex flex-col gap-[13.758px] items-start pt-[18.343px] px-[9.172px] relative shrink-0 w-full" data-node-id="4:33173" data-name="solicitacao-card-title">
                       <div className="[word-break:break-word] content-stretch flex gap-[48.61px] items-center leading-[normal] not-italic relative shrink-0 text-white w-full whitespace-nowrap" data-node-id="4:33174" data-name="solicitacao-card-title">
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Bold'] relative shrink-0 text-[14.638px]" data-node-id="4:33175">
-                          #9612 - Chuva
-                        </p>
+                          {t("t0445")}</p>
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Regular'] relative shrink-0 text-[10.969px] text-right" data-node-id="4:33176">
                           11:32
                         </p>
@@ -1098,8 +992,7 @@ export default function ArticleDecisaoEmSegundos() {
                       <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[normal] not-italic relative shrink-0 text-white w-[163.256px] whitespace-nowrap" data-node-id="4:33179" data-name="pneus">
                         <div className="content-stretch flex gap-[10.089px] items-center relative shrink-0 text-right" data-node-id="4:33180" data-name="de">
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Regular'] relative shrink-0 text-[14.638px]" data-node-id="4:33181">
-                            DE
-                          </p>
+                            {t("t0439")}</p>
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Bold'] relative shrink-0 text-[21.975px]" data-node-id="4:33182">
                             1
                           </p>
@@ -1109,15 +1002,13 @@ export default function ArticleDecisaoEmSegundos() {
                             1
                           </p>
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Regular'] relative shrink-0 text-[14.638px]" data-node-id="4:33185">
-                            DD
-                          </p>
+                            {t("t0440")}</p>
                         </div>
                       </div>
                       <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[normal] not-italic relative shrink-0 text-white w-[159.588px] whitespace-nowrap" data-node-id="4:33186" data-name="pneus">
                         <div className="content-stretch flex gap-[10.089px] items-center relative shrink-0 text-right" data-node-id="4:33187" data-name="te">
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Regular'] relative shrink-0 text-[14.638px]" data-node-id="4:33188">
-                            TE
-                          </p>
+                            {t("t0441")}</p>
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Bold'] relative shrink-0 text-[21.975px]" data-node-id="4:33189">
                             1
                           </p>
@@ -1127,8 +1018,7 @@ export default function ArticleDecisaoEmSegundos() {
                             1
                           </p>
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Regular'] relative shrink-0 text-[14.638px]" data-node-id="4:33192">
-                            TD
-                          </p>
+                            {t("t0442")}</p>
                         </div>
                       </div>
                       <div className="-translate-x-1/2 -translate-y-1/2 absolute h-[80.711px] left-[calc(50%+14.97px)] top-[calc(50%+0.65px)] w-[56.865px]" data-node-id="4:33193" data-name="car">
@@ -1141,13 +1031,11 @@ export default function ArticleDecisaoEmSegundos() {
                       </div>
                       <div className="border-[0.936px] border-solid border-white content-stretch flex gap-[9.357px] h-[37.427px] items-center justify-center px-[14.971px] py-[10.292px] relative shrink-0 w-[67.205px]" data-node-id="4:33197" data-name="DS-ARCS\Admin\Components\Button">
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Bold'] leading-[normal] not-italic relative shrink-0 text-[8.75px] text-white uppercase whitespace-nowrap" data-node-id="I4:33197;3376:16580">
-                          CANCELAR
-                        </p>
+                          {t("t0443")}</p>
                       </div>
                       <div className="bg-white border-[0.936px] border-solid border-white content-stretch flex gap-[9.357px] h-[37.427px] items-center justify-center px-[14.971px] py-[10.292px] relative shrink-0 w-[67.205px]" data-node-id="4:33198" data-name="DS-ARCS\Admin\Components\Button">
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Bold'] leading-[normal] not-italic relative shrink-0 text-[#d4001c] text-[8.75px] uppercase whitespace-nowrap" data-node-id="I4:33198;3376:16577">
-                          INICIAR
-                        </p>
+                          {t("t0444")}</p>
                       </div>
                     </div>
                   </div>
@@ -1155,8 +1043,7 @@ export default function ArticleDecisaoEmSegundos() {
                     <div className="content-stretch flex flex-col gap-[13.758px] items-start pt-[18.343px] px-[9.172px] relative shrink-0 w-full" data-node-id="4:33200" data-name="solicitacao-card-title">
                       <div className="[word-break:break-word] content-stretch flex gap-[48.61px] items-center leading-[normal] not-italic relative shrink-0 text-white w-full whitespace-nowrap" data-node-id="4:33201" data-name="solicitacao-card-title">
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Bold'] relative shrink-0 text-[14.638px]" data-node-id="4:33202">
-                          #3312 - Chuva
-                        </p>
+                          {t("t0446")}</p>
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Regular'] relative shrink-0 text-[10.969px] text-right" data-node-id="4:33203">
                           10:50
                         </p>
@@ -1167,8 +1054,7 @@ export default function ArticleDecisaoEmSegundos() {
                       <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[normal] not-italic relative shrink-0 text-white w-[163.256px] whitespace-nowrap" data-node-id="4:33206" data-name="pneus">
                         <div className="content-stretch flex gap-[10.089px] items-center relative shrink-0 text-right" data-node-id="4:33207" data-name="de">
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Regular'] relative shrink-0 text-[14.638px]" data-node-id="4:33208">
-                            DE
-                          </p>
+                            {t("t0439")}</p>
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Bold'] relative shrink-0 text-[21.975px]" data-node-id="4:33209">
                             1
                           </p>
@@ -1178,15 +1064,13 @@ export default function ArticleDecisaoEmSegundos() {
                             0
                           </p>
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Regular'] relative shrink-0 text-[14.638px]" data-node-id="4:33212">
-                            DD
-                          </p>
+                            {t("t0440")}</p>
                         </div>
                       </div>
                       <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[normal] not-italic relative shrink-0 text-white w-[159.588px] whitespace-nowrap" data-node-id="4:33213" data-name="pneus">
                         <div className="content-stretch flex gap-[10.089px] items-center relative shrink-0 text-right" data-node-id="4:33214" data-name="te">
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Regular'] relative shrink-0 text-[14.638px]" data-node-id="4:33215">
-                            TE
-                          </p>
+                            {t("t0441")}</p>
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Bold'] relative shrink-0 text-[21.975px]" data-node-id="4:33216">
                             0
                           </p>
@@ -1196,8 +1080,7 @@ export default function ArticleDecisaoEmSegundos() {
                             0
                           </p>
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Regular'] relative shrink-0 text-[14.638px]" data-node-id="4:33219">
-                            TD
-                          </p>
+                            {t("t0442")}</p>
                         </div>
                       </div>
                       <div className="-translate-x-1/2 -translate-y-1/2 absolute h-[80.711px] left-[calc(50%+14.97px)] top-[calc(50%+0.65px)] w-[56.865px]" data-node-id="4:33220" data-name="car">
@@ -1210,13 +1093,11 @@ export default function ArticleDecisaoEmSegundos() {
                       </div>
                       <div className="border-[0.936px] border-solid border-white content-stretch flex gap-[9.357px] h-[37.427px] items-center justify-center px-[14.971px] py-[10.292px] relative shrink-0 w-[67.205px]" data-node-id="4:33224" data-name="DS-ARCS\Admin\Components\Button">
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Bold'] leading-[normal] not-italic relative shrink-0 text-[8.75px] text-white uppercase whitespace-nowrap" data-node-id="I4:33224;3376:16580">
-                          CANCELAR
-                        </p>
+                          {t("t0443")}</p>
                       </div>
                       <div className="bg-white border-[0.936px] border-solid border-white content-stretch flex gap-[9.357px] h-[37.427px] items-center justify-center px-[14.971px] py-[10.292px] relative shrink-0 w-[67.205px]" data-node-id="4:33225" data-name="DS-ARCS\Admin\Components\Button">
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Bold'] leading-[normal] not-italic relative shrink-0 text-[#d4001c] text-[8.75px] uppercase whitespace-nowrap" data-node-id="I4:33225;3376:16577">
-                          INICIAR
-                        </p>
+                          {t("t0444")}</p>
                       </div>
                     </div>
                   </div>
@@ -1224,8 +1105,7 @@ export default function ArticleDecisaoEmSegundos() {
                     <div className="content-stretch flex flex-col gap-[13.758px] items-start pt-[18.343px] px-[9.172px] relative shrink-0 w-full" data-node-id="4:33227" data-name="solicitacao-card-title">
                       <div className="[word-break:break-word] content-stretch flex gap-[48.61px] items-center leading-[normal] not-italic relative shrink-0 text-white w-full whitespace-nowrap" data-node-id="4:33228" data-name="solicitacao-card-title">
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Bold'] relative shrink-0 text-[14.638px]" data-node-id="4:33229">
-                          #2135 - Slick
-                        </p>
+                          {t("t0447")}</p>
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Regular'] relative shrink-0 text-[10.969px] text-right" data-node-id="4:33230">
                           10:41
                         </p>
@@ -1236,8 +1116,7 @@ export default function ArticleDecisaoEmSegundos() {
                       <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[normal] not-italic relative shrink-0 text-white w-[163.256px] whitespace-nowrap" data-node-id="4:33233" data-name="pneus">
                         <div className="content-stretch flex gap-[10.089px] items-center relative shrink-0 text-right" data-node-id="4:33234" data-name="de">
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Regular'] relative shrink-0 text-[14.638px]" data-node-id="4:33235">
-                            DE
-                          </p>
+                            {t("t0439")}</p>
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Bold'] relative shrink-0 text-[21.975px]" data-node-id="4:33236">
                             0
                           </p>
@@ -1247,15 +1126,13 @@ export default function ArticleDecisaoEmSegundos() {
                             0
                           </p>
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Regular'] relative shrink-0 text-[14.638px]" data-node-id="4:33239">
-                            DD
-                          </p>
+                            {t("t0440")}</p>
                         </div>
                       </div>
                       <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[normal] not-italic relative shrink-0 text-white w-[159.588px] whitespace-nowrap" data-node-id="4:33240" data-name="pneus">
                         <div className="content-stretch flex gap-[10.089px] items-center relative shrink-0 text-right" data-node-id="4:33241" data-name="te">
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Regular'] relative shrink-0 text-[14.638px]" data-node-id="4:33242">
-                            TE
-                          </p>
+                            {t("t0441")}</p>
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Bold'] relative shrink-0 text-[21.975px]" data-node-id="4:33243">
                             1
                           </p>
@@ -1265,8 +1142,7 @@ export default function ArticleDecisaoEmSegundos() {
                             1
                           </p>
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Regular'] relative shrink-0 text-[14.638px]" data-node-id="4:33246">
-                            TD
-                          </p>
+                            {t("t0442")}</p>
                         </div>
                       </div>
                       <div className="-translate-x-1/2 -translate-y-1/2 absolute h-[80.711px] left-[calc(50%+14.97px)] top-[calc(50%+0.65px)] w-[56.865px]" data-node-id="4:33247" data-name="car">
@@ -1279,13 +1155,11 @@ export default function ArticleDecisaoEmSegundos() {
                       </div>
                       <div className="border-[0.936px] border-solid border-white content-stretch flex gap-[9.357px] h-[37.427px] items-center justify-center px-[14.971px] py-[10.292px] relative shrink-0 w-[67.205px]" data-node-id="4:33251" data-name="DS-ARCS\Admin\Components\Button">
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Bold'] leading-[normal] not-italic relative shrink-0 text-[8.75px] text-white uppercase whitespace-nowrap" data-node-id="I4:33251;3376:16580">
-                          CANCELAR
-                        </p>
+                          {t("t0443")}</p>
                       </div>
                       <div className="bg-white border-[0.936px] border-solid border-white content-stretch flex gap-[9.357px] h-[37.427px] items-center justify-center px-[14.971px] py-[10.292px] relative shrink-0 w-[67.205px]" data-node-id="4:33252" data-name="DS-ARCS\Admin\Components\Button">
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Bold'] leading-[normal] not-italic relative shrink-0 text-[#d4001c] text-[8.75px] uppercase whitespace-nowrap" data-node-id="I4:33252;3376:16577">
-                          INICIAR
-                        </p>
+                          {t("t0444")}</p>
                       </div>
                     </div>
                   </div>
@@ -1293,8 +1167,7 @@ export default function ArticleDecisaoEmSegundos() {
                     <div className="content-stretch flex flex-col gap-[13.758px] items-start pt-[18.343px] px-[9.172px] relative shrink-0 w-full" data-node-id="4:33254" data-name="solicitacao-card-title">
                       <div className="[word-break:break-word] content-stretch flex gap-[48.61px] items-center leading-[normal] not-italic relative shrink-0 text-white w-full whitespace-nowrap" data-node-id="4:33255" data-name="solicitacao-card-title">
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Bold'] relative shrink-0 text-[14.638px]" data-node-id="4:33256">
-                          #1256 - Slick
-                        </p>
+                          {t("t0448")}</p>
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Regular'] relative shrink-0 text-[10.969px] text-right" data-node-id="4:33257">
                           10:40
                         </p>
@@ -1305,8 +1178,7 @@ export default function ArticleDecisaoEmSegundos() {
                       <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[normal] not-italic relative shrink-0 text-white w-[163.256px] whitespace-nowrap" data-node-id="4:33260" data-name="pneus">
                         <div className="content-stretch flex gap-[10.089px] items-center relative shrink-0 text-right" data-node-id="4:33261" data-name="de">
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Regular'] relative shrink-0 text-[14.638px]" data-node-id="4:33262">
-                            DE
-                          </p>
+                            {t("t0439")}</p>
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Bold'] relative shrink-0 text-[21.975px]" data-node-id="4:33263">
                             0
                           </p>
@@ -1316,15 +1188,13 @@ export default function ArticleDecisaoEmSegundos() {
                             0
                           </p>
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Regular'] relative shrink-0 text-[14.638px]" data-node-id="4:33266">
-                            DD
-                          </p>
+                            {t("t0440")}</p>
                         </div>
                       </div>
                       <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[normal] not-italic relative shrink-0 text-white w-[159.588px] whitespace-nowrap" data-node-id="4:33267" data-name="pneus">
                         <div className="content-stretch flex gap-[10.089px] items-center relative shrink-0 text-right" data-node-id="4:33268" data-name="te">
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Regular'] relative shrink-0 text-[14.638px]" data-node-id="4:33269">
-                            TE
-                          </p>
+                            {t("t0441")}</p>
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Bold'] relative shrink-0 text-[21.975px]" data-node-id="4:33270">
                             1
                           </p>
@@ -1334,8 +1204,7 @@ export default function ArticleDecisaoEmSegundos() {
                             1
                           </p>
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Regular'] relative shrink-0 text-[14.638px]" data-node-id="4:33273">
-                            TD
-                          </p>
+                            {t("t0442")}</p>
                         </div>
                       </div>
                       <div className="-translate-x-1/2 -translate-y-1/2 absolute h-[80.711px] left-[calc(50%+14.97px)] top-[calc(50%+0.65px)] w-[56.865px]" data-node-id="4:33274" data-name="car">
@@ -1348,13 +1217,11 @@ export default function ArticleDecisaoEmSegundos() {
                       </div>
                       <div className="border-[0.936px] border-solid border-white content-stretch flex gap-[9.357px] h-[37.427px] items-center justify-center px-[14.971px] py-[10.292px] relative shrink-0 w-[67.205px]" data-node-id="4:33278" data-name="DS-ARCS\Admin\Components\Button">
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Bold'] leading-[normal] not-italic relative shrink-0 text-[8.75px] text-white uppercase whitespace-nowrap" data-node-id="I4:33278;3376:16580">
-                          CANCELAR
-                        </p>
+                          {t("t0443")}</p>
                       </div>
                       <div className="bg-white border-[0.936px] border-solid border-white content-stretch flex gap-[9.357px] h-[37.427px] items-center justify-center px-[14.971px] py-[10.292px] relative shrink-0 w-[67.205px]" data-node-id="4:33279" data-name="DS-ARCS\Admin\Components\Button">
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Bold'] leading-[normal] not-italic relative shrink-0 text-[#d4001c] text-[8.75px] uppercase whitespace-nowrap" data-node-id="I4:33279;3376:16577">
-                          INICIAR
-                        </p>
+                          {t("t0444")}</p>
                       </div>
                     </div>
                   </div>
@@ -1362,8 +1229,7 @@ export default function ArticleDecisaoEmSegundos() {
                     <div className="content-stretch flex flex-col gap-[13.758px] items-start pt-[18.343px] px-[9.172px] relative shrink-0 w-full" data-node-id="4:33281" data-name="solicitacao-card-title">
                       <div className="[word-break:break-word] content-stretch flex gap-[48.61px] items-center leading-[normal] not-italic relative shrink-0 text-white w-full whitespace-nowrap" data-node-id="4:33282" data-name="solicitacao-card-title">
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Bold'] relative shrink-0 text-[14.638px]" data-node-id="4:33283">
-                          #6123 - Chuva
-                        </p>
+                          {t("t0449")}</p>
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Regular'] relative shrink-0 text-[10.969px] text-right" data-node-id="4:33284">
                           09:15
                         </p>
@@ -1374,8 +1240,7 @@ export default function ArticleDecisaoEmSegundos() {
                       <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[normal] not-italic relative shrink-0 text-white w-[163.256px] whitespace-nowrap" data-node-id="4:33287" data-name="pneus">
                         <div className="content-stretch flex gap-[10.089px] items-center relative shrink-0 text-right" data-node-id="4:33288" data-name="de">
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Regular'] relative shrink-0 text-[14.638px]" data-node-id="4:33289">
-                            DE
-                          </p>
+                            {t("t0439")}</p>
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Bold'] relative shrink-0 text-[21.975px]" data-node-id="4:33290">
                             0
                           </p>
@@ -1385,15 +1250,13 @@ export default function ArticleDecisaoEmSegundos() {
                             0
                           </p>
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Regular'] relative shrink-0 text-[14.638px]" data-node-id="4:33293">
-                            DD
-                          </p>
+                            {t("t0440")}</p>
                         </div>
                       </div>
                       <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[normal] not-italic relative shrink-0 text-white w-[159.588px] whitespace-nowrap" data-node-id="4:33294" data-name="pneus">
                         <div className="content-stretch flex gap-[10.089px] items-center relative shrink-0 text-right" data-node-id="4:33295" data-name="te">
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Regular'] relative shrink-0 text-[14.638px]" data-node-id="4:33296">
-                            TE
-                          </p>
+                            {t("t0441")}</p>
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Bold'] relative shrink-0 text-[21.975px]" data-node-id="4:33297">
                             1
                           </p>
@@ -1403,8 +1266,7 @@ export default function ArticleDecisaoEmSegundos() {
                             1
                           </p>
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Regular'] relative shrink-0 text-[14.638px]" data-node-id="4:33300">
-                            TD
-                          </p>
+                            {t("t0442")}</p>
                         </div>
                       </div>
                       <div className="-translate-x-1/2 -translate-y-1/2 absolute h-[80.711px] left-[calc(50%+14.97px)] top-[calc(50%+0.65px)] w-[56.865px]" data-node-id="4:33301" data-name="car">
@@ -1417,13 +1279,11 @@ export default function ArticleDecisaoEmSegundos() {
                       </div>
                       <div className="border-[0.936px] border-solid border-white content-stretch flex gap-[9.357px] h-[37.427px] items-center justify-center px-[14.971px] py-[10.292px] relative shrink-0 w-[67.205px]" data-node-id="4:33305" data-name="DS-ARCS\Admin\Components\Button">
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Bold'] leading-[normal] not-italic relative shrink-0 text-[8.75px] text-white uppercase whitespace-nowrap" data-node-id="I4:33305;3376:16580">
-                          CANCELAR
-                        </p>
+                          {t("t0443")}</p>
                       </div>
                       <div className="bg-white border-[0.936px] border-solid border-white content-stretch flex gap-[9.357px] h-[37.427px] items-center justify-center px-[14.971px] py-[10.292px] relative shrink-0 w-[67.205px]" data-node-id="4:33306" data-name="DS-ARCS\Admin\Components\Button">
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Bold'] leading-[normal] not-italic relative shrink-0 text-[#d4001c] text-[8.75px] uppercase whitespace-nowrap" data-node-id="I4:33306;3376:16577">
-                          INICIAR
-                        </p>
+                          {t("t0444")}</p>
                       </div>
                     </div>
                   </div>
@@ -1431,8 +1291,7 @@ export default function ArticleDecisaoEmSegundos() {
                     <div className="content-stretch flex flex-col gap-[13.758px] items-start pt-[18.343px] px-[9.172px] relative shrink-0 w-full" data-node-id="4:33308" data-name="solicitacao-card-title">
                       <div className="[word-break:break-word] content-stretch flex gap-[48.61px] items-center leading-[normal] not-italic relative shrink-0 text-white w-full whitespace-nowrap" data-node-id="4:33309" data-name="solicitacao-card-title">
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Bold'] relative shrink-0 text-[14.638px]" data-node-id="4:33310">
-                          #6823 - Chuva
-                        </p>
+                          {t("t0450")}</p>
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Regular'] relative shrink-0 text-[10.969px] text-right" data-node-id="4:33311">
                           09:14
                         </p>
@@ -1443,8 +1302,7 @@ export default function ArticleDecisaoEmSegundos() {
                       <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[normal] not-italic relative shrink-0 text-white w-[163.256px] whitespace-nowrap" data-node-id="4:33314" data-name="pneus">
                         <div className="content-stretch flex gap-[10.089px] items-center relative shrink-0 text-right" data-node-id="4:33315" data-name="de">
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Regular'] relative shrink-0 text-[14.638px]" data-node-id="4:33316">
-                            DE
-                          </p>
+                            {t("t0439")}</p>
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Bold'] relative shrink-0 text-[21.975px]" data-node-id="4:33317">
                             0
                           </p>
@@ -1454,15 +1312,13 @@ export default function ArticleDecisaoEmSegundos() {
                             0
                           </p>
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Regular'] relative shrink-0 text-[14.638px]" data-node-id="4:33320">
-                            DD
-                          </p>
+                            {t("t0440")}</p>
                         </div>
                       </div>
                       <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[normal] not-italic relative shrink-0 text-white w-[159.588px] whitespace-nowrap" data-node-id="4:33321" data-name="pneus">
                         <div className="content-stretch flex gap-[10.089px] items-center relative shrink-0 text-right" data-node-id="4:33322" data-name="te">
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Regular'] relative shrink-0 text-[14.638px]" data-node-id="4:33323">
-                            TE
-                          </p>
+                            {t("t0441")}</p>
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Bold'] relative shrink-0 text-[21.975px]" data-node-id="4:33324">
                             1
                           </p>
@@ -1472,8 +1328,7 @@ export default function ArticleDecisaoEmSegundos() {
                             1
                           </p>
                           <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Regular'] relative shrink-0 text-[14.638px]" data-node-id="4:33327">
-                            TD
-                          </p>
+                            {t("t0442")}</p>
                         </div>
                       </div>
                       <div className="-translate-x-1/2 -translate-y-1/2 absolute h-[80.711px] left-[calc(50%+14.97px)] top-[calc(50%+0.65px)] w-[56.865px]" data-node-id="4:33328" data-name="car">
@@ -1486,13 +1341,11 @@ export default function ArticleDecisaoEmSegundos() {
                       </div>
                       <div className="border-[0.936px] border-solid border-white content-stretch flex gap-[9.357px] h-[37.427px] items-center justify-center px-[14.971px] py-[10.292px] relative shrink-0 w-[67.205px]" data-node-id="4:33332" data-name="DS-ARCS\Admin\Components\Button">
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Bold'] leading-[normal] not-italic relative shrink-0 text-[8.75px] text-white uppercase whitespace-nowrap" data-node-id="I4:33332;3376:16580">
-                          CANCELAR
-                        </p>
+                          {t("t0443")}</p>
                       </div>
                       <div className="bg-white border-[0.936px] border-solid border-white content-stretch flex gap-[9.357px] h-[37.427px] items-center justify-center px-[14.971px] py-[10.292px] relative shrink-0 w-[67.205px]" data-node-id="4:33333" data-name="DS-ARCS\Admin\Components\Button">
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Bold'] leading-[normal] not-italic relative shrink-0 text-[#d4001c] text-[8.75px] uppercase whitespace-nowrap" data-node-id="I4:33333;3376:16577">
-                          INICIAR
-                        </p>
+                          {t("t0444")}</p>
                       </div>
                     </div>
                   </div>
@@ -1507,8 +1360,7 @@ export default function ArticleDecisaoEmSegundos() {
           </p>
           <div className="content-stretch flex flex-[1_0_0] flex-col gap-[10px] items-start justify-center min-w-px relative" data-node-id="4:33358" data-name="div.flex.flex-col.flex-1">
             <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.4] relative shrink-0 text-[#000102] text-[16px] w-[328px]" data-node-id="4:33359">
-              Protótipos do streaming
-            </p>
+              {t("t0451")}</p>
           </div>
         </div>
       </div>
@@ -1525,8 +1377,7 @@ export default function ArticleDecisaoEmSegundos() {
                 <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage1} />
               </div>
               <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Roboto:Light'] font-light leading-[normal] left-1/2 text-[#656565] text-[12px] text-center top-[113px] whitespace-nowrap" data-node-id="4:33367" style={{ fontVariationSettings: '"wdth" 100' }}>
-                Versão 0.1
-              </p>
+                {t("t0452")}</p>
               <div className="absolute h-[175.072px] left-[calc(25%-2.59px)] top-[334.96px] w-[200.085px]" data-node-id="4:33368">
                 <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame61341} />
               </div>
@@ -1542,8 +1393,7 @@ export default function ArticleDecisaoEmSegundos() {
                 <div className="content-stretch flex flex-col gap-[10px] items-start py-[10px] relative shrink-0 w-full" data-node-id="4:33437" data-name="parceiros">
                   <div className="border-[#d4001c] border-b border-solid content-stretch flex items-center pb-[10px] relative shrink-0 w-full" data-node-id="I4:33437;6595:16313">
                     <p className="[word-break:break-word] flex-[1_0_0] font-['Porsche_Next_TT:Regular'] leading-[normal] min-w-px not-italic relative text-[20px] text-black" data-node-id="I4:33437;254:609">
-                      Desenvolvido por
-                    </p>
+                      {t("t0453")}</p>
                   </div>
                 </div>
                 <div className="relative shrink-0 size-[78px]" data-node-id="4:33438" data-name="logos-2025_13-teltec">
@@ -1553,8 +1403,7 @@ export default function ArticleDecisaoEmSegundos() {
               <div className="absolute content-stretch flex flex-col items-start left-[16px] top-[927px]" data-node-id="4:33439" data-name="Parceiros">
                 <div className="border-[#d4001c] border-b border-solid content-stretch flex gap-[7px] h-[39px] items-center justify-center pb-[10px] relative shrink-0 w-[358px]" data-node-id="4:33440" data-name="title">
                   <p className="[word-break:break-word] flex-[1_0_0] font-['Porsche_Next_TT:Regular'] leading-[normal] min-w-px not-italic relative text-[20px] text-black" data-node-id="4:33441">
-                    Parceiros
-                  </p>
+                    {t("t0454")}</p>
                 </div>
                 <div className="h-[390px] relative shrink-0 w-[358px]" data-node-id="4:33443" data-name="Container">
                   <div className="absolute left-[279px] size-[78px] top-[233px]" data-node-id="4:33444" data-name="logos-2025_16-blueshift">
@@ -1625,31 +1474,27 @@ export default function ArticleDecisaoEmSegundos() {
               <div className="-translate-x-1/2 absolute content-stretch flex flex-col gap-[17px] items-start left-1/2 top-[548px] w-[358px]" data-node-id="4:33465" data-name="proximas-etapas">
                 <div className="border-[#d4001c] border-b border-solid content-stretch flex gap-[7px] items-center justify-center pb-[10px] relative shrink-0 w-full" data-node-id="I4:33465;6595:9249" data-name="title">
                   <p className="[word-break:break-word] flex-[1_0_0] font-['Porsche_Next_TT:Regular'] leading-[normal] min-w-px not-italic relative text-[20px] text-black" data-node-id="I4:33465;240:307">
-                    Próximas etapas
-                  </p>
+                    {t("t0455")}</p>
                 </div>
                 <div className="content-stretch flex flex-col gap-[20px] items-start relative shrink-0 w-full" data-node-id="I4:33465;6595:14332" data-name="etapas">
                   <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="I4:33465;6595:13851" data-name="etapa">
                     <div className="[word-break:break-word] content-stretch flex font-['Porsche_Next_TT:Regular'] items-center justify-between leading-[normal] not-italic relative shrink-0 text-[16px] text-black w-full whitespace-nowrap" data-node-id="I4:33465;6595:9550" data-name="etapa-nome">
                       <p className="relative shrink-0" data-node-id="I4:33465;240:309">
-                        Interlagos - Sprint
-                      </p>
+                        {t("t0456")}</p>
                       <p className="relative shrink-0 text-right" data-node-id="I4:33465;240:321">
-                        25 e 27 de Abril
-                      </p>
+                        {t("t0457")}</p>
                     </div>
                     <div className="[word-break:break-word] content-stretch flex font-['Porsche_Next_TT:Thin'] items-center justify-between not-italic relative shrink-0 text-[#656565] text-[12px] w-full whitespace-nowrap" data-node-id="I4:33465;6595:9866" data-name="etapa-descricao">
                       <p className="leading-[normal] relative shrink-0" data-node-id="I4:33465;240:313">
-                        São Paulo - SP
-                      </p>
+                        {t("t0458")}</p>
                       <p className="leading-[0] relative shrink-0 text-right" data-node-id="I4:33465;240:317">
-                        <span className="leading-[normal]">{`Faltam `}</span>
+                        <span className="leading-[normal]">{t("t0459")}</span>
                         <span className="font-['Porsche_Next_TT:Regular'] leading-[normal]">10</span>
-                        <span className="leading-[normal]">{` dias - `}</span>
+                        <span className="leading-[normal]">{t("t0460")}</span>
                         <span className="font-['Porsche_Next_TT:Regular'] leading-[normal]">7</span>
-                        <span className="leading-[normal]">{` h - `}</span>
+                        <span className="leading-[normal]">{t("t0461")}</span>
                         <span className="font-['Porsche_Next_TT:Regular'] leading-[normal]">35</span>
-                        <span className="leading-[normal]">{` m - `}</span>
+                        <span className="leading-[normal]">{t("t0462")}</span>
                         <span className="font-['Porsche_Next_TT:Regular'] leading-[normal]">34</span>
                         <span className="leading-[normal]">{` s`}</span>
                       </p>
@@ -1657,36 +1502,30 @@ export default function ArticleDecisaoEmSegundos() {
                     <div className="content-stretch flex gap-[5px] items-center py-[3px] relative shrink-0 w-full" data-node-id="I4:33465;13053:14488" data-name="etapa-descricao">
                       <div className="bg-[#aaa] content-stretch flex items-center p-[3px] relative shrink-0" data-node-id="I4:33465;13053:14489">
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Regular'] leading-[normal] not-italic relative shrink-0 text-[9px] text-white whitespace-nowrap" data-node-id="I4:33465;13053:14490">
-                          Carrera
-                        </p>
+                          {t("t0463")}</p>
                       </div>
                       <div className="bg-[#aaa] content-stretch flex items-center p-[3px] relative shrink-0" data-node-id="I4:33465;13053:14491">
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Regular'] leading-[normal] not-italic relative shrink-0 text-[9px] text-white whitespace-nowrap" data-node-id="I4:33465;13053:14492">
-                          Challenge
-                        </p>
+                          {t("t0464")}</p>
                       </div>
                       <div className="bg-[#aaa] content-stretch flex items-center p-[3px] relative shrink-0" data-node-id="I4:33465;13053:14493">
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Regular'] leading-[normal] not-italic relative shrink-0 text-[9px] text-white whitespace-nowrap" data-node-id="I4:33465;13053:14494">
-                          Trophy
-                        </p>
+                          {t("t0465")}</p>
                       </div>
                     </div>
                   </div>
                   <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="I4:33465;6595:13385" data-name="etapa">
                     <div className="[word-break:break-word] content-stretch flex font-['Porsche_Next_TT:Regular'] items-center justify-between leading-[normal] not-italic relative shrink-0 text-[16px] text-black w-full whitespace-nowrap" data-node-id="I4:33465;6595:10197" data-name="etapa-nome">
                       <p className="relative shrink-0" data-node-id="I4:33465;240:312">
-                        Estoril - Sprint
-                      </p>
+                        {t("t0466")}</p>
                       <p className="relative shrink-0 text-right" data-node-id="I4:33465;240:324">
-                        29 e 30 de Junho
-                      </p>
+                        {t("t0467")}</p>
                     </div>
                     <div className="[word-break:break-word] content-stretch flex font-['Porsche_Next_TT:Thin'] items-center justify-between not-italic relative shrink-0 text-[#656565] text-[12px] w-full whitespace-nowrap" data-node-id="I4:33465;6595:10543" data-name="etapa-descricao">
                       <p className="leading-[normal] relative shrink-0" data-node-id="I4:33465;240:316">
-                        Portugal
-                      </p>
+                        {t("t0468")}</p>
                       <p className="leading-[0] relative shrink-0 text-right" data-node-id="I4:33465;240:320">
-                        <span className="leading-[normal]">{`Faltam `}</span>
+                        <span className="leading-[normal]">{t("t0459")}</span>
                         <span className="font-['Porsche_Next_TT:Regular'] leading-[normal]">47</span>
                         <span className="leading-[normal]">{` dias`}</span>
                       </p>
@@ -1694,26 +1533,22 @@ export default function ArticleDecisaoEmSegundos() {
                     <div className="content-stretch flex gap-[5px] items-center py-[3px] relative shrink-0 w-full" data-node-id="I4:33465;13053:12617" data-name="etapa-descricao">
                       <div className="bg-[#aaa] content-stretch flex items-center p-[3px] relative shrink-0" data-node-id="I4:33465;13053:13899">
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Regular'] leading-[normal] not-italic relative shrink-0 text-[9px] text-white whitespace-nowrap" data-node-id="I4:33465;13053:13900">
-                          Trophy
-                        </p>
+                          {t("t0465")}</p>
                       </div>
                     </div>
                   </div>
                   <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="I4:33465;6595:12934" data-name="etapa">
                     <div className="[word-break:break-word] content-stretch flex font-['Porsche_Next_TT:Regular'] items-center justify-between leading-[normal] not-italic relative shrink-0 text-[16px] text-black w-full whitespace-nowrap" data-node-id="I4:33465;6595:10904" data-name="etapa-nome">
                       <p className="relative shrink-0" data-node-id="I4:33465;240:310">
-                        Interlagos - Endurance
-                      </p>
+                        {t("t0469")}</p>
                       <p className="relative shrink-0 text-right" data-node-id="I4:33465;240:322">
-                        24 e 25 de Agosto
-                      </p>
+                        {t("t0470")}</p>
                     </div>
                     <div className="[word-break:break-word] content-stretch flex font-['Porsche_Next_TT:Thin'] items-center justify-between not-italic relative shrink-0 text-[#656565] text-[12px] w-full whitespace-nowrap" data-node-id="I4:33465;6595:11280" data-name="etapa-descricao">
                       <p className="leading-[normal] relative shrink-0" data-node-id="I4:33465;240:314">
-                        São Paulo - SP
-                      </p>
+                        {t("t0458")}</p>
                       <p className="leading-[0] relative shrink-0 text-right" data-node-id="I4:33465;240:318">
-                        <span className="leading-[normal]">{`Faltam `}</span>
+                        <span className="leading-[normal]">{t("t0459")}</span>
                         <span className="font-['Porsche_Next_TT:Regular'] leading-[normal]">107</span>
                         <span className="leading-[normal]">{` dias`}</span>
                       </p>
@@ -1721,36 +1556,30 @@ export default function ArticleDecisaoEmSegundos() {
                     <div className="content-stretch flex gap-[5px] items-center py-[3px] relative shrink-0 w-full" data-node-id="I4:33465;13053:15380" data-name="etapa-descricao">
                       <div className="bg-[#aaa] content-stretch flex items-center p-[3px] relative shrink-0" data-node-id="I4:33465;13053:15381">
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Regular'] leading-[normal] not-italic relative shrink-0 text-[9px] text-white whitespace-nowrap" data-node-id="I4:33465;13053:15382">
-                          Carrera
-                        </p>
+                          {t("t0463")}</p>
                       </div>
                       <div className="bg-[#aaa] content-stretch flex items-center p-[3px] relative shrink-0" data-node-id="I4:33465;13053:15383">
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Regular'] leading-[normal] not-italic relative shrink-0 text-[9px] text-white whitespace-nowrap" data-node-id="I4:33465;13053:15384">
-                          Challenge
-                        </p>
+                          {t("t0464")}</p>
                       </div>
                       <div className="bg-[#aaa] content-stretch flex items-center p-[3px] relative shrink-0" data-node-id="I4:33465;13053:15385">
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Regular'] leading-[normal] not-italic relative shrink-0 text-[9px] text-white whitespace-nowrap" data-node-id="I4:33465;13053:15386">
-                          Trophy
-                        </p>
+                          {t("t0465")}</p>
                       </div>
                     </div>
                   </div>
                   <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="I4:33465;6595:12498" data-name="etapa">
                     <div className="[word-break:break-word] content-stretch flex font-['Porsche_Next_TT:Regular'] items-center justify-between leading-[normal] not-italic relative shrink-0 text-[16px] text-black w-full whitespace-nowrap" data-node-id="I4:33465;6595:11671" data-name="etapa-nome">
                       <p className="relative shrink-0" data-node-id="I4:33465;240:311">
-                        Interlagos - Sprint
-                      </p>
+                        {t("t0456")}</p>
                       <p className="relative shrink-0 text-right" data-node-id="I4:33465;240:323">
-                        02 e 03 de Novembro
-                      </p>
+                        {t("t0471")}</p>
                     </div>
                     <div className="[word-break:break-word] content-stretch flex font-['Porsche_Next_TT:Thin'] items-center justify-between not-italic relative shrink-0 text-[#656565] text-[12px] w-full whitespace-nowrap" data-node-id="I4:33465;6595:12077" data-name="etapa-descricao">
                       <p className="leading-[normal] relative shrink-0" data-node-id="I4:33465;240:315">
-                        São Paulo - SP
-                      </p>
+                        {t("t0458")}</p>
                       <p className="leading-[0] relative shrink-0 text-right" data-node-id="I4:33465;240:319">
-                        <span className="leading-[normal]">{`Faltam `}</span>
+                        <span className="leading-[normal]">{t("t0459")}</span>
                         <span className="font-['Porsche_Next_TT:Regular'] leading-[normal]">172</span>
                         <span className="leading-[normal]">{` dias`}</span>
                       </p>
@@ -1758,18 +1587,15 @@ export default function ArticleDecisaoEmSegundos() {
                     <div className="content-stretch flex gap-[5px] items-center py-[3px] relative shrink-0 w-full" data-node-id="I4:33465;13053:16272" data-name="etapa-descricao">
                       <div className="bg-[#aaa] content-stretch flex items-center p-[3px] relative shrink-0" data-node-id="I4:33465;13053:16273">
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Regular'] leading-[normal] not-italic relative shrink-0 text-[9px] text-white whitespace-nowrap" data-node-id="I4:33465;13053:16274">
-                          Carrera
-                        </p>
+                          {t("t0463")}</p>
                       </div>
                       <div className="bg-[#aaa] content-stretch flex items-center p-[3px] relative shrink-0" data-node-id="I4:33465;13053:16275">
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Regular'] leading-[normal] not-italic relative shrink-0 text-[9px] text-white whitespace-nowrap" data-node-id="I4:33465;13053:16276">
-                          Challenge
-                        </p>
+                          {t("t0464")}</p>
                       </div>
                       <div className="bg-[#aaa] content-stretch flex items-center p-[3px] relative shrink-0" data-node-id="I4:33465;13053:16277">
                         <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Regular'] leading-[normal] not-italic relative shrink-0 text-[9px] text-white whitespace-nowrap" data-node-id="I4:33465;13053:16278">
-                          Trophy
-                        </p>
+                          {t("t0465")}</p>
                       </div>
                     </div>
                   </div>
@@ -1786,8 +1612,7 @@ export default function ArticleDecisaoEmSegundos() {
                     </div>
                   </div>
                   <p className="[word-break:break-word] col-1 font-['Porsche_Next_TT:Bold'] leading-[normal] ml-[15px] mt-[141px] not-italic relative row-1 text-[#d4001c] text-[20px] whitespace-nowrap" data-node-id="I4:33466;240:231">
-                    AVARIAS
-                  </p>
+                    {t("t0472")}</p>
                 </div>
                 <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid place-items-start relative shrink-0" data-node-id="I4:33466;240:232">
                   <div className="col-1 h-[180px] ml-0 mt-0 relative row-1 w-[140px]" data-node-id="I4:33466;240:233" data-name="image 5">
@@ -1799,8 +1624,7 @@ export default function ArticleDecisaoEmSegundos() {
                     </div>
                   </div>
                   <p className="[word-break:break-word] col-1 font-['Porsche_Next_TT:Bold'] leading-[normal] ml-[15px] mt-[141px] not-italic relative row-1 text-[#d4001c] text-[20px] whitespace-nowrap" data-node-id="I4:33466;240:235">
-                    ADESIVAGEM
-                  </p>
+                    {t("t0428")}</p>
                 </div>
                 <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid place-items-start relative shrink-0" data-node-id="I4:33466;240:236">
                   <div className="col-1 h-[180px] ml-0 mt-0 relative row-1 w-[140px]" data-node-id="I4:33466;240:237" data-name="image 5">
@@ -1812,8 +1636,7 @@ export default function ArticleDecisaoEmSegundos() {
                     </div>
                   </div>
                   <p className="[word-break:break-word] col-1 font-['Porsche_Next_TT:Bold'] leading-[normal] ml-[15px] mt-[141px] not-italic relative row-1 text-[#d4001c] text-[20px] whitespace-nowrap" data-node-id="I4:33466;240:239">
-                    PNEUS
-                  </p>
+                    {t("t0429")}</p>
                 </div>
                 <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid place-items-start relative shrink-0" data-node-id="I4:33466;240:240">
                   <div className="col-1 h-[180px] ml-0 mt-0 relative row-1 w-[140px]" data-node-id="I4:33466;240:241" data-name="image 6">
@@ -1825,8 +1648,7 @@ export default function ArticleDecisaoEmSegundos() {
                     </div>
                   </div>
                   <p className="[word-break:break-word] col-1 font-['Porsche_Next_TT:Bold'] leading-[normal] ml-[15px] mt-[141px] not-italic relative row-1 text-[#d4001c] text-[20px] whitespace-nowrap" data-node-id="I4:33466;240:243">
-                    TREINOS
-                  </p>
+                    {t("t0473")}</p>
                   <div className="bg-[rgba(255,255,255,0)] col-1 h-[180px] ml-[140px] mt-0 relative row-1 w-[16px]" data-node-id="I4:33466;2073:2516" />
                 </div>
               </div>
@@ -1889,8 +1711,7 @@ export default function ArticleDecisaoEmSegundos() {
               <LogoPorschecupbrasilGif className="absolute h-[42px] left-[16px] top-[60px] w-[154px]" />
               <Menu className="absolute right-[79px] size-[35px] top-[63px]" />
               <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Porsche_Next_TT:Regular'] leading-[normal] left-[calc(25%-81.5px)] not-italic text-[20px] text-black top-[252px] whitespace-nowrap" data-node-id="4:33478">
-                Solicitações de pneus
-              </p>
+                {t("t0474")}</p>
               <div className="absolute h-0 left-[16px] top-[281.07px] w-[358px]" data-node-id="4:33479">
                 <div className="absolute inset-[-1px_0_0_0]">
                   <img alt="" className="block max-w-none size-full" src={imgLine4} />
@@ -1899,7 +1720,7 @@ export default function ArticleDecisaoEmSegundos() {
               <div className="absolute contents left-[16px] top-[301px]" data-node-id="4:33480">
                 <div className="absolute bg-[#d4001c] content-stretch flex items-center justify-center left-[calc(25%+5.5px)] p-[4px] top-[348px]" data-node-id="4:33481">
                   <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex flex-col font-['Porsche_Next_TT:Bold'] justify-center leading-[0] not-italic relative shrink-0 text-[10px] text-right text-white whitespace-nowrap" data-node-id="4:33482">
-                    <p className="leading-[normal]">Aprovação pendente</p>
+                    <p className="leading-[normal]">{t("t0475")}</p>
                   </div>
                 </div>
                 <div className="absolute left-[16px] size-[67px] top-[301px]" data-node-id="4:33483">
@@ -1913,11 +1734,9 @@ export default function ArticleDecisaoEmSegundos() {
                   #0039
                 </p>
                 <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Porsche_Next_TT:Thin_Bold'] h-[6px] leading-[normal] left-[calc(50%+10px)] not-italic text-[10px] text-black top-[352px] w-[175px]" data-node-id="4:33490">
-                  Última atualização: 03/05/2024 - 15h34
-                </p>
+                  {t("t0476")}</p>
                 <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Porsche_Next_TT:Regular'] leading-[normal] left-[calc(25%+5.5px)] not-italic text-[16px] text-black top-[327px] whitespace-nowrap" data-node-id="4:33491">
-                  Etapa 3 - 2024 | Interlagos
-                </p>
+                  {t("t0477")}</p>
               </div>
               <div className="absolute left-[16px] size-[67px] top-[388px]" data-node-id="4:33492">
                 <div className="absolute bg-[#aaa] inset-0 overflow-clip" data-node-id="4:33493" data-name="wrenches 2">
@@ -1930,16 +1749,14 @@ export default function ArticleDecisaoEmSegundos() {
                 #2134
               </p>
               <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Porsche_Next_TT:Regular'] leading-[normal] left-[calc(25%+5.5px)] not-italic text-[16px] text-black top-[414px] whitespace-nowrap" data-node-id="4:33499">
-                Etapa 3 - 2024 | Interlagos
-              </p>
+                {t("t0477")}</p>
               <div className="absolute bg-[#ffb800] content-stretch flex items-center justify-center left-[calc(25%+5.5px)] p-[4px] top-[435px]" data-node-id="4:33500">
                 <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex flex-col font-['Porsche_Next_TT:Bold'] justify-center leading-[0] not-italic relative shrink-0 text-[10px] text-right text-white whitespace-nowrap" data-node-id="4:33501">
-                  <p className="leading-[normal]">Solicitação enviada</p>
+                  <p className="leading-[normal]">{t("t0412")}</p>
                 </div>
               </div>
               <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Porsche_Next_TT:Thin_Bold'] h-[6px] leading-[normal] left-[calc(50%+4px)] not-italic text-[10px] text-black top-[439px] w-[170px]" data-node-id="4:33502">
-                Última atualização: 03/05/2024 - 12h01
-              </p>
+                {t("t0478")}</p>
               <div className="absolute left-[16px] size-[67px] top-[475px]" data-node-id="4:33503">
                 <div className="absolute bg-[#aaa] inset-0 overflow-clip" data-node-id="4:33504" data-name="wrenches 2">
                   <div className="absolute h-[39px] left-[18px] top-[14px] w-[31px]" data-node-id="4:33505" data-name="Camada_1">
@@ -1951,20 +1768,18 @@ export default function ArticleDecisaoEmSegundos() {
                 #5312
               </p>
               <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Porsche_Next_TT:Regular'] leading-[normal] left-[calc(25%+5.5px)] not-italic text-[16px] text-black top-[501px] whitespace-nowrap" data-node-id="4:33510">
-                Etapa 2 - 2024 | Vellocita
-              </p>
+                {t("t0479")}</p>
               <div className="absolute bg-[#656565] content-stretch flex items-center justify-center left-[calc(25%+5.5px)] p-[4px] top-[522px]" data-node-id="4:33511">
                 <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex flex-col font-['Porsche_Next_TT:Bold'] justify-center leading-[0] not-italic relative shrink-0 text-[10px] text-right text-white whitespace-nowrap" data-node-id="4:33512">
-                  <p className="leading-[normal]">Reprovada</p>
+                  <p className="leading-[normal]">{t("t0413")}</p>
                 </div>
               </div>
               <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Porsche_Next_TT:Thin_Bold'] h-[6px] leading-[normal] left-[calc(25%+66.5px)] not-italic text-[10px] text-black top-[526px] w-[170px]" data-node-id="4:33513">
-                Última atualização: 03/05/2024 - 16h59
-              </p>
+                {t("t0480")}</p>
               <div className="absolute contents left-[16px] top-[562px]" data-node-id="4:33514">
                 <div className="absolute bg-[#56bf31] content-stretch flex items-center justify-center left-[calc(25%+5.5px)] p-[4px] top-[609px]" data-node-id="4:33515">
                   <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex flex-col font-['Porsche_Next_TT:Bold'] justify-center leading-[0] not-italic relative shrink-0 text-[10px] text-right text-white whitespace-nowrap" data-node-id="4:33516">
-                    <p className="leading-[normal]">Finalizada</p>
+                    <p className="leading-[normal]">{t("t0406")}</p>
                   </div>
                 </div>
                 <div className="absolute left-[16px] size-[67px] top-[562px]" data-node-id="4:33517">
@@ -1978,11 +1793,9 @@ export default function ArticleDecisaoEmSegundos() {
                   #8916
                 </p>
                 <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Porsche_Next_TT:Thin_Bold'] h-[6px] leading-[normal] left-[calc(25%+64.5px)] not-italic text-[10px] text-black top-[613px] w-[170px]" data-node-id="4:33524">
-                  Última atualização: 03/05/2024 - 16h59
-                </p>
+                  {t("t0480")}</p>
                 <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Porsche_Next_TT:Regular'] leading-[normal] left-[calc(25%+5.5px)] not-italic text-[16px] text-black top-[588px] whitespace-nowrap" data-node-id="4:33525">
-                  Etapa 2 - 2024 | Vellocita
-                </p>
+                  {t("t0479")}</p>
               </div>
               <div className="absolute left-[16px] size-[67px] top-[649px]" data-node-id="4:33526">
                 <div className="absolute bg-[#aaa] inset-0 overflow-clip" data-node-id="4:33527" data-name="wrenches 2">
@@ -1995,21 +1808,18 @@ export default function ArticleDecisaoEmSegundos() {
                 #7612
               </p>
               <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Porsche_Next_TT:Regular'] leading-[normal] left-[calc(25%+5.5px)] not-italic text-[16px] text-black top-[675px] whitespace-nowrap" data-node-id="4:33533">
-                Etapa 2 - 2024 | Vellocita
-              </p>
+                {t("t0479")}</p>
               <div className="absolute bg-[#56bf31] content-stretch flex items-center justify-center left-[calc(25%+5.5px)] p-[4px] top-[696px]" data-node-id="4:33534">
                 <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex flex-col font-['Porsche_Next_TT:Bold'] justify-center leading-[0] not-italic relative shrink-0 text-[10px] text-right text-white whitespace-nowrap" data-node-id="4:33535">
-                  <p className="leading-[normal]">Finalizada</p>
+                  <p className="leading-[normal]">{t("t0406")}</p>
                 </div>
               </div>
               <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Porsche_Next_TT:Thin_Bold'] h-[6px] leading-[normal] left-[calc(25%+64.5px)] not-italic text-[10px] text-black top-[700px] w-[170px]" data-node-id="4:33536">
-                Última atualização: 03/05/2024 - 15h05
-              </p>
+                {t("t0481")}</p>
               <div className="-translate-x-1/2 absolute contents left-[calc(50%+0.5px)] top-[746px]" data-node-id="4:33537">
                 <div className="-translate-x-1/2 absolute h-[17px] left-[calc(50%+0.5px)] overflow-clip top-[746px] w-[153px]" data-node-id="4:33538" data-name="bt-tertiary">
                   <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Porsche_Next_TT:Bold'] inset-[20%_0_0_0] leading-[normal] not-italic text-[#656565] text-[15px] text-center uppercase" data-node-id="I4:33538;230:421">
-                    VER ANTERIORES
-                  </p>
+                    {t("t0482")}</p>
                 </div>
               </div>
               <div className="-translate-x-1/2 absolute contents left-[calc(87.5%+16.55px)] top-[250px]" data-node-id="4:33539" data-name="Group">
@@ -2045,8 +1855,7 @@ export default function ArticleDecisaoEmSegundos() {
                 <div className="-translate-x-1/2 absolute bg-[#d9d9d9] h-[68px] left-1/2 top-[142px] w-[358px]" data-node-id="4:33559" />
                 <div className="-translate-x-1/2 absolute bg-[#d4001c] left-[calc(12.5%+1.25px)] size-[68px] top-[142px]" data-node-id="4:33560" />
                 <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Porsche_Next_TT:Bold'] leading-[normal] left-[calc(50%-91px)] not-italic text-[#d4001c] text-[20px] top-[169px] w-[193px]" data-node-id="4:33561">
-                  PNEUS DISPONÍVEIS
-                </p>
+                  {t("t0483")}</p>
                 <div className="-translate-x-1/2 absolute h-[28.303px] left-[calc(12.5%+1.25px)] top-[162px] w-[39.998px]" data-node-id="4:33562" data-name="Union">
                   <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgUnion} />
                 </div>
@@ -2093,36 +1902,27 @@ export default function ArticleDecisaoEmSegundos() {
               </p>
               <div className="absolute bg-[#d4001c] content-stretch flex items-center justify-center left-[288px] p-[4px] top-[158px]" data-node-id="4:33587">
                 <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex flex-col font-['Porsche_Next_TT:Bold'] justify-center leading-[0] not-italic relative shrink-0 text-[10px] text-right text-white whitespace-nowrap" data-node-id="4:33588">
-                  <p className="leading-[normal]">Aprovação pendete</p>
+                  <p className="leading-[normal]">{t("t0417")}</p>
                 </div>
               </div>
               <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Porsche_Next_TT:Regular'] leading-[normal] left-[16px] not-italic text-[16px] text-black top-[270px] whitespace-nowrap" data-node-id="4:33589">
-                Etapa
-              </p>
+                {t("t0484")}</p>
               <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Porsche_Next_TT:Regular'] leading-[normal] left-[16px] not-italic text-[16px] text-black top-[208px] whitespace-nowrap" data-node-id="4:33590">
-                Piloto
-              </p>
+                {t("t0384")}</p>
               <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Porsche_Next_TT:Regular'] leading-[normal] left-[16px] not-italic text-[16px] text-black top-[239px] whitespace-nowrap" data-node-id="4:33591">
-                Engenheiro
-              </p>
+                {t("t0373")}</p>
               <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Porsche_Next_TT:Regular'] leading-[normal] left-[16px] not-italic text-[16px] text-black top-[301px] whitespace-nowrap" data-node-id="4:33592">
-                Chassis
-              </p>
+                {t("t0485")}</p>
               <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Porsche_Next_TT:Regular'] leading-[normal] left-[16px] not-italic text-[16px] text-black top-[332px] whitespace-nowrap" data-node-id="4:33593">
-                Nº do carro
-              </p>
+                {t("t0486")}</p>
               <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Porsche_Next_TT:Regular'] leading-[normal] left-[16px] not-italic text-[16px] text-black top-[361px] whitespace-nowrap" data-node-id="4:33594">
-                Tipo de pneu
-              </p>
+                {t("t0487")}</p>
               <p className="-translate-x-full [text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Porsche_Next_TT:Thin'] leading-[normal] left-[374px] not-italic text-[16px] text-black text-right top-[270px] whitespace-nowrap" data-node-id="4:33595">
-                3 - 2024 | Interlagos
-              </p>
+                {t("t0488")}</p>
               <p className="-translate-x-full [text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Porsche_Next_TT:Thin'] leading-[normal] left-[374px] not-italic text-[16px] text-black text-right top-[208px] whitespace-nowrap" data-node-id="4:33596">
-                Leonardo Sanchez
-              </p>
+                {t("t0489")}</p>
               <p className="-translate-x-full [text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Porsche_Next_TT:Thin'] leading-[normal] left-[374px] not-italic text-[16px] text-black text-right top-[239px] whitespace-nowrap" data-node-id="4:33597">
-                Francisco Junqueira
-              </p>
+                {t("t0490")}</p>
               <p className="-translate-x-full [text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Porsche_Next_TT:Thin'] leading-[normal] left-[374px] not-italic text-[16px] text-black text-right top-[301px] whitespace-nowrap" data-node-id="4:33598">
                 896
               </p>
@@ -2130,18 +1930,16 @@ export default function ArticleDecisaoEmSegundos() {
                 68
               </p>
               <p className="-translate-x-full [text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Porsche_Next_TT:Thin'] leading-[normal] left-[374px] not-italic text-[16px] text-black text-right top-[361px] whitespace-nowrap" data-node-id="4:33600">
-                Slick
-              </p>
+                {t("t0491")}</p>
               <div className="-translate-x-1/2 absolute contents left-[calc(50%+0.5px)] top-[633px]" data-node-id="4:33601">
                 <div className="-translate-x-1/2 absolute bg-[#d9d9d9] border-[#d4001c] border-b-2 border-solid content-stretch flex h-[56px] items-center justify-center left-[calc(50%+0.5px)] px-[40px] py-[15px] top-[633px] w-[317px]" data-node-id="4:33602" data-name="bt-primary">
-                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Bold'] leading-[normal] not-italic relative shrink-0 text-[#d4001c] text-[20px] whitespace-nowrap" data-node-id="I4:33602;267:487">{`APROVAR `}</p>
+                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Bold'] leading-[normal] not-italic relative shrink-0 text-[#d4001c] text-[20px] whitespace-nowrap" data-node-id="I4:33602;267:487">{t("t0367")}</p>
                 </div>
               </div>
               <div className="-translate-x-1/2 absolute contents left-[calc(50%+0.5px)] top-[709px]" data-node-id="4:33603">
                 <div className="-translate-x-1/2 absolute h-[17px] left-[calc(50%+0.5px)] overflow-clip top-[709px] w-[153px]" data-node-id="4:33604" data-name="bt-tertiary">
                   <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Porsche_Next_TT:Bold'] inset-[20%_0_0_0] leading-[normal] not-italic text-[#656565] text-[15px] text-center uppercase" data-node-id="I4:33604;230:421">
-                    REPROVAR
-                  </p>
+                    {t("t0492")}</p>
                 </div>
               </div>
               <LogoPorschecupbrasilGif className="absolute h-[42px] left-[16px] top-[60px] w-[154px]" />
@@ -2150,22 +1948,18 @@ export default function ArticleDecisaoEmSegundos() {
                 <ProfilePicture className="relative rounded-[48px] shrink-0 size-[48px]" />
               </div>
               <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Porsche_Next_TT:Thin'] leading-[normal] not-italic right-[290px] text-[14px] text-black text-right top-[429px] whitespace-nowrap" data-node-id="4:33609">
-                Dianteiros
-                <br aria-hidden />
-                esquerdos
-              </p>
+                {t("t0493")}<br aria-hidden />
+                {t("t1080")}</p>
               <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Porsche_Next_TT:Thin'] leading-[normal] not-italic right-[290px] text-[14px] text-black text-right top-[503px] whitespace-nowrap" data-node-id="4:33610">
-                Traseiros
-                <br aria-hidden />
-                esquerdos
-              </p>
+                {t("t0494")}<br aria-hidden />
+                {t("t1080")}</p>
               <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Porsche_Next_TT:Thin'] leading-[0] not-italic right-[100px] text-[14px] text-black top-[429px] translate-x-full whitespace-nowrap" data-node-id="4:33611">
-                <p className="leading-[normal] mb-0">Dianteiros</p>
-                <p className="leading-[normal]">direitos</p>
+                <p className="leading-[normal] mb-0">{t("t0493")}</p>
+                <p className="leading-[normal]">{t("t1081")}</p>
               </div>
               <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Porsche_Next_TT:Thin'] leading-[0] not-italic right-[100px] text-[14px] text-black top-[503px] translate-x-full whitespace-nowrap" data-node-id="4:33612">
-                <p className="leading-[normal] mb-0">Traseiros</p>
-                <p className="leading-[normal]">direitos</p>
+                <p className="leading-[normal] mb-0">{t("t0494")}</p>
+                <p className="leading-[normal]">{t("t1081")}</p>
               </div>
               <p className="-translate-x-full [text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Porsche_Next_TT:Bold'] leading-[normal] left-[130px] not-italic text-[#656565] text-[26px] text-right top-[434px] whitespace-nowrap" data-node-id="4:33613">
                 1
@@ -2195,8 +1989,7 @@ export default function ArticleDecisaoEmSegundos() {
                 </div>
               </div>
               <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Porsche_Next_TT:Regular'] inset-[69.43%_16.41%_29.27%_25.13%] leading-[normal] not-italic overflow-hidden text-[16px] text-black text-ellipsis whitespace-nowrap" data-node-id="4:33626">
-                Dividir a compra com piloto parceiro
-              </p>
+                {t("t0495")}</p>
               <div className="-translate-x-1/2 absolute h-[78.646px] left-1/2 top-[765px] w-[390px]" data-node-id="4:33627">
                 <div className="absolute bg-white inset-0 shadow-[0px_0px_20px_0px_rgba(0,0,0,0.2)]" data-node-id="I4:33627;240:347" />
                 <div className="absolute inset-[20.53%_45.51%_34.97%_45.51%]" data-node-id="I4:33627;240:348" data-name="wrenches 1">
@@ -2229,14 +2022,13 @@ export default function ArticleDecisaoEmSegundos() {
           </p>
           <div className="content-stretch flex flex-[1_0_0] flex-col gap-[10px] items-start justify-center min-w-px relative" data-node-id="4:33630" data-name="div.flex.flex-col.flex-1">
             <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.4] relative shrink-0 text-[#000102] text-[16px] w-[328px]" data-node-id="4:33631">
-              Variações do streaming
-            </p>
+              {t("t0496")}</p>
           </div>
         </div>
       </div>
       <div className="bg-[#eeeff1] content-stretch flex flex-col gap-[24px] h-[1080px] items-start justify-center overflow-clip px-[160px] py-[112px] relative shrink-0 w-[1920px]" data-node-id="4:33633" data-name="section.step.implement">
         <div className="content-stretch flex flex-col items-center overflow-clip relative shrink-0 w-full" data-node-id="4:33634" data-name="div.grid.grid-cols-12.w-full">
-          <div className="content-stretch flex flex-col h-[760px] items-center justify-center overflow-clip relative shrink-0 w-full" data-node-id="4:33635" data-name="figure.artifact-visual.col-span-12">
+          <div className="content-stretch flex flex-col h-[760px] items-center justify-center overflow-clip relative shrink-0 w-full" data-node-id="4:33635" data-name="figure.artifact-visual.col-span-12" data-section-id="artifacts">
             <div className="content-stretch flex flex-col items-start relative shrink-0 w-[480px]" data-node-id="4:33636">
               <div className="aspect-[3840/2160] bg-[#010205] content-stretch flex flex-col items-center justify-between overflow-clip relative shrink-0 w-full" data-node-id="4:33637" data-name="📕  Cover">
                 <div className="content-stretch flex flex-[1_0_0] flex-col gap-[10.25px] items-center justify-center min-h-px relative" data-node-id="4:33638" data-name="content">
@@ -2244,10 +2036,10 @@ export default function ArticleDecisaoEmSegundos() {
                     <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgBrand} />
                   </div>
                   <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] capitalize flex flex-col font-['Porsche_Next:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[12px] text-center text-white tracking-[-0.25px] whitespace-nowrap" data-node-id="4:33648">
-                    <p className="leading-[normal]">ADMINISTRAÇÃO</p>
+                    <p className="leading-[normal]">{t("t0497")}</p>
                   </div>
                   <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] capitalize flex flex-col font-['Porsche_Next:Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-center text-white tracking-[-0.25px] whitespace-nowrap" data-node-id="4:33649">
-                    <p className="leading-[normal]">gUIA DE USO</p>
+                    <p className="leading-[normal]">{t("t0498")}</p>
                   </div>
                 </div>
                 <div className="content-stretch flex flex-col items-start pb-[20px] relative shrink-0" data-node-id="4:33650">
@@ -2263,25 +2055,22 @@ export default function ArticleDecisaoEmSegundos() {
                 </div>
                 <div className="[word-break:break-word] content-stretch flex flex-col gap-[10px] items-start justify-center not-italic relative shrink-0 text-[#010205] w-[303.75px]" data-node-id="4:33653" data-name="content">
                   <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Bold'] leading-[1.3] relative shrink-0 text-[12px] w-full" data-node-id="4:33654">
-                    Introdução
-                  </p>
+                    {t("t0499")}</p>
                   <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Regular'] leading-[1.6] relative shrink-0 text-[9px] w-full" data-node-id="4:33655">
-                    Bem-vindo(a) ao Painel de Administração da Porsche Cup Brasil!
-                  </p>
+                    {t("t0500")}</p>
                   <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Porsche_Next_TT:Thin'] leading-[1.6] relative shrink-0 text-[9px] w-full" data-node-id="4:33656">
-                    Aqui, você tem o controle total do ecossistema da competição. Nossa interface escura foi desenvolvida para destacar informações importantes e facilitar a gestão de pilotos, equipes, carros e usuários. Siga os passos abaixo para realizar suas tarefas de forma rápida e segura.
-                  </p>
+                    {t("t0501")}</p>
                 </div>
               </div>
               <div className="bg-[#fbfcfe] content-stretch flex h-[270px] items-center overflow-clip relative shrink-0 w-[480px]" data-node-id="4:33657" data-name="🚩walkthrough /sumário">
                 <div className="bg-[#010205] content-stretch drop-shadow-[-0.625px_0px_1.25px_rgba(0,0,0,0.08)] flex flex-col gap-[10px] h-full items-start justify-center pl-[20px] pr-[6px] py-[2.5px] relative shrink-0 w-[387.25px]" data-node-id="4:33658" data-name="aside">
-                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Bold'] leading-[1.3] not-italic relative shrink-0 text-[12px] text-white w-full" data-node-id="4:33659">{`Sumário `}</p>
+                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Porsche_Next_TT:Bold'] leading-[1.3] not-italic relative shrink-0 text-[12px] text-white w-full" data-node-id="4:33659">{t("t0502")}</p>
                   <div className="content-start flex flex-wrap gap-[12px] items-start relative shrink-0 w-full" data-node-id="4:33660">
                     <div className="content-stretch flex flex-[1_0_0] flex-col gap-[6px] items-start min-w-px relative" data-node-id="4:33661" data-name="col">
                       <div className="content-stretch flex flex-col h-[12.25px] items-start relative shrink-0 w-[81.313px]" data-node-id="4:33662" data-name="sumario">
                         <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33662;9029:5989" data-name="acordion-title">
                           <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33662;9029:5989;9011:49">
-                            <p className="leading-[1.2]">Como acesso o Painel?</p>
+                            <p className="leading-[1.2]">{t("t0503")}</p>
                           </div>
                           <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33662;9029:5989;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                             <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2291,12 +2080,12 @@ export default function ArticleDecisaoEmSegundos() {
                       <div className="content-stretch flex flex-col gap-[2.5px] items-start relative shrink-0 w-[81.313px]" data-node-id="4:33663" data-name="sumario">
                         <div className="content-stretch flex gap-[4px] items-center justify-center py-[2px] relative shrink-0 w-full" data-node-id="I4:33663;9029:5991" data-name="acordion-title">
                           <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center leading-[0] min-w-px not-italic relative text-[#fbfcfe] text-[4.5px]" data-node-id="I4:33663;9029:5991;9011:49">
-                            <p className="leading-[1.2]">1. Pilotos e Contratos</p>
+                            <p className="leading-[1.2]">{t("t0504")}</p>
                           </div>
                         </div>
                         <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33663;9029:5992" data-name="acordion-title">
                           <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33663;9029:5992;9011:49">
-                            <p className="leading-[1.2]">Como posso gerenciar os pilotos?</p>
+                            <p className="leading-[1.2]">{t("t0505")}</p>
                           </div>
                           <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33663;9029:5992;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                             <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2304,7 +2093,7 @@ export default function ArticleDecisaoEmSegundos() {
                         </div>
                         <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33663;9029:5993" data-name="acordion-title">
                           <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33663;9029:5993;9011:49">
-                            <p className="leading-[1.2]">Como faço para gerenciar os contratos dos pilotos?</p>
+                            <p className="leading-[1.2]">{t("t0506")}</p>
                           </div>
                           <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33663;9029:5993;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                             <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2312,7 +2101,7 @@ export default function ArticleDecisaoEmSegundos() {
                         </div>
                         <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33663;9029:5994" data-name="acordion-title">
                           <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33663;9029:5994;9011:49">
-                            <p className="leading-[1.2]">Como adicionar/editar um contrato?</p>
+                            <p className="leading-[1.2]">{t("t0507")}</p>
                           </div>
                           <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33663;9029:5994;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                             <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2323,12 +2112,12 @@ export default function ArticleDecisaoEmSegundos() {
                     <div className="content-stretch flex flex-col gap-[2.5px] items-start relative shrink-0 w-[81.313px]" data-node-id="4:33664" data-name="sumario">
                       <div className="content-stretch flex gap-[4px] items-center justify-center py-[2px] relative shrink-0 w-full" data-node-id="I4:33664;9029:5979" data-name="acordion-title">
                         <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center leading-[0] min-w-px not-italic relative text-[#fbfcfe] text-[4.5px]" data-node-id="I4:33664;9029:5979;9011:49">
-                          <p className="leading-[1.2]">2. Autosserviços</p>
+                          <p className="leading-[1.2]">{t("t0508")}</p>
                         </div>
                       </div>
                       <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33664;9029:5980" data-name="acordion-title">
                         <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33664;9029:5980;9011:49">
-                          <p className="leading-[1.2]">Como posso registrar e acompanhar as notificações de avarias?</p>
+                          <p className="leading-[1.2]">{t("t0509")}</p>
                         </div>
                         <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33664;9029:5980;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                           <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2336,7 +2125,7 @@ export default function ArticleDecisaoEmSegundos() {
                       </div>
                       <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33664;9040:7682" data-name="acordion-title">
                         <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33664;9040:7682;9011:49">
-                          <p className="leading-[1.2]">Para incluir uma notificação de avarias:</p>
+                          <p className="leading-[1.2]">{t("t0510")}</p>
                         </div>
                         <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33664;9040:7682;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                           <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2344,7 +2133,7 @@ export default function ArticleDecisaoEmSegundos() {
                       </div>
                       <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33664;9029:5981" data-name="acordion-title">
                         <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33664;9029:5981;9011:49">
-                          <p className="leading-[1.2]">Como posso registrar e acompanhar os relatórios de avarias?</p>
+                          <p className="leading-[1.2]">{t("t0511")}</p>
                         </div>
                         <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33664;9029:5981;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                           <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2352,7 +2141,7 @@ export default function ArticleDecisaoEmSegundos() {
                       </div>
                       <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33664;9040:7589" data-name="acordion-title">
                         <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33664;9040:7589;9011:49">
-                          <p className="leading-[1.2]">Para incluir um relatório de avarias:</p>
+                          <p className="leading-[1.2]">{t("t0512")}</p>
                         </div>
                         <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33664;9040:7589;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                           <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2360,7 +2149,7 @@ export default function ArticleDecisaoEmSegundos() {
                       </div>
                       <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33664;9029:5982" data-name="acordion-title">
                         <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33664;9029:5982;9011:49">
-                          <p className="leading-[1.2]">Como solicito reparo na adesivagem dos carros?</p>
+                          <p className="leading-[1.2]">{t("t0513")}</p>
                         </div>
                         <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33664;9029:5982;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                           <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2368,7 +2157,7 @@ export default function ArticleDecisaoEmSegundos() {
                       </div>
                       <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33664;9029:5983" data-name="acordion-title">
                         <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33664;9029:5983;9011:49">
-                          <p className="leading-[1.2]">Como solicito insiro novo layout de adesivagem dos carros?</p>
+                          <p className="leading-[1.2]">{t("t0514")}</p>
                         </div>
                         <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33664;9029:5983;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                           <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2376,7 +2165,7 @@ export default function ArticleDecisaoEmSegundos() {
                       </div>
                       <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33664;9040:8331" data-name="acordion-title">
                         <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33664;9040:8331;9011:49">
-                          <p className="leading-[1.2]">Para incluir um layout:</p>
+                          <p className="leading-[1.2]">{t("t0515")}</p>
                         </div>
                         <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33664;9040:8331;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                           <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2384,7 +2173,7 @@ export default function ArticleDecisaoEmSegundos() {
                       </div>
                       <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33664;9029:5984" data-name="acordion-title">
                         <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33664;9029:5984;9011:49">
-                          <p className="leading-[1.2]">Como monitoro e gerencio os pneus?</p>
+                          <p className="leading-[1.2]">{t("t0516")}</p>
                         </div>
                         <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33664;9029:5984;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                           <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2392,7 +2181,7 @@ export default function ArticleDecisaoEmSegundos() {
                       </div>
                       <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33664;9029:5985" data-name="acordion-title">
                         <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33664;9029:5985;9011:49">
-                          <p className="leading-[1.2]">Como faço solicitações de pneus?</p>
+                          <p className="leading-[1.2]">{t("t0517")}</p>
                         </div>
                         <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33664;9029:5985;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                           <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2400,7 +2189,7 @@ export default function ArticleDecisaoEmSegundos() {
                       </div>
                       <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33664;9040:9549" data-name="acordion-title">
                         <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33664;9040:9549;9011:49">
-                          <p className="leading-[1.2]">Para incluir uma solicitações de pneus</p>
+                          <p className="leading-[1.2]">{t("t0518")}</p>
                         </div>
                         <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33664;9040:9549;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                           <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2408,7 +2197,7 @@ export default function ArticleDecisaoEmSegundos() {
                       </div>
                       <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33664;9040:6750" data-name="acordion-title">
                         <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33664;9040:6750;9011:49">
-                          <p className="leading-[1.2]">Como acompanho o progresso das solicitações de pneus?</p>
+                          <p className="leading-[1.2]">{t("t0519")}</p>
                         </div>
                         <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33664;9040:6750;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                           <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2416,7 +2205,7 @@ export default function ArticleDecisaoEmSegundos() {
                       </div>
                       <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33664;9029:5986" data-name="acordion-title">
                         <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33664;9029:5986;9011:49">
-                          <p className="leading-[1.2]">Como gerencio os itens extras?</p>
+                          <p className="leading-[1.2]">{t("t0520")}</p>
                         </div>
                         <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33664;9029:5986;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                           <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2424,7 +2213,7 @@ export default function ArticleDecisaoEmSegundos() {
                       </div>
                       <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33664;9057:6411" data-name="acordion-title">
                         <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33664;9057:6411;9011:49">
-                          <p className="leading-[1.2]">Para incluir um itens extras</p>
+                          <p className="leading-[1.2]">{t("t0521")}</p>
                         </div>
                         <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33664;9057:6411;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                           <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2432,7 +2221,7 @@ export default function ArticleDecisaoEmSegundos() {
                       </div>
                       <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33664;9029:5987" data-name="acordion-title">
                         <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33664;9029:5987;9011:49">
-                          <p className="leading-[1.2]">Como ajusto as configurações de pneus?</p>
+                          <p className="leading-[1.2]">{t("t0522")}</p>
                         </div>
                         <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33664;9029:5987;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                           <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2440,7 +2229,7 @@ export default function ArticleDecisaoEmSegundos() {
                       </div>
                       <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33664;9044:10593" data-name="acordion-title">
                         <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33664;9044:10593;9011:49">
-                          <p className="leading-[1.2]">Para incluir uma configuração de temporada</p>
+                          <p className="leading-[1.2]">{t("t0523")}</p>
                         </div>
                         <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33664;9044:10593;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                           <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2448,7 +2237,7 @@ export default function ArticleDecisaoEmSegundos() {
                       </div>
                       <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33664;9044:10128" data-name="acordion-title">
                         <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33664;9044:10128;9011:49">
-                          <p className="leading-[1.2]">Para incluir uma configuração de etapa</p>
+                          <p className="leading-[1.2]">{t("t0524")}</p>
                         </div>
                         <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33664;9044:10128;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                           <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2459,12 +2248,12 @@ export default function ArticleDecisaoEmSegundos() {
                       <div className="content-stretch flex flex-col gap-[2.5px] items-start relative shrink-0 w-[81.313px]" data-node-id="4:33666" data-name="sumario">
                         <div className="content-stretch flex gap-[4px] items-center justify-center py-[2px] relative shrink-0 w-full" data-node-id="I4:33666;9029:6001" data-name="acordion-title">
                           <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center leading-[0] min-w-px not-italic relative text-[#fbfcfe] text-[4.5px]" data-node-id="I4:33666;9029:6001;9011:49">
-                            <p className="leading-[1.2]">{`3. Eventos `}</p>
+                            <p className="leading-[1.2]">{t("t0525")}</p>
                           </div>
                         </div>
                         <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33666;9029:6002" data-name="acordion-title">
                           <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33666;9029:6002;9011:49">
-                            <p className="leading-[1.2]">Como gerencio as fichas de treinos?</p>
+                            <p className="leading-[1.2]">{t("t0526")}</p>
                           </div>
                           <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33666;9029:6002;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                             <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2472,7 +2261,7 @@ export default function ArticleDecisaoEmSegundos() {
                         </div>
                         <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33666;9040:7796" data-name="acordion-title">
                           <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33666;9040:7796;9011:49">
-                            <p className="leading-[1.2]">Para incluir uma ficha de treino:</p>
+                            <p className="leading-[1.2]">{t("t0527")}</p>
                           </div>
                           <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33666;9040:7796;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                             <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2480,7 +2269,7 @@ export default function ArticleDecisaoEmSegundos() {
                         </div>
                         <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33666;9029:6003" data-name="acordion-title">
                           <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33666;9029:6003;9011:49">
-                            <p className="leading-[1.2]">Como gerencio as competições?</p>
+                            <p className="leading-[1.2]">{t("t0528")}</p>
                           </div>
                           <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33666;9029:6003;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                             <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2488,7 +2277,7 @@ export default function ArticleDecisaoEmSegundos() {
                         </div>
                         <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33666;9064:14275" data-name="acordion-title">
                           <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33666;9064:14275;9011:49">
-                            <p className="leading-[1.2]">Para incluir uma competição:</p>
+                            <p className="leading-[1.2]">{t("t0529")}</p>
                           </div>
                           <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33666;9064:14275;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                             <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2496,7 +2285,7 @@ export default function ArticleDecisaoEmSegundos() {
                         </div>
                         <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33666;9029:6004" data-name="acordion-title">
                           <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33666;9029:6004;9011:49">
-                            <p className="leading-[1.2]">Como defino as temporadas?</p>
+                            <p className="leading-[1.2]">{t("t0530")}</p>
                           </div>
                           <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33666;9029:6004;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                             <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2504,7 +2293,7 @@ export default function ArticleDecisaoEmSegundos() {
                         </div>
                         <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33666;9148:12922" data-name="acordion-title">
                           <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33666;9148:12922;9011:49">
-                            <p className="leading-[1.2]">Como edito as temporadas?</p>
+                            <p className="leading-[1.2]">{t("t0531")}</p>
                           </div>
                           <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33666;9148:12922;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                             <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2512,7 +2301,7 @@ export default function ArticleDecisaoEmSegundos() {
                         </div>
                         <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33666;9029:6005" data-name="acordion-title">
                           <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33666;9029:6005;9011:49">
-                            <p className="leading-[1.2]">Como configuro as etapas das corridas?</p>
+                            <p className="leading-[1.2]">{t("t0532")}</p>
                           </div>
                           <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33666;9029:6005;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                             <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2520,7 +2309,7 @@ export default function ArticleDecisaoEmSegundos() {
                         </div>
                         <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33666;9064:14278" data-name="acordion-title">
                           <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33666;9064:14278;9011:49">
-                            <p className="leading-[1.2]">Para incluir uma configuração:</p>
+                            <p className="leading-[1.2]">{t("t0533")}</p>
                           </div>
                           <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33666;9064:14278;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                             <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2530,12 +2319,12 @@ export default function ArticleDecisaoEmSegundos() {
                       <div className="content-stretch flex flex-col gap-[2.5px] items-start relative shrink-0 w-[81.313px]" data-node-id="4:33667" data-name="sumario">
                         <div className="content-stretch flex gap-[4px] items-center justify-center py-[2px] relative shrink-0 w-full" data-node-id="I4:33667;9029:5996" data-name="acordion-title">
                           <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center leading-[0] min-w-px not-italic relative text-[#fbfcfe] text-[4.5px]" data-node-id="I4:33667;9029:5996;9011:49">
-                            <p className="leading-[1.2]">4. Carros</p>
+                            <p className="leading-[1.2]">{t("t0534")}</p>
                           </div>
                         </div>
                         <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33667;9029:5997" data-name="acordion-title">
                           <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33667;9029:5997;9011:49">
-                            <p className="leading-[1.2]">Como gerencio os carros cadastrados?</p>
+                            <p className="leading-[1.2]">{t("t0535")}</p>
                           </div>
                           <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33667;9029:5997;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                             <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2543,7 +2332,7 @@ export default function ArticleDecisaoEmSegundos() {
                         </div>
                         <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33667;9165:11289" data-name="acordion-title">
                           <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33667;9165:11289;9011:49">
-                            <p className="leading-[1.2]">Para incluir um carros</p>
+                            <p className="leading-[1.2]">{t("t0536")}</p>
                           </div>
                           <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33667;9165:11289;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                             <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2551,7 +2340,7 @@ export default function ArticleDecisaoEmSegundos() {
                         </div>
                         <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33667;9029:5998" data-name="acordion-title">
                           <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33667;9029:5998;9011:49">
-                            <p className="leading-[1.2]">Como distribuo os carros por etapa?</p>
+                            <p className="leading-[1.2]">{t("t0537")}</p>
                           </div>
                           <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33667;9029:5998;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                             <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2563,12 +2352,12 @@ export default function ArticleDecisaoEmSegundos() {
                       <div className="content-stretch flex flex-col gap-[2.5px] items-start relative shrink-0 w-[81.313px]" data-node-id="4:33669" data-name="sumario">
                         <div className="content-stretch flex gap-[4px] items-center justify-center py-[2px] relative shrink-0 w-full" data-node-id="I4:33669;9029:6013" data-name="acordion-title">
                           <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center leading-[0] min-w-px not-italic relative text-[#fbfcfe] text-[4.5px]" data-node-id="I4:33669;9029:6013;9011:49">
-                            <p className="leading-[1.2]">5. Controle de Acesso e Equipes</p>
+                            <p className="leading-[1.2]">{t("t0538")}</p>
                           </div>
                         </div>
                         <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33669;9029:6014" data-name="acordion-title">
                           <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33669;9029:6014;9011:49">
-                            <p className="leading-[1.2]">Como organizo os grupos de usuários?</p>
+                            <p className="leading-[1.2]">{t("t0539")}</p>
                           </div>
                           <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33669;9029:6014;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                             <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2576,7 +2365,7 @@ export default function ArticleDecisaoEmSegundos() {
                         </div>
                         <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33669;9065:14300" data-name="acordion-title">
                           <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33669;9065:14300;9011:49">
-                            <p className="leading-[1.2]">Para incluir um grupo:</p>
+                            <p className="leading-[1.2]">{t("t0540")}</p>
                           </div>
                           <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33669;9065:14300;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                             <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2584,7 +2373,7 @@ export default function ArticleDecisaoEmSegundos() {
                         </div>
                         <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] text-[4.5px] w-full" data-node-id="I4:33669;9029:6015" data-name="acordion-title">
                           <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative" data-node-id="I4:33669;9029:6015;9011:49">
-                            <p className="leading-[1.2]">Como defino os subgrupos?</p>
+                            <p className="leading-[1.2]">{t("t0541")}</p>
                           </div>
                           <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-right w-[10.5px]" data-node-id="I4:33669;9029:6015;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                             <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2592,7 +2381,7 @@ export default function ArticleDecisaoEmSegundos() {
                         </div>
                         <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33669;9159:15323" data-name="acordion-title">
                           <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33669;9159:15323;9011:49">
-                            <p className="leading-[1.2]">Para incluir um subgrupos:</p>
+                            <p className="leading-[1.2]">{t("t0542")}</p>
                           </div>
                           <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33669;9159:15323;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                             <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2600,7 +2389,7 @@ export default function ArticleDecisaoEmSegundos() {
                         </div>
                         <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33669;9029:6016" data-name="acordion-title">
                           <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33669;9029:6016;9011:49">
-                            <p className="leading-[1.2]">Como gerencio o cadastro de usuários?</p>
+                            <p className="leading-[1.2]">{t("t0543")}</p>
                           </div>
                           <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33669;9029:6016;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                             <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2608,7 +2397,7 @@ export default function ArticleDecisaoEmSegundos() {
                         </div>
                         <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33669;9065:14305" data-name="acordion-title">
                           <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33669;9065:14305;9011:49">
-                            <p className="leading-[1.2]">Para incluir um usuário:</p>
+                            <p className="leading-[1.2]">{t("t0544")}</p>
                           </div>
                           <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33669;9065:14305;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                             <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2616,7 +2405,7 @@ export default function ArticleDecisaoEmSegundos() {
                         </div>
                         <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33669;9029:6017" data-name="acordion-title">
                           <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33669;9029:6017;9011:49">
-                            <p className="leading-[1.2]">Como organizo as equipes técnicas?</p>
+                            <p className="leading-[1.2]">{t("t0545")}</p>
                           </div>
                           <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33669;9029:6017;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                             <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2624,7 +2413,7 @@ export default function ArticleDecisaoEmSegundos() {
                         </div>
                         <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33669;9159:14883" data-name="acordion-title">
                           <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33669;9159:14883;9011:49">
-                            <p className="leading-[1.2]">Para incluir uma equipe técnica:</p>
+                            <p className="leading-[1.2]">{t("t0546")}</p>
                           </div>
                           <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33669;9159:14883;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                             <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2634,12 +2423,12 @@ export default function ArticleDecisaoEmSegundos() {
                       <div className="content-stretch flex flex-col gap-[2.5px] items-start relative shrink-0 w-[81.313px]" data-node-id="4:33670" data-name="sumario">
                         <div className="content-stretch flex gap-[4px] items-center justify-center py-[2px] relative shrink-0 w-full" data-node-id="I4:33670;9029:6008" data-name="acordion-title">
                           <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center leading-[0] min-w-px not-italic relative text-[#fbfcfe] text-[4.5px]" data-node-id="I4:33670;9029:6008;9011:49">
-                            <p className="leading-[1.2]">6. Comunicação</p>
+                            <p className="leading-[1.2]">{t("t0547")}</p>
                           </div>
                         </div>
                         <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33670;9029:6010" data-name="acordion-title">
                           <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33670;9029:6010;9011:49">
-                            <p className="leading-[1.2]">Como acesso os contatos úteis?</p>
+                            <p className="leading-[1.2]">{t("t0548")}</p>
                           </div>
                           <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33670;9029:6010;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                             <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2647,7 +2436,7 @@ export default function ArticleDecisaoEmSegundos() {
                         </div>
                         <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[0] py-[2px] relative shrink-0 text-[#fbfcfe] w-full" data-node-id="I4:33670;9065:14326" data-name="acordion-title">
                           <div className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] flex flex-[1_0_0] flex-col font-['Porsche_Next_TT:Regular'] justify-center min-w-px not-italic relative text-[4.5px]" data-node-id="I4:33670;9065:14326;9011:49">
-                            <p className="leading-[1.2]">Para incluir um contato:</p>
+                            <p className="leading-[1.2]">{t("t0549")}</p>
                           </div>
                           <div className="flex flex-col font-['Material_Symbols_Outlined:Regular'] font-normal justify-center relative shrink-0 text-[5.5px] text-right w-[10.5px]" data-node-id="I4:33670;9065:14326;9011:50" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                             <p className="leading-[1.5]">keyboard_arrow_right</p>
@@ -2659,7 +2448,7 @@ export default function ArticleDecisaoEmSegundos() {
                 </div>
                 <div className="content-center drop-shadow-[-0.313px_0px_0.625px_rgba(0,0,0,0.08)] flex flex-[1_0_0] flex-wrap gap-y-[6px] h-[127.5px] items-center justify-center min-w-px pl-[3px] pr-[10px] py-[1.25px] relative" data-node-id="4:33677" data-name="section">
                   <div className="h-[60px] relative shrink-0 w-[90.75px]" data-node-id="4:33678" data-name="Galaxy Tab S8 Ultra">
-                    <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgGalaxyTabS8Ultra} />
+                    <img alt={text("Evidência visual do projeto")} className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgGalaxyTabS8Ultra} />
                   </div>
                 </div>
               </div>
@@ -2672,16 +2461,14 @@ export default function ArticleDecisaoEmSegundos() {
           </p>
           <div className="content-stretch flex flex-[1_0_0] flex-col gap-[10px] items-start justify-center min-w-px relative" data-node-id="4:33681" data-name="div.flex.flex-col.flex-1">
             <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.4] relative shrink-0 text-[#000102] text-[16px] w-[328px]" data-node-id="4:33682">
-              Variações do streaming
-            </p>
+              {t("t0496")}</p>
           </div>
         </div>
       </div>
-      <div className="content-stretch flex flex-col h-[1080px] items-start justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:33684" data-name="section.results">
+      <div className="content-stretch flex flex-col h-[1080px] items-start justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:33684" data-name="section.results" data-section-id="results">
         <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full" data-node-id="4:33685" data-name="div.flex.flex-col.w-full">
-          <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.3] relative shrink-0 text-[#000102] text-[16px] tracking-[0.64px] w-[900px]" data-node-id="4:33686">
-            04 · EVIDÊNCIAS E RESULTADOS
-          </p>
+          <h2 className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.3] relative shrink-0 text-[#000102] text-[16px] tracking-[0.64px] w-[900px]" data-node-id="4:33686">
+            {t("t0149")}</h2>
           <div className="content-start flex flex-wrap gap-[32px_24px] h-[100px] items-start overflow-clip relative shrink-0 w-full" data-node-id="4:33687" data-name="div.metrics">
             <div className="content-stretch flex flex-[1_0_0] items-end min-w-px relative" data-node-id="4:33688" data-name="metric-result.coverage">
               <div className="bg-[#020305] content-stretch flex flex-col items-center justify-center max-h-[100px] min-h-[100px] min-w-[100px] px-[16px] py-[4px] relative rounded-[8px] shrink-0" data-node-id="I4:33688;6312:1003" data-name="number">
@@ -2693,11 +2480,9 @@ export default function ArticleDecisaoEmSegundos() {
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-full items-start justify-center min-w-px relative" data-name="content">
                   <div className="[word-break:break-word] bg-[#101113] content-stretch flex flex-col font-['Sora:Regular'] font-normal gap-[8px] items-start leading-none p-[16px] relative rounded-br-[8px] rounded-tr-[8px] shrink-0 text-[#fcfdfe] w-full whitespace-nowrap" data-node-id="I4:33688;6312:1006" data-name="<title>">
                     <p className="relative shrink-0 text-[20px]" data-node-id="I4:33688;6312:1007">
-                      sucesso da tarefa
-                    </p>
+                      {t("t0152")}</p>
                     <p className="relative shrink-0 text-[13px]" data-node-id="I4:33688;6312:1008">
-                      (Task Success · não medido)
-                    </p>
+                      {t("t0153")}</p>
                   </div>
                 </div>
               </div>
@@ -2712,11 +2497,9 @@ export default function ArticleDecisaoEmSegundos() {
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-full items-start justify-center min-w-px relative" data-name="content">
                   <div className="[word-break:break-word] bg-[#101113] content-stretch flex flex-col font-['Sora:Regular'] font-normal gap-[8px] items-start leading-none p-[16px] relative rounded-br-[8px] rounded-tr-[8px] shrink-0 text-[#fcfdfe] w-full whitespace-nowrap" data-node-id="I4:33689;6312:1006" data-name="<title>">
                     <p className="relative shrink-0 text-[20px]" data-node-id="I4:33689;6312:1007">
-                      tempo de localização
-                    </p>
+                      {t("t0550")}</p>
                     <p className="relative shrink-0 text-[13px]" data-node-id="I4:33689;6312:1008">
-                      (Time on Task · não medido)
-                    </p>
+                      {t("t0551")}</p>
                   </div>
                 </div>
               </div>
@@ -2731,20 +2514,18 @@ export default function ArticleDecisaoEmSegundos() {
                 <div className="content-stretch flex flex-[1_0_0] flex-col h-full items-start justify-center min-w-px relative" data-name="content">
                   <div className="[word-break:break-word] bg-[#101113] content-stretch flex flex-col font-['Sora:Regular'] font-normal gap-[8px] items-start leading-none p-[16px] relative rounded-br-[8px] rounded-tr-[8px] shrink-0 text-[#fcfdfe] w-full whitespace-nowrap" data-node-id="I4:33690;6312:1006" data-name="<title>">
                     <p className="relative shrink-0 text-[20px]" data-node-id="I4:33690;6312:1007">
-                      downloads do app
-                    </p>
+                      {t("t0155")}</p>
                     <p className="relative shrink-0 text-[13px]" data-node-id="I4:33690;6312:1008">
-                      (Google Play)
-                    </p>
+                      {t("t0156")}</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[0] relative shrink-0 text-[#000102] text-[16px] w-[1040px] whitespace-pre-wrap" data-node-id="4:33692">
-            <p className="leading-[1.5] mb-0">Pedidos, responsabilidades e estados passaram a ter um fluxo próprio, antes distribuído entre planilhas. O manual apoiou a operação do aplicativo.</p>
+            <p className="leading-[1.5] mb-0">{t("t0552")}</p>
             <p className="leading-[1.5] mb-0">​</p>
-            <p className="leading-[1.5]">A continuidade pede observação em eventos: conclusão de pedidos, tempo de aprovação, erros e retrabalho.</p>
+            <p className="leading-[1.5]">{t("t0553")}</p>
           </div>
         </div>
       </div>

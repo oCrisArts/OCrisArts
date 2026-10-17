@@ -1,7 +1,11 @@
 {
-  "description": "Delivers a responsive, animated portfolio site showcasing projects with seamless scroll-triggered transitions, interactive media, and intuitive navigation for an engaging user experience.",
+  "title": "oCris Acosta | Product Design, UX/UI & Design Engineering",
+  "description": "Da pesquisa à implementação, aproximo pessoas, produto e engenharia para transformar desafios complexos em soluções claras, acessíveis e viáveis.",
+  "language": "pt-BR",
+  "icons": {"icon": "/favicon.svg"},
+  "openGraph": {"image": "https://ocris.art.br/videos/about-poster.jpg"},
   "robots": {
-    "index": false
+    "index": true
   },
   "accessibility": {
     "addBypassLinks": false,

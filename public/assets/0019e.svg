@@ -1,0 +1,8 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="48" height="24" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="toggle/on">
+<rect width="48" height="24" rx="12" fill="#005CA9"/>
+<g id="spacer">
+</g>
+<circle id="switcher" cx="35" cy="12" r="10" fill="white"/>
+</g>
+</svg>

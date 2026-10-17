@@ -1,0 +1,189 @@
+@font-face {
+  font-family: "Font Awesome 5 Brands:Regular";
+  src: url("https://static.figma.com/font/Font%20Awesome%205%20Brands-Regular-400_1") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Font Awesome 6 Brands:Regular";
+  src: url("https://static.figma.com/font/Font%20Awesome%206%20Brands-Regular-400_2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Font Awesome 6 Free:Regular";
+  src: url("https://static.figma.com/font/Font%20Awesome%206%20Free-Regular-400_2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Font Awesome 6 Free:Solid";
+  src: url("https://static.figma.com/font/Font%20Awesome%206%20Free-Solid-900_2") format("woff2");
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Font Awesome 7 Free:Regular";
+  src: url("/fonts/Font_Awesome_7_Free-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Font Awesome 7 Free:Solid";
+  src: url("/fonts/Font_Awesome_7_Free-Solid.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Geist:Bold";
+  src: url("https://static.figma.com/font/Geist_wght__1") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Geist:Medium";
+  src: url("https://static.figma.com/font/Geist_wght__1") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Geist:Regular";
+  src: url("https://static.figma.com/font/Geist_wght__1") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Geist:SemiBold";
+  src: url("https://static.figma.com/font/Geist_wght__1") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter:Medium";
+  src: url("https://static.figma.com/font/Inter_1") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter:Regular";
+  src: url("https://static.figma.com/font/Inter_1") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Material Icons:Regular";
+  src: url("https://static.figma.com/font/MaterialIcons-Regular_6") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Material Symbols Outlined:Regular";
+  src: url("/fonts/Material_Symbols_Outlined-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins:Bold";
+  src: url("https://static.figma.com/font/Poppins-Bold_6") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto:Bold";
+  src: url("https://static.figma.com/font/Roboto_wdth_wght__3") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto:Light";
+  src: url("https://static.figma.com/font/Roboto_wdth_wght__3") format("woff2");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto:Medium";
+  src: url("https://static.figma.com/font/Roboto_wdth_wght__3") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto:Regular";
+  src: url("https://static.figma.com/font/Roboto_wdth_wght__3") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto:SemiBold";
+  src: url("https://static.figma.com/font/Roboto_wdth_wght__3") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Condensed:Bold";
+  src: url("https://static.figma.com/font/RobotoCondensed_wght__1") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sora:Bold";
+  src: url("https://static.figma.com/font/Sora_wght__1") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sora:Light";
+  src: url("https://static.figma.com/font/Sora_wght__1") format("woff2");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sora:Regular";
+  src: url("https://static.figma.com/font/Sora_wght__1") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sora:SemiBold";
+  src: url("https://static.figma.com/font/Sora_wght__1") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans 3:Regular";
+  src: url("https://static.figma.com/font/SourceSans3_wght__2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Titillium Web:SemiBold";
+  src: url("https://static.figma.com/font/TitilliumWeb-SemiBold_1") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}

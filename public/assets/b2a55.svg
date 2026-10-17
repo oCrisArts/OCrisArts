@@ -1,0 +1,17 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="42.0193" height="131.211" viewBox="0 0 42.0193 131.211" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Input_Usu&#195;&#161;rio --&#62; Frame 17" opacity="0.5" filter="url(#filter0_d_0_193)">
+<path d="M4 7.63724H11.9166C16.9385 7.63724 21.0097 11.7084 21.0097 16.7303V114.481C21.0097 119.503 25.0808 123.574 30.1028 123.574H38.0193" stroke-width="7.27447" stroke="#BBBCBE"/>
+</g>
+<defs>
+<filter id="filter0_d_0_193" x="0" y="0" width="42.0193" height="131.211" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="4" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_0_193"/>
+<feOffset/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0509804 0 0 0 0 0.431373 0 0 0 0 0.992157 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_193"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_193" result="shape"/>
+</filter>
+</defs>
+</svg>

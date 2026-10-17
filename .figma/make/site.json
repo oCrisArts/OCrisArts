@@ -1,0 +1,10 @@
+{
+  "description": "Delivers a responsive, animated portfolio site showcasing projects with seamless scroll-triggered transitions, interactive media, and intuitive navigation for an engaging user experience.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

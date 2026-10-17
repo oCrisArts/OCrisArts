@@ -1,0 +1,6 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="obstacle">
+<path d="M19.3636 14.7778V11.7444L18.2 12.9L17.1818 11.8889L20.0909 9L23 11.8889L21.9818 12.9181L20.8182 11.7625V14.7778H19.3636ZM7 22L11.3636 16.2222L14.6364 20.5556L15.8 19.6889L13.7273 16.9444L16.4545 13.3333L23 22H7Z" fill="#EA4D2E"/>
+<path d="M15 28C22.1797 28 28 22.1797 28 15C28 7.8203 22.1797 2 15 2C7.8203 2 2 7.8203 2 15C2 22.1797 7.8203 28 15 28ZM15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30Z" fill-rule="evenodd" clip-rule="evenodd" fill="#EA4D2E"/>
+</g>
+</svg>

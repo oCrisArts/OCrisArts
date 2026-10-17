@@ -1,0 +1,20 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="1604.8" height="996.125" viewBox="0 0 1604.8 996.125" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="bg.figure" opacity="0.3">
+<mask id="stroke0_0_4464" fill="white">
+<path d="M696.398 808.556L1018.34 522.23L1289.62 996.125H803.713L696.398 808.556Z" fill-rule="evenodd" clip-rule="evenodd"/>
+</mask>
+<path id="X4" d="M696.398 808.556L1018.34 522.23L1289.62 996.125H803.713L696.398 808.556Z" stroke-width="6" stroke="#999FAA" mask="url(#stroke0_0_4464)"/>
+<mask id="stroke1_0_4464" fill="white">
+<path d="M0 996.125H485.904L1018.32 522.23H532.415L0 996.125Z" fill-rule="evenodd" clip-rule="evenodd"/>
+</mask>
+<path id="X3" d="M0 996.125H485.904L1018.32 522.23H532.415L0 996.125Z" stroke-width="6" stroke="#999FAA" mask="url(#stroke1_0_4464)"/>
+<mask id="stroke2_0_4464" fill="white">
+<path d="M315.195 0.231281L800.839 0L1072.37 474.126H586.47L315.195 0.231281Z" fill-rule="evenodd" clip-rule="evenodd"/>
+</mask>
+<path id="X2" d="M315.195 0.231281L800.839 0L1072.37 474.126H586.47L315.195 0.231281Z" stroke-width="6" stroke="#999FAA" mask="url(#stroke2_0_4464)"/>
+<mask id="stroke3_0_4464" fill="white">
+<path d="M1119.16 0.234375L908.43 187.803L1072.39 474.129L1604.8 0.234375H1119.16Z" fill-rule="evenodd" clip-rule="evenodd"/>
+</mask>
+<path id="X1" d="M1119.16 0.234375L908.43 187.803L1072.39 474.129L1604.8 0.234375H1119.16Z" stroke-width="6" stroke="#999FAA" mask="url(#stroke3_0_4464)"/>
+</g>
+</svg>

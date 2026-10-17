@@ -1,0 +1,28 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="37.5" height="50" viewBox="0 0 37.5 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="medal.svg">
+<g id="Vector 1">
+<path d="M3.75 39.3939L7.92722 25L16.2816 29.5455L18.5601 34.4697L13.2437 50L3.75 39.3939Z" fill="#B8B8BE"/>
+<path d="M25.3956 50L18.5601 29.5455L29.5728 26.1364L33.75 39.3939L25.3956 50Z" fill="#B8B8BE"/>
+</g>
+<circle id="Ellipse 3" cx="18.75" cy="18.75" r="18.75" fill="url(#paint0_linear_0_90)"/>
+<path id="Ellipse 4" d="M33.5417 18.3333C33.5417 26.7327 26.7327 33.5417 18.3333 33.5417C9.934 33.5417 3.125 26.7327 3.125 18.3333C3.125 9.934 9.934 3.125 18.3333 3.125C26.7327 3.125 33.5417 9.934 33.5417 18.3333Z" stroke-width="1.25" stroke="url(#paint1_linear_0_90)"/>
+<g id="Star 1">
+<use xlink:href="#stroke0_0_90" fill="#E5BD80"/>
+<mask id="stroke1_0_90" fill="white">
+<use xlink:href="#stroke0_0_90"/>
+</mask>
+<path d="M18.3333 10L20.2043 15.7582L26.2588 15.7582L21.3606 19.3169L23.2315 25.0751L18.3333 21.5164L13.4351 25.0751L15.3061 19.3169L10.4079 15.7582L16.4624 15.7582L18.3333 10Z" stroke-width="2.5" stroke="#CCA86C" mask="url(#stroke1_0_90)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_90" x1="0" y1="18.75" x2="37.5" y2="18.75" gradientUnits="userSpaceOnUse">
+<stop offset="0.505208" stop-color="#CCA86C"/>
+<stop offset="0.526042" stop-color="#E5BD80"/>
+</linearGradient>
+<linearGradient id="paint1_linear_0_90" x1="2.5" y1="18.3333" x2="32.9167" y2="18.3333" gradientUnits="userSpaceOnUse">
+<stop offset="0.495355" stop-color="#E5BD80"/>
+<stop offset="0.542197" stop-color="#CCA86C"/>
+</linearGradient>
+<path id="stroke0_0_90" d="M18.3333 10L20.2043 15.7582L26.2588 15.7582L21.3606 19.3169L23.2315 25.0751L18.3333 21.5164L13.4351 25.0751L15.3061 19.3169L10.4079 15.7582L16.4624 15.7582L18.3333 10Z"/>
+</defs>
+</svg>

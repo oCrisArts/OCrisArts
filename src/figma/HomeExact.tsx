@@ -602,68 +602,89 @@ export default function MainHome() {
           />
         </div>
       </div>
-      <div className="bg-[#eeeff1] content-stretch flex gap-[24px] h-[1080px] items-center justify-center px-[160px] relative shrink-0 w-[1920px]" data-node-id="4:35862" data-name="section.about-teaser">
-        <div className="content-stretch flex flex-col gap-[16px] items-start relative rounded-[16px] shrink-0 w-[841px]" data-node-id="4:35863" data-name="div.flex.flex-col.w-full.max-w-[876px]">
-          <div className="[word-break:break-word] content-stretch flex flex-col font-['Sora:Regular'] items-start relative shrink-0 w-[876px] whitespace-nowrap" data-node-id="4:35864" data-name="title">
-            <h2 className="font-normal leading-[1.15] relative shrink-0 text-[#000102] text-[36px]" data-node-id="4:35865">
-              {t("t0599")}</h2>
-            <p className="font-medium leading-[1.2] relative shrink-0 text-[#6b0013] text-[44px]" data-node-id="4:35866">
-              {t("t0600")}</p>
+      <section id="sobre" className="bg-[#eeeff1] flex gap-[64px] h-[1080px] px-[160px] py-[128px] relative shrink-0 w-[1920px] lg:flex-row flex-col" data-node-id="4:35862" data-name="section.about-teaser">
+        <div className="flex flex-col gap-[16px] w-full lg:w-1/2" data-node-id="4:35863" data-name="col">
+          <div className="flex flex-col gap-[8px]" data-node-id="4:35864" data-name="title">
+            <h2 className="font-['Sora:Regular'] font-normal leading-[1.15] text-[#000102] text-[36px]" data-node-id="4:35865">
+              {t("t0599")}
+            </h2>
+            <p className="font-['Sora:Medium'] font-medium leading-[1.2] text-[#6b0013] text-[44px]" data-node-id="4:35866">
+              {t("t0600")}
+            </p>
           </div>
-          <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full" data-node-id="4:35867" data-name="profile">
-            <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.4] relative shrink-0 text-[#000102] text-[20px] w-[820px]" data-node-id="4:35868">
-              {t("t0601")}</p>
-            <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.5] relative shrink-0 text-[#000102] text-[16px] w-[820px]" data-node-id="4:35869">
-              {t("t0602")}</p>
-            <div className="content-stretch flex flex-col items-center relative shrink-0 w-full" data-node-id="4:35870" data-name="repertorio.organizado">
-              <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0 w-full" data-node-id="4:35871" data-name="group.Processos e metodologias">
-                <div className="[word-break:break-word] content-start flex flex-wrap gap-[0px_12px] items-start leading-[1.6] overflow-clip relative shrink-0 text-[#000102] w-[876px] whitespace-nowrap" data-node-id="4:35873" data-name="chips.Processos e metodologias">
-                  <div className="bg-[#f9f9f9] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:35874" data-name="competencia.ux-research">
-                    <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:35874;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
-                      search
-                    </p>
-                    <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:35874;6066:625">
-                      {t("t0603")}</p>
-                  </div>
-                  <div className="bg-[#f9f9f9] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:35876" data-name="competencia.product-design">
-                    <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:35876;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
-                      design_services
-                    </p>
-                    <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:35876;6066:625">
-                      {t("t0597")}</p>
-                  </div>
-                  <div className="bg-[#f9f9f9] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:35877" data-name="competencia.design-systems">
-                    <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:35877;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
-                      widgets
-                    </p>
-                    <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:35877;6066:625">
-                      {t("t0598")}</p>
-                  </div>
-                  <div className="bg-[#f9f9f9] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:35878" data-name="competencia.acessibilidade">
-                    <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:35878;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
-                      accessibility_new
-                    </p>
-                    <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:35878;6066:625">
-                      {t("t0604")}</p>
-                  </div>
-                  <div className="bg-[#f9f9f9] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:35879" data-name="competencia.design-engineering">
-                    <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:35879;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
-                      code
-                    </p>
-                    <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:35879;6066:625">
-                      {t("t0605")}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="flex flex-col gap-[16px]" data-node-id="4:35867" data-name="profile">
+            <p className="font-['Sora:Regular'] font-normal leading-[1.4] text-[#000102] text-[20px]" data-node-id="4:35868">
+              {t("t0601")}
+            </p>
+            <p className="font-['Sora:Regular'] font-normal leading-[1.5] text-[#000102] text-[16px]" data-node-id="4:35869">
+              {t("t0602")}
+            </p>
+            <ul className="flex flex-wrap gap-[12px] list-none m-0 p-0" data-node-id="4:35873" data-name="tags">
+              <li className="bg-[#f9f9f9] flex gap-[8px] items-center px-[8px] py-[4px] rounded-[12px]" data-node-id="4:35874" data-name="tag">
+                <span className="font-['Material_Symbols_Outlined:Light'] font-light text-[10px]" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
+                  psychology
+                </span>
+                <span className="font-['Sora:Regular'] font-normal text-[11px]">
+                  {t("t0650")}
+                </span>
+              </li>
+              <li className="bg-[#f9f9f9] flex gap-[8px] items-center px-[8px] py-[4px] rounded-[12px]" data-node-id="4:35876" data-name="tag">
+                <span className="font-['Material_Symbols_Outlined:Light'] font-light text-[10px]" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
+                  cycle
+                </span>
+                <span className="font-['Sora:Regular'] font-normal text-[11px]">
+                  {t("t0651")}
+                </span>
+              </li>
+              <li className="bg-[#f9f9f9] flex gap-[8px] items-center px-[8px] py-[4px] rounded-[12px]" data-node-id="4:35877" data-name="tag">
+                <span className="font-['Material_Symbols_Outlined:Light'] font-light text-[10px]" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
+                  monitoring
+                </span>
+                <span className="font-['Sora:Regular'] font-normal text-[11px]">
+                  {t("t0652")}
+                </span>
+              </li>
+              <li className="bg-[#f9f9f9] flex gap-[8px] items-center px-[8px] py-[4px] rounded-[12px]" data-node-id="4:35878" data-name="tag">
+                <span className="font-['Material_Symbols_Outlined:Light'] font-light text-[10px]" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
+                  travel_explore
+                </span>
+                <span className="font-['Sora:Regular'] font-normal text-[11px]">
+                  {t("t0653")}
+                </span>
+              </li>
+              <li className="bg-[#f9f9f9] flex gap-[8px] items-center px-[8px] py-[4px] rounded-[12px]" data-node-id="4:35879" data-name="tag">
+                <span className="font-['Material_Symbols_Outlined:Light'] font-light text-[10px]" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
+                  hub
+                </span>
+                <span className="font-['Sora:Regular'] font-normal text-[11px]">
+                  {t("t0654")}
+                </span>
+              </li>
+              <li className="bg-[#f9f9f9] flex gap-[8px] items-center px-[8px] py-[4px] rounded-[12px]" data-node-id="4:35879" data-name="tag">
+                <span className="font-['Material_Symbols_Outlined:Light'] font-light text-[10px]" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
+                  diamond
+                </span>
+                <span className="font-['Sora:Regular'] font-normal text-[11px]">
+                  {t("t0655")}
+                </span>
+              </li>
+              <li className="bg-[#f9f9f9] flex gap-[8px] items-center px-[8px] py-[4px] rounded-[12px]" data-node-id="4:35879" data-name="tag">
+                <span className="font-['Material_Symbols_Outlined:Light'] font-light text-[10px]" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
+                  view_list
+                </span>
+                <span className="font-['Sora:Regular'] font-normal text-[11px]">
+                  {t("t0656")}
+                </span>
+              </li>
+            </ul>
           </div>
         </div>
-        <div className="h-[586px] overflow-hidden relative shrink-0 w-[320px]" data-node-id="4:35924" data-name="figure.product-illustration">
+        <div className="h-[586px] overflow-hidden relative w-full lg:w-1/2 max-w-[586px]" data-node-id="4:35924" data-name="figure.product-illustration">
           <video autoPlay className="absolute inset-0 size-full object-contain" loop muted playsInline poster="/videos/about-poster.jpg" preload="metadata">
             <source src="/videos/about.mp4" type="video/mp4" />
           </video>
         </div>
-      </div>
+      </section>
       <div className="bg-[#000102] content-stretch flex flex-col gap-[10px] h-[1080px] items-start overflow-clip relative shrink-0 w-[1920px]" data-node-id="4:35925" data-name="section.case-stories">
         <div className="bg-[#000102] content-stretch flex flex-col gap-[10px] h-[1080px] items-start overflow-clip relative shrink-0 w-[1920px]" data-node-id="4:35926" data-name="div.motion-slideshow.vegas.loop.fade2">
           <div className="bg-[#000102] h-[1080px] overflow-clip relative shrink-0 w-[1920px]" data-node-id="4:35927" data-name="video.slide-00.intro.problem-to-evidence">
@@ -816,44 +837,45 @@ export default function MainHome() {
           </div>
         </div>
       </div>
-      <div className="bg-[#eeeff1] content-stretch flex h-[1080px] items-center px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:35965" data-name="section.contact-cta">
-        <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[24px] items-center min-w-px relative" data-node-id="4:35966" data-name="div.flex.flex-col.w-full">
-          <div className="content-stretch flex flex-col font-['Sora:Regular'] font-normal items-start relative shrink-0 w-full" data-node-id="4:35967" data-name="div.flex.flex-col.w-full">
-            <h2 className="leading-[1.15] relative shrink-0 text-[#000102] text-[44px] w-[900px]" data-node-id="4:35968">
-              {t("t0623")}</h2>
-            <p className="leading-[1.2] relative shrink-0 text-[#000102] text-[36px] w-[900px]" data-node-id="4:35969">{` `}</p>
-            <div className="leading-[0] relative shrink-0 text-[#0d0e10] text-[16px] w-[760px] whitespace-pre-wrap" data-node-id="4:35970">
+      <section className="bg-[#eeeff1] content-stretch flex h-[1080px] px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:35965" data-name="section.contact-cta">
+        <div className="flex gap-[64px] items-center w-full lg:flex-row flex-col" data-node-id="4:35966" data-name="row">
+          <div className="flex flex-col gap-[24px] w-full lg:w-1/2" data-node-id="4:35967" data-name="col">
+            <h2 className="font-['Sora:Regular'] font-normal leading-[1.15] text-[#000102] text-[44px]" data-node-id="4:35968">
+              {t("t0623")}
+            </h2>
+            <p className="font-['Sora:Regular'] font-normal leading-[1.2] text-[#000102] text-[36px]" data-node-id="4:35969">{` `}</p>
+            <div className="text-[#0d0e10] text-[16px] whitespace-pre-wrap" data-node-id="4:35970">
               <p className="leading-[1.5] mb-0">{t("t0624")}</p>
               <p className="leading-[1.5]">{t("t0625")}</p>
             </div>
           </div>
-          <form className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-full whitespace-nowrap" data-node-id="4:35971" data-name="<form>" data-contact-form data-hj-suppress data-clarity-mask="true" onSubmit={event => event.preventDefault()}>
-            <div className="bg-[#eeeff1] border border-[#999faa] border-solid content-stretch flex font-normal gap-[8px] h-[64px] items-center leading-[1.6] px-[24px] relative rounded-[8px] shrink-0 text-[16px] w-full" data-node-id="4:35972" data-name="Link · PM Canvas · Justificativas, SMART e Benefícios">
-              <p className="font-['Material_Symbols_Outlined:Regular'] relative shrink-0 text-[#1e22aa]" data-node-id="4:35973" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
+          <form className="flex flex-col gap-[24px] w-full lg:w-1/2 whitespace-nowrap" data-node-id="4:35971" data-name="<form>" data-contact-form data-hj-suppress data-clarity-mask="true" onSubmit={event => event.preventDefault()}>
+            <div className="bg-[#eeeff1] border border-[#999faa] border-solid flex gap-[8px] h-[64px] items-center px-[24px] rounded-[8px]" data-node-id="4:35972" data-name="input-wrapper">
+              <span className="font-['Material_Symbols_Outlined:Regular'] text-[#1e22aa]" data-node-id="4:35973" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                 person_pin_circle
-              </p>
-              <input className="font-['Sora:Regular'] relative shrink-0 text-[#0d0e10] exact-contact-input" data-node-id="4:35974" name="name" placeholder={t("t0626")} aria-label={text("Nome")} autoComplete="name" />
+              </span>
+              <input className="font-['Sora:Regular'] text-[#0d0e10] exact-contact-input w-full" data-node-id="4:35974" name="name" placeholder={t("t0626")} aria-label={text("Nome")} autoComplete="name" />
             </div>
-            <div className="bg-[#eeeff1] border border-[#999faa] border-solid content-stretch flex font-normal gap-[8px] h-[64px] items-center leading-[1.6] px-[24px] relative rounded-[8px] shrink-0 text-[16px] w-full" data-node-id="4:35975" data-name="Link · PM Canvas · Justificativas, SMART e Benefícios">
-              <p className="font-['Material_Symbols_Outlined:Regular'] relative shrink-0 text-[#1e22aa]" data-node-id="4:35976" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
+            <div className="bg-[#eeeff1] border border-[#999faa] border-solid flex gap-[8px] h-[64px] items-center px-[24px] rounded-[8px]" data-node-id="4:35975" data-name="input-wrapper">
+              <span className="font-['Material_Symbols_Outlined:Regular'] text-[#1e22aa]" data-node-id="4:35976" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                 alternate_email
-              </p>
-              <input className="font-['Sora:Regular'] relative shrink-0 text-[#0d0e10] exact-contact-input" data-node-id="4:35977" name="contact" placeholder={t("t0627")} aria-label={text("Telefone ou e-mail")} autoComplete="email" />
+              </span>
+              <input className="font-['Sora:Regular'] text-[#0d0e10] exact-contact-input w-full" data-node-id="4:35977" name="contact" placeholder={t("t0627")} aria-label={text("Telefone ou e-mail")} autoComplete="email" />
             </div>
-            <a className="bg-[#0d0e10] content-stretch flex gap-[16px] items-center justify-center min-h-[60px] px-[16px] py-[8px] relative rounded-[12px] shrink-0 text-[#f2dee3]" data-node-id="4:35978" data-name="btn" href="https://wa.me/5548991526789" target="_blank" rel="noreferrer">
-              <p className="font-['Material_Symbols_Outlined:Light'] font-light leading-none relative shrink-0 text-[24px]" data-node-id="I4:35978;5318:11702" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
+            <a className="bg-[#0d0e10] flex gap-[16px] items-center justify-center min-h-[60px] px-[16px] py-[8px] rounded-[12px] text-[#f2dee3]" data-node-id="4:35978" data-name="btn" href="https://wa.me/5548991526789" target="_blank" rel="noreferrer">
+              <span className="font-['Material_Symbols_Outlined:Light'] font-light text-[24px]" data-node-id="I4:35978;5318:11702" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
                 mark_chat_unread
-              </p>
-              <div className="flex flex-col font-['Geist:Regular'] font-normal justify-center leading-[0] relative shrink-0 text-[12px]" data-node-id="I4:35978;5318:11703">
-                <p className="leading-none">{t("t0628")}</p>
-              </div>
-              <div className="flex flex-col font-['Material_Symbols_Outlined:Light'] font-light justify-center leading-[0] relative shrink-0 text-[24px] text-center" data-node-id="I4:35978;5318:11704" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
-                <p className="leading-none">mark_chat_unread</p>
-              </div>
+              </span>
+              <span className="font-['Geist:Regular'] font-normal text-[12px]" data-node-id="I4:35978;5318:11703">
+                {t("t0628")}
+              </span>
+              <span className="font-['Material_Symbols_Outlined:Light'] font-light text-[24px] text-center" data-node-id="I4:35978;5318:11704" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
+                mark_chat_unread
+              </span>
             </a>
           </form>
         </div>
-      </div>
+      </section>
       <div className="content-stretch flex flex-col h-[1080px] items-start justify-center overflow-clip relative shrink-0 w-[1920px]" data-node-id="4:35979" data-name="footer.site">
         <div className="content-stretch flex flex-[1_0_0] flex-col gap-[36px] items-center justify-center min-h-[540px] px-[48px] py-[160px] relative w-full" data-node-id="4:35980" data-name="div.flex.flex-col.w-full">
           <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-node-id="4:35981" data-name="div.flex.flex-row.w-full">

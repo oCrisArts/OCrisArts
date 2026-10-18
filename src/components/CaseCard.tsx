@@ -1,16 +1,17 @@
 import { Link } from 'react-router-dom'
 import { useI18n } from '../i18n'
+import { caseSlugs } from '../data/cases'
 const assetPathPrefix = "/assets";
-const imgCardImg = `${assetPathPrefix}/46d18.png`;
-const imgCardImg1 = `${assetPathPrefix}/b1c4c.png`;
-const imgCardFigure = `${assetPathPrefix}/268b2.png`;
-const imgCardImg2 = `${assetPathPrefix}/5f2cc.png`;
-const imgCardImg3 = `${assetPathPrefix}/50614.png`;
-const imgCardImg4 = `${assetPathPrefix}/277dd.png`;
-const imgCardImg5 = `${assetPathPrefix}/3469a.png`;
-const imgCardImg6 = `${assetPathPrefix}/56713.png`;
-const imgCardImg7 = `${assetPathPrefix}/adf92.png`;
-export const caseSlugs = ["navegacao-confusa","cadastros-complexos","regra-incerta","qualificacao-complexa","corrida-em-jogo","beneficios-dispersos","cadastro-travado","uma-marca-por-cliente"] as const
+const imgCardImg = `${assetPathPrefix}/front-page/cases/navegacao-confusa.png`;
+const imgCardImg1 = `${assetPathPrefix}/front-page/cases/cadastros-complexos.png`;
+const imgCardFigure = `${assetPathPrefix}/front-page/cases/card-background.png`;
+const imgCardImg2 = `${assetPathPrefix}/front-page/cases/regra-incerta.png`;
+const imgCardImg3 = `${assetPathPrefix}/front-page/cases/qualificacao-complexa.png`;
+const imgCardImg4 = `${assetPathPrefix}/front-page/cases/corrida-em-jogo.png`;
+const imgCardImg5 = `${assetPathPrefix}/front-page/cases/beneficios-dispersos.png`;
+const imgCardImg6 = `${assetPathPrefix}/front-page/cases/cadastro-travado.png`;
+const imgCardImg7 = `${assetPathPrefix}/front-page/cases/uma-marca-por-cliente.png`;
+export { caseSlugs }
 export default function CaseCard({slug}: {slug: string}) {
 const {t,path}=useI18n();
 switch(slug){

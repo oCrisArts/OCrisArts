@@ -93,7 +93,7 @@ export default function SiteContactFooter() {
       >
         <div className="flex min-h-[1056px] w-full flex-col items-center justify-start gap-6 md:min-h-[540px] md:justify-center md:gap-9">
           <div className="flex w-full flex-col items-center text-center font-['Sora:Regular']">
-            <img src="/assets/site-brand-mark.svg" alt="" width="117" height="117" className="size-[117px]" />
+            <img src="/assets/shared/branding/site-brand-mark.svg" alt="" width="117" height="117" className="size-[117px]" />
             <p className="whitespace-nowrap text-[38px] font-medium leading-[1.2] text-[#6b0013] md:text-[44px]">{t("t0600")}</p>
             <div className="flex w-full flex-col items-center gap-4 px-2 py-3">
               <p className="whitespace-nowrap text-[28px] leading-[1.2] text-[#000102] md:text-[30px]">{t("t0629")}</p>

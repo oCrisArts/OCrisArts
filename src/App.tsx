@@ -23,11 +23,9 @@ import {
   basePath,
 } from "./i18n"
 
-import { cases } from "./seo/pages"
+import { caseSlugs } from "./data/cases"
 
-import { caseSlugs } from "./figma/CaseCard"
-
-import SiteContactFooter from "./figma/SiteContactFooter"
+import SiteContactFooter from "./components/SiteContactFooter"
 
 import RouterTracking from "./analytics/RouterTracking"
 
@@ -43,27 +41,12 @@ import gsap from "gsap"
 
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 
-import { observeScaledArtifacts } from "./figma/ScaledArtifact"
+import { observeScaledArtifacts } from "./components/ScaledArtifact"
 
 gsap.registerPlugin(ScrollTrigger)
 
-const HomeExact = lazy(() => import("./figma/HomeExact"))
-
-const NavegacaoConfusa = lazy(() => import("./figma/NavegacaoConfusa"))
-
-const CadastrosComplexos = lazy(() => import("./figma/CadastrosComplexos"))
-
-const RegraIncerta = lazy(() => import("./figma/RegraIncerta"))
-
-const QualificacaoComplexa = lazy(() => import("./figma/QualificacaoComplexa"))
-
-const CorridaEmJogo = lazy(() => import("./figma/CorridaEmJogo"))
-
-const BeneficiosDispersos = lazy(() => import("./figma/BeneficiosDispersos"))
-
-const CadastroTravado = lazy(() => import("./figma/CadastroTravado"))
-
-const UmaMarcaPorCliente = lazy(() => import("./figma/UmaMarcaPorCliente"))
+const FrontPage = lazy(() => import("./pages/FrontPage"))
+const CasesSingle = lazy(() => import("./pages/CasesSingle"))
 
 const caseRoutes = [
   ["Navegação confusa?", "navegacao-confusa"],
@@ -586,7 +569,7 @@ function BottomNavigation({ mode }: { mode: "home" | "case" }) {
         aria-label={text("Ir para o início")}
       >
         <img
-          src={mode === "home" ? "/assets/60314.svg" : "/assets/8afaf.svg"}
+          src="/assets/shared/branding/site-brand-mark-compact.svg"
           alt=""
         />
       </button>
@@ -623,7 +606,7 @@ function TopNavigation() {
         onClick={() => navigate(path("/"))}
         aria-label={text("Ir para a página inicial")}
       >
-        <img src="/assets/8afaf.svg" alt="" />
+        <img src="/assets/shared/branding/site-brand-mark-compact.svg" alt="" />
       </button>
       <nav
         className="top-navigation__social"
@@ -798,7 +781,7 @@ function LegacyContactFooter() {
       <footer className="shared-footer content-stretch flex flex-col h-[1080px] items-start justify-center overflow-clip relative shrink-0 w-[1920px]">
         <div className="content-stretch flex flex-[1_0_0] flex-col gap-[36px] items-center justify-center min-h-[540px] px-[48px] py-[160px] relative w-full">
           <div className="content-stretch flex flex-col items-center relative shrink-0 w-full">
-            <img alt="" className="size-[117px]" src="/assets/ee968.svg" />
+            <img alt="" className="size-[117px]" src="/assets/shared/branding/site-brand-mark.svg" />
             <p className="font-['Sora:Regular'] font-medium leading-[1.2] text-[#6b0013] text-[44px]">
               {text("oCris Acosta.")}
             </p>
@@ -1148,7 +1131,7 @@ function HomePage() {
   return (
     <>
       <ExactStage ref={root} mode="home">
-        <HomeExact />
+        <FrontPage />
         <SharedContactFooter />
       </ExactStage>
       <BottomNavigation mode="home" />
@@ -1321,17 +1304,6 @@ function ScrollRestoration() {
   return null
 }
 
-const caseComponents = [
-  NavegacaoConfusa,
-  CadastrosComplexos,
-  RegraIncerta,
-  QualificacaoComplexa,
-  CorridaEmJogo,
-  BeneficiosDispersos,
-  CadastroTravado,
-  UmaMarcaPorCliente,
-]
-
 function NotFound() {
   const { text, path } = useI18n()
   return (
@@ -1360,23 +1332,17 @@ export function AppContent() {
               element={<HomePage />}
             />
           ))}
-          {languages.flatMap((language) =>
-            cases.map((item, index) => {
-              const Component = caseComponents[index]
-
-              return (
-                <Route
-                  key={language + item.slug}
-                  path={localizedPath("/cases/" + item.slug, language)}
-                  element={
-                    <ExactCasePage>
-                      <Component />
-                    </ExactCasePage>
-                  }
-                />
-              )
-            }),
-          )}
+          {languages.map((language) => (
+            <Route
+              key={`${language}-case`}
+              path={localizedPath("/cases/:slug", language)}
+              element={
+                <ExactCasePage>
+                  <CasesSingle />
+                </ExactCasePage>
+              }
+            />
+          ))}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>

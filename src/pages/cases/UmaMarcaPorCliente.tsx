@@ -1,52 +1,52 @@
 // @ts-nocheck -- Figma-generated exact visual component
 
-import TaxonomyTags from "./TaxonomyTags"
+import TaxonomyTags from "../../components/TaxonomyTags"
 
-import ArtifactVideoSection from "./ArtifactVideoSection"
+import ArtifactVideoSection from "../../components/ArtifactVideoSection"
 
-import { useI18n } from "../i18n"
+import { useI18n } from "../../i18n"
 
 const assetPathPrefix = "/assets"
 
-const imgImgHeroImage = `${assetPathPrefix}/12f96.png`
+const imgImgHeroImage = `${assetPathPrefix}/cases/uma-marca-por-cliente/midia-img-hero.png`
 
-const imgImgHeroImage1 = `${assetPathPrefix}/e811e.png`
+const imgImgHeroImage1 = `${assetPathPrefix}/cases/uma-marca-por-cliente/hero.png`
 
-const imgRectangle = `${assetPathPrefix}/ea470.png`
+const imgRectangle = `${assetPathPrefix}/cases/uma-marca-por-cliente/artefato-think-rectangle.png`
 
-const imgSection1Colors = `${assetPathPrefix}/ea387.png`
+const imgSection1Colors = `${assetPathPrefix}/cases/uma-marca-por-cliente/artefato-make-section-1-colors-section1-colors.png`
 
-const imgSection2Typography = `${assetPathPrefix}/e8257.png`
+const imgSection2Typography = `${assetPathPrefix}/cases/uma-marca-por-cliente/artefato-make-section-2-typography-section2-typography.png`
 
-const imgFrame65 = `${assetPathPrefix}/041d9.png`
+const imgFrame65 = `${assetPathPrefix}/cases/uma-marca-por-cliente/artefato-make-section-2-typography-frame65.png`
 
-const imgSection6Spacing = `${assetPathPrefix}/20e3d.png`
+const imgSection6Spacing = `${assetPathPrefix}/cases/uma-marca-por-cliente/artefato-make-section-6-spacing-section6-spacing.png`
 
-const imgBg = `${assetPathPrefix}/16ea2.png`
+const imgBg = `${assetPathPrefix}/cases/uma-marca-por-cliente/artefato-make-bg.png`
 
-const imgCardFigure = `${assetPathPrefix}/268b2.png`
+const imgCardFigure = `${assetPathPrefix}/front-page/cases/card-background.png`
 
-const imgCourse11 = `${assetPathPrefix}/b97b8.png`
+const imgCourse11 = `${assetPathPrefix}/cases/uma-marca-por-cliente/artefato-make-course-1-1-course11.png`
 
-const imgCourse12 = `${assetPathPrefix}/3d1cb.png`
+const imgCourse12 = `${assetPathPrefix}/cases/uma-marca-por-cliente/artefato-make-course-1-1-course12.png`
 
-const imgCourse13 = `${assetPathPrefix}/d0627.png`
+const imgCourse13 = `${assetPathPrefix}/cases/uma-marca-por-cliente/artefato-make-course-1-1-course13.png`
 
-const imgCourse14 = `${assetPathPrefix}/b3bd8.png`
+const imgCourse14 = `${assetPathPrefix}/cases/uma-marca-por-cliente/artefato-make-course-1-1-course14.png`
 
-const imgKonviva11 = `${assetPathPrefix}/eecc1.svg`
+const imgKonviva11 = `${assetPathPrefix}/cases/uma-marca-por-cliente/contexto-konviva-1-1-konviva11.svg`
 
-const imgKonviva2 = `${assetPathPrefix}/b19f1.svg`
+const imgKonviva2 = `${assetPathPrefix}/cases/uma-marca-por-cliente/artefato-make-konviva-2-konviva2.svg`
 
-const imgVector = `${assetPathPrefix}/b525a.svg`
+const imgVector = `${assetPathPrefix}/cases/uma-marca-por-cliente/midia-vector.svg`
 
-const imgVector1 = `${assetPathPrefix}/4b65c.svg`
+const imgVector1 = `${assetPathPrefix}/cases/uma-marca-por-cliente/artefato-make-vector1.svg`
 
-const imgKonviva3 = `${assetPathPrefix}/cf11d.svg`
+const imgKonviva3 = `${assetPathPrefix}/cases/uma-marca-por-cliente/artefato-make-konviva-2-konviva3.svg`
 
-const img = `${assetPathPrefix}/f903a.svg`
+const img = `${assetPathPrefix}/cases/uma-marca-por-cliente/hero.svg`
 
-const videoKonvivaLoading = `${assetPathPrefix}/cases/konviva-loading-promo.mp4`
+const videoKonvivaLoading = `${assetPathPrefix}/cases/uma-marca-por-cliente/artefato-loading-promo.mp4`
 
 export default function ArticleCustomizacaoCara() {
   const { t, text, path } = useI18n()

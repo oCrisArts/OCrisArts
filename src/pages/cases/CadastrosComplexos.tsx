@@ -1,116 +1,116 @@
 // @ts-nocheck -- Figma-generated exact visual component
 
-import PrototypeEmbed from "./PrototypeEmbed"
+import PrototypeEmbed from "../../components/PrototypeEmbed"
 
-import TaxonomyTags from "./TaxonomyTags"
+import TaxonomyTags from "../../components/TaxonomyTags"
 
-import ArtifactVideoSection from "./ArtifactVideoSection"
+import ArtifactVideoSection from "../../components/ArtifactVideoSection"
 
-import { useI18n } from "../i18n"
+import { useI18n } from "../../i18n"
 
 const assetPathPrefix = "/assets"
 
-const imgImgHeroImage = `${assetPathPrefix}/b1c4c.png`
+const imgImgHeroImage = `${assetPathPrefix}/front-page/cases/cadastros-complexos.png`
 
-const videoSiaffClarity = `${assetPathPrefix}/cases/siaff-clarity-prototype.mp4`
+const videoSiaffClarity = `${assetPathPrefix}/cases/cadastros-complexos/artefato-clarity.mp4`
 
-const imgImgArtifactImage = `${assetPathPrefix}/4ca86.png`
+const imgImgArtifactImage = `${assetPathPrefix}/cases/cadastros-complexos/artefato-verify-artifact-img-artifact.png`
 
-const imgCaixaLogoFull2 = `${assetPathPrefix}/7fe6b.svg`
+const imgCaixaLogoFull2 = `${assetPathPrefix}/shared/branding/caixa-logo-full-2-caixa-logo-full2.svg`
 
-const imgBgFigure = `${assetPathPrefix}/ebfb1.svg`
+const imgBgFigure = `${assetPathPrefix}/cases/cadastros-complexos/desafio-bg-figure.svg`
 
-const imgLightbulb = `${assetPathPrefix}/e9bbb.svg`
+const imgLightbulb = `${assetPathPrefix}/cases/cadastros-complexos/artefato-think-lightbulb.svg`
 
-const imgIcon = `${assetPathPrefix}/2dd7e.svg`
+const imgIcon = `${assetPathPrefix}/cases/cadastros-complexos/midia-icon.svg`
 
-const imgDivisor = `${assetPathPrefix}/cf768.svg`
+const imgDivisor = `${assetPathPrefix}/cases/cadastros-complexos/artefato-think-divisor.svg`
 
-const imgTriangleAlert = `${assetPathPrefix}/2c044.svg`
+const imgTriangleAlert = `${assetPathPrefix}/cases/cadastros-complexos/artefato-think-triangle-alert.svg`
 
-const imgTarget = `${assetPathPrefix}/0f6b6.svg`
+const imgTarget = `${assetPathPrefix}/cases/cadastros-complexos/artefato-think-target.svg`
 
-const imgClipboardList = `${assetPathPrefix}/5e9e8.svg`
+const imgClipboardList = `${assetPathPrefix}/cases/cadastros-complexos/artefato-think-clipboard-list.svg`
 
-const imgIcon1 = `${assetPathPrefix}/49839.svg`
+const imgIcon1 = `${assetPathPrefix}/cases/cadastros-complexos/artefato-think-icon1.svg`
 
-const imgUserRound = `${assetPathPrefix}/53156.svg`
+const imgUserRound = `${assetPathPrefix}/cases/cadastros-complexos/artefato-think-user-round.svg`
 
-const imgFilter = `${assetPathPrefix}/d442d.svg`
+const imgFilter = `${assetPathPrefix}/cases/cadastros-complexos/artefato-think-filter.svg`
 
-const imgLaptop = `${assetPathPrefix}/745cd.svg`
+const imgLaptop = `${assetPathPrefix}/cases/cadastros-complexos/artefato-think-laptop.svg`
 
-const imgIcon2 = `${assetPathPrefix}/61c4e.svg`
+const imgIcon2 = `${assetPathPrefix}/cases/cadastros-complexos/artefato-think-icon2.svg`
 
-const imgUsersRound = `${assetPathPrefix}/86ed0.svg`
+const imgUsersRound = `${assetPathPrefix}/cases/cadastros-complexos/artefato-think-users-round.svg`
 
-const imgBox = `${assetPathPrefix}/859a1.svg`
+const imgBox = `${assetPathPrefix}/cases/cadastros-complexos/artefato-think-box.svg`
 
-const imgCircleCheck = `${assetPathPrefix}/84fc4.svg`
+const imgCircleCheck = `${assetPathPrefix}/cases/cadastros-complexos/artefato-think-circle-check.svg`
 
-const imgIcon3 = `${assetPathPrefix}/1e98b.svg`
+const imgIcon3 = `${assetPathPrefix}/cases/cadastros-complexos/artefato-think-icon3.svg`
 
-const imgClock3 = `${assetPathPrefix}/22c01.svg`
+const imgClock3 = `${assetPathPrefix}/cases/cadastros-complexos/artefato-think-clock-3-clock3.svg`
 
-const imgChartNoAxesColumnIncreasing = `${assetPathPrefix}/84e25.svg`
+const imgChartNoAxesColumnIncreasing = `${assetPathPrefix}/cases/cadastros-complexos/artefato-think-chart-no-axes-column-increasing.svg`
 
-const imgSettings = `${assetPathPrefix}/ca505.svg`
+const imgSettings = `${assetPathPrefix}/cases/cadastros-complexos/artefato-think-settings.svg`
 
-const imgMaterialIcon = `${assetPathPrefix}/aad5d.svg`
+const imgMaterialIcon = `${assetPathPrefix}/cases/cadastros-complexos/artefato-make-material-icon.svg`
 
-const imgClose = `${assetPathPrefix}/8ef2f.svg`
+const imgClose = `${assetPathPrefix}/cases/cadastros-complexos/midia-close.svg`
 
-const imgNumbers = `${assetPathPrefix}/83576.svg`
+const imgNumbers = `${assetPathPrefix}/cases/cadastros-complexos/artefato-make-material-icon-numbers.svg`
 
-const imgSelectArrow = `${assetPathPrefix}/df7aa.svg`
+const imgSelectArrow = `${assetPathPrefix}/cases/cadastros-complexos/midia-select-arrow.svg`
 
-const imgToday = `${assetPathPrefix}/cbeb2.svg`
+const imgToday = `${assetPathPrefix}/cases/cadastros-complexos/midia-today.svg`
 
-const imgCheck = `${assetPathPrefix}/ad06e.svg`
+const imgCheck = `${assetPathPrefix}/cases/cadastros-complexos/midia-check.svg`
 
-const imgMonetizationOn = `${assetPathPrefix}/6dc7f.svg`
+const imgMonetizationOn = `${assetPathPrefix}/cases/cadastros-complexos/artefato-make-material-icon-monetization-on.svg`
 
-const imgCancel = `${assetPathPrefix}/700b7.svg`
+const imgCancel = `${assetPathPrefix}/cases/cadastros-complexos/midia-cancel.svg`
 
-const imgSave = `${assetPathPrefix}/54a29.svg`
+const imgSave = `${assetPathPrefix}/cases/cadastros-complexos/midia-save.svg`
 
-const imgClose1 = `${assetPathPrefix}/5065b.svg`
+const imgClose1 = `${assetPathPrefix}/cases/cadastros-complexos/artefato-icone-fechar.svg`
 
-const imgMenuOpen = `${assetPathPrefix}/998c1.svg`
+const imgMenuOpen = `${assetPathPrefix}/cases/cadastros-complexos/midia-menu-open.svg`
 
-const imgCheckBox = `${assetPathPrefix}/ceb51.svg`
+const imgCheckBox = `${assetPathPrefix}/cases/cadastros-complexos/midia-check-box.svg`
 
-const imgCheckBoxOutlineBlank = `${assetPathPrefix}/77780.svg`
+const imgCheckBoxOutlineBlank = `${assetPathPrefix}/cases/cadastros-complexos/artefato-make-check-box-outline-blank.svg`
 
-const imgToday1 = `${assetPathPrefix}/40de2.svg`
+const imgToday1 = `${assetPathPrefix}/cases/cadastros-complexos/artefato-make-today-today1.svg`
 
-const imgSearch = `${assetPathPrefix}/e8efd.svg`
+const imgSearch = `${assetPathPrefix}/cases/cadastros-complexos/artefato-make-material-icon-search.svg`
 
-const imgArrowBack = `${assetPathPrefix}/bc73e.svg`
+const imgArrowBack = `${assetPathPrefix}/cases/cadastros-complexos/artefato-make-material-icon-arrow-back.svg`
 
-const imgCancel1 = `${assetPathPrefix}/7db7a.svg`
+const imgCancel1 = `${assetPathPrefix}/cases/cadastros-complexos/artefato-make-material-icon-cancel1.svg`
 
-const imgSave1 = `${assetPathPrefix}/a9896.svg`
+const imgSave1 = `${assetPathPrefix}/cases/cadastros-complexos/artefato-make-material-icon-save1.svg`
 
-const imgArrowForward = `${assetPathPrefix}/54c24.svg`
+const imgArrowForward = `${assetPathPrefix}/cases/cadastros-complexos/artefato-make-material-icon-arrow-forward.svg`
 
-const imgClose2 = `${assetPathPrefix}/3dabb.svg`
+const imgClose2 = `${assetPathPrefix}/cases/cadastros-complexos/artefato-icone-fechar.svg`
 
-const imgCheckBox1 = `${assetPathPrefix}/ac054.svg`
+const imgCheckBox1 = `${assetPathPrefix}/cases/cadastros-complexos/artefato-make-check-box-check-box1.svg`
 
-const imgAdd = `${assetPathPrefix}/8e700.svg`
+const imgAdd = `${assetPathPrefix}/cases/cadastros-complexos/midia-add.svg`
 
-const imgDelete = `${assetPathPrefix}/a4928.svg`
+const imgDelete = `${assetPathPrefix}/cases/cadastros-complexos/midia-delete.svg`
 
-const imgMenuOpen1 = `${assetPathPrefix}/c2b10.svg`
+const imgMenuOpen1 = `${assetPathPrefix}/cases/cadastros-complexos/artefato-make-material-icon-menu-open1.svg`
 
-const imgAdd1 = `${assetPathPrefix}/5d9ad.svg`
+const imgAdd1 = `${assetPathPrefix}/cases/cadastros-complexos/artefato-make-material-icon-add1.svg`
 
-const imgDelete1 = `${assetPathPrefix}/16a9b.svg`
+const imgDelete1 = `${assetPathPrefix}/cases/cadastros-complexos/artefato-make-material-icon-delete1.svg`
 
-const imgAdd2 = `${assetPathPrefix}/14394.svg`
+const imgAdd2 = `${assetPathPrefix}/cases/cadastros-complexos/artefato-make-material-icon-add2.svg`
 
-const imgSelectArrow1 = `${assetPathPrefix}/585ae.svg`
+const imgSelectArrow1 = `${assetPathPrefix}/cases/cadastros-complexos/artefato-make-select-arrow-select-arrow1.svg`
 
 export default function ArticleValidacaoTardia() {
   const { t, text, path } = useI18n()

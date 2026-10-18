@@ -1,22 +1,22 @@
 // @ts-nocheck -- Figma-generated exact visual component
-import CaseCard, { caseSlugs } from "./CaseCard";
-import TaxonomyTags from "./TaxonomyTags";
-import ServiceCard from "./ServiceCard";
+import CaseCard, { caseSlugs } from "../components/CaseCard";
+import TaxonomyTags from "../components/TaxonomyTags";
+import ServiceCard from "../components/ServiceCard";
 import { useI18n } from "../i18n";
 const assetPathPrefix = "/assets";
-const imgAdranBrand = `${assetPathPrefix}/89c53.svg`;
-const imgCardImg = `${assetPathPrefix}/46d18.png`;
-const imgCardImg1 = `${assetPathPrefix}/b1c4c.png`;
-const imgCardFigure = `${assetPathPrefix}/268b2.png`;
-const imgCardImg2 = `${assetPathPrefix}/5f2cc.png`;
-const imgCardImg3 = `${assetPathPrefix}/50614.png`;
-const imgCardImg4 = `${assetPathPrefix}/277dd.png`;
-const imgCardImg5 = `${assetPathPrefix}/3469a.png`;
-const imgCardImg6 = `${assetPathPrefix}/56713.png`;
-const imgCardImg7 = `${assetPathPrefix}/adf92.png`;
-const imgAdranBrand1 = `${assetPathPrefix}/8afaf.svg`;
-const imgPosterHeroFallback = `${assetPathPrefix}/44412.svg`;
-const imgAdranBrand2 = `${assetPathPrefix}/5a215.svg`;
+const imgAdranBrand = `${assetPathPrefix}/shared/branding/site-brand-mark-compact.svg`;
+const imgCardImg = `${assetPathPrefix}/front-page/cases/navegacao-confusa.png`;
+const imgCardImg1 = `${assetPathPrefix}/front-page/cases/cadastros-complexos.png`;
+const imgCardFigure = `${assetPathPrefix}/front-page/cases/card-background.png`;
+const imgCardImg2 = `${assetPathPrefix}/front-page/cases/regra-incerta.png`;
+const imgCardImg3 = `${assetPathPrefix}/front-page/cases/qualificacao-complexa.png`;
+const imgCardImg4 = `${assetPathPrefix}/front-page/cases/corrida-em-jogo.png`;
+const imgCardImg5 = `${assetPathPrefix}/front-page/cases/beneficios-dispersos.png`;
+const imgCardImg6 = `${assetPathPrefix}/front-page/cases/cadastro-travado.png`;
+const imgCardImg7 = `${assetPathPrefix}/front-page/cases/uma-marca-por-cliente.png`;
+const imgAdranBrand1 = `${assetPathPrefix}/shared/branding/site-brand-mark-compact.svg`;
+const imgPosterHeroFallback = `${assetPathPrefix}/front-page/midia-poster-hero-fallback.svg`;
+const imgAdranBrand2 = `${assetPathPrefix}/shared/branding/site-brand-mark.svg`;
 
 type NavbarStandartFillGlobalDefaultFooterProps = {
   className?: string;
@@ -251,8 +251,8 @@ export default function MainHome() {
             {t("t0566")}</p>
         </div>
         <div className="absolute h-[1080px] left-0 top-0 w-[1920px] z-[1]" data-node-id="4:35826" data-name="video.hero-teaser.loop">
-          <video autoPlay className="absolute inset-0 size-full object-cover" loop muted playsInline poster="/videos/hero-poster.jpg" preload="auto">
-            <source src="/videos/hero.mp4" type="video/mp4" />
+          <video autoPlay className="absolute inset-0 size-full object-cover" loop muted playsInline poster="/assets/front-page/hero-poster.jpg" preload="auto">
+            <source src="/assets/front-page/hero.mp4" type="video/mp4" />
           </video>
         </div>
       </header>
@@ -548,8 +548,8 @@ export default function MainHome() {
               { icon: "square", translationKey: "t0583" },
               { icon: "square", translationKey: "t0584" }
             ]}
-            poster="/videos/service-brand-poster.jpg"
-            videoSrc="/videos/service-brand.mp4"
+            poster="/assets/front-page/services/branding-poster.jpg"
+            videoSrc="/assets/front-page/services/branding.mp4"
           />
           <ServiceCard
             service="web"
@@ -565,8 +565,8 @@ export default function MainHome() {
               { icon: "square", translationKey: "t0588" },
               { icon: "square", translationKey: "t0589" }
             ]}
-            poster="/videos/service-web-poster.jpg"
-            videoSrc="/videos/service-web.mp4"
+            poster="/assets/front-page/services/web-poster.jpg"
+            videoSrc="/assets/front-page/services/web.mp4"
           />
           <ServiceCard
             service="apps"
@@ -582,8 +582,8 @@ export default function MainHome() {
               { icon: "square", translationKey: "t0593" },
               { icon: "square", translationKey: "t0594" }
             ]}
-            poster="/videos/service-app-poster.jpg"
-            videoSrc="/videos/service-app.mp4"
+            poster="/assets/front-page/services/aplicativos-poster.jpg"
+            videoSrc="/assets/front-page/services/aplicativos.mp4"
           />
           <ServiceCard
             service="ux"
@@ -597,8 +597,8 @@ export default function MainHome() {
               { icon: "square", translationKey: "t0597" },
               { icon: "square", translationKey: "t0598" }
             ]}
-            poster="/videos/service-ux-poster.jpg"
-            videoSrc="/videos/service-ux.mp4"
+            poster="/assets/front-page/services/ux-ui-poster.jpg"
+            videoSrc="/assets/front-page/services/ux-ui.mp4"
           />
         </div>
       </section>
@@ -681,8 +681,8 @@ export default function MainHome() {
           </div>
         </div>
         <div className="h-[586px] overflow-hidden relative w-full lg:w-1/2 max-w-[586px]" data-node-id="4:35924" data-name="figure.product-illustration">
-          <video autoPlay className="absolute inset-0 size-full object-contain" loop muted playsInline poster="/videos/about-poster.jpg" preload="metadata">
-            <source src="/videos/about.mp4" type="video/mp4" />
+          <video autoPlay className="absolute inset-0 size-full object-contain" loop muted playsInline poster="/assets/front-page/about-poster.jpg" preload="metadata">
+            <source src="/assets/front-page/about.mp4" type="video/mp4" />
           </video>
         </div>
       </section>

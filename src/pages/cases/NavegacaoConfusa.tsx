@@ -1,20 +1,20 @@
-import TaxonomyTags from "./TaxonomyTags"
-import { useI18n } from "../i18n"
+import TaxonomyTags from "../../components/TaxonomyTags"
+import { useI18n } from "../../i18n"
 
 const assets = {
-  mockup: "/assets/640c5.png",
-  refundFlow: "/assets/59e28.png",
-  tablet: "/assets/46d18.png",
-  fgtsF: "/assets/112b1.svg",
-  fgtsG: "/assets/fffb6.svg",
-  fgtsT: "/assets/bfde0.svg",
-  fgtsS: "/assets/ac604.svg",
-  fgtsSymbol: "/assets/9d0ce.svg",
-  caixa: "/assets/7fe6b.svg",
-  challengeFigure: "/assets/ee027.svg",
-  heuristicAudit: "/assets/cases/1-auditoria-heuristica.svg",
-  criticalityMatrix: "/assets/cases/1-matriz-de-criticidade.svg",
-  researchPlan: "/assets/cases/1-plano-pesquisa.svg",
+  mockup: "/assets/cases/navegacao-confusa/midia-640c5.png",
+  refundFlow: "/assets/cases/navegacao-confusa/midia-59e28.png",
+  tablet: "/assets/front-page/cases/navegacao-confusa.png",
+  fgtsF: "/assets/cases/navegacao-confusa/midia-112b1.svg",
+  fgtsG: "/assets/cases/navegacao-confusa/midia-fffb6.svg",
+  fgtsT: "/assets/cases/navegacao-confusa/midia-bfde0.svg",
+  fgtsS: "/assets/cases/navegacao-confusa/midia-ac604.svg",
+  fgtsSymbol: "/assets/cases/navegacao-confusa/midia-9d0ce.svg",
+  caixa: "/assets/shared/branding/caixa-logo-full-2-caixa-logo-full2.svg",
+  challengeFigure: "/assets/cases/navegacao-confusa/midia-ee027.svg",
+  heuristicAudit: "/assets/cases/navegacao-confusa/midia-1-auditoria-heuristica.svg",
+  criticalityMatrix: "/assets/cases/navegacao-confusa/midia-1-matriz-de-criticidade.svg",
+  researchPlan: "/assets/cases/navegacao-confusa/midia-1-plano-pesquisa.svg",
 }
 
 const sectionClass =

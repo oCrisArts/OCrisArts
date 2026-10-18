@@ -1,26 +1,26 @@
-import TaxonomyTags from "./TaxonomyTags";
-import { useI18n } from "../i18n";
+import TaxonomyTags from "../../components/TaxonomyTags";
+import { useI18n } from "../../i18n";
 
 const assetPathPrefix = "/assets";
 
 // Imagens constantes
 const images = {
-  heroImage: `${assetPathPrefix}/582cf.png`,
-  contextMedia: `${assetPathPrefix}/d6a6e.svg`,
-  logo: `${assetPathPrefix}/cad57.svg`,
-  folders: `${assetPathPrefix}/643b8.svg`,
-  folders1: `${assetPathPrefix}/e3494.svg`,
-  folders2: `${assetPathPrefix}/10c38.svg`,
-  folders3: `${assetPathPrefix}/f87f4.svg`,
-  folders4: `${assetPathPrefix}/3c159.svg`,
-  folders5: `${assetPathPrefix}/a28ab.svg`,
-  group1: `${assetPathPrefix}/7c96b.svg`,
-  heuristicAnalysis: `${assetPathPrefix}/qualificacao-analise-heuristica.png`,
-  criticalFlows: `${assetPathPrefix}/qualificacao-fluxos-criticos.png`,
-  caixaDesignSystem: `${assetPathPrefix}/qualificacao-design-system-caixa.png`,
-  qualificationPanel: `${assetPathPrefix}/qualificacao-painel-pedidos.png`,
-  backofficeInterface: `${assetPathPrefix}/qualificacao-interface-backoffice.png`,
-  backofficePatterns: `${assetPathPrefix}/qualificacao-padroes-backoffice.png`,
+  heroImage: `${assetPathPrefix}/cases/qualificacao-complexa/hero.png`,
+  contextMedia: `${assetPathPrefix}/cases/qualificacao-complexa/contexto.svg`,
+  logo: `${assetPathPrefix}/cases/qualificacao-complexa/artefato-logo.svg`,
+  folders: `${assetPathPrefix}/cases/qualificacao-complexa/artefato-folders.svg`,
+  folders1: `${assetPathPrefix}/cases/qualificacao-complexa/artefato-folders1.svg`,
+  folders2: `${assetPathPrefix}/cases/qualificacao-complexa/artefato-folders2.svg`,
+  folders3: `${assetPathPrefix}/cases/qualificacao-complexa/artefato-folders3.svg`,
+  folders4: `${assetPathPrefix}/cases/qualificacao-complexa/artefato-folders4.svg`,
+  folders5: `${assetPathPrefix}/cases/qualificacao-complexa/artefato-folders5.svg`,
+  group1: `${assetPathPrefix}/cases/qualificacao-complexa/artefato-group1.svg`,
+  heuristicAnalysis: `${assetPathPrefix}/cases/qualificacao-complexa/artefato-heuristic-analysis.png`,
+  criticalFlows: `${assetPathPrefix}/cases/qualificacao-complexa/artefato-critical-flows.png`,
+  caixaDesignSystem: `${assetPathPrefix}/cases/qualificacao-complexa/artefato-caixa-design-system.png`,
+  qualificationPanel: `${assetPathPrefix}/cases/qualificacao-complexa/artefato-qualification-panel.png`,
+  backofficeInterface: `${assetPathPrefix}/cases/qualificacao-complexa/artefato-backoffice-interface.png`,
+  backofficePatterns: `${assetPathPrefix}/cases/qualificacao-complexa/artefato-backoffice-patterns.png`,
   // ... adicionar outras imagens conforme necessário
 };
 

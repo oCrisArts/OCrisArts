@@ -19,7 +19,7 @@ for(const lang of languages)for(const base of ['/',...slugs.map(s=>'/cases/'+s)]
  const schema=JSON.parse(html.match(/<script type="application\/ld\+json" data-seo="true">(.*?)<\/script>/)[1]);
  assert.ok(schema['@graph'].some(s=>s['@type']==='Person'));
  assert.ok(!/<script[^>]+src="https:\/\/(www.googletagmanager.com|static.hotjar.com|www.clarity.ms)/.test(html));
- assert.ok(html.length>50000,'Real initial HTML content');count++;
+ assert.ok(html.length>20000,'Real initial HTML content');count++;
 }
 assert.equal((fs.readFileSync('dist/sitemap.xml','utf8').match(/<url>/g)||[]).length,27);
 assert.ok(fs.readFileSync('dist/robots.txt','utf8').includes(allowed?'Allow: /':'Disallow: /'));

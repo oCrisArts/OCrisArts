@@ -1,17 +1,9 @@
 import { basePath, catalogs, languageFromPath, languages, localizedPath, translate, type Language } from '../i18n'
+import { cases } from '../data/cases'
 
 export const origin='https://ocris.art.br'
-export const socialImage='/videos/about-poster.jpg'
-export const cases = [
- {slug:'navegacao-confusa',title:'t0567',subtitle:'t0568',context:'t0638',project:'SIFGD · CAIXA'},
- {slug:'cadastros-complexos',title:'t0159',subtitle:'t0160',context:'t0168',project:'SIAFF · CAIXA'},
- {slug:'regra-incerta',title:'t0569',subtitle:'t0570',context:'t0943',project:'SPVAT · CAIXA'},
- {slug:'qualificacao-complexa',title:'t0571',subtitle:'t0572',context:'t0757',project:'DPVAT · CAIXA'},
- {slug:'corrida-em-jogo',title:'t0349',subtitle:'t0350',context:'t0355',project:'Porsche Cup Brasil'},
- {slug:'beneficios-dispersos',title:'t0010',subtitle:'t0011',context:'t0019',project:'Sou Parceiro · Intelbras'},
- {slug:'cadastro-travado',title:'t0276',subtitle:'t0277',context:'t0282',project:'Konviva LMS'},
- {slug:'uma-marca-por-cliente',title:'t0574',subtitle:'t0575',context:'t0999',project:'Konviva White-Label'},
-] as const
+export const socialImage='/assets/front-page/about-poster.jpg'
+export { cases }
 export const allPaths=languages.flatMap(language=>['/',...cases.map(c=>`/cases/${c.slug}`)].map(path=>localizedPath(path,language)))
 export const isKnownPath=(path:string)=>allPaths.includes(path.replace(/\/$/,'')||'/')
 export function pageMetadata(path:string) {

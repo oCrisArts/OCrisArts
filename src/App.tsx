@@ -688,7 +688,7 @@ function HomePage() {
 
       serviceCards.forEach((card, index) => {
         gsap.from(
-          card.querySelectorAll("img, video, svg, [data-name*=figure]"),
+          card.querySelectorAll("img, svg, [data-name*=figure]"),
           {
             scale: 0.72,
 

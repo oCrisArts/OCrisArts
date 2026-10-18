@@ -239,10 +239,6 @@ a,
   line-height: 1;
 }
 
-[data-service-video] {
-  background: #eeeff1;
-}
-
 .top-navigation {
   position: fixed;
   z-index: 1001;

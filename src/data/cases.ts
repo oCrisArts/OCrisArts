@@ -152,6 +152,7 @@ export const cases = [
     contextCopy: [key("t0355"), key("t0356"), key("t0357")], challenge: key("t0362"),
     process: [text("A operação da Porsche Cup dependia da coordenação entre engenheiros, pilotos e equipes de apoio."), text("Planilhas não ofereciam uma visão integrada das solicitações e dos estados de cada atividade."), text("O mapeamento das responsabilidades mostrou como estruturar pedidos, aprovações, notificações e retiradas de pneus."), text("Essas decisões orientaram o aplicativo administrativo. Depois, um manual impresso passou a documentar os procedimentos para as equipes."), text("O streaming também integrava o ecossistema digital, mas como uma aplicação independente.")],
     hero: "/assets/cases/corrida-em-jogo/hero.png",
+    contextMedia: undefined,
     tags: [tag("smartphone", "Aplicativos"), tag("devices", "Sistemas"), tag("hub", "Service Design"), tag("route", "Jornada operacional"), tag("draw", "Protótipos"), tag("menu_book", "Documentação")],
     methodology: [tag("search", "Compreender"), tag("target", "Definir"), tag("draw", "Criar"), tag("rocket_launch", "Implementar"), tag("fact_check", "Avaliar")], services: ["ux", "apps"],
     artifacts: [

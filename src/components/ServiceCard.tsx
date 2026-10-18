@@ -1,7 +1,14 @@
-import { useI18n } from '../i18n'
+import { useI18n } from "../i18n"
 
-export type ServiceTag = { icon: string; label: string; translationKey?: string }
-export type AdditionalTag = { icon: string; translationKey: string }
+export type ServiceTag = {
+  icon: string
+  label: string
+  translationKey?: string
+}
+export type AdditionalTag = {
+  icon: string
+  translationKey: string
+}
 
 export default function ServiceCard({
   service,
@@ -11,7 +18,7 @@ export default function ServiceCard({
   additionalTags = [],
   poster,
   videoSrc,
-  onClick
+  onClick,
 }: {
   service: string
   titleKey: string
@@ -27,12 +34,13 @@ export default function ServiceCard({
   return (
     <article
       className="aspect-[360/640] bg-white border border-[#bbbcbe] rounded-[8px] overflow-hidden flex flex-col cursor-pointer hover:shadow-lg hover:scale-[1.02] transition-all duration-300 ease-out"
+      data-name="card-case"
       data-service-name={service}
       tabIndex={0}
       role="button"
       onClick={onClick}
-      onKeyDown={event => {
-        if (event.key === 'Enter' || event.key === ' ') {
+      onKeyDown={(event) => {
+        if (event.key === "Enter" || event.key === " ") {
           event.preventDefault()
           onClick?.()
         }
@@ -41,6 +49,7 @@ export default function ServiceCard({
       <div className="flex-1 relative mb-[-140px] overflow-hidden group">
         <div className="aspect-[352/632] relative z-2">
           <video
+            data-service-video
             className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-105"
             autoPlay
             loop
@@ -79,7 +88,6 @@ export default function ServiceCard({
               </span>
             </li>
           ))}
-          
         </ul>
       </div>
     </article>

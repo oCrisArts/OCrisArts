@@ -23,9 +23,10 @@ import {
   basePath,
 } from "./i18n"
 
-import { caseSlugs } from "./data/cases"
+import { caseSlugs, type CaseSlug } from "./data/cases"
 
 import SiteContactFooter from "./components/SiteContactFooter"
+import Navigation from "./components/Navigation"
 
 import RouterTracking from "./analytics/RouterTracking"
 
@@ -64,34 +65,6 @@ const caseRoutes = [
   ["Cadastro travado?", "cadastro-travado"],
 
   ["Uma marca por cliente?", "uma-marca-por-cliente"],
-] as const
-
-const homeNavigation = [
-  ["inicio", "home", "Início"],
-
-  ["cases", "cases", "Cases"],
-
-  ["atuacao", "design_services", "Atuação"],
-
-  ["sobre", "badge", "Sobre"],
-
-  ["evidencias", "analytics", "Evidências"],
-
-  ["contato", "send", "Contato"],
-] as const
-
-const caseNavigation = [
-  ["home", "arrow_back", "Início"],
-
-  ["case", "cases", "Cases"],
-
-  ["contexto", "travel_explore", "Contexto"],
-
-  ["processo", "account_tree", "Processo"],
-
-  ["resultados", "monitoring", "Resultados"],
-
-  ["contato", "send", "Contato"],
 ] as const
 
 function routeForText(text: string) {
@@ -483,355 +456,6 @@ function useExactNavigation(root: React.RefObject<HTMLDivElement | null>) {
   }, [navigateRaw, root, path])
 }
 
-function BottomNavigation({ mode }: { mode: "home" | "case" }) {
-  const { text, path, language } = useI18n()
-
-  const navigate = useNavigate()
-
-  const [active, setActive] = useState(mode === "home" ? "inicio" : "case")
-
-  const [visible, setVisible] = useState(false)
-
-  const items = mode === "home" ? homeNavigation : caseNavigation
-
-  useEffect(() => {
-    const updateVisibility = () => {
-      setVisible(window.scrollY > Math.min(180, window.innerHeight * 0.18))
-    }
-
-    updateVisibility()
-
-    window.addEventListener("scroll", updateVisibility, { passive: true })
-
-    return () => window.removeEventListener("scroll", updateVisibility)
-  }, [])
-
-  useEffect(() => {
-    const sectionIds =
-      mode === "home"
-        ? ["inicio", "cases", "atuacao", "sobre", "evidencias", "contato"]
-        : ["case", "contexto", "processo", "resultados", "contato"]
-
-    const sections = sectionIds
-
-      .map((id) => document.getElementById(id))
-
-      .filter((section): section is HTMLElement => Boolean(section))
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visible = entries
-
-          .filter((entry) => entry.isIntersecting)
-
-          .sort(
-            (a, b) =>
-              Math.abs(a.boundingClientRect.top - window.innerHeight * 0.45) -
-              Math.abs(b.boundingClientRect.top - window.innerHeight * 0.45),
-          )
-
-        if (visible[0]?.target.id) setActive(visible[0].target.id)
-      },
-
-      { rootMargin: "-34% 0px -54% 0px", threshold: 0 },
-    )
-
-    sections.forEach((section) => observer.observe(section))
-
-    return () => observer.disconnect()
-  }, [mode])
-
-  const activate = (id: string) => {
-    if (mode === "case" && id === "home") {
-      navigate(path("/"))
-
-      return
-    }
-
-    const target = document.getElementById(id)
-
-    if (target) target.scrollIntoView({ behavior: "smooth" })
-    else if (mode === "case" && id === "contato") navigate(path("/#contato"))
-  }
-
-  return (
-    <nav
-      className={`bottom-navigation bottom-navigation--${mode}${
-        visible ? " is-visible" : ""
-      }`}
-      aria-label={text(
-        mode === "home" ? "Navegação da página inicial" : "Navegação do case",
-      )}
-    >
-      <button
-        className="bottom-navigation__brand"
-        onClick={() => activate(mode === "home" ? "inicio" : "home")}
-        aria-label={text("Ir para o início")}
-      >
-        <img
-          src="/assets/shared/branding/site-brand-mark-compact.svg"
-          alt=""
-        />
-      </button>
-      {items.map(([id, icon, label]) => (
-        <button
-          key={id}
-          className={active === id ? "is-active" : ""}
-          aria-current={active === id ? "location" : undefined}
-          onClick={() => activate(id)}
-        >
-          <span className="bottom-navigation__icon" aria-hidden="true">
-            {icon}
-          </span>
-          <span>{text(label)}</span>
-        </button>
-      ))}
-    </nav>
-  )
-}
-
-function TopNavigation() {
-  const location = useLocation()
-
-  const [languageOpen, setLanguageOpen] = useState(false)
-
-  const { text, path, language } = useI18n()
-
-  const navigate = useNavigate()
-
-  return (
-    <header className="top-navigation">
-      <button
-        className="top-navigation__brand"
-        onClick={() => navigate(path("/"))}
-        aria-label={text("Ir para a página inicial")}
-      >
-        <img src="/assets/shared/branding/site-brand-mark-compact.svg" alt="" />
-      </button>
-      <nav
-        className="top-navigation__social"
-        aria-label={text("Redes e contatos")}
-      >
-        <a
-          href="https://www.behance.net/ocrisart"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Behance ocrisart"
-        >
-          <span aria-hidden="true"></span>
-          <small>ocrisart</small>
-        </a>
-        <a
-          href="mailto:cristiano-acosta@hotmail.com"
-          aria-label={text("Abrir aplicativo de e-mail")}
-        >
-          <span className="top-navigation__material-icon" aria-hidden="true">
-            mail
-          </span>
-          <small>falecom@</small>
-        </a>
-        <a
-          href="https://wa.me/5548991526789"
-          aria-label="WhatsApp +55 48 99152-6789"
-        >
-          <span aria-hidden="true"></span>
-          <small>+55 48 99152-6789</small>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/ocrisarts"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="LinkedIn @ocrisart"
-        >
-          <span aria-hidden="true"></span>
-          <small>{text("@ocrisart")}</small>
-        </a>
-      </nav>
-      <button
-        className="top-navigation__language"
-        aria-label={text("Idioma")}
-        aria-expanded={languageOpen}
-        aria-controls="language-menu"
-        onClick={() => setLanguageOpen(!languageOpen)}
-        onKeyDown={(event) => {
-          if (event.key === "Escape") setLanguageOpen(false)
-        }}
-      >
-        <span className="bottom-navigation__icon" aria-hidden="true">
-          translate
-        </span>
-        <small>{language === "pt-BR" ? "PT" : language.toUpperCase()}</small>
-        <span className="bottom-navigation__icon" aria-hidden="true">
-          arrow_drop_down
-        </span>
-      </button>
-      {languageOpen && (
-        <div
-          className="language-menu"
-          id="language-menu"
-          onKeyDown={(event) => {
-            if (event.key === "Escape") setLanguageOpen(false)
-          }}
-        >
-          {languages.map((next) => (
-            <button
-              key={next}
-              lang={next}
-              aria-current={next === language ? "true" : undefined}
-              onClick={() => {
-                if (next !== language) {
-                  track("language_change", {
-                    from_language: language,
-                    to_language: next,
-                  })
-                  navigate(
-                    localizedPath(basePath(location.pathname), next) +
-                      location.hash,
-                  )
-                }
-
-                setLanguageOpen(false)
-              }}
-            >
-              {next === "pt-BR" ? "PT" : next.toUpperCase()}
-            </button>
-          ))}
-        </div>
-      )}
-    </header>
-  )
-}
-
-function LegacyContactFooter() {
-  const { text, path, language } = useI18n()
-
-  return (
-    <>
-      <section
-        id="contato"
-        className="shared-contact bg-[#eeeff1] content-stretch flex h-[1080px] items-center px-[160px] py-[128px] relative shrink-0 w-[1920px]"
-        data-name="section.contact-cta"
-      >
-        <div className="content-stretch flex flex-[1_0_0] flex-col gap-[24px] items-center min-w-px relative">
-          <div className="content-stretch flex flex-col font-['Sora:Regular'] font-normal items-start relative shrink-0 w-full">
-            <p className="leading-[1.15] relative shrink-0 text-[#000102] text-[44px] w-[900px]">
-              {text("E agora?")}
-            </p>
-            <p className="leading-[1.2] relative shrink-0 text-[#000102] text-[36px] w-[900px]">
-              &nbsp;
-            </p>
-            <div className="leading-[0] relative shrink-0 text-[#0d0e10] text-[16px] w-[760px] whitespace-pre-wrap">
-              <p className="leading-[1.5] mb-0">
-                {text(
-                  "Sua ideia, produto ou serviço já tem um próximo passo.",
-                )}{" "}
-              </p>
-              <p className="leading-[1.5]">
-                {text(
-                  "Vamos descobrir juntos qual decisão pode fazer isso avançar.",
-                )}
-              </p>
-            </div>
-          </div>
-          <form
-            data-contact-form
-            data-hj-suppress
-            data-clarity-mask="true"
-            className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-full"
-            onSubmit={(event) => event.preventDefault()}
-          >
-            <label className="bg-[#eeeff1] border border-[#999faa] border-solid content-stretch flex font-normal gap-[8px] h-[64px] items-center leading-[1.6] px-[24px] relative rounded-[8px] shrink-0 text-[16px] w-full">
-              <span className="font-['Material_Symbols_Outlined:Regular'] text-[#1e22aa]">
-                person_pin_circle
-              </span>
-              <input
-                className="bg-transparent border-0 outline-none w-full"
-                name="name"
-                placeholder={text("Sou [nome]")}
-                aria-label={text("Nome")}
-              />
-            </label>
-            <label className="bg-[#eeeff1] border border-[#999faa] border-solid content-stretch flex font-normal gap-[8px] h-[64px] items-center leading-[1.6] px-[24px] relative rounded-[8px] shrink-0 text-[16px] w-full">
-              <span className="font-['Material_Symbols_Outlined:Regular'] text-[#1e22aa]">
-                alternate_email
-              </span>
-              <input
-                className="bg-transparent border-0 outline-none w-full"
-                name="contact"
-                placeholder={text("Meu contato é [telefone/e-mail]")}
-                aria-label={text("Telefone ou e-mail")}
-              />
-            </label>
-            <a
-              className="bg-[#0d0e10] content-stretch flex gap-[16px] items-center justify-center min-h-[60px] px-[16px] py-[8px] relative rounded-[12px] shrink-0 text-[#f2dee3]"
-              href="https://wa.me/5548991526789"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <span className="font-['Material_Symbols_Outlined:Regular'] text-[24px]">
-                mark_chat_unread
-              </span>
-              <span className="font-['Geist:Regular'] text-[12px]">
-                {text("Avaliar meu produto")}
-              </span>
-            </a>
-          </form>
-        </div>
-      </section>
-      <footer className="shared-footer content-stretch flex flex-col h-[1080px] items-start justify-center overflow-clip relative shrink-0 w-[1920px]">
-        <div className="content-stretch flex flex-[1_0_0] flex-col gap-[36px] items-center justify-center min-h-[540px] px-[48px] py-[160px] relative w-full">
-          <div className="content-stretch flex flex-col items-center relative shrink-0 w-full">
-            <img alt="" className="size-[117px]" src="/assets/shared/branding/site-brand-mark.svg" />
-            <p className="font-['Sora:Regular'] font-medium leading-[1.2] text-[#6b0013] text-[44px]">
-              {text("oCris Acosta.")}
-            </p>
-            <div className="content-stretch flex flex-col font-['Sora:Regular'] items-center px-[8px] py-[12px] text-center w-full">
-              <p className="leading-[1.2] text-[#000102] text-[30px]">
-                {text("Design que decide.")}
-              </p>
-              <p className="leading-[1.5] text-[#0d0e10] text-[16px] w-[620px]">
-                {text(
-                  "Da complexidade à direção: estrutura, evidência e decisão para evoluir produtos, serviços e experiências.",
-                )}
-              </p>
-            </div>
-          </div>
-          <div className="shared-footer__social content-stretch flex h-[60px] items-center relative shrink-0 w-[586px]">
-            <a
-              href="https://www.behance.net/ocrisart"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <span></span>ocrisart
-            </a>
-            <a href="mailto:cristiano-acosta@hotmail.com">
-              <span className="material-icon">mail</span>falecom@
-            </a>
-            <a
-              href="https://wa.me/5548991526789"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <span></span>+55 48 99152-6789
-            </a>
-            <a
-              href="https://www.linkedin.com/in/ocrisarts"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <span></span>
-              {text("@ocrisart")}
-            </a>
-          </div>
-          <p className="font-['Sora:Regular'] text-[#0d0e10] text-[11px]">
-            {text("Copyright 2026")}
-          </p>
-        </div>
-      </footer>
-    </>
-  )
-}
-
 function SharedContactFooter() {
   return <SiteContactFooter />
 }
@@ -839,12 +463,12 @@ function SharedContactFooter() {
 function HomePage() {
   const root = useRef<HTMLDivElement>(null)
 
-  const [featuredSlugs, setFeaturedSlugs] = useState<string[]>([
+  const [featuredSlugs, setFeaturedSlugs] = useState<CaseSlug[]>([
     ...caseSlugs.slice(0, 2),
   ])
 
   useEffect(() => {
-    const shuffled: string[] = [...caseSlugs]
+    const shuffled: CaseSlug[] = [...caseSlugs]
 
     for (let i = shuffled.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1))
@@ -967,6 +591,25 @@ function HomePage() {
             },
           )
 
+          const caption = source.querySelector<HTMLElement>(
+            "[data-name='card-caption']",
+          )
+
+          if (caption) {
+            gsap.to(caption, {
+              y: () => source.offsetHeight - caption.offsetHeight,
+              ease: "none",
+              scrollTrigger: {
+                trigger: hero,
+                start: "top top",
+                endTrigger: casesSection,
+                end: "top 58%",
+                scrub: 0.7,
+                invalidateOnRefresh: true,
+              },
+            })
+          }
+
           gsap.to(source, {
             autoAlpha: 0,
 
@@ -1044,23 +687,26 @@ function HomePage() {
       )
 
       serviceCards.forEach((card, index) => {
-        gsap.from(card.querySelectorAll("img, svg, [data-name*=figure]"), {
-          scale: 0.72,
+        gsap.from(
+          card.querySelectorAll("img, video, svg, [data-name*=figure]"),
+          {
+            scale: 0.72,
 
-          rotation: index % 2 ? 8 : -8,
+            rotation: index % 2 ? 8 : -8,
 
-          y: 36,
+            y: 36,
 
-          stagger: 0.04,
+            stagger: 0.04,
 
-          scrollTrigger: {
-            trigger: card,
+            scrollTrigger: {
+              trigger: card,
 
-            start: "top 80%",
+              start: "top 80%",
 
-            toggleActions: "play none none reverse",
+              toggleActions: "play none none reverse",
+            },
           },
-        })
+        )
       })
 
       const services = element.querySelector<HTMLElement>(
@@ -1131,10 +777,9 @@ function HomePage() {
   return (
     <>
       <ExactStage ref={root} mode="home">
-        <FrontPage />
+        <FrontPage featuredSlugs={featuredSlugs} />
         <SharedContactFooter />
       </ExactStage>
-      <BottomNavigation mode="home" />
     </>
   )
 }
@@ -1257,7 +902,6 @@ function ExactCasePage({ children }: { children: React.ReactNode }) {
         {children}
         <SharedContactFooter />
       </ExactStage>
-      <BottomNavigation mode="case" />
     </>
   )
 }
@@ -1322,7 +966,7 @@ export function AppContent() {
       <ScrollRestoration />
       <RouteSeo />
       <RouterTracking />
-      <TopNavigation />
+      <Navigation />
       <Suspense fallback={<div className="exact-loading" />}>
         <Routes key={pathname}>
           {languages.map((language) => (

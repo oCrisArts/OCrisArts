@@ -6,14 +6,30 @@ import { execFileSync } from "node:child_process"
 
 const gitArgs = ["-c", `safe.directory=${process.cwd().replaceAll("\\", "/")}`]
 
-const originals = execFileSync(
-  "git",
-  [...gitArgs, "ls-tree", "--name-only", "HEAD:src/figma"],
-  { encoding: "utf8" },
-)
-  .trim()
-  .split("\n")
-  .filter((f) => f.endsWith(".tsx"))
+function gitFiles(directory) {
+  try {
+    return execFileSync(
+      "git",
+      [...gitArgs, "ls-tree", "--name-only", `HEAD:${directory}`],
+      { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] },
+    )
+      .trim()
+      .split("\n")
+      .filter((file) => file.endsWith(".tsx"))
+      .map((file) => `${directory}/${file}`)
+  } catch {
+    return []
+  }
+}
+
+const legacyOriginals = gitFiles("src/figma")
+const originals = legacyOriginals.length
+  ? legacyOriginals
+  : [
+      ...gitFiles("src/pages/cases"),
+      "src/pages/FrontPage.tsx",
+      "src/components/CaseCard.tsx",
+    ]
 
 function referencedMedia(source) {
   const media = new Set()
@@ -53,6 +69,8 @@ const currentFiles = [
     .readdirSync("src/pages/cases")
     .filter((f) => f.endsWith(".tsx"))
     .map((file) => "src/pages/cases/" + file),
+
+  "src/data/cases.ts",
 ]
 
 const currentMedia = new Set(
@@ -62,11 +80,10 @@ const currentMedia = new Set(
 )
 
 for (const file of originals) {
-  const original = execFileSync(
-    "git",
-    [...gitArgs, "show", `HEAD:src/figma/${file}`],
-    { encoding: "utf8", maxBuffer: 10 * 1024 * 1024 },
-  )
+  const original = execFileSync("git", [...gitArgs, "show", `HEAD:${file}`], {
+    encoding: "utf8",
+    maxBuffer: 10 * 1024 * 1024,
+  })
 
   for (const asset of referencedMedia(original)) {
     const currentAsset = assetMapping.get(asset) ?? asset

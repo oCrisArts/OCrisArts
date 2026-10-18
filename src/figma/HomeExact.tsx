@@ -1,4 +1,7 @@
 // @ts-nocheck -- Figma-generated exact visual component
+import CaseCard, { caseSlugs } from "./CaseCard";
+import TaxonomyTags from "./TaxonomyTags";
+import ServiceCard from "./ServiceCard";
 import { useI18n } from "../i18n";
 const assetPathPrefix = "/assets";
 const imgAdranBrand = `${assetPathPrefix}/89c53.svg`;
@@ -533,160 +536,70 @@ export default function MainHome() {
           </div>
         </div>
         <div className="content-center flex flex-wrap gap-[24px] items-center justify-center relative shrink-0 w-full" data-node-id="4:35857" data-name="div.flex.flex-row.gap-6.w-full">
-          <div className="aspect-[360/640] bg-white border border-[#bbbcbe] border-solid content-stretch flex flex-[1_0_0] flex-col items-center justify-center min-w-px overflow-clip relative rounded-[8px]" data-node-id="4:35858" data-name="card-case" data-service-name="branding" tabIndex={0} role="button" onKeyDown={event => { if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); event.currentTarget.click(); } }}>
-            <div className="content-stretch flex flex-[1_0_0] isolate items-center justify-center mb-[-140px] min-h-px overflow-clip relative w-full" data-node-id="I4:35858;5339:9858" data-name="card-figure">
-              <div className="aspect-[352/632] flex-[1_0_0] min-w-px relative z-[2]" data-node-id="I4:35858;5339:9859" data-name="card-img">
-                <video className="absolute inset-0 size-full object-cover" data-service-video loop muted playsInline poster="/videos/service-brand-poster.jpg" preload="metadata">
-                  <source src="/videos/service-brand.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </div>
-            <div className="content-stretch flex flex-col gap-[4px] h-[140px] items-start justify-center min-h-[140px] p-[16px] relative shrink-0 w-full" data-node-id="I4:35858;5339:9849" data-name="card-caption">
-              <div className="content-stretch flex items-center relative shrink-0 w-full" data-node-id="I4:35858;5339:9850" data-name="card-title">
-                <p className="[word-break:break-word] flex-[1_0_0] font-['Sora:Regular'] font-normal leading-[1.6] min-w-px relative text-[#0d0e10] text-[20px]" data-node-id="I4:35858;5339:9851">
-                  {t("t0581")}</p>
-              </div>
-              <div className="content-stretch flex items-center relative shrink-0 w-full" data-node-id="I4:35858;5339:9852" data-name="card-title">
-                <p className="[word-break:break-word] flex-[1_0_0] font-['Sora:Light'] font-light leading-[1.6] min-w-px relative text-[#0d0e10] text-[16px]" data-node-id="I4:35858;5339:9853">
-                  {t("t0582")}</p>
-              </div>
-              <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center leading-[1.6] relative shrink-0 text-[#fcfdfe] w-full whitespace-nowrap" data-node-id="I4:35858;5339:9854" data-name="card-tags">
-                <div className="bg-[#000102] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="I4:35858;5344:10819" data-name="tags">
-                  <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:35858;5344:10819;6066:608" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
-                    square
-                  </p>
-                  <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:35858;5344:10819;6066:609">
-                    {t("t0583")}</p>
-                </div>
-                <div className="bg-[#000102] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="I4:35858;5344:10966" data-name="tags">
-                  <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:35858;5344:10966;6066:608" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
-                    square
-                  </p>
-                  <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:35858;5344:10966;6066:609">
-                    {t("t0584")}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="aspect-[360/640] bg-white border border-[#bbbcbe] border-solid content-stretch flex flex-[1_0_0] flex-col items-center justify-center min-w-px overflow-clip relative rounded-[8px]" data-node-id="4:35859" data-name="card-case" data-service-name="web" tabIndex={0} role="button" onKeyDown={event => { if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); event.currentTarget.click(); } }}>
-            <div className="content-stretch flex flex-[1_0_0] isolate items-center justify-center mb-[-140px] min-h-px overflow-clip relative w-full" data-node-id="I4:35859;5339:9858" data-name="card-figure">
-              <div className="aspect-[352/632] flex-[1_0_0] min-w-px relative z-[2]" data-node-id="I4:35859;5339:9859" data-name="card-img">
-                <video className="absolute inset-0 size-full object-cover" data-service-video loop muted playsInline poster="/videos/service-web-poster.jpg" preload="metadata">
-                  <source src="/videos/service-web.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </div>
-            <div className="content-stretch flex flex-col gap-[4px] h-[140px] items-start justify-center min-h-[140px] p-[16px] relative shrink-0 w-full" data-node-id="I4:35859;5339:9849" data-name="card-caption">
-              <div className="content-stretch flex items-center relative shrink-0 w-full" data-node-id="I4:35859;5339:9850" data-name="card-title">
-                <p className="[word-break:break-word] flex-[1_0_0] font-['Sora:Regular'] font-normal leading-[1.6] min-w-px relative text-[#0d0e10] text-[20px]" data-node-id="I4:35859;5339:9851">
-                  {t("t0585")}</p>
-              </div>
-              <div className="content-stretch flex items-center relative shrink-0 w-full" data-node-id="I4:35859;5339:9852" data-name="card-title">
-                <p className="[word-break:break-word] flex-[1_0_0] font-['Sora:Light'] font-light leading-[1.6] min-w-px relative text-[#0d0e10] text-[16px]" data-node-id="I4:35859;5339:9853">
-                  {t("t0586")}</p>
-              </div>
-              <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center leading-[1.6] relative shrink-0 text-[#fcfdfe] w-full whitespace-nowrap" data-node-id="I4:35859;5339:9854" data-name="card-tags">
-                <div className="bg-[#000102] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="I4:35859;5344:10819" data-name="tags">
-                  <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:35859;5344:10819;6066:608" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
-                    square
-                  </p>
-                  <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:35859;5344:10819;6066:609">
-                    {t("t0587")}</p>
-                </div>
-                <div className="bg-[#000102] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="I4:35859;5344:10966" data-name="tags">
-                  <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:35859;5344:10966;6066:608" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
-                    square
-                  </p>
-                  <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:35859;5344:10966;6066:609">
-                    {t("t0588")}</p>
-                </div>
-                <div className="bg-[#000102] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="I4:35859;5344:11108" data-name="tags">
-                  <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:35859;5344:11108;6066:608" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
-                    square
-                  </p>
-                  <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:35859;5344:11108;6066:609">
-                    {t("t0589")}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="aspect-[360/640] bg-white border border-[#bbbcbe] border-solid content-stretch flex flex-[1_0_0] flex-col items-center justify-center min-w-px overflow-clip relative rounded-[8px]" data-node-id="4:35860" data-name="card-case" data-service-name="apps" tabIndex={0} role="button" onKeyDown={event => { if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); event.currentTarget.click(); } }}>
-            <div className="content-stretch flex flex-[1_0_0] isolate items-center justify-center mb-[-140px] min-h-px overflow-clip relative w-full" data-node-id="I4:35860;5339:9858" data-name="card-figure">
-              <div className="aspect-[352/632] flex-[1_0_0] min-w-px relative z-[2]" data-node-id="I4:35860;5339:9859" data-name="card-img">
-                <video className="absolute inset-0 size-full object-cover" data-service-video loop muted playsInline poster="/videos/service-app-poster.jpg" preload="metadata">
-                  <source src="/videos/service-app.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </div>
-            <div className="content-stretch flex flex-col gap-[4px] h-[140px] items-start justify-center min-h-[140px] p-[16px] relative shrink-0 w-full" data-node-id="I4:35860;5339:9849" data-name="card-caption">
-              <div className="content-stretch flex items-center relative shrink-0 w-full" data-node-id="I4:35860;5339:9850" data-name="card-title">
-                <p className="[word-break:break-word] flex-[1_0_0] font-['Sora:Regular'] font-normal leading-[1.6] min-w-px relative text-[#0d0e10] text-[20px]" data-node-id="I4:35860;5339:9851">
-                  {t("t0590")}</p>
-              </div>
-              <div className="content-stretch flex items-center relative shrink-0 w-full" data-node-id="I4:35860;5339:9852" data-name="card-title">
-                <p className="[word-break:break-word] flex-[1_0_0] font-['Sora:Light'] font-light leading-[1.6] min-w-px relative text-[#0d0e10] text-[16px]" data-node-id="I4:35860;5339:9853">
-                  {t("t0591")}</p>
-              </div>
-              <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center leading-[1.6] relative shrink-0 text-[#fcfdfe] w-full whitespace-nowrap" data-node-id="I4:35860;5339:9854" data-name="card-tags">
-                <div className="bg-[#000102] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="I4:35860;5344:10819" data-name="tags">
-                  <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:35860;5344:10819;6066:608" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
-                    square
-                  </p>
-                  <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:35860;5344:10819;6066:609">
-                    {t("t0592")}</p>
-                </div>
-                <div className="bg-[#000102] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="I4:35860;5344:10966" data-name="tags">
-                  <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:35860;5344:10966;6066:608" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
-                    square
-                  </p>
-                  <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:35860;5344:10966;6066:609">
-                    {t("t0593")}</p>
-                </div>
-                <div className="bg-[#000102] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="I4:35860;5344:11108" data-name="tags">
-                  <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:35860;5344:11108;6066:608" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
-                    square
-                  </p>
-                  <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:35860;5344:11108;6066:609">
-                    {t("t0594")}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="aspect-[360/640] bg-white border border-[#bbbcbe] border-solid content-stretch flex flex-[1_0_0] flex-col items-center justify-center min-w-px overflow-clip relative rounded-[8px]" data-node-id="4:35861" data-name="card-case" data-service-name="ux" tabIndex={0} role="button" onKeyDown={event => { if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); event.currentTarget.click(); } }}>
-            <div className="content-stretch flex flex-[1_0_0] isolate items-center justify-center mb-[-140px] min-h-px overflow-clip relative w-full" data-node-id="I4:35861;5339:9858" data-name="card-figure">
-              <div className="aspect-[352/632] flex-[1_0_0] min-w-px relative z-[2]" data-node-id="I4:35861;5339:9859" data-name="card-img">
-                <video className="absolute inset-0 size-full object-cover" data-service-video loop muted playsInline poster="/videos/service-ux-poster.jpg" preload="metadata">
-                  <source src="/videos/service-ux.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </div>
-            <div className="content-stretch flex flex-col gap-[4px] h-[140px] items-start justify-center min-h-[140px] p-[16px] relative shrink-0 w-full" data-node-id="I4:35861;5339:9849" data-name="card-caption">
-              <div className="content-stretch flex items-center relative shrink-0 w-full" data-node-id="I4:35861;5339:9850" data-name="card-title">
-                <p className="[word-break:break-word] flex-[1_0_0] font-['Sora:Regular'] font-normal leading-[1.6] min-w-px relative text-[#0d0e10] text-[20px]" data-node-id="I4:35861;5339:9851">
-                  {t("t0595")}</p>
-              </div>
-              <div className="content-stretch flex items-center relative shrink-0 w-full" data-node-id="I4:35861;5339:9852" data-name="card-title">
-                <p className="[word-break:break-word] flex-[1_0_0] font-['Sora:Light'] font-light leading-[1.6] min-w-px relative text-[#0d0e10] text-[16px]" data-node-id="I4:35861;5339:9853">
-                  {t("t0596")}</p>
-              </div>
-              <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center leading-[1.6] relative shrink-0 text-[#fcfdfe] w-full whitespace-nowrap" data-node-id="I4:35861;5339:9854" data-name="card-tags">
-                <div className="bg-[#000102] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="I4:35861;5344:10819" data-name="tags">
-                  <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:35861;5344:10819;6066:608" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
-                    square
-                  </p>
-                  <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:35861;5344:10819;6066:609">
-                    {t("t0597")}</p>
-                </div>
-                <div className="bg-[#000102] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="I4:35861;5344:10966" data-name="tags">
-                  <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:35861;5344:10966;6066:608" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
-                    square
-                  </p>
-                  <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:35861;5344:10966;6066:609">
-                    {t("t0598")}</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <ServiceCard
+            service="branding"
+            titleKey="t0581"
+            subtitleKey="t0582"
+            tags={[
+              { icon: "palette", label: "Branding" },
+              { icon: "palette", label: "Identidade visual" }
+            ]}
+            additionalTags={[
+              { icon: "square", translationKey: "t0583" },
+              { icon: "square", translationKey: "t0584" }
+            ]}
+            poster="/videos/service-brand-poster.jpg"
+            videoSrc="/videos/service-brand.mp4"
+          />
+          <ServiceCard
+            service="web"
+            titleKey="t0585"
+            subtitleKey="t0586"
+            tags={[
+              { icon: "language", label: "Sites" },
+              { icon: "web", label: "Landing pages" },
+              { icon: "storefront", label: "Lojas virtuais" }
+            ]}
+            additionalTags={[
+              { icon: "square", translationKey: "t0587" },
+              { icon: "square", translationKey: "t0588" },
+              { icon: "square", translationKey: "t0589" }
+            ]}
+            poster="/videos/service-web-poster.jpg"
+            videoSrc="/videos/service-web.mp4"
+          />
+          <ServiceCard
+            service="apps"
+            titleKey="t0590"
+            subtitleKey="t0591"
+            tags={[
+              { icon: "smartphone", label: "Aplicativos" },
+              { icon: "devices", label: "Sistemas" },
+              { icon: "cloud", label: "SaaS" }
+            ]}
+            additionalTags={[
+              { icon: "square", translationKey: "t0592" },
+              { icon: "square", translationKey: "t0593" },
+              { icon: "square", translationKey: "t0594" }
+            ]}
+            poster="/videos/service-app-poster.jpg"
+            videoSrc="/videos/service-app.mp4"
+          />
+          <ServiceCard
+            service="ux"
+            titleKey="t0595"
+            subtitleKey="t0596"
+            tags={[
+              { icon: "search", label: "UX Research" },
+              { icon: "widgets", label: "Design Systems" }
+            ]}
+            additionalTags={[
+              { icon: "square", translationKey: "t0597" },
+              { icon: "square", translationKey: "t0598" }
+            ]}
+            poster="/videos/service-ux-poster.jpg"
+            videoSrc="/videos/service-ux.mp4"
+          />
         </div>
       </div>
       <div className="bg-[#eeeff1] content-stretch flex gap-[24px] h-[1080px] items-center justify-center px-[160px] relative shrink-0 w-[1920px]" data-node-id="4:35862" data-name="section.about-teaser">

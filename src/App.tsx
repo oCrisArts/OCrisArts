@@ -15,6 +15,7 @@ import {
 } from "react-router-dom"
 import { LanguageProvider, useI18n, languages, localizedPath, basePath } from "./i18n"
 import { cases } from "./seo/pages"
+import { caseSlugs } from "./figma/CaseCard"
 import RouterTracking from "./analytics/RouterTracking"
 import ConsentPreferences from "./analytics/Consent"
 import RouteSeo from "./seo/RouteSeo"
@@ -172,11 +173,19 @@ function createAutoCarousel(
   const leaveHover = () => { hovered = false; resume() }
   const focusIn = () => { focused = true }
   const focusOut = (event: FocusEvent) => {
-    focused = event.relatedTarget instanceof Node && track.contains(event.relatedTarget)
+    focused = event.relatedTarget instanceof Node && viewport.contains(event.relatedTarget)
     resume()
   }
   // Native image/link dragging otherwise steals the pointer before our threshold.
   const preventNativeDrag = (event: DragEvent) => { event.preventDefault() }
+  const keyboard = (event: KeyboardEvent) => {
+    if (!viewport.hasAttribute('data-artifact-carousel') || !['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return
+    event.preventDefault()
+    position = event.key === 'Home' ? 0 : event.key === 'End' ? -bounds() : clamp(position + (event.key === 'ArrowLeft' ? 1 : -1) * viewport.clientWidth * .7)
+    direction = event.key === 'ArrowLeft' || event.key === 'Home' ? 1 : -1
+    render()
+    resume()
+  }
   const cancelInteraction = () => {
     if (pointerId !== null) pointerUp(new PointerEvent("pointercancel", { pointerId }))
     hovered = false
@@ -190,8 +199,9 @@ function createAutoCarousel(
   track.addEventListener("lostpointercapture", pointerUp)
   track.addEventListener("pointerenter", pauseOnHover)
   track.addEventListener("pointerleave", leaveHover)
-  track.addEventListener("focusin", focusIn)
-  track.addEventListener("focusout", focusOut)
+  viewport.addEventListener("focusin", focusIn)
+  viewport.addEventListener("focusout", focusOut)
+  viewport.addEventListener("keydown", keyboard)
   track.addEventListener("dragstart", preventNativeDrag)
   track.addEventListener("wheel", resume, { passive: true })
   window.addEventListener("blur", cancelInteraction)
@@ -218,8 +228,9 @@ function createAutoCarousel(
     track.removeEventListener("lostpointercapture", pointerUp)
     track.removeEventListener("pointerenter", pauseOnHover)
     track.removeEventListener("pointerleave", leaveHover)
-    track.removeEventListener("focusin", focusIn)
-    track.removeEventListener("focusout", focusOut)
+    viewport.removeEventListener("focusin", focusIn)
+    viewport.removeEventListener("focusout", focusOut)
+    viewport.removeEventListener("keydown", keyboard)
     track.removeEventListener("dragstart", preventNativeDrag)
     track.removeEventListener("wheel", resume)
     window.removeEventListener("blur", cancelInteraction)
@@ -544,6 +555,15 @@ function SharedContactFooter() {
 
 function HomePage() {
   const root = useRef<HTMLDivElement>(null)
+  const [featuredSlugs, setFeaturedSlugs] = useState<string[]>([...caseSlugs.slice(0, 2)])
+  useEffect(() => {
+    const shuffled: string[] = [...caseSlugs]
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1))
+      ;[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
+    }
+    setFeaturedSlugs(shuffled.slice(0, 2))
+  }, [])
   useExactNavigation(root)
   useEffect(() => root.current ? observeExperience(root.current) : undefined, [])
 
@@ -580,32 +600,28 @@ function HomePage() {
             '[data-name="article.case-card"]',
           ),
         )
-        const selected = [...destinationCards]
-          .sort(() => Math.random() - 0.5)
-          .slice(0, 4)
-
         sourceCards.forEach((source, index) => {
-          const destination = selected[index]
+          const destination = destinationCards.find(card => card.dataset.caseSlug === source.dataset.caseSlug)
           if (!destination) return
-          source.innerHTML = destination.innerHTML
-          source.dataset.caseSlug = destination.dataset.caseSlug
-          source.setAttribute("href", destination.getAttribute("href") || "/")
-          source.style.cssText = destination.style.cssText
+          const trajectory = () => {
+            const origin = source.getBoundingClientRect()
+            const target = destination.getBoundingClientRect()
+            return {
+              x: target.left - origin.left + Number(gsap.getProperty(source, 'x')),
+              y: target.top - origin.top + Number(gsap.getProperty(source, 'y')),
+            }
+          }
           gsap.set(destination, { autoAlpha: 0 })
           gsap.fromTo(
             source,
             {
               y: 0,
-              rotation: 0,
+              rotation: index ? 2 : -2,
               scale: 1,
             },
             {
-              x: () => {
-                const start = source.getBoundingClientRect()
-                const finish = destination.getBoundingClientRect()
-                return finish.left - start.left
-              },
-              y: () => window.innerHeight * 0.6,
+              x: () => trajectory().x,
+              y: () => trajectory().y,
               rotation: 0,
               scale: 1,
               ease: "none",
@@ -696,8 +712,10 @@ function HomePage() {
       )
       if (services && serviceVideos.length) {
         serviceObserver = new IntersectionObserver(
-          ([entry]) => {
-            serviceVideos.forEach((video) => {
+          (entries) => {
+            entries.forEach(entry => {
+              const video = entry.target.querySelector<HTMLVideoElement>('video')
+              if (!video) return
               if (entry.isIntersecting) {
                 video.play().catch(() => undefined)
               } else {
@@ -706,9 +724,9 @@ function HomePage() {
               }
             })
           },
-          { threshold: 0.42 },
+          { threshold: 0.15 },
         )
-        serviceObserver.observe(services)
+        serviceCards.forEach(card => serviceObserver!.observe(card))
       }
 
       const evidenceSection = element.querySelector<HTMLElement>(
@@ -733,7 +751,7 @@ function HomePage() {
       carouselCleanups.forEach((cleanup) => cleanup())
       context.revert()
     }
-  }, [])
+  }, [featuredSlugs])
 
   return (
     <>
@@ -771,10 +789,17 @@ function ExactCasePage({ children }: { children: React.ReactNode }) {
     if (processSection) processSection.id = "processo"
     if (resultSection) resultSection.id = "resultados"
 
+    const carouselCleanups: Array<() => void> = []
+
     const context = gsap.context(() => {
+      element.querySelectorAll<HTMLElement>('[data-artifact-carousel]').forEach(viewport => {
+        const rail = viewport.querySelector<HTMLElement>('[data-artifact-track]')
+        if (rail) carouselCleanups.push(createAutoCarousel(rail, viewport, 34))
+      })
       element
         .querySelectorAll<HTMLElement>('[data-name^="section."]')
         .forEach((section) => {
+          if (!section.children.length) return
           gsap.from(section.children, {
             y: 38,
             autoAlpha: 0,
@@ -801,7 +826,10 @@ function ExactCasePage({ children }: { children: React.ReactNode }) {
       })
     }, element)
     requestAnimationFrame(() => ScrollTrigger.refresh())
-    return () => context.revert()
+    return () => {
+      carouselCleanups.forEach(cleanup => cleanup())
+      context.revert()
+    }
   }, [])
 
   return (

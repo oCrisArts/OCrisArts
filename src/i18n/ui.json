@@ -108,5 +108,400 @@
     "pt-BR": "oCris Acosta | Design de Produto, UX/UI e Design Engineering",
     "en": "oCris Acosta | Product Design, UX/UI & Design Engineering",
     "es": "oCris Acosta | Diseño de Producto, UX/UI y Design Engineering"
+  },
+  "Design Thinking": {
+    "pt-BR": "Design Thinking",
+    "en": "Design Thinking",
+    "es": "Design Thinking"
+  },
+  "Análise heurística": {
+    "pt-BR": "Análise heurística",
+    "en": "Heuristic analysis",
+    "es": "Análisis heurístico"
+  },
+  "Fluxo": {
+    "pt-BR": "Fluxo",
+    "en": "Flow",
+    "es": "Flujo"
+  },
+  "Pesquisa de usabilidade": {
+    "pt-BR": "Pesquisa de usabilidade",
+    "en": "Usability research",
+    "es": "Investigación de usabilidad"
+  },
+  "Maze": {
+    "pt-BR": "Maze",
+    "en": "Maze",
+    "es": "Maze"
+  },
+  "Uma matriz de criticidade orientou as prioridades.": {
+    "pt-BR": "Uma matriz de criticidade orientou as prioridades.",
+    "en": "A criticality matrix guided the priorities.",
+    "es": "Una matriz de criticidad orientó las prioridades."
+  },
+  "No fluxo de Estornos, a proposta ganhou forma com os padrões do Design System CAIXA, enquanto o Plano de Pesquisa definiu como avaliar a nova navegação.": {
+    "pt-BR": "No fluxo de Estornos, a proposta ganhou forma com os padrões do Design System CAIXA, enquanto o Plano de Pesquisa definiu como avaliar a nova navegação.",
+    "en": "In the Reversals flow, the proposal took shape using CAIXA Design System standards, while the Research Plan defined how to evaluate the new navigation.",
+    "es": "En el flujo de Reversiones, la propuesta tomó forma con los patrones del Design System CAIXA, mientras que el Plan de Investigación definió cómo evaluar la nueva navegación."
+  },
+  "Empatia": {
+    "pt-BR": "Empatia",
+    "en": "Empathy",
+    "es": "Empatía"
+  },
+  "Definição": {
+    "pt-BR": "Definição",
+    "en": "Definition",
+    "es": "Definición"
+  },
+  "Ideação": {
+    "pt-BR": "Ideação",
+    "en": "Ideation",
+    "es": "Ideación"
+  },
+  "Prototipagem": {
+    "pt-BR": "Prototipagem",
+    "en": "Prototyping",
+    "es": "Prototipado"
+  },
+  "Teste": {
+    "pt-BR": "Teste",
+    "en": "Testing",
+    "es": "Pruebas"
+  },
+  "Diagnóstico de usabilidade": {
+    "pt-BR": "Diagnóstico de usabilidade",
+    "en": "Usability diagnosis",
+    "es": "Diagnóstico de usabilidad"
+  },
+  "Plano de pesquisa": {
+    "pt-BR": "Plano de pesquisa",
+    "en": "Research plan",
+    "es": "Plan de investigación"
+  },
+  "Data-Driven Design": {
+    "pt-BR": "Data-Driven Design",
+    "en": "Data-Driven Design",
+    "es": "Data-Driven Design"
+  },
+  "Plano de teste": {
+    "pt-BR": "Plano de teste",
+    "en": "Test plan",
+    "es": "Plan de pruebas"
+  },
+  "Observação de uso": {
+    "pt-BR": "Observação de uso",
+    "en": "Usage observation",
+    "es": "Observación de uso"
+  },
+  "Validação": {
+    "pt-BR": "Validação",
+    "en": "Validation",
+    "es": "Validación"
+  },
+  "Um protótipo funcional criado no Figma Make permitiu observar tarefas reais.": {
+    "pt-BR": "Um protótipo funcional criado no Figma Make permitiu observar tarefas reais.",
+    "en": "A functional prototype created in Figma Make made it possible to observe real tasks.",
+    "es": "Un prototipo funcional creado en Figma Make permitió observar tareas reales."
+  },
+  "Os testes e registros do Clarity ajudaram a identificar comportamentos que não seriam percebidos em telas estáticas.": {
+    "pt-BR": "Os testes e registros do Clarity ajudaram a identificar comportamentos que não seriam percebidos em telas estáticas.",
+    "en": "Tests and Clarity recordings helped identify behaviors that would not have been apparent in static screens.",
+    "es": "Las pruebas y grabaciones de Clarity ayudaron a identificar comportamientos que no se detectarían en pantallas estáticas."
+  },
+  "Definição de objetivos e métricas": {
+    "pt-BR": "Definição de objetivos e métricas",
+    "en": "Goal and metric definition",
+    "es": "Definición de objetivos y métricas"
+  },
+  "Coleta de dados": {
+    "pt-BR": "Coleta de dados",
+    "en": "Data collection",
+    "es": "Recopilación de datos"
+  },
+  "Análise de dados": {
+    "pt-BR": "Análise de dados",
+    "en": "Data analysis",
+    "es": "Análisis de datos"
+  },
+  "Aplicativos": {
+    "pt-BR": "Aplicativos",
+    "en": "Apps",
+    "es": "Aplicaciones"
+  },
+  "Moodboard": {
+    "pt-BR": "Moodboard",
+    "en": "Moodboard",
+    "es": "Moodboard"
+  },
+  "Adobe Illustrator": {
+    "pt-BR": "Adobe Illustrator",
+    "en": "Adobe Illustrator",
+    "es": "Adobe Illustrator"
+  },
+  "Em paralelo, o estudo de marca construiu a identidade visual do novo seguro.": {
+    "pt-BR": "Em paralelo, o estudo de marca construiu a identidade visual do novo seguro.",
+    "en": "In parallel, the brand study established the visual identity of the new insurance product.",
+    "es": "En paralelo, el estudio de marca construyó la identidad visual del nuevo seguro."
+  },
+  "Os protótipos reuniram essas decisões aos padrões do Design System CAIXA, permitindo avançar com uma proposta adaptável às mudanças regulatórias.": {
+    "pt-BR": "Os protótipos reuniram essas decisões aos padrões do Design System CAIXA, permitindo avançar com uma proposta adaptável às mudanças regulatórias.",
+    "en": "The prototypes combined these decisions with CAIXA Design System standards, enabling progress with a proposal adaptable to regulatory changes.",
+    "es": "Los prototipos integraron estas decisiones con los patrones del Design System CAIXA, permitiendo avanzar con una propuesta adaptable a los cambios regulatorios."
+  },
+  "Pensar": {
+    "pt-BR": "Pensar",
+    "en": "Think",
+    "es": "Pensar"
+  },
+  "Duplo Diamante": {
+    "pt-BR": "Duplo Diamante",
+    "en": "Double Diamond",
+    "es": "Doble Diamante"
+  },
+  "Mapeamento de processos": {
+    "pt-BR": "Mapeamento de processos",
+    "en": "Process mapping",
+    "es": "Mapeo de procesos"
+  },
+  "Painel de qualificação de pedidos": {
+    "pt-BR": "Painel de qualificação de pedidos",
+    "en": "Claims qualification dashboard",
+    "es": "Panel de calificación de solicitudes"
+  },
+  "Photoshop": {
+    "pt-BR": "Photoshop",
+    "en": "Photoshop",
+    "es": "Photoshop"
+  },
+  "As heurísticas de Nielsen identificaram problemas de orientação e prevenção de erros.": {
+    "pt-BR": "As heurísticas de Nielsen identificaram problemas de orientação e prevenção de erros.",
+    "en": "Nielsen’s heuristics identified issues with orientation and error prevention.",
+    "es": "Las heurísticas de Nielsen identificaron problemas de orientación y prevención de errores."
+  },
+  "A WCAG 2.1 trouxe os critérios de acessibilidade necessários à revisão das interfaces.": {
+    "pt-BR": "A WCAG 2.1 trouxe os critérios de acessibilidade necessários à revisão das interfaces.",
+    "en": "WCAG 2.1 provided the accessibility criteria needed to review the interfaces.",
+    "es": "La WCAG 2.1 aportó los criterios de accesibilidad necesarios para revisar las interfaces."
+  },
+  "Os achados foram relacionados aos perfis, às etapas e aos pontos críticos da operação.": {
+    "pt-BR": "Os achados foram relacionados aos perfis, às etapas e aos pontos críticos da operação.",
+    "en": "The findings were linked to user roles, stages and critical points in the operation.",
+    "es": "Los hallazgos se relacionaron con los perfiles, las etapas y los puntos críticos de la operación."
+  },
+  "Essa análise orientou a reorganização dos fluxos e a aplicação de padrões do Design System CAIXA, buscando decisões mais claras e rastreáveis.": {
+    "pt-BR": "Essa análise orientou a reorganização dos fluxos e a aplicação de padrões do Design System CAIXA, buscando decisões mais claras e rastreáveis.",
+    "en": "This analysis guided the reorganization of flows and the application of CAIXA Design System standards, aiming for clearer, more traceable decisions.",
+    "es": "Este análisis orientó la reorganización de los flujos y la aplicación de patrones del Design System CAIXA, buscando decisiones más claras y trazables."
+  },
+  "Descobrir": {
+    "pt-BR": "Descobrir",
+    "en": "Discover",
+    "es": "Descubrir"
+  },
+  "Definir": {
+    "pt-BR": "Definir",
+    "en": "Define",
+    "es": "Definir"
+  },
+  "Desenvolver": {
+    "pt-BR": "Desenvolver",
+    "en": "Develop",
+    "es": "Desarrollar"
+  },
+  "Entregar": {
+    "pt-BR": "Entregar",
+    "en": "Deliver",
+    "es": "Entregar"
+  },
+  "Interface do BackOffice": {
+    "pt-BR": "Interface do BackOffice",
+    "en": "BackOffice interface",
+    "es": "Interfaz del BackOffice"
+  },
+  "Padrões do BackOffice": {
+    "pt-BR": "Padrões do BackOffice",
+    "en": "BackOffice patterns",
+    "es": "Patrones del BackOffice"
+  },
+  "Guia": {
+    "pt-BR": "Guia",
+    "en": "Guide",
+    "es": "Guía"
+  },
+  "Service Design": {
+    "pt-BR": "Service Design",
+    "en": "Service Design",
+    "es": "Service Design"
+  },
+  "Fluxo de navegação": {
+    "pt-BR": "Fluxo de navegação",
+    "en": "Navigation flow",
+    "es": "Flujo de navegación"
+  },
+  "Jornada operacional": {
+    "pt-BR": "Jornada operacional",
+    "en": "Operational journey",
+    "es": "Recorrido operativo"
+  },
+  "Documentação": {
+    "pt-BR": "Documentação",
+    "en": "Documentation",
+    "es": "Documentación"
+  },
+  "InDesign": {
+    "pt-BR": "InDesign",
+    "en": "InDesign",
+    "es": "InDesign"
+  },
+  "A operação da Porsche Cup dependia da coordenação entre engenheiros, pilotos e equipes de apoio.": {
+    "pt-BR": "A operação da Porsche Cup dependia da coordenação entre engenheiros, pilotos e equipes de apoio.",
+    "en": "Porsche Cup operations depended on coordination between engineers, drivers and support teams.",
+    "es": "La operación de Porsche Cup dependía de la coordinación entre ingenieros, pilotos y equipos de apoyo."
+  },
+  "Planilhas não ofereciam uma visão integrada das solicitações e dos estados de cada atividade.": {
+    "pt-BR": "Planilhas não ofereciam uma visão integrada das solicitações e dos estados de cada atividade.",
+    "en": "Spreadsheets did not provide an integrated view of requests and the status of each activity.",
+    "es": "Las hojas de cálculo no ofrecían una visión integrada de las solicitudes y los estados de cada actividad."
+  },
+  "Exploração": {
+    "pt-BR": "Exploração",
+    "en": "Exploration",
+    "es": "Exploración"
+  },
+  "Criação": {
+    "pt-BR": "Criação",
+    "en": "Creation",
+    "es": "Creación"
+  },
+  "Reflexão": {
+    "pt-BR": "Reflexão",
+    "en": "Reflection",
+    "es": "Reflexión"
+  },
+  "Implementação": {
+    "pt-BR": "Implementação",
+    "en": "Implementation",
+    "es": "Implementación"
+  },
+  "Wireframes operacionais": {
+    "pt-BR": "Wireframes operacionais",
+    "en": "Operational wireframes",
+    "es": "Wireframes operativos"
+  },
+  "Personas": {
+    "pt-BR": "Personas",
+    "en": "Personas",
+    "es": "Personas"
+  },
+  "Personas ajudaram a compreender os objetivos por trás de cada acesso.": {
+    "pt-BR": "Personas ajudaram a compreender os objetivos por trás de cada acesso.",
+    "en": "Personas helped reveal the goals behind each visit.",
+    "es": "Las personas ayudaron a comprender los objetivos detrás de cada acceso."
+  },
+  "A partir dessas necessidades, a Arquitetura da Informação orientou a organização de benefícios, conteúdos e funcionalidades.": {
+    "pt-BR": "A partir dessas necessidades, a Arquitetura da Informação orientou a organização de benefícios, conteúdos e funcionalidades.",
+    "en": "Based on these needs, Information Architecture guided the organization of benefits, content and features.",
+    "es": "A partir de estas necesidades, la Arquitectura de la Información orientó la organización de beneficios, contenidos y funcionalidades."
+  },
+  "Decisões de interface": {
+    "pt-BR": "Decisões de interface",
+    "en": "Interface decisions",
+    "es": "Decisiones de interfaz"
+  },
+  "Matriz de priorização": {
+    "pt-BR": "Matriz de priorização",
+    "en": "Prioritization matrix",
+    "es": "Matriz de priorización"
+  },
+  "Adobe XD": {
+    "pt-BR": "Adobe XD",
+    "en": "Adobe XD",
+    "es": "Adobe XD"
+  },
+  "After Effects": {
+    "pt-BR": "After Effects",
+    "en": "After Effects",
+    "es": "After Effects"
+  },
+  "Os tickets de suporte revelaram que a dificuldade não estava apenas no formulário.": {
+    "pt-BR": "Os tickets de suporte revelaram que a dificuldade não estava apenas no formulário.",
+    "en": "Support tickets revealed that the difficulty went beyond the form.",
+    "es": "Los tickets de soporte revelaron que la dificultad no estaba solo en el formulario."
+  },
+  "Encontrar cursos, compreender o cadastro e recuperar o acesso também faziam parte do problema.": {
+    "pt-BR": "Encontrar cursos, compreender o cadastro e recuperar o acesso também faziam parte do problema.",
+    "en": "Finding courses, understanding registration and recovering access were also part of the problem.",
+    "es": "Encontrar cursos, comprender el registro y recuperar el acceso también formaban parte del problema."
+  },
+  "A solução foi ampliar o LMS existente com um portal externo de cursos, conectando descoberta, cadastro e acesso à plataforma.": {
+    "pt-BR": "A solução foi ampliar o LMS existente com um portal externo de cursos, conectando descoberta, cadastro e acesso à plataforma.",
+    "en": "The solution was to extend the existing LMS with an external course portal, connecting discovery, registration and platform access.",
+    "es": "La solución fue ampliar el LMS existente con un portal externo de cursos, conectando descubrimiento, registro y acceso a la plataforma."
+  },
+  "Os protótipos e testes ajudaram a revisar essa entrada e os pontos de recuperação após erros.": {
+    "pt-BR": "Os protótipos e testes ajudaram a revisar essa entrada e os pontos de recuperação após erros.",
+    "en": "Prototypes and tests helped review this entry point and the recovery paths after errors.",
+    "es": "Los prototipos y las pruebas ayudaron a revisar esta entrada y los puntos de recuperación tras errores."
+  },
+  "Alinhamento": {
+    "pt-BR": "Alinhamento",
+    "en": "Alignment",
+    "es": "Alineación"
+  },
+  "Pesquisa": {
+    "pt-BR": "Pesquisa",
+    "en": "Research",
+    "es": "Investigación"
+  },
+  "Interfaces do portal": {
+    "pt-BR": "Interfaces do portal",
+    "en": "Portal interfaces",
+    "es": "Interfaces del portal"
+  },
+  "A experiência de aprendizagem era compartilhada entre os clientes.": {
+    "pt-BR": "A experiência de aprendizagem era compartilhada entre os clientes.",
+    "en": "The learning experience was shared across clients.",
+    "es": "La experiencia de aprendizaje era compartida entre los clientes."
+  },
+  "O que precisava mudar era a identidade visual de cada empresa.": {
+    "pt-BR": "O que precisava mudar era a identidade visual de cada empresa.",
+    "en": "What needed to change was each company’s visual identity.",
+    "es": "Lo que debía cambiar era la identidad visual de cada empresa."
+  },
+  "Com Design Tokens, diferentes identidades passaram a utilizar a mesma estrutura de interface.": {
+    "pt-BR": "Com Design Tokens, diferentes identidades passaram a utilizar a mesma estrutura de interface.",
+    "en": "With Design Tokens, different identities began using the same interface structure.",
+    "es": "Con Design Tokens, distintas identidades pasaron a utilizar la misma estructura de interfaz."
+  },
+  "Os protótipos ajudaram a verificar como as variações se comportavam sem exigir a reconstrução do aplicativo.": {
+    "pt-BR": "Os protótipos ajudaram a verificar como as variações se comportavam sem exigir a reconstrução do aplicativo.",
+    "en": "The prototypes helped verify how variations behaved without requiring the application to be rebuilt.",
+    "es": "Los prototipos ayudaron a verificar cómo se comportaban las variaciones sin necesidad de reconstruir la aplicación."
+  },
+  "Contextualização": {
+    "pt-BR": "Contextualização",
+    "en": "Context",
+    "es": "Contextualización"
+  },
+  "Jornada": {
+    "pt-BR": "Jornada",
+    "en": "Journey",
+    "es": "Recorrido"
+  },
+  "Itens do backlog": {
+    "pt-BR": "Itens do backlog",
+    "en": "Backlog items",
+    "es": "Elementos del backlog"
+  },
+  "Abrir protótipo em nova aba": {
+    "pt-BR": "Abrir protótipo em nova aba",
+    "en": "Open prototype in a new tab",
+    "es": "Abrir prototipo en una pestaña nueva"
+  },
+  "Artefatos do projeto": {
+    "pt-BR": "Artefatos do projeto",
+    "en": "Project artifacts",
+    "es": "Artefactos del proyecto"
   }
 }

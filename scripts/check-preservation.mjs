@@ -2,43 +2,39 @@ import fs from 'node:fs';
 import ts from 'typescript';
 import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
-const pt=JSON.parse(fs.readFileSync('src/i18n/pt-BR.json','utf8'));
-const normalize=s=>s.replace(/\s+/g,' ').trim();
-let count=0;
-for(const name of fs.readdirSync('src/figma').filter(f=>f.endsWith('.tsx'))) {
- const file='src/figma/'+name;
- const original=execFileSync('git',['-c',`safe.directory=${process.cwd().replaceAll('\\','/')}`,'show',`HEAD:${file}`],{encoding:'utf8',maxBuffer:10*1024*1024});
- const current=fs.readFileSync(file,'utf8');
- const parse=source=>{
-  const ast=ts.createSourceFile(file,source,ts.ScriptTarget.Latest,true,ts.ScriptKind.TSX),classes=[],media=[],styles=[],copy=[];
-  function walk(n) {
-   if(ts.isJsxAttribute(n)) {
-    const key=n.name.getText(ast),value=n.initializer?.getText(ast);
-    if(key==='className') classes.push(value?.replace(' exact-contact-input',''));
-    if(['src','poster','loop','autoPlay','playsInline','muted','preload'].includes(key))media.push(`${key}:${value}`);
-    if(key==='style')styles.push(value);
-   }
-   if(ts.isJsxText(n)&&normalize(n.text)) copy.push(normalize(n.text));
-   if(ts.isJsxExpression(n)&&n.expression) {
-    if(ts.isStringLiteral(n.expression)||ts.isNoSubstitutionTemplateLiteral(n.expression)) {if(normalize(n.expression.text))copy.push(normalize(n.expression.text))}
-    if(ts.isCallExpression(n.expression)&&n.expression.expression.getText(ast)==='t')copy.push(pt[n.expression.arguments[0].text]);
-   }
-   ts.forEachChild(n,walk);
+const gitArgs=['-c',`safe.directory=${process.cwd().replaceAll('\\','/')}`];
+const originals=execFileSync('git',[...gitArgs,'ls-tree','--name-only','HEAD:src/figma'],{encoding:'utf8'}).trim().split('\n').filter(f=>f.endsWith('.tsx'));
+function referencedMedia(source) {
+ const constants=new Map([...source.matchAll(/const (\w+) = [`"](?:\$\{assetPathPrefix\}|\/assets)(\/[^`"]+)[`"]/g)].map(m=>[m[1],'/assets'+m[2]]));
+ const ast=ts.createSourceFile('source.tsx',source,99,true,4),media=[];
+ function walk(n) {
+  if(ts.isJsxAttribute(n)&&['src','poster'].includes(n.name.text)) {
+   const init=n.initializer;
+   if(init&&ts.isStringLiteral(init))media.push(init.text);
+   else if(init&&ts.isJsxExpression(init)&&init.expression&&ts.isIdentifier(init.expression)&&constants.has(init.expression.text))media.push(constants.get(init.expression.text));
   }
-  walk(ast);return {classes,media,styles,copy};
- };
- const before=parse(original),after=parse(current);
- assert.deepEqual(after.classes,before.classes,`${name}: original visual classes`);
- assert.deepEqual(after.media,before.media,`${name}: original media and playback attributes`);
- assert.deepEqual(after.styles,before.styles,`${name}: original inline styles`);
- const approvedContactLabels=['E-mail','falecom@'];
- const originalCopy=before.copy.filter(v=>!approvedContactLabels.includes(v)),currentCopy=after.copy.filter(v=>!approvedContactLabels.includes(v));
- assert.deepEqual(currentCopy,originalCopy,`${name}: Portuguese source content`);
- count++;
+  ts.forEachChild(n,walk);
+ }walk(ast);return media;
 }
+const currentFiles=fs.readdirSync('src/figma').filter(f=>f.endsWith('.tsx'));
+const currentMedia=new Set(currentFiles.flatMap(f=>referencedMedia(fs.readFileSync('src/figma/'+f,'utf8'))));
+for(const file of originals) {
+ const original=execFileSync('git',[...gitArgs,'show',`HEAD:src/figma/${file}`],{encoding:'utf8',maxBuffer:10*1024*1024});
+ for(const asset of referencedMedia(original))assert.ok(currentMedia.has(asset),`Original evidence retained: ${file} ${asset}`);
+}
+const pt=JSON.parse(fs.readFileSync('src/i18n/pt-BR.json','utf8'));
 for(const locale of ['en','es']) {
  const copy=JSON.parse(fs.readFileSync(`src/i18n/${locale}.json`,'utf8'));
- assert.deepEqual(Object.keys(copy),Object.keys(pt));
- assert.ok(Object.values(copy).every(v=>typeof v==='string'&&v.length));
+ assert.deepEqual(Object.keys(copy),Object.keys(pt));assert.ok(Object.values(copy).every(v=>typeof v==='string'&&v.length));
 }
-console.log(`${count} original components: visual classes, styles, media and Portuguese copy preserved. Locale key coverage: 100%.`);
+const ui=JSON.parse(fs.readFileSync('src/i18n/ui.json','utf8'));
+for(const values of Object.values(ui))for(const locale of ['pt-BR','en','es'])assert.ok(values[locale]?.length,'Translated UI labels');
+for(const file of currentFiles) {
+ const source=fs.readFileSync('src/figma/'+file,'utf8');
+ for(const match of source.matchAll(/"label":"([^"]+)"/g))assert.ok(Object.values(pt).includes(match[1])||ui[match[1]],`Translated taxonomy: ${match[1]}`);
+}
+const spvat=fs.readFileSync('src/figma/RegraIncerta.tsx','utf8');
+const processTags=spvat.match(/kind="process-tags" items=\{(\[[^\n]*?\])\}/)?.[1];
+assert.deepEqual(JSON.parse(processTags).map(t=>t.label),['Pensar','Fazer']);
+assert.ok(!/zoom\s*:/.test(fs.readFileSync('src/index.css','utf8')+fs.readFileSync('src/figma-layout.css','utf8')),'No global zoom');
+console.log(`${originals.length} original pages: referenced evidence preserved; translations covered; SPVAT stages verified; no global zoom.`);

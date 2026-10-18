@@ -1,4 +1,5 @@
 // @ts-nocheck -- Figma-generated exact visual component
+import TaxonomyTags from "./TaxonomyTags";
 import { useI18n } from "../i18n";
 const assetPathPrefix = "/assets";
 const imgImgHeroImage = `${assetPathPrefix}/12f96.png`;
@@ -31,50 +32,7 @@ export default function ArticleCustomizacaoCara() {
             {t("t0574")}</h1>
           <p className="font-['Sora:Regular'] font-normal leading-[1.3] relative shrink-0 text-[#fcfdfe] text-[30px] w-[980px]" data-node-id="4:35212">
             {t("t0575")}</p>
-          <div className="content-start flex flex-wrap gap-[12px_16px] items-start leading-[1.6] relative shrink-0 text-[#230007] w-[1600px] whitespace-nowrap" data-node-id="4:35213" data-name="ul.meta">
-            <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:35214" data-name="lean-ux">
-              <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:35214;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
-                cycle
-              </p>
-              <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:35214;6066:625">
-                {t("t0994")}</p>
-            </div>
-            <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:35215" data-name="project-type-8">
-              <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:35215;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
-                devices
-              </p>
-              <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:35215;6066:625">
-                {t("t0995")}</p>
-            </div>
-            <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:35216" data-name="product-backlog-building">
-              <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:35216;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
-                view_list
-              </p>
-              <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:35216;6066:625">
-                {t("t0996")}</p>
-            </div>
-            <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:35217" data-name="design-tokens-dtcg">
-              <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:35217;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
-                palette
-              </p>
-              <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:35217;6066:625">
-                {t("t0997")}</p>
-            </div>
-            <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:35218" data-name="userberry">
-              <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:35218;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
-                science
-              </p>
-              <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:35218;6066:625">
-                {t("t0998")}</p>
-            </div>
-            <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:35219" data-name="figma">
-              <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:35219;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
-                design_services
-              </p>
-              <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:35219;6066:625">
-                {t("t0167")}</p>
-            </div>
-          </div>
+          <TaxonomyTags kind="meta" items={[{"icon":"smartphone","label":"Aplicativos"},{"icon":"view_list","label":"Product Backlog Building"},{"icon":"fact_check","label":"Backlog do MVP"},{"icon":"widgets","label":"Design System modular"},{"icon":"palette","label":"Design Tokens (DTCG)"},{"icon":"draw","label":"Protótipos"},{"icon":"design_services","label":"Figma"},{"icon":"science","label":"UserBerry"}]} />
         </div>
         <div className="absolute bg-[rgba(0,0,0,0.58)] h-[1080px] left-0 top-0 w-[1920px] z-[3]" data-node-id="4:35221" data-name="div.hero-overlay" />
         <div className="absolute h-[1080px] left-0 top-0 w-[1920px] z-[2]" data-node-id="4:35222" data-name="img.hero-image">
@@ -114,34 +72,14 @@ export default function ArticleCustomizacaoCara() {
             {t("t1001")}</p>
         </div>
       </div>
-      <div className="content-stretch flex h-[1080px] items-center justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:35238" data-name="section.process" data-section-id="process">
-        <div className="content-stretch flex flex-[1_0_0] items-center justify-center min-w-px overflow-clip relative" data-node-id="4:35239" data-name="div.grid.grid-cols-12.gap-24.w-full">
-          <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[24px] items-start min-w-px relative text-[16px]" data-node-id="4:35240" data-name="div.col-span-12.lg:col-span-8">
-            <h2 className="font-['Sora:SemiBold'] font-semibold leading-[1.3] relative shrink-0 text-[#0d0e10] tracking-[0.64px] w-[900px]" data-node-id="4:35241">
-              {t("t0023")}</h2>
-            <div className="font-['Sora:Regular'] font-normal leading-[0] min-w-full relative shrink-0 text-[#000102] w-[min-content] whitespace-pre-wrap" data-node-id="4:35242">
-              <p className="leading-[1.5] mb-[12px]">{t("t1002")}</p>
-              <p className="leading-[1.5] mb-[12px]">​</p>
-              <p className="leading-[1.5] mb-[12px]">{t("t1003")}</p>
-              <p className="leading-[1.5] mb-[12px]">​</p>
-              <p className="leading-[1.5]">{t("t1004")}</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div className="content-stretch flex h-[1080px] items-center justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:35238" data-name="section.process" data-section-id="process"><div className="case-process-copy"><h2>{text("03 · PROCESSO")}</h2><p>{text("A experiência de aprendizagem era compartilhada entre os clientes.")}</p>
+<p>{text("O que precisava mudar era a identidade visual de cada empresa.")}</p>
+<p>{text("Essa distinção orientou a criação de um Design System modular, separando componentes, padrões e jornadas das propriedades configuráveis de marca.")}</p>
+<p>{text("Com Design Tokens, diferentes identidades passaram a utilizar a mesma estrutura de interface.")}</p>
+<p>{text("Os protótipos ajudaram a verificar como as variações se comportavam sem exigir a reconstrução do aplicativo.")}</p><TaxonomyTags kind="process-tags" items={[{"icon":"description","label":"Contextualização"},{"icon":"groups","label":"Personas"},{"icon":"widgets","label":"Funcionalidades"},{"icon":"route","label":"Jornada"},{"icon":"view_list","label":"Itens do backlog"}]} /></div></div>
       <div className="content-stretch flex flex-col gap-[24px] h-[1080px] items-start justify-center overflow-clip px-[48px] py-[24px] relative shrink-0 w-[1920px]" data-node-id="4:35254" data-name="section.step.think">
-        <div className="content-stretch flex flex-col gap-[6px] items-start justify-center relative shrink-0 w-full" data-node-id="4:35255" data-name="header.step-header">
-          <div className="content-stretch flex gap-[16px] items-center relative shrink-0" data-node-id="4:35256">
-            <div className="bg-white border-2 border-[#101113] border-solid content-stretch flex flex-col items-center justify-center relative rounded-[51px] shrink-0 size-[40px]" data-node-id="4:35257">
-              <p className="[word-break:break-word] font-['Material_Symbols_Outlined:Regular'] font-normal leading-[1.6] relative shrink-0 text-[#101113] text-[20px] whitespace-nowrap" data-node-id="4:35258" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
-                wb_incandescent
-              </p>
-            </div>
-            <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.6] relative shrink-0 text-[#0d0d0d] text-[24px] whitespace-nowrap" data-node-id="4:35259">
-              {t("t1005")}</p>
-          </div>
-        </div>
-        <div className="content-stretch flex flex-col items-center overflow-clip relative shrink-0 w-full" data-node-id="4:35261" data-name="div.grid.grid-cols-12.w-full">
+        <TaxonomyTags kind="artifact" items={[{"icon":"fact_check","label":"Backlog do MVP"}]} />
+        <div className="artifact-viewport" tabIndex={0} role="region" aria-label={text("Artefatos do projeto")}><div className="content-stretch flex flex-col items-center overflow-clip relative shrink-0 w-full" data-node-id="4:35261" data-name="div.grid.grid-cols-12.w-full">
           <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full" data-node-id="4:35262" data-name="figure.artifact-visual.col-span-12" data-section-id="artifacts">
             <div className="content-stretch flex gap-[24px] items-center relative shrink-0 w-full" data-node-id="4:35263">
               <div className="content-stretch flex items-center justify-center relative shrink-0" data-node-id="4:35264">
@@ -268,25 +206,15 @@ export default function ArticleCustomizacaoCara() {
               </div>
             </div>
           </div>
-        </div>
+        </div></div>
       </div>
       <div className="content-stretch flex flex-col gap-[24px] h-[1080px] items-start justify-center overflow-clip px-[48px] py-[24px] relative shrink-0 w-[1920px]" data-node-id="4:35309" data-name="section.step.make">
-        <div className="content-stretch flex flex-col gap-[6px] items-start justify-center relative shrink-0 w-full" data-node-id="4:35310" data-name="header.step-header">
-          <div className="content-stretch flex gap-[16px] items-center relative shrink-0" data-node-id="4:35311">
-            <div className="bg-white border-2 border-[#101113] border-solid content-stretch flex flex-col items-center justify-center relative rounded-[51px] shrink-0 size-[40px]" data-node-id="4:35312">
-              <p className="[word-break:break-word] font-['Material_Symbols_Outlined:Regular'] font-normal leading-[1.6] relative shrink-0 text-[#101113] text-[20px] whitespace-nowrap" data-node-id="4:35313" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
-                handyman
-              </p>
-            </div>
-            <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.6] relative shrink-0 text-[#0d0d0d] text-[24px] whitespace-nowrap" data-node-id="4:35314">
-              {t("t0994")}</p>
-          </div>
-        </div>
-        <div className="content-stretch flex items-center justify-center relative shrink-0" data-node-id="4:35316" data-name="div.container">
+        <TaxonomyTags kind="artifact" items={[{"icon":"widgets","label":"Design System modular"}]} />
+        <div className="artifact-viewport" tabIndex={0} role="region" aria-label={text("Artefatos do projeto")}><div className="content-stretch flex items-center justify-center relative shrink-0" data-node-id="4:35316" data-name="div.container">
           <p className="[word-break:break-word] font-['Source_Sans_3:Regular'] font-normal leading-[1.6] relative shrink-0 text-[#0d0d0d] text-[24px] whitespace-nowrap" data-node-id="4:35317">
             {t("t1026")}</p>
-        </div>
-        <div className="content-stretch flex flex-col items-center overflow-clip relative shrink-0 w-full" data-node-id="4:35318" data-name="div.grid.grid-cols-12.w-full">
+        </div></div>
+        <div className="artifact-viewport" tabIndex={0} role="region" aria-label={text("Artefatos do projeto")}><div className="content-stretch flex flex-col items-center overflow-clip relative shrink-0 w-full" data-node-id="4:35318" data-name="div.grid.grid-cols-12.w-full">
           <div className="content-stretch flex gap-[24px] h-[754px] items-start overflow-clip relative shrink-0 w-full" data-node-id="4:35319" data-name="figure.artifact-visual.col-span-12" data-section-id="artifacts">
             <div className="aspect-[914/4096] flex-[1_0_0] min-w-px relative" data-node-id="4:35320" data-name="Section - 1. COLORS">
               <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -309,22 +237,12 @@ export default function ArticleCustomizacaoCara() {
               </div>
             </div>
           </div>
-        </div>
+        </div></div>
       </div>
       <div className="h-[1080px] relative shrink-0 w-[1920px]" data-node-id="4:35324" data-name="section.step.verify" />
       <div className="content-stretch flex flex-col gap-[24px] h-[1080px] items-start justify-center overflow-clip px-[48px] py-[24px] relative shrink-0 w-[1920px]" data-node-id="4:35325" data-name="section.step.make">
-        <div className="content-stretch flex flex-col gap-[6px] items-start justify-center relative shrink-0 w-full" data-node-id="4:35326" data-name="header.step-header">
-          <div className="content-stretch flex gap-[16px] items-center relative shrink-0" data-node-id="4:35327">
-            <div className="bg-white border-2 border-[#101113] border-solid content-stretch flex flex-col items-center justify-center relative rounded-[51px] shrink-0 size-[40px]" data-node-id="4:35328">
-              <p className="[word-break:break-word] font-['Material_Symbols_Outlined:Regular'] font-normal leading-[1.6] relative shrink-0 text-[#101113] text-[20px] whitespace-nowrap" data-node-id="4:35329" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
-                handyman
-              </p>
-            </div>
-            <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.6] relative shrink-0 text-[#0d0d0d] text-[24px] whitespace-nowrap" data-node-id="4:35330">
-              {t("t1027")}</p>
-          </div>
-        </div>
-        <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="4:35332" data-name="figure.artifact-visual" data-section-id="artifacts">
+        <TaxonomyTags kind="artifact" items={[{"icon":"draw","label":"Protótipos"}]} />
+        <div className="artifact-viewport" tabIndex={0} role="region" aria-label={text("Artefatos do projeto")}><div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="4:35332" data-name="figure.artifact-visual" data-section-id="artifacts">
           <div className="aspect-[2895/852] content-stretch flex gap-[15.121px] items-center relative shrink-0 w-full" data-node-id="4:35333">
             <div className="bg-white content-stretch flex flex-col gap-[26.397px] h-[535.481px] isolate items-center justify-end overflow-clip relative shadow-[0px_5.028px_10.056px_0px_rgba(0,0,0,0.2)] shrink-0 w-[247px]" data-node-id="4:35334" data-name="login\qrcode">
               <div className="content-stretch flex flex-[1_0_0] flex-col items-start justify-between min-h-px pb-[5.028px] pt-[30.168px] px-[10.056px] relative w-full z-[2]" data-node-id="4:35335" data-name="content">
@@ -1832,21 +1750,11 @@ export default function ArticleCustomizacaoCara() {
               </div>
             </div>
           </div>
-        </div>
+        </div></div>
       </div>
       <div className="content-stretch flex flex-col gap-[24px] h-[1080px] items-start justify-center overflow-clip px-[48px] py-[24px] relative shrink-0 w-[1920px]" data-node-id="4:35566" data-name="section.step.make">
-        <div className="content-stretch flex flex-col gap-[6px] items-start justify-center relative shrink-0 w-full" data-node-id="4:35567" data-name="header.step-header">
-          <div className="content-stretch flex gap-[16px] items-center relative shrink-0" data-node-id="4:35568">
-            <div className="bg-white border-2 border-[#101113] border-solid content-stretch flex flex-col items-center justify-center relative rounded-[51px] shrink-0 size-[40px]" data-node-id="4:35569">
-              <p className="[word-break:break-word] font-['Material_Symbols_Outlined:Regular'] font-normal leading-[1.6] relative shrink-0 text-[#101113] text-[20px] whitespace-nowrap" data-node-id="4:35570" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
-                handyman
-              </p>
-            </div>
-            <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.6] relative shrink-0 text-[#0d0d0d] text-[24px] whitespace-nowrap" data-node-id="4:35571">
-              {t("t1072")}</p>
-          </div>
-        </div>
-        <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full" data-node-id="4:35573" data-name="figure.artifact-visual" data-section-id="artifacts">
+        <TaxonomyTags kind="artifact" items={[{"icon":"palette","label":"Variações de marca"}]} />
+        <div className="artifact-viewport" tabIndex={0} role="region" aria-label={text("Artefatos do projeto")}><div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full" data-node-id="4:35573" data-name="figure.artifact-visual" data-section-id="artifacts">
           <div className="content-stretch flex items-center relative shrink-0 w-full" data-node-id="4:35574">
             <div className="content-stretch flex items-center justify-center p-[10px] relative shrink-0" data-node-id="4:35575">
               <p className="[word-break:break-word] font-['Source_Sans_3:Regular'] font-normal leading-[1.6] relative shrink-0 text-[#0d0d0d] text-[30px] whitespace-nowrap" data-node-id="4:35576">
@@ -3360,7 +3268,7 @@ export default function ArticleCustomizacaoCara() {
               </div>
             </div>
           </div>
-        </div>
+        </div></div>
       </div>
       <div className="content-stretch flex flex-col h-[1080px] items-start justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:35810" data-name="section.results" data-section-id="results">
         <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full" data-node-id="4:35811" data-name="div.flex.flex-col.w-full">

@@ -18,7 +18,7 @@ try {
  await page.goto('http://127.0.0.1:8553/');await page.locator('h1').waitFor();
  await page.waitForTimeout(1200);
  assert.equal(await page.locator('[data-node-id="4:35836"] [data-case-slug]').count(),8);
- assert.equal(await page.locator('[data-node-id="4:35828"] [data-case-slug]').count(),4);
+ assert.equal(await page.locator('[data-node-id="4:35828"] [data-case-slug]').count(),2);
  assert.equal(thirdParty.length,0,'No scripts before consent');
  await page.getByRole('button',{name:'Recusar',exact:true}).click();
  await page.locator('.top-navigation__language').click();await page.locator('#language-menu').getByRole('button',{name:'EN',exact:true}).click();

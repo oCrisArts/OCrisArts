@@ -1,4 +1,6 @@
 // @ts-nocheck -- Figma-generated exact visual component
+import PrototypeEmbed from "./PrototypeEmbed";
+import TaxonomyTags from "./TaxonomyTags";
 import { useI18n } from "../i18n";
 const assetPathPrefix = "/assets";
 const imgImgHeroImage = `${assetPathPrefix}/e6446.png`;
@@ -31,57 +33,7 @@ export default function ArticleCadastroAbandonado() {
             {t("t0276")}</h1>
           <p className="font-['Sora:Regular'] font-normal leading-[1.3] relative shrink-0 text-[#fcfdfe] text-[30px] w-[980px]" data-node-id="4:34977">
             {t("t0277")}</p>
-          <div className="content-start flex flex-wrap gap-[12px_16px] items-start leading-[1.6] relative shrink-0 text-[#230007] w-[1600px] whitespace-nowrap" data-node-id="4:34978" data-name="ul.meta">
-            <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:34979" data-name="double-diamond">
-              <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:34979;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
-                diamond
-              </p>
-              <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:34979;6066:625">
-                {t("t0278")}</p>
-            </div>
-            <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:34980" data-name="usability-testing">
-              <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:34980;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
-                touch_app
-              </p>
-              <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:34980;6066:625">
-                {t("t0163")}</p>
-            </div>
-            <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:34981" data-name="project-type-7">
-              <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:34981;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
-                devices
-              </p>
-              <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:34981;6066:625">
-                {t("t0279")}</p>
-            </div>
-            <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:34982" data-name="support-ticket-analysis">
-              <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:34982;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
-                support_agent
-              </p>
-              <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:34982;6066:625">
-                {t("t0280")}</p>
-            </div>
-            <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:34983" data-name="journey-mapping">
-              <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:34983;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
-                route
-              </p>
-              <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:34983;6066:625">
-                {t("t0015")}</p>
-            </div>
-            <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:34984" data-name="conversational-design">
-              <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:34984;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
-                forum
-              </p>
-              <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:34984;6066:625">
-                {t("t0281")}</p>
-            </div>
-            <div className="bg-[#fcfdfe] content-stretch flex gap-[8px] items-center justify-center px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="4:34985" data-name="figma">
-              <p className="font-['Material_Symbols_Outlined:Light'] font-light relative shrink-0 text-[10px]" data-node-id="I4:34985;6066:624" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
-                design_services
-              </p>
-              <p className="font-['Sora:Regular'] font-normal relative shrink-0 text-[11px]" data-node-id="I4:34985;6066:625">
-                {t("t0167")}</p>
-            </div>
-          </div>
+          <TaxonomyTags kind="meta" items={[{"icon":"cloud","label":"SaaS"},{"icon":"travel_explore","label":"Product Discovery"},{"icon":"route","label":"Mapa da jornada"},{"icon":"grid_view","label":"Matriz de priorização"},{"icon":"draw","label":"Wireframes"},{"icon":"draw","label":"Protótipos"},{"icon":"design_services","label":"Figma"},{"icon":"design_services","label":"Adobe XD"},{"icon":"movie","label":"After Effects"}]} />
         </div>
         <div className="absolute bg-[rgba(0,0,0,0.58)] h-[1080px] left-0 top-0 w-[1920px] z-[3]" data-node-id="4:34987" data-name="div.hero-overlay" />
         <div className="absolute h-[1080px] left-0 top-0 w-[1920px] z-[2]" data-node-id="4:34988" data-name="img.hero-image">
@@ -123,28 +75,15 @@ export default function ArticleCadastroAbandonado() {
             {t("t0284")}</p>
         </div>
       </div>
-      <div className="content-stretch flex h-[1080px] items-center justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:35002" data-name="section.process" data-section-id="process">
-        <div className="content-stretch flex flex-[1_0_0] items-center justify-center min-w-px overflow-clip relative" data-node-id="4:35003" data-name="div.grid.grid-cols-12.gap-24.w-full">
-          <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[24px] items-start min-w-px relative text-[16px]" data-node-id="4:35004" data-name="div.col-span-12.lg:col-span-7">
-            <h2 className="font-['Sora:SemiBold'] font-semibold leading-[1.3] relative shrink-0 text-[#0d0e10] tracking-[0.64px] w-[900px]" data-node-id="4:35005">
-              {t("t0023")}</h2>
-            <div className="font-['Sora:Regular'] font-normal leading-[0] min-w-full relative shrink-0 text-[#000102] w-[min-content] whitespace-pre-wrap" data-node-id="4:35006">
-              <p className="leading-[1.5] mb-0">{t("t0285")}</p>
-              <p className="leading-[1.5] mb-0">​</p>
-              <p className="leading-[1.5] mb-0">{t("t0286")}</p>
-              <p className="leading-[1.5] mb-0">​</p>
-              <p className="leading-[1.5]">{t("t0287")}</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div className="content-stretch flex h-[1080px] items-center justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:35002" data-name="section.process" data-section-id="process"><div className="case-process-copy"><h2>{text("03 · PROCESSO")}</h2><p>{text("Os tickets de suporte revelaram que a dificuldade não estava apenas no formulário.")}</p>
+<p>{text("Encontrar cursos, compreender o cadastro e recuperar o acesso também faziam parte do problema.")}</p>
+<p>{text("A análise da jornada mostrou que a experiência precisava começar antes do login.")}</p>
+<p>{text("A solução foi ampliar o LMS existente com um portal externo de cursos, conectando descoberta, cadastro e acesso à plataforma.")}</p>
+<p>{text("Os protótipos e testes ajudaram a revisar essa entrada e os pontos de recuperação após erros.")}</p><TaxonomyTags kind="process-tags" items={[{"icon":"handshake","label":"Alinhamento"},{"icon":"search","label":"Pesquisa"},{"icon":"lightbulb","label":"Ideação"},{"icon":"draw","label":"Prototipagem"},{"icon":"fact_check","label":"Validação"}]} /></div></div>
       <div className="bg-[#f2f2f2] content-stretch flex flex-col gap-px h-[1080px] items-start justify-center overflow-clip px-[48px] py-[24px] relative shrink-0 w-full" data-node-id="4:35018" data-name="section.step.discover">
-        <div className="content-stretch flex flex-col gap-[6px] items-start justify-center relative shrink-0 w-full" data-node-id="4:35019" data-name="header.step-header">
-          <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.4] relative shrink-0 text-[#0d0d0d] text-[20px] whitespace-nowrap" data-node-id="4:35021">
-            {t("t0288")}</p>
-        </div>
-        <div className="content-stretch flex isolate items-center relative shrink-0 w-full" data-node-id="4:35023" data-name="figure.artifact-visual" data-section-id="artifacts">
-          <div className="bg-white content-stretch drop-shadow-[0px_0px_0px_rgba(13,110,253,0.25)] flex flex-col gap-[24px] items-start justify-center px-[24px] py-[48px] relative rounded-[16px] shrink-0 w-[1824px] z-[1]" data-node-id="4:35024" data-name="user-flow">
+        <TaxonomyTags kind="artifact" items={[{"icon":"route","label":"Mapa da jornada"}]} />
+        <div className="artifact-viewport" tabIndex={0} role="region" aria-label={text("Artefatos do projeto")}><div className="content-stretch flex isolate items-center relative shrink-0 w-full" data-node-id="4:35023" data-name="figure.artifact-visual" data-section-id="artifacts">
+          <div className="bg-white content-stretch drop-shadow-[0px_0px_0px_rgba(13,110,253,0.25)] flex flex-col gap-[24px] items-start justify-center px-[24px] py-[48px] relative rounded-[16px] shrink-0 w-full max-w-[1824px] z-[1]" data-node-id="4:35024" data-name="user-flow">
             <div className="content-stretch flex gap-[24px] items-end relative shrink-0 w-full" data-node-id="4:35025" data-name="user-flow-map.row">
               <div className="flex flex-[1_0_0] flex-row items-end self-stretch" data-node-id="4:35026">
                 <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[8px] h-full items-end justify-center max-w-[200px] min-w-px pr-[8px] relative text-black" data-name="user-flow-map.title">
@@ -342,15 +281,12 @@ export default function ArticleCadastroAbandonado() {
               </div>
             </div>
           </div>
-        </div>
+        </div></div>
       </div>
       <div className="bg-[#f2f2f2] content-stretch flex flex-col gap-px h-[1080px] items-start justify-center overflow-clip px-[48px] py-[24px] relative shrink-0 w-full" data-node-id="4:35103" data-name="section.step.define">
-        <div className="content-stretch flex flex-col gap-[6px] items-start justify-center relative shrink-0 w-full" data-node-id="4:35104" data-name="header.step-header">
-          <p className="[word-break:break-word] font-['Sora:Regular'] font-normal leading-[1.4] relative shrink-0 text-[#0d0d0d] text-[20px] whitespace-nowrap" data-node-id="4:35106">
-            {t("t0314")}</p>
-        </div>
-        <div className="content-stretch flex isolate items-center justify-center relative shrink-0 w-full" data-node-id="4:35108" data-name="figure.artifact-visual" data-section-id="artifacts">
-          <div className="content-stretch flex flex-[1_0_0] items-center min-w-px relative z-[1]" data-node-id="4:35109" data-name="matrix">
+        <TaxonomyTags kind="artifact" items={[{"icon":"grid_view","label":"Matriz de priorização"}]} />
+        <div className="artifact-viewport" tabIndex={0} role="region" aria-label={text("Artefatos do projeto")}><div className="content-stretch flex isolate items-center justify-center relative shrink-0 w-full" data-node-id="4:35108" data-name="figure.artifact-visual" data-section-id="artifacts">
+          <div className="content-stretch flex flex-[1_0_0] flex-col items-center min-w-px relative z-[1] md:flex-row" data-node-id="4:35109" data-name="matrix">
             <div className="flex h-[749px] items-center justify-center relative shrink-0 w-[52px]" data-node-id="4:35110">
               <div className="-rotate-90 flex-none">
                 <div className="content-stretch flex gap-[21px] items-center pl-[20px] relative">
@@ -366,13 +302,13 @@ export default function ArticleCadastroAbandonado() {
                 </div>
               </div>
             </div>
-            <div className="content-stretch flex flex-[1_0_0] flex-col gap-[59px] items-start min-w-px relative" data-node-id="4:35114">
-              <div className="gap-x-[20px] gap-y-[20px] grid grid-cols-[repeat(2,minmax(0,1fr))] grid-rows-[repeat(2,minmax(0,1fr))] h-[652px] relative shrink-0 w-full" data-node-id="4:35115">
-                <div className="bg-white col-1 content-stretch drop-shadow-[0px_0px_10.95px_rgba(136,136,136,0.25)] flex flex-col gap-[8px] items-start justify-center justify-self-stretch px-[48px] py-[18px] relative rounded-bl-[8px] rounded-br-[8px] rounded-tl-[18px] rounded-tr-[8px] row-1 self-stretch shrink-0" data-node-id="4:35116" data-name="matriz-impacto-esforço">
+            <div className="content-stretch flex flex-[1_0_0] flex-col gap-[24px] md:gap-[59px] items-start min-w-px relative" data-node-id="4:35114">
+              <div className="gap-x-[16px] gap-y-[16px] md:gap-x-[20px] md:gap-y-[20px] grid grid-cols-1 md:grid-cols-[repeat(2,minmax(0,1fr))] grid-rows-auto md:grid-rows-[repeat(2,minmax(0,1fr))] h-auto md:h-[652px] relative shrink-0 w-full" data-node-id="4:35115">
+                <div className="bg-white col-1 content-stretch drop-shadow-[0px_0px_10.95px_rgba(136,136,136,0.25)] flex flex-col gap-[8px] items-start justify-center justify-self-stretch px-[24px] md:px-[48px] py-[16px] md:py-[18px] relative rounded-bl-[8px] rounded-br-[8px] rounded-tl-[18px] rounded-tr-[8px] row-1 self-stretch shrink-0" data-node-id="4:35116" data-name="matriz-impacto-esforço">
                   <div className="[word-break:break-word] content-stretch flex flex-col font-['Sora:Regular'] font-normal gap-[8px] items-start relative shrink-0 w-full" data-node-id="4:35117">
-                    <p className="leading-[1.6] relative shrink-0 text-[#006147] text-[30px] w-full" data-node-id="4:35118">
+                    <p className="leading-[1.6] relative shrink-0 text-[#006147] text-[20px] md:text-[30px] w-full" data-node-id="4:35118">
                       {t("t0316")}</p>
-                    <p className="leading-[1.6] relative shrink-0 text-[#006147] text-[16px] w-full" data-node-id="4:35119">
+                    <p className="leading-[1.6] relative shrink-0 text-[#006147] text-[14px] md:text-[16px] w-full" data-node-id="4:35119">
                       {t("t0317")}</p>
                     <ul className="block leading-[0] list-disc relative shrink-0 text-[16px] text-black w-full" data-node-id="4:35120">
                       <li className="mb-0 ms-[24px]">
@@ -391,10 +327,10 @@ export default function ArticleCadastroAbandonado() {
                     <p className="[word-break:break-word] font-['Font_Awesome_6_Pro:Light'] leading-[1.6] not-italic relative shrink-0 text-[18px] text-white whitespace-nowrap" data-node-id="4:35122">{`\uF135`}</p>
                   </div>
                 </div>
-                <div className="bg-white col-2 content-stretch drop-shadow-[0px_0px_10.95px_rgba(136,136,136,0.25)] flex flex-col gap-[8px] items-start justify-center justify-self-stretch px-[48px] py-[18px] relative rounded-[8px] row-1 self-stretch shrink-0" data-node-id="4:35123" data-name="matriz-impacto-esforço">
+                <div className="bg-white col-2 content-stretch drop-shadow-[0px_0px_10.95px_rgba(136,136,136,0.25)] flex flex-col gap-[8px] items-start justify-center justify-self-stretch px-[24px] md:px-[48px] py-[16px] md:py-[18px] relative rounded-[8px] row-1 self-stretch shrink-0" data-node-id="4:35123" data-name="matriz-impacto-esforço">
                   <div className="[word-break:break-word] content-stretch flex flex-col font-['Sora:Regular'] font-normal gap-[8px] items-start relative shrink-0 w-full" data-node-id="4:35124">
-                    <p className="leading-[1.6] relative shrink-0 text-[#008c66] text-[30px] w-full" data-node-id="4:35125">{t("t0322")}</p>
-                    <p className="leading-[1.6] relative shrink-0 text-[#008c66] text-[16px] w-full" data-node-id="4:35126">
+                    <p className="leading-[1.6] relative shrink-0 text-[#008c66] text-[20px] md:text-[30px] w-full" data-node-id="4:35125">{t("t0322")}</p>
+                    <p className="leading-[1.6] relative shrink-0 text-[#008c66] text-[14px] md:text-[16px] w-full" data-node-id="4:35126">
                       {t("t0323")}</p>
                     <ul className="block leading-[0] list-disc relative shrink-0 text-[16px] text-black w-full" data-node-id="4:35127">
                       <li className="mb-0 ms-[24px]">
@@ -413,11 +349,11 @@ export default function ArticleCadastroAbandonado() {
                     <p className="[word-break:break-word] font-['Font_Awesome_6_Pro:Light'] leading-[1.6] not-italic relative shrink-0 text-[18px] text-white whitespace-nowrap" data-node-id="4:35129">{`\uF1E5`}</p>
                   </div>
                 </div>
-                <div className="bg-white col-1 content-stretch drop-shadow-[0px_0px_10.95px_rgba(136,136,136,0.25)] flex flex-col gap-[8px] items-start justify-center justify-self-stretch px-[48px] py-[18px] relative rounded-[8px] row-2 self-stretch shrink-0" data-node-id="4:35130" data-name="matriz-impacto-esforço">
+                <div className="bg-white col-1 content-stretch drop-shadow-[0px_0px_10.95px_rgba(136,136,136,0.25)] flex flex-col gap-[8px] items-start justify-center justify-self-stretch px-[24px] md:px-[48px] py-[16px] md:py-[18px] relative rounded-[8px] row-2 self-stretch shrink-0" data-node-id="4:35130" data-name="matriz-impacto-esforço">
                   <div className="[word-break:break-word] content-stretch flex flex-col font-['Sora:Regular'] font-normal gap-[8px] items-start relative shrink-0 w-full" data-node-id="4:35131">
-                    <p className="leading-[1.6] relative shrink-0 text-[#8c0000] text-[30px] w-full" data-node-id="4:35132">
+                    <p className="leading-[1.6] relative shrink-0 text-[#8c0000] text-[20px] md:text-[30px] w-full" data-node-id="4:35132">
                       {t("t0328")}</p>
-                    <p className="leading-[1.6] relative shrink-0 text-[#8c0000] text-[16px] w-full" data-node-id="4:35133">
+                    <p className="leading-[1.6] relative shrink-0 text-[#8c0000] text-[14px] md:text-[16px] w-full" data-node-id="4:35133">
                       {t("t0329")}</p>
                     <ul className="block leading-[0] list-disc relative shrink-0 text-[16px] text-black w-full" data-node-id="4:35134">
                       <li className="mb-0 ms-[24px]">
@@ -436,11 +372,11 @@ export default function ArticleCadastroAbandonado() {
                     <p className="[word-break:break-word] font-['Font_Awesome_6_Pro:Light'] leading-[1.6] not-italic relative shrink-0 text-[18px] text-white whitespace-nowrap" data-node-id="4:35136">{`\uF044`}</p>
                   </div>
                 </div>
-                <div className="bg-white col-2 content-stretch drop-shadow-[0px_0px_10.95px_rgba(136,136,136,0.25)] flex flex-col gap-[8px] items-start justify-center justify-self-stretch px-[48px] py-[24px] relative rounded-[8px] row-2 self-stretch shrink-0" data-node-id="4:35137" data-name="matriz-impacto-esforço">
+                <div className="bg-white col-2 content-stretch drop-shadow-[0px_0px_10.95px_rgba(136,136,136,0.25)] flex flex-col gap-[8px] items-start justify-center justify-self-stretch px-[24px] md:px-[48px] py-[16px] md:py-[24px] relative rounded-[8px] row-2 self-stretch shrink-0" data-node-id="4:35137" data-name="matriz-impacto-esforço">
                   <div className="[word-break:break-word] content-stretch flex flex-col font-['Sora:Regular'] font-normal gap-[8px] items-start relative shrink-0 w-full" data-node-id="4:35138">
-                    <p className="leading-[1.6] relative shrink-0 text-[#a00] text-[30px] w-full" data-node-id="4:35139">
+                    <p className="leading-[1.6] relative shrink-0 text-[#a00] text-[20px] md:text-[30px] w-full" data-node-id="4:35139">
                       {t("t0334")}</p>
-                    <p className="leading-[1.6] relative shrink-0 text-[#a00] text-[16px] w-full" data-node-id="4:35140">
+                    <p className="leading-[1.6] relative shrink-0 text-[#a00] text-[14px] md:text-[16px] w-full" data-node-id="4:35140">
                       {t("t0335")}</p>
                     <ul className="block leading-[0] list-disc relative shrink-0 text-[16px] text-black w-full" data-node-id="4:35141">
                       <li className="mb-0 ms-[24px]">
@@ -472,14 +408,14 @@ export default function ArticleCadastroAbandonado() {
               </div>
             </div>
           </div>
-        </div>
+        </div></div>
       </div>
-      <div className="bg-[#f2f2f2] content-stretch flex flex-col gap-px h-[1080px] items-start justify-center overflow-clip px-[48px] py-[24px] relative shrink-0 w-full" data-node-id="4:35155" data-name="section.step.wireframes">
-        <div className="content-stretch flex flex-col gap-px items-start justify-center relative shrink-0 w-full" data-node-id="4:35156">
+      <div className="bg-[#f2f2f2] content-stretch flex flex-col gap-px h-[1080px] items-start justify-center overflow-clip px-[48px] py-[24px] relative shrink-0 w-full" data-node-id="4:35155" data-name="section.step.wireframes"><TaxonomyTags kind="artifact" items={[{"icon":"draw","label":"Wireframes"}]} />
+        <div className="artifact-viewport" tabIndex={0} role="region" aria-label={text("Artefatos do projeto")}><div className="content-stretch flex flex-col gap-px items-start justify-center relative shrink-0 w-full" data-node-id="4:35156">
           <p className="[word-break:break-word] font-['Source_Sans_3:Regular'] font-normal leading-[1.6] relative shrink-0 text-[#0d0d0d] text-[24px] whitespace-nowrap" data-node-id="4:35157">
             {t("t0339")}</p>
-        </div>
-        <div className="content-stretch flex flex-[1_0_0] gap-[24px] isolate items-center justify-center min-h-px relative w-full" data-node-id="4:35159">
+        </div></div>
+        <div className="artifact-viewport" tabIndex={0} role="region" aria-label={text("Artefatos do projeto")}><div className="content-stretch flex flex-[1_0_0] gap-[24px] isolate items-center justify-center min-h-px relative w-full" data-node-id="4:35159">
           <div className="bg-[#e9ecef] content-stretch drop-shadow-[0px_1px_1.5px_rgba(0,0,0,0.1),0px_1px_1px_rgba(0,0,0,0.06)] flex items-center p-[4.738px] relative rounded-[5.33px] shrink-0 z-[4]" data-node-id="4:35160">
             <div className="h-[889px] relative shrink-0 w-[405px]" data-node-id="4:35161" data-name="inicio">
               <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -508,13 +444,13 @@ export default function ArticleCadastroAbandonado() {
               </div>
             </div>
           </div>
-        </div>
+        </div></div>
       </div>
       <div className="bg-[#eee] content-stretch flex flex-col gap-px h-[1080px] items-start justify-center overflow-clip px-[48px] py-[24px] relative shrink-0 w-full" data-node-id="4:35168" data-name="section.step.develop">
-        <div className="content-stretch flex flex-col gap-px items-start justify-center relative shrink-0 w-full" data-node-id="4:35169" data-name="div.container">
+        <div className="artifact-viewport" tabIndex={0} role="region" aria-label={text("Artefatos do projeto")}><div className="content-stretch flex flex-col gap-px items-start justify-center relative shrink-0 w-full" data-node-id="4:35169" data-name="div.container">
           <p className="[word-break:break-word] font-['Source_Sans_3:Regular'] font-normal leading-[1.6] relative shrink-0 text-[#0d0d0d] text-[24px] whitespace-nowrap" data-node-id="4:35170">{t("t0340")}</p>
-        </div>
-        <div className="content-stretch flex flex-col items-center overflow-clip relative shrink-0 w-full" data-node-id="4:35172" data-name="div.grid.grid-cols-12.w-full">
+        </div></div>
+        <div className="artifact-viewport" tabIndex={0} role="region" aria-label={text("Artefatos do projeto")}><div className="content-stretch flex flex-col items-center overflow-clip relative shrink-0 w-full" data-node-id="4:35172" data-name="div.grid.grid-cols-12.w-full">
           <div className="content-stretch flex gap-[24px] isolate items-center py-[29px] relative shrink-0 w-full" data-node-id="4:35173" data-name="figure.artifact-visual.col-span-12" data-section-id="artifacts">
             <div className="flex flex-row items-center self-stretch" data-node-id="4:35174">
               <div className="aspect-[1386/2152] bg-white content-stretch flex h-full items-start p-[8px] relative rounded-[14px] shrink-0 z-[3]">
@@ -540,19 +476,11 @@ export default function ArticleCadastroAbandonado() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="absolute content-stretch flex gap-[10px] h-[51px] items-center left-[48px] top-[55px] w-[1600px]" data-node-id="4:35179" data-name="header.step-header">
-          <p className="[word-break:break-word] font-['Material_Symbols_Outlined:Regular'] font-normal leading-[1.6] relative shrink-0 text-[#000102] text-[32px] whitespace-nowrap" data-node-id="4:35180" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
-            design_services
-          </p>
-          <div className="content-stretch flex flex-[1_0_0] flex-col gap-[10px] items-start justify-center min-w-px relative" data-node-id="4:35181" data-name="div.flex.flex-col.flex-1">
-            <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.4] relative shrink-0 text-[#000102] text-[16px] w-[328px]" data-node-id="4:35182">
-              {t("t0341")}</p>
-          </div>
-        </div>
+        </div></div>
+        <TaxonomyTags kind="artifact" items={[{"icon":"draw","label":"Protótipos"}]} />
       </div>
       <div className="bg-[#eee] content-stretch flex flex-col gap-px h-[1080px] items-start justify-center overflow-clip px-[48px] py-[24px] relative shrink-0 w-full" data-node-id="4:35184" data-name="section.step.deliver">
-        <div className="content-stretch flex flex-col items-center overflow-clip relative shrink-0 w-full" data-node-id="4:35185" data-name="div.grid.grid-cols-12.w-full">
+        <div className="artifact-viewport" tabIndex={0} role="region" aria-label={text("Artefatos do projeto")}><div className="content-stretch flex flex-col items-center overflow-clip relative shrink-0 w-full" data-node-id="4:35185" data-name="div.grid.grid-cols-12.w-full">
           <div className="content-stretch flex gap-[24px] isolate items-start relative shrink-0 w-full" data-node-id="4:35186" data-name="figure.artifact-visual.col-span-12" data-section-id="artifacts">
             <div className="aspect-[1366/2092] flex-[1_0_0] min-w-px relative shadow-[0px_16px_48px_0px_rgba(0,0,0,0.17)] z-[6]" data-node-id="4:35187" data-name="inicio">
               <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -585,18 +513,11 @@ export default function ArticleCadastroAbandonado() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="absolute content-stretch flex gap-[10px] h-[51px] items-center left-[48px] top-[223px] w-[1600px]" data-node-id="4:35193" data-name="header.step-header">
-          <p className="[word-break:break-word] font-['Material_Symbols_Outlined:Regular'] font-normal leading-[1.6] relative shrink-0 text-[#000102] text-[32px] whitespace-nowrap" data-node-id="4:35194" style={{ fontVariationSettings: '"FILL" 0, "GRAD" 0' }}>
-            fact_check
-          </p>
-          <div className="content-stretch flex flex-[1_0_0] flex-col gap-[10px] items-start justify-center min-w-px relative" data-node-id="4:35195" data-name="div.flex.flex-col.flex-1">
-            <p className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.4] relative shrink-0 text-[#000102] text-[16px] w-[328px]" data-node-id="4:35196">
-              {t("t0342")}</p>
-          </div>
-        </div>
+        </div></div>
+        <TaxonomyTags kind="artifact" items={[{"icon":"web","label":"Interfaces do portal"}]} />
       </div>
-      <div className="content-stretch flex flex-col h-[1080px] items-start justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:35198" data-name="section.results" data-section-id="results">
+      <PrototypeEmbed title="Portal Konviva" url="https://portalkonviva.figma.site/" nodeId="6646:28729" />
+<div className="content-stretch flex flex-col h-[1080px] items-start justify-center overflow-clip px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:35198" data-name="section.results" data-section-id="results">
         <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full" data-node-id="4:35199" data-name="div.flex.flex-col.w-full">
           <h2 className="[word-break:break-word] font-['Sora:SemiBold'] font-semibold leading-[1.3] relative shrink-0 text-[#000102] text-[16px] tracking-[0.64px] w-[900px]" data-node-id="4:35200">
             {t("t0149")}</h2>

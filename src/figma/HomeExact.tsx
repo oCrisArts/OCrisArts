@@ -834,6 +834,7 @@ export default function MainHome() {
           </div>
         </div>
       </section>
+      {false && <>
       <section className="bg-[#eeeff1] content-stretch flex h-[1080px] px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:35965" data-name="section.contact-cta">
         <div className="flex gap-[64px] items-center w-full lg:flex-row flex-col" data-node-id="4:35966" data-name="row">
           <div className="flex flex-col gap-[24px] w-full lg:w-1/2" data-node-id="4:35967" data-name="col">
@@ -975,6 +976,7 @@ export default function MainHome() {
           </div>
         </div>
       </footer>
+      </>}
       <div className="absolute bottom-0 content-stretch flex flex-col items-center left-0 w-[1920px]" data-node-id="4:36003" data-name="Navbar">
         <NavbarStandartFillGlobalDefaultFooter cases={false} className="bg-[#0d0e10] content-stretch flex items-center relative rounded-tl-[8px] rounded-tr-[8px] shrink-0" lang={false} social={false} />
       </div>

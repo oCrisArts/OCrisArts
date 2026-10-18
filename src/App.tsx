@@ -16,6 +16,7 @@ import {
 import { LanguageProvider, useI18n, languages, localizedPath, basePath } from "./i18n"
 import { cases } from "./seo/pages"
 import { caseSlugs } from "./figma/CaseCard"
+import SiteContactFooter from "./figma/SiteContactFooter"
 import RouterTracking from "./analytics/RouterTracking"
 import ConsentPreferences from "./analytics/Consent"
 import RouteSeo from "./seo/RouteSeo"
@@ -444,7 +445,7 @@ function TopNavigation() {
   )
 }
 
-function SharedContactFooter() {
+function LegacyContactFooter() {
   const { text, path, language } = useI18n()
   return (
     <>
@@ -551,6 +552,10 @@ function SharedContactFooter() {
       </footer>
     </>
   )
+}
+
+function SharedContactFooter() {
+  return <SiteContactFooter />
 }
 
 function HomePage() {
@@ -662,7 +667,6 @@ function HomePage() {
         "4:35850": "atuacao",
         "4:35862": "sobre",
         "4:35946": "evidencias",
-        "4:35965": "contato",
       }
       Object.entries(sectionIds).forEach(([node, id]) => {
         element.querySelector<HTMLElement>(`[data-node-id="${node}"]`)!.id = id
@@ -757,6 +761,7 @@ function HomePage() {
     <>
       <ExactStage ref={root} mode="home">
         <HomeExact />
+        <SharedContactFooter />
       </ExactStage>
       <BottomNavigation mode="home" />
     </>

@@ -608,7 +608,7 @@ export default function MainHome() {
             <h2 className="font-['Sora:Regular'] font-normal leading-[1.15] text-[#000102] text-[36px]" data-node-id="4:35865">
               {t("t0599")}
             </h2>
-            <p className="font-['Sora:Medium'] font-medium leading-[1.2] text-[#6b0013] text-[44px]" data-node-id="4:35866">
+            <p className="font-['Sora:Regular'] font-normal leading-[1.2] text-[#6b0013] text-[44px]" data-node-id="4:35866">
               {t("t0600")}
             </p>
           </div>
@@ -625,7 +625,7 @@ export default function MainHome() {
                   psychology
                 </span>
                 <span className="font-['Sora:Regular'] font-normal text-[11px]">
-                  {t("t0650")}
+                  {t("t1090")}
                 </span>
               </li>
               <li className="bg-[#f9f9f9] flex gap-[8px] items-center px-[8px] py-[4px] rounded-[12px]" data-node-id="4:35876" data-name="tag">
@@ -633,7 +633,7 @@ export default function MainHome() {
                   cycle
                 </span>
                 <span className="font-['Sora:Regular'] font-normal text-[11px]">
-                  {t("t0651")}
+                  {t("t1091")}
                 </span>
               </li>
               <li className="bg-[#f9f9f9] flex gap-[8px] items-center px-[8px] py-[4px] rounded-[12px]" data-node-id="4:35877" data-name="tag">
@@ -641,7 +641,7 @@ export default function MainHome() {
                   monitoring
                 </span>
                 <span className="font-['Sora:Regular'] font-normal text-[11px]">
-                  {t("t0652")}
+                  {t("t1092")}
                 </span>
               </li>
               <li className="bg-[#f9f9f9] flex gap-[8px] items-center px-[8px] py-[4px] rounded-[12px]" data-node-id="4:35878" data-name="tag">
@@ -649,7 +649,7 @@ export default function MainHome() {
                   travel_explore
                 </span>
                 <span className="font-['Sora:Regular'] font-normal text-[11px]">
-                  {t("t0653")}
+                  {t("t1093")}
                 </span>
               </li>
               <li className="bg-[#f9f9f9] flex gap-[8px] items-center px-[8px] py-[4px] rounded-[12px]" data-node-id="4:35879" data-name="tag">
@@ -657,7 +657,7 @@ export default function MainHome() {
                   hub
                 </span>
                 <span className="font-['Sora:Regular'] font-normal text-[11px]">
-                  {t("t0654")}
+                  {t("t1094")}
                 </span>
               </li>
               <li className="bg-[#f9f9f9] flex gap-[8px] items-center px-[8px] py-[4px] rounded-[12px]" data-node-id="4:35879" data-name="tag">
@@ -665,7 +665,7 @@ export default function MainHome() {
                   diamond
                 </span>
                 <span className="font-['Sora:Regular'] font-normal text-[11px]">
-                  {t("t0655")}
+                  {t("t1095")}
                 </span>
               </li>
               <li className="bg-[#f9f9f9] flex gap-[8px] items-center px-[8px] py-[4px] rounded-[12px]" data-node-id="4:35879" data-name="tag">
@@ -673,9 +673,10 @@ export default function MainHome() {
                   view_list
                 </span>
                 <span className="font-['Sora:Regular'] font-normal text-[11px]">
-                  {t("t0656")}
+                  {t("t1096")}
                 </span>
               </li>
+              
             </ul>
           </div>
         </div>
@@ -685,24 +686,20 @@ export default function MainHome() {
           </video>
         </div>
       </section>
-      <div className="bg-[#000102] content-stretch flex flex-col gap-[10px] h-[1080px] items-start overflow-clip relative shrink-0 w-[1920px]" data-node-id="4:35925" data-name="section.case-stories">
-        <div className="bg-[#000102] content-stretch flex flex-col gap-[10px] h-[1080px] items-start overflow-clip relative shrink-0 w-[1920px]" data-node-id="4:35926" data-name="div.motion-slideshow.vegas.loop.fade2">
-          <div className="bg-[#000102] h-[1080px] overflow-clip relative shrink-0 w-[1920px]" data-node-id="4:35927" data-name="video.slide-00.intro.problem-to-evidence">
-            <div className="[word-break:break-word] absolute content-stretch flex flex-col font-['Sora:Regular'] font-normal gap-[14px] items-start left-[160px] overflow-clip text-[#fcfdfe] top-[720px] w-[980px] whitespace-nowrap" data-node-id="4:35928" data-name="div.overlay-copy.intro">
-              <p className="leading-[1.15] relative shrink-0 text-[44px]" data-node-id="4:35929">
-                {t("t0606")}</p>
-              <p className="leading-[0] relative shrink-0 text-[0px]" data-node-id="4:35930">
-                <span className="leading-[1.15] text-[54px]">{t("t0607")}</span>
-                <span className="font-['Sora:Bold'] font-bold leading-[1.15] text-[#9e1030] text-[54px]">{t("t1082")}</span>
-                <span className="leading-[1.15] text-[54px]">.</span>
-              </p>
-            </div>
-          </div>
+      <section className="bg-[#000102] flex h-[1080px] items-center px-[160px] py-[128px] relative shrink-0 w-[1920px] lg:flex-row flex-col" data-node-id="4:35925" data-name="section.case-stories">
+        <div className="flex flex-col gap-[14px] w-full lg:w-1/2" data-node-id="4:35928" data-name="content">
+          <p className="font-['Sora:Regular'] font-normal leading-[1.15] text-[#fcfdfe] text-[44px]" data-node-id="4:35929">
+            {t("t0606")}
+          </p>
+          <p className="font-['Sora:Regular'] font-normal leading-[1.15] text-[#fcfdfe] text-[54px]" data-node-id="4:35930">
+            {t("t0607")}{" "}
+            <span className="font-['Sora:Bold'] font-bold text-[#9e1030]">{t("t1082")}</span>.
+          </p>
         </div>
-        <div className="absolute left-[420px] size-[1080px] top-0" data-node-id="4:35945" data-name="poster.hero-fallback">
-          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPosterHeroFallback} />
+        <div className="w-full lg:w-1/2" data-node-id="4:35945" data-name="poster.hero-fallback">
+          <img alt="" className="block max-w-none size-full" src={imgPosterHeroFallback} />
         </div>
-      </div>
+      </section>
       <div className="bg-[#eeeff1] content-stretch flex h-[1080px] items-center px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:35946" data-name="section.evidence">
         <div className="content-stretch flex flex-[1_0_0] flex-col gap-[16px] items-start min-w-px relative rounded-[16px]" data-node-id="4:35947" data-name="div.flex.flex-col.w-full">
           <div className="[word-break:break-word] content-stretch flex flex-col font-['Sora:Regular'] font-normal items-start relative shrink-0 text-[#000102] w-full" data-node-id="4:35948" data-name="div.flex.flex-col.w-full">

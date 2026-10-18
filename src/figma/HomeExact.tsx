@@ -243,7 +243,7 @@ export default function MainHome() {
           </div>
         </div>
       </div>
-      <div className="bg-[#020305] content-stretch flex flex-col h-[1080px] isolate items-center justify-end overflow-clip pb-[226px] relative shrink-0 w-full" data-node-id="4:35821" data-name="header.intro">
+      <header className="bg-[#020305] content-stretch flex flex-col h-[1080px] isolate items-center justify-end overflow-clip pb-[226px] relative shrink-0 w-full" data-node-id="4:35821" data-name="header.intro">
         <div className="[word-break:break-word] content-stretch flex flex-col gap-[16px] items-center relative shrink-0 text-[#fcfdfe] w-full whitespace-nowrap z-[3]" data-node-id="4:35822" data-name="div.flex.flex-col.w-full">
           <h1 className="font-['Sora:SemiBold'] font-semibold leading-[1.1] relative shrink-0 text-[36px]" data-node-id="4:35823">
             {t("t0565")}</h1>
@@ -255,8 +255,8 @@ export default function MainHome() {
             <source src="/videos/hero.mp4" type="video/mp4" />
           </video>
         </div>
-      </div>
-      <div className="content-stretch flex flex-col h-[1080px] isolate items-center justify-center pb-[112px] relative shrink-0 w-[1920px]" data-node-id="4:35827" data-name="section.cases">
+      </header>
+      <section className="content-stretch flex flex-col h-[1080px] isolate items-center justify-center pb-[112px] relative shrink-0 w-[1920px]" data-node-id="4:35827" data-name="section.cases">
         <div className="absolute content-stretch flex gap-[24px] items-center left-[316px] top-[-200px] z-[4]" data-node-id="4:35828" data-name="div.case-track.scroll-linked-x">
           <a className="bg-[#eeeff1] border border-[#bbbcbe] border-solid content-stretch flex flex-col h-[568px] items-start justify-center overflow-clip relative rounded-[8px] shrink-0 w-[320px]" data-node-id="4:35829" data-name="article.case-card" data-case-slug="navegacao-confusa" href={path("/cases/navegacao-confusa")}>
             <div className="content-stretch flex flex-[1_0_0] isolate items-center justify-center mb-[-140px] min-h-px overflow-clip relative w-full" data-node-id="I4:35829;5339:9858" data-name="card-figure">
@@ -522,8 +522,8 @@ export default function MainHome() {
             <p className="leading-[1.5]">{t("t0577")}</p>
           </div>
         </div>
-      </div>
-      <div className="bg-[#eeeff1] content-stretch flex flex-col gap-[24px] h-[1080px] items-start justify-center px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:35850" data-name="section.services">
+      </section>
+      <section className="bg-[#eeeff1] content-stretch flex flex-col gap-[24px] h-[1080px] items-start justify-center px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:35850" data-name="section.services">
         <div className="gap-x-[32px] grid grid-cols-[repeat(12,minmax(0,1fr))] grid-rows-[repeat(1,minmax(0,1fr))] h-[94px] relative shrink-0 w-full" data-node-id="4:35851" data-name="div.grid.grid-cols-12.gap-8.w-full">
           <div className="[word-break:break-word] col-[1/span_6] content-stretch flex flex-col font-['Sora:Regular'] font-normal items-start justify-self-stretch relative row-1 self-center shrink-0 text-[#000102] whitespace-nowrap" data-node-id="4:35852" data-name="div.col-span-12.lg:col-span-6">
             <h2 className="leading-[1.15] relative shrink-0 text-[44px]" data-node-id="4:35853">{t("t0578")}</h2>
@@ -601,7 +601,7 @@ export default function MainHome() {
             videoSrc="/videos/service-ux.mp4"
           />
         </div>
-      </div>
+      </section>
       <section id="sobre" className="bg-[#eeeff1] flex gap-[64px] h-[1080px] px-[160px] py-[128px] relative shrink-0 w-[1920px] lg:flex-row flex-col" data-node-id="4:35862" data-name="section.about-teaser">
         <div className="flex flex-col gap-[16px] w-full lg:w-1/2" data-node-id="4:35863" data-name="col">
           <div className="flex flex-col gap-[8px]" data-node-id="4:35864" data-name="title">
@@ -700,7 +700,7 @@ export default function MainHome() {
           <img alt="" className="block max-w-none size-full" src={imgPosterHeroFallback} />
         </div>
       </section>
-      <div className="bg-[#eeeff1] content-stretch flex h-[1080px] items-center px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:35946" data-name="section.evidence">
+      <section className="bg-[#eeeff1] content-stretch flex h-[1080px] items-center px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:35946" data-name="section.evidence">
         <div className="content-stretch flex flex-[1_0_0] flex-col gap-[16px] items-start min-w-px relative rounded-[16px]" data-node-id="4:35947" data-name="div.flex.flex-col.w-full">
           <div className="[word-break:break-word] content-stretch flex flex-col font-['Sora:Regular'] font-normal items-start relative shrink-0 text-[#000102] w-full" data-node-id="4:35948" data-name="div.flex.flex-col.w-full">
             <h2 className="leading-[1.15] relative shrink-0 text-[44px] whitespace-nowrap" data-node-id="4:35949">
@@ -833,7 +833,7 @@ export default function MainHome() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <section className="bg-[#eeeff1] content-stretch flex h-[1080px] px-[160px] py-[128px] relative shrink-0 w-[1920px]" data-node-id="4:35965" data-name="section.contact-cta">
         <div className="flex gap-[64px] items-center w-full lg:flex-row flex-col" data-node-id="4:35966" data-name="row">
           <div className="flex flex-col gap-[24px] w-full lg:w-1/2" data-node-id="4:35967" data-name="col">
@@ -873,7 +873,7 @@ export default function MainHome() {
           </form>
         </div>
       </section>
-      <div className="content-stretch flex flex-col h-[1080px] items-start justify-center overflow-clip relative shrink-0 w-[1920px]" data-node-id="4:35979" data-name="footer.site">
+      <footer className="content-stretch flex flex-col h-[1080px] items-start justify-center overflow-clip relative shrink-0 w-[1920px]" data-node-id="4:35979" data-name="footer.site">
         <div className="content-stretch flex flex-[1_0_0] flex-col gap-[36px] items-center justify-center min-h-[540px] px-[48px] py-[160px] relative w-full" data-node-id="4:35980" data-name="div.flex.flex-col.w-full">
           <div className="content-stretch flex items-center justify-center relative shrink-0 w-full" data-node-id="4:35981" data-name="div.flex.flex-row.w-full">
             <div className="content-stretch flex flex-[1_0_0] flex-col items-center min-w-px relative" data-node-id="4:35982" data-name="div.flex.flex-col.w-full">
@@ -974,7 +974,7 @@ export default function MainHome() {
             </div>
           </div>
         </div>
-      </div>
+      </footer>
       <div className="absolute bottom-0 content-stretch flex flex-col items-center left-0 w-[1920px]" data-node-id="4:36003" data-name="Navbar">
         <NavbarStandartFillGlobalDefaultFooter cases={false} className="bg-[#0d0e10] content-stretch flex items-center relative rounded-tl-[8px] rounded-tr-[8px] shrink-0" lang={false} social={false} />
       </div>

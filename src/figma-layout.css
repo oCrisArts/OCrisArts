@@ -24,12 +24,20 @@
 .case-process-copy h2 { font: 600 16px/1.3 "Sora:SemiBold", sans-serif; }
 .exact-canvas :is([data-name="section.context"], [data-name="section.challenge"], [data-name="section.results"], .shared-contact, .shared-footer) :is(div,p,h2,form) { max-width: 100%; min-width: 0; }
 .exact-canvas :is([data-name="section.context"], [data-name="section.results"]) > div { height: auto; }
+.exact-canvas [data-name="section.results"] [data-name="div.metrics"] {
+  width: 100%; height: auto; min-height: 100px; overflow: visible;
+  display: flex; flex-wrap: wrap; gap: 32px 24px;
+}
+.exact-canvas [data-name="section.results"] [data-name="div.metrics"] > [data-name^="metric-result"] {
+  width: auto; min-width: min(280px,100%); flex: 1 1 280px;
+}
+.exact-canvas [data-name="section.results"] [data-name="<title>"] { min-width: 0; white-space: normal; }
 .exact-canvas [data-name="section.challenge"] { overflow: clip; }
 .exact-canvas [data-name="section.challenge"] h2 { width: 100%; }
 .exact-canvas [data-name="section.challenge"] > div:first-child > p { width: 100%; font-size: clamp(26px, 1.875vw, 36px); }
 .exact-canvas [data-name^="section.step"] { overflow: clip; gap: 24px; }
 .artifact-viewport, .artifact-carousel { width: 100%; min-width: 0; position: relative; z-index: 2; }
-.artifact-viewport { overflow: hidden; max-height: 85svh; overscroll-behavior-x: contain; }
+.artifact-viewport { overflow: visible; max-height: none; overscroll-behavior-x: contain; }
 .artifact-viewport > div { width: 100%; max-width: 100%; flex-shrink: 0; }
 .artifact-viewport:focus-visible, .artifact-carousel:focus-visible { outline: 2px solid #6b0013; outline-offset: 4px; }
 .artifact-carousel { overflow: hidden; touch-action: pan-y; }
@@ -46,66 +54,6 @@
   max-width: 100% !important;
   max-height: 100% !important;
   object-fit: contain !important;
-}
-/* Responsive fixes for artifact content */
-@media (max-width: 768px) {
-  .artifact-viewport > div {
-    min-width: 100% !important;
-    padding: 16px !important;
-  }
-  /* Keep user-flow-map as horizontal grid in mobile, just scale down */
-  .artifact-viewport [data-name="user-flow-map.row"] {
-    flex-direction: row !important;
-    gap: 8px !important;
-    overflow-x: auto !important;
-  }
-  .artifact-viewport [data-name="user-flow-map.stage"],
-  .artifact-viewport [data-name="user-flow-map.action"],
-  .artifact-viewport [data-name="user-flow-map.feels"] {
-    min-width: 120px !important;
-    padding: 8px !important;
-    flex-shrink: 0 !important;
-  }
-  .artifact-viewport [data-name="user-flow-map.stage"] p,
-  .artifact-viewport [data-name="user-flow-map.action"] p,
-  .artifact-viewport [data-name="user-flow-map.feels"] p {
-    white-space: normal !important;
-    font-size: 12px !important;
-    line-height: 1.3 !important;
-  }
-  .artifact-viewport [data-name="user-flow-map.feels"] [data-name="user-low-map.thing"] {
-    width: 100% !important;
-    padding: 8px !important;
-  }
-  .artifact-viewport [data-name="user-flow-map.feels"] [data-name="user-low-map.thing"] p {
-    font-size: 11px !important;
-  }
-  .artifact-viewport [data-name="metric-result.baseline"],
-  .artifact-viewport [data-name="metric-result.product.outcome"] {
-    flex-direction: column !important;
-    align-items: center !important;
-    min-width: 100px !important;
-  }
-  .artifact-viewport [data-name="div.metrics"] {
-    flex-direction: row !important;
-    gap: 8px !important;
-    overflow-x: auto !important;
-  }
-  .artifact-viewport [data-name="&lt;title&gt;"] {
-    whitespace: normal !important;
-    text-align: center !important;
-    font-size: 11px !important;
-  }
-  /* Matrix grid stays 2x2 but scales down */
-  .artifact-viewport .grid {
-    gap: 8px !important;
-  }
-  .artifact-viewport .grid > div {
-    padding: 12px !important;
-  }
-  .artifact-viewport .grid > div p {
-    font-size: 12px !important;
-  }
 }
 .prototype-section { width: 100%; padding: clamp(32px, 5vw, 96px) var(--page-gutter); background: #eee; }
 .prototype-embed { display: block; width: 100%; height: min(850px, 80svh); min-height: 480px; border: 0; }

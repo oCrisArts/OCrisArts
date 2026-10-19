@@ -55,31 +55,31 @@ export default function ServiceCard({
         }
       }}
     >
-      <div
+      <figure
         className={`group relative flex-1 overflow-hidden ${
           compact ? "mb-[-70px]" : "mb-[-140px]"
         }`}
+        data-name="card-figure"
       >
-        <div className="relative z-2 h-full w-full">
-          <video
-            data-service-video
-            className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-105"
-            autoPlay
-            loop
-            muted
-            playsInline
-            poster={poster}
-            preload="metadata"
-          >
-            <source src={videoSrc} type="video/mp4" />
-          </video>
-        </div>
-      </div>
+        <video
+          data-service-video
+          className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-105"
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster={poster}
+          preload="metadata"
+        >
+          <source src={videoSrc} type="video/mp4" />
+        </video>
+      </figure>
 
       <div
         className={`${
           compact ? "h-[70px] min-h-[70px] p-2" : "h-[140px] min-h-[140px] p-4"
-        } relative z-10 flex flex-col justify-start gap-1 bg-white`}
+        } relative z-10 flex flex-col justify-start gap-1 `}
+        data-name="card-caption"
       >
         <h3
           className={`${

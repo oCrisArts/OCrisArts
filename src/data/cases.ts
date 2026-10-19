@@ -10,7 +10,10 @@ export type CaseArtifact = {
   layout: ArtifactLayout
   images?: string[]
   video?: string
+  videoWidth?: number
+  videoHeight?: number
   embed?: { title: string; url: string }
+  embedTags?: TaxonomyItem[]
   dark?: boolean
   background?: string
   fullBleed?: boolean
@@ -34,9 +37,12 @@ export type CaseStudy = {
   project: string
   hero: string
   contextMedia?: string
+  contextMediaWidth?: number
+  challengeMedia?: string
   tags: TaxonomyItem[]
   methodology: TaxonomyItem[]
   services: ServiceSlug[]
+  showServicesInProcess?: boolean
   artifacts: CaseArtifact[]
   results: { metrics: CaseMetric[]; copy: ContentRef[] }
   relatedCases: string[]
@@ -71,7 +77,8 @@ export const cases = [
       text("No fluxo de Estornos, a proposta ganhou forma com os padrões do Design System CAIXA, enquanto o Plano de Pesquisa definiu como avaliar a nova navegação."),
     ],
     hero: "/assets/front-page/cases/navegacao-confusa.png",
-    contextMedia: "/assets/shared/branding/caixa-logo-full-2-caixa-logo-full2.svg",
+    contextMedia: "/assets/cases/navegacao-confusa/contexto-fgts.svg",
+    contextMediaWidth: 320,
     tags: [tag("devices", "Sistemas"), tag("psychology", "Design Thinking"), tag("rule", "Análise heurística"), tag("route", "Arquitetura da informação"), tag("draw", "Protótipos"), tag("science", "Pesquisa de usabilidade")],
     methodology: [tag("favorite", "Empatia"), tag("target", "Definição"), tag("lightbulb", "Ideação"), tag("draw", "Prototipagem"), tag("fact_check", "Teste")],
     services: ["ux", "apps"],
@@ -92,18 +99,20 @@ export const cases = [
     title: "t0159", subtitle: "t0160", context: "t0168", project: "SIAFF · CAIXA",
     contextCopy: [key("t0168"), key("t0169"), key("t0170")], challenge: key("t0172"),
     process: [key("t0173"), text("Um protótipo funcional criado no Figma Make permitiu observar tarefas reais."), text("Os testes e registros do Clarity ajudaram a identificar comportamentos que não seriam percebidos em telas estáticas."), key("t0175")],
-    hero: "/assets/front-page/cases/cadastros-complexos.png", contextMedia: "/assets/shared/branding/caixa-logo-full-2-caixa-logo-full2.svg",
+    hero: "/assets/front-page/cases/cadastros-complexos.png", contextMedia: "/assets/cases/cadastros-complexos/contexto-siaff.svg", contextMediaWidth: 364,
+    challengeMedia: "/assets/cases/cadastros-complexos/desafio-bg-figure.svg",
     tags: [tag("devices", "Sistemas"), tag("monitoring", "Data-Driven Design"), tag("science", "Atomic Research"), tag("assignment", "Plano de teste"), tag("visibility", "Observação de uso"), tag("draw", "Protótipos")],
     methodology: [tag("target", "Definição de objetivos e métricas"), tag("database", "Coleta de dados"), tag("analytics", "Análise de dados"), tag("draw", "Prototipagem"), tag("fact_check", "Validação"), tag("monitoring", "Monitoramento")],
     services: ["ux", "apps"],
+    showServicesInProcess: false,
     artifacts: [
       image("atomic-research", "Atomic Research", "science", "/assets/cases/cadastros-complexos/artefato-atomic-research.svg", "grid"),
       image("plano-de-teste", "Plano de teste", "assignment", "/assets/cases/cadastros-complexos/artefato-plano-de-teste.svg"),
-      { slug: "clarity", label: "Observação de uso com Clarity", icon: "visibility", layout: "video", video: "/assets/cases/cadastros-complexos/artefato-clarity.mp4", fullBleed: true },
+      { slug: "clarity", label: "Observação de uso", icon: "visibility", layout: "video-background", video: "/assets/cases/cadastros-complexos/artefato-clarity.mp4", videoWidth: 1920, videoHeight: 1032, fullBleed: true },
       image("prototipo-funcional", "Protótipo funcional", "draw", "/assets/cases/cadastros-complexos/artefato-prototipo-funcional.svg"),
       image("cadastro-de-boletos", "Cadastro de boletos", "draw", "/assets/cases/cadastros-complexos/artefato-cadastro-de-boletos.svg"),
       { slug: "evolucao-dos-cadastros", label: "Evolução dos cadastros", icon: "design_services", layout: "carousel", images: ["/assets/cases/cadastros-complexos/carrossel-tcca-01.svg", "/assets/cases/cadastros-complexos/carrossel-tcca-02.svg", "/assets/cases/cadastros-complexos/carrossel-tcca-03.svg"] },
-      { slug: "prototipo-tcca", label: "Protótipo TCCA", icon: "open_in_full", layout: "embed-fullscreen", embed: { title: "TCCA", url: "https://www.figma.com/proto/m0giUODNGvJ8sDMJVVPnhk/" }, fullBleed: true },
+      { slug: "prototipo-tcca", label: "Protótipo Interativo", icon: "design_services", layout: "embed-fullscreen", embed: { title: "FCA — Cadastrar TCCA", url: "https://25280498-cadastrar-tcca.figma.site/" }, embedTags: [tag("design_services", "Protótipo Interativo"), tag("design_services", "Figma Make")], background: "#F9F9F9", fullBleed: true },
     ],
     results: { metrics: [metric(text("100%"), "t0267", "t0268", "evidence"), metric(key("t0269"), "t0270", "t0271", "evidence"), metric(text("0"), "t0272", "t0273", "product-outcome")], copy: [key("t0274"), key("t0275")] },
     relatedCases: ["navegacao-confusa", "qualificacao-complexa", "regra-incerta"],
@@ -114,7 +123,7 @@ export const cases = [
     title: "t0569", subtitle: "t0570", context: "t0943", project: "SPVAT · CAIXA",
     contextCopy: [key("t0943"), key("t0944"), key("t0945")], challenge: key("t0946"),
     process: [text("A revisão do aplicativo DPVAT permitiu distinguir o que ainda fazia sentido daquilo que precisaria mudar com o SPVAT."), text("Jornadas, requisitos e componentes foram avaliados considerando as regras conhecidas e as definições ainda incertas."), text("Em paralelo, o estudo de marca construiu a identidade visual do novo seguro."), text("Os protótipos reuniram essas decisões aos padrões do Design System CAIXA, permitindo avançar com uma proposta adaptável às mudanças regulatórias.")],
-    hero: "/assets/cases/regra-incerta/hero.png", contextMedia: "/assets/cases/regra-incerta/midia-spvat.svg",
+    hero: "/assets/cases/regra-incerta/hero.png", contextMedia: "/assets/cases/regra-incerta/contexto-spvat.svg", contextMediaWidth: 350,
     tags: [tag("smartphone", "Aplicativos"), tag("palette", "Identidade visual"), tag("cycle", "Lean UX"), tag("science", "Atomic Research"), tag("route", "Fluxo"), tag("draw", "Protótipos")],
     methodology: [tag("psychology", "Pensar"), tag("build", "Fazer")], services: ["branding", "ux", "apps"],
     artifacts: [
@@ -125,7 +134,7 @@ export const cases = [
       image("prototipo-mobile", "Protótipo mobile", "smartphone", "/assets/cases/regra-incerta/artefato-prototipo-mobile.svg"),
       { slug: "telas-do-aplicativo", label: "Telas do aplicativo", icon: "view_carousel", layout: "carousel", images: ["/assets/cases/regra-incerta/carrossel-tela-01.svg", "/assets/cases/regra-incerta/carrossel-tela-02.svg", "/assets/cases/regra-incerta/carrossel-tela-03.svg", "/assets/cases/regra-incerta/carrossel-tela-04.svg", "/assets/cases/regra-incerta/carrossel-tela-05.svg"] },
     ],
-    results: { metrics: [metric(text("—"), "t0152", "t0153", "evidence"), metric(text("—"), "t0989", "t0990", "system"), metric(key("t0614"), "t0991", "t0616", "product-outcome")], copy: [key("t0992"), key("t0993")] },
+    results: { metrics: [metric(key("t1084"), "t0152", "t0153", "evidence"), metric(key("t1085"), "t0989", "t0990", "system"), metric(key("t0614"), "t0991", "t0616", "product-outcome")], copy: [key("t0992"), key("t0993")] },
     relatedCases: ["qualificacao-complexa", "cadastros-complexos", "navegacao-confusa"],
     card: { image: "/assets/front-page/cases/regra-incerta.png", background: "/assets/front-page/cases/card-background.png", figureOverlay: "bg-[#f9f9f9]", imageClass: "left-[10%] top-0 size-[80%]", tone: "light" },
   },
@@ -134,7 +143,7 @@ export const cases = [
     title: "t0571", subtitle: "t0572", context: "t0757", project: "DPVAT · CAIXA",
     contextCopy: [key("t0757"), key("t0758"), key("t0759")], challenge: key("t0760"),
     process: [text("A revisão começou pelas tarefas de qualificação, onde informações pouco claras poderiam dificultar a análise dos pedidos."), text("As heurísticas de Nielsen identificaram problemas de orientação e prevenção de erros."), text("A WCAG 2.1 trouxe os critérios de acessibilidade necessários à revisão das interfaces."), text("Os achados foram relacionados aos perfis, às etapas e aos pontos críticos da operação."), text("Essa análise orientou a reorganização dos fluxos e a aplicação de padrões do Design System CAIXA, buscando decisões mais claras e rastreáveis.")],
-    hero: "/assets/cases/qualificacao-complexa/hero.png", contextMedia: "/assets/cases/qualificacao-complexa/contexto.svg",
+    hero: "/assets/cases/qualificacao-complexa/hero.png", contextMedia: "/assets/cases/qualificacao-complexa/contexto-dpvat.svg", contextMediaWidth: 350,
     tags: [tag("devices", "Sistemas"), tag("diamond", "Duplo Diamante"), tag("rule", "Análise heurística"), tag("account_tree", "Mapeamento de processos"), tag("draw", "Protótipos"), tag("table_chart", "Painel de qualificação")],
     methodology: [tag("search", "Descobrir"), tag("target", "Definir"), tag("build", "Desenvolver"), tag("task_alt", "Entregar")], services: ["ux", "apps"],
     artifacts: [
@@ -155,7 +164,8 @@ export const cases = [
     contextCopy: [key("t0355"), key("t0356"), key("t0357")], challenge: key("t0362"),
     process: [text("A operação da Porsche Cup dependia da coordenação entre engenheiros, pilotos e equipes de apoio."), text("Planilhas não ofereciam uma visão integrada das solicitações e dos estados de cada atividade."), text("O mapeamento das responsabilidades mostrou como estruturar pedidos, aprovações, notificações e retiradas de pneus."), text("Essas decisões orientaram o aplicativo administrativo. Depois, um manual impresso passou a documentar os procedimentos para as equipes."), text("O streaming também integrava o ecossistema digital, mas como uma aplicação independente.")],
     hero: "/assets/cases/corrida-em-jogo/hero.png",
-    contextMedia: undefined,
+    contextMedia: "/assets/cases/corrida-em-jogo/contexto-porsche-cup.svg",
+    contextMediaWidth: 250,
     tags: [tag("smartphone", "Aplicativos"), tag("devices", "Sistemas"), tag("hub", "Service Design"), tag("route", "Jornada operacional"), tag("draw", "Protótipos"), tag("menu_book", "Documentação")],
     methodology: [tag("search", "Compreender"), tag("target", "Definir"), tag("draw", "Criar"), tag("rocket_launch", "Implementar"), tag("fact_check", "Avaliar")], services: ["ux", "apps"],
     artifacts: [
@@ -166,7 +176,7 @@ export const cases = [
       { slug: "variacoes-streaming", label: "Variações do streaming", icon: "view_carousel", layout: "carousel", images: ["/assets/cases/corrida-em-jogo/carrossel-variacao-01.svg", "/assets/cases/corrida-em-jogo/carrossel-variacao-02.svg", "/assets/cases/corrida-em-jogo/carrossel-variacao-03.svg", "/assets/cases/corrida-em-jogo/carrossel-variacao-04.svg", "/assets/cases/corrida-em-jogo/carrossel-variacao-05.svg"] },
       { slug: "documentacao", label: "Documentação", icon: "menu_book", layout: "carousel", images: ["/assets/cases/corrida-em-jogo/carrossel-documentacao-01.svg", "/assets/cases/corrida-em-jogo/carrossel-documentacao-02.svg", "/assets/cases/corrida-em-jogo/carrossel-documentacao-03.svg"] },
     ],
-    results: { metrics: [metric(text("—"), "t0152", "t0153", "coverage"), metric(text("—"), "t0550", "t0551", "system"), metric(text("100+"), "t0155", "t0156", "product-outcome")], copy: [key("t0552"), key("t0553")] },
+    results: { metrics: [metric(key("t1084"), "t0152", "t0153", "coverage"), metric(key("t1085"), "t0550", "t0551", "system"), metric(text("100+"), "t0155", "t0156", "product-outcome")], copy: [key("t0552"), key("t0553")] },
     relatedCases: ["beneficios-dispersos", "cadastro-travado", "uma-marca-por-cliente"],
     card: { image: "/assets/front-page/cases/corrida-em-jogo.png", background: "/assets/front-page/cases/card-background.png", figureOverlay: "bg-black", imageClass: "h-full left-[-216.97%] top-0 w-[321.69%]", tone: "dark" },
   },
@@ -175,7 +185,7 @@ export const cases = [
     title: "t0010", subtitle: "t0011", context: "t0019", project: "Sou Parceiro · Intelbras",
     contextCopy: [key("t0019"), key("t0020")], challenge: key("t0022"),
     process: [text("A análise da jornada revelou diferentes necessidades entre os revendedores que utilizavam o aplicativo Sou Parceiro."), text("Personas ajudaram a compreender os objetivos por trás de cada acesso."), text("A partir dessas necessidades, a Arquitetura da Informação orientou a organização de benefícios, conteúdos e funcionalidades."), text("As decisões de interface passaram a priorizar as tarefas dos parceiros, em vez de reproduzir a estrutura dos canais internos da empresa.")],
-    hero: "/assets/cases/beneficios-dispersos/hero.png", contextMedia: "/assets/cases/beneficios-dispersos/contexto-figure-context-media-col-span-12-lg-col-span-4-figure-context-media-col-span12-lg-col-span4.svg",
+    hero: "/assets/cases/beneficios-dispersos/hero.png", contextMedia: "/assets/cases/beneficios-dispersos/contexto-sou-parceiro.svg", contextMediaWidth: 296,
     tags: [tag("smartphone", "Aplicativos"), tag("monitoring", "Data-Driven Design"), tag("route", "Fluxo de uso"), tag("groups", "Personas"), tag("dashboard", "Painel contextual"), tag("draw", "Protótipos")],
     methodology: [tag("search", "Compreender"), tag("groups", "Especificar"), tag("draw", "Desenhar"), tag("fact_check", "Avaliar")], services: ["ux", "apps"],
     artifacts: [
@@ -186,7 +196,7 @@ export const cases = [
       { ...image("prototipos", "Interfaces e protótipos", "draw", "/assets/cases/beneficios-dispersos/artefato-prototipos.svg"), background: "#00863F" },
       image("plano-de-metricas", "Plano de métricas", "monitoring", "/assets/cases/beneficios-dispersos/artefato-plano-de-metricas.svg"),
     ],
-    results: { metrics: [metric(text("—"), "t0150", "t0151", "baseline"), metric(text("—"), "t0152", "t0153", "system"), metric(key("t0154"), "t0155", "t0156", "product-outcome")], copy: [key("t0157"), key("t0158")] },
+    results: { metrics: [metric(key("t1084"), "t0150", "t0151", "baseline"), metric(key("t1085"), "t0152", "t0153", "system"), metric(key("t0154"), "t0155", "t0156", "product-outcome")], copy: [key("t0157"), key("t0158")] },
     relatedCases: ["corrida-em-jogo", "cadastro-travado", "uma-marca-por-cliente"],
     card: { image: "/assets/front-page/cases/beneficios-dispersos.png", background: "/assets/front-page/cases/card-background.png", figureOverlay: "bg-black", innerOverlay: "bg-[#060709]", imageClass: "left-[15.31%] top-[6.23%] size-[69.38%]", tone: "dark" },
   },
@@ -195,7 +205,7 @@ export const cases = [
     title: "t0276", subtitle: "t0277", context: "t0282", project: "Konviva LMS",
     contextCopy: [key("t0282"), key("t0283")], challenge: key("t0284"),
     process: [text("Os tickets de suporte revelaram que a dificuldade não estava apenas no formulário."), text("Encontrar cursos, compreender o cadastro e recuperar o acesso também faziam parte do problema."), text("A análise da jornada mostrou que a experiência precisava começar antes do login."), text("A solução foi ampliar o LMS existente com um portal externo de cursos, conectando descoberta, cadastro e acesso à plataforma."), text("Os protótipos e testes ajudaram a revisar essa entrada e os pontos de recuperação após erros.")],
-    hero: "/assets/cases/cadastro-travado/hero.png", contextMedia: "/assets/cases/cadastro-travado/midia-vector.svg",
+    hero: "/assets/cases/cadastro-travado/hero.png", contextMedia: "/assets/cases/cadastro-travado/contexto-ilog.svg", contextMediaWidth: 440,
     tags: [tag("cloud", "SaaS"), tag("travel_explore", "Product Discovery"), tag("route", "Mapa da jornada"), tag("grid_view", "Matriz de priorização"), tag("draw", "Wireframes"), tag("draw", "Protótipos")],
     methodology: [tag("handshake", "Alinhamento"), tag("search", "Pesquisa"), tag("lightbulb", "Ideação"), tag("draw", "Prototipagem"), tag("fact_check", "Validação")], services: ["web", "ux"],
     artifacts: [
@@ -204,7 +214,7 @@ export const cases = [
       { ...image("wireframes", "Wireframes", "draw", "/assets/cases/cadastro-travado/artefato-wireframes.svg"), background: "#F2F2F2" },
       { ...image("prototipos-do-portal", "Protótipos do portal", "draw", "/assets/cases/cadastro-travado/artefato-prototipos-do-portal.svg", "grid"), background: "#EEEEEE" },
       { ...image("interfaces-do-portal", "Interfaces do portal", "devices", "/assets/cases/cadastro-travado/artefato-interfaces-do-portal.svg"), background: "#EEEEEE" },
-      { slug: "prototipo-portal-konviva", label: "Portal Konviva", icon: "open_in_full", layout: "embed-fullscreen", embed: { title: "Portal Konviva", url: "https://portalkonviva.figma.site/" }, background: "#EEEEEE", fullBleed: true },
+      { slug: "prototipo-portal-konviva", label: "Protótipo Interativo", icon: "design_services", layout: "embed-fullscreen", embed: { title: "Portal Konviva", url: "https://portalkonviva.figma.site/" }, embedTags: [tag("design_services", "Protótipo Interativo"), tag("design_services", "Figma Make")], background: "#F9F9F9", fullBleed: true },
     ],
     results: { metrics: [metric(text("+48%"), "t0343", "t0268", "baseline"), metric(text("-30%"), "t0344", "t0273", "baseline"), metric(text("56.423"), "t0345", "t0346", "product-outcome")], copy: [key("t0347"), key("t0348")] },
     relatedCases: ["uma-marca-por-cliente", "beneficios-dispersos", "corrida-em-jogo"],
@@ -215,17 +225,17 @@ export const cases = [
     title: "t0574", subtitle: "t0575", context: "t0999", project: "Konviva White-Label",
     contextCopy: [key("t0999"), key("t1000")], challenge: key("t1001"),
     process: [text("A experiência de aprendizagem era compartilhada entre os clientes."), text("O que precisava mudar era a identidade visual de cada empresa."), key("t1003"), text("Com Design Tokens, diferentes identidades passaram a utilizar a mesma estrutura de interface."), text("Os protótipos ajudaram a verificar como as variações se comportavam sem exigir a reconstrução do aplicativo.")],
-    hero: "/assets/cases/uma-marca-por-cliente/hero.png", contextMedia: "/assets/cases/uma-marca-por-cliente/contexto-konviva-1-1-konviva11.svg",
+    hero: "/assets/cases/uma-marca-por-cliente/hero.png", contextMedia: "/assets/cases/uma-marca-por-cliente/contexto-konviva.svg", contextMediaWidth: 549,
     tags: [tag("smartphone", "Aplicativos"), tag("view_list", "Product Backlog Building"), tag("fact_check", "Backlog do MVP"), tag("widgets", "Design System modular"), tag("palette", "Design Tokens"), tag("draw", "Protótipos")],
     methodology: [tag("description", "Contextualização"), tag("groups", "Personas"), tag("widgets", "Funcionalidades"), tag("route", "Jornada"), tag("view_list", "Itens do backlog")], services: ["branding", "apps"],
     artifacts: [
       image("backlog-do-mvp", "Backlog do MVP", "fact_check", "/assets/cases/uma-marca-por-cliente/artefato-backlog-do-mvp.svg"),
       image("design-system", "Design System modular", "widgets", "/assets/cases/uma-marca-por-cliente/artefato-design-system.svg"),
-      { slug: "video-de-fundo", label: "Animação de carregamento", icon: "movie", layout: "video-background", video: "/assets/cases/uma-marca-por-cliente/artefato-loading-promo.mp4", dark: true, fullBleed: true },
+      { slug: "video-de-fundo", label: "Animação de carregamento", icon: "movie", layout: "video-background", video: "/assets/cases/uma-marca-por-cliente/artefato-loading-promo.mp4", videoWidth: 1920, videoHeight: 1080, dark: true, fullBleed: true },
       { slug: "prototipos-white-label", label: "Protótipos White-Label", icon: "draw", layout: "carousel", images: ["/assets/cases/uma-marca-por-cliente/carrossel-prototipo-01.svg", "/assets/cases/uma-marca-por-cliente/carrossel-prototipo-02.svg", "/assets/cases/uma-marca-por-cliente/carrossel-prototipo-03.svg", "/assets/cases/uma-marca-por-cliente/carrossel-prototipo-04.svg", "/assets/cases/uma-marca-por-cliente/carrossel-prototipo-05.svg", "/assets/cases/uma-marca-por-cliente/carrossel-prototipo-06.svg", "/assets/cases/uma-marca-por-cliente/carrossel-prototipo-07.svg"] },
       { slug: "variacoes-de-marca", label: "Variações de marca", icon: "palette", layout: "carousel", images: ["/assets/cases/uma-marca-por-cliente/carrossel-marca-01.svg", "/assets/cases/uma-marca-por-cliente/carrossel-marca-02.svg", "/assets/cases/uma-marca-por-cliente/carrossel-marca-03.svg", "/assets/cases/uma-marca-por-cliente/carrossel-marca-04.svg", "/assets/cases/uma-marca-por-cliente/carrossel-marca-05.svg", "/assets/cases/uma-marca-por-cliente/carrossel-marca-06.svg", "/assets/cases/uma-marca-por-cliente/carrossel-marca-07.svg"] },
     ],
-    results: { metrics: [metric(text("—"), "t1074", "t0551", "evidence"), metric(text("—"), "t1075", "t0990", "system"), metric(key("t0154"), "t1076", "t0622", "product-outcome")], copy: [key("t1077"), key("t1078")] },
+    results: { metrics: [metric(key("t1084"), "t1074", "t0551", "evidence"), metric(key("t1085"), "t1075", "t0990", "system"), metric(key("t0154"), "t1076", "t0622", "product-outcome")], copy: [key("t1077"), key("t1078")] },
     relatedCases: ["cadastro-travado", "beneficios-dispersos", "corrida-em-jogo"],
     card: { image: "/assets/front-page/cases/uma-marca-por-cliente.png", figureBg: "bg-white", innerOverlay: "bg-[#060709]", imageClass: "h-[77.82%] left-0 top-0 w-full", tone: "dark", cardBg: "" },
   },

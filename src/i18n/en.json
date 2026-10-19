@@ -1088,5 +1088,7 @@
   "t1080": "left",
   "t1081": "right",
   "t1082": "build",
-  "t1083": "payment"
+  "t1083": "payment",
+  "t1084": "Goal",
+  "t1085": "Base"
 }

@@ -107,10 +107,12 @@ function Hero({
 function Context({
   copy,
   media,
+  mediaWidth,
   project,
 }: {
   copy: ContentRef[]
   media?: string
+  mediaWidth?: number
   project: string
 }) {
   const { t } = useI18n()
@@ -121,7 +123,7 @@ function Context({
       data-name="section.context"
       data-section-id="context"
     >
-      <div className="flex w-full flex-col items-start gap-12 lg:flex-row lg:items-center lg:gap-24">
+      <div className="flex w-full flex-col items-start gap-12 xl:flex-row xl:items-center xl:gap-24">
         <div className="flex flex-1 flex-col gap-6">
           <h2 className="text-[16px] font-semibold tracking-[0.64px]">
             {t("t0018")}
@@ -134,10 +136,11 @@ function Context({
         </div>
         {media && (
           <figure
-            className="w-full max-w-[320px] shrink-0"
+            className="w-full shrink-0"
+            style={{ maxWidth: `${mediaWidth ?? 320}px` }}
             aria-label={project}
           >
-            <img src={media} alt="" className="h-auto w-full object-contain" />
+            <img src={media} alt="" className="block h-auto w-full object-contain" />
           </figure>
         )}
       </div>
@@ -145,7 +148,13 @@ function Context({
   )
 }
 
-function Challenge({ copy }: { copy: ContentRef }) {
+function Challenge({
+  copy,
+  media,
+}: {
+  copy: ContentRef
+  media?: string
+}) {
   const { t } = useI18n()
   return (
     <section
@@ -154,12 +163,20 @@ function Challenge({ copy }: { copy: ContentRef }) {
       data-name="section.challenge"
       data-section-id="challenge"
     >
-      <div className="flex w-full max-w-[1500px] flex-col items-center gap-8 text-center font-['Sora:SemiBold'] font-semibold">
+      <div className="relative z-[1] flex w-full max-w-[1500px] flex-col items-center gap-8 text-center font-['Sora:SemiBold'] font-semibold">
         <h2 className="text-[16px] tracking-[0.64px]">{t("t0021")}</h2>
         <p className="max-w-[1200px] text-[clamp(26px,1.875vw,36px)] leading-[1.2]">
           {content(copy, t)}
         </p>
       </div>
+      {media && (
+        <img
+          src={media}
+          alt=""
+          className="pointer-events-none absolute left-[38.18%] top-[5.41%] h-[92.23%] w-[83.58%] max-w-none"
+          aria-hidden="true"
+        />
+      )}
     </section>
   )
 }
@@ -230,15 +247,40 @@ function Artifact({ artifact }: { artifact: CaseArtifact }) {
     "data-layout": artifact.layout,
     style: { backgroundColor: background },
   }
+  if (artifact.layout === "video-background" && artifact.video)
+    return (
+      <section
+        {...props}
+        className={`artifact-video-background relative w-full overflow-hidden ${artifact.slug}`}
+      >
+        <div className="absolute inset-x-0 top-[clamp(20px,5.833vw,112px)] z-10">
+          <ArtifactLabel artifact={artifact} />
+        </div>
+        <video
+          className="block h-auto w-full"
+          width={artifact.videoWidth ?? 1920}
+          height={artifact.videoHeight ?? 1080}
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="metadata"
+          aria-label={artifact.label}
+        >
+          <source src={artifact.video} type="video/mp4" />
+        </video>
+      </section>
+    )
   if (
-    (artifact.layout === "video" || artifact.layout === "video-background") &&
-    artifact.video
+    artifact.layout === "video" && artifact.video
   )
     return (
-      <section {...props} className={base}>
-        <ArtifactLabel artifact={artifact} />
+      <section {...props} className={`${base} justify-start`}>
+        <div className="absolute inset-x-0 top-[clamp(72px,5.833vw,112px)] z-10">
+          <ArtifactLabel artifact={artifact} />
+        </div>
         <video
-          className="absolute inset-0 size-full object-contain"
+          className="absolute inset-0 z-0 size-full object-contain"
           autoPlay
           loop
           muted
@@ -252,20 +294,38 @@ function Artifact({ artifact }: { artifact: CaseArtifact }) {
     )
   if (artifact.layout === "embed-fullscreen" && artifact.embed)
     return (
-      <section {...props} className={base}>
-        <ArtifactLabel artifact={artifact} />
+      <section
+        {...props}
+        className={`artifact-embed-fullscreen relative w-full overflow-hidden ${artifact.slug}`}
+      >
+        <header
+          className={`artifact-embed-tags absolute inset-x-0 top-0 z-10 flex h-[70px] w-full items-center justify-center overflow-hidden ${gutter} py-5`}
+          data-name="div.artifact-tag-row"
+        >
+          <TaxonomyTags
+            kind="artifact"
+            items={
+              artifact.embedTags ??
+              [{ icon: artifact.icon, label: artifact.label }]
+            }
+          />
+        </header>
         <iframe
           src={artifact.embed.url}
           title={artifact.embed.title}
-          className="absolute inset-0 size-full border-0"
+          className="absolute inset-0 z-0 size-full border-0"
           allowFullScreen
           loading="lazy"
         />
       </section>
     )
-  if (artifact.layout === "carousel" && artifact.images)
+  if (artifact.layout === "carousel" && artifact.images) {
+    const isTccaCarousel = artifact.slug === "evolucao-dos-cadastros"
     return (
-      <section {...props} className={`${base} py-6`}>
+      <section
+        {...props}
+        className={`${base} ${isTccaCarousel ? "tcca-carousel-section" : "py-6"}`}
+      >
         <ArtifactLabel artifact={artifact} />
         <div
           className="artifact-carousel relative z-[2] w-full"
@@ -275,13 +335,21 @@ function Artifact({ artifact }: { artifact: CaseArtifact }) {
           aria-label={artifact.label}
         >
           <div
-            className={`flex items-center gap-4 ${gutter}`}
+            className={
+              isTccaCarousel
+                ? "tcca-carousel-track flex items-center"
+                : `flex items-center gap-4 ${gutter}`
+            }
             data-artifact-track
           >
             {artifact.images.map((image, index) => (
               <figure
                 key={image}
-                className="flex h-[min(820px,72svh)] w-[min(78vw,1180px)] shrink-0 items-center justify-center"
+                className={
+                  isTccaCarousel
+                    ? "tcca-carousel-slide flex shrink-0 items-center justify-center"
+                    : "flex h-[min(820px,72svh)] w-[min(78vw,1180px)] shrink-0 items-center justify-center"
+                }
               >
                 <img
                   src={image}
@@ -297,6 +365,7 @@ function Artifact({ artifact }: { artifact: CaseArtifact }) {
         </div>
       </section>
     )
+  }
   if (artifact.layout === "grid" && artifact.images)
     return (
       <section {...props} className={`${base} ${gutter} py-6`}>
@@ -354,18 +423,22 @@ function Metric({ metric }: { metric: CaseMetric }) {
     <div
       className="relative flex h-[75px] min-w-[min(280px,100%)] flex-[1_1_280px] items-end"
       data-name={`metric-result.${metric.name}`}
+      data-node-id="6371:125"
     >
-      <div className="flex size-[75px] shrink-0 items-center justify-center rounded-[6px] bg-[#020305] px-3">
-        <p className="whitespace-nowrap text-[16px] leading-none text-[#fcfdfe]">
+      <div
+        className="flex size-[75px] max-h-[75px] min-h-[75px] max-w-[75px] min-w-[75px] shrink-0 flex-col items-center justify-center rounded-[6px] bg-[#020305] px-3 py-[3px]"
+        data-name="number"
+      >
+        <p className="whitespace-nowrap text-[16px] font-normal leading-none text-[#fcfdfe] [word-break:break-word]">
           {content(metric.value, t)}
         </p>
       </div>
-      <div className="flex min-w-0 flex-1 self-stretch items-center rounded-r-[6px] bg-[#101113] p-3 text-[#fcfdfe]">
-        <div className="flex min-w-0 flex-col gap-[6px]">
-          <p className="text-[16px] leading-none">{content(metric.title, t)}</p>
-          <p className="text-[9px] leading-none">
-            {content(metric.subtitle, t)}
-          </p>
+      <div className="flex min-w-0 flex-1 flex-row items-end self-stretch">
+        <div className="flex h-full min-w-0 flex-1 flex-col items-start justify-center" data-name="content">
+          <div className="flex w-full shrink-0 flex-col items-start gap-[6px] rounded-r-[6px] bg-[#101113] p-3 font-normal leading-none text-[#fcfdfe] [word-break:break-word]">
+            <p className="text-[16px]">{content(metric.title, t)}</p>
+            <p className="text-[9px]">{content(metric.subtitle, t)}</p>
+          </div>
         </div>
       </div>
     </div>
@@ -429,13 +502,22 @@ export default function CasesSingle() {
       <Context
         copy={[...item.contextCopy]}
         media={item.contextMedia}
+        mediaWidth={item.contextMediaWidth}
         project={item.project}
       />
-      <Challenge copy={item.challenge} />
+      <Challenge
+        copy={item.challenge}
+        media={"challengeMedia" in item ? item.challengeMedia : undefined}
+      />
       <Process
         copy={[...item.process]}
         methodology={[...item.methodology]}
-        services={[...item.services]}
+        services={
+          "showServicesInProcess" in item &&
+          item.showServicesInProcess === false
+            ? []
+            : [...item.services]
+        }
       />
       {item.artifacts.map((artifact) => (
         <Artifact key={artifact.slug} artifact={artifact} />

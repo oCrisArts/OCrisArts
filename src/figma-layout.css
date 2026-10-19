@@ -61,7 +61,9 @@
 .artifact-viewport { overflow: visible; max-height: none; overscroll-behavior-x: contain; }
 .artifact-viewport > div { width: 100%; max-width: 100%; flex-shrink: 0; }
 .artifact-viewport:focus-visible, .artifact-carousel:focus-visible { outline: 2px solid #6b0013; outline-offset: 4px; }
-.artifact-carousel { overflow: hidden; touch-action: pan-y; }
+.exact-canvas [data-name^="article#"] > [data-layout="carousel"],
+.artifact-carousel { overflow: visible; }
+.artifact-carousel { touch-action: pan-y; }
 .artifact-carousel > [data-artifact-track] { width: max-content; min-width: 100%; max-width: none; justify-content: flex-start; }
 [data-artifact-track] { touch-action: pan-y; cursor: grab; user-select: none; }
 [data-artifact-track].is-dragging { cursor: grabbing; }

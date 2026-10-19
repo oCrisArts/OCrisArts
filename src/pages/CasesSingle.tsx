@@ -362,9 +362,7 @@ function Artifact({ artifact }: { artifact: CaseArtifact }) {
                 className={
                   isTccaCarousel
                     ? "tcca-carousel-slide flex shrink-0 items-center justify-center"
-                    : showsAllSlides
-                      ? "flex w-[clamp(220px,22.917vw,440px)] shrink-0 items-center justify-center"
-                    : "flex h-[min(820px,72svh)] w-[min(78vw,1180px)] shrink-0 items-center justify-center"
+                    : "flex w-fit max-w-[calc(100vw-40px)] shrink-0 items-center justify-center"
                 }
               >
                 <img
@@ -374,8 +372,8 @@ function Artifact({ artifact }: { artifact: CaseArtifact }) {
                   decoding="async"
                   className={
                     showsAllSlides
-                      ? "block h-auto max-h-[min(956px,76svh)] w-full select-none object-contain"
-                      : "max-h-full max-w-full select-none object-contain"
+                      ? "block h-auto w-[clamp(220px,22.917vw,440px)] max-w-[calc(100vw-40px)] select-none object-contain"
+                      : "block h-auto max-h-[min(820px,72svh)] max-w-[calc(100vw-40px)] select-none object-contain"
                   }
                   draggable={false}
                 />

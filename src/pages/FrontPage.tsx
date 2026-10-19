@@ -124,13 +124,14 @@ export default function FrontPage({
       </header>
 
       <section
-        className="relative isolate flex min-h-[1080px] w-full shrink-0 flex-col items-center justify-start overflow-visible pb-28 pt-20"
+        id="cases"
+        className="relative z-[2] isolate flex min-h-[1080px] w-full shrink-0 flex-col items-center justify-center overflow-visible !p-0 max-[600px]:min-h-[760px]"
         data-node-id="4:35827"
         data-name="section.cases"
         aria-labelledby="cases-title"
       >
         <div
-          className="absolute left-[51.6667%] top-[-248px] z-[4] flex items-center"
+          className="absolute left-[51.6667%] top-[-248px] z-[4] flex items-center [&>article:first-child]:-mr-[42px] max-[1100px]:left-auto max-[1100px]:right-[6%] max-[1100px]:top-[-200px] max-[600px]:right-[8%] max-[600px]:top-[-230px] max-[600px]:[&>article:first-child]:mr-[min(-24vw,-70px)]"
           data-node-id="4:35828"
           data-name="div.case-track.scroll-linked-x"
         >
@@ -138,7 +139,7 @@ export default function FrontPage({
             <CaseCard key={slug} slug={slug} variant="hero" />
           ))}
         </div>
-        <div
+        <header
           className="relative z-[3] flex min-h-28 w-full items-center justify-center px-40 py-6"
           data-node-id="4:35834"
         >
@@ -149,18 +150,9 @@ export default function FrontPage({
           >
             {t("t0573")}
           </h2>
-        </div>
+        </header>
         <div
-          className="relative z-[2] flex w-max min-w-full items-center gap-6"
-          data-node-id="4:35836"
-          data-name="div.case-track.scroll-linked-x"
-        >
-          {cases.map(({ slug }) => (
-            <CaseCard key={slug} slug={slug} />
-          ))}
-        </div>
-        <div
-          className="relative z-[1] flex w-full flex-col items-center px-40 py-6"
+          className="relative z-[2] flex w-full flex-col items-center px-40 py-6"
           data-node-id="4:35846"
         >
           <p
@@ -171,6 +163,24 @@ export default function FrontPage({
             <br />
             {t("t0577")}
           </p>
+        </div>
+        <div
+          className="case-carousel relative z-[1] w-full overflow-visible px-16 overscroll-x-contain max-[600px]:px-5"
+          data-case-carousel
+          tabIndex={0}
+          role="region"
+          aria-label={t("t0573")}
+        >
+          <div
+            className="flex w-max min-w-full cursor-grab touch-pan-y select-none items-center gap-6 [&.is-dragging]:cursor-grabbing max-[600px]:gap-4"
+            data-node-id="4:35836"
+            data-name="div.case-track.scroll-linked-x"
+            data-carousel-loop
+          >
+            {cases.map(({ slug }) => (
+              <CaseCard key={slug} slug={slug} />
+            ))}
+          </div>
         </div>
       </section>
 

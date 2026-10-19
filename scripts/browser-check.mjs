@@ -45,6 +45,22 @@ try {
     await page.locator('[data-node-id="4:35836"] [data-case-slug]').count(),
     8,
   )
+  const casesLayout = await page.locator('[data-case-carousel]').evaluate((element) => {
+    const track = element.querySelector('[data-node-id="4:35836"]')
+    const viewportStyle = getComputedStyle(element)
+    const trackStyle = track ? getComputedStyle(track) : null
+
+    return {
+      viewportDisplay: viewportStyle.display,
+      viewportOverflow: viewportStyle.overflowX,
+      viewportWidth: element.getBoundingClientRect().width,
+      trackDisplay: trackStyle?.display,
+    }
+  })
+  assert.equal(casesLayout.viewportDisplay, "block")
+  assert.equal(casesLayout.viewportOverflow, "visible")
+  assert.equal(casesLayout.viewportWidth, 1440)
+  assert.equal(casesLayout.trackDisplay, "flex")
   assert.equal(
     await page.locator('[data-node-id="4:35828"] [data-case-slug]').count(),
     2,
@@ -188,7 +204,7 @@ try {
     2,
   )
   const card = page.locator(
-    '[data-node-id="4:35836"] [data-case-slug="navegacao-confusa"]',
+    '[data-node-id="4:35836"] [data-case-slug="navegacao-confusa"] a',
   )
   // Native anchor navigation via keyboard; avoids clicking a moving card mid-animation.
   await page.evaluate(() =>

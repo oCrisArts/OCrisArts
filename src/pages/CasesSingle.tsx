@@ -119,7 +119,7 @@ function Context({
   return (
     <section
       id="contexto"
-      className={section}
+      className={`${section} bg-[#eeeff1]`}
       data-name="section.context"
       data-section-id="context"
     >
@@ -159,7 +159,7 @@ function Challenge({
   return (
     <section
       id="desafio"
-      className={`${section} justify-center overflow-clip`}
+      className={`${section} justify-center overflow-clip bg-[#eeeff1]`}
       data-name="section.challenge"
       data-section-id="challenge"
     >
@@ -173,7 +173,7 @@ function Challenge({
         <img
           src={media}
           alt=""
-          className="pointer-events-none absolute left-[38.18%] top-[5.41%] h-[92.23%] w-[83.58%] max-w-none"
+          className="pointer-events-none absolute left-[20.94%] top-[19.01%] size-[83.83%] max-w-none opacity-10"
           aria-hidden="true"
         />
       )}
@@ -194,7 +194,7 @@ function Process({
   return (
     <section
       id="processo"
-      className={section}
+      className={`${section} bg-[#eeeff1]`}
       data-name="section.process"
       data-section-id="process"
     >
@@ -321,6 +321,7 @@ function Artifact({ artifact }: { artifact: CaseArtifact }) {
     )
   if (artifact.layout === "carousel" && artifact.images) {
     const isTccaCarousel = artifact.slug === "evolucao-dos-cadastros"
+    const showsAllSlides = artifact.slug === "variacoes-streaming"
     return (
       <section
         {...props}
@@ -338,9 +339,12 @@ function Artifact({ artifact }: { artifact: CaseArtifact }) {
             className={
               isTccaCarousel
                 ? "tcca-carousel-track flex items-center"
+                : showsAllSlides
+                  ? `flex items-center gap-[clamp(12px,2.083vw,40px)] ${gutter}`
                 : `flex items-center gap-4 ${gutter}`
             }
             data-artifact-track
+            data-carousel-loop
           >
             {artifact.images.map((image, index) => (
               <figure
@@ -348,6 +352,8 @@ function Artifact({ artifact }: { artifact: CaseArtifact }) {
                 className={
                   isTccaCarousel
                     ? "tcca-carousel-slide flex shrink-0 items-center justify-center"
+                    : showsAllSlides
+                      ? "flex w-[clamp(220px,22.917vw,440px)] shrink-0 items-center justify-center"
                     : "flex h-[min(820px,72svh)] w-[min(78vw,1180px)] shrink-0 items-center justify-center"
                 }
               >
@@ -356,7 +362,11 @@ function Artifact({ artifact }: { artifact: CaseArtifact }) {
                   alt={`${artifact.label} ${index + 1}`}
                   loading="lazy"
                   decoding="async"
-                  className="max-h-full max-w-full select-none object-contain"
+                  className={
+                    showsAllSlides
+                      ? "block h-auto max-h-[min(956px,76svh)] w-full select-none object-contain"
+                      : "max-h-full max-w-full select-none object-contain"
+                  }
                   draggable={false}
                 />
               </figure>

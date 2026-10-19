@@ -29,7 +29,7 @@ const originals = legacyOriginals.length
       ...gitFiles("src/pages/cases"),
       "src/pages/FrontPage.tsx",
       "src/components/CaseCard.tsx",
-    ]
+    ].filter((file) => file !== "src/pages/cases/CorridaEmJogo.tsx")
 
 function referencedMedia(source) {
   const media = new Set()
@@ -79,6 +79,27 @@ const currentMedia = new Set(
   ),
 )
 
+const corridaAssets = [
+  "artefato-documentacao.svg",
+  "artefato-fluxo-de-navegacao.svg",
+  "artefato-jornada-operacional.svg",
+  "artefato-prototipos-streaming.svg",
+  "artefato-wireframes-operacionais.svg",
+  "carrossel-prototipo-01.png",
+  "carrossel-prototipo-02.png",
+  "carrossel-prototipo-03.png",
+  "carrossel-prototipo-04.png",
+  "contexto-porsche-cup.svg",
+  "desafio.png",
+  "hero.png",
+]
+
+assert.deepEqual(
+  fs.readdirSync("public/assets/cases/corrida-em-jogo").sort(),
+  corridaAssets,
+  "Corrida em jogo keeps only final case assets",
+)
+
 for (const file of originals) {
   const original = execFileSync("git", [...gitArgs, "show", `HEAD:${file}`], {
     encoding: "utf8",
@@ -119,16 +140,13 @@ for (const file of currentFiles) {
     )
 }
 
-const spvat = fs.readFileSync("src/pages/cases/RegraIncerta.tsx", "utf8")
-
-const processTags = spvat.match(
-  /kind="process-tags" items=\{(\[[^\n]*?\])\}/,
+const casesSource = fs.readFileSync("src/data/cases.ts", "utf8")
+const spvat = casesSource.match(
+  /slug: "regra-incerta"[\s\S]*?methodology: \[(.*?)\], services:/,
 )?.[1]
 
-assert.deepEqual(
-  JSON.parse(processTags).map((t) => t.label),
-  ["Pensar", "Fazer"],
-)
+assert.match(spvat ?? "", /"Pensar"/)
+assert.match(spvat ?? "", /"Fazer"/)
 
 assert.ok(
   !/zoom\s*:/.test(

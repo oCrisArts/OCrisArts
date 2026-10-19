@@ -140,25 +140,6 @@ a,
   overscroll-behavior-x: contain;
 }
 
-.case-popover .case-card {
-  flex: 0 0 90px;
-}
-
-.case-popover .case-card:focus-within {
-  outline: 2px solid #fcfdfe;
-  outline-offset: 2px;
-}
-
-.case-card--hero .case-card__caption {
-  position: absolute;
-  z-index: 3;
-  top: 0;
-  right: 0;
-  left: 0;
-  background: inherit;
-  will-change: transform;
-}
-
 .bottom-navigation.is-visible {
   opacity: 1;
   pointer-events: auto;

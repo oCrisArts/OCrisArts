@@ -48,14 +48,7 @@ export type CaseStudy = {
   relatedCases: string[]
   card: {
     image: string
-    imageClass: string
     tone: "light" | "dark"
-    background?: string
-    figureBg?: string
-    figureOverlay?: string
-    innerOverlay?: string
-    imageWrapper?: string
-    cardBg?: string
   }
 }
 
@@ -92,7 +85,7 @@ export const cases = [
     ],
     results: { metrics: [metric(text("25%"), "t0612", "t0613", "coverage"), metric(text("7"), "t0742", "t0743", "outcome"), metric(text("6"), "t0744", "t0745", "product-reach")], copy: [key("t0746"), key("t0747")] },
     relatedCases: ["qualificacao-complexa", "cadastros-complexos", "regra-incerta"],
-    card: { image: "/assets/front-page/cases/navegacao-confusa.png", imageClass: "object-contain", tone: "light", imageWrapper: "aspect-[352/632]" },
+    card: { image: "/assets/front-page/cases/navegacao-confusa.png", tone: "light" },
   },
   {
     slug: "cadastros-complexos",
@@ -116,7 +109,7 @@ export const cases = [
     ],
     results: { metrics: [metric(text("100%"), "t0267", "t0268", "evidence"), metric(key("t0269"), "t0270", "t0271", "evidence"), metric(text("0"), "t0272", "t0273", "product-outcome")], copy: [key("t0274"), key("t0275")] },
     relatedCases: ["navegacao-confusa", "qualificacao-complexa", "regra-incerta"],
-    card: { image: "/assets/front-page/cases/cadastros-complexos.png", imageClass: "h-full left-[-196.76%] top-0 w-[321.69%]", tone: "dark", imageWrapper: "aspect-[352/632]" },
+    card: { image: "/assets/front-page/cases/cadastros-complexos.png", tone: "dark" },
   },
   {
     slug: "regra-incerta",
@@ -136,7 +129,7 @@ export const cases = [
     ],
     results: { metrics: [metric(key("t1084"), "t0152", "t0153", "evidence"), metric(key("t1085"), "t0989", "t0990", "system"), metric(key("t0614"), "t0991", "t0616", "product-outcome")], copy: [key("t0992"), key("t0993")] },
     relatedCases: ["qualificacao-complexa", "cadastros-complexos", "navegacao-confusa"],
-    card: { image: "/assets/front-page/cases/regra-incerta.png", background: "/assets/front-page/cases/card-background.png", figureOverlay: "bg-[#f9f9f9]", imageClass: "left-[10%] top-0 size-[80%]", tone: "light" },
+    card: { image: "/assets/front-page/cases/regra-incerta.png", tone: "light" },
   },
   {
     slug: "qualificacao-complexa",
@@ -156,29 +149,31 @@ export const cases = [
     ],
     results: { metrics: [metric(text("83%"), "t0932", "t0933", "coverage"), metric(text("34%"), "t0934", "t0935", "outcome"), metric(key("t0617"), "t0155", "t0156", "product-reach")], copy: [key("t0936"), key("t0937")] },
     relatedCases: ["navegacao-confusa", "cadastros-complexos", "regra-incerta"],
-    card: { image: "/assets/front-page/cases/qualificacao-complexa.png", background: "/assets/front-page/cases/card-background.png", imageClass: "inset-0 size-full", tone: "dark" },
+    card: { image: "/assets/front-page/cases/qualificacao-complexa.png", tone: "dark" },
   },
   {
     slug: "corrida-em-jogo",
     title: "t0349", subtitle: "t0350", context: "t0355", project: "Porsche Cup Brasil",
-    contextCopy: [key("t0355"), key("t0356"), key("t0357")], challenge: key("t0362"),
+    contextCopy: [text("Uma corrida depende de decisões rápidas, inclusive fora da pista."), text("Na Porsche Cup Brasil, planilhas ainda apoiavam a gestão de pneus comercializados, treinos, equipes e ativos de cada etapa."), text("Engenheiro, piloto e operação precisavam acompanhar pedidos, aprovações e retiradas. A mesma informação circulava entre papéis diferentes.")], challenge: key("t0357"),
     process: [text("A operação da Porsche Cup dependia da coordenação entre engenheiros, pilotos e equipes de apoio."), text("Planilhas não ofereciam uma visão integrada das solicitações e dos estados de cada atividade."), text("O mapeamento das responsabilidades mostrou como estruturar pedidos, aprovações, notificações e retiradas de pneus."), text("Essas decisões orientaram o aplicativo administrativo. Depois, um manual impresso passou a documentar os procedimentos para as equipes."), text("O streaming também integrava o ecossistema digital, mas como uma aplicação independente.")],
     hero: "/assets/cases/corrida-em-jogo/hero.png",
     contextMedia: "/assets/cases/corrida-em-jogo/contexto-porsche-cup.svg",
     contextMediaWidth: 250,
-    tags: [tag("smartphone", "Aplicativos"), tag("devices", "Sistemas"), tag("hub", "Service Design"), tag("route", "Jornada operacional"), tag("draw", "Protótipos"), tag("menu_book", "Documentação")],
-    methodology: [tag("search", "Compreender"), tag("target", "Definir"), tag("draw", "Criar"), tag("rocket_launch", "Implementar"), tag("fact_check", "Avaliar")], services: ["ux", "apps"],
+    challengeMedia: "/assets/cases/corrida-em-jogo/desafio.png",
+    tags: [tag("smartphone", "Aplicativos"), tag("devices", "Sistemas"), tag("menu_book", "Guia"), tag("hub", "Service Design"), tag("account_tree", "Fluxo de navegação"), tag("route", "Jornada operacional"), tag("draw", "Protótipos"), tag("menu_book", "Documentação"), tag("design_services", "Figma"), tag("menu_book", "InDesign")],
+    methodology: [tag("travel_explore", "Exploração"), tag("draw", "Criação"), tag("psychology", "Reflexão"), tag("build", "Implementação")], services: ["ux", "apps"],
+    showServicesInProcess: false,
     artifacts: [
       image("jornada-operacional", "Jornada operacional", "route", "/assets/cases/corrida-em-jogo/artefato-jornada-operacional.svg"),
       image("wireframes-operacionais", "Wireframes operacionais", "draw", "/assets/cases/corrida-em-jogo/artefato-wireframes-operacionais.svg"),
-      { ...image("fluxo-de-navegacao", "Fluxo de navegação", "account_tree", "/assets/cases/corrida-em-jogo/artefato-fluxo-de-navegacao.svg"), background: "#020305" },
-      image("prototipos-streaming", "Protótipos e interfaces", "devices", "/assets/cases/corrida-em-jogo/artefato-prototipos-streaming.svg"),
-      { slug: "variacoes-streaming", label: "Variações do streaming", icon: "view_carousel", layout: "carousel", images: ["/assets/cases/corrida-em-jogo/carrossel-variacao-01.svg", "/assets/cases/corrida-em-jogo/carrossel-variacao-02.svg", "/assets/cases/corrida-em-jogo/carrossel-variacao-03.svg", "/assets/cases/corrida-em-jogo/carrossel-variacao-04.svg", "/assets/cases/corrida-em-jogo/carrossel-variacao-05.svg"] },
-      { slug: "documentacao", label: "Documentação", icon: "menu_book", layout: "carousel", images: ["/assets/cases/corrida-em-jogo/carrossel-documentacao-01.svg", "/assets/cases/corrida-em-jogo/carrossel-documentacao-02.svg", "/assets/cases/corrida-em-jogo/carrossel-documentacao-03.svg"] },
+      { ...image("fluxo-de-navegacao", "Fluxo de navegação", "account_tree", "/assets/cases/corrida-em-jogo/artefato-fluxo-de-navegacao.svg"), background: "#3c3f45" },
+      { ...image("prototipos-streaming", "Protótipos", "devices", "/assets/cases/corrida-em-jogo/artefato-prototipos-streaming.svg"), background: "#3c3f45" },
+      { slug: "variacoes-streaming", label: "Protótipos", icon: "view_carousel", layout: "carousel", background: "#3c3f45", images: ["/assets/cases/corrida-em-jogo/carrossel-prototipo-01.png", "/assets/cases/corrida-em-jogo/carrossel-prototipo-02.png", "/assets/cases/corrida-em-jogo/carrossel-prototipo-03.png", "/assets/cases/corrida-em-jogo/carrossel-prototipo-04.png"] },
+      { ...image("documentacao", "Documentação", "menu_book", "/assets/cases/corrida-em-jogo/artefato-documentacao.svg"), background: "#3c3f45" },
     ],
-    results: { metrics: [metric(key("t1084"), "t0152", "t0153", "coverage"), metric(key("t1085"), "t0550", "t0551", "system"), metric(text("100+"), "t0155", "t0156", "product-outcome")], copy: [key("t0552"), key("t0553")] },
+    results: { metrics: [metric(text("—"), "t0152", "t0153", "coverage"), metric(text("—"), "t0550", "t0551", "system"), metric(text("100+"), "t0155", "t0156", "product-outcome")], copy: [key("t0552"), key("t0553")] },
     relatedCases: ["beneficios-dispersos", "cadastro-travado", "uma-marca-por-cliente"],
-    card: { image: "/assets/front-page/cases/corrida-em-jogo.png", background: "/assets/front-page/cases/card-background.png", figureOverlay: "bg-black", imageClass: "h-full left-[-216.97%] top-0 w-[321.69%]", tone: "dark" },
+    card: { image: "/assets/front-page/cases/corrida-em-jogo.png", tone: "dark" },
   },
   {
     slug: "beneficios-dispersos",
@@ -198,7 +193,7 @@ export const cases = [
     ],
     results: { metrics: [metric(key("t1084"), "t0150", "t0151", "baseline"), metric(key("t1085"), "t0152", "t0153", "system"), metric(key("t0154"), "t0155", "t0156", "product-outcome")], copy: [key("t0157"), key("t0158")] },
     relatedCases: ["corrida-em-jogo", "cadastro-travado", "uma-marca-por-cliente"],
-    card: { image: "/assets/front-page/cases/beneficios-dispersos.png", background: "/assets/front-page/cases/card-background.png", figureOverlay: "bg-black", innerOverlay: "bg-[#060709]", imageClass: "left-[15.31%] top-[6.23%] size-[69.38%]", tone: "dark" },
+    card: { image: "/assets/front-page/cases/beneficios-dispersos.png", tone: "dark" },
   },
   {
     slug: "cadastro-travado",
@@ -218,7 +213,7 @@ export const cases = [
     ],
     results: { metrics: [metric(text("+48%"), "t0343", "t0268", "baseline"), metric(text("-30%"), "t0344", "t0273", "baseline"), metric(text("56.423"), "t0345", "t0346", "product-outcome")], copy: [key("t0347"), key("t0348")] },
     relatedCases: ["uma-marca-por-cliente", "beneficios-dispersos", "corrida-em-jogo"],
-    card: { image: "/assets/front-page/cases/cadastro-travado.png", innerOverlay: "bg-[#020305]", imageClass: "h-[123.39%] left-[-102.41%] top-[-13.71%] w-[248.12%]", tone: "dark" },
+    card: { image: "/assets/front-page/cases/cadastro-travado.png", tone: "dark" },
   },
   {
     slug: "uma-marca-por-cliente",
@@ -237,7 +232,7 @@ export const cases = [
     ],
     results: { metrics: [metric(key("t1084"), "t1074", "t0551", "evidence"), metric(key("t1085"), "t1075", "t0990", "system"), metric(key("t0154"), "t1076", "t0622", "product-outcome")], copy: [key("t1077"), key("t1078")] },
     relatedCases: ["cadastro-travado", "beneficios-dispersos", "corrida-em-jogo"],
-    card: { image: "/assets/front-page/cases/uma-marca-por-cliente.png", figureBg: "bg-white", innerOverlay: "bg-[#060709]", imageClass: "h-[77.82%] left-0 top-0 w-full", tone: "dark", cardBg: "" },
+    card: { image: "/assets/front-page/cases/uma-marca-por-cliente.png", tone: "dark" },
   },
 ] as const satisfies readonly CaseStudy[]
 

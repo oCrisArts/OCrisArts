@@ -84,6 +84,8 @@ function createAutoCarousel(
 ) {
   let position = 0
 
+  const looping = track.hasAttribute("data-carousel-loop")
+
   let direction = -1
 
   let active = false
@@ -114,6 +116,39 @@ function createAutoCarousel(
 
   const clamp = (value: number) => Math.min(0, Math.max(-bounds(), value))
 
+  const normalizeLoop = (value: number) => {
+    const gap = Number.parseFloat(getComputedStyle(track).columnGap) || 0
+    let rotations = 0
+
+    while (rotations < track.children.length) {
+      const first = track.firstElementChild as HTMLElement | null
+      if (!first) return 0
+
+      const step = first.offsetWidth + gap
+      if (step <= 0 || value > -step) break
+
+      value += step
+      startPosition += step
+      track.append(first)
+      rotations += 1
+    }
+
+    while (value > 0 && rotations < track.children.length) {
+      const last = track.lastElementChild as HTMLElement | null
+      if (!last) return 0
+
+      const step = last.offsetWidth + gap
+      if (step <= 0) break
+
+      value -= step
+      startPosition -= step
+      track.prepend(last)
+      rotations += 1
+    }
+
+    return value
+  }
+
   const render = () => gsap.set(track, { x: position })
 
   const frame = (time: number) => {
@@ -129,18 +164,22 @@ function createAutoCarousel(
       !focused &&
       pointerId === null &&
       time >= resumeAt &&
-      max > 0
+      (looping || max > 0)
     ) {
-      position += direction * speed * elapsed
+      if (looping) {
+        position = normalizeLoop(position - speed * elapsed)
+      } else {
+        position += direction * speed * elapsed
 
-      if (position <= -max) {
-        position = -max
+        if (position <= -max) {
+          position = -max
 
-        direction = 1
-      } else if (position >= 0) {
-        position = 0
+          direction = 1
+        } else if (position >= 0) {
+          position = 0
 
-        direction = -1
+          direction = -1
+        }
       }
 
       render()
@@ -199,7 +238,9 @@ function createAutoCarousel(
 
     const delta = (event.clientX - startX) / Math.max(scale, 0.01)
 
-    position = clamp(startPosition + delta)
+    position = looping
+      ? normalizeLoop(startPosition + delta)
+      : clamp(startPosition + delta)
 
     direction = delta > 0 ? 1 : -1
 
@@ -276,24 +317,24 @@ function createAutoCarousel(
 
   const keyboard = (event: KeyboardEvent) => {
     if (
-      !viewport.hasAttribute("data-artifact-carousel") ||
+      (!viewport.hasAttribute("data-artifact-carousel") && !looping) ||
       !["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)
     )
       return
 
     event.preventDefault()
 
-    position =
+    const nextPosition =
       event.key === "Home"
         ? 0
         : event.key === "End"
           ? -bounds()
-          : clamp(
-              position +
-                (event.key === "ArrowLeft" ? 1 : -1) *
-                  viewport.clientWidth *
-                  0.7,
-            )
+          : position +
+            (event.key === "ArrowLeft" ? 1 : -1) *
+              viewport.clientWidth *
+              0.7
+
+    position = looping ? normalizeLoop(nextPosition) : clamp(nextPosition)
 
     direction = event.key === "ArrowLeft" || event.key === "Home" ? 1 : -1
 
@@ -511,6 +552,10 @@ function HomePage() {
         '[data-node-id="4:35836"]',
       )
 
+      const caseViewport = element.querySelector<HTMLElement>(
+        "[data-case-carousel]",
+      )
+
       if (hero && casesSection && floatingTrack && caseTrack) {
         hero.id = "inicio"
 
@@ -639,7 +684,9 @@ function HomePage() {
           })
         })
 
-        carouselCleanups.push(createAutoCarousel(caseTrack, casesSection, 34))
+        carouselCleanups.push(
+          createAutoCarousel(caseTrack, caseViewport ?? casesSection, 34),
+        )
       }
 
       const sectionIds: Record<string, string> = {

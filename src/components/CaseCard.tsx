@@ -25,118 +25,74 @@ export default function CaseCard({
 
   const card = item.card as {
     image: string
-    imageClass: string
     tone: "light" | "dark"
-    background?: string
-    figureBg?: string
-    figureOverlay?: string
-    innerOverlay?: string
-    imageWrapper?: string
-    cardBg?: string
   }
 
-  const compact = variant === "compact"
-  const captionTone = card.tone === "dark" ? "text-[#f9f9f9]" : "text-[#020305]"
-  const cardBg = card.cardBg ?? "bg-[#eeeff1]"
-
-  if (compact) {
-    return (
-      <Link
-        className={`case-card case-card--compact relative shrink-0 overflow-hidden rounded-lg border border-[#bbbcbe] ${cardBg} h-[160px] w-[90px]`}
-        to={path(`/cases/${slug}`)}
-        onClick={onNavigate}
-        data-name="article.case-card"
-        data-case-slug={slug}
-        data-card-variant="compact"
-      >
-        <article className="flex size-full flex-col">
-          <figure
-            className="case-card__figure relative flex flex-[1_0_0] isolate items-center justify-center mb-[-52px] min-h-px overflow-clip w-full aspect-[352/632]"
-            data-name="card-figure"
-          >
-            <div className="flex-[1_0_0] h-full min-w-px relative z-[2]" data-name="card-img">
-              <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                <img
-                  alt=""
-                  className="pointer-events-none absolute h-full w-full object-contain"
-                  src={card.image}
-                />
-              </div>
-            </div>
-          </figure>
-          <div
-            className={`case-card__caption ${captionTone} flex flex-col gap-0.5 h-[52px] items-start justify-center p-1 relative shrink-0 w-full`}
-            data-name="card-caption"
-          >
-            <h3 className="font-['Geist:Regular'] font-normal leading-[1.35] text-[7px]">
-              {t(item.title)}
-            </h3>
-            <p className="font-['Sora:Light'] font-light leading-[1.35] line-clamp-2 text-[6px]">
-              {t(item.subtitle)}
-            </p>
-          </div>
-        </article>
-      </Link>
-    )
-  }
+  const variantClasses = {
+    default: {
+      article:
+        "case-card--caption-bottom w-[300px] aspect-[300/533] max-[600px]:w-[min(76vw,300px)] [&_.case-card__caption]:bottom-0",
+      caption: "h-[140px] gap-2 px-4 py-3",
+      title: "text-[16px]",
+      subtitle: "text-[13px]",
+    },
+    hero: {
+      article:
+        "case-card--caption-top w-80 aspect-[320/568] max-[1100px]:w-[260px] max-[600px]:w-[min(60vw,260px)] [&_.case-card__caption]:top-0",
+      caption: "h-[140px] gap-2 px-4 py-3",
+      title: "text-[16px] max-[600px]:text-base",
+      subtitle: "text-[13px] max-[600px]:text-lg",
+    },
+    compact: {
+      article:
+        "case-card--caption-bottom w-[90px] aspect-[9/16] [&_.case-card__caption]:bottom-0",
+      caption: "h-[52px] gap-0.5 p-1",
+      title: "text-[7px] leading-[1.35]",
+      subtitle:
+        "line-clamp-2 overflow-hidden text-[6px] leading-[1.35]",
+    },
+  }[variant]
+  const toneClass =
+    card.tone === "light"
+      ? "case-card--tone-light [&_.case-card__caption]:text-[#020305]"
+      : "case-card--tone-dark [&_.case-card__caption]:text-[#f9f9f9]"
 
   return (
-    <Link
-      className={`case-card case-card--${variant} ${cardBg} border border-[#bbbcbe] border-solid flex flex-col h-[568px] items-start justify-center overflow-clip relative rounded-[8px] shrink-0 w-[320px]`}
-      to={path(`/cases/${slug}`)}
-      onClick={onNavigate}
+    <article
+      className={`case-card case-card--${variant} ${variantClasses.article} ${toneClass} bg-[#eeeff1] relative shrink-0 overflow-hidden rounded-lg border border-[#bbbcbe] focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-[#fcfdfe]`}
       data-name="article.case-card"
       data-case-slug={slug}
       data-card-variant={variant}
     >
-      <article
-        className={`flex flex-[1_0_0] isolate items-center justify-center mb-[-140px] min-h-px overflow-clip relative w-full ${card.figureBg ?? ""}`}
-        data-name="card-figure"
+      <Link
+        className="case-card__link relative block size-full overflow-hidden"
+        to={path(`/cases/${slug}`)}
+        onClick={onNavigate}
+        aria-label={`${t(item.title)} — ${t(item.subtitle)}`}
       >
-        {card.background && (
+        <figure
+          className="case-card__figure absolute inset-0 isolate overflow-hidden"
+          data-name="card-figure"
+        >
           <img
             alt=""
-            aria-hidden="true"
-            className="absolute inset-0 object-cover pointer-events-none size-full"
-            src={card.background}
+            className="h-full w-full object-contain transition-all duration-300 ease-out hover:scale-105"
+            src={card.image}
           />
-        )}
-        {card.figureOverlay && (
-          <div aria-hidden className="absolute inset-0 pointer-events-none">
-            <div className={`absolute ${card.figureOverlay} inset-0`} />
-          </div>
-        )}
+        </figure>
+
         <div
-          className={`flex-[1_0_0] h-full min-w-px relative z-[2] ${card.imageWrapper ?? "aspect-[352/632]"}`}
-          data-name="card-img"
+          className={`case-card__caption absolute inset-x-0 z-[3] flex flex-col items-start justify-center bg-transparent ${variantClasses.caption}`}
+          data-name="card-caption"
         >
-          <div aria-hidden className="absolute inset-0 pointer-events-none">
-            {card.innerOverlay && <div className={`absolute ${card.innerOverlay} inset-0`} />}
-            <div className="absolute inset-0 overflow-hidden">
-              <img
-                alt=""
-                className={`pointer-events-none absolute h-full w-full object-contain ${card.imageClass}`}
-                src={card.image}
-              />
-            </div>
-          </div>
-        </div>
-      </article>
-      <div
-        className={`case-card__caption ${captionTone} flex flex-col gap-[4px] h-[140px] items-start justify-center min-h-[140px] p-[16px] relative shrink-0 w-full`}
-        data-name="card-caption"
-      >
-        <div className="flex items-center relative shrink-0 w-full" data-name="card-title">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Geist:Regular'] font-normal leading-[1.6] min-w-px relative text-[20px]">
+          <h3 className={`case-card__title w-full [word-break:break-word] font-['Geist:Regular'] font-normal leading-[1.6] ${variantClasses.title}`}>
             {t(item.title)}
-          </p>
-        </div>
-        <div className="flex items-center relative shrink-0 w-full" data-name="card-title">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Sora:Light'] font-light leading-[1.6] min-w-px relative text-[24px]">
+          </h3>
+          <p className={`case-card__subtitle w-full [word-break:break-word] font-['Sora:Light'] font-light leading-[1.6] ${variantClasses.subtitle}`}>
             {t(item.subtitle)}
           </p>
         </div>
-      </div>
-    </Link>
+      </Link>
+    </article>
   )
 }

@@ -1,19 +1,85 @@
 import { Navigate, useParams } from "react-router-dom"
-import { cases, findCase, type CaseArtifact, type ContentRef, type CaseMetric } from "../data/cases"
-import { useI18n } from "../i18n"
+import ServiceCard, { type ServiceCardProps } from "../components/ServiceCard"
 import TaxonomyTags from "../components/TaxonomyTags"
-import CaseCard from "../components/CaseCard"
-import ServiceCard from "../components/ServiceCard"
+import {
+  findCase,
+  type CaseArtifact,
+  type CaseMetric,
+  type ContentRef,
+  type ServiceSlug,
+  type TaxonomyItem,
+} from "../data/cases"
+import { useI18n } from "../i18n"
 
-const sectionClass =
-  "flex min-h-[min(1080px,100svh)] w-full items-center px-[clamp(20px,8.333vw,160px)] py-[clamp(64px,6vw,128px)]"
+const gutter = "px-[clamp(20px,8.333vw,160px)]"
+const section = `flex min-h-[min(1080px,100svh)] w-full items-center ${gutter} py-[clamp(64px,6vw,128px)]`
+const serviceCards: Record<ServiceSlug, ServiceCardProps> = {
+  branding: {
+    service: "branding",
+    titleKey: "t0581",
+    subtitleKey: "t0582",
+    tags: [
+      { icon: "palette", label: "Branding" },
+      { icon: "palette", label: "Identidade visual" },
+    ],
+    poster: "/assets/front-page/services/branding-poster.jpg",
+    videoSrc: "/assets/front-page/services/branding.mp4",
+  },
+  web: {
+    service: "web",
+    titleKey: "t0585",
+    subtitleKey: "t0586",
+    tags: [
+      { icon: "language", label: "Sites" },
+      { icon: "web", label: "Landing pages" },
+    ],
+    poster: "/assets/front-page/services/web-poster.jpg",
+    videoSrc: "/assets/front-page/services/web.mp4",
+  },
+  apps: {
+    service: "apps",
+    titleKey: "t0590",
+    subtitleKey: "t0591",
+    tags: [
+      { icon: "smartphone", label: "Aplicativos" },
+      { icon: "devices", label: "Sistemas" },
+    ],
+    poster: "/assets/front-page/services/aplicativos-poster.jpg",
+    videoSrc: "/assets/front-page/services/aplicativos.mp4",
+  },
+  ux: {
+    service: "ux",
+    titleKey: "t0595",
+    subtitleKey: "t0596",
+    tags: [
+      { icon: "search", label: "UX Research" },
+      { icon: "widgets", label: "Design Systems" },
+    ],
+    poster: "/assets/front-page/services/ux-ui-poster.jpg",
+    videoSrc: "/assets/front-page/services/ux-ui.mp4",
+  },
+}
 
-function HeroSection({ title, subtitle, tags, hero }: { title: string; subtitle: string; tags: any[]; hero: string }) {
+function content(item: ContentRef, t: (key: string) => string) {
+  return item.key ? t(item.key) : (item.text ?? "")
+}
+
+function Hero({
+  title,
+  subtitle,
+  tags,
+  image,
+}: {
+  title: string
+  subtitle: string
+  tags: TaxonomyItem[]
+  image: string
+}) {
   const { t } = useI18n()
-
   return (
     <header
-      className="relative isolate flex h-[min(1080px,100svh)] min-h-[640px] w-full flex-col items-start justify-end gap-8 overflow-clip bg-[#94999a] px-[clamp(20px,8.333vw,160px)] py-[clamp(64px,5.833vw,112px)]"
+      id="hero"
+      className={`relative isolate flex h-[min(1080px,100svh)] min-h-[640px] w-full flex-col justify-end gap-8 overflow-clip bg-[#94999a] ${gutter} py-[clamp(64px,5.833vw,112px)]`}
       data-name="header.intro"
     >
       <div className="relative z-10 flex w-full flex-col items-start gap-6 [word-break:break-word]">
@@ -25,31 +91,53 @@ function HeroSection({ title, subtitle, tags, hero }: { title: string; subtitle:
         </p>
         <TaxonomyTags kind="meta" items={tags} />
       </div>
-      <div className="absolute inset-0 z-[3] bg-black/40" data-name="div.hero-overlay" />
-      <div className="absolute inset-0 z-[2]" data-name="img.hero-image" style={{ backgroundImage: `url(${hero})`, backgroundSize: 'cover', backgroundPosition: 'center' }} />
+      <div
+        className="absolute inset-0 z-[3] bg-black/40"
+        data-name="div.hero-overlay"
+      />
+      <div
+        className="absolute inset-0 z-[2] bg-cover bg-center"
+        data-name="img.hero-image"
+        style={{ backgroundImage: `url(${image})` }}
+      />
     </header>
   )
 }
 
-function ContextSection({ contextCopy, contextMedia, project }: { contextCopy: ContentRef[]; contextMedia?: string; project: string }) {
-  const { t, text } = useI18n()
-
+function Context({
+  copy,
+  media,
+  project,
+}: {
+  copy: ContentRef[]
+  media?: string
+  project: string
+}) {
+  const { t } = useI18n()
   return (
-    <section className={sectionClass} data-name="section.context" data-section-id="context">
+    <section
+      id="contexto"
+      className={section}
+      data-name="section.context"
+      data-section-id="context"
+    >
       <div className="flex w-full flex-col items-start gap-12 lg:flex-row lg:items-center lg:gap-24">
         <div className="flex flex-1 flex-col gap-6">
-          <h2 className="text-[16px] font-semibold leading-[1.3] tracking-[0.64px] text-[#0d0e10]">
+          <h2 className="text-[16px] font-semibold tracking-[0.64px]">
             {t("t0018")}
           </h2>
-          <div className="flex max-w-[1040px] flex-col gap-6 text-[16px] leading-[1.5] text-[#000102]">
-            {contextCopy.map((item, index) => (
-              <p key={index}>{item.key ? t(item.key) : item.text}</p>
+          <div className="flex max-w-[1040px] flex-col gap-6 text-[16px] leading-[1.5]">
+            {copy.map((item, index) => (
+              <p key={index}>{content(item, t)}</p>
             ))}
           </div>
         </div>
-        {contextMedia && (
-          <figure className="flex w-full max-w-[320px] shrink-0 flex-col gap-9" aria-label={project}>
-            <img src={contextMedia} alt="" className="w-full" />
+        {media && (
+          <figure
+            className="w-full max-w-[320px] shrink-0"
+            aria-label={project}
+          >
+            <img src={media} alt="" className="h-auto w-full object-contain" />
           </figure>
         )}
       </div>
@@ -57,46 +145,60 @@ function ContextSection({ contextCopy, contextMedia, project }: { contextCopy: C
   )
 }
 
-function ChallengeSection({ challenge }: { challenge: ContentRef }) {
+function Challenge({ copy }: { copy: ContentRef }) {
   const { t } = useI18n()
-
   return (
-    <section className={`${sectionClass} relative isolate justify-center overflow-clip`} data-name="section.challenge" data-section-id="challenge">
-      <div className="relative z-10 flex w-full max-w-[1500px] flex-col items-center gap-8 text-center font-['Sora:SemiBold'] font-semibold">
-        <h2 className="text-[16px] leading-[1.3] tracking-[0.64px] text-[#0d0e10]">
-          {t("t0021")}
-        </h2>
-        <p className="max-w-[1200px] text-[clamp(26px,1.875vw,36px)] leading-[1.2] text-[#000102]">
-          {challenge.key ? t(challenge.key) : challenge.text}
+    <section
+      id="desafio"
+      className={`${section} justify-center overflow-clip`}
+      data-name="section.challenge"
+      data-section-id="challenge"
+    >
+      <div className="flex w-full max-w-[1500px] flex-col items-center gap-8 text-center font-['Sora:SemiBold'] font-semibold">
+        <h2 className="text-[16px] tracking-[0.64px]">{t("t0021")}</h2>
+        <p className="max-w-[1200px] text-[clamp(26px,1.875vw,36px)] leading-[1.2]">
+          {content(copy, t)}
         </p>
       </div>
     </section>
   )
 }
 
-function ProcessSection({ process, methodology, services }: { process: ContentRef[]; methodology: any[]; services: string[] }) {
-  const { text } = useI18n()
-
+function Process({
+  copy,
+  methodology,
+  services,
+}: {
+  copy: ContentRef[]
+  methodology: TaxonomyItem[]
+  services: ServiceSlug[]
+}) {
+  const { t } = useI18n()
   return (
-    <section className={sectionClass} data-name="section.process" data-section-id="process">
-      <div className="flex w-full flex-col gap-12">
-        <div className="flex flex-1 flex-col gap-6">
-          <h2 className="text-[16px] font-semibold leading-[1.3] tracking-[0.64px] text-[#0d0e10]">
-            {text("03 · PROCESSO")}
-          </h2>
-          <div className="flex max-w-[1040px] flex-col gap-6 text-[16px] leading-[1.5] text-[#000102]">
-            {process.map((item, index) => (
-              <p key={index}>{item.key ? text(item.key) : item.text}</p>
+    <section
+      id="processo"
+      className={section}
+      data-name="section.process"
+      data-section-id="process"
+    >
+      <div className="grid w-full gap-12 lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-20">
+        <div className="flex min-w-0 flex-col gap-8">
+          <div className="case-process-copy">
+            <h2>{t("t0023")}</h2>
+            {copy.map((item, index) => (
+              <p key={index}>{content(item, t)}</p>
             ))}
           </div>
+          <TaxonomyTags kind="process-tags" items={methodology} />
         </div>
-        <TaxonomyTags kind="process-tags" items={methodology} />
         {services.length > 0 && (
-          <div className="flex w-full flex-wrap gap-4">
+          <div className="flex max-w-full flex-wrap gap-4 lg:justify-end">
             {services.map((service) => (
-              <div key={service} className="px-4 py-2 bg-[#000102] text-[#fcfdfe] rounded-full text-sm">
-                {service}
-              </div>
+              <ServiceCard
+                key={service}
+                {...serviceCards[service]}
+                variant="compact"
+              />
             ))}
           </div>
         )}
@@ -105,92 +207,140 @@ function ProcessSection({ process, methodology, services }: { process: ContentRe
   )
 }
 
-function ArtifactSection({ artifact }: { artifact: CaseArtifact }) {
-  const { text } = useI18n()
+function ArtifactLabel({ artifact }: { artifact: CaseArtifact }) {
+  return (
+    <div className={`relative z-10 w-full ${gutter}`}>
+      <TaxonomyTags
+        kind="artifact"
+        items={[{ icon: artifact.icon, label: artifact.label }]}
+      />
+    </div>
+  )
+}
 
-  if (artifact.layout === "video") {
+function Artifact({ artifact }: { artifact: CaseArtifact }) {
+  const background =
+    artifact.background ?? (artifact.dark ? "#020305" : "#eeeff1")
+  const base = `relative flex min-h-[min(1080px,100svh)] w-full flex-col items-center justify-center gap-6 overflow-hidden ${artifact.slug}`
+  const props = {
+    id: `artefato-${artifact.slug}`,
+    "data-name": "section.artifact",
+    "data-section-id": "artifacts",
+    "data-artifact": artifact.slug,
+    "data-layout": artifact.layout,
+    style: { backgroundColor: background },
+  }
+  if (
+    (artifact.layout === "video" || artifact.layout === "video-background") &&
+    artifact.video
+  )
     return (
-      <section className="flex min-h-[min(1080px,100svh)] w-full flex-col items-center justify-center gap-6 px-[clamp(20px,8.333vw,160px)] py-6" data-name="section.artifact" data-section-id="artifacts">
-        <div className="flex w-full justify-start">
-          <TaxonomyTags kind="artifact" items={[{ icon: artifact.icon, label: artifact.label }]} />
-        </div>
-        {artifact.video && (
-          <video
-            className="w-full max-w-4xl rounded-lg"
-            controls
-            preload="metadata"
-          >
-            <source src={artifact.video} type="video/mp4" />
-          </video>
-        )}
+      <section {...props} className={base}>
+        <ArtifactLabel artifact={artifact} />
+        <video
+          className="absolute inset-0 size-full object-contain"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="metadata"
+          aria-label={artifact.label}
+        >
+          <source src={artifact.video} type="video/mp4" />
+        </video>
       </section>
     )
-  }
-
-  if (artifact.layout === "embed-fullscreen" && artifact.embed) {
+  if (artifact.layout === "embed-fullscreen" && artifact.embed)
     return (
-      <section className="flex min-h-[min(1080px,100svh)] w-full flex-col items-center justify-center gap-6 px-[clamp(20px,8.333vw,160px)] py-6" data-name="section.artifact" data-section-id="artifacts">
-        <div className="flex w-full justify-start">
-          <TaxonomyTags kind="artifact" items={[{ icon: artifact.icon, label: artifact.label }]} />
-        </div>
+      <section {...props} className={base}>
+        <ArtifactLabel artifact={artifact} />
         <iframe
           src={artifact.embed.url}
           title={artifact.embed.title}
-          className="w-full h-[80vh] rounded-lg border-0"
+          className="absolute inset-0 size-full border-0"
           allowFullScreen
+          loading="lazy"
         />
       </section>
     )
-  }
-
-  if (artifact.layout === "carousel" && artifact.images) {
+  if (artifact.layout === "carousel" && artifact.images)
     return (
-      <section className="flex min-h-[min(1080px,100svh)] w-full flex-col items-center justify-center gap-6 px-[clamp(20px,8.333vw,160px)] py-6" data-name="section.artifact" data-section-id="artifacts">
-        <div className="flex w-full justify-start">
-          <TaxonomyTags kind="artifact" items={[{ icon: artifact.icon, label: artifact.label }]} />
+      <section {...props} className={`${base} py-6`}>
+        <ArtifactLabel artifact={artifact} />
+        <div
+          className="artifact-carousel relative z-[2] w-full"
+          data-artifact-carousel
+          tabIndex={0}
+          role="region"
+          aria-label={artifact.label}
+        >
+          <div
+            className={`flex items-center gap-4 ${gutter}`}
+            data-artifact-track
+          >
+            {artifact.images.map((image, index) => (
+              <figure
+                key={image}
+                className="flex h-[min(820px,72svh)] w-[min(78vw,1180px)] shrink-0 items-center justify-center"
+              >
+                <img
+                  src={image}
+                  alt={`${artifact.label} ${index + 1}`}
+                  loading="lazy"
+                  decoding="async"
+                  className="max-h-full max-w-full select-none object-contain"
+                  draggable={false}
+                />
+              </figure>
+            ))}
+          </div>
         </div>
-        <div className="flex w-full overflow-x-auto gap-4 snap-x snap-mandatory">
-          {artifact.images.map((img, index) => (
-            <figure key={index} className="flex-shrink-0 snap-center">
-              <img src={img} alt={artifact.label} className="h-[60vh] w-auto object-contain" />
+      </section>
+    )
+  if (artifact.layout === "grid" && artifact.images)
+    return (
+      <section {...props} className={`${base} ${gutter} py-6`}>
+        <TaxonomyTags
+          kind="artifact"
+          items={[{ icon: artifact.icon, label: artifact.label }]}
+        />
+        <div className="grid w-full grid-cols-1 items-center gap-8 md:grid-cols-2">
+          {artifact.images.map((image, index) => (
+            <figure
+              key={image}
+              className="flex min-w-0 items-center justify-center"
+            >
+              <img
+                src={image}
+                alt={`${artifact.label} ${index + 1}`}
+                loading="lazy"
+                decoding="async"
+                className="h-auto max-h-[78svh] w-full object-contain"
+              />
             </figure>
           ))}
         </div>
       </section>
     )
-  }
-
-  if (artifact.layout === "grid" && artifact.images) {
-    return (
-      <section className="flex min-h-[min(1080px,100svh)] w-full flex-col items-center justify-center gap-6 px-[clamp(20px,8.333vw,160px)] py-6" data-name="section.artifact" data-section-id="artifacts">
-        <div className="flex w-full justify-start">
-          <TaxonomyTags kind="artifact" items={[{ icon: artifact.icon, label: artifact.label }]} />
-        </div>
-        <div className="grid w-full grid-cols-1 md:grid-cols-2 gap-8">
-          {artifact.images.map((img, index) => (
-            <figure key={index} className="flex items-center justify-center">
-              <img src={img} alt={artifact.label} className="h-auto max-h-[60vh] w-full object-contain" />
-            </figure>
-          ))}
-        </div>
-      </section>
-    )
-  }
-
-  // Default image layout
   return (
-    <section className="flex min-h-[min(1080px,100svh)] w-full flex-col items-center justify-center gap-6 px-[clamp(20px,8.333vw,160px)] py-6" data-name="section.artifact" data-section-id="artifacts">
-      <div className="flex w-full justify-start">
-        <TaxonomyTags kind="artifact" items={[{ icon: artifact.icon, label: artifact.label }]} />
-      </div>
-      {artifact.images && artifact.images[0] && (
-        <figure className="artifact-viewport flex w-full items-center justify-center" tabIndex={0} role="region" aria-label={text("Artefatos do projeto")}>
+    <section {...props} className={`${base} ${gutter} py-6`}>
+      <TaxonomyTags
+        kind="artifact"
+        items={[{ icon: artifact.icon, label: artifact.label }]}
+      />
+      {artifact.images?.[0] && (
+        <figure
+          className="artifact-viewport flex w-full flex-1 items-center justify-center"
+          tabIndex={0}
+          role="region"
+          aria-label={artifact.label}
+        >
           <img
             src={artifact.images[0]}
             alt={artifact.label}
             loading="lazy"
             decoding="async"
-            className="block h-auto max-h-full max-w-full object-contain"
+            className="block h-auto max-h-[82svh] max-w-full object-contain"
           />
         </figure>
       )}
@@ -198,64 +348,60 @@ function ArtifactSection({ artifact }: { artifact: CaseArtifact }) {
   )
 }
 
-function MetricResult({ metric }: { metric: CaseMetric }) {
+function Metric({ metric }: { metric: CaseMetric }) {
   const { t } = useI18n()
-
   return (
-    <div className="relative flex h-[75px] !min-w-[280px] flex-[1_0_0] items-end" data-name={`metric-result.${metric.name}`}>
-      <div className="flex size-[75px] max-h-[75px] min-h-[75px] max-w-[75px] min-w-[75px] shrink-0 flex-col items-center justify-center rounded-[6px] bg-[#020305] px-3 py-[3px]">
-        <p className="text-[16px] leading-none whitespace-nowrap text-[#fcfdfe]">
-          {metric.value.key ? t(metric.value.key) : metric.value.text}
+    <div
+      className="relative flex h-[75px] min-w-[min(280px,100%)] flex-[1_1_280px] items-end"
+      data-name={`metric-result.${metric.name}`}
+    >
+      <div className="flex size-[75px] shrink-0 items-center justify-center rounded-[6px] bg-[#020305] px-3">
+        <p className="whitespace-nowrap text-[16px] leading-none text-[#fcfdfe]">
+          {content(metric.value, t)}
         </p>
       </div>
-      <div className="flex min-w-0 flex-1 self-stretch items-end">
-        <div className="flex h-full min-w-0 flex-1 flex-col items-start justify-center">
-          <div className="flex w-full flex-col items-start gap-[6px] rounded-r-[6px] bg-[#101113] p-3 leading-none whitespace-nowrap text-[#fcfdfe]">
-            <p className="text-[16px]">{metric.title.key ? t(metric.title.key) : metric.title.text}</p>
-            <p className="text-[9px]">{metric.subtitle.key ? t(metric.subtitle.key) : metric.subtitle.text}</p>
-          </div>
+      <div className="flex min-w-0 flex-1 self-stretch items-center rounded-r-[6px] bg-[#101113] p-3 text-[#fcfdfe]">
+        <div className="flex min-w-0 flex-col gap-[6px]">
+          <p className="text-[16px] leading-none">{content(metric.title, t)}</p>
+          <p className="text-[9px] leading-none">
+            {content(metric.subtitle, t)}
+          </p>
         </div>
       </div>
     </div>
   )
 }
 
-function ResultsSection({ results }: { results: { metrics: CaseMetric[]; copy: ContentRef[] } }) {
+function Results({
+  metrics,
+  copy,
+}: {
+  metrics: CaseMetric[]
+  copy: ContentRef[]
+}) {
   const { t } = useI18n()
-
   return (
-    <section className={sectionClass} data-name="section.results" data-section-id="results">
+    <section
+      id="resultados"
+      className={section}
+      data-name="section.results"
+      data-section-id="results"
+    >
       <div className="flex w-full flex-col items-start gap-6">
-        <h2 className="w-full max-w-[900px] text-[16px] font-semibold leading-[1.3] tracking-[0.64px] text-[#000102]">
+        <h2 className="w-full max-w-[900px] text-[16px] font-semibold tracking-[0.64px]">
           {t("t0149")}
         </h2>
-        <div className="flex min-h-[100px] w-full flex-wrap content-start items-start gap-x-6 gap-y-8" data-name="div.metrics">
-          {results.metrics.map((metric, index) => (
-            <MetricResult key={index} metric={metric} />
+        <div
+          className="flex min-h-[100px] w-full flex-wrap gap-x-6 gap-y-8"
+          data-name="div.metrics"
+        >
+          {metrics.map((metric, index) => (
+            <Metric key={index} metric={metric} />
           ))}
         </div>
-        <div className="flex max-w-[1372px] flex-col gap-6 text-[16px] leading-[1.5] text-[#000102]">
-          {results.copy.map((item, index) => (
-            <p key={index}>{item.key ? t(item.key) : item.text}</p>
-          ))}
-        </div>
-      </div>
-    </section>
-  )
-}
-
-function RelatedCasesSection({ relatedCases }: { relatedCases: string[] }) {
-  if (relatedCases.length === 0) return null
-
-  return (
-    <section className={sectionClass} data-name="section.related-cases" data-section-id="related-cases">
-      <div className="flex w-full flex-col gap-8">
-        <h2 className="text-[16px] font-semibold leading-[1.3] tracking-[0.64px] text-[#0d0e10]">
-          Projetos relacionados
-        </h2>
-        <div className="flex w-full flex-wrap gap-6">
-          {relatedCases.map((slug) => (
-            <CaseCard key={slug} slug={slug as any} variant="default" />
+        <div className="flex max-w-[1372px] flex-col gap-6 text-[16px] leading-[1.5]">
+          {copy.map((item, index) => (
+            <p key={index}>{content(item, t)}</p>
           ))}
         </div>
       </div>
@@ -267,23 +413,37 @@ export default function CasesSingle() {
   const { slug } = useParams()
   const { path } = useI18n()
   const item = findCase(slug)
-
   if (!item) return <Navigate to={path("/")} replace />
-
   return (
     <article
-      className="flex w-full flex-col items-center bg-[#eeeff1]"
+      id="case"
+      className={`case-single ${item.slug} flex w-full flex-col items-center bg-[#eeeff1]`}
       data-name={`article#${item.slug}`}
     >
-      <HeroSection title={item.title} subtitle={item.subtitle} tags={item.tags} hero={item.hero} />
-      <ContextSection contextCopy={item.contextCopy} contextMedia={item.contextMedia} project={item.project} />
-      <ChallengeSection challenge={item.challenge} />
-      <ProcessSection process={item.process} methodology={item.methodology} services={item.services} />
-      {item.artifacts.map((artifact, index) => (
-        <ArtifactSection key={`${artifact.slug}-${index}`} artifact={artifact} />
+      <Hero
+        title={item.title}
+        subtitle={item.subtitle}
+        tags={[...item.tags]}
+        image={item.hero}
+      />
+      <Context
+        copy={[...item.contextCopy]}
+        media={item.contextMedia}
+        project={item.project}
+      />
+      <Challenge copy={item.challenge} />
+      <Process
+        copy={[...item.process]}
+        methodology={[...item.methodology]}
+        services={[...item.services]}
+      />
+      {item.artifacts.map((artifact) => (
+        <Artifact key={artifact.slug} artifact={artifact} />
       ))}
-      <ResultsSection results={item.results} />
-      
+      <Results
+        metrics={[...item.results.metrics]}
+        copy={[...item.results.copy]}
+      />
     </article>
   )
 }

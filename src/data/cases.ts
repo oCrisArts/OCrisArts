@@ -12,6 +12,8 @@ export type CaseArtifact = {
   video?: string
   embed?: { title: string; url: string }
   dark?: boolean
+  background?: string
+  fullBleed?: boolean
 }
 
 export type CaseMetric = {
@@ -88,7 +90,8 @@ export const cases = [
   {
     slug: "cadastros-complexos",
     title: "t0159", subtitle: "t0160", context: "t0168", project: "SIAFF · CAIXA",
-    contextCopy: [key("t0168"), key("t0169"), key("t0170")], challenge: key("t0171"), process: [key("t0176"), key("t0177"), key("t0178")],
+    contextCopy: [key("t0168"), key("t0169"), key("t0170")], challenge: key("t0172"),
+    process: [key("t0173"), text("Um protótipo funcional criado no Figma Make permitiu observar tarefas reais."), text("Os testes e registros do Clarity ajudaram a identificar comportamentos que não seriam percebidos em telas estáticas."), key("t0175")],
     hero: "/assets/front-page/cases/cadastros-complexos.png", contextMedia: "/assets/shared/branding/caixa-logo-full-2-caixa-logo-full2.svg",
     tags: [tag("devices", "Sistemas"), tag("monitoring", "Data-Driven Design"), tag("science", "Atomic Research"), tag("assignment", "Plano de teste"), tag("visibility", "Observação de uso"), tag("draw", "Protótipos")],
     methodology: [tag("target", "Definição de objetivos e métricas"), tag("database", "Coleta de dados"), tag("analytics", "Análise de dados"), tag("draw", "Prototipagem"), tag("fact_check", "Validação"), tag("monitoring", "Monitoramento")],
@@ -96,11 +99,11 @@ export const cases = [
     artifacts: [
       image("atomic-research", "Atomic Research", "science", "/assets/cases/cadastros-complexos/artefato-atomic-research.svg", "grid"),
       image("plano-de-teste", "Plano de teste", "assignment", "/assets/cases/cadastros-complexos/artefato-plano-de-teste.svg"),
-      { slug: "clarity", label: "Observação de uso com Clarity", icon: "visibility", layout: "video", video: "/assets/cases/cadastros-complexos/artefato-clarity.mp4" },
+      { slug: "clarity", label: "Observação de uso com Clarity", icon: "visibility", layout: "video", video: "/assets/cases/cadastros-complexos/artefato-clarity.mp4", fullBleed: true },
       image("prototipo-funcional", "Protótipo funcional", "draw", "/assets/cases/cadastros-complexos/artefato-prototipo-funcional.svg"),
       image("cadastro-de-boletos", "Cadastro de boletos", "draw", "/assets/cases/cadastros-complexos/artefato-cadastro-de-boletos.svg"),
-      { slug: "evolucao-dos-cadastros", label: "Evolução dos cadastros", icon: "design_services", layout: "carousel", images: ["/assets/cases/cadastros-complexos/artefato-prototipo-funcional.svg", "/assets/cases/cadastros-complexos/artefato-cadastro-de-boletos.svg", "/assets/cases/cadastros-complexos/artefato-verify-artifact-img-artifact.png"] },
-      { slug: "prototipo-tcca", label: "Protótipo TCCA", icon: "open_in_full", layout: "embed-fullscreen", embed: { title: "TCCA", url: "https://www.figma.com/proto/m0giUODNGvJ8sDMJVVPnhk/" } },
+      { slug: "evolucao-dos-cadastros", label: "Evolução dos cadastros", icon: "design_services", layout: "carousel", images: ["/assets/cases/cadastros-complexos/carrossel-tcca-01.svg", "/assets/cases/cadastros-complexos/carrossel-tcca-02.svg", "/assets/cases/cadastros-complexos/carrossel-tcca-03.svg"] },
+      { slug: "prototipo-tcca", label: "Protótipo TCCA", icon: "open_in_full", layout: "embed-fullscreen", embed: { title: "TCCA", url: "https://www.figma.com/proto/m0giUODNGvJ8sDMJVVPnhk/" }, fullBleed: true },
     ],
     results: { metrics: [metric(text("100%"), "t0267", "t0268", "evidence"), metric(key("t0269"), "t0270", "t0271", "evidence"), metric(text("0"), "t0272", "t0273", "product-outcome")], copy: [key("t0274"), key("t0275")] },
     relatedCases: ["navegacao-confusa", "qualificacao-complexa", "regra-incerta"],
@@ -120,7 +123,7 @@ export const cases = [
       image("identidade-visual", "Identidade visual", "brand_awareness", "/assets/cases/regra-incerta/artefato-identidade-visual.svg"),
       image("fluxo", "Fluxo", "account_tree", "/assets/cases/regra-incerta/artefato-fluxo.svg"),
       image("prototipo-mobile", "Protótipo mobile", "smartphone", "/assets/cases/regra-incerta/artefato-prototipo-mobile.svg"),
-      { slug: "telas-do-aplicativo", label: "Telas do aplicativo", icon: "view_carousel", layout: "carousel", images: ["/assets/cases/regra-incerta/artefato-prioritize-rectangle55.png", "/assets/cases/regra-incerta/artefato-prioritize-rectangle56.png", "/assets/cases/regra-incerta/artefato-prioritize-rectangle57.png", "/assets/cases/regra-incerta/artefato-prioritize-rectangle58.png"] },
+      { slug: "telas-do-aplicativo", label: "Telas do aplicativo", icon: "view_carousel", layout: "carousel", images: ["/assets/cases/regra-incerta/carrossel-tela-01.svg", "/assets/cases/regra-incerta/carrossel-tela-02.svg", "/assets/cases/regra-incerta/carrossel-tela-03.svg", "/assets/cases/regra-incerta/carrossel-tela-04.svg", "/assets/cases/regra-incerta/carrossel-tela-05.svg"] },
     ],
     results: { metrics: [metric(text("—"), "t0152", "t0153", "evidence"), metric(text("—"), "t0989", "t0990", "system"), metric(key("t0614"), "t0991", "t0616", "product-outcome")], copy: [key("t0992"), key("t0993")] },
     relatedCases: ["qualificacao-complexa", "cadastros-complexos", "navegacao-confusa"],
@@ -137,7 +140,7 @@ export const cases = [
     artifacts: [
       image("analise-heuristica", "Análise heurística", "rule", "/assets/cases/qualificacao-complexa/artefato-heuristic-analysis.png"),
       image("fluxos-criticos", "Mapeamento de processos", "account_tree", "/assets/cases/qualificacao-complexa/artefato-critical-flows.png"),
-      { ...image("design-system-caixa", "Design System CAIXA", "widgets", "/assets/cases/qualificacao-complexa/artefato-caixa-design-system.png"), dark: true },
+      { ...image("design-system-caixa", "Design System CAIXA", "widgets", "/assets/cases/qualificacao-complexa/artefato-caixa-design-system.png"), dark: true, background: "#005CA9" },
       image("painel-de-qualificacao", "Painel de qualificação", "table_chart", "/assets/cases/qualificacao-complexa/artefato-qualification-panel.png"),
       image("interface-backoffice", "Interface do BackOffice", "dashboard", "/assets/cases/qualificacao-complexa/artefato-backoffice-interface.png"),
       image("padroes-backoffice", "Padrões do BackOffice", "widgets", "/assets/cases/qualificacao-complexa/artefato-backoffice-patterns.png"),
@@ -158,10 +161,10 @@ export const cases = [
     artifacts: [
       image("jornada-operacional", "Jornada operacional", "route", "/assets/cases/corrida-em-jogo/artefato-jornada-operacional.svg"),
       image("wireframes-operacionais", "Wireframes operacionais", "draw", "/assets/cases/corrida-em-jogo/artefato-wireframes-operacionais.svg"),
-      image("fluxo-de-navegacao", "Fluxo de navegação", "account_tree", "/assets/cases/corrida-em-jogo/artefato-fluxo-de-navegacao.svg"),
+      { ...image("fluxo-de-navegacao", "Fluxo de navegação", "account_tree", "/assets/cases/corrida-em-jogo/artefato-fluxo-de-navegacao.svg"), background: "#020305" },
       image("prototipos-streaming", "Protótipos e interfaces", "devices", "/assets/cases/corrida-em-jogo/artefato-prototipos-streaming.svg"),
-      { slug: "variacoes-streaming", label: "Variações do streaming", icon: "view_carousel", layout: "carousel", images: ["/assets/cases/corrida-em-jogo/artefato-create-rectangle1.png", "/assets/cases/corrida-em-jogo/artefato-create-rectangle2.png", "/assets/cases/corrida-em-jogo/artefato-implement-1-image1.png"] },
-      image("documentacao", "Documentação", "menu_book", "/assets/cases/corrida-em-jogo/artefato-documentacao.svg", "grid"),
+      { slug: "variacoes-streaming", label: "Variações do streaming", icon: "view_carousel", layout: "carousel", images: ["/assets/cases/corrida-em-jogo/carrossel-variacao-01.svg", "/assets/cases/corrida-em-jogo/carrossel-variacao-02.svg", "/assets/cases/corrida-em-jogo/carrossel-variacao-03.svg", "/assets/cases/corrida-em-jogo/carrossel-variacao-04.svg", "/assets/cases/corrida-em-jogo/carrossel-variacao-05.svg"] },
+      { slug: "documentacao", label: "Documentação", icon: "menu_book", layout: "carousel", images: ["/assets/cases/corrida-em-jogo/carrossel-documentacao-01.svg", "/assets/cases/corrida-em-jogo/carrossel-documentacao-02.svg", "/assets/cases/corrida-em-jogo/carrossel-documentacao-03.svg"] },
     ],
     results: { metrics: [metric(text("—"), "t0152", "t0153", "coverage"), metric(text("—"), "t0550", "t0551", "system"), metric(text("100+"), "t0155", "t0156", "product-outcome")], copy: [key("t0552"), key("t0553")] },
     relatedCases: ["beneficios-dispersos", "cadastro-travado", "uma-marca-por-cliente"],
@@ -178,9 +181,9 @@ export const cases = [
     artifacts: [
       image("fluxo-de-uso", "Fluxo de uso", "route", "/assets/cases/beneficios-dispersos/artefato-fluxo-de-uso.svg"),
       { slug: "personas", label: "Personas", icon: "groups", layout: "grid", images: ["/assets/cases/beneficios-dispersos/artefato-persona-01.svg", "/assets/cases/beneficios-dispersos/artefato-persona-02.svg"] },
-      image("painel-contextual", "Painel contextual", "dashboard", "/assets/cases/beneficios-dispersos/artefato-painel-contextual.svg"),
-      image("decisoes-de-interface", "Decisões de interface", "design_services", "/assets/cases/beneficios-dispersos/artefato-decisoes-de-interface.svg", "composition"),
-      image("prototipos", "Interfaces e protótipos", "draw", "/assets/cases/beneficios-dispersos/artefato-prototipos.svg"),
+      { ...image("painel-contextual", "Painel contextual", "dashboard", "/assets/cases/beneficios-dispersos/artefato-painel-contextual.svg"), background: "#00863F" },
+      { ...image("decisoes-de-interface", "Decisões de interface", "design_services", "/assets/cases/beneficios-dispersos/artefato-decisoes-de-interface.svg", "composition"), background: "#00A335" },
+      { ...image("prototipos", "Interfaces e protótipos", "draw", "/assets/cases/beneficios-dispersos/artefato-prototipos.svg"), background: "#00863F" },
       image("plano-de-metricas", "Plano de métricas", "monitoring", "/assets/cases/beneficios-dispersos/artefato-plano-de-metricas.svg"),
     ],
     results: { metrics: [metric(text("—"), "t0150", "t0151", "baseline"), metric(text("—"), "t0152", "t0153", "system"), metric(key("t0154"), "t0155", "t0156", "product-outcome")], copy: [key("t0157"), key("t0158")] },
@@ -196,12 +199,12 @@ export const cases = [
     tags: [tag("cloud", "SaaS"), tag("travel_explore", "Product Discovery"), tag("route", "Mapa da jornada"), tag("grid_view", "Matriz de priorização"), tag("draw", "Wireframes"), tag("draw", "Protótipos")],
     methodology: [tag("handshake", "Alinhamento"), tag("search", "Pesquisa"), tag("lightbulb", "Ideação"), tag("draw", "Prototipagem"), tag("fact_check", "Validação")], services: ["web", "ux"],
     artifacts: [
-      image("mapa-da-jornada", "Mapa da jornada", "route", "/assets/cases/cadastro-travado/artefato-mapa-da-jornada.svg"),
-      image("matriz-de-priorizacao", "Matriz de priorização", "grid_view", "/assets/cases/cadastro-travado/artefato-matriz-de-priorizacao.svg"),
-      image("wireframes", "Wireframes", "draw", "/assets/cases/cadastro-travado/artefato-wireframes.svg"),
-      image("prototipos-do-portal", "Protótipos do portal", "draw", "/assets/cases/cadastro-travado/artefato-prototipos-do-portal.svg", "grid"),
-      image("interfaces-do-portal", "Interfaces do portal", "devices", "/assets/cases/cadastro-travado/artefato-interfaces-do-portal.svg"),
-      { slug: "prototipo-portal-konviva", label: "Portal Konviva", icon: "open_in_full", layout: "embed-fullscreen", embed: { title: "Portal Konviva", url: "https://portalkonviva.figma.site/" } },
+      { ...image("mapa-da-jornada", "Mapa da jornada", "route", "/assets/cases/cadastro-travado/artefato-mapa-da-jornada.svg"), background: "#F2F2F2" },
+      { ...image("matriz-de-priorizacao", "Matriz de priorização", "grid_view", "/assets/cases/cadastro-travado/artefato-matriz-de-priorizacao.svg"), background: "#F2F2F2" },
+      { ...image("wireframes", "Wireframes", "draw", "/assets/cases/cadastro-travado/artefato-wireframes.svg"), background: "#F2F2F2" },
+      { ...image("prototipos-do-portal", "Protótipos do portal", "draw", "/assets/cases/cadastro-travado/artefato-prototipos-do-portal.svg", "grid"), background: "#EEEEEE" },
+      { ...image("interfaces-do-portal", "Interfaces do portal", "devices", "/assets/cases/cadastro-travado/artefato-interfaces-do-portal.svg"), background: "#EEEEEE" },
+      { slug: "prototipo-portal-konviva", label: "Portal Konviva", icon: "open_in_full", layout: "embed-fullscreen", embed: { title: "Portal Konviva", url: "https://portalkonviva.figma.site/" }, background: "#EEEEEE", fullBleed: true },
     ],
     results: { metrics: [metric(text("+48%"), "t0343", "t0268", "baseline"), metric(text("-30%"), "t0344", "t0273", "baseline"), metric(text("56.423"), "t0345", "t0346", "product-outcome")], copy: [key("t0347"), key("t0348")] },
     relatedCases: ["uma-marca-por-cliente", "beneficios-dispersos", "corrida-em-jogo"],
@@ -210,16 +213,17 @@ export const cases = [
   {
     slug: "uma-marca-por-cliente",
     title: "t0574", subtitle: "t0575", context: "t0999", project: "Konviva White-Label",
-    contextCopy: [key("t0999"), key("t1000"), key("t1001")], challenge: key("t1006"), process: [key("t1007"), key("t1008"), key("t1009")],
+    contextCopy: [key("t0999"), key("t1000")], challenge: key("t1001"),
+    process: [text("A experiência de aprendizagem era compartilhada entre os clientes."), text("O que precisava mudar era a identidade visual de cada empresa."), key("t1003"), text("Com Design Tokens, diferentes identidades passaram a utilizar a mesma estrutura de interface."), text("Os protótipos ajudaram a verificar como as variações se comportavam sem exigir a reconstrução do aplicativo.")],
     hero: "/assets/cases/uma-marca-por-cliente/hero.png", contextMedia: "/assets/cases/uma-marca-por-cliente/contexto-konviva-1-1-konviva11.svg",
     tags: [tag("smartphone", "Aplicativos"), tag("view_list", "Product Backlog Building"), tag("fact_check", "Backlog do MVP"), tag("widgets", "Design System modular"), tag("palette", "Design Tokens"), tag("draw", "Protótipos")],
-    methodology: [tag("psychology", "Pensar"), tag("build", "Fazer"), tag("fact_check", "Validar")], services: ["branding", "ux", "apps"],
+    methodology: [tag("description", "Contextualização"), tag("groups", "Personas"), tag("widgets", "Funcionalidades"), tag("route", "Jornada"), tag("view_list", "Itens do backlog")], services: ["branding", "apps"],
     artifacts: [
       image("backlog-do-mvp", "Backlog do MVP", "fact_check", "/assets/cases/uma-marca-por-cliente/artefato-backlog-do-mvp.svg"),
       image("design-system", "Design System modular", "widgets", "/assets/cases/uma-marca-por-cliente/artefato-design-system.svg"),
-      { slug: "video-de-fundo", label: "Animação de carregamento", icon: "movie", layout: "video-background", video: "/assets/cases/uma-marca-por-cliente/artefato-loading-promo.mp4", dark: true },
-      { slug: "prototipos-white-label", label: "Protótipos White-Label", icon: "draw", layout: "carousel", images: ["/assets/cases/uma-marca-por-cliente/artefato-make-course-1-1-course11.png", "/assets/cases/uma-marca-por-cliente/artefato-make-course-1-1-course12.png", "/assets/cases/uma-marca-por-cliente/artefato-make-course-1-1-course13.png", "/assets/cases/uma-marca-por-cliente/artefato-make-course-1-1-course14.png"] },
-      { slug: "variacoes-de-marca", label: "Variações de marca", icon: "palette", layout: "carousel", images: ["/assets/cases/uma-marca-por-cliente/artefato-make-section-1-colors-section1-colors.png", "/assets/cases/uma-marca-por-cliente/artefato-make-section-2-typography-section2-typography.png", "/assets/cases/uma-marca-por-cliente/artefato-make-section-6-spacing-section6-spacing.png"] },
+      { slug: "video-de-fundo", label: "Animação de carregamento", icon: "movie", layout: "video-background", video: "/assets/cases/uma-marca-por-cliente/artefato-loading-promo.mp4", dark: true, fullBleed: true },
+      { slug: "prototipos-white-label", label: "Protótipos White-Label", icon: "draw", layout: "carousel", images: ["/assets/cases/uma-marca-por-cliente/carrossel-prototipo-01.svg", "/assets/cases/uma-marca-por-cliente/carrossel-prototipo-02.svg", "/assets/cases/uma-marca-por-cliente/carrossel-prototipo-03.svg", "/assets/cases/uma-marca-por-cliente/carrossel-prototipo-04.svg", "/assets/cases/uma-marca-por-cliente/carrossel-prototipo-05.svg", "/assets/cases/uma-marca-por-cliente/carrossel-prototipo-06.svg", "/assets/cases/uma-marca-por-cliente/carrossel-prototipo-07.svg"] },
+      { slug: "variacoes-de-marca", label: "Variações de marca", icon: "palette", layout: "carousel", images: ["/assets/cases/uma-marca-por-cliente/carrossel-marca-01.svg", "/assets/cases/uma-marca-por-cliente/carrossel-marca-02.svg", "/assets/cases/uma-marca-por-cliente/carrossel-marca-03.svg", "/assets/cases/uma-marca-por-cliente/carrossel-marca-04.svg", "/assets/cases/uma-marca-por-cliente/carrossel-marca-05.svg", "/assets/cases/uma-marca-por-cliente/carrossel-marca-06.svg", "/assets/cases/uma-marca-por-cliente/carrossel-marca-07.svg"] },
     ],
     results: { metrics: [metric(text("—"), "t1074", "t0551", "evidence"), metric(text("—"), "t1075", "t0990", "system"), metric(key("t0154"), "t1076", "t0622", "product-outcome")], copy: [key("t1077"), key("t1078")] },
     relatedCases: ["cadastro-travado", "beneficios-dispersos", "corrida-em-jogo"],

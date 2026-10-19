@@ -23,6 +23,7 @@ const sourceFiles = [
   ...fs
     .readdirSync("src", { recursive: true })
     .filter((file) => /\.(?:tsx?|css|json)$/.test(file))
+    .filter((file) => !file.replaceAll("\\", "/").startsWith("pages/cases/"))
     .map((file) => path.join("src", file)),
   ...fs
     .readdirSync("scripts", { recursive: true })

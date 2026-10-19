@@ -817,13 +817,13 @@ function ExactCasePage({ children }: { children: React.ReactNode }) {
       '[data-name="section.results"]',
     )
 
-    if (hero) hero.id = "case"
+    if (hero && !hero.id) hero.id = "hero"
 
-    if (contextSection) contextSection.id = "contexto"
+    if (contextSection && !contextSection.id) contextSection.id = "contexto"
 
-    if (processSection) processSection.id = "processo"
+    if (processSection && !processSection.id) processSection.id = "processo"
 
-    if (resultSection) resultSection.id = "resultados"
+    if (resultSection && !resultSection.id) resultSection.id = "resultados"
 
     const carouselCleanups: Array<() => void> = []
     const scaledArtifactsCleanup = observeScaledArtifacts(element)

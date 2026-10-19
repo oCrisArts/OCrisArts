@@ -58,7 +58,7 @@ export default function CaseCard({
               <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <img
                   alt=""
-                  className="pointer-events-none absolute max-w-none object-contain"
+                  className="pointer-events-none absolute h-full w-full object-contain"
                   src={card.image}
                 />
               </div>
@@ -82,7 +82,7 @@ export default function CaseCard({
 
   return (
     <Link
-      className={`case-card case-card--${variant} ${cardBg} border border-[#bbbcbe] border-solid content-stretch flex flex-col h-[568px] items-start justify-center overflow-clip relative rounded-[8px] shrink-0 w-[320px]`}
+      className={`case-card case-card--${variant} ${cardBg} border border-[#bbbcbe] border-solid flex flex-col h-[568px] items-start justify-center overflow-clip relative rounded-[8px] shrink-0 w-[320px]`}
       to={path(`/cases/${slug}`)}
       onClick={onNavigate}
       data-name="article.case-card"
@@ -90,14 +90,14 @@ export default function CaseCard({
       data-card-variant={variant}
     >
       <article
-        className={`content-stretch flex flex-[1_0_0] isolate items-center justify-center mb-[-140px] min-h-px overflow-clip relative w-full ${card.figureBg ?? ""}`}
+        className={`flex flex-[1_0_0] isolate items-center justify-center mb-[-140px] min-h-px overflow-clip relative w-full ${card.figureBg ?? ""}`}
         data-name="card-figure"
       >
         {card.background && (
           <img
             alt=""
             aria-hidden="true"
-            className="absolute inset-0 max-w-none object-cover pointer-events-none size-full"
+            className="absolute inset-0 object-cover pointer-events-none size-full"
             src={card.background}
           />
         )}
@@ -115,7 +115,7 @@ export default function CaseCard({
             <div className="absolute inset-0 overflow-hidden">
               <img
                 alt=""
-                className={`pointer-events-none absolute max-w-none ${card.imageClass}`}
+                className={`pointer-events-none absolute h-full w-full object-contain ${card.imageClass}`}
                 src={card.image}
               />
             </div>
@@ -123,15 +123,15 @@ export default function CaseCard({
         </div>
       </article>
       <div
-        className={`case-card__caption ${captionTone} content-stretch flex flex-col gap-[4px] h-[140px] items-start justify-center min-h-[140px] p-[16px] relative shrink-0 w-full`}
+        className={`case-card__caption ${captionTone} flex flex-col gap-[4px] h-[140px] items-start justify-center min-h-[140px] p-[16px] relative shrink-0 w-full`}
         data-name="card-caption"
       >
-        <div className="content-stretch flex items-center relative shrink-0 w-full" data-name="card-title">
+        <div className="flex items-center relative shrink-0 w-full" data-name="card-title">
           <p className="[word-break:break-word] flex-[1_0_0] font-['Geist:Regular'] font-normal leading-[1.6] min-w-px relative text-[20px]">
             {t(item.title)}
           </p>
         </div>
-        <div className="content-stretch flex items-center relative shrink-0 w-full" data-name="card-title">
+        <div className="flex items-center relative shrink-0 w-full" data-name="card-title">
           <p className="[word-break:break-word] flex-[1_0_0] font-['Sora:Light'] font-light leading-[1.6] min-w-px relative text-[24px]">
             {t(item.subtitle)}
           </p>

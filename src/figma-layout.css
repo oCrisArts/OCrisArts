@@ -89,7 +89,6 @@
 .cadastros-complexos .tcca-carousel-section .artifact-carousel { overflow: visible; }
 .cadastros-complexos .tcca-carousel-track {
   --tcca-slide-width: min(960px, calc(100vw - 40px));
-  gap: 30px;
   min-width: 0;
   padding: 5px;
   margin-inline-start: calc((100vw - var(--tcca-slide-width)) / 2 - var(--tcca-slide-width) - 35px);

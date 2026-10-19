@@ -350,13 +350,9 @@ function Artifact({ artifact }: { artifact: CaseArtifact }) {
           aria-label={artifact.label}
         >
           <div
-            className={
-              isTccaCarousel
-                ? "tcca-carousel-track flex items-center"
-                : showsAllSlides
-                  ? `flex items-center gap-[clamp(12px,2.083vw,40px)] ${gutter}`
-                : `flex items-center gap-4 ${gutter}`
-            }
+            className={`flex items-center gap-6 max-[600px]:gap-4 ${
+              isTccaCarousel ? "tcca-carousel-track" : gutter
+            }`}
             data-artifact-track
             data-carousel-loop
           >

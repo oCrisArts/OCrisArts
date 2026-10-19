@@ -1,4 +1,5 @@
 import { Navigate, useParams } from "react-router-dom"
+import type { CSSProperties } from "react"
 import ServiceCard, { type ServiceCardProps } from "../components/ServiceCard"
 import TaxonomyTags from "../components/TaxonomyTags"
 import {
@@ -237,21 +238,34 @@ function ArtifactLabel({ artifact }: { artifact: CaseArtifact }) {
 
 function Artifact({ artifact }: { artifact: CaseArtifact }) {
   const background =
-    artifact.background ?? (artifact.dark ? "#020305" : "#eeeff1")
-  const base = `relative flex min-h-[min(1080px,100svh)] w-full flex-col items-center justify-center gap-6 overflow-hidden ${artifact.slug}`
+    typeof artifact.background === "string"
+      ? { color: artifact.background }
+      : artifact.background ?? { color: artifact.dark ? "#020305" : "#eeeff1" }
+  const backgroundStyle = {
+    backgroundColor: background.color,
+    "--artifact-background-image": background.image
+      ? `url("${background.image}")`
+      : "none",
+    "--artifact-background-size": background.size ?? "cover",
+    "--artifact-background-position": background.position ?? "center",
+    "--artifact-background-repeat": background.repeat ?? "no-repeat",
+    "--artifact-background-overlay": background.overlay ?? "transparent",
+    "--artifact-background-blend-mode": background.blendMode ?? "normal",
+  } as CSSProperties
+  const base = `artifact-surface relative flex min-h-[min(1080px,100svh)] w-full flex-col items-center justify-center gap-6 overflow-hidden ${artifact.slug}`
   const props = {
     id: `artefato-${artifact.slug}`,
     "data-name": "section.artifact",
     "data-section-id": "artifacts",
     "data-artifact": artifact.slug,
     "data-layout": artifact.layout,
-    style: { backgroundColor: background },
+    style: backgroundStyle,
   }
   if (artifact.layout === "video-background" && artifact.video)
     return (
       <section
         {...props}
-        className={`artifact-video-background relative w-full overflow-hidden ${artifact.slug}`}
+        className={`artifact-surface artifact-video-background relative isolate w-full overflow-hidden ${artifact.slug}`}
       >
         <div className="absolute inset-x-0 top-[clamp(20px,5.833vw,112px)] z-10">
           <ArtifactLabel artifact={artifact} />
@@ -296,7 +310,7 @@ function Artifact({ artifact }: { artifact: CaseArtifact }) {
     return (
       <section
         {...props}
-        className={`artifact-embed-fullscreen relative w-full overflow-hidden ${artifact.slug}`}
+        className={`artifact-surface artifact-embed-fullscreen relative isolate w-full overflow-hidden ${artifact.slug}`}
       >
         <header
           className={`artifact-embed-tags absolute inset-x-0 top-0 z-10 flex h-[70px] w-full items-center justify-center overflow-hidden ${gutter} py-5`}

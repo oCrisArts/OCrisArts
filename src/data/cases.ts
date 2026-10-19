@@ -3,6 +3,16 @@ export type TaxonomyItem = { icon: string; label: string }
 export type ArtifactLayout = "image" | "grid" | "composition" | "carousel" | "video" | "video-background" | "embed-fullscreen"
 export type ServiceSlug = "branding" | "web" | "apps" | "ux"
 
+export type ArtifactBackground = {
+  color?: string
+  image?: string
+  size?: "cover" | "contain" | "auto"
+  position?: string
+  repeat?: "no-repeat" | "repeat" | "repeat-x" | "repeat-y"
+  overlay?: string
+  blendMode?: string
+}
+
 export type CaseArtifact = {
   slug: string
   label: string
@@ -15,7 +25,7 @@ export type CaseArtifact = {
   embed?: { title: string; url: string }
   embedTags?: TaxonomyItem[]
   dark?: boolean
-  background?: string
+  background?: string | ArtifactBackground
   fullBleed?: boolean
 }
 
@@ -100,7 +110,7 @@ export const cases = [
     services: ["ux", "apps"],
     showServicesInProcess: false,
     artifacts: [
-      image("atomic-research", "Atomic Research", "science", "/assets/cases/cadastros-complexos/artefato-atomic-research.svg", "grid"),
+      image("atomic-research", "Atomic Research", "science", "/assets/cases/cadastros-complexos/artefato-atomic-research.svg"),
       image("plano-de-teste", "Plano de teste", "assignment", "/assets/cases/cadastros-complexos/artefato-plano-de-teste.svg"),
       { slug: "clarity", label: "Observação de uso", icon: "visibility", layout: "video-background", video: "/assets/cases/cadastros-complexos/artefato-clarity.mp4", videoWidth: 1920, videoHeight: 1032, fullBleed: true },
       image("prototipo-funcional", "Protótipo funcional", "draw", "/assets/cases/cadastros-complexos/artefato-prototipo-funcional.svg"),
@@ -126,7 +136,16 @@ export const cases = [
       image("moodboard", "Moodboard", "palette", "/assets/cases/regra-incerta/artefato-moodboard.svg"),
       image("identidade-visual", "Identidade visual", "brand_awareness", "/assets/cases/regra-incerta/artefato-identidade-visual.svg"),
       image("fluxo", "Fluxo", "account_tree", "/assets/cases/regra-incerta/artefato-fluxo.svg"),
-      image("prototipo-mobile", "Protótipo mobile", "smartphone", "/assets/cases/regra-incerta/artefato-prototipo-mobile.svg"),
+      {
+        ...image("prototipo-mobile", "Protótipo mobile", "smartphone", "/assets/cases/regra-incerta/artefato-prototipo-mobile.svg"),
+        background: {
+          color: "#002442",
+          image: "/assets/cases/regra-incerta/artefato-prototipo-mobile-fundo.png",
+          size: "cover",
+          position: "center",
+          repeat: "no-repeat",
+        },
+      },
       { slug: "telas-do-aplicativo", label: "Telas do aplicativo", icon: "view_carousel", layout: "carousel", images: ["/assets/cases/regra-incerta/carrossel-tela-01.svg", "/assets/cases/regra-incerta/carrossel-tela-02.svg", "/assets/cases/regra-incerta/carrossel-tela-03.svg", "/assets/cases/regra-incerta/carrossel-tela-04.svg", "/assets/cases/regra-incerta/carrossel-tela-05.svg"] },
     ],
     results: { metrics: [metric(text("90%"), "t0152", "t1086", "evidence"), metric(text("-30%"), "t0989", "t1086", "system"), metric(key("t0614"), "t0991", "t0616", "product-outcome")], copy: [key("t0992"), key("t0993")] },

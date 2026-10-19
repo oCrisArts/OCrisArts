@@ -2,7 +2,7 @@ import { basePath, catalogs, languageFromPath, languages, localizedPath, transla
 import { cases } from '../data/cases'
 
 export const origin='https://ocris.art.br'
-export const socialImage='/assets/front-page/about-poster.jpg'
+export const socialImage='/assets/ocrisart.jpg'
 export { cases }
 export const allPaths=languages.flatMap(language=>['/',...cases.map(c=>`/cases/${c.slug}`)].map(path=>localizedPath(path,language)))
 export const isKnownPath=(path:string)=>allPaths.includes(path.replace(/\/$/,'')||'/')
@@ -32,6 +32,6 @@ export function headMarkup(path:string,allowIndex=indexable) {
  `<link rel="canonical" href="${data.canonical}" data-seo="true">`+
  data.alternates.map(a=>`<link rel="alternate" hreflang="${a.lang}" href="${a.url}" data-seo="true">`).join('')+
  meta('og:title',data.title,true)+meta('og:description',data.description,true)+meta('og:url',data.canonical,true)+meta('og:type','website',true)+meta('og:site_name','OCris Arts',true)+meta('og:locale',localeCodes[data.language],true)+
- meta('og:image',origin+socialImage,true)+meta('og:image:alt','oCris Acosta · OCris Arts',true)+meta('twitter:card','summary_large_image')+meta('twitter:title',data.title)+meta('twitter:description',data.description)+meta('twitter:image',origin+socialImage)+
+ meta('og:image',origin+socialImage,true)+meta('og:image:width','1200',true)+meta('og:image:height','630',true)+meta('og:image:type','image/jpeg',true)+meta('og:image:alt','oCris Acosta · OCris Arts',true)+meta('twitter:card','summary_large_image')+meta('twitter:title',data.title)+meta('twitter:description',data.description)+meta('twitter:image',origin+socialImage)+
  `<script type="application/ld+json" data-seo="true">${JSON.stringify(data.schema).replace(/</g,'\\u003c')}</script>`
 }

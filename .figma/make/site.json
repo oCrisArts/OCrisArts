@@ -3,7 +3,7 @@
   "description": "Da pesquisa à implementação, aproximo pessoas, produto e engenharia para transformar desafios complexos em soluções claras, acessíveis e viáveis.",
   "language": "pt-BR",
   "icons": {"icon": "/favicon.svg"},
-  "openGraph": {"image": "https://ocris.art.br/videos/about-poster.jpg"},
+  "openGraph": {"image": "https://ocris.art.br/assets/ocrisart.jpg"},
   "robots": {
     "index": true
   },

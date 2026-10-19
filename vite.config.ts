@@ -151,6 +151,9 @@ function figmaSiteConfiguration(config: FigmaSiteConfiguration): Plugin {
         if (socialImage) {
           tags.push(
             { tag: 'meta', attrs: { property: 'og:image', content: socialImage }, injectTo: 'head' },
+            { tag: 'meta', attrs: { property: 'og:image:width', content: '1200' }, injectTo: 'head' },
+            { tag: 'meta', attrs: { property: 'og:image:height', content: '630' }, injectTo: 'head' },
+            { tag: 'meta', attrs: { property: 'og:image:type', content: 'image/jpeg' }, injectTo: 'head' },
             { tag: 'meta', attrs: { name: 'twitter:card', content: 'summary_large_image' }, injectTo: 'head' },
             { tag: 'meta', attrs: { name: 'twitter:image', content: socialImage }, injectTo: 'head' },
           )

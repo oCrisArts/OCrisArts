@@ -199,7 +199,7 @@ function Process({
       data-name="section.process"
       data-section-id="process"
     >
-      <div className="grid w-full gap-12 lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-20">
+      <div className="grid w-full gap-12 xl:grid-cols-[minmax(0,1fr)_624px] xl:gap-20">
         <div className="flex min-w-0 flex-col gap-8">
           <div className="case-process-copy">
             <h2>{t("t0023")}</h2>
@@ -210,14 +210,16 @@ function Process({
           <TaxonomyTags kind="process-tags" items={methodology} />
         </div>
         {services.length > 0 && (
-          <div className="flex max-w-full flex-wrap gap-4 lg:justify-end">
-            {services.map((service) => (
-              <ServiceCard
-                key={service}
-                {...serviceCards[service]}
-                variant="compact"
-              />
-            ))}
+          <div className="w-full max-w-[624px] overflow-x-auto overscroll-x-contain">
+            <div className="flex w-max flex-nowrap gap-6">
+              {services.map((service) => (
+                <ServiceCard
+                  key={service}
+                  {...serviceCards[service]}
+                  variant="compact"
+                />
+              ))}
+            </div>
           </div>
         )}
       </div>

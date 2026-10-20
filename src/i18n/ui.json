@@ -518,5 +518,75 @@
     "pt-BR": "Artefatos do projeto",
     "en": "Project artifacts",
     "es": "Artefactos del proyecto"
+  },
+  "Animação de carregamento": {
+    "pt-BR": "Animação de carregamento",
+    "en": "Loading animation",
+    "es": "Animación de carga"
+  },
+  "Arquitetura da informação": {
+    "pt-BR": "Arquitetura da informação",
+    "en": "Information Architecture",
+    "es": "Arquitectura de la información"
+  },
+  "Avaliar": {
+    "pt-BR": "Avaliar",
+    "en": "Evaluate",
+    "es": "Evaluar"
+  },
+  "Compreender": {
+    "pt-BR": "Compreender",
+    "en": "Understand",
+    "es": "Comprender"
+  },
+  "Desenhar": {
+    "pt-BR": "Desenhar",
+    "en": "Design",
+    "es": "Diseñar"
+  },
+  "Design Tokens": {
+    "pt-BR": "Design Tokens",
+    "en": "Design Tokens",
+    "es": "Design Tokens"
+  },
+  "Especificar": {
+    "pt-BR": "Especificar",
+    "en": "Specify",
+    "es": "Especificar"
+  },
+  "Figma Make": {
+    "pt-BR": "Figma Make",
+    "en": "Figma Make",
+    "es": "Figma Make"
+  },
+  "Fluxo de estorno": {
+    "pt-BR": "Fluxo de estorno",
+    "en": "Reversal flow",
+    "es": "Flujo de reversión"
+  },
+  "Interfaces e protótipos": {
+    "pt-BR": "Interfaces e protótipos",
+    "en": "Interfaces and prototypes",
+    "es": "Interfaces y prototipos"
+  },
+  "Painel de qualificação": {
+    "pt-BR": "Painel de qualificação",
+    "en": "Qualification dashboard",
+    "es": "Panel de calificación"
+  },
+  "Protótipo Interativo": {
+    "pt-BR": "Protótipo Interativo",
+    "en": "Interactive prototype",
+    "es": "Prototipo interactivo"
+  },
+  "Protótipos do portal": {
+    "pt-BR": "Protótipos do portal",
+    "en": "Portal prototypes",
+    "es": "Prototipos del portal"
+  },
+  "Telas do aplicativo": {
+    "pt-BR": "Telas do aplicativo",
+    "en": "App screens",
+    "es": "Pantallas de la aplicación"
   }
 }

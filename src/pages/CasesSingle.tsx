@@ -61,8 +61,12 @@ const serviceCards: Record<ServiceSlug, ServiceCardProps> = {
   },
 }
 
-function content(item: ContentRef, t: (key: string) => string) {
-  return item.key ? t(item.key) : (item.text ?? "")
+function content(
+  item: ContentRef,
+  t: (key: string) => string,
+  text: (value: string) => string,
+) {
+  return item.key ? t(item.key) : text(item.text ?? "")
 }
 
 function Hero({
@@ -116,7 +120,7 @@ function Context({
   mediaWidth?: number
   project: string
 }) {
-  const { t } = useI18n()
+  const { t, text } = useI18n()
   return (
     <section
       id="contexto"
@@ -131,7 +135,7 @@ function Context({
           </h2>
           <div className="flex max-w-[1040px] flex-col gap-6 text-[16px] leading-[1.5]">
             {copy.map((item, index) => (
-              <p key={index}>{content(item, t)}</p>
+              <p key={index}>{content(item, t, text)}</p>
             ))}
           </div>
         </div>
@@ -156,7 +160,7 @@ function Challenge({
   copy: ContentRef
   media?: string
 }) {
-  const { t } = useI18n()
+  const { t, text } = useI18n()
   return (
     <section
       id="desafio"
@@ -167,7 +171,7 @@ function Challenge({
       <div className="relative z-[1] flex w-full max-w-[1500px] flex-col items-center gap-8 text-center font-['Sora:SemiBold'] font-semibold">
         <h2 className="text-[16px] tracking-[0.64px]">{t("t0021")}</h2>
         <p className="max-w-[1200px] text-[clamp(26px,1.875vw,36px)] leading-[1.2]">
-          {content(copy, t)}
+          {content(copy, t, text)}
         </p>
       </div>
       {media && (
@@ -191,7 +195,7 @@ function Process({
   methodology: TaxonomyItem[]
   services: ServiceSlug[]
 }) {
-  const { t } = useI18n()
+  const { t, text } = useI18n()
   return (
     <section
       id="processo"
@@ -204,7 +208,7 @@ function Process({
           <div className="case-process-copy">
             <h2>{t("t0023")}</h2>
             {copy.map((item, index) => (
-              <p key={index}>{content(item, t)}</p>
+              <p key={index}>{content(item, t, text)}</p>
             ))}
           </div>
           <TaxonomyTags kind="process-tags" items={methodology} />
@@ -239,6 +243,7 @@ function ArtifactLabel({ artifact }: { artifact: CaseArtifact }) {
 }
 
 function Artifact({ artifact }: { artifact: CaseArtifact }) {
+  const { text } = useI18n()
   const background =
     typeof artifact.background === "string"
       ? { color: artifact.background }
@@ -281,7 +286,7 @@ function Artifact({ artifact }: { artifact: CaseArtifact }) {
           muted
           playsInline
           preload="metadata"
-          aria-label={artifact.label}
+          aria-label={text(artifact.label)}
         >
           <source src={artifact.video} type="video/mp4" />
         </video>
@@ -302,7 +307,7 @@ function Artifact({ artifact }: { artifact: CaseArtifact }) {
           muted
           playsInline
           preload="metadata"
-          aria-label={artifact.label}
+          aria-label={text(artifact.label)}
         >
           <source src={artifact.video} type="video/mp4" />
         </video>
@@ -349,7 +354,7 @@ function Artifact({ artifact }: { artifact: CaseArtifact }) {
           data-artifact-carousel
           tabIndex={0}
           role="region"
-          aria-label={artifact.label}
+          aria-label={text(artifact.label)}
         >
           <div
             className={`flex items-center gap-6 max-[600px]:gap-4 ${
@@ -369,7 +374,7 @@ function Artifact({ artifact }: { artifact: CaseArtifact }) {
               >
                 <img
                   src={image}
-                  alt={`${artifact.label} ${index + 1}`}
+                  alt={`${text(artifact.label)} ${index + 1}`}
                   loading="lazy"
                   decoding="async"
                   className={
@@ -401,7 +406,7 @@ function Artifact({ artifact }: { artifact: CaseArtifact }) {
             >
               <img
                 src={image}
-                alt={`${artifact.label} ${index + 1}`}
+                alt={`${text(artifact.label)} ${index + 1}`}
                 loading="lazy"
                 decoding="async"
                 className="h-auto max-h-[78svh] w-full object-contain"
@@ -422,11 +427,11 @@ function Artifact({ artifact }: { artifact: CaseArtifact }) {
           className="artifact-viewport flex w-full flex-1 items-center justify-center"
           tabIndex={0}
           role="region"
-          aria-label={artifact.label}
+          aria-label={text(artifact.label)}
         >
           <img
             src={artifact.images[0]}
-            alt={artifact.label}
+            alt={text(artifact.label)}
             loading="lazy"
             decoding="async"
             className="block h-auto max-h-[82svh] max-w-full object-contain"
@@ -438,7 +443,7 @@ function Artifact({ artifact }: { artifact: CaseArtifact }) {
 }
 
 function Metric({ metric }: { metric: CaseMetric }) {
-  const { t } = useI18n()
+  const { t, text } = useI18n()
   return (
     <div
       className="relative flex h-[75px] min-w-[min(280px,100%)] flex-[1_1_280px] items-end"
@@ -450,14 +455,14 @@ function Metric({ metric }: { metric: CaseMetric }) {
         data-name="number"
       >
         <p className="whitespace-nowrap text-[16px] font-normal leading-none text-[#fcfdfe] [word-break:break-word]">
-          {content(metric.value, t)}
+          {content(metric.value, t, text)}
         </p>
       </div>
       <div className="flex min-w-0 flex-1 flex-row items-end self-stretch">
         <div className="flex h-full min-w-0 flex-1 flex-col items-start justify-center" data-name="content">
           <div className="flex w-full shrink-0 flex-col items-start gap-[6px] rounded-r-[6px] bg-[#101113] p-3 font-normal leading-none text-[#fcfdfe] [word-break:break-word]">
-            <p className="text-[16px]">{content(metric.title, t)}</p>
-            <p className="text-[9px]">{content(metric.subtitle, t)}</p>
+            <p className="text-[16px]">{content(metric.title, t, text)}</p>
+            <p className="text-[9px]">{content(metric.subtitle, t, text)}</p>
           </div>
         </div>
       </div>
@@ -472,7 +477,7 @@ function Results({
   metrics: CaseMetric[]
   copy: ContentRef[]
 }) {
-  const { t } = useI18n()
+  const { t, text } = useI18n()
   return (
     <section
       id="resultados"
@@ -494,7 +499,7 @@ function Results({
         </div>
         <div className="flex max-w-[1372px] flex-col gap-6 text-[16px] leading-[1.5]">
           {copy.map((item, index) => (
-            <p key={index}>{content(item, t)}</p>
+            <p key={index}>{content(item, t, text)}</p>
           ))}
         </div>
       </div>

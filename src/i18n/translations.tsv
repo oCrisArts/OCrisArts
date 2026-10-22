@@ -135,9 +135,9 @@
 172|What might a simpler registration reveal before improving the platform’s complex flows?|¿Qué revelaría un registro sencillo antes de mejorar los flujos complejos de la plataforma?
 173|A simple registration served as a pilot to investigate interaction issues before extending the changes to other flows across the platform.|Un registro sencillo sirvió como piloto para investigar dificultades de interacción antes de ampliar los cambios a otros flujos de la plataforma.
 175|Findings were organized with Atomic Research, guiding decisions about fields, filters and steps. These insights opened the way to investigating more complex registration flows.|Los hallazgos se organizaron con Atomic Research, orientando decisiones sobre campos, filtros y etapas. El aprendizaje obtenido abrió el camino para investigar flujos de registro más complejos.
-267|Tasks observed|Tareas observadas
-270|Behavior patterns|Patrones de comportamiento
-272|Improvement points|Puntos de mejora
+267|Task completion|Finalización de las tareas
+270|Average active time|Tiempo activo medio
+272|Abandonments in the pilot|Abandonos en el piloto
 274|In the pilot, participants completed the observed tasks and used the filters without getting blocked. The result describes that qualitative session, not the platform’s overall performance.|En el piloto, las personas completaron las tareas observadas y usaron los filtros sin bloqueos. El resultado describe esa sesión cualitativa, no el rendimiento global de la plataforma.
 275|The cycle can continue into other flows, focusing on rework, entry errors and adjustments identified after development.|El ciclo puede continuar en otros flujos, prestando atención al retrabajo, los errores de entrada y los ajustes identificados después del desarrollo.
 276|Registration blocked?|¿Registro bloqueado?
@@ -437,9 +437,9 @@
 609|translate?|traduce eso?
 610|Into results.|En resultados.
 611|Usability, accessibility, conversion and validation show different dimensions of project results and evidence.|La usabilidad, la accesibilidad, la conversión y la validación muestran distintas dimensiones de los resultados y las evidencias de los proyectos.
-612|Patterns identified|Patrones identificados
-614|Learning|Aprendizaje
-615|Decisions recorded|Decisiones registradas
+612|Fewer errors|Menos errores
+614|574 thousand+|574 mil+
+615|Requests|Solicitudes
 617|1 million+|1 millón+
 618|App downloads|Descargas de la app
 619|higher conversion|más conversión
@@ -464,10 +464,10 @@
 644|The heuristic evaluation revealed orientation and consistency problems repeated across different areas of the system.|La evaluación heurística reveló problemas de orientación y coherencia que se repetían en distintas áreas del sistema.
 645|Fixing each screen individually would not address the source of these difficulties. Information Architecture helped clarify how the flows needed to be reorganized.|Corregir cada pantalla por separado no resolvería el origen de estas dificultades. La Arquitectura de la Información ayudó a entender cómo reorganizar los flujos.
 741|Perceived clarity|Percepción de claridad
-742|Findings organized|Hallazgos organizados
-743|(Criticality matrix)|(Matriz de criticidad)
-744|Flows reviewed|Flujos revisados
-745|(Prototyping)|(Prototipado)
+742|Critical screens in the audit|Pantallas críticas en la auditoría
+743|(Heuristic severity)|(Severidad heurística)
+744|Reorganized flows|Flujos reorganizados
+745|(Delivery coverage)|(Cobertura de la entrega)
 746|Navigation became better aligned with tasks, with more predictable paths, labels and decisions for system operators.|La navegación pasó a seguir mejor las tareas, con recorridos, etiquetas y decisiones más previsibles para quienes operan el sistema.
 747|Further progress requires monitoring real use: errors, completed tasks, execution time and support tickets per flow.|La evolución exige seguimiento en uso real: errores, tareas completadas, tiempo de ejecución y tickets por flujo.
 748|Claim|Solicitud

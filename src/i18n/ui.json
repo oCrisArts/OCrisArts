@@ -139,10 +139,10 @@
     "en": "A criticality matrix guided the priorities.",
     "es": "Una matriz de criticidad orientó las prioridades."
   },
-  "No fluxo de Estornos, a proposta ganhou forma com os padrões do Design System CAIXA, enquanto o Plano de Pesquisa definiu como avaliar a nova navegação.": {
-    "pt-BR": "No fluxo de Estornos, a proposta ganhou forma com os padrões do Design System CAIXA, enquanto o Plano de Pesquisa definiu como avaliar a nova navegação.",
-    "en": "In the Reversals flow, the proposal took shape using CAIXA Design System standards, while the Research Plan defined how to evaluate the new navigation.",
-    "es": "En el flujo de Reversiones, la propuesta tomó forma con los patrones del Design System CAIXA, mientras que el Plan de Investigación definió cómo evaluar la nueva navegación."
+  "Nos fluxos prioritários, a proposta ganhou forma com padrões de interface, enquanto o plano de pesquisa definiu como avaliar a nova navegação em uso.": {
+    "pt-BR": "Nos fluxos prioritários, a proposta ganhou forma com padrões de interface, enquanto o plano de pesquisa definiu como avaliar a nova navegação em uso.",
+    "en": "For priority flows, the proposal took shape through interface patterns, while the research plan defined how to evaluate the new navigation in use.",
+    "es": "En los flujos prioritarios, la propuesta tomó forma con patrones de interfaz, mientras el plan de investigación definió cómo evaluar la nueva navegación durante el uso real."
   },
   "Empatia": {
     "pt-BR": "Empatia",
@@ -204,10 +204,10 @@
     "en": "A functional prototype created in Figma Make made it possible to observe real tasks.",
     "es": "Un prototipo funcional creado en Figma Make permitió observar tareas reales."
   },
-  "Os testes e registros do Clarity ajudaram a identificar comportamentos que não seriam percebidos em telas estáticas.": {
-    "pt-BR": "Os testes e registros do Clarity ajudaram a identificar comportamentos que não seriam percebidos em telas estáticas.",
-    "en": "Tests and Clarity recordings helped identify behaviors that would not have been apparent in static screens.",
-    "es": "Las pruebas y grabaciones de Clarity ayudaron a identificar comportamientos que no se detectarían en pantallas estáticas."
+  "Testes de usabilidade e análise de comportamento revelaram dificuldades que não seriam percebidas em telas estáticas.": {
+    "pt-BR": "Testes de usabilidade e análise de comportamento revelaram dificuldades que não seriam percebidas em telas estáticas.",
+    "en": "Usability tests and behavior analysis revealed difficulties that would not be apparent from static screens.",
+    "es": "Las pruebas de usabilidad y el análisis de comportamiento revelaron dificultades que no se percibirían en pantallas estáticas."
   },
   "Definição de objetivos e métricas": {
     "pt-BR": "Definição de objetivos e métricas",
@@ -559,10 +559,10 @@
     "en": "Figma Make",
     "es": "Figma Make"
   },
-  "Fluxo de estorno": {
-    "pt-BR": "Fluxo de estorno",
-    "en": "Reversal flow",
-    "es": "Flujo de reversión"
+  "Fluxo reorganizado": {
+    "pt-BR": "Fluxo reorganizado",
+    "en": "Reorganized flow",
+    "es": "Flujo reorganizado"
   },
   "Interfaces e protótipos": {
     "pt-BR": "Interfaces e protótipos",
@@ -588,5 +588,60 @@
     "pt-BR": "Telas do aplicativo",
     "en": "App screens",
     "es": "Pantallas de la aplicación"
+  },
+  "Mapa de achados": {
+    "pt-BR": "Mapa de achados",
+    "en": "Findings map",
+    "es": "Mapa de hallazgos"
+  },
+  "Avaliação heurística": {
+    "pt-BR": "Avaliação heurística",
+    "en": "Heuristic evaluation",
+    "es": "Evaluación heurística"
+  },
+  "Padrões de formulário": {
+    "pt-BR": "Padrões de formulário",
+    "en": "Form patterns",
+    "es": "Patrones de formulario"
+  },
+  "Evolução dos fluxos": {
+    "pt-BR": "Evolução dos fluxos",
+    "en": "Flow evolution",
+    "es": "Evolución de los flujos"
+  },
+  "Protótipo conceitual": {
+    "pt-BR": "Protótipo conceitual",
+    "en": "Concept prototype",
+    "es": "Prototipo conceptual"
+  },
+  "Recorrente": {
+    "pt-BR": "Recorrente",
+    "en": "Recurring",
+    "es": "Recurrente"
+  },
+  "Priorizado": {
+    "pt-BR": "Priorizado",
+    "en": "Prioritized",
+    "es": "Priorizado"
+  },
+  "Validável": {
+    "pt-BR": "Validável",
+    "en": "Testable",
+    "es": "Validable"
+  },
+  "Observado": {
+    "pt-BR": "Observado",
+    "en": "Observed",
+    "es": "Observado"
+  },
+  "Sintetizado": {
+    "pt-BR": "Sintetizado",
+    "en": "Synthesized",
+    "es": "Sintetizado"
+  },
+  "Iterado": {
+    "pt-BR": "Iterado",
+    "en": "Iterated",
+    "es": "Iterado"
   }
 }

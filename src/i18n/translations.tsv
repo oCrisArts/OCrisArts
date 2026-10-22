@@ -129,104 +129,17 @@
 160|Validate the flow before coding.|Valida el flujo antes del código.
 164|Enterprise platform|Plataforma corporativa
 165|Generative AI|IA generativa
-168|SIAFF is CAIXA’s internal system for managing financing funds. It brings together records and queries that require consistent data and reliable operations.|SIAFF es el sistema interno de CAIXA para gestionar fondos de financiación. Reúne registros y consultas que requieren datos coherentes y operaciones fiables.
-169|Registration flows spanned areas such as TCCA (Environmental Compensation Commitment Agreement), subaccounts, conservation units and contributions. A sensitive part of the system.|Los registros atravesaban áreas como TCCA (Acuerdo de Compromiso de Compensación Ambiental), subcuentas, unidades de conservación y aportaciones. Un punto sensible del sistema.
+168|A management platform brought together records and queries requiring consistent data and reliable operations. Roles depended on these routines for critical tasks.|Una plataforma de gestión reunía registros y consultas que exigían datos coherentes y operaciones fiables. Los perfiles dependían de estas rutinas críticas.
+169|Registration crossed interdependent steps, links and validations. Inconsistencies could interrupt the flow and create uncertainty, rework or the need for additional support.|Los registros atravesaban etapas, vínculos y validaciones interdependientes. Las incoherencias podían interrumpir el flujo y generar dudas, retrabajo o necesidad de soporte.
 170|Before expanding the changes, one question needed an answer: how do people actually move through the registration steps?|Antes de ampliar los cambios, había que responder una pregunta: ¿cómo recorren realmente las personas las etapas del registro?
-172|What could a simpler registration process reveal before evolving TCCA’s complex flows?|¿Qué podía revelar un registro más sencillo antes de mejorar los flujos complejos del TCCA?
-173|Payment slip registration served as a pilot to investigate interaction difficulties before expanding changes to other areas of SIAFF.|El registro de boletos de pago sirvió como piloto para investigar dificultades de interacción antes de ampliar los cambios a otras áreas del SIAFF.
-174|A functional prototype created in Figma Make made it possible to observe real tasks. Tests and Clarity recordings helped identify behaviors that static screens would not reveal.|Un prototipo funcional creado en Figma Make permitió observar tareas reales. Las pruebas y grabaciones de Clarity ayudaron a identificar comportamientos que no se percibirían en pantallas estáticas.
-175|Findings were organized using Atomic Research, guiding decisions about fields, filters and steps. These insights opened the way to investigating TCCA’s more complex registration flows.|Los hallazgos se organizaron mediante Investigación Atómica, orientando decisiones sobre campos, filtros y etapas. El aprendizaje abrió el camino para investigar los registros más complejos del TCCA.
-176|Experiment|Experimento
-177|Remote test of the new registration process|Prueba remota de la nueva forma de registro
-178|Fact|Hecho
-179|Does the new registration process work?|¿Funciona la nueva forma de registro?
-180|Observations|Percepciones
-181|Remove the legacy screen and use the modal|Eliminar la pantalla heredada y usar el modal
-182|Recommendations|Recomendaciones
-183|Approve the current layout and send the technical handoff.|Aprobar el diseño actual y enviar el handoff técnico.
-184|Atomic Research|Investigación Atómica
-185|Experiment plan|Plan de experimento
-186|Hypothesis → prototype → evidence → decision|Hipótesis → prototipo → evidencia → decisión
-187|Hypothesis|Hipótesis
-189|The new registration pattern may reduce friction without losing controls.|El nuevo patrón de registro puede reducir la fricción sin perder controles.
-190|Problem: late validation increases rework.|Problema: la validación tardía aumenta el retrabajo.
-191|Goal: validate before development.|Objetivo: validar antes del desarrollo.
-192|Task|Tarea
-193|Complete a registration in the new flow.|Completar un registro en el nuevo flujo.
-194|Maintain understanding of the task.|Mantener la comprensión de la tarea.
-195|Preserve correct use of filters.|Preservar el uso correcto de los filtros.
-196|Functional AI prototype in Figma Make.|Prototipo funcional con IA en Figma Make.
-197|Remote test with 18 users.|Prueba remota con 18 usuarios.
-198|Version 1: registration in a modal.|Versión 1: registro en un modal.
-199|Success|Éxito
-200|100% completion. 0 abandonment.|100% de finalización. 0 abandono.
-201|2,1 min of active time.|2,1 min de tiempo activo.
-202|Behavior observed in Microsoft Clarity.|Comportamiento observado en Microsoft Clarity.
-203|Criteria:|Criterios:
-204|task completion • abandonment • active time • filter use.|finalización de la tarea • abandono • tiempo activo • uso de filtros.
-205|Do|Hacer
-206|Functional prototype|Prototipo funcional
-207|Register a contribution payment slip|Registrar un boleto de aportación
-208|Account and payment slip identification|Identificación de la cuenta y el boleto
-209|Identify the installment and deadlines.|Identifica la cuota y los plazos.
-210|TCCA No.*|TCCA N.º*
-211|E.g. 300|Ej. 300
-212|TCCA year*|Año del TCCA*
-213|Amendment / Current agreement|Adenda / Acuerdo vigente
-214|1st amendment|1.ª adenda
-215|Installment*|Cuota*
-216|E.g. 01|Ej. 01
-217|Due date*|Vencimiento*
-218|DD/MM/YYYY|DD/MM/AAAA
-219|Email response on*|Respuesta del correo en*
-220|Amounts and payment slips|Importes y boletos
-221|Type|Tipo
-222|Hybrid|Híbrido
-223|Payment slip amount*|Importe del boleto*
-224|E.g. R$ 999.999.999,99|Ej. R$ 999.999.999,99
-225|*Required fields|*Campos obligatorios
-226|Clear|Limpiar
-227|Save|Guardar
-228|Payment slip registration|Registro de boletos
-229|Clarity recordings|Grabaciones de Clarity
-230|Register TCCA|Registrar TCCA
-231|Collapse|Contraer
-232|General information|Datos generales
-233|Finances and installments|Finanzas y cuotas
-234|Subaccount and links|Subcuenta y vínculos
-235|Identification|Identificación
-236|TCCA No. *|TCCA N.º *
-237|Agreement holder|Compromisario
-238|Search the agreement holder’s CNPJ*|Busca el CNPJ del compromisario*
-239|Company name|Razón social
-240|Register TCCA|Registrar TCCA
-241|Financial information|Datos financieros
-242|Allocated amount (original)*:|Importe destinado (original)*:
-244|Updated amount*|Importe actualizado*
-245|Installments|Cuotas
-246|Add|Añadir
-247|Installment no.|N.º de cuota
-248|Latest deposit date|Fecha límite de depósito
-249|Publication month/year|Mes/año de publicación
-250|Updated amount|Importe actualizado
-251|MM/YYYY|MM/AAAA
-253|Updated amount: R$ 000.000.000,00|Importe actualizado: R$ 000.000.000,00
-254|Project:|Emprendimiento:
-255|Link the project and conservation unit to generate the subaccount automatically. Make sure they are registered before entering this information.|Vincula el emprendimiento y la unidad de conservación para generar la subcuenta automáticamente. Asegúrate de registrarlos antes de introducir esta información.
-257|Code|Código
-258|Project|Emprendimiento
-259|Subaccount|Subcuenta
-260|No.|N.º
-261|Conservation unit|Unidad de conservación
-262|Allocation action|Acción de aplicación
-263|Subaccount amount|Importe de la subcuenta
-264|Search conservation units|Busca la unidad de conservación
-266|Evolving registration flows|Evolución de los registros
-267|Task completion|Finalización de las tareas
-270|Average active time|Tiempo activo medio
-272|Abandonments in the pilot|Abandonos en el piloto
-274|In the payment slip pilot, 18 participants completed the task without abandoning it and used the filters correctly. The result describes this test, not all SIAFF registration flows.|En el piloto de boletos, 18 participantes completaron la tarea sin abandono y usaron los filtros correctamente. El resultado describe la prueba, no todos los registros del SIAFF.
-275|The cycle can continue into TCCA and other areas, focusing on rework, entry errors and corrections after development.|El ciclo puede continuar en el TCCA y otras áreas, prestando atención al retrabajo, los errores de entrada y las correcciones posteriores al desarrollo.
+172|What might a simpler registration reveal before improving the platform’s complex flows?|¿Qué revelaría un registro sencillo antes de mejorar los flujos complejos de la plataforma?
+173|A simple registration served as a pilot to investigate interaction issues before extending the changes to other flows across the platform.|Un registro sencillo sirvió como piloto para investigar dificultades de interacción antes de ampliar los cambios a otros flujos de la plataforma.
+175|Findings were organized with Atomic Research, guiding decisions about fields, filters and steps. These insights opened the way to investigating more complex registration flows.|Los hallazgos se organizaron con Atomic Research, orientando decisiones sobre campos, filtros y etapas. El aprendizaje obtenido abrió el camino para investigar flujos de registro más complejos.
+267|Tasks observed|Tareas observadas
+270|Behavior patterns|Patrones de comportamiento
+272|Improvement points|Puntos de mejora
+274|In the pilot, participants completed the observed tasks and used the filters without getting blocked. The result describes that qualitative session, not the platform’s overall performance.|En el piloto, las personas completaron las tareas observadas y usaron los filtros sin bloqueos. El resultado describe esa sesión cualitativa, no el rendimiento global de la plataforma.
+275|The cycle can continue into other flows, focusing on rework, entry errors and adjustments identified after development.|El ciclo puede continuar en otros flujos, prestando atención al retrabajo, los errores de entrada y los ajustes identificados después del desarrollo.
 276|Registration blocked?|¿Registro bloqueado?
 277|Clear the way for new learners.|Abre el camino a nuevos alumnos.
 278|Discovery + Prioritization|Discovery + Priorización
@@ -524,9 +437,9 @@
 609|translate?|traduce eso?
 610|Into results.|En resultados.
 611|Usability, accessibility, conversion and validation show different dimensions of project results and evidence.|La usabilidad, la accesibilidad, la conversión y la validación muestran distintas dimensiones de los resultados y las evidencias de los proyectos.
-612|Fewer errors|Menos errores
-614|574 thousand+|574 mil+
-615|Requests|Solicitudes
+612|Patterns identified|Patrones identificados
+614|Learning|Aprendizaje
+615|Decisions recorded|Decisiones registradas
 617|1 million+|1 millón+
 618|App downloads|Descargas de la app
 619|higher conversion|más conversión
@@ -542,107 +455,19 @@
 634|Heuristics + Architecture|Heurísticas + Arquitectura
 636|Enterprise system|Sistema corporativo
 637|Research plan|Plan de investigación
-638|SIFGD is the internal system supporting FGTS Digital, the platform for managing obligations under Brazil’s severance fund. Its workflows combine queries, rules and operations that require precision.|SIFGD es el sistema interno que apoya la operación de FGTS Digital, plataforma de gestión de las obligaciones del Fondo de Garantía. Sus rutinas combinan consultas, reglas y operaciones que exigen precisión.
+638|An operational platform brought together queries, rules and sensitive activities. Its routines demanded precision, continuity and clear guidance for people handling different tasks every day.|Una plataforma operativa reunía consultas, reglas y actividades sensibles. Sus rutinas exigían precisión, continuidad y una orientación clara para quienes realizaban distintas tareas cada día de forma segura.
 639|The system grew. New paths, labels and decisions began coexisting without a shared navigation logic.|El sistema creció. Nuevos recorridos, etiquetas y decisiones empezaron a convivir sin una misma lógica de navegación.
 640|To complete a task, operators had to remember where to find each action. More effort, less guidance and a higher risk of error.|Para completar una tarea, el operador tenía que recordar dónde encontrar cada acción. Más esfuerzo, menos orientación y mayor riesgo de error.
 641|Agent|Agente
 642|Operator|Operador
-643|If the same problems appeared across 85 screens, how could we decide which flows to fix first?|Si los mismos problemas aparecían en 85 pantallas, ¿cómo decidir qué flujos corregir primero?
+643|When issues appeared across key areas, how could we decide which flows should be fixed first?|Si surgían problemas en distintas áreas, ¿cómo decidir qué flujos debían corregirse primero?
 644|The heuristic evaluation revealed orientation and consistency problems repeated across different areas of the system.|La evaluación heurística reveló problemas de orientación y coherencia que se repetían en distintas áreas del sistema.
 645|Fixing each screen individually would not address the source of these difficulties. Information Architecture helped clarify how the flows needed to be reorganized.|Corregir cada pantalla por separado no resolvería el origen de estas dificultades. La Arquitectura de la Información ayudó a entender cómo reorganizar los flujos.
-646|A criticality matrix guided priorities. In the reversals flow, the proposal took shape using CAIXA Design System patterns, while the Research Plan defined how to evaluate the new navigation.|Una matriz de criticidad orientó las prioridades. En el flujo de reversiones, la propuesta tomó forma con los patrones del Design System CAIXA, mientras el Plan de Investigación definió cómo evaluar la nueva navegación.
-647|Heuristic audit|Auditoría heurística
-648|85 screens|85 pantallas
-649|6 main flows|6 flujos principales
-650|Critical|Crítico
-651|Severe|Grave
-652|Moderate|Medio
-653|Minor|Leve
-654|10 violated heuristics|10 heurísticas vulneradas
-655|7 screens|7 pantallas
-656|9 violated heuristics|9 heurísticas vulneradas
-657|18 screens|18 pantallas
-658|7–8 violated heuristics|7–8 heurísticas vulneradas
-659|30 screens|30 pantallas
-660|< 7 violated heuristics|< 7 heurísticas vulneradas
-661|Recurring problems|Problemas recurrentes
-662|Status visibility (breadcrumb): does not show the current flow update.|Visibilidad del estado (breadcrumb): no indica la actualización del flujo actual.
-663|Match with the real world (labels): “Calculated JAM” is unclear to users.|Correspondencia con el mundo real (etiquetas): “JAM calculado” es poco claro para el usuario.
-664|User control and freedom (pagination): duplicate “Back” and “Previous” actions cause confusion.|Control y libertad (paginación): “Volver” y “Anterior” duplicados generan confusión.
-665|Consistency and standards (cards): “Employer details” and “Block request” headings use different styles.|Coherencia y estándares (tarjetas): los títulos “Datos del empleador” y “Solicitud de bloqueo” no comparten estilo.
-666|Error prevention (filters): the “Filter…” field lacks validation to prevent incorrect searches.|Prevención de errores (filtros): el campo “Filtrar…” carece de validación para impedir búsquedas incorrectas.
-667|Recognition rather than recall (tables): “Period” headings lack explanatory labels, making them hard to understand.|Reconocimiento frente a memorización (tablas): los encabezados “Período” sin leyenda dificultan la comprensión.
-668|Flexibility and efficiency (sorting): small sorting icons have poor accessibility.|Flexibilidad y eficiencia (ordenación): iconos de ordenación pequeños y poco accesibles.
-669|Aesthetic and minimalist design (grid): too many borders and spaces undermine focus.|Diseño estético y minimalista (cuadrícula): el exceso de bordes y espacios perjudica el enfoque.
-670|Diagnosis and recovery (message): “Successfully processed” without a link to details prevents tracking.|Diagnóstico y recuperación (mensaje): “Procesado con éxito” sin un enlace a los detalles impide el seguimiento.
-671|Help and documentation (“Back” button): no tooltip or quick guide to orient users.|Ayuda y documentación (botón “Volver”): ausencia de tooltip o guía rápida para orientar al usuario.
-672|Criticality matrix|Matriz de criticidad
-673|The flows|Los flujos
-674|Secure user access screen|Pantalla de acceso seguro del usuario
-676|Home dashboard with main menu.|Panel inicial con menú principal.
-678|Employer|Empleador
-679|Employer search and detail flow.|Flujo de consulta y detalle de empleadores.
-681|Worker|Trabajador
-682|Worker search and data dashboard flow.|Flujo de búsqueda y panel de datos del trabajador.
-684|Management|Gestión
-685|Blocks, reversals and reporting modules.|Módulos de bloqueos, reversiones e informes.
-687|Settings|Configuración
-688|Parameter and permission adjustments.|Ajustes de parámetros y permisos.
-690|High →|Alto →
-691|← Low|← Bajo
-692|Effort|Esfuerzo
-693|Reversals prototype|Prototipo de reversiones
-694|Research Plan Canvas|Canvas del Plan de Investigación
-695|The “3 Whys”|Los “3 porqués”
-696|How will we use the results?|¿Cómo usaremos los resultados?
-697|Why|Por qué
-698|Poor visual emphasis in the interface|Interfaz con poco énfasis visual
-699|Very similar data and labels|Datos y etiquetas muy similares
-700|Goal|Objetivo
-701|What do we want to learn?|¿Qué queremos aprender?
-702|Identify which of the two screen variations (Variation A vs. Variation B) lets users complete the “check blocked amounts” task faster and more accurately, and better understand the block status.|Identificar cuál de las dos variantes de pantalla (Variante A frente a Variante B) permite completar más rápida y correctamente la tarea de “verificar importes bloqueados” y comprender mejor el estado del bloqueo.
-703|Analysis & Deliverable|Análisis y entregable
-704|What will we deliver at the end?|¿Qué entregaremos al final?
-705|Details how the test was conducted: participant count, A/B split, completed tasks and Maze environment.|Detalla cómo se realizó la prueba: número de participantes, división A/B, tareas ejecutadas y entorno Maze.
-706|Facts|Hechos
-707|Presents raw data and measurable results: success rates, average times, click counts and Likert scores.|Presenta los datos brutos y los resultados medibles: tasas de éxito, tiempos medios, cantidad de clics y escala Likert.
-709|Interprets facts to reveal insights about user behavior and perceptions of the interface.|Interpreta los hechos para revelar aprendizajes sobre el comportamiento y las percepciones de los usuarios en la interfaz.
-710|Suggests practical, prioritized actions based on insights: UI improvements, next tests and design guidelines.|Sugiere acciones prácticas y priorizadas basadas en los hallazgos: mejoras de UI, próximas pruebas y directrices de diseño.
-711|Certainties, Assumptions and Questions matrix|Matriz de certezas, supuestos y dudas
-712|What do we know, assume and want to discover?|¿Qué sabemos, suponemos y queremos descubrir?
-713|Certainties|Certezas
-714|Both screen proposals load without errors and display all data|Ambas propuestas de pantalla cargan sin errores y muestran todos los datos
-715|Text, metrics and labels are correct and consistent in both.|Los textos, las métricas y las etiquetas son correctos y coherentes en ambas.
-716|The “Processing” status is present and positioned in the layouts.|El estado “En procesamiento” está presente y ubicado en los diseños.
-717|Assumptions|Supuestos
-718|Visually highlighting the blocked amount improves quick identification.|Destacar visualmente el importe bloqueado mejora su identificación rápida.
-719|Users will intuitively understand the new hierarchical layout.|Los usuarios comprenderán intuitivamente el nuevo diseño jerárquico.
-720|Reorganizing elements will not increase overall cognitive load.|La reorganización de los elementos no aumentará la carga cognitiva general.
-721|Questions|Dudas
-722|Could the emphasis distract from other important information?|¿Podría el énfasis distraer de otra información importante?
-723|What contrast level is needed for maximum readability?|¿Qué nivel de contraste se necesita para la máxima legibilidad?
-724|Could some user profiles prefer the design without extra emphasis?|¿Podrían algunos perfiles preferir el diseño sin énfasis adicional?
-725|Target audience|Público objetivo
-726|Who takes part in this test?|¿Quién participa en esta prueba?
-727|Caixa analysts who regularly use the FGTS Digital portal.|Analistas de Caixa que usan habitualmente el portal FGTS Digital.
-728|Inclusion criteria:|Criterios de inclusión:
-729|Have checked blocks in the past month;|Haber consultado bloqueos durante el último mes;
-730|Basic familiarity with enterprise web systems.|Familiaridad básica con sistemas web corporativos.
-731|Research method|Método de investigación
-732|Which tools and testing flow?|¿Qué herramientas y flujo de prueba?
-733|1. Prototype adjustments|1. Ajuste de los prototipos
-734|2. Maze setup|2. Configuración en Maze
-735|3. Task definition|3. Definición de las tareas
-736|4. Test completion time|4. Tiempo de ejecución de la prueba
-737|5. Results capture|5. Captura de resultados
-738|Choose the winning variation for development|Elegir la variante ganadora para el desarrollo
-739|Task success rate (%)|Tasa de éxito de la tarea (%)
-740|Average task completion time (s)|Tiempo medio para completar la tarea (s)
-741|Self-reported clarity (1–5 scale)|Claridad declarada (escala 1–5)
-742|Critical screens in the audit|Pantallas críticas en la auditoría
-743|(Heuristic severity)|(Severidad heurística)
-744|Reorganized flows|Flujos reorganizados
-745|(Delivery coverage)|(Cobertura de la entrega)
+741|Perceived clarity|Percepción de claridad
+742|Findings organized|Hallazgos organizados
+743|(Criticality matrix)|(Matriz de criticidad)
+744|Flows reviewed|Flujos revisados
+745|(Prototyping)|(Prototipado)
 746|Navigation became better aligned with tasks, with more predictable paths, labels and decisions for system operators.|La navegación pasó a seguir mejor las tareas, con recorridos, etiquetas y decisiones más previsibles para quienes operan el sistema.
 747|Further progress requires monitoring real use: errors, completed tasks, execution time and support tickets per flow.|La evolución exige seguimiento en uso real: errores, tareas completadas, tiempo de ejecución y tickets por flujo.
 748|Claim|Solicitud

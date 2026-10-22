@@ -70,8 +70,8 @@ export default function FrontPage({
 }) {
   const { t } = useI18n()
   const metrics = [
-    ["25%", t("t0612"), t("t0613"), "metric-result.outcome"],
-    ["100%", t("t0267"), t("t0268"), "metric-result.evidence"],
+    [t("Recorrente"), t("t0612"), t("t0613"), "metric-result.outcome"],
+    [t("Observado"), t("t0267"), t("t0268"), "metric-result.evidence"],
     [t("t0614"), t("t0615"), t("t0616"), "metric-result.product.outcome"],
     [t("t0617"), t("t0618"), t("t0156"), "metric-result.product-reach"],
     ["15%", t("t0619"), t("t0620"), "metric-result.product.outcome"],

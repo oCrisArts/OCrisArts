@@ -40,7 +40,7 @@ export default function MetricCard({
 }) {
   return (
     <article
-      className={`relative flex h-[75px] min-w-[min(280px,100%)] flex-[1_1_280px] items-end ${className}`}
+      className={`relative flex h-[75px] w-[320px] max-w-[calc(100vw-40px)] flex-none items-end ${className}`}
       data-name={`metric-result.${metric.name}`}
       data-node-id="6371:125"
     >

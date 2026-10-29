@@ -358,11 +358,7 @@ export default function FrontPage({
             data-name="div.evidence-track"
           >
             {metrics.map(({ metric, key }) => (
-              <MetricCard
-                className="w-[min(438px,calc(100vw-40px))] shrink-0 flex-none"
-                key={key}
-                metric={metric}
-              />
+              <MetricCard key={key} metric={metric} />
             ))}
           </div>
         </div>

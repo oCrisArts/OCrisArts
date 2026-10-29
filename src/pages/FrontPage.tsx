@@ -1,4 +1,5 @@
 import CaseCard from "../components/CaseCard"
+import MetricCard from "../components/MetricCard"
 import ServiceCard from "../components/ServiceCard"
 import TaxonomyTags from "../components/TaxonomyTags"
 import { cases, type CaseSlug } from "../data/cases"
@@ -69,15 +70,12 @@ export default function FrontPage({
   featuredSlugs: CaseSlug[]
 }) {
   const { t } = useI18n()
-  const metrics = [
-    ["25%", t("t0612"), t("t0613"), "metric-result.outcome"],
-    ["100%", t("t0267"), t("t0268"), "metric-result.evidence"],
-    [t("t0614"), t("t0615"), t("t0616"), "metric-result.product.outcome"],
-    [t("t0617"), t("t0618"), t("t0156"), "metric-result.product-reach"],
-    ["15%", t("t0619"), t("t0620"), "metric-result.product.outcome"],
-    ["56.423", t("t0345"), t("t0346"), "metric-result.product.outcome"],
-    [t("t0154"), t("t0621"), t("t0622"), "metric-result.product.outcome"],
-  ] as const
+  const metrics = cases.flatMap((item) =>
+    item.results.metrics.map((metric, index) => ({
+      metric,
+      key: `${item.slug}-${index}`,
+    })),
+  )
 
   return (
     <main
@@ -355,24 +353,16 @@ export default function FrontPage({
             {t("t0611")}
           </p>
           <div
-            className="flex h-[100px] w-max items-start gap-6"
+            className="flex h-[75px] w-max items-start gap-6"
             data-node-id="4:35956"
             data-name="div.evidence-track"
           >
-            {metrics.map(([value, title, detail, name], index) => (
-              <article
-                className="flex w-[438px] shrink-0 items-end"
-                data-name={name}
-                key={`${value}-${index}`}
-              >
-                <strong className="flex min-h-[100px] min-w-[100px] items-center justify-center rounded-lg bg-[#020305] px-4 py-1 font-['Sora:Regular'] text-[20px] font-normal leading-none text-[#fcfdfe]">
-                  {value}
-                </strong>
-                <div className="flex h-full flex-1 flex-col justify-center rounded-r-lg bg-[#101113] p-4 font-['Sora:Regular'] leading-none text-[#fcfdfe]">
-                  <span className="text-[20px]">{title}</span>
-                  <small className="mt-2 text-[13px]">{detail}</small>
-                </div>
-              </article>
+            {metrics.map(({ metric, key }) => (
+              <MetricCard
+                className="w-[min(438px,calc(100vw-40px))] shrink-0 flex-none"
+                key={key}
+                metric={metric}
+              />
             ))}
           </div>
         </div>

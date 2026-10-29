@@ -2,6 +2,7 @@ import { Navigate, useParams } from "react-router-dom"
 import type { CSSProperties } from "react"
 import ServiceCard, { type ServiceCardProps } from "../components/ServiceCard"
 import TaxonomyTags from "../components/TaxonomyTags"
+import MetricCard from "../components/MetricCard"
 import {
   findCase,
   type CaseArtifact,
@@ -442,34 +443,6 @@ function Artifact({ artifact }: { artifact: CaseArtifact }) {
   )
 }
 
-function Metric({ metric }: { metric: CaseMetric }) {
-  const { t, text } = useI18n()
-  return (
-    <div
-      className="relative flex h-[75px] min-w-[min(280px,100%)] flex-[1_1_280px] items-end"
-      data-name={`metric-result.${metric.name}`}
-      data-node-id="6371:125"
-    >
-      <div
-        className="flex size-[75px] max-h-[75px] min-h-[75px] max-w-[75px] min-w-[75px] shrink-0 flex-col items-center justify-center rounded-[6px] bg-[#020305] px-3 py-[3px]"
-        data-name="number"
-      >
-        <p className="whitespace-nowrap text-[16px] font-normal leading-none text-[#fcfdfe] [word-break:break-word]">
-          {content(metric.value, t, text)}
-        </p>
-      </div>
-      <div className="flex min-w-0 flex-1 flex-row items-end self-stretch">
-        <div className="flex h-full min-w-0 flex-1 flex-col items-start justify-center" data-name="content">
-          <div className="flex w-full shrink-0 flex-col items-start gap-[6px] rounded-r-[6px] bg-[#101113] p-3 font-normal leading-none text-[#fcfdfe] [word-break:break-word]">
-            <p className="text-[16px]">{content(metric.title, t, text)}</p>
-            <p className="text-[9px]">{content(metric.subtitle, t, text)}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  )
-}
-
 function Results({
   metrics,
   copy,
@@ -494,7 +467,7 @@ function Results({
           data-name="div.metrics"
         >
           {metrics.map((metric, index) => (
-            <Metric key={index} metric={metric} />
+            <MetricCard key={index} metric={metric} />
           ))}
         </div>
         <div className="flex max-w-[1372px] flex-col gap-6 text-[16px] leading-[1.5]">

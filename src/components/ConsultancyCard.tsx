@@ -8,6 +8,24 @@ import {
 } from "../data/prospeccao"
 
 const money = new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" })
+const planText = {
+  "pt-BR": {
+    essencial: ["Consultoria Essencial", "Entenda o que sua ideia precisa e descubra por onde começar."],
+    estrategica: ["Consultoria Estratégica", "Organize a experiência, explore soluções e evite decisões no escuro."],
+    completa: ["Consultoria Completa", "Analise mais a fundo, teste melhorias e planeje os próximos passos."],
+  },
+  en: {
+    essencial: ["Essential Consultancy", "Understand what your idea needs and find a clear starting point."],
+    estrategica: ["Strategic Consultancy", "Structure the experience, explore solutions and make informed decisions."],
+    completa: ["Complete Consultancy", "Look deeper, test improvements and plan the next steps."],
+  },
+  es: {
+    essencial: ["Consultoría Esencial", "Comprende lo que necesita tu idea y descubre por dónde empezar."],
+    estrategica: ["Consultoría Estratégica", "Organiza la experiencia, explora soluciones y toma mejores decisiones."],
+    completa: ["Consultoría Completa", "Analiza, prueba mejoras y planifica los siguientes pasos."],
+  },
+} as const
+
 
 export type CustomPlan = {
   serviceIds: string[]
@@ -41,8 +59,8 @@ export default function ConsultancyCard({
   const tags = plan?.tags ?? custom?.tags ?? []
   const serviceIds = serviceIdsOverride ?? plan?.serviceIds ?? custom?.serviceIds ?? []
   const pricing = calculateConsultancy(tags.length)
-  const name = plan?.name ?? t.custom
-  const description = plan?.description ?? t.customDescription
+  const name = plan ? planText[language][plan.id][0] : t.custom
+  const description = plan ? planText[language][plan.id][1] : t.customDescription
   const days = plan?.deliveryBusinessDays ?? custom?.deliveryBusinessDays ?? 1
 
   return (

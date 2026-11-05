@@ -1,14 +1,108 @@
 {
- "$schema":"https://openapi.vercel.sh/vercel.json",
- "framework":"vite",
- "buildCommand":"npm run build",
- "installCommand":"pnpm install --frozen-lockfile",
- "outputDirectory":"dist",
- "cleanUrls":true,
- "trailingSlash":false,
- "redirects":[{"source":"/:path*","has":[{"type":"host","value":"www.ocris.art.br"}],"destination":"https://ocris.art.br/:path*","permanent":true}],
- "headers":[
-  {"source":"/:path*","missing":[{"type":"host","value":"ocris.art.br"}],"headers":[{"key":"X-Robots-Tag","value":"noindex, nofollow"}]},
-  {"source":"/:path*","headers":[{"key":"Referrer-Policy","value":"strict-origin-when-cross-origin"},{"key":"X-Content-Type-Options","value":"nosniff"}]}
- ]
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "vite",
+  "buildCommand": "npm run build",
+  "installCommand": "pnpm install --frozen-lockfile",
+  "outputDirectory": "dist",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.ocris.art.br"
+        }
+      ],
+      "destination": "https://ocris.art.br/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/start-you-project/:slug",
+      "destination": "/consultoria/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/en/start-you-project/:slug",
+      "destination": "/en/consultoria/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/es/start-you-project/:slug",
+      "destination": "/es/consultoria/:slug",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/:path*",
+      "missing": [
+        {
+          "type": "host",
+          "value": "ocris.art.br"
+        }
+      ],
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    },
+    {
+      "source": "/:path*",
+      "headers": [
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        }
+      ]
+    },
+    {
+      "source": "/consultoria/:slug",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    },
+    {
+      "source": "/en/consultoria/:slug",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    },
+    {
+      "source": "/es/consultoria/:slug",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/consultoria/:slug",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/en/consultoria/:slug",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/es/consultoria/:slug",
+      "destination": "/index.html"
+    }
+  ]
 }

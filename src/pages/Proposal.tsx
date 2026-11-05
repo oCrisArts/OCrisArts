@@ -63,9 +63,8 @@ function ConsultancyCard({
       </div>
       <dl className="proposal-price">
         <div><dt>A partir de</dt><dd>{money.format(pricing.listInvestment)}</dd></div>
-        <div className="proposal-price__pix"><dt>10% OFF no Pix</dt><dd>{money.format(pricing.pixInvestment)} · {money.format(pricing.pixInvestment / pricing.hours)} por hora</dd></div>
-        <div><dt>12x com taxas</dt><dd>{money.format(pricing.card12Installment)} sem juros</dd></div>
-        <div><dt>24x com taxas</dt><dd>{money.format(pricing.card24Installment)}</dd></div>
+        <div><dt>Cartão à vista</dt><dd>{money.format(pricing.listInvestment)}</dd></div>
+        <div className="proposal-price__pix"><dt>10% OFF no Pix</dt><dd>{money.format(pricing.pixInvestment)} · disponível após habilitação</dd></div>
       </dl>
       <p className="proposal-plan-card__deadline"><strong>Prazo de entrega:</strong> Até {days} dias úteis · {pricing.hours} horas estimadas</p>
       <div className="proposal-plan-card__actions">
@@ -129,7 +128,7 @@ function CustomizationModal({
         <aside className="proposal-custom-summary" aria-live="polite">
           <div><span>Entregáveis</span><strong>{tags.length}</strong></div>
           <div><span>Horas estimadas</span><strong>{pricing.hours}h</strong></div>
-          <div><span>Pix</span><strong>{money.format(pricing.pixInvestment)}</strong></div>
+          <div><span>Investimento estimado</span><strong>{money.format(pricing.listInvestment)}</strong></div>
           <div><span>Prazo estimado</span><strong>Até {days} dias úteis</strong></div>
         </aside>
         <button type="button" className="proposal-primary-button" disabled={!serviceIds.length || !tags.length} onClick={() => onConfirm({ serviceIds, tags, deliveryBusinessDays: days })}>Confirmar minha consultoria <span aria-hidden="true">check</span></button>
@@ -174,7 +173,7 @@ export default function ProposalPage() {
     track("consultancy_selection", { consultancy_plan: name === "Sua consultoria" ? "custom" : name.toLowerCase().replace("consultoria ", "") })
     track("commercial_click", { channel: "whatsapp" })
     const pricing = calculateConsultancy(tags.length)
-    const message = encodeURIComponent(`Olá! Quero conversar sobre a proposta ${proposal.slug}.\nPlano: ${name}\nServiços: ${proposalServices.filter((service) => serviceIds.includes(service.id)).map((service) => service.label).join(", ")}\nEntregáveis: ${tags.map((tag) => tag.label).join(", ")}\nEstimativa: ${pricing.hours}h · Pix ${money.format(pricing.pixInvestment)}`)
+    const message = encodeURIComponent(`Olá! Quero conversar sobre a proposta ${proposal.slug}.\nPlano: ${name}\nServiços: ${proposalServices.filter((service) => serviceIds.includes(service.id)).map((service) => service.label).join(", ")}\nEntregáveis: ${tags.map((tag) => tag.label).join(", ")}\nEstimativa: ${pricing.hours}h · Investimento ${money.format(pricing.listInvestment)}`)
     window.open(`${commercialUrl}?text=${message}`, "_blank", "noopener,noreferrer")
   }
 

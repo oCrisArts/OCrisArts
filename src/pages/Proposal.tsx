@@ -4,7 +4,7 @@ import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 
 import { track } from "../analytics/tracking"
-import TaxonomyTags from "../components/TaxonomyTags"
+import ConsultancyCard, { type CustomPlan } from "../components/ConsultancyCard"
 import { SiteFooter } from "../components/SiteContactFooter"
 import {
   calculateConsultancy,
@@ -12,7 +12,6 @@ import {
   proposalDeliverables,
   proposalServices,
   publicProposals,
-  type ConsultancyConfig,
   type DeliverableOption,
 } from "../data/prospeccao"
 import { useI18n } from "../i18n"
@@ -20,62 +19,6 @@ import { useI18n } from "../i18n"
 gsap.registerPlugin(ScrollTrigger)
 
 const money = new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" })
-
-type CustomPlan = {
-  serviceIds: string[]
-  tags: DeliverableOption[]
-  deliveryBusinessDays: number
-}
-
-function ConsultancyCard({
-  plan,
-  custom,
-  onSelect,
-  onEdit,
-  serviceIdsOverride,
-}: {
-  plan?: ConsultancyConfig
-  custom?: CustomPlan
-  onSelect: () => void
-  onEdit?: () => void
-  serviceIdsOverride?: string[]
-}) {
-  const tags = plan?.tags ?? custom?.tags ?? []
-  const serviceIds = serviceIdsOverride ?? plan?.serviceIds ?? custom?.serviceIds ?? []
-  const pricing = calculateConsultancy(tags.length)
-  const name = plan?.name ?? "Sua consultoria"
-  const description = plan?.description ?? "Uma configuração criada por você, sem alterar os planos originais."
-  const days = plan?.deliveryBusinessDays ?? custom?.deliveryBusinessDays ?? 1
-
-  return (
-    <article className="proposal-plan-card" data-plan-id={plan?.id ?? "custom"}>
-      <header>
-        <h3>{name}</h3>
-        <p>{description}</p>
-      </header>
-      <div className="proposal-plan-card__content">
-        <div className="proposal-plan-card__services">
-          <span>Serviços</span>
-          <TaxonomyTags items={proposalServices.filter((service) => serviceIds.includes(service.id))} kind="services" />
-        </div>
-        <div>
-          <span>O que você recebe</span>
-          <TaxonomyTags items={tags} kind="deliverables" />
-        </div>
-      </div>
-      <dl className="proposal-price">
-        <div><dt>A partir de</dt><dd>{money.format(pricing.listInvestment)}</dd></div>
-        <div><dt>Cartão à vista</dt><dd>{money.format(pricing.listInvestment)}</dd></div>
-        <div className="proposal-price__pix"><dt>10% OFF no Pix</dt><dd>{money.format(pricing.pixInvestment)} · à vista</dd></div>
-      </dl>
-      <p className="proposal-plan-card__deadline"><strong>Prazo de entrega:</strong> Até {days} dias úteis · {pricing.hours} horas estimadas</p>
-      <div className="proposal-plan-card__actions">
-        <button type="button" className="proposal-primary-button" onClick={onSelect}>Quero começar <span aria-hidden="true">arrow_forward</span></button>
-        {onEdit && <button type="button" className="proposal-link-button" onClick={onEdit}>Revisar ou editar</button>}
-      </div>
-    </article>
-  )
-}
 
 function CustomizationModal({
   initial,
@@ -169,7 +112,7 @@ export default function ProposalPage() {
     return () => mm.revert()
   }, [proposal])
 
-  if (!proposal) return <main className="proposal-not-found"><h1>Proposta não encontrada</h1><p>Confira o endereço recebido ou fale com a gente.</p><a href={path("/#contato")}>Ir para contato</a></main>
+  if (!proposal) return <article className="proposal-not-found"><h1>Proposta não encontrada</h1><p>Confira o endereço recebido ou fale com a gente.</p><a href={path("/consultoria")}>Ver consultorias</a></article>
 
   const selectPlan = (name: string, tags: DeliverableOption[], serviceIds: string[]) => {
     track("consultancy_selection", { consultancy_plan: name === "Sua consultoria" ? "custom" : name.toLowerCase().replace("consultoria ", "") })
@@ -180,15 +123,15 @@ export default function ProposalPage() {
   }
 
   return (
-    <main ref={root} className="proposal-page">
-      <section id="seu-projeto" className="proposal-intro" data-proposal-reveal>
+    <article ref={root} className="proposal-page">
+      <header id="seu-projeto" className="proposal-intro" data-proposal-reveal>
         <div className="proposal-intro__copy"><p className="proposal-eyebrow">Proposta personalizada</p><h1>Olá, {proposal.client.displayName}</h1><p>{proposal.conversationSummary}</p></div>
         <div id="conversa" className="proposal-conversation" aria-label="Resumo da conversa">
           <article className="is-client">{proposal.briefing}</article>
           <article className="is-client">{proposal.challenge}</article>
           <article className="is-ocris"><img src="/assets/shared/branding/site-brand-mark-compact.svg" alt="" /><div><strong>A solução proposta</strong><p>{proposal.solution}</p><button type="button" onClick={() => document.getElementById("proposta")?.scrollIntoView({ behavior: "smooth" })}>Veja abaixo <span aria-hidden="true">arrow_downward</span></button></div></article>
         </div>
-      </section>
+      </header>
 
       <section id="proposta" className="proposal-demo" ref={demo} aria-labelledby="proposal-demo-title">
         <h2 id="proposal-demo-title" className="sr-only">Demonstração da proposta</h2>
@@ -211,6 +154,6 @@ export default function ProposalPage() {
 
       <SiteFooter />
       {customOpen && <CustomizationModal initial={customPlan} onClose={() => setCustomOpen(false)} onConfirm={(value) => { setCustomPlan(value); setCustomOpen(false); track("consultancy_customization", { interaction_type: "confirm", custom_tag_count: value.tags.length, custom_service_count: value.serviceIds.length }); requestAnimationFrame(() => document.querySelector<HTMLElement>("[data-plan-id='custom']")?.scrollIntoView({ behavior: "smooth", block: "center" })) }} />}
-    </main>
+    </article>
   )
 }

@@ -66,7 +66,7 @@ function ConsultancyCard({
       <dl className="proposal-price">
         <div><dt>A partir de</dt><dd>{money.format(pricing.listInvestment)}</dd></div>
         <div><dt>Cartão à vista</dt><dd>{money.format(pricing.listInvestment)}</dd></div>
-        <div className="proposal-price__pix"><dt>10% OFF no Pix</dt><dd>{money.format(pricing.pixInvestment)} · disponível após habilitação</dd></div>
+        <div className="proposal-price__pix"><dt>10% OFF no Pix</dt><dd>{money.format(pricing.pixInvestment)} · à vista</dd></div>
       </dl>
       <p className="proposal-plan-card__deadline"><strong>Prazo de entrega:</strong> Até {days} dias úteis · {pricing.hours} horas estimadas</p>
       <div className="proposal-plan-card__actions">

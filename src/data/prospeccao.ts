@@ -16,11 +16,12 @@ export type ConsultancyId = "essencial" | "estrategica" | "completa" | "custom"
 export type ServiceOption = TaxonomyTag & { id: string }
 export type DeliverableOption = TaxonomyTag & { id: string }
 
+// Mesmo vocabulário dos quatro serviços da home. O briefing não limita a escolha de consultoria.
 export const proposalServices: ServiceOption[] = [
+  { id: "branding", icon: "palette", label: "Marca e comunicação" },
   { id: "sites", icon: "web", label: "Sites e e-commerce" },
-  { id: "apps", icon: "smartphone", label: "Aplicativos" },
-  { id: "systems", icon: "devices", label: "Sistemas" },
-  { id: "branding", icon: "palette", label: "Identidade visual" },
+  { id: "apps", icon: "smartphone", label: "Aplicativos e plataformas" },
+  { id: "ux", icon: "search", label: "Consultoria em UX" },
 ]
 
 export const proposalDeliverables: DeliverableOption[] = [

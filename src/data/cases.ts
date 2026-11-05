@@ -103,7 +103,7 @@ export const cases = [
     title: "t0159", subtitle: "t0160", context: "t0168", project: "Registration platform",
     contextCopy: [key("t0168"), key("t0169"), key("t0170")], challenge: key("t0172"),
     process: [key("t0173"), text("Um protótipo funcional criado no Figma Make permitiu observar tarefas reais."), text("Testes de usabilidade e análise de comportamento revelaram dificuldades que não seriam percebidas em telas estáticas."), key("t0175")],
-    hero: "/assets/cases/cadastros-complexos/hero.png", contextMedia: "/assets/cases/cadastros-complexos/contexto-siaff.svg", contextMediaWidth: 364,
+    hero: "/assets/cases/cadastros-complexos/hero.png",
     challengeMedia: "/assets/cases/cadastros-complexos/desafio.svg",
     tags: [tag("devices", "Sistemas"), tag("monitoring", "Data-Driven Design"), tag("science", "Atomic Research"), tag("assignment", "Plano de teste"), tag("visibility", "Observação de uso"), tag("draw", "Protótipos")],
     methodology: [tag("target", "Definição de objetivos e métricas"), tag("database", "Coleta de dados"), tag("analytics", "Análise de dados"), tag("draw", "Prototipagem"), tag("fact_check", "Validação"), tag("monitoring", "Monitoramento")],

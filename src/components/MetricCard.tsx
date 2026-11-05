@@ -16,12 +16,14 @@ export default function MetricCard({
       data-name={`metric-result.${metric.name}`}
       data-node-id="6371:125"
     >
-      <strong className="metric-card__number" data-name="number">
+      <strong className="metric-card__number" data-name="number" data-node-id="I6371:125;6312:1003">
         {content(metric.value)}
       </strong>
-      <div className="metric-card__content" data-name="content">
-        <h3 className="metric-card__title">{content(metric.title)}</h3>
-        <p className="metric-card__subtitle">{content(metric.subtitle)}</p>
+      <div className="metric-card__body" data-node-id="I6371:125;6312:1005">
+        <div className="metric-card__content" data-name="content" data-node-id="I6371:125;6312:1006">
+          <h3 className="metric-card__title" data-node-id="I6371:125;6312:1007">{content(metric.title)}</h3>
+          <p className="metric-card__subtitle" data-node-id="I6371:125;6312:1008">{content(metric.subtitle)}</p>
+        </div>
       </div>
     </article>
   )

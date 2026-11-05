@@ -27,19 +27,25 @@ async function widths(selector) {
 }
 
 async function structure(selector) {
-  return page.locator(selector).first().evaluate((card) => ({
-    root: card.tagName,
-    children: Array.from(card.children).map((child) => child.tagName),
-    content: Array.from(card.lastElementChild?.children ?? []).map(
-      (child) => child.tagName,
-    ),
-    number: {
-      width: Math.round(card.firstElementChild?.getBoundingClientRect().width ?? 0),
-      height: Math.round(card.firstElementChild?.getBoundingClientRect().height ?? 0),
-    },
-    height: Math.round(card.getBoundingClientRect().height),
-    contentAlignment: getComputedStyle(card.lastElementChild).justifyContent,
-  }))
+  return page.locator(selector).first().evaluate((card) => {
+    const number = card.firstElementChild
+    const body = card.lastElementChild
+    const content = body?.firstElementChild
+    const cardBox = card.getBoundingClientRect()
+    const contentBox = content?.getBoundingClientRect()
+    return {
+      root: card.tagName,
+      children: Array.from(card.children).map((child) => child.tagName),
+      bodyChildren: Array.from(body?.children ?? []).map((child) => child.tagName),
+      contentChildren: Array.from(content?.children ?? []).map((child) => child.tagName),
+      number: { width: Math.round(number?.getBoundingClientRect().width ?? 0), height: Math.round(number?.getBoundingClientRect().height ?? 0) },
+      body: { width: Math.round(body?.getBoundingClientRect().width ?? 0), height: Math.round(body?.getBoundingClientRect().height ?? 0) },
+      content: { width: Math.round(contentBox?.width ?? 0), height: Math.round(contentBox?.height ?? 0), top: Math.round((contentBox?.top ?? 0) - cardBox.top) },
+      width: Math.round(cardBox.width),
+      height: Math.round(cardBox.height),
+      bodyAlignment: getComputedStyle(body).alignItems,
+    }
+  })
 }
 
 try {
@@ -48,7 +54,7 @@ try {
     '[data-name="div.evidence-track"] > [data-name^="metric-result"]',
   )
   assert.equal(homeWidths.length, 24)
-  assert.ok(homeWidths.every((width) => width > 75 && width < 400))
+  assert.ok(homeWidths.every((width) => width === 438))
   const homeStructure = await structure(
     '[data-name="div.evidence-track"] > [data-name^="metric-result"]',
   )
@@ -58,7 +64,7 @@ try {
     '[data-name="section.results"] [data-name="div.metrics"] > [data-name^="metric-result"]',
   )
   assert.equal(caseWidths.length, 3)
-  assert.ok(caseWidths.every((width) => width > 75 && width < 400))
+  assert.ok(caseWidths.every((width) => width === 438))
   const caseStructure = await structure(
     '[data-name="section.results"] [data-name="div.metrics"] > [data-name^="metric-result"]',
   )
@@ -66,10 +72,14 @@ try {
   assert.deepEqual(homeStructure, {
     root: "ARTICLE",
     children: ["STRONG", "DIV"],
-    content: ["H3", "P"],
+    bodyChildren: ["DIV"],
+    contentChildren: ["H3", "P"],
     number: { width: 75, height: 75 },
+    body: { width: 363, height: 75 },
+    content: { width: 363, height: 59, top: 8 },
+    width: 438,
     height: 75,
-    contentAlignment: "center",
+    bodyAlignment: "center",
   })
 
   await page.setViewportSize({ width: 390, height: 844 })
@@ -94,7 +104,7 @@ try {
     widths: { home: [...new Set(homeWidths)], cases: [...new Set(caseWidths)] },
     mobileMaxWidth: Math.max(...mobileHomeWidths, ...mobileCaseWidths),
     numberBox: "75x75",
-    semanticStructure: "article > strong + div > h3 + p",
+    semanticStructure: "article > strong + body > content > h3 + p",
   })
 } finally {
   await browser.close()

@@ -499,8 +499,8 @@ export default function CasesSingle() {
       />
       <Context
         copy={[...item.contextCopy]}
-        media={item.contextMedia}
-        mediaWidth={item.contextMediaWidth}
+        media={"contextMedia" in item ? item.contextMedia : undefined}
+        mediaWidth={"contextMediaWidth" in item ? item.contextMediaWidth : undefined}
         project={item.project}
       />
       <Challenge

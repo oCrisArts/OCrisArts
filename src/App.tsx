@@ -706,7 +706,7 @@ function HomePage() {
       element
 
         .querySelectorAll<HTMLElement>(
-          '[data-name^="section."]:not([data-node-id="4:35827"])',
+          '[data-name^="section."]:not([data-node-id="4:35827"]):not([data-name="section.contact-cta"])',
         )
 
         .forEach((section) => {
@@ -891,7 +891,7 @@ function ExactCasePage({ children }: { children: React.ReactNode }) {
 
       element
 
-        .querySelectorAll<HTMLElement>('[data-name^="section."]')
+        .querySelectorAll<HTMLElement>('[data-name^="section."]:not([data-name="section.contact-cta"])')
 
         .forEach((section) => {
           if (!section.children.length) return

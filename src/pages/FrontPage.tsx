@@ -69,7 +69,7 @@ export default function FrontPage({
 }: {
   featuredSlugs: CaseSlug[]
 }) {
-  const { t } = useI18n()
+  const { t, path, language } = useI18n()
   const metrics = cases.flatMap((item) =>
     item.results.metrics.map((metric, index) => ({
       metric,
@@ -216,6 +216,10 @@ export default function FrontPage({
             <ServiceCard key={service.service} {...service} />
           ))}
         </div>
+        <a href={path("/consultoria")} className="mt-6 inline-flex min-h-12 w-fit items-center gap-3 rounded-lg bg-[#54000e] px-6 py-3 font-['Sora:Regular'] text-[#fcfdfe] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#54000e]">
+          {language === "pt-BR" ? "Conheça as consultorias" : language === "en" ? "Explore consultancy" : "Conoce las consultorías"}
+          <span className="font-['Material_Symbols_Outlined:Regular']" aria-hidden="true">arrow_forward</span>
+        </a>
       </section>
 
       <section

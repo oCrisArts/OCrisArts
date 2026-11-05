@@ -265,12 +265,12 @@ try {
     .locator("#contato")
     .evaluate((el) => el.scrollIntoView({ behavior: "instant" }))
   await page.waitForTimeout(1200)
-  await page.locator('input[name="name"]').fill("TEST_PERSONAL_DO_NOT_RECORD")
+  await page.locator('#contato textarea').fill("TEST_PERSONAL_DO_NOT_RECORD")
   assert.equal(
     (await events()).filter((e) => e.event === "form_start").length,
     1,
   )
-  await page.locator('input[name="name"]').fill("TEST_PERSONAL_DO_NOT_RECORD_2")
+  await page.locator('#contato textarea').fill("TEST_PERSONAL_DO_NOT_RECORD_2")
   assert.equal(
     (await events()).filter((e) => e.event === "form_start").length,
     1,

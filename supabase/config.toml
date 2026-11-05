@@ -1,0 +1,4 @@
+project_id = "ocrisarts"
+
+[functions.prospeccao-lead]
+verify_jwt = true

@@ -79,7 +79,7 @@ export function saveConsent(next: Pick<Consent,'analytics'|'experience'>) {
  startServices(); reportPage()
  window.dispatchEvent(new Event('ocris:consent'))
 }
-const allowed = new Set(['case_slug','section_id','service_name','percent','channel','destination_host','from_language','to_language','video_id','playback','metric_name','metric_value','metric_rating','form_id','interaction_type'])
+const allowed = new Set(['case_slug','section_id','service_name','percent','channel','destination_host','from_language','to_language','video_id','playback','metric_name','metric_value','metric_rating','form_id','interaction_type','consultancy_plan','custom_tag_count','custom_service_count','embed_action','lead_status'])
 export function track(event: string, details: Record<string,string|number|boolean> = {}, pagePath=currentPath) {
  if(!consent?.analytics && !consent?.experience) return
  const slug=basePath(pagePath).split('/cases/')[1]

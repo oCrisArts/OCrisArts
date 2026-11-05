@@ -48,6 +48,8 @@ gsap.registerPlugin(ScrollTrigger)
 
 const FrontPage = lazy(() => import("./pages/FrontPage"))
 const CasesSingle = lazy(() => import("./pages/CasesSingle"))
+const ProposalPage = lazy(() => import("./pages/Proposal"))
+const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"))
 
 const caseRoutes = [
   ["Navegação confusa?", "navegacao-confusa"],
@@ -964,7 +966,7 @@ const ExactStage = ({
 
   ref: React.RefObject<HTMLDivElement | null>
 
-  mode: "home" | "case"
+  mode: "home" | "case" | "proposal"
 }) => (
   <div
     ref={ref}
@@ -1005,6 +1007,11 @@ function NotFound() {
   )
 }
 
+function ProposalRoute() {
+  const root = useRef<HTMLDivElement>(null)
+  return <ExactStage ref={root} mode="proposal"><ProposalPage /></ExactStage>
+}
+
 export function AppContent() {
   const { pathname } = useLocation()
 
@@ -1021,6 +1028,20 @@ export function AppContent() {
               key={language}
               path={localizedPath("/", language)}
               element={<HomePage />}
+            />
+          ))}
+          {languages.map((language) => (
+            <Route
+              key={`${language}-proposal`}
+              path={localizedPath("/start-you-project/:slug", language)}
+              element={<ProposalRoute />}
+            />
+          ))}
+          {languages.map((language) => (
+            <Route
+              key={`${language}-privacy`}
+              path={localizedPath("/politica-de-privacidade", language)}
+              element={<PrivacyPolicy />}
             />
           ))}
           {languages.map((language) => (

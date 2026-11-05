@@ -643,5 +643,25 @@
     "pt-BR": "Iterado",
     "en": "Iterated",
     "es": "Iterado"
+  },
+  "Seu projeto": {
+    "pt-BR": "Seu projeto",
+    "en": "Your project",
+    "es": "Tu proyecto"
+  },
+  "Conversa": {
+    "pt-BR": "Conversa",
+    "en": "Conversation",
+    "es": "Conversación"
+  },
+  "Proposta": {
+    "pt-BR": "Proposta",
+    "en": "Proposal",
+    "es": "Propuesta"
+  },
+  "Investimento": {
+    "pt-BR": "Investimento",
+    "en": "Investment",
+    "es": "Inversión"
   }
 }

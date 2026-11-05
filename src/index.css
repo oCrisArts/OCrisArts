@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "./fonts.css";
 @import "./figma-layout.css";
+@import "./consultoria.css";
 
 /* Technical controls reuse the header palette and do not take part in the GSAP canvas. */
 .top-navigation__language { background: #000; color: #fff; }

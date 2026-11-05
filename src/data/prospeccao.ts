@@ -4,10 +4,11 @@ export const HOURLY_RATE = 100
 export const HOURS_PER_TAG = 2
 export const PIX_DISCOUNT = 0.1
 
-export const PAYMENT_FEES = {
-  pix: 0,
-  card12: 0.12,
-  card24: 0.2,
+// Tarifas padrão públicas da Stripe Brasil; valide tarifas contratadas antes de cobrar.
+export const STRIPE_FEES = {
+  pixRate: 0.0119,
+  domesticCardRate: 0.0399,
+  domesticCardFixed: 0.39,
 } as const
 
 export type ConsultancyId = "essencial" | "estrategica" | "completa" | "custom"
@@ -15,11 +16,12 @@ export type ConsultancyId = "essencial" | "estrategica" | "completa" | "custom"
 export type ServiceOption = TaxonomyTag & { id: string }
 export type DeliverableOption = TaxonomyTag & { id: string }
 
+// Mesmo vocabulário dos quatro serviços da home. O briefing não limita a escolha de consultoria.
 export const proposalServices: ServiceOption[] = [
+  { id: "branding", icon: "palette", label: "Marca e comunicação" },
   { id: "sites", icon: "web", label: "Sites e e-commerce" },
-  { id: "apps", icon: "smartphone", label: "Aplicativos" },
-  { id: "systems", icon: "devices", label: "Sistemas" },
-  { id: "branding", icon: "palette", label: "Identidade visual" },
+  { id: "apps", icon: "smartphone", label: "Aplicativos e plataformas" },
+  { id: "ux", icon: "search", label: "Consultoria em UX" },
 ]
 
 export const proposalDeliverables: DeliverableOption[] = [
@@ -29,6 +31,7 @@ export const proposalDeliverables: DeliverableOption[] = [
   { id: "wireframes", icon: "draw", label: "Wireframes" },
   { id: "prototypes", icon: "draw", label: "Protótipos" },
   { id: "figma", icon: "design_services", label: "Figma" },
+  { id: "figma-make", icon: "auto_awesome", label: "Protótipo funcional · Figma Make" },
   { id: "validation", icon: "fact_check", label: "Validação" },
   { id: "design-thinking", icon: "psychology", label: "Design Thinking" },
   { id: "design-system", icon: "widgets", label: "Design System modular" },
@@ -56,7 +59,7 @@ export const consultancies: ConsultancyConfig[] = [
     name: "Consultoria Essencial",
     description: "Entenda o que sua ideia precisa e descubra por onde começar.",
     serviceIds: ["sites"],
-    tags: deliverables("product-discovery", "journey-map", "flow", "wireframes", "prototypes", "figma"),
+    tags: deliverables("product-discovery", "journey-map", "flow", "wireframes", "prototypes", "figma", "figma-make"),
     deliveryBusinessDays: 16,
     cta: "Quero começar",
   },
@@ -65,7 +68,7 @@ export const consultancies: ConsultancyConfig[] = [
     name: "Consultoria Estratégica",
     description: "Organize a experiência, explore soluções e evite decisões no escuro.",
     serviceIds: ["sites"],
-    tags: deliverables("product-discovery", "journey-map", "flow", "wireframes", "prototypes", "figma", "validation", "design-thinking", "design-system", "test-plan"),
+    tags: deliverables("product-discovery", "journey-map", "flow", "wireframes", "prototypes", "figma", "validation", "design-thinking", "design-system", "test-plan", "figma-make"),
     deliveryBusinessDays: 12,
     cta: "Quero começar",
   },
@@ -82,22 +85,25 @@ export const consultancies: ConsultancyConfig[] = [
 
 const roundCurrency = (value: number) => Math.round(value * 100) / 100
 
+// Sobe para o primeiro valor terminado em ,99 que cobre a receita desejada.
+const roundUpTo99 = (minimum: number) =>
+  roundCurrency(Math.ceil(minimum - 0.99 - 1e-9) + 0.99)
+
 export function calculateConsultancy(tagCount: number) {
   const hours = tagCount * HOURS_PER_TAG
   const netInvestment = hours * HOURLY_RATE
-  const listInvestment = roundCurrency(netInvestment / (1 - PIX_DISCOUNT))
+  // Garantia sobre taxas Stripe antes de tributos, sem taxas extras contratadas.
+  const pixMinimum = netInvestment / ((1 - PIX_DISCOUNT) * (1 - STRIPE_FEES.pixRate))
+  const cardMinimum = (netInvestment + STRIPE_FEES.domesticCardFixed) / (1 - STRIPE_FEES.domesticCardRate)
+  const listInvestment = roundUpTo99(Math.max(pixMinimum, cardMinimum))
   const pixInvestment = roundCurrency(listInvestment * (1 - PIX_DISCOUNT))
-  const card12Total = roundCurrency(netInvestment / (1 - PAYMENT_FEES.card12))
-  const card24Total = roundCurrency(netInvestment / (1 - PAYMENT_FEES.card24))
   return {
     hours,
     netInvestment,
     listInvestment,
     pixInvestment,
-    card12Total,
-    card24Total,
-    card12Installment: roundCurrency(card12Total / 12),
-    card24Installment: roundCurrency(card24Total / 24),
+    estimatedPixNet: roundCurrency(pixInvestment * (1 - STRIPE_FEES.pixRate)),
+    estimatedCardNet: roundCurrency(listInvestment * (1 - STRIPE_FEES.domesticCardRate) - STRIPE_FEES.domesticCardFixed),
   }
 }
 

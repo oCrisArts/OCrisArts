@@ -4,7 +4,7 @@ import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 
 import { track } from "../analytics/tracking"
-import TaxonomyTags from "../components/TaxonomyTags"
+import ConsultancyCard, { type CustomPlan } from "../components/ConsultancyCard"
 import { SiteFooter } from "../components/SiteContactFooter"
 import {
   calculateConsultancy,
@@ -12,7 +12,6 @@ import {
   proposalDeliverables,
   proposalServices,
   publicProposals,
-  type ConsultancyConfig,
   type DeliverableOption,
 } from "../data/prospeccao"
 import { useI18n } from "../i18n"
@@ -20,61 +19,6 @@ import { useI18n } from "../i18n"
 gsap.registerPlugin(ScrollTrigger)
 
 const money = new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" })
-
-type CustomPlan = {
-  serviceIds: string[]
-  tags: DeliverableOption[]
-  deliveryBusinessDays: number
-}
-
-function ConsultancyCard({
-  plan,
-  custom,
-  onSelect,
-  onEdit,
-}: {
-  plan?: ConsultancyConfig
-  custom?: CustomPlan
-  onSelect: () => void
-  onEdit?: () => void
-}) {
-  const tags = plan?.tags ?? custom?.tags ?? []
-  const serviceIds = plan?.serviceIds ?? custom?.serviceIds ?? []
-  const pricing = calculateConsultancy(tags.length)
-  const name = plan?.name ?? "Sua consultoria"
-  const description = plan?.description ?? "Uma configuração criada por você, sem alterar os planos originais."
-  const days = plan?.deliveryBusinessDays ?? custom?.deliveryBusinessDays ?? 1
-
-  return (
-    <article className="proposal-plan-card" data-plan-id={plan?.id ?? "custom"}>
-      <header>
-        <h3>{name}</h3>
-        <p>{description}</p>
-      </header>
-      <div className="proposal-plan-card__content">
-        <div className="proposal-plan-card__services">
-          <span>Serviços</span>
-          <TaxonomyTags items={proposalServices.filter((service) => serviceIds.includes(service.id))} kind="services" />
-        </div>
-        <div>
-          <span>O que você recebe</span>
-          <TaxonomyTags items={tags} kind="deliverables" />
-        </div>
-      </div>
-      <dl className="proposal-price">
-        <div><dt>A partir de</dt><dd>{money.format(pricing.listInvestment)}</dd></div>
-        <div className="proposal-price__pix"><dt>10% OFF no Pix</dt><dd>{money.format(pricing.pixInvestment)} · {money.format(pricing.pixInvestment / pricing.hours)} por hora</dd></div>
-        <div><dt>12x com taxas</dt><dd>{money.format(pricing.card12Installment)} sem juros</dd></div>
-        <div><dt>24x com taxas</dt><dd>{money.format(pricing.card24Installment)}</dd></div>
-      </dl>
-      <p className="proposal-plan-card__deadline"><strong>Prazo de entrega:</strong> Até {days} dias úteis · {pricing.hours} horas estimadas</p>
-      <div className="proposal-plan-card__actions">
-        <button type="button" className="proposal-primary-button" onClick={onSelect}>Quero começar <span aria-hidden="true">arrow_forward</span></button>
-        {onEdit && <button type="button" className="proposal-link-button" onClick={onEdit}>Revisar ou editar</button>}
-      </div>
-    </article>
-  )
-}
 
 function CustomizationModal({
   initial,
@@ -129,7 +73,7 @@ function CustomizationModal({
         <aside className="proposal-custom-summary" aria-live="polite">
           <div><span>Entregáveis</span><strong>{tags.length}</strong></div>
           <div><span>Horas estimadas</span><strong>{pricing.hours}h</strong></div>
-          <div><span>Pix</span><strong>{money.format(pricing.pixInvestment)}</strong></div>
+          <div><span>Investimento estimado</span><strong>{money.format(pricing.listInvestment)}</strong></div>
           <div><span>Prazo estimado</span><strong>Até {days} dias úteis</strong></div>
         </aside>
         <button type="button" className="proposal-primary-button" disabled={!serviceIds.length || !tags.length} onClick={() => onConfirm({ serviceIds, tags, deliveryBusinessDays: days })}>Confirmar minha consultoria <span aria-hidden="true">check</span></button>
@@ -168,26 +112,26 @@ export default function ProposalPage() {
     return () => mm.revert()
   }, [proposal])
 
-  if (!proposal) return <main className="proposal-not-found"><h1>Proposta não encontrada</h1><p>Confira o endereço recebido ou fale com a gente.</p><a href={path("/#contato")}>Ir para contato</a></main>
+  if (!proposal) return <article className="proposal-not-found"><h1>Proposta não encontrada</h1><p>Confira o endereço recebido ou fale com a gente.</p><a href={path("/consultoria")}>Ver consultorias</a></article>
 
   const selectPlan = (name: string, tags: DeliverableOption[], serviceIds: string[]) => {
     track("consultancy_selection", { consultancy_plan: name === "Sua consultoria" ? "custom" : name.toLowerCase().replace("consultoria ", "") })
     track("commercial_click", { channel: "whatsapp" })
     const pricing = calculateConsultancy(tags.length)
-    const message = encodeURIComponent(`Olá! Quero conversar sobre a proposta ${proposal.slug}.\nPlano: ${name}\nServiços: ${proposalServices.filter((service) => serviceIds.includes(service.id)).map((service) => service.label).join(", ")}\nEntregáveis: ${tags.map((tag) => tag.label).join(", ")}\nEstimativa: ${pricing.hours}h · Pix ${money.format(pricing.pixInvestment)}`)
+    const message = encodeURIComponent(`Olá! Quero conversar sobre a proposta ${proposal.slug}.\nPlano: ${name}\nServiços: ${proposalServices.filter((service) => serviceIds.includes(service.id)).map((service) => service.label).join(", ")}\nEntregáveis: ${tags.map((tag) => tag.label).join(", ")}\nEstimativa: ${pricing.hours}h · Investimento ${money.format(pricing.listInvestment)}`)
     window.open(`${commercialUrl}?text=${message}`, "_blank", "noopener,noreferrer")
   }
 
   return (
-    <main ref={root} className="proposal-page">
-      <section id="seu-projeto" className="proposal-intro" data-proposal-reveal>
+    <article ref={root} className="proposal-page">
+      <header id="seu-projeto" className="proposal-intro" data-proposal-reveal>
         <div className="proposal-intro__copy"><p className="proposal-eyebrow">Proposta personalizada</p><h1>Olá, {proposal.client.displayName}</h1><p>{proposal.conversationSummary}</p></div>
         <div id="conversa" className="proposal-conversation" aria-label="Resumo da conversa">
           <article className="is-client">{proposal.briefing}</article>
           <article className="is-client">{proposal.challenge}</article>
           <article className="is-ocris"><img src="/assets/shared/branding/site-brand-mark-compact.svg" alt="" /><div><strong>A solução proposta</strong><p>{proposal.solution}</p><button type="button" onClick={() => document.getElementById("proposta")?.scrollIntoView({ behavior: "smooth" })}>Veja abaixo <span aria-hidden="true">arrow_downward</span></button></div></article>
         </div>
-      </section>
+      </header>
 
       <section id="proposta" className="proposal-demo" ref={demo} aria-labelledby="proposal-demo-title">
         <h2 id="proposal-demo-title" className="sr-only">Demonstração da proposta</h2>
@@ -202,7 +146,7 @@ export default function ProposalPage() {
       <section id="investimento" className="proposal-investment" data-proposal-reveal>
         <header><h2>Investimento</h2><p>Escolha a consultoria que faz sentido para seu projeto. Veja os serviços e o que está incluído em cada opção.</p></header>
         <div className="proposal-plans">
-          {consultancies.map((plan) => <ConsultancyCard key={plan.id} plan={plan} onSelect={() => selectPlan(plan.name, plan.tags, plan.serviceIds)} />)}
+          {consultancies.map((plan) => <ConsultancyCard key={plan.id} plan={plan} serviceIdsOverride={proposal.serviceIds} onSelect={() => selectPlan(plan.name, plan.tags, proposal.serviceIds)} />)}
           {customPlan && <ConsultancyCard custom={customPlan} onSelect={() => selectPlan("Sua consultoria", customPlan.tags, customPlan.serviceIds)} onEdit={() => { track("consultancy_customization", { interaction_type: "edit" }); setCustomOpen(true) }} />}
         </div>
         <button type="button" className="proposal-customize-trigger" onClick={() => { track("consultancy_customization", { interaction_type: "start" }); setCustomOpen(true) }}>Não encontrou o que precisa? <strong>Personalize do seu jeito</strong> <span aria-hidden="true">settings</span></button>
@@ -210,6 +154,6 @@ export default function ProposalPage() {
 
       <SiteFooter />
       {customOpen && <CustomizationModal initial={customPlan} onClose={() => setCustomOpen(false)} onConfirm={(value) => { setCustomPlan(value); setCustomOpen(false); track("consultancy_customization", { interaction_type: "confirm", custom_tag_count: value.tags.length, custom_service_count: value.serviceIds.length }); requestAnimationFrame(() => document.querySelector<HTMLElement>("[data-plan-id='custom']")?.scrollIntoView({ behavior: "smooth", block: "center" })) }} />}
-    </main>
+    </article>
   )
 }

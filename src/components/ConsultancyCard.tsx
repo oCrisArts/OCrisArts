@@ -80,7 +80,6 @@ export default function ConsultancyCard({
         </div>
       </div>
       <dl className="proposal-price">
-        <div><dt>{t.investment}</dt><dd>{money.format(pricing.listInvestment)}</dd></div>
         <div><dt>{t.card}</dt><dd>{money.format(pricing.listInvestment)}</dd></div>
         <div className="proposal-price__pix"><dt>{t.pix}</dt><dd>{money.format(pricing.pixInvestment)}</dd></div>
       </dl>

@@ -32,14 +32,16 @@ function ConsultancyCard({
   custom,
   onSelect,
   onEdit,
+  serviceIdsOverride,
 }: {
   plan?: ConsultancyConfig
   custom?: CustomPlan
   onSelect: () => void
   onEdit?: () => void
+  serviceIdsOverride?: string[]
 }) {
   const tags = plan?.tags ?? custom?.tags ?? []
-  const serviceIds = plan?.serviceIds ?? custom?.serviceIds ?? []
+  const serviceIds = serviceIdsOverride ?? plan?.serviceIds ?? custom?.serviceIds ?? []
   const pricing = calculateConsultancy(tags.length)
   const name = plan?.name ?? "Sua consultoria"
   const description = plan?.description ?? "Uma configuração criada por você, sem alterar os planos originais."
@@ -201,7 +203,7 @@ export default function ProposalPage() {
       <section id="investimento" className="proposal-investment" data-proposal-reveal>
         <header><h2>Investimento</h2><p>Escolha a consultoria que faz sentido para seu projeto. Veja os serviços e o que está incluído em cada opção.</p></header>
         <div className="proposal-plans">
-          {consultancies.map((plan) => <ConsultancyCard key={plan.id} plan={plan} onSelect={() => selectPlan(plan.name, plan.tags, plan.serviceIds)} />)}
+          {consultancies.map((plan) => <ConsultancyCard key={plan.id} plan={plan} serviceIdsOverride={proposal.serviceIds} onSelect={() => selectPlan(plan.name, plan.tags, proposal.serviceIds)} />)}
           {customPlan && <ConsultancyCard custom={customPlan} onSelect={() => selectPlan("Sua consultoria", customPlan.tags, customPlan.serviceIds)} onEdit={() => { track("consultancy_customization", { interaction_type: "edit" }); setCustomOpen(true) }} />}
         </div>
         <button type="button" className="proposal-customize-trigger" onClick={() => { track("consultancy_customization", { interaction_type: "start" }); setCustomOpen(true) }}>Não encontrou o que precisa? <strong>Personalize do seu jeito</strong> <span aria-hidden="true">settings</span></button>

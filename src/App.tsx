@@ -9,10 +9,12 @@ import {
 
 import {
   BrowserRouter,
+  Navigate,
   Route,
   Routes,
   useLocation,
   useNavigate,
+  useParams,
 } from "react-router-dom"
 
 import {
@@ -49,6 +51,7 @@ gsap.registerPlugin(ScrollTrigger)
 const FrontPage = lazy(() => import("./pages/FrontPage"))
 const CasesSingle = lazy(() => import("./pages/CasesSingle"))
 const ProposalPage = lazy(() => import("./pages/Proposal"))
+const ConsultancyPage = lazy(() => import("./pages/Consultancy"))
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"))
 
 const caseRoutes = [
@@ -966,7 +969,7 @@ const ExactStage = ({
 
   ref: React.RefObject<HTMLDivElement | null>
 
-  mode: "home" | "case" | "proposal"
+  mode: "home" | "case" | "proposal" | "consultancy"
 }) => (
   <div
     ref={ref}
@@ -1012,6 +1015,17 @@ function ProposalRoute() {
   return <ExactStage ref={root} mode="proposal"><ProposalPage /></ExactStage>
 }
 
+function ConsultancyRoute() {
+  const root = useRef<HTMLDivElement>(null)
+  return <ExactStage ref={root} mode="consultancy"><ConsultancyPage /></ExactStage>
+}
+
+function LegacyProposalRedirect() {
+  const { slug = "" } = useParams()
+  const { path } = useI18n()
+  return <Navigate to={path(`/consultoria/${slug}`)} replace />
+}
+
 export function AppContent() {
   const { pathname } = useLocation()
 
@@ -1032,9 +1046,23 @@ export function AppContent() {
           ))}
           {languages.map((language) => (
             <Route
+              key={`${language}-consultancy`}
+              path={localizedPath("/consultoria", language)}
+              element={<ConsultancyRoute />}
+            />
+          ))}
+          {languages.map((language) => (
+            <Route
               key={`${language}-proposal`}
-              path={localizedPath("/start-you-project/:slug", language)}
+              path={localizedPath("/consultoria/:slug", language)}
               element={<ProposalRoute />}
+            />
+          ))}
+          {languages.map((language) => (
+            <Route
+              key={`${language}-legacy-proposal`}
+              path={localizedPath("/start-you-project/:slug", language)}
+              element={<LegacyProposalRedirect />}
             />
           ))}
           {languages.map((language) => (

@@ -6,7 +6,7 @@ import { cases } from "../data/cases"
 import { basePath, languages, localizedPath, useI18n } from "../i18n"
 import CaseCard from "./CaseCard"
 
-export type NavigationMode = "home" | "cases" | "case" | "about" | "services" | "service" | "proposal" | "privacy"
+export type NavigationMode = "home" | "cases" | "case" | "about" | "services" | "service" | "consultancy" | "proposal" | "privacy"
 
 type NavigationItem = readonly [id: string, icon: string, label: string]
 
@@ -34,6 +34,14 @@ const contextualItems: Record<NavigationMode, readonly NavigationItem[]> = {
     ["proposta", "account_tree", "Proposta"],
     ["investimento", "monitoring", "Investimento"],
   ],
+  consultancy: [
+    ["home", "arrow_back", "Início"],
+    ["como-funciona", "route", "Como funciona"],
+    ["servicos", "design_services", "Serviços"],
+    ["planos", "monitoring", "Planos"],
+    ["faq", "help", "FAQ"],
+    ["contato", "send", "Contato"],
+  ],
   cases: [],
   about: [],
   services: [],
@@ -44,7 +52,8 @@ const contextualItems: Record<NavigationMode, readonly NavigationItem[]> = {
 function modeFromPath(pathname: string): NavigationMode {
   const route = basePath(pathname)
   if (route === "/") return "home"
-  if (/^\/start-you-project\/[^/]+$/.test(route)) return "proposal"
+  if (route === "/consultoria") return "consultancy"
+  if (/^\/(?:consultoria|start-you-project)\/[^/]+$/.test(route)) return "proposal"
   if (route === "/politica-de-privacidade") return "privacy"
   if (/^\/cases\/[^/]+$/.test(route)) return "case"
   if (route === "/cases") return "cases"
@@ -172,7 +181,7 @@ function ContextualNavigation({ mode }: { mode: NavigationMode }) {
   const navigate = useNavigate()
   const { path, text } = useI18n()
   const items = contextualItems[mode]
-  const [active, setActive] = useState(mode === "home" ? "inicio" : mode === "proposal" ? "seu-projeto" : "case")
+  const [active, setActive] = useState(mode === "home" ? "inicio" : mode === "proposal" ? "seu-projeto" : mode === "consultancy" ? "como-funciona" : "case")
   const [visible, setVisible] = useState(false)
   const [casesOpen, setCasesOpen] = useState(false)
   const popover = useRef<HTMLDivElement>(null)
@@ -191,6 +200,8 @@ function ContextualNavigation({ mode }: { mode: NavigationMode }) {
       ? ["inicio", "cases", "atuacao", "sobre", "evidencias", "contato"]
       : mode === "proposal"
         ? ["seu-projeto", "conversa", "proposta", "investimento"]
+        : mode === "consultancy"
+          ? ["como-funciona", "servicos", "planos", "faq", "contato"]
         : ["case", "contexto", "processo", "resultados", "contato"]
     const observer = new IntersectionObserver(
       (entries) => {
@@ -242,7 +253,7 @@ function ContextualNavigation({ mode }: { mode: NavigationMode }) {
   }, [casesOpen])
 
   const activate = (id: string) => {
-    if (mode === "proposal" && id === "home") return navigate(path("/"))
+    if ((mode === "proposal" || mode === "consultancy") && id === "home") return navigate(path("/"))
     if (mode === "case" && id === "home") return navigate(path("/"))
     if (mode === "case" && id === "case") return setCasesOpen((open) => !open)
     const target = document.getElementById(id)
@@ -276,7 +287,7 @@ function ContextualNavigation({ mode }: { mode: NavigationMode }) {
       )}
       <nav
         className={`bottom-navigation bottom-navigation--${mode}${
-          visible || casesOpen || mode === "proposal" ? " is-visible" : ""
+          visible || casesOpen || mode === "proposal" || mode === "consultancy" ? " is-visible" : ""
         }`}
         aria-label={text(
           mode === "home" ? "Navegação da página inicial" : "Navegação do case",

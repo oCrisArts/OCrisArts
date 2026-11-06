@@ -1,4 +1,13 @@
 project_id = "ocrisarts"
 
 [functions.prospeccao-lead]
-verify_jwt = true
+verify_jwt = false
+
+[functions.consultoria-proposta]
+verify_jwt = false
+
+[functions.consultoria-checkout]
+verify_jwt = false
+
+[functions.stripe-webhook]
+verify_jwt = false

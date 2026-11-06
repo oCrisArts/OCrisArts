@@ -4,8 +4,8 @@ import { cases } from '../data/cases'
 export const origin='https://ocris.art.br'
 export const socialImage='/assets/ocrisart.jpg'
 export { cases }
-export const allPaths=languages.flatMap(language=>['/',...cases.map(c=>`/cases/${c.slug}`)].map(path=>localizedPath(path,language)))
-export const isPrivatePath=(path:string)=>/^\/(?:en\/|es\/)?(?:start-you-project\/[^/]+|politica-de-privacidade)$/.test(path.replace(/\/$/,''))
+export const allPaths=languages.flatMap(language=>['/','/consultoria',...cases.map(c=>`/cases/${c.slug}`)].map(path=>localizedPath(path,language)))
+export const isPrivatePath=(path:string)=>/^\/(?:en\/|es\/)?(?:(?:consultoria|start-you-project)\/[^/]+|politica-de-privacidade)$/.test(path.replace(/\/$/,''))
 export const isKnownPath=(path:string)=>allPaths.includes(path.replace(/\/$/,'')||'/')||isPrivatePath(path)
 const localizedCaseProjects:Record<string,Record<Language,string>>={
  'navegacao-confusa':{'pt-BR':'Plataforma corporativa',en:'Enterprise platform',es:'Plataforma empresarial'},
@@ -14,11 +14,12 @@ const localizedCaseProjects:Record<string,Record<Language,string>>={
 export function pageMetadata(path:string) {
  const language=languageFromPath(path), copy=catalogs[language], base=basePath(path)
  const item=cases.find(c=>base===`/cases/${c.slug}`)
- const proposal=/^\/start-you-project\/[^/]+$/.test(base)
+ const proposal=/^\/(?:consultoria|start-you-project)\/[^/]+$/.test(base)
+ const consultancy=base==='/consultoria'
  const privacy=base==='/politica-de-privacidade'
  const project=item?(localizedCaseProjects[item.slug]?.[language]??item.project):''
- const title=proposal?`Proposta personalizada | OCris Arts`:privacy?`Política de privacidade | OCris Arts`:item?`${copy[item.title]} ${project} | OCris Arts`:translate('homeTitle',language)
- const description=proposal?'Proposta personalizada de design de produto e experiência.':privacy?'Como a OCris Arts trata dados enviados na prospecção.':item?`${copy[item.subtitle]} ${copy[item.context]}`:copy.t0602
+ const title=proposal?`Proposta personalizada | OCris Arts`:consultancy?`Consultoria de produto e experiência | OCris Arts`:privacy?`Política de privacidade | OCris Arts`:item?`${copy[item.title]} ${project} | OCris Arts`:translate('homeTitle',language)
+ const description=proposal?'Proposta personalizada de design de produto e experiência.':consultancy?'Transforme sua ideia em estratégia, design e uma demonstração navegável antes de construir.':privacy?'Como a OCris Arts trata dados enviados na prospecção.':item?`${copy[item.subtitle]} ${copy[item.context]}`:copy.t0602
  const canonical=origin+localizedPath(base,language)
  const person={'@type':'Person','@id':origin+'/#person',name:'oCris Acosta',url:origin,jobTitle:'Product Designer',knowsAbout:['Product Design','UX/UI','UX Research','Design Systems','Design Engineering','Branding',copy.t0604],sameAs:['https://www.linkedin.com/in/ocrisarts','https://www.behance.net/ocrisart']}
  const schema={'@context':'https://schema.org','@graph':[

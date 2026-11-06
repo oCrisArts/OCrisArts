@@ -53,13 +53,11 @@ Deno.serve(async (request: Request) => {
 
     const forwarded = request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ?? "unknown"
     if (!await verifyTurnstile(String(body.turnstileToken ?? ""), forwarded)) return json({ error: "bot_check_failed" }, 403, cors)
-    const salt = Deno.env.get("LEAD_FINGERPRINT_SALT")
-    if (!salt) throw new Error("LEAD_FINGERPRINT_SALT is not configured")
-    const fingerprint = await sha256(`${salt}:${forwarded}`)
-
     const supabaseUrl = Deno.env.get("SUPABASE_URL")
     const serviceRole = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")
     if (!supabaseUrl || !serviceRole) throw new Error("Supabase server secrets are not configured")
+    const salt = Deno.env.get("LEAD_FINGERPRINT_SALT") ?? serviceRole
+    const fingerprint = await sha256(`${salt}:${forwarded}`)
     const supabase = createClient(supabaseUrl, serviceRole, { auth: { persistSession: false, autoRefreshToken: false } })
     const since = new Date(Date.now() - 60 * 60 * 1000).toISOString()
     const { count, error: countError } = await supabase.from("prospeccao_leads").select("id", { count: "exact", head: true }).eq("request_fingerprint", fingerprint).gte("created_at", since)
